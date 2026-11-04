@@ -1,0 +1,9 @@
+{
+  "kind": "title",
+  "name": "Licensed Shaft Technician",
+  "description": "Shaft alignment is serious business.",
+  "unlock_hint": "Assigned by Revo quest rewards.",
+  "item": "minecraft:name_tag",
+  "color": "#77B8B8",
+  "order": 40
+}

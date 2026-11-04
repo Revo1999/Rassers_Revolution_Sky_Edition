@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "PP",
+    "PP"
+  ],
+  "key": {
+    "P": {
+      "item": "revoextraction:stone_pebble"
+    }
+  },
+  "result": {
+    "id": "minecraft:cobblestone",
+    "count": 1
+  }
+}

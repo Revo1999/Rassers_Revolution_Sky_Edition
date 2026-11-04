@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "formed=false": {
+      "model": "revocultivation:block/iron_water_tank"
+    },
+    "formed=true": {
+      "model": "revocultivation:block/empty"
+    }
+  }
+}

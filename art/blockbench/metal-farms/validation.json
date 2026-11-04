@@ -1,0 +1,53 @@
+{
+  "passed": true,
+  "nativeModels": 21,
+  "assemblyCubesIncludingEditorPreviews": {
+    "iron_greenhouse_assembled": 180,
+    "steel_mob_harvester_assembled": 67,
+    "steel_tree_grower_assembled": 119
+  },
+  "blueprints": {
+    "steel_tree_grower": {
+      "SUPPORT": 4,
+      "CASING": 9,
+      "BED": 8,
+      "SOIL": 1,
+      "CONTROLLER": 1,
+      "HATCH": 1,
+      "TANK": 1
+    },
+    "steel_mob_harvester": {
+      "SUPPORT": 12,
+      "CASING": 7,
+      "GRATE": 1,
+      "BARS": 3,
+      "FILTER": 1,
+      "CONTROLLER": 1,
+      "HATCH": 1,
+      "AIR": 1
+    },
+    "iron_greenhouse": {
+      "SUPPORT": 11,
+      "CASING": 21,
+      "BED": 9,
+      "GLASS": 20,
+      "CONTROLLER": 1,
+      "HATCH": 1,
+      "TANK": 1,
+      "POWER": 1,
+      "LIGHT": 1,
+      "AIR": 9
+    }
+  },
+  "fittedConverterHousing": true,
+  "previewGeometryExcluded": true,
+  "electricGreenhouse": {
+    "euPerTick": 8,
+    "euCapacity": 1600,
+    "waterCapacity": 16000,
+    "cycleTicks": 200
+  },
+  "questCount": 116,
+  "minecraftLaunched": false,
+  "gameplayTested": false
+}

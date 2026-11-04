@@ -1,0 +1,9 @@
+{
+  "kind": "title",
+  "name": "Master of Industry",
+  "description": "The factory works because you understand it.",
+  "unlock_hint": "Assigned by Revo quest rewards.",
+  "item": "minecraft:name_tag",
+  "color": "#DFBD5B",
+  "order": 70
+}

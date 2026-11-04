@@ -1,0 +1,20 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "revoindustry:block/clay_crucible",
+      "y": 0
+    },
+    "facing=east": {
+      "model": "revoindustry:block/clay_crucible",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "revoindustry:block/clay_crucible",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "revoindustry:block/clay_crucible",
+      "y": 270
+    }
+  }
+}

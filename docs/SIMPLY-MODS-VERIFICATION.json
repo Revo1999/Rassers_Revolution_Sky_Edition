@@ -1,0 +1,19 @@
+{
+  "minecraft": "1.21.1",
+  "loader": "NeoForge 21.1.265",
+  "externalMods": 76,
+  "added": [
+    "Simply Light 1.5.3+1.21.1-b4",
+    "Simply Graves 1.1.4+mc1.21-b23"
+  ],
+  "replaced": "Soul Gravestone 1.0.2 (jar backed up in .local/retired-mods)",
+  "verification": [
+    "76 active jars match lockfile and SHA-512 hashes",
+    "Client and copied test world loaded with final mod set",
+    "Drill controller, hatch and interactive EMI guide regression passed",
+    "Production build passed; QA/game-test fixtures excluded",
+    "MRPACK ZIP integrity and manifest checks passed"
+  ],
+  "pack": "C:\\Users\\Victor\\Documents\\Codex\\2026-10-31\\https-github-com-revo1999-rassers-revolution\\outputs\\Rassers-Revolution-Sky-Edition-0.1.6-dev.mrpack",
+  "sha512": "1b4e92b3bd60c3e07cb5c291b6dec193fc5d774a1e170ef65d58cc8d106c8745ca1bb938256065535b3d4c41d33dbd872b9d837005fa6d70b1c9a47d4d7f1569"
+}

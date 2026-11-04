@@ -1,0 +1,12 @@
+All three first-tier structures formed and produced in the real integrated server.
+Vanilla minecraft:zombie rendered through native entity renderer; UUID=c8ce773b-a3af-4abc-b219-c4ca56463c91; cached instance=true
+tree-controller: actual useItemOn network menu and slot data passed.
+tree-hatch: actual useItemOn network menu and slot data passed.
+greenhouse-controller: actual useItemOn network menu and slot data passed.
+greenhouse-hatch: actual useItemOn network menu and slot data passed.
+harvester-controller: actual useItemOn network menu and slot data passed.
+harvester-hatch: actual useItemOn network menu and slot data passed.
+All three EMI assembly screens and actual full 3D guide button passed.
+Vanilla minecraft:skeleton rendered through native entity renderer; UUID=b42eba37-ebd2-4ac1-b90e-2fe66a8765f3; cached instance=true
+Vanilla minecraft:spider rendered through native entity renderer; UUID=e7b21033-75b6-47bb-9cc7-3d99ef198f4e; cached instance=true
+Selected native zombie/skeleton/spider mobs and compact real-server Jade payload passed.

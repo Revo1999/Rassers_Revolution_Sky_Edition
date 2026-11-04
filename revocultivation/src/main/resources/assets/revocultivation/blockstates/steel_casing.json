@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "formed=false": {
+      "model": "revocultivation:block/steel_casing"
+    },
+    "formed=true": {
+      "model": "revocultivation:block/empty"
+    }
+  }
+}

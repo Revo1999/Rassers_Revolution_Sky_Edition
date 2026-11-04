@@ -1,0 +1,68 @@
+repositories {
+    maven { url = 'https://maven.createmod.net' }
+    maven { url = 'https://maven.ithundxr.dev/snapshots' }
+    maven { url = 'https://maven.terraformersmc.com/releases' }
+    maven { url = 'https://api.modrinth.com/maven' }
+}
+dependencies {
+    implementation('com.simibubi.create:create-1.21.1:6.0.10-280:slim') { transitive = false }
+    implementation 'net.createmod.ponder:ponder-neoforge:1.0.82+mc1.21.1'
+    compileOnly 'dev.engine-room.flywheel:flywheel-neoforge-api-1.21.1:1.0.6'
+    implementation 'com.tterrag.registrate:Registrate:MC1.21-1.3.0+67'
+    compileOnly 'dev.emi:emi-neoforge:1.1.24+1.21.1:api'
+    compileOnly 'maven.modrinth:jade:eYz2YBGT' // Same 15.10.6 artifact pinned in pack/mods.lock.json.
+}
+
+if (providers.gradleProperty('revoChapterTests').isPresent()) {
+ sourceSets.main.java.srcDir 'src/chaptertest/java'
+ sourceSets.main.resources.srcDir 'src/gametest/resources'
+ dependencies {
+  implementation project(':revocultivation')
+  implementation project(':revoindustry')
+  runtimeOnly 'dev.engine-room.flywheel:flywheel-neoforge-1.21.1:1.0.6'
+ }
+ neoForge {
+  mods {
+   revocultivation { sourceSet project(':revocultivation').sourceSets.main }
+   revoindustry { sourceSet project(':revoindustry').sourceSets.main }
+  }
+  runs { chapterTests { type = 'gameTestServer'; systemProperty 'neoforge.enabledGameTestNamespaces', 'revoextraction' } }
+ }
+}
+tasks.named('jar', Jar) { exclude '**/ChapterOneGameTests*', '**/ChapterOneUiQa*', 'data/revoextraction/structure/drill_test.nbt' }
+
+
+repositories { mavenCentral() }
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.11.4'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+}
+tasks.named('test', Test) { useJUnitPlatform() }
+
+if (providers.gradleProperty('revoDrillTests').isPresent()) {
+    sourceSets.main.java.srcDir 'src/gametest/java'
+    sourceSets.main.resources.srcDir 'src/gametest/resources'
+    dependencies { runtimeOnly 'dev.engine-room.flywheel:flywheel-neoforge-1.21.1:1.0.6' }
+    neoForge {
+        runs {
+            drillTests {
+                type = 'gameTestServer'
+                systemProperty 'neoforge.enabledGameTestNamespaces', 'revoextraction'
+            }
+        }
+    }
+}
+
+if (!providers.gradleProperty('revoDrillTests').isPresent()) {
+    tasks.named('jar', Jar) {
+        exclude 'dk/revo/revoextraction/DrillGameTests*'
+        exclude 'data/revoextraction/structure/drill_test.nbt'
+    }
+}
+
+if (providers.gradleProperty('revoDrillUiQa').isPresent()) {
+    sourceSets.main.java.srcDir 'src/uiqa/java'
+}
+if (!providers.gradleProperty('revoDrillUiQa').isPresent()) {
+    tasks.named('jar', Jar) { exclude 'dk/revo/revoextraction/DrillInterfaceQa*' }
+}

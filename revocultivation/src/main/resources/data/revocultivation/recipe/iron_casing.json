@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "revocultivation:wooden_casing"
+    },
+    {
+      "tag": "c:plates/iron"
+    }
+  ],
+  "result": {
+    "id": "revocultivation:iron_casing",
+    "count": 1
+  }
+}

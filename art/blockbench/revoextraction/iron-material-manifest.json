@@ -1,0 +1,138 @@
+{
+  "palette": {
+    "iron": [
+      174,
+      185,
+      194
+    ],
+    "blue": [
+      78,
+      92,
+      102
+    ],
+    "steel": [
+      101,
+      111,
+      119
+    ],
+    "dark": [
+      42,
+      49,
+      57
+    ],
+    "cutting": [
+      154,
+      171,
+      184
+    ],
+    "bit_face": [
+      62,
+      73,
+      84
+    ],
+    "bit_side": [
+      46,
+      55,
+      65
+    ],
+    "bit_shaft": [
+      35,
+      43,
+      52
+    ],
+    "copper": [
+      148,
+      99,
+      68
+    ],
+    "vent": [
+      65,
+      77,
+      86
+    ],
+    "port_frame": [
+      117,
+      131,
+      141
+    ],
+    "port_recess": [
+      22,
+      28,
+      33
+    ],
+    "screen": [
+      21,
+      32,
+      41
+    ],
+    "recess": [
+      21,
+      28,
+      34
+    ],
+    "button": [
+      172,
+      99,
+      53
+    ],
+    "coupling_side": [
+      164,
+      178,
+      187
+    ],
+    "coupling_end": [
+      164,
+      178,
+      187
+    ]
+  },
+  "tiles": 173,
+  "atlas": [
+    512,
+    512
+  ],
+  "paintedFromScratch": true,
+  "inheritedPixels": false,
+  "models": [
+    {
+      "name": "iron_drill_support",
+      "cubes": 9,
+      "faces": 54
+    },
+    {
+      "name": "iron_drill_casing",
+      "cubes": 6,
+      "faces": 36
+    },
+    {
+      "name": "iron_drill_core",
+      "cubes": 12,
+      "faces": 72
+    },
+    {
+      "name": "iron_drill_controller",
+      "cubes": 8,
+      "faces": 48
+    },
+    {
+      "name": "iron_drill_input",
+      "cubes": 7,
+      "faces": 42
+    },
+    {
+      "name": "iron_drill_output_hatch",
+      "cubes": 11,
+      "faces": 66
+    },
+    {
+      "name": "iron_drill_unassembled",
+      "cubes": 206,
+      "faces": 1236
+    },
+    {
+      "name": "iron_drill_assembled",
+      "cubes": 84,
+      "faces": 504
+    }
+  ]
+}

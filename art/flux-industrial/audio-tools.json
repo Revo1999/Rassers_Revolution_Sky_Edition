@@ -1,0 +1,14 @@
+{
+  "platform": "windows-x86_64",
+  "ytDlp": {
+    "version": "2026.10.26",
+    "url": "https://github.com/yt-dlp/yt-dlp/releases/download/2026.10.26/yt-dlp.exe",
+    "sha256": "f5389d3698ecde4ef06f4e6b1ce0294fe9ac1396228c8990b8d3416d6d177a7d"
+  },
+  "ffmpeg": {
+    "version": "7.1",
+    "source": "Existing project imageio-ffmpeg binary",
+    "sha256": "2ce797a0f88d7f067180338fb227f7b1928ea727bd9a4d7a1d022f7c52af71a3"
+  },
+  "location": "revolib/run/.analoglib/bin"
+}

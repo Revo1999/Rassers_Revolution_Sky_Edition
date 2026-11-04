@@ -1,0 +1,130 @@
+[
+  {
+    "project": "ftb-quests",
+    "version": "2101.1.37",
+    "file": "ftb-quests-neoforge-2101.1.37.jar",
+    "url": "https://maven.ftb.dev/releases/dev/ftb/mods/ftb-quests-neoforge/2101.1.37/ftb-quests-neoforge-2101.1.37.jar",
+    "source": "FTB Maven",
+    "client": "required",
+    "server": "required",
+    "sha512": "d89b053bc87d0272d770dc24f1be3497910097205136df60c0251529151c4faf400718abae0ed429a596e43877e3d033928b0a227a30759660067d9e276fc5f8"
+  },
+  {
+    "project": "ftb-teams",
+    "version": "2101.1.11",
+    "file": "ftb-teams-neoforge-2101.1.11.jar",
+    "url": "https://maven.ftb.dev/releases/dev/ftb/mods/ftb-teams-neoforge/2101.1.11/ftb-teams-neoforge-2101.1.11.jar",
+    "source": "FTB Maven",
+    "client": "required",
+    "server": "required",
+    "sha512": "21c9350c6c7ec54ee54b74f2bdc0a44f91005bedda3caf27d673b2f2bcad1dbef5aec970201ec8e959db2a1743ceb2e24ae99a9e36744dce740a0ab1dad01c52"
+  },
+  {
+    "project": "ftb-chunks",
+    "version": "2101.1.23",
+    "file": "ftb-chunks-neoforge-2101.1.23.jar",
+    "url": "https://maven.ftb.dev/releases/dev/ftb/mods/ftb-chunks-neoforge/2101.1.23/ftb-chunks-neoforge-2101.1.23.jar",
+    "source": "FTB Maven",
+    "client": "required",
+    "server": "required",
+    "sha512": "78a48e8a1f789827836c88046ad0ce07e3eb5b29cc8c681c8d22a556308c0fe13fad66475535e9a810450b86f660db51f8c582dabdee026bd80e4ae959fbac89"
+  },
+  {
+    "project": "ftb-ultimine",
+    "version": "2101.1.15",
+    "file": "ftb-ultimine-neoforge-2101.1.15.jar",
+    "url": "https://maven.ftb.dev/releases/dev/ftb/mods/ftb-ultimine-neoforge/2101.1.15/ftb-ultimine-neoforge-2101.1.15.jar",
+    "source": "FTB Maven",
+    "client": "required",
+    "server": "required",
+    "sha512": "5938cf3f58b210769539de86e97769f84fe72d60eec6a6d13ecf9d26da5d24c9863c98b70ae688eea9433aef52d0226fd2c9b6f5196012a3a2cba0792e6e3985"
+  },
+  {
+    "project": "ftb-library",
+    "version": "2101.1.39",
+    "file": "ftb-library-neoforge-2101.1.39.jar",
+    "url": "https://maven.ftb.dev/releases/dev/ftb/mods/ftb-library-neoforge/2101.1.39/ftb-library-neoforge-2101.1.39.jar",
+    "source": "FTB Maven",
+    "client": "required",
+    "server": "required",
+    "sha512": "e28a5c032395b96ce696800ca7689315074110e572186d8ba08bdf326e0ff43f6fcce942c35a3fe60637dc2bf2077f04b3e222892e60016fe545339dcc7529aa"
+  },
+  {
+    "project": "iron-chests",
+    "projectId": "228756",
+    "version": "16.0.7",
+    "versionId": "5491156",
+    "file": "ironchest-1.21-neoforge-16.0.7.jar",
+    "url": "https://edge.forgecdn.net/files/5491/156/ironchest-1.21-neoforge-16.0.7.jar",
+    "source": "CurseForge",
+    "sourcePage": "https://www.curseforge.com/minecraft/mc-mods/iron-chests/files/5491156",
+    "client": "required",
+    "server": "required",
+    "sha512": "8cd23bf931f3334e1d9c1b0a5fac0e92b022039c4cd01ee0ee95e74310a91588b72a350fb45bf542a242ab2fa271d182721b53a618cf841dd8c56f78ca0e1a97"
+  },
+  {
+    "project": "signboards",
+    "projectId": "1749832",
+    "version": "1.0.0",
+    "versionId": "9223720",
+    "file": "signboards-neoforge-1.21.1.jar",
+    "url": "https://edge.forgecdn.net/files/9223/720/signboards-neoforge-1.21.1.jar",
+    "source": "CurseForge",
+    "sourcePage": "https://www.curseforge.com/minecraft/mc-mods/signboards/files/9223720",
+    "client": "required",
+    "server": "required",
+    "sha512": "60d80b65c5d37dfe1cc42b5e2b0753cd1ce5ed6cde2cc3a66cdb4219f4a4813bd1b1966fe7190750003f897d8c00b25a7c2305977a3af1b3c4b54800d3f9540e"
+  },
+  {
+    "project": "noticeboard",
+    "projectId": "1717088",
+    "version": "1.1.0",
+    "versionId": "9295781",
+    "file": "noticeboard-1.21.1-1.1.0.jar",
+    "url": "https://edge.forgecdn.net/files/9295/781/noticeboard-1.21.1-1.1.0.jar",
+    "source": "CurseForge",
+    "sourcePage": "https://www.curseforge.com/minecraft/mc-mods/noticeboard/files/9295781",
+    "client": "required",
+    "server": "required",
+    "sha512": "ae9d5ed3a7d08fa5fbbc56dcbd9a58e19e370a45cb12acf541d8e701e259b9891a1a7eb7f374a2a39bcd760949fb32a6dfbe8b3e7002d65eb3afbba8399a0e94"
+  },
+  {
+    "project": "simply-light",
+    "projectId": "300331",
+    "version": "1.5.3+1.21.1-b4",
+    "versionId": "6219029",
+    "file": "simplylight-1.5.3+1.21.1-b4.jar",
+    "url": "https://edge.forgecdn.net/files/6219/29/simplylight-1.5.3+1.21.1-b4.jar",
+    "source": "CurseForge",
+    "sourcePage": "https://www.curseforge.com/minecraft/mc-mods/simply-light/files/6219029",
+    "client": "required",
+    "server": "required",
+    "sha512": "52b5f4c76edd388a30f8fe7cf08d9ee4cc5bf4d321c0b671df7a47fd548e9f8285ab9415902240206c1cfd04810424257d03e73eb5ab3a5c5a7d35bde311a081"
+  },
+  {
+    "project": "simply-graves",
+    "projectId": "620112",
+    "version": "1.1.4+mc1.21-b23",
+    "versionId": "5552933",
+    "file": "simplygraves-1.1.4+mc1.21-b23.jar",
+    "url": "https://edge.forgecdn.net/files/5552/933/simplygraves-1.1.4+mc1.21-b23.jar",
+    "source": "CurseForge",
+    "sourcePage": "https://www.curseforge.com/minecraft/mc-mods/simply-graves/files/5552933",
+    "client": "required",
+    "server": "required",
+    "sha512": "c08d8642036d455612c458593f185815ca8959d9ae25db28be05248624573c2d51e9c4a5f1cfb40afc48132c428de6d68ea6d6622b8081d3074b26d4f0e4d237"
+  },
+  {
+    "project": "flux-networks",
+    "projectId": "248020",
+    "version": "8.0.0",
+    "versionId": "6089446",
+    "file": "FluxNetworks-1.21.1-8.0.0.jar",
+    "url": "https://edge.forgecdn.net/files/6089/446/FluxNetworks-1.21.1-8.0.0.jar",
+    "source": "CurseForge",
+    "sourcePage": "https://www.curseforge.com/minecraft/mc-mods/flux-networks/files/6089446",
+    "client": "required",
+    "server": "required",
+    "sha512": "24c3ecae0e49a4e8fa9ca9cf3f99af36d185f95970249f414c8feb2f18fc2e5b3ad2700e17714c1bc5ebadf440de5dbc98fd4113a85fb9364aa2c5922a8366bf"
+  }
+]

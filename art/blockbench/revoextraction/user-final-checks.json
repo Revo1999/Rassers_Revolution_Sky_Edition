@@ -1,0 +1,8 @@
+{
+  "preserved_user_cube_count": 61,
+  "input_centre_physical_height": 24,
+  "game_block_height_centre": 1.5,
+  "gear_pivot_source_y": 8,
+  "shaft_connects_lowest_disc": true,
+  "exposed_axis_aligned_coplanar_pairs": []
+}

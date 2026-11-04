@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/block",
+  "textures": {
+    "particle": "revoindustry:block/power_converter/side"
+  },
+  "elements": []
+}

@@ -1,0 +1,27 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="All Rights Reserved"
+[[mods]]
+modId="revostorage"
+version="${version}"
+displayName="RevoStorage"
+authors="Revo1999"
+description='''Development scaffold for Rassers Revolution: Sky Edition.'''
+[[dependencies.revostorage]]
+modId="neoforge"
+type="required"
+versionRange="[21.1.265,21.2)"
+ordering="NONE"
+side="BOTH"
+[[dependencies.revostorage]]
+modId="minecraft"
+type="required"
+versionRange="[1.21.1]"
+ordering="NONE"
+side="BOTH"
+[[dependencies.revostorage]]
+modId="revolib"
+type="required"
+versionRange="[0.1.0-dev,)"
+ordering="AFTER"
+side="BOTH"

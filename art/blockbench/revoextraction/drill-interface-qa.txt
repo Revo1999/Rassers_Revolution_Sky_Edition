@@ -1,0 +1,10 @@
+Controller opened through useItemOn; slots=0; rpm=32; state=1; progress=1072
+Hatch opened through useItemOn; slots=45; output slots=9; player slots=36
+EMI 3D recipe screen=RecipeScreen; three layers; 26 required blocks including controller
+Full-size guide rendered; selected foundation single-layer view
+Layer controls, single-layer toggle, port highlighting, rotation and zoom exercised
+Guide views captured; actual open/layer/mode/port buttons and Back navigation passed
+Wrong hatch orientation synchronized to controller UI with part, offset and required direction
+Jade compact real server-data HUD passed: generic incomplete status; no orientation fields
+Jade compact real server-data HUD passed: working RPM and progress
+Jade hatch HUD captured with output buffer and auto-output hint

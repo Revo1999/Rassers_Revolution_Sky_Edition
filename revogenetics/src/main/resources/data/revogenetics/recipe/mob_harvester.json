@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "CCC",
+    "LSL",
+    "CBC"
+  ],
+  "key": {
+    "C": {
+      "item": "revocultivation:wooden_casing"
+    },
+    "L": {
+      "item": "minecraft:lever"
+    },
+    "S": {
+      "item": "revocultivation:mob_filter"
+    },
+    "B": {
+      "item": "minecraft:stone_button"
+    }
+  },
+  "result": {
+    "id": "revogenetics:mob_harvester",
+    "count": 1
+  }
+}

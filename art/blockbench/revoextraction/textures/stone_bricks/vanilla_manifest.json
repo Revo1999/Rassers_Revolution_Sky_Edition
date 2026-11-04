@@ -1,0 +1,39 @@
+{
+  "source": "https://github.com/Mojang/bedrock-samples",
+  "ref": "main",
+  "license": "Mojang AB, all rights reserved. Use is subject to the Minecraft EULA and Usage Guidelines.",
+  "requests": [
+    {
+      "spec": "stone_bricks",
+      "kind": "block",
+      "carried": false,
+      "has_carried": false,
+      "faces": {
+        "north": "stone_bricks",
+        "south": "stone_bricks",
+        "east": "stone_bricks",
+        "west": "stone_bricks",
+        "up": "stone_bricks",
+        "down": "stone_bricks"
+      },
+      "atlas_keys": {
+        "stone_bricks": {
+          "path": "blocks/stonebrick",
+          "variants": 1
+        }
+      }
+    }
+  ],
+  "textures": [
+    {
+      "texture": "blocks/stonebrick",
+      "file": "C:\\Users\\Victor\\Documents\\Codex\\2026-10-31\\https-github-com-revo1999-rassers-revolution\\outputs\\Rassers_Revolution_Sky_Edition\\art\\blockbench\\revoextraction\\textures\\stone_bricks\\blocks\\stonebrick.png",
+      "url": "https://cdn.jsdelivr.net/gh/Mojang/bedrock-samples@main/resource_pack/textures/blocks/stonebrick.png",
+      "format": "png",
+      "width": 16,
+      "height": 16,
+      "frames": 1,
+      "variants": 1
+    }
+  ]
+}

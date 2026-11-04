@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "revocultivation:steel_support",
+    "revocultivation:steel_casing",
+    "revocultivation:steel_soil_bed",
+    "revocultivation:steel_item_hatch",
+    "revocultivation:steel_collection_grate",
+    "revocultivation:steel_barred_panel",
+    "revocultivation:steel_mob_filter",
+    "revocultivation:iron_support",
+    "revocultivation:iron_casing",
+    "revocultivation:iron_soil_bed",
+    "revocultivation:iron_item_hatch",
+    "revocultivation:iron_glass_panel",
+    "revocultivation:iron_grow_light",
+    "revocultivation:steel_tree_grower",
+    "revocultivation:iron_greenhouse",
+    "revocultivation:iron_water_tank",
+    "revocultivation:steel_water_tank"
+  ]
+}

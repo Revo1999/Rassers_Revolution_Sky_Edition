@@ -1,0 +1,15 @@
+PASS: real FTB task completion and reward-claim pipeline unlocked title + Simple Hats cosmetic; no items and no auto-equip.
+PASS: independent title/hat equip actions through real UI buttons and server packets.
+PASS: real PlayerName Styler chat and tab/name formatting resolve the equipped Revo title.
+PASS: world player hat layer rendered; armor/inventory remain unchanged.
+PASS: clear/re-equip preserved independent selections; save written for a second real client launch.
+PASS: actual second client/world launch retained unlocks, equipped title and hat.
+PASS: reloaded wardrobe and native hat preview captured.
+PASS: actual second client/world launch retained unlocks, equipped title and hat.
+PASS: reloaded wardrobe and native hat preview captured.
+PASS: actual second client/world launch retained unlocks, equipped title and hat.
+PASS: reloaded wardrobe and native hat preview captured.
+PASS: actual second client/world launch retained unlocks, equipped title and hat.
+PASS: reloaded wardrobe and native hat preview captured.
+PASS: real keybinding opened the wardrobe through a server request.
+PASS: actual keybinding, inventory R button, Back navigation, non-op command, owned filter, paging and search.

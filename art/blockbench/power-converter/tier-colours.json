@@ -1,0 +1,35 @@
+[
+  {
+    "name": "power_converter",
+    "tier": 1,
+    "color": "Blue",
+    "base": [
+      45,
+      86,
+      132
+    ],
+    "cubes": 3
+  },
+  {
+    "name": "advanced_power_converter",
+    "tier": 2,
+    "color": "Green",
+    "base": [
+      54,
+      109,
+      82
+    ],
+    "cubes": 3
+  },
+  {
+    "name": "elite_power_converter",
+    "tier": 3,
+    "color": "Red",
+    "base": [
+      136,
+      57,
+      50
+    ],
+    "cubes": 3
+  }
+]

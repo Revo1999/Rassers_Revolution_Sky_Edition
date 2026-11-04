@@ -1,0 +1,27 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="All Rights Reserved"
+[[mods]]
+modId="revolib"
+version="${version}"
+displayName="RevoLib"
+authors="Revo1999"
+description='''Shared Revo machine interfaces, layouts and optional MI / Forge Energy interoperability.'''
+[[dependencies.revolib]]
+modId="neoforge"
+type="required"
+versionRange="[21.1.265,21.2)"
+ordering="NONE"
+side="BOTH"
+[[dependencies.revolib]]
+modId="modern_industrialization"
+type="optional"
+versionRange="[2.5.11,)"
+ordering="AFTER"
+side="BOTH"
+[[dependencies.revolib]]
+modId="minecraft"
+type="required"
+versionRange="[1.21.1]"
+ordering="NONE"
+side="BOTH"

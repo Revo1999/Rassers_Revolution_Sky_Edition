@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "III",
+    "CWC"
+  ],
+  "key": {
+    "I": {
+      "item": "minecraft:iron_bars"
+    },
+    "C": {
+      "item": "minecraft:cobblestone"
+    },
+    "W": {
+      "item": "revocultivation:wooden_casing"
+    }
+  },
+  "result": {
+    "id": "revocultivation:collection_grate",
+    "count": 2
+  }
+}

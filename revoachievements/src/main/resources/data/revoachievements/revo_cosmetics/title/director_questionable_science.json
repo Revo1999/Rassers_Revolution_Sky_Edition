@@ -1,0 +1,9 @@
+{
+  "kind": "title",
+  "name": "Director of Questionable Science",
+  "description": "The experiment is probably contained.",
+  "unlock_hint": "Complete Contained Curiosity.",
+  "item": "minecraft:name_tag",
+  "color": "#AD92CC",
+  "order": 60
+}

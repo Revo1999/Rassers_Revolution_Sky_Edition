@@ -1,0 +1,50 @@
+{
+  "source": "Minecraft Java 1.21.1 official client assets",
+  "copyright": "Mojang AB; Minecraft content use",
+  "textures": [
+    {
+      "id": "minecraft:block/oak_log",
+      "sha256": "060c93128fb65aa350a84e4b6576e616c47d40211bbe537cfe923a81d072e30c"
+    },
+    {
+      "id": "minecraft:block/oak_log_top",
+      "sha256": "62f38b25ae28b6c4842ee5a83f790394b1ec4d6c6f20dd52044394855346a2a7"
+    },
+    {
+      "id": "minecraft:block/oak_leaves",
+      "sha256": "69c9c7048695e014aee6b8a2c4cb080607bd7a2a5291c06218b8134cbfcdc04f"
+    },
+    {
+      "id": "minecraft:block/dirt",
+      "sha256": "1f0f0e619e7dfe683ea45b9254859f14b0ed5f1debdb242ea878828575be5bf0"
+    },
+    {
+      "id": "minecraft:block/farmland_moist",
+      "sha256": "b8f89f1840546beaccd05f2ad340b54e00223fb755d1225c7e2c4c63eacc1c2e"
+    },
+    {
+      "id": "minecraft:block/glass",
+      "sha256": "cb89c706dce86eac3123cef087d359b5f23098b658a468fb91662b4a9922bcd0"
+    },
+    {
+      "id": "minecraft:block/water_still",
+      "sha256": "5843e8826507c484dfc15d5d255843d041804bcaa2036ed137320610d7fb9af7"
+    },
+    {
+      "id": "minecraft:block/wheat_stage7",
+      "sha256": "3d8c251dd851f06cd019fb02b7f4ab666aa748251c79fb9562c32d2fbb799a0c"
+    },
+    {
+      "id": "minecraft:block/carrots_stage3",
+      "sha256": "6a5b6a44b3978e507f35f4ad9f92d897f60434492b8f75dbc68f4e614834ff15"
+    },
+    {
+      "id": "minecraft:block/potatoes_stage3",
+      "sha256": "b4d33aef464a8d03c4bfc5011f77b4857e808e55269ed866739b1db2fc2279ee"
+    },
+    {
+      "id": "minecraft:block/beetroots_stage3",
+      "sha256": "3cfc3b91dd1c5e00c916898443fdf421444535e1082df22aaa175f4b1e1ea9fd"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "kind": "hat",
+  "name": "Flower Crown",
+  "description": "Management-approved workplace greenery.",
+  "unlock_hint": "Complete A Greener Workplace.",
+  "item": "simplehats:flowercrown",
+  "color": "#D0B785",
+  "order": 120,
+  "requires_mod": "simplehats"
+}

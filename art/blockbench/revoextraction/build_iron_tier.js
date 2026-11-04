@@ -1,0 +1,1 @@
+eval(require('fs').readFileSync('C:/Users/Victor/Documents/Codex/2026-10-31/https-github-com-revo1999-rassers-revolution/outputs/Rassers_Revolution_Sky_Edition/art/blockbench/revoextraction/build_iron_plated.js','utf8'))

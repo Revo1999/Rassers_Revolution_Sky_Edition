@@ -1,0 +1,176 @@
+{
+  "atlases": {
+    "first_tier_atlas.png": [
+      512,
+      512
+    ],
+    "harvester_atlas.png": [
+      512,
+      512
+    ]
+  },
+  "runtime_models": [
+    {
+      "file": "barred_panel.json",
+      "cubes": 8
+    },
+    {
+      "file": "collection_grate.json",
+      "cubes": 5
+    },
+    {
+      "file": "empty.json",
+      "cubes": 0
+    },
+    {
+      "file": "glass_panel.json",
+      "cubes": 5
+    },
+    {
+      "file": "greenhouse_body.json",
+      "cubes": 50
+    },
+    {
+      "file": "greenhouse_controller.json",
+      "cubes": 5
+    },
+    {
+      "file": "item_hatch.json",
+      "cubes": 4
+    },
+    {
+      "file": "mob_filter.json",
+      "cubes": 10
+    },
+    {
+      "file": "mob_harvester_body.json",
+      "cubes": 81
+    },
+    {
+      "file": "mob_harvester_controller.json",
+      "cubes": 5
+    },
+    {
+      "file": "mob_harvester_skeleton.json",
+      "cubes": 6
+    },
+    {
+      "file": "mob_harvester_spider.json",
+      "cubes": 18
+    },
+    {
+      "file": "mob_harvester_zombie.json",
+      "cubes": 6
+    },
+    {
+      "file": "soil_bed.json",
+      "cubes": 1
+    },
+    {
+      "file": "timber_support.json",
+      "cubes": 3
+    },
+    {
+      "file": "tree_grower_body.json",
+      "cubes": 33
+    },
+    {
+      "file": "tree_grower_controller.json",
+      "cubes": 5
+    },
+    {
+      "file": "tree_grower_tree.json",
+      "cubes": 4
+    },
+    {
+      "file": "wooden_casing.json",
+      "cubes": 2
+    }
+  ],
+  "editable_sources": [
+    {
+      "file": "barred_panel.bbmodel",
+      "cubes": 8,
+      "density_checked_faces": 48
+    },
+    {
+      "file": "collection_grate.bbmodel",
+      "cubes": 5,
+      "density_checked_faces": 30
+    },
+    {
+      "file": "glass_panel.bbmodel",
+      "cubes": 5,
+      "density_checked_faces": 30
+    },
+    {
+      "file": "greenhouse_assembled.bbmodel",
+      "cubes": 52,
+      "density_checked_faces": 300
+    },
+    {
+      "file": "greenhouse_controller.bbmodel",
+      "cubes": 5,
+      "density_checked_faces": 30
+    },
+    {
+      "file": "item_hatch.bbmodel",
+      "cubes": 4,
+      "density_checked_faces": 24
+    },
+    {
+      "file": "mob_filter.bbmodel",
+      "cubes": 10,
+      "density_checked_faces": 60
+    },
+    {
+      "file": "mob_harvester_assembled.bbmodel",
+      "cubes": 87,
+      "density_checked_faces": 522
+    },
+    {
+      "file": "mob_harvester_controller.bbmodel",
+      "cubes": 5,
+      "density_checked_faces": 30
+    },
+    {
+      "file": "mob_harvester_skeleton_assembled.bbmodel",
+      "cubes": 67,
+      "density_checked_faces": 402
+    },
+    {
+      "file": "mob_harvester_spider_assembled.bbmodel",
+      "cubes": 79,
+      "density_checked_faces": 474
+    },
+    {
+      "file": "soil_bed.bbmodel",
+      "cubes": 1,
+      "density_checked_faces": 6
+    },
+    {
+      "file": "timber_support.bbmodel",
+      "cubes": 3,
+      "density_checked_faces": 18
+    },
+    {
+      "file": "tree_grower_assembled.bbmodel",
+      "cubes": 37,
+      "density_checked_faces": 222
+    },
+    {
+      "file": "tree_grower_controller.bbmodel",
+      "cubes": 5,
+      "density_checked_faces": 30
+    },
+    {
+      "file": "wooden_casing.bbmodel",
+      "cubes": 2,
+      "density_checked_faces": 12
+    }
+  ],
+  "cage_attachment_checks": 56,
+  "opaque_iron_face_checks": 354,
+  "geometry_preserved": true,
+  "result": "passed"
+}

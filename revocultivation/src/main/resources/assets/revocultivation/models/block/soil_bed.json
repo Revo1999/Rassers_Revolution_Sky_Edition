@@ -1,0 +1,84 @@
+{
+  "credit": "Revo1999; authored in Blockbench through MCP. Vanilla textures copyright Mojang AB.",
+  "texture_size": [
+    512,
+    512
+  ],
+  "textures": {
+    "0": "revocultivation:block/first_tier_atlas",
+    "particle": "revocultivation:block/first_tier_atlas"
+  },
+  "elements": [
+    {
+      "name": "moist_soil",
+      "from": [
+        0,
+        0,
+        0
+      ],
+      "to": [
+        16,
+        16,
+        16
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            4,
+            4,
+            4.5,
+            4.5
+          ],
+          "texture": "#0"
+        },
+        "east": {
+          "uv": [
+            4,
+            4,
+            4.5,
+            4.5
+          ],
+          "texture": "#0"
+        },
+        "south": {
+          "uv": [
+            4,
+            4,
+            4.5,
+            4.5
+          ],
+          "texture": "#0"
+        },
+        "west": {
+          "uv": [
+            4,
+            4,
+            4.5,
+            4.5
+          ],
+          "texture": "#0"
+        },
+        "up": {
+          "uv": [
+            10,
+            0,
+            10.5,
+            0.5
+          ],
+          "texture": "#0"
+        },
+        "down": {
+          "uv": [
+            4,
+            4,
+            4.5,
+            4.5
+          ],
+          "texture": "#0"
+        }
+      }
+    }
+  ],
+  "parent": "minecraft:block/block",
+  "render_type": "minecraft:cutout"
+}

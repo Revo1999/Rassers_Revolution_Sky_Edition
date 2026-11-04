@@ -1,0 +1,10 @@
+{
+  "kind": "hat",
+  "name": "Industrial Crown",
+  "description": "A purely cosmetic management position.",
+  "unlock_hint": "Assigned by Revo quest rewards.",
+  "item": "simplehats:crown",
+  "color": "#D0B785",
+  "order": 170,
+  "requires_mod": "simplehats"
+}

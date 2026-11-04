@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "ae2:guide",
+      "required": false
+    },
+    {
+      "id": "ftbquests:book",
+      "required": false
+    },
+    {
+      "id": "modern_industrialization:guidebook",
+      "required": false
+    },
+    {
+      "id": "revoindustry:revolution_book",
+      "required": false
+    }
+  ]
+}

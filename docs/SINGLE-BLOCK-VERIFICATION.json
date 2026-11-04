@@ -1,0 +1,41 @@
+{
+  "singleBlockMachines": [
+    "Composter",
+    "Silk Worm Cultivator"
+  ],
+  "serverTests": 19,
+  "newMachineTests": 10,
+  "clientQa": "PASS: full-pack client; native one-block models; actual useItemOn menus; automatic timed compost production without power; synchronized retained worm and cocoons; vanilla/MI inventory rows; both EMI production pages; real Jade server data; actual network hand-feeding raises empty/half/full contents; real elapsed cycle shows silk and growing cocoons; ready output and menu collection clear the rendered contents.",
+  "clientScreenshots": 12,
+  "nativeAssets": {
+    "composter": {
+      "sourceCubes": 5,
+      "bakedCubes": 5,
+      "sourceQuads": 30,
+      "sourceTriangles": 60,
+      "dimensions": "1 x 1 x 1",
+      "density": "16px/block",
+      "power": "none"
+    },
+    "silkworm_cultivator": {
+      "sourceCubes": 12,
+      "bakedCubes": 8,
+      "sourceQuads": 72,
+      "sourceTriangles": 144,
+      "dimensions": "1 x 1 x 1",
+      "density": "16px/block",
+      "power": "none"
+    },
+    "liveContents": {
+      "surfaceModels": 6,
+      "wormCubes": 1,
+      "cocoonCubes": 2,
+      "staticContentsRemoved": true
+    },
+    "serverTests": "19 passed (9 existing farms + 10 single-block tests, including fixed passive timers)"
+  },
+  "productionBuild": "passed",
+  "qaClassesExcluded": true,
+  "pack": "C:\\Users\\Victor\\Documents\\Codex\\2026-10-31\\https-github-com-revo1999-rassers-revolution\\outputs\\Rassers-Revolution-Sky-Edition-0.1.20-dev.mrpack",
+  "packSha512": "2c7e1a270515953744862a6439de5cac68210ef525cb729a73dea308b5ad3f98865d7a05fd0990e1688436a288e85fac577726f7d23358e0dcd837c5bc7d0648"
+}

@@ -1,0 +1,39 @@
+{
+  "result": "passed",
+  "geometryAndUvsUnchanged": true,
+  "woodTilePixelsChanged": 400,
+  "woodPalette": [
+    [
+      115,
+      83,
+      49,
+      255
+    ],
+    [
+      140,
+      101,
+      59,
+      255
+    ],
+    [
+      167,
+      124,
+      71,
+      255
+    ],
+    [
+      190,
+      151,
+      91,
+      255
+    ],
+    [
+      209,
+      176,
+      120,
+      255
+    ]
+  ],
+  "otherMaterialsUnchanged": true,
+  "style": "Five-tone clustered pixel dithering, broken stave grain, knots and rubbed patches"
+}

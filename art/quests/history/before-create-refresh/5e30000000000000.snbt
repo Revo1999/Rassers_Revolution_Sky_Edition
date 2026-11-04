@@ -1,0 +1,912 @@
+{
+  "id": "5E30000000000000",
+  "filename": "5e30000000000000",
+  "title": "Chapter 3: MI - The Steam Age",
+  "icon": {
+    "id": "modern_industrialization:bronze_boiler",
+    "count": 1
+  },
+  "order_index": 20,
+  "default_quest_shape": "square",
+  "quests": [
+    {
+      "id": "5E30000000000001",
+      "title": "From Rotation to Steam",
+      "x": 0.0,
+      "y": 0.0,
+      "description": [
+        "Keep Create running: it will make the first bronze needed to build Modern Industrialization steam machines.",
+        "This chapter ends with a working bronze workshop. Electrical machines, steel and the diamond-gated macerator come later.",
+        "The MI manual is freely available in Tips & Guides. EMI contains the actual component and processing recipes."
+      ],
+      "tasks": [
+        {
+          "id": "5E30000000001010",
+          "type": "checkmark"
+        }
+      ],
+      "rewards": [],
+      "dependencies": [
+        "5E20000000000015"
+      ]
+    },
+    {
+      "id": "5E30000000000002",
+      "title": "Copper and Tin",
+      "x": 2.0,
+      "y": 0.0,
+      "description": [
+        "Smelt a few raw copper and raw tin into ingots. Copper will become gears, rods and rotors.",
+        "Keep some RAW copper and tin aside for the first bronze dust."
+      ],
+      "tasks": [
+        {
+          "id": "5E30000000001020",
+          "type": "item",
+          "item": {
+            "id": "minecraft:copper_ingot",
+            "count": 1
+          },
+          "count": 8,
+          "consume_items": false
+        },
+        {
+          "id": "5E30000000001021",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:tin_ingot",
+            "count": 1
+          },
+          "count": 4,
+          "consume_items": false
+        }
+      ],
+      "rewards": [],
+      "dependencies": [
+        "5E30000000000001"
+      ]
+    },
+    {
+      "id": "5E30000000000003",
+      "title": "A Mill for the Metals",
+      "x": 4.0,
+      "y": 0.0,
+      "description": [
+        "Craft a Millstone and give it rotation. This pack adds milling recipes: one Raw Copper -> one Copper Dust; one Raw Tin -> one Tin Dust.",
+        "The same mill turns a fired vanilla Brick into one MI Brick Dust for refractory clay. No crushing wheels are needed."
+      ],
+      "tasks": [
+        {
+          "id": "5E30000000001030",
+          "type": "item",
+          "item": {
+            "id": "create:millstone",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [],
+      "icon": {
+        "id": "create:millstone",
+        "count": 1
+      },
+      "dependencies": [
+        "5E30000000000002"
+      ]
+    },
+    {
+      "id": "5E30000000000004",
+      "title": "A Bowl for Alloys",
+      "x": 6.0,
+      "y": 0.0,
+      "description": [
+        "Place a Basin below the future Mechanical Mixer. Ponder shows the working distance."
+      ],
+      "tasks": [
+        {
+          "id": "5E30000000001040",
+          "type": "item",
+          "item": {
+            "id": "create:basin",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [],
+      "icon": {
+        "id": "create:basin",
+        "count": 1
+      },
+      "dependencies": [
+        "5E30000000000003"
+      ]
+    },
+    {
+      "id": "5E30000000000005",
+      "title": "Mix Before Steam",
+      "x": 8.0,
+      "y": 0.0,
+      "description": [
+        "Craft the Mechanical Mixer and power it at 32 RPM or higher. Make its whisk using pressed iron sheets.",
+        "Give this branch enough stress capacity alongside the drill. The bronze recipe is unheated, so no Blaze Burner is needed."
+      ],
+      "tasks": [
+        {
+          "id": "5E30000000001050",
+          "type": "item",
+          "item": {
+            "id": "create:mechanical_mixer",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [],
+      "icon": {
+        "id": "create:mechanical_mixer",
+        "count": 1
+      },
+      "dependencies": [
+        "5E30000000000004"
+      ]
+    },
+    {
+      "id": "5E30000000000006",
+      "title": "Three Copper, One Tin",
+      "x": 10.0,
+      "y": 0.0,
+      "description": [
+        "Mill twelve raw copper and four raw tin. Mix at a ratio of THREE Copper Dust to ONE Tin Dust.",
+        "One unheated batch gives four Bronze Dust. These quests detect items without consuming them; you can then put the same dust in the basin."
+      ],
+      "tasks": [
+        {
+          "id": "5E30000000001060",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:copper_dust",
+            "count": 1
+          },
+          "count": 12,
+          "consume_items": false
+        },
+        {
+          "id": "5E30000000001061",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:tin_dust",
+            "count": 1
+          },
+          "count": 4,
+          "consume_items": false
+        }
+      ],
+      "rewards": [],
+      "dependencies": [
+        "5E30000000000005"
+      ]
+    },
+    {
+      "id": "5E30000000000007",
+      "title": "The First Bronze Alloy",
+      "x": 12.0,
+      "y": 0.0,
+      "description": [
+        "Run the Create mixing recipe: 3 copper dust + 1 tin dust -> 4 bronze dust.",
+        "This is the bridge into MI; its own bronze mixer can take over after steam is available."
+      ],
+      "tasks": [
+        {
+          "id": "5E30000000001070",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:bronze_dust",
+            "count": 1
+          },
+          "count": 16,
+          "consume_items": false
+        }
+      ],
+      "rewards": [],
+      "icon": {
+        "id": "modern_industrialization:bronze_dust",
+        "count": 1
+      },
+      "dependencies": [
+        "5E30000000000006"
+      ]
+    },
+    {
+      "id": "5E30000000000008",
+      "title": "Welcome to the Bronze Age",
+      "x": 14.0,
+      "y": 0.0,
+      "description": [
+        "Smelt Bronze Dust into Bronze Ingots. Continue producing bronze; the complete workshop needs several batches."
+      ],
+      "tasks": [
+        {
+          "id": "5E30000000001080",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:bronze_ingot",
+            "count": 1
+          },
+          "count": 16,
+          "consume_items": false
+        }
+      ],
+      "rewards": [],
+      "icon": {
+        "id": "modern_industrialization:bronze_ingot",
+        "count": 1
+      },
+      "dependencies": [
+        "5E30000000000007"
+      ]
+    },
+    {
+      "id": "5E30000000000009",
+      "title": "The Forge Hammer",
+      "x": 16.0,
+      "y": 0.0,
+      "description": [
+        "Craft the MI Forge Hammer block from iron ingots and heavy weighted pressure plates.",
+        "Its interface offers manual material shaping before powered machines. Recipes without a hand tool are less efficient but need no extra hammer item.",
+        "Use its recipe selector to make copper/bronze rods, rings, bolts and curved plates. This block is different from your stone hammer."
+      ],
+      "tasks": [
+        {
+          "id": "5E30000000001090",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:forge_hammer",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [],
+      "icon": {
+        "id": "modern_industrialization:forge_hammer",
+        "count": 1
+      },
+      "dependencies": [
+        "5E30000000000008"
+      ]
+    },
+    {
+      "id": "5E3000000000000A",
+      "title": "Press the Bronze",
+      "x": 18.0,
+      "y": 0.0,
+      "description": [
+        "The Create Mechanical Press turns one Bronze Ingot into one Bronze Plate. This keeps your original workshop useful.",
+        "You can also use the native Forge Hammer recipes; check their ingredient counts in EMI."
+      ],
+      "tasks": [
+        {
+          "id": "5E300000000010A0",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:bronze_plate",
+            "count": 1
+          },
+          "count": 16,
+          "consume_items": false
+        }
+      ],
+      "rewards": [],
+      "icon": {
+        "id": "modern_industrialization:bronze_plate",
+        "count": 1
+      },
+      "dependencies": [
+        "5E30000000000009"
+      ]
+    },
+    {
+      "id": "5E3000000000000B",
+      "title": "Bend the Metal",
+      "x": 20.0,
+      "y": 0.0,
+      "description": [
+        "Use the MI Forge Hammer to make Bronze Curved Plates. Its tool-free recipe uses two bronze ingots per curved plate.",
+        "The six plates are the walls of the first fluid-pipe batch. A hand hammer can improve manual shaping later."
+      ],
+      "tasks": [
+        {
+          "id": "5E300000000010B0",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:bronze_curved_plate",
+            "count": 1
+          },
+          "count": 6,
+          "consume_items": false
+        }
+      ],
+      "rewards": [],
+      "icon": {
+        "id": "modern_industrialization:bronze_curved_plate",
+        "count": 1
+      },
+      "dependencies": [
+        "5E3000000000000A"
+      ]
+    },
+    {
+      "id": "5E3000000000000C",
+      "title": "Small Parts, Big Machines",
+      "x": 18.0,
+      "y": 3.0,
+      "description": [
+        "Make copper rods, rings and bolts in the Forge Hammer. Press copper ingots into Create Copper Sheets for recipes accepting copper plates.",
+        "Copper gears use plates, bolts and a ring. Rotor blades use curved copper plates and a copper rod. Use EMI to work backwards from each part."
+      ],
+      "tasks": [
+        {
+          "id": "5E300000000010C0",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:copper_rod",
+            "count": 1
+          },
+          "count": 4,
+          "consume_items": false
+        },
+        {
+          "id": "5E300000000010C1",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:copper_ring",
+            "count": 1
+          },
+          "count": 3,
+          "consume_items": false
+        },
+        {
+          "id": "5E300000000010C2",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:copper_bolt",
+            "count": 1
+          },
+          "count": 8,
+          "consume_items": false
+        }
+      ],
+      "rewards": [],
+      "dependencies": [
+        "5E30000000000009"
+      ]
+    },
+    {
+      "id": "5E3000000000000D",
+      "title": "Copper Gears",
+      "x": 20.0,
+      "y": 3.0,
+      "description": [
+        "Craft copper gears for the compressor. Make more for the mixer and water pump later."
+      ],
+      "tasks": [
+        {
+          "id": "5E300000000010D0",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:copper_gear",
+            "count": 1
+          },
+          "count": 2,
+          "consume_items": false
+        }
+      ],
+      "rewards": [],
+      "icon": {
+        "id": "modern_industrialization:copper_gear",
+        "count": 1
+      },
+      "dependencies": [
+        "5E3000000000000C"
+      ]
+    },
+    {
+      "id": "5E3000000000000E",
+      "title": "Blades and Rotors",
+      "x": 22.0,
+      "y": 3.0,
+      "description": [
+        "Shape curved copper plates, craft blades, then assemble rotors with a ring and bolts.",
+        "Two copper rotors go into each batch of sixteen basic MI fluid pipes."
+      ],
+      "tasks": [
+        {
+          "id": "5E300000000010E0",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:copper_rotor",
+            "count": 1
+          },
+          "count": 2,
+          "consume_items": false
+        }
+      ],
+      "rewards": [],
+      "icon": {
+        "id": "modern_industrialization:copper_rotor",
+        "count": 1
+      },
+      "dependencies": [
+        "5E3000000000000C"
+      ]
+    },
+    {
+      "id": "5E3000000000000F",
+      "title": "A Path for the Steam",
+      "x": 24.0,
+      "y": 3.0,
+      "description": [
+        "Craft sixteen MI Fluid Pipes from six Bronze Curved Plates, two Copper Rotors and one Glass Pane.",
+        "Craft the MI Wrench from six bronze plates. Right-click the centre of a pipe with it to force a connection to an empty machine; right-click connections to change them. Different pipe colours stay separate.",
+        "These carry FLUIDS. Steam machines do not accept Create shafts or Forge Energy."
+      ],
+      "tasks": [
+        {
+          "id": "5E300000000010F0",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:fluid_pipe",
+            "count": 1
+          },
+          "count": 16,
+          "consume_items": false
+        },
+        {
+          "id": "5E300000000010F1",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:wrench",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [],
+      "icon": {
+        "id": "modern_industrialization:fluid_pipe",
+        "count": 1
+      },
+      "dependencies": [
+        "5E3000000000000B",
+        "5E3000000000000E"
+      ]
+    },
+    {
+      "id": "5E30000000000010",
+      "title": "Refractory Ingredients",
+      "x": 14.0,
+      "y": -3.0,
+      "description": [
+        "Smelt clay balls into vanilla Bricks, then mill the bricks into Brick Dust.",
+        "Keep unfired clay balls too. Your rain barrel and dust loop continue supplying all this clay."
+      ],
+      "tasks": [
+        {
+          "id": "5E30000000001100",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:brick_dust",
+            "count": 1
+          },
+          "count": 8,
+          "consume_items": false
+        }
+      ],
+      "rewards": [],
+      "icon": {
+        "id": "modern_industrialization:brick_dust",
+        "count": 1
+      },
+      "dependencies": [
+        "5E30000000000003",
+        "5E30000000000008"
+      ]
+    },
+    {
+      "id": "5E30000000000011",
+      "title": "Clay That Takes the Heat",
+      "x": 16.0,
+      "y": -3.0,
+      "description": [
+        "Craft two Brick Dust and two Clay Balls into three Fire Clay Dust. Four batches make twelve dust."
+      ],
+      "tasks": [
+        {
+          "id": "5E30000000001110",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:fire_clay_dust",
+            "count": 1
+          },
+          "count": 12,
+          "consume_items": false
+        }
+      ],
+      "rewards": [],
+      "icon": {
+        "id": "modern_industrialization:fire_clay_dust",
+        "count": 1
+      },
+      "dependencies": [
+        "5E30000000000010"
+      ]
+    },
+    {
+      "id": "5E30000000000012",
+      "title": "Fire the Boiler Lining",
+      "x": 18.0,
+      "y": -3.0,
+      "description": [
+        "Smelt the twelve Fire Clay Dust into twelve Fire Clay Bricks, then craft four bricks into each Fire Clay Bricks block.",
+        "The boiler needs three of these blocks."
+      ],
+      "tasks": [
+        {
+          "id": "5E30000000001120",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:fire_clay_bricks",
+            "count": 1
+          },
+          "count": 3,
+          "consume_items": false
+        }
+      ],
+      "rewards": [],
+      "icon": {
+        "id": "modern_industrialization:fire_clay_bricks",
+        "count": 1
+      },
+      "dependencies": [
+        "5E30000000000011"
+      ]
+    },
+    {
+      "id": "5E30000000000013",
+      "title": "A Bronze Tank",
+      "x": 20.0,
+      "y": -3.0,
+      "description": [
+        "Craft the Bronze Tank with eight Bronze Plates around a glass block. It is a component in the boiler recipe.",
+        "Craft another if you want a separate fluid buffer."
+      ],
+      "tasks": [
+        {
+          "id": "5E30000000001130",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:bronze_tank",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [],
+      "icon": {
+        "id": "modern_industrialization:bronze_tank",
+        "count": 1
+      },
+      "dependencies": [
+        "5E3000000000000A"
+      ]
+    },
+    {
+      "id": "5E30000000000014",
+      "title": "The First Boiler",
+      "x": 22.0,
+      "y": -3.0,
+      "description": [
+        "Assemble the Bronze Boiler from its tank, furnace, bronze plates and refractory base.",
+        "Supply WATER and solid FUEL such as coal or charcoal. The boiler converts water into steam over time.",
+        "Use the native MI interface and manual to identify input and output tanks. The Create crank is not a boiler input."
+      ],
+      "tasks": [
+        {
+          "id": "5E30000000001140",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:bronze_boiler",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [],
+      "icon": {
+        "id": "modern_industrialization:bronze_boiler",
+        "count": 1
+      },
+      "dependencies": [
+        "5E30000000000013",
+        "5E30000000000012"
+      ]
+    },
+    {
+      "id": "5E30000000000015",
+      "title": "Raise Steam",
+      "x": 26.0,
+      "y": 0.0,
+      "description": [
+        "Fill the boiler with water, add fuel and let it heat. Connect its steam output to a separate steam pipe network.",
+        "Keep the water supply and steam line separate; set the fluid filters/connections using MI pipe controls if sharing pipe space.",
+        "Confirm after steam is visibly leaving the boiler. Keep it supplied with water and fuel."
+      ],
+      "tasks": [
+        {
+          "id": "5E30000000001150",
+          "type": "checkmark"
+        }
+      ],
+      "rewards": [],
+      "dependencies": [
+        "5E30000000000014",
+        "5E3000000000000F"
+      ]
+    },
+    {
+      "id": "5E30000000000016",
+      "title": "A Casing for the Workshop",
+      "x": 24.0,
+      "y": 6.0,
+      "description": [
+        "Make a Bronze Gear using bronze plates, ring and bolts, then surround the gear with eight Bronze Plates.",
+        "Each bronze processing machine consumes a casing. Keep your alloy line working."
+      ],
+      "tasks": [
+        {
+          "id": "5E30000000001160",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:bronze_machine_casing",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [],
+      "icon": {
+        "id": "modern_industrialization:bronze_machine_casing",
+        "count": 1
+      },
+      "dependencies": [
+        "5E3000000000000A",
+        "5E30000000000009"
+      ]
+    },
+    {
+      "id": "5E30000000000017",
+      "title": "Your First Steam Machine",
+      "x": 28.0,
+      "y": 0.0,
+      "description": [
+        "Craft the Bronze Compressor with a Forge Hammer, copper rods/gears, a Bronze Machine Casing and three MI Fluid Pipes.",
+        "Connect steam to its fluid input and choose a valid processing recipe from EMI."
+      ],
+      "tasks": [
+        {
+          "id": "5E30000000001170",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:bronze_compressor",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [],
+      "icon": {
+        "id": "modern_industrialization:bronze_compressor",
+        "count": 1
+      },
+      "dependencies": [
+        "5E30000000000016",
+        "5E3000000000000D",
+        "5E30000000000015"
+      ]
+    },
+    {
+      "id": "5E30000000000018",
+      "title": "Let Steam Shape It",
+      "x": 30.0,
+      "y": 0.0,
+      "description": [
+        "Run a native compressor recipe using steam. Check EMI for the exact ingot, double-ingot or plate recipe supported by this version.",
+        "Confirm after collecting the first result. You now have a working MI steam workshop."
+      ],
+      "tasks": [
+        {
+          "id": "5E30000000001180",
+          "type": "checkmark"
+        }
+      ],
+      "rewards": [],
+      "dependencies": [
+        "5E30000000000017"
+      ]
+    },
+    {
+      "id": "5E30000000000019",
+      "title": "The Alloy Line Moves to MI",
+      "x": 30.0,
+      "y": 3.0,
+      "description": [
+        "Build a Bronze Mixer, connect steam and move copper/tin dust mixing to MI when convenient.",
+        "The Create mixer remains a valid backup and still makes andesite alloy and other Create recipes."
+      ],
+      "tasks": [
+        {
+          "id": "5E30000000001190",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:bronze_mixer",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [],
+      "icon": {
+        "id": "modern_industrialization:bronze_mixer",
+        "count": 1
+      },
+      "dependencies": [
+        "5E30000000000018",
+        "5E3000000000000E"
+      ]
+    },
+    {
+      "id": "5E3000000000001A",
+      "title": "Water on Tap",
+      "x": 28.0,
+      "y": -3.0,
+      "description": [
+        "Build and supply steam to an MI Bronze Water Pump. Surround it horizontally with water source blocks; more adjacent sources improve its output.",
+        "Pipe that water into your boiler on a separate water network. Keep a starting water reserve so an empty system can be restarted."
+      ],
+      "tasks": [
+        {
+          "id": "5E300000000011A0",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:bronze_water_pump",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [],
+      "icon": {
+        "id": "modern_industrialization:bronze_water_pump",
+        "count": 1
+      },
+      "dependencies": [
+        "5E30000000000018",
+        "5E3000000000000E"
+      ]
+    },
+    {
+      "id": "5E3000000000001B",
+      "title": "A Foundation for Steel",
+      "x": 32.0,
+      "y": 0.0,
+      "description": [
+        "Craft the Coke Oven controller from bricks around a furnace. This is a MULTIBLOCK: also prepare 21 Bricks blocks, one bronze item input hatch, one item output hatch and one fluid input hatch.",
+        "Follow the 3D Coke Oven shape in the MI guidebook. Hold the MI Wrench to see missing blocks and structure errors. Hatches replace valid casing positions.",
+        "The oven needs STEAM through the fluid input hatch and COAL through the item input. Take Coke from the item output. An optional fluid output hatch replaces another brick to collect creosote."
+      ],
+      "tasks": [
+        {
+          "id": "5E300000000011B0",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:coke_oven",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "5E300000000011B1",
+          "type": "item",
+          "item": {
+            "id": "minecraft:bricks",
+            "count": 1
+          },
+          "count": 21,
+          "consume_items": false
+        },
+        {
+          "id": "5E300000000011B2",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:bronze_item_input_hatch",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "5E300000000011B3",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:bronze_item_output_hatch",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "5E300000000011B4",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:bronze_fluid_input_hatch",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [],
+      "icon": {
+        "id": "modern_industrialization:coke_oven",
+        "count": 1
+      },
+      "dependencies": [
+        "5E30000000000018"
+      ]
+    },
+    {
+      "id": "5E3000000000001C",
+      "title": "Ready for the Next Revolution",
+      "x": 34.0,
+      "y": 0.0,
+      "description": [
+        "Finish the Coke Oven multiblock, supply steam and coal through its hatches, then collect Coke. Maintain your drill, bronze supply and working steam line.",
+        "This is the end of the current steam chapter. Steel, diamond-gated maceration and electricity will follow in a later chapter."
+      ],
+      "tasks": [
+        {
+          "id": "5E300000000011C0",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:coke",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [],
+      "icon": {
+        "id": "modern_industrialization:coke",
+        "count": 1
+      },
+      "dependencies": [
+        "5E3000000000001B"
+      ]
+    }
+  ]
+}

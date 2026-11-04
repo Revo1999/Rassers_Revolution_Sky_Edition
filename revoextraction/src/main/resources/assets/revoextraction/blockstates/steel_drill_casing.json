@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "formed=false": {
+      "model": "revoextraction:block/steel_drill_casing"
+    },
+    "formed=true": {
+      "model": "revoextraction:block/empty"
+    }
+  }
+}

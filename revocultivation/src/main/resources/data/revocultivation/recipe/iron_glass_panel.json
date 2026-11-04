@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "revocultivation:glass_panel"
+    },
+    {
+      "tag": "c:plates/iron"
+    }
+  ],
+  "result": {
+    "id": "revocultivation:iron_glass_panel",
+    "count": 1
+  }
+}

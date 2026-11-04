@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "formed=false,lit=false": {
+      "model": "revocultivation:block/iron_grow_light"
+    },
+    "formed=false,lit=true": {
+      "model": "revocultivation:block/iron_grow_light"
+    },
+    "formed=true,lit=false": {
+      "model": "revocultivation:block/empty"
+    },
+    "formed=true,lit=true": {
+      "model": "revocultivation:block/empty"
+    }
+  }
+}

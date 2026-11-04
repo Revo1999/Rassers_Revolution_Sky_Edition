@@ -1,0 +1,113 @@
+{
+  "source": "https://github.com/Mojang/bedrock-samples",
+  "ref": "main",
+  "license": "Mojang AB, all rights reserved. Use is subject to the Minecraft EULA and Usage Guidelines.",
+  "requests": [
+    {
+      "spec": "oak_log",
+      "kind": "block",
+      "carried": false,
+      "has_carried": false,
+      "faces": {
+        "down": "oak_log_top",
+        "north": "oak_log_side",
+        "south": "oak_log_side",
+        "east": "oak_log_side",
+        "west": "oak_log_side",
+        "up": "oak_log_top"
+      },
+      "atlas_keys": {
+        "oak_log_top": {
+          "path": "blocks/log_oak_top",
+          "variants": 1
+        },
+        "oak_log_side": {
+          "path": "blocks/log_oak",
+          "variants": 1
+        }
+      }
+    },
+    {
+      "spec": "oak_planks",
+      "kind": "block",
+      "carried": false,
+      "has_carried": false,
+      "faces": {
+        "north": "oak_planks",
+        "south": "oak_planks",
+        "east": "oak_planks",
+        "west": "oak_planks",
+        "up": "oak_planks",
+        "down": "oak_planks"
+      },
+      "atlas_keys": {
+        "oak_planks": {
+          "path": "blocks/planks_oak",
+          "variants": 1
+        }
+      }
+    },
+    {
+      "spec": "cobblestone",
+      "kind": "block",
+      "carried": false,
+      "has_carried": false,
+      "faces": {
+        "north": "cobblestone",
+        "south": "cobblestone",
+        "east": "cobblestone",
+        "west": "cobblestone",
+        "up": "cobblestone",
+        "down": "cobblestone"
+      },
+      "atlas_keys": {
+        "cobblestone": {
+          "path": "blocks/cobblestone",
+          "variants": 1
+        }
+      }
+    }
+  ],
+  "textures": [
+    {
+      "texture": "blocks/log_oak_top",
+      "file": "C:\\Users\\Victor\\Documents\\Codex\\2026-10-31\\https-github-com-revo1999-rassers-revolution\\outputs\\Rassers_Revolution_Sky_Edition\\art\\blockbench\\revoextraction\\textures\\vanilla\\blocks\\log_oak_top.png",
+      "url": "https://cdn.jsdelivr.net/gh/Mojang/bedrock-samples@main/resource_pack/textures/blocks/log_oak_top.png",
+      "format": "png",
+      "width": 16,
+      "height": 16,
+      "frames": 1,
+      "variants": 1
+    },
+    {
+      "texture": "blocks/log_oak",
+      "file": "C:\\Users\\Victor\\Documents\\Codex\\2026-10-31\\https-github-com-revo1999-rassers-revolution\\outputs\\Rassers_Revolution_Sky_Edition\\art\\blockbench\\revoextraction\\textures\\vanilla\\blocks\\log_oak.png",
+      "url": "https://cdn.jsdelivr.net/gh/Mojang/bedrock-samples@main/resource_pack/textures/blocks/log_oak.png",
+      "format": "png",
+      "width": 16,
+      "height": 16,
+      "frames": 1,
+      "variants": 1
+    },
+    {
+      "texture": "blocks/planks_oak",
+      "file": "C:\\Users\\Victor\\Documents\\Codex\\2026-10-31\\https-github-com-revo1999-rassers-revolution\\outputs\\Rassers_Revolution_Sky_Edition\\art\\blockbench\\revoextraction\\textures\\vanilla\\blocks\\planks_oak.png",
+      "url": "https://cdn.jsdelivr.net/gh/Mojang/bedrock-samples@main/resource_pack/textures/blocks/planks_oak.png",
+      "format": "png",
+      "width": 16,
+      "height": 16,
+      "frames": 1,
+      "variants": 1
+    },
+    {
+      "texture": "blocks/cobblestone",
+      "file": "C:\\Users\\Victor\\Documents\\Codex\\2026-10-31\\https-github-com-revo1999-rassers-revolution\\outputs\\Rassers_Revolution_Sky_Edition\\art\\blockbench\\revoextraction\\textures\\vanilla\\blocks\\cobblestone.png",
+      "url": "https://cdn.jsdelivr.net/gh/Mojang/bedrock-samples@main/resource_pack/textures/blocks/cobblestone.png",
+      "format": "png",
+      "width": 16,
+      "height": 16,
+      "frames": 1,
+      "variants": 1
+    }
+  ]
+}

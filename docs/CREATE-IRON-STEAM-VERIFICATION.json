@@ -1,0 +1,26 @@
+{
+  "manualPolicyConfigured": true,
+  "result": "passed",
+  "scope": "compilation, native art and static source/pack checks only",
+  "newQuests": 57,
+  "totalQuests": 103,
+  "chapters": 5,
+  "uniqueIds": true,
+  "acyclicDependencies": true,
+  "taskItemAssetsResolved": true,
+  "ironRuntimeModels": {
+    "iron_drill_body": 74,
+    "iron_drill_casing": 6,
+    "iron_drill_controller": 8,
+    "iron_drill_core": 12,
+    "iron_drill_drill_bit": 8,
+    "iron_drill_drive_gear": 2,
+    "iron_drill_input": 7,
+    "iron_drill_output_hatch": 11,
+    "iron_drill_support": 9
+  },
+  "pack": "C:\\Users\\Victor\\Documents\\Codex\\2026-10-31\\https-github-com-revo1999-rassers-revolution\\outputs\\Rassers-Revolution-Sky-Edition-0.1.24-dev.mrpack",
+  "gameplayTested": false,
+  "gameTestsRun": false,
+  "clientLaunched": false
+}

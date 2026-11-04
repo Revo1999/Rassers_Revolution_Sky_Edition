@@ -1,0 +1,193 @@
+{
+  "source": "https://github.com/Mojang/bedrock-samples",
+  "ref": "main",
+  "license": "Mojang AB, all rights reserved. Use is subject to the Minecraft EULA and Usage Guidelines.",
+  "requests": [
+    {
+      "spec": "dirt",
+      "kind": "block",
+      "carried": false,
+      "has_carried": false,
+      "faces": {
+        "north": "flattened_dirt",
+        "south": "flattened_dirt",
+        "east": "flattened_dirt",
+        "west": "flattened_dirt",
+        "up": "flattened_dirt",
+        "down": "flattened_dirt"
+      },
+      "atlas_keys": {
+        "flattened_dirt": {
+          "path": "blocks/dirt",
+          "variants": 1
+        }
+      }
+    },
+    {
+      "spec": "farmland",
+      "kind": "block",
+      "carried": false,
+      "has_carried": false,
+      "faces": {
+        "down": "farmland_side",
+        "north": "farmland_side",
+        "south": "farmland_side",
+        "east": "farmland_side",
+        "west": "farmland_side",
+        "up": "farmland"
+      },
+      "atlas_keys": {
+        "farmland_side": {
+          "path": "blocks/dirt",
+          "variants": 1
+        },
+        "farmland": {
+          "path": "blocks/farmland_wet",
+          "variants": 2
+        }
+      }
+    },
+    {
+      "spec": "glass",
+      "kind": "block",
+      "carried": false,
+      "has_carried": false,
+      "faces": {
+        "north": "glass",
+        "south": "glass",
+        "east": "glass",
+        "west": "glass",
+        "up": "glass",
+        "down": "glass"
+      },
+      "atlas_keys": {
+        "glass": {
+          "path": "blocks/glass",
+          "variants": 1
+        }
+      }
+    },
+    {
+      "spec": "oak_leaves",
+      "kind": "block",
+      "carried": true,
+      "has_carried": true,
+      "faces": {
+        "north": "oak_leaves_carried",
+        "south": "oak_leaves_carried",
+        "east": "oak_leaves_carried",
+        "west": "oak_leaves_carried",
+        "up": "oak_leaves_carried",
+        "down": "oak_leaves_carried"
+      },
+      "atlas_keys": {
+        "oak_leaves_carried": {
+          "path": "blocks/leaves_oak_carried",
+          "variants": 1
+        }
+      }
+    },
+    {
+      "spec": "oak_sapling",
+      "kind": "block",
+      "carried": false,
+      "has_carried": false,
+      "faces": {
+        "north": "oak_sapling",
+        "south": "oak_sapling",
+        "east": "oak_sapling",
+        "west": "oak_sapling",
+        "up": "oak_sapling",
+        "down": "oak_sapling"
+      },
+      "atlas_keys": {
+        "oak_sapling": {
+          "path": "blocks/sapling_oak",
+          "variants": 1
+        }
+      }
+    },
+    {
+      "spec": "wheat",
+      "kind": "block",
+      "carried": false,
+      "has_carried": false,
+      "faces": {
+        "north": "wheat",
+        "south": "wheat",
+        "east": "wheat",
+        "west": "wheat",
+        "up": "wheat",
+        "down": "wheat"
+      },
+      "atlas_keys": {
+        "wheat": {
+          "path": "blocks/wheat_stage_0",
+          "variants": 8
+        }
+      }
+    }
+  ],
+  "textures": [
+    {
+      "texture": "blocks/dirt",
+      "file": "C:\\Users\\Victor\\Documents\\Codex\\2026-10-31\\https-github-com-revo1999-rassers-revolution\\outputs\\Rassers_Revolution_Sky_Edition\\art\\blockbench\\first-tier-machines\\textures\\vanilla\\blocks\\dirt.png",
+      "url": "https://cdn.jsdelivr.net/gh/Mojang/bedrock-samples@main/resource_pack/textures/blocks/dirt.png",
+      "format": "png",
+      "width": 16,
+      "height": 16,
+      "frames": 1,
+      "variants": 1
+    },
+    {
+      "texture": "blocks/farmland_wet",
+      "file": "C:\\Users\\Victor\\Documents\\Codex\\2026-10-31\\https-github-com-revo1999-rassers-revolution\\outputs\\Rassers_Revolution_Sky_Edition\\art\\blockbench\\first-tier-machines\\textures\\vanilla\\blocks\\farmland_wet.png",
+      "url": "https://cdn.jsdelivr.net/gh/Mojang/bedrock-samples@main/resource_pack/textures/blocks/farmland_wet.png",
+      "format": "png",
+      "width": 16,
+      "height": 16,
+      "frames": 1,
+      "variants": 2
+    },
+    {
+      "texture": "blocks/glass",
+      "file": "C:\\Users\\Victor\\Documents\\Codex\\2026-10-31\\https-github-com-revo1999-rassers-revolution\\outputs\\Rassers_Revolution_Sky_Edition\\art\\blockbench\\first-tier-machines\\textures\\vanilla\\blocks\\glass.png",
+      "url": "https://cdn.jsdelivr.net/gh/Mojang/bedrock-samples@main/resource_pack/textures/blocks/glass.png",
+      "format": "png",
+      "width": 16,
+      "height": 16,
+      "frames": 1,
+      "variants": 1
+    },
+    {
+      "texture": "blocks/leaves_oak_carried",
+      "file": "C:\\Users\\Victor\\Documents\\Codex\\2026-10-31\\https-github-com-revo1999-rassers-revolution\\outputs\\Rassers_Revolution_Sky_Edition\\art\\blockbench\\first-tier-machines\\textures\\vanilla\\blocks\\leaves_oak_carried.tga",
+      "url": "https://cdn.jsdelivr.net/gh/Mojang/bedrock-samples@main/resource_pack/textures/blocks/leaves_oak_carried.tga",
+      "format": "tga",
+      "width": 16,
+      "height": 16,
+      "frames": 1,
+      "variants": 1
+    },
+    {
+      "texture": "blocks/sapling_oak",
+      "file": "C:\\Users\\Victor\\Documents\\Codex\\2026-10-31\\https-github-com-revo1999-rassers-revolution\\outputs\\Rassers_Revolution_Sky_Edition\\art\\blockbench\\first-tier-machines\\textures\\vanilla\\blocks\\sapling_oak.png",
+      "url": "https://cdn.jsdelivr.net/gh/Mojang/bedrock-samples@main/resource_pack/textures/blocks/sapling_oak.png",
+      "format": "png",
+      "width": 16,
+      "height": 16,
+      "frames": 1,
+      "variants": 1
+    },
+    {
+      "texture": "blocks/wheat_stage_0",
+      "file": "C:\\Users\\Victor\\Documents\\Codex\\2026-10-31\\https-github-com-revo1999-rassers-revolution\\outputs\\Rassers_Revolution_Sky_Edition\\art\\blockbench\\first-tier-machines\\textures\\vanilla\\blocks\\wheat_stage_0.png",
+      "url": "https://cdn.jsdelivr.net/gh/Mojang/bedrock-samples@main/resource_pack/textures/blocks/wheat_stage_0.png",
+      "format": "png",
+      "width": 16,
+      "height": 16,
+      "frames": 1,
+      "variants": 8
+    }
+  ]
+}

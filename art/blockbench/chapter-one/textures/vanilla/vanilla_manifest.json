@@ -1,0 +1,83 @@
+{
+  "source": "https://github.com/Mojang/bedrock-samples",
+  "ref": "main",
+  "license": "Mojang AB, all rights reserved. Use is subject to the Minecraft EULA and Usage Guidelines.",
+  "requests": [
+    {
+      "spec": "clay",
+      "kind": "block",
+      "carried": false,
+      "has_carried": false,
+      "faces": {
+        "north": "clay",
+        "south": "clay",
+        "east": "clay",
+        "west": "clay",
+        "up": "clay",
+        "down": "clay"
+      },
+      "atlas_keys": {
+        "clay": {
+          "path": "blocks/clay",
+          "variants": 1
+        }
+      }
+    },
+    {
+      "spec": "quartz_block",
+      "kind": "block",
+      "carried": false,
+      "has_carried": false,
+      "faces": {
+        "down": "flattened_quartz_block_top",
+        "north": "flattened_quartz_block_side",
+        "south": "flattened_quartz_block_side",
+        "east": "flattened_quartz_block_side",
+        "west": "flattened_quartz_block_side",
+        "up": "flattened_quartz_block_top"
+      },
+      "atlas_keys": {
+        "flattened_quartz_block_top": {
+          "path": "blocks/quartz_block_top",
+          "variants": 1
+        },
+        "flattened_quartz_block_side": {
+          "path": "blocks/quartz_block_side",
+          "variants": 1
+        }
+      }
+    }
+  ],
+  "textures": [
+    {
+      "texture": "blocks/clay",
+      "file": "C:\\Users\\Victor\\Documents\\Codex\\2026-10-31\\https-github-com-revo1999-rassers-revolution\\outputs\\Rassers_Revolution_Sky_Edition\\art\\blockbench\\chapter-one\\textures\\vanilla\\blocks\\clay.png",
+      "url": "https://cdn.jsdelivr.net/gh/Mojang/bedrock-samples@main/resource_pack/textures/blocks/clay.png",
+      "format": "png",
+      "width": 16,
+      "height": 16,
+      "frames": 1,
+      "variants": 1
+    },
+    {
+      "texture": "blocks/quartz_block_top",
+      "file": "C:\\Users\\Victor\\Documents\\Codex\\2026-10-31\\https-github-com-revo1999-rassers-revolution\\outputs\\Rassers_Revolution_Sky_Edition\\art\\blockbench\\chapter-one\\textures\\vanilla\\blocks\\quartz_block_top.png",
+      "url": "https://cdn.jsdelivr.net/gh/Mojang/bedrock-samples@main/resource_pack/textures/blocks/quartz_block_top.png",
+      "format": "png",
+      "width": 16,
+      "height": 16,
+      "frames": 1,
+      "variants": 1
+    },
+    {
+      "texture": "blocks/quartz_block_side",
+      "file": "C:\\Users\\Victor\\Documents\\Codex\\2026-10-31\\https-github-com-revo1999-rassers-revolution\\outputs\\Rassers_Revolution_Sky_Edition\\art\\blockbench\\chapter-one\\textures\\vanilla\\blocks\\quartz_block_side.png",
+      "url": "https://cdn.jsdelivr.net/gh/Mojang/bedrock-samples@main/resource_pack/textures/blocks/quartz_block_side.png",
+      "format": "png",
+      "width": 16,
+      "height": 16,
+      "frames": 1,
+      "variants": 1
+    }
+  ]
+}

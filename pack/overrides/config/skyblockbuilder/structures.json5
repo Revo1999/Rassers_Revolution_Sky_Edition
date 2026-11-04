@@ -1,0 +1,10 @@
+{
+  "structuresToGenerate": {
+    "allow_list": true,
+    "elements": []
+  },
+  "featuresToGenerate": {
+    "allow_list": true,
+    "elements": []
+  }
+}

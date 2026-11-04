@@ -1,0 +1,14 @@
+repositories {
+ maven { url = 'https://maven.ftb.dev/releases' }
+ maven { url = 'https://maven.terraformersmc.com/releases' }
+ maven { url = 'https://api.modrinth.com/maven' }
+}
+dependencies {
+ compileOnly('dev.ftb.mods:ftb-quests-neoforge:2101.1.37') { transitive = false }
+ compileOnly('dev.ftb.mods:ftb-library-neoforge:2101.1.39') { transitive = false }
+ compileOnly('dev.ftb.mods:ftb-teams-neoforge:2101.1.11') { transitive = false }
+ compileOnly 'dev.emi:emi-neoforge:1.1.24+1.21.1:api'
+ compileOnly 'maven.modrinth:jade:eYz2YBGT'
+}
+if (providers.gradleProperty('revoChapterUiQa').isPresent()) { sourceSets.main.java.srcDir 'src/chapterqa/java' }
+tasks.named('jar', Jar) { exclude '**/ChapterOneUiQa*', '**/IndustrialGridUiQa*' }

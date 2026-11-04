@@ -1,0 +1,33 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="All Rights Reserved"
+[[mods]]
+modId="revogenetics"
+version="${version}"
+displayName="RevoGenetics"
+authors="Revo1999"
+description='''Development scaffold for Rassers Revolution: Sky Edition.'''
+[[dependencies.revogenetics]]
+modId="neoforge"
+type="required"
+versionRange="[21.1.265,21.2)"
+ordering="NONE"
+side="BOTH"
+[[dependencies.revogenetics]]
+modId="minecraft"
+type="required"
+versionRange="[1.21.1]"
+ordering="NONE"
+side="BOTH"
+[[dependencies.revogenetics]]
+modId="revolib"
+type="required"
+versionRange="[0.1.0-dev,)"
+ordering="AFTER"
+side="BOTH"
+[[dependencies.revogenetics]]
+modId="revocultivation"
+type="required"
+versionRange="[0.1.0-dev,)"
+ordering="AFTER"
+side="BOTH"

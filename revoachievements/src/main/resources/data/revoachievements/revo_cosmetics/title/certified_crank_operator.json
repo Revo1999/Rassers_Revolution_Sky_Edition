@@ -1,0 +1,9 @@
+{
+  "kind": "title",
+  "name": "Certified Crank Operator",
+  "description": "Certified to turn things in circles.",
+  "unlock_hint": "Complete First Wooden Drill.",
+  "item": "minecraft:name_tag",
+  "color": "#D6AD5A",
+  "order": 10
+}

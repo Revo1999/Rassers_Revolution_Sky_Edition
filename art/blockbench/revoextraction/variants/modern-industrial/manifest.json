@@ -1,0 +1,16 @@
+{
+  "purpose": "Higher-tier modern controller art, preserved before stone/analogue redesign",
+  "sha256": {
+    "industrial-controller-assembled.png": "b3845ebd9db154465a88ad7100ea4881605a68cd6b50784dd44f1846ccfeb206",
+    "industrial-controller-block.png": "abec940e96cffccc571004369f7fc7ccc5cf11be2d7dd8e4c5eac541a8f680bb",
+    "README.md": "17ac63ff3dd9cba5a85f6db2caee49c7c2d0bbca7247a77351e25bbf4f9a0dee",
+    "wooden_drill_assembled.bbmodel": "10b2be97ab6e9d74ac4cfa0ad566f0438fd6c0df8d40df632923a41141abfa5b",
+    "wooden_drill_atlas.png": "9d02c4c19371f7586db90e5fd5793fae30e67695f91013418b40dc5189142c2c",
+    "wooden_drill_controller.bbmodel": "4e1ae8070af9400f942463d8fb67e4937240e1d10970bed2d79a1c8b13ab6727",
+    "wooden_drill_unassembled.bbmodel": "48bc2e1c6074f067e43cb46a82c7804a92f0e971ac45af4f847765be8dd082af",
+    "runtime-models\\wooden_drill_body.json": "a608c2439bc2448d16b3e025cc15b69decbb0fcb2d51a4b382a90062632b44fe",
+    "runtime-models\\wooden_drill_controller.json": "6528a2f5f0ba47137d9b6bee572c2f334d7c6b6dae08d9972c918c6750f40ce1",
+    "runtime-models\\wooden_drill_drill_bit.json": "648857fdd154898830a745a6d9ccf5077a0dddb176a21260ad417bc42e7b64c2",
+    "runtime-models\\wooden_drill_drive_gear.json": "a8f8846db0b0267d1d3a04fd82f83941b50f9097ef26b8fe6a3894151f95d983"
+  }
+}

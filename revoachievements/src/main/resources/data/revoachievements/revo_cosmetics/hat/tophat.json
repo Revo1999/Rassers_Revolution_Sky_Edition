@@ -1,0 +1,10 @@
+{
+  "kind": "hat",
+  "name": "Top Hat",
+  "description": "Dress for the factory you want.",
+  "unlock_hint": "Assigned by Revo quest rewards.",
+  "item": "simplehats:tophat",
+  "color": "#D0B785",
+  "order": 150,
+  "requires_mod": "simplehats"
+}

@@ -1,0 +1,9 @@
+{
+  "kind": "title",
+  "name": "Executive Cobblestone Manager",
+  "description": "A highly senior position in a rapidly growing pile.",
+  "unlock_hint": "Assigned by Revo quest rewards.",
+  "item": "minecraft:name_tag",
+  "color": "#ABB1B8",
+  "order": 50
+}

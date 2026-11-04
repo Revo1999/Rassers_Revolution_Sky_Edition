@@ -1,0 +1,6 @@
+{
+  "cubes": 76,
+  "square_stone_brick_collars": 8,
+  "output_clearance_all_bit_angles_physical_model_units": 2.83,
+  "connector_intersects_upper_support_rail": true
+}

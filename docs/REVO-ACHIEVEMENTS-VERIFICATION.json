@@ -1,0 +1,22 @@
+{
+  "catalogue": {
+    "titles": 9,
+    "hats": 8
+  },
+  "exampleQuests": 5,
+  "serverGameTests": 8,
+  "clientChecks": [
+    "Actual FTB task/reward claims",
+    "Independent server-validated selections and locked previews",
+    "PlayerName Styler chat and tab formatting",
+    "Native hat layer without changing inventory/armor",
+    "Full client/world stop and reload persistence",
+    "Keybinding, creative inventory R button, Back, non-op command, filters, search and paging"
+  ],
+  "screenshots": 18,
+  "productionQaExcluded": true,
+  "thirdPartyCodeBundled": false,
+  "pack": "C:\\Users\\Victor\\Documents\\Codex\\2026-10-31\\https-github-com-revo1999-rassers-revolution\\outputs\\Rassers-Revolution-Sky-Edition-0.1.20-dev.mrpack",
+  "jarSha512": "ac8c0aa02d3a25bd286db5f511e38bb871366a8bf570d93ad28b63261a9406ed41b85c879005214775b5a7383f434c2128847ad5d0e744700cfc5eee5caf7ec1",
+  "packSha512": "2c7e1a270515953744862a6439de5cac68210ef525cb729a73dea308b5ad3f98865d7a05fd0990e1688436a288e85fac577726f7d23358e0dcd837c5bc7d0648"
+}

@@ -1,0 +1,19 @@
+{
+  "result": "passed",
+  "quests": 35,
+  "tips": 6,
+  "serverTests": 8,
+  "liveScreenshots": 11,
+  "freshStart": "One Revolution Book and placed Crafting Station; no chest",
+  "verifiedRuntime": [
+    "FTB item detection and non-op command reward",
+    "Real AE2 and MI manuals",
+    "Rain and heat over elapsed ticks",
+    "Clay mixing and network menus",
+    "Jade payload"
+  ],
+  "startupFix": "Both Jade plugin translation entries present; loading overlay completes",
+  "pack": "C:\\Users\\Victor\\Documents\\Codex\\2026-10-31\\https-github-com-revo1999-rassers-revolution\\outputs\\Rassers-Revolution-Sky-Edition-0.1.20-dev.mrpack",
+  "sha512": "2c7e1a270515953744862a6439de5cac68210ef525cb729a73dea308b5ad3f98865d7a05fd0990e1688436a288e85fac577726f7d23358e0dcd837c5bc7d0648",
+  "qaExcluded": true
+}

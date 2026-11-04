@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "formed=false": {
+      "model": "revocultivation:block/steel_collection_grate"
+    },
+    "formed=true": {
+      "model": "revocultivation:block/empty"
+    }
+  }
+}

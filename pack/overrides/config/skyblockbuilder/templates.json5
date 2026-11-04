@@ -1,0 +1,46 @@
+{
+  "defaultOffset": 0,
+  "mainSpawnIsland": null,
+  "templateList": [
+    {
+      "name": "Revo Starting Island",
+      "desc": "One oak. A crafting station. From Nothing, Build Everything.",
+      "file": "revo_start.nbt",
+      "spawns": {
+        "north": [
+          [
+            9,
+            5,
+            10
+          ]
+        ],
+        "south": [],
+        "west": [],
+        "east": []
+      },
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "surroundingBlocks": {},
+      "spreads": []
+    }
+  ],
+  "spawnPointReferences": {
+    "default": {
+      "north": [
+        [
+          9,
+          5,
+          10
+        ]
+      ],
+      "south": [],
+      "west": [],
+      "east": []
+    }
+  },
+  "surroundingBlockReferences": {},
+  "spreadReferences": {}
+}

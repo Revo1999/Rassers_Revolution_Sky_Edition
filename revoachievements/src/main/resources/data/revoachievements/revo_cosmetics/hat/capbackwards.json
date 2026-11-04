@@ -1,0 +1,10 @@
+{
+  "kind": "hat",
+  "name": "Off-duty Cap",
+  "description": "A relaxed beginning to a serious industrial career.",
+  "unlock_hint": "Complete Clock in at Revo.",
+  "item": "revoachievements:off_duty_cap",
+  "color": "#D0B785",
+  "order": 100,
+  "requires_mod": "simplehats"
+}

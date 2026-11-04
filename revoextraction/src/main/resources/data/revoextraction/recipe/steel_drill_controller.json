@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "CCC",
+    "CSC",
+    "CCC"
+  ],
+  "key": {
+    "C": {
+      "item": "revoextraction:steel_drill_casing"
+    },
+    "S": {
+      "item": "revoextraction:steel_drill_core"
+    }
+  },
+  "result": {
+    "id": "revoextraction:steel_drill_controller",
+    "count": 1
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "variants": {
+    "facing=north,formed=false": {
+      "model": "revoextraction:block/steel_drill_output_hatch",
+      "y": 0
+    },
+    "facing=east,formed=false": {
+      "model": "revoextraction:block/steel_drill_output_hatch",
+      "y": 90
+    },
+    "facing=south,formed=false": {
+      "model": "revoextraction:block/steel_drill_output_hatch",
+      "y": 180
+    },
+    "facing=west,formed=false": {
+      "model": "revoextraction:block/steel_drill_output_hatch",
+      "y": 270
+    },
+    "facing=north,formed=true": {
+      "model": "revoextraction:block/empty",
+      "y": 0
+    },
+    "facing=east,formed=true": {
+      "model": "revoextraction:block/empty",
+      "y": 90
+    },
+    "facing=south,formed=true": {
+      "model": "revoextraction:block/empty",
+      "y": 180
+    },
+    "facing=west,formed=true": {
+      "model": "revoextraction:block/empty",
+      "y": 270
+    }
+  }
+}

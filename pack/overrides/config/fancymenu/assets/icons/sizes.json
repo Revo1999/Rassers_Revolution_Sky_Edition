@@ -1,0 +1,35 @@
+{
+  "source": "art/branding/revo_icon_source.png",
+  "pngSizes": [
+    16,
+    20,
+    24,
+    32,
+    40,
+    48,
+    64,
+    96,
+    128,
+    256,
+    512,
+    1024
+  ],
+  "icoSizes": [
+    16,
+    20,
+    24,
+    32,
+    40,
+    48,
+    64,
+    96,
+    128,
+    256
+  ],
+  "fancyMenuWindowsLinux": [
+    16,
+    32
+  ],
+  "fancyMenuMacOS": "revo.icns",
+  "preparation": "Transparent margins trimmed; aspect ratio retained; transparent square padding."
+}

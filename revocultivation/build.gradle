@@ -1,0 +1,19 @@
+repositories {
+    maven { url = 'https://maven.terraformersmc.com/releases' }
+    maven { url = 'https://api.modrinth.com/maven' }
+}
+dependencies {
+    compileOnly 'dev.emi:emi-neoforge:1.1.24+1.21.1:api'
+    compileOnly 'maven.modrinth:jade:eYz2YBGT'
+}
+if (providers.gradleProperty('revoFarmTests').isPresent()) {
+    sourceSets.main.java.srcDir 'src/gametest/java'
+    sourceSets.main.resources.srcDir 'src/gametest/resources'
+    neoForge {
+        mods { revogenetics { sourceSet project(':revogenetics').sourceSets.main } }
+        runs { farmTests { type = 'gameTestServer'; systemProperty 'neoforge.enabledGameTestNamespaces', 'revocultivation' } }
+    }
+}
+if (providers.gradleProperty('revoFarmUiQa').isPresent()) { sourceSets.main.java.srcDir 'src/uiqa/java' }
+if (providers.gradleProperty('revoSmallUiQa').isPresent()) { sourceSets.main.java.srcDir 'src/smallqa/java' }
+tasks.named('jar', Jar) { exclude '**/FarmGameTests*', '**/SmallGameTests*', '**/FarmUiQa*', '**/SmallUiQa*', 'data/revocultivation/structure/farm_test.nbt' }

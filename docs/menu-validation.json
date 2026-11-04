@@ -1,0 +1,63 @@
+{
+  "layout": "Supplied logo image; original logo and splash hidden; remaining widgets retain native positions.",
+  "video": {
+    "durationSeconds": 20,
+    "frames": 600,
+    "fps": 30,
+    "uniqueSamples": 600,
+    "repeatedFrames": 0,
+    "captureWallSeconds": 19.973707,
+    "centered": true,
+    "characterVisible": false,
+    "sideGradient": false,
+    "sha256": "8577ce2b72b64f9d1d042b113ebae2477b6f98bb21b829a70fd00438aca80598"
+  },
+  "font": {
+    "profile": "Faithful 8px native pixel grid, selected by owner",
+    "mappedCharacters": 1079,
+    "capitalHeightGUI": 8,
+    "advanceGUI": 7,
+    "rasterPixels": 11,
+    "oversample": 1,
+    "nativeVisiblePixelGridMatchesSource": true,
+    "comparison": "Original CFF with hinting disabled versus converted TTF with normal rendering, alpha cutoff 26/255"
+  },
+  "normalClientPlayback": "Verified all 600 frames decode and loop to 0 ms.",
+  "normalBuild": "Passed; recording tooling excluded from mod jars.",
+  "visualCheck": "New logo fits above vanilla buttons; splash and Create main-menu config button absent.",
+  "fancyMenuAuthoringEnabled": true,
+  "branding": {
+    "sourcePNGPreserved": true,
+    "logoSHA256": "82678c2d903b4f46b588f9099cf015b878e686b56d618e87914dd3edc003b914",
+    "vanillaLogoHidden": true,
+    "yellowSplashHidden": true,
+    "CreateMainMenuButtonRow": 0,
+    "inGameVisualCheck": "passed"
+  },
+  "windowBranding": {
+    "title": "Rassers Revolution: Sky Edition",
+    "provider": "FancyMenu",
+    "pngSizes": [
+      16,
+      20,
+      24,
+      32,
+      40,
+      48,
+      64,
+      96,
+      128,
+      256,
+      512,
+      1024
+    ],
+    "windowsLinuxSlots": [
+      16,
+      32
+    ],
+    "macOSFormat": "ICNS",
+    "windowsTitleVerified": true,
+    "windowsIconLoadConfirmedByFancyMenu": true,
+    "macOSRuntimeTested": false
+  }
+}

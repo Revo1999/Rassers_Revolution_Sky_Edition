@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " C ",
+    "CSC",
+    " C "
+  ],
+  "key": {
+    "C": {
+      "item": "revoextraction:wooden_drill_casing"
+    },
+    "S": {
+      "item": "create:shaft"
+    }
+  },
+  "result": {
+    "id": "revoextraction:wooden_drill_input",
+    "count": 1
+  }
+}

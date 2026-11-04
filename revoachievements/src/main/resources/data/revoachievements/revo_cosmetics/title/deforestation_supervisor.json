@@ -1,0 +1,9 @@
+{
+  "kind": "title",
+  "name": "Deforestation Supervisor",
+  "description": "Renewable wood, questionable paperwork.",
+  "unlock_hint": "Complete Branch Office.",
+  "item": "minecraft:name_tag",
+  "color": "#B4A170",
+  "order": 80
+}

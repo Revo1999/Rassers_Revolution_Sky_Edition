@@ -1,0 +1,445 @@
+{
+  "id": "5E40000000000000",
+  "filename": "5e40000000000000",
+  "title": "Chapter 4: Steel and Coolant",
+  "icon": {
+    "id": "revoextraction:steel_drill_controller",
+    "count": 1
+  },
+  "order_index": 30,
+  "default_quest_shape": "circle",
+  "quests": [
+    {
+      "id": "5E40000000000001",
+      "title": "Steel from Steam",
+      "icon": {
+        "id": "modern_industrialization:steel_ingot",
+        "count": 1
+      },
+      "x": 0.0,
+      "y": 0.0,
+      "shape": "hexagon",
+      "dependencies": [
+        "5E3000000000001C"
+      ],
+      "description": [
+        "Your coke and steam workshop leads into steel. Follow the native MI guidebook and EMI for uncooked steel and the Steam Blast Furnace; this drill does not bypass steel production.",
+        "The next Revo drill stays Create-powered, but adds real water cooling and maintenance. Keep the Iron Drill working while building the upgrade."
+      ],
+      "tasks": [
+        {
+          "id": "5E40000000001010",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:steel_ingot",
+            "count": 1
+          },
+          "count": 8,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5E40000000000002",
+      "title": "A Reinforced Frame",
+      "icon": {
+        "id": "modern_industrialization:steel_plate",
+        "count": 1
+      },
+      "x": 3.0,
+      "y": 0.0,
+      "shape": "circle",
+      "dependencies": [
+        "5E40000000000001"
+      ],
+      "description": [
+        "Press steel ingots into steel plates with the Create Mechanical Press, or use native MI plate recipes.",
+        "The drill itself needs 45 steel plates: 12 supports, 17 casings (8 inside the controller), 8 for two cores, 4 for the ports and 4 for the tank. Also reserve 8 loose steel ingots for the cores.",
+        "A repair kit needs another two steel plates, copper and leather. The underlying iron components must be crafted separately."
+      ],
+      "tasks": [
+        {
+          "id": "5E40000000001020",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:steel_plate",
+            "count": 1
+          },
+          "count": 45,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5E40000000000003",
+      "title": "Build the Portal Gantry",
+      "icon": {
+        "id": "revoextraction:steel_drill_controller",
+        "count": 1
+      },
+      "x": 6.0,
+      "y": -2.0,
+      "shape": "circle",
+      "dependencies": [
+        "5E40000000000002"
+      ],
+      "description": [
+        "Upgrade Iron Drill Supports and Casings with steel plates. The finished structure uses 12 supports and 9 placed casings.",
+        "A water tank replaces the casing directly above the output hatch. Use the Steel Drill construction view in EMI."
+      ],
+      "tasks": [
+        {
+          "id": "5E40000000001030",
+          "type": "item",
+          "item": {
+            "id": "revoextraction:steel_drill_support",
+            "count": 1
+          },
+          "count": 12,
+          "consume_items": false
+        },
+        {
+          "id": "5E40000000001031",
+          "type": "item",
+          "item": {
+            "id": "revoextraction:steel_drill_casing",
+            "count": 1
+          },
+          "count": 9,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5E40000000000004",
+      "title": "A Heavier Cutting Assembly",
+      "icon": {
+        "id": "revoextraction:steel_drill_core",
+        "count": 1
+      },
+      "x": 6.0,
+      "y": 1.0,
+      "shape": "circle",
+      "dependencies": [
+        "5E40000000000002"
+      ],
+      "description": [
+        "Craft TWO Steel Drill Cores. One is consumed when crafting the controller; place the other in the centre of the middle layer."
+      ],
+      "tasks": [
+        {
+          "id": "5E40000000001040",
+          "type": "item",
+          "item": {
+            "id": "revoextraction:steel_drill_core",
+            "count": 1
+          },
+          "count": 2,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5E40000000000005",
+      "title": "Control the Steel Drill",
+      "icon": {
+        "id": "revoextraction:steel_drill_controller",
+        "count": 1
+      },
+      "x": 9.0,
+      "y": 1.0,
+      "shape": "hexagon",
+      "dependencies": [
+        "5E40000000000004"
+      ],
+      "description": [
+        "Surround a steel core with eight extra Steel Drill Casings. The controller belongs at the front centre of the middle layer.",
+        "The controller shows RPM, cycle progress, water and damage. Item storage remains exclusively in the output hatch."
+      ],
+      "tasks": [
+        {
+          "id": "5E40000000001050",
+          "type": "item",
+          "item": {
+            "id": "revoextraction:steel_drill_controller",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5E40000000000006",
+      "title": "Shaft, Hatch and Coolant Tank",
+      "icon": {
+        "id": "revoextraction:steel_drill_controller",
+        "count": 1
+      },
+      "x": 6.0,
+      "y": 4.0,
+      "shape": "circle",
+      "dependencies": [
+        "5E40000000000002"
+      ],
+      "description": [
+        "Install the right-middle shaft input, lower-left item output hatch and left-middle water tank above it. Face the shaft and item hatch outward.",
+        "The visible shaft is centred in block 2 of the machine height. The hatch automatically ejects into an adjacent inventory at cycle completion."
+      ],
+      "tasks": [
+        {
+          "id": "5E40000000001060",
+          "type": "item",
+          "item": {
+            "id": "revoextraction:steel_drill_input",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "5E40000000001061",
+          "type": "item",
+          "item": {
+            "id": "revoextraction:steel_drill_output_hatch",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "5E40000000001062",
+          "type": "item",
+          "item": {
+            "id": "revoextraction:steel_drill_water_tank",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5E40000000000007",
+      "title": "Cool the Cutting Head",
+      "icon": {
+        "id": "revoextraction:steel_drill_controller",
+        "count": 1
+      },
+      "x": 9.0,
+      "y": 4.0,
+      "shape": "circle",
+      "dependencies": [
+        "5E40000000000006"
+      ],
+      "description": [
+        "Fill the side tank BEFORE starting. It stores 8000 mB of water and accepts buckets or fluid pipes on any face.",
+        "The drill consumes 100 mB per 600 rotational work, spread over its cycle. Minecraft water renders inside the glass tank and falls as it empties. Working jets use the vanilla dripping-water particles.",
+        "Connect an MI water pump or Create pump network for a steady supply. Missing coolant prevents production and causes seizure after five seconds of dry running."
+      ],
+      "tasks": [
+        {
+          "id": "5E40000000001070",
+          "type": "checkmark"
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5E40000000000008",
+      "title": "Prepare for Maintenance",
+      "icon": {
+        "id": "revoextraction:drill_repair_kit",
+        "count": 1
+      },
+      "x": 9.0,
+      "y": -2.0,
+      "shape": "circle",
+      "dependencies": [
+        "5E40000000000002"
+      ],
+      "description": [
+        "Keep a repair kit nearby. If the Steel Drill seizes, its output is preserved.",
+        "Stop the Create shaft, rebuild any missing frame parts, add at least 100 mB water, then right-click any part with the kit. One kit is consumed only after a successful repair.",
+        "Breaking and replacing the controller preserves dry-running damage; it does not repair the machine."
+      ],
+      "tasks": [
+        {
+          "id": "5E40000000001080",
+          "type": "item",
+          "item": {
+            "id": "revoextraction:drill_repair_kit",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5E40000000000009",
+      "title": "Commission the Water-Cooled Drill",
+      "icon": {
+        "id": "revoextraction:steel_drill_controller",
+        "count": 1
+      },
+      "x": 12.0,
+      "y": 1.0,
+      "shape": "hexagon",
+      "dependencies": [
+        "5E40000000000003",
+        "5E40000000000005",
+        "5E40000000000007",
+        "5E40000000000008"
+      ],
+      "description": [
+        "Build the 3 x 3 x 3 structure from the EMI layer guide, leave the bottom centre empty and supply water.",
+        "Deliver at least 64 RPM and 1024 SU at that speed. One crank is insufficient. Gear up your water-wheel network and add enough generating capacity; gears do not create SU.",
+        "Confirm after seeing Working, a moving cutting head, falling water level and cooling drips. A full output stops water use and dry-running damage."
+      ],
+      "tasks": [
+        {
+          "id": "5E40000000001090",
+          "type": "checkmark"
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5E4000000000000A",
+      "title": "A New Depth of Resources",
+      "icon": {
+        "id": "minecraft:diamond",
+        "count": 1
+      },
+      "x": 15.0,
+      "y": 1.0,
+      "shape": "hexagon",
+      "dependencies": [
+        "5E40000000000009"
+      ],
+      "description": [
+        "Collect a diamond from the Steel Drill. Its fixed 12-item sequence yields 3 iron, 1 copper, 1 tin, 2 coal, 1 zinc, 1 gold, 1 redstone, 1 lapis and 1 diamond.",
+        "Use the diamond supply for the native MI Bronze Macerator and further processing. Keep the water line and output chest supplied."
+      ],
+      "tasks": [
+        {
+          "id": "5E400000000010A0",
+          "type": "item",
+          "item": {
+            "id": "minecraft:diamond",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5E4000000000000B",
+      "title": "Steel Tree Grower",
+      "icon": {
+        "id": "revocultivation:steel_tree_grower",
+        "count": 1
+      },
+      "x": 3.0,
+      "y": 8.0,
+      "shape": "diamond",
+      "dependencies": [
+        "5E40000000000002"
+      ],
+      "description": [
+        "Rebuild the Steel Tree Grower as a 5 x 5 x 1 base: 4 supports, 9 casings, 8 steel soil beds, a vanilla dirt block in the centre, steel controller, right-centre hatch and left-centre Steel Water Tank. Follow EMI.",
+        "Supply an oak sapling and water. The attached tank stores 16000 mB; a 20-second cycle uses 500 mB, charged when growth begins. Fill by bucket or pipe. Water appears in the model, UI and Jade.",
+        "Keep 5 x 5 x 7 space above the base clear and provide natural daylight above the canopy. A real oak tree grows from vanilla logs/leaves halfway through the cycle.",
+        "The farm records its own tree blocks across reloads and removes only those. Manually harvesting or replacing them cancels the automatic harvest, preventing duplicate output. Collect the cycle output through the hatch."
+      ],
+      "tasks": [
+        {
+          "id": "5E400000000010B0",
+          "type": "item",
+          "item": {
+            "id": "revocultivation:steel_tree_grower",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5E4000000000000C",
+      "title": "Iron Electric Greenhouse",
+      "icon": {
+        "id": "revocultivation:iron_greenhouse",
+        "count": 1
+      },
+      "x": 8.0,
+      "y": 8.0,
+      "shape": "diamond",
+      "dependencies": [
+        "5E20000000000014"
+      ],
+      "description": [
+        "Build a 5 x 5 x 3 Iron Greenhouse around a full 3 x 3 soil bed: 11 supports, 21 casings, 20 glass panels, 9 soil beds, controller, hatch, Iron Water Tank, Basic Power Converter and grow light. Leave the 3 x 3 middle chamber empty. EMI shows every layer.",
+        "Steel framing supports the connected glass borders and three ceiling light rails. Fit the tank left-centre and converter rear-right on the bottom layer. The hatch goes immediately in front of the converter on the right side. Face converter FE rearward so EU touches the hatch; keep FE to EU mode. The fitted enclosure appears when formed.",
+        "Supply 8 EU/t to the hatch, or 80 FE/t to the converter with the default ratio. The greenhouse buffer stores 1600 EU; the converter stores no power.",
+        "Nine native wheat/carrot/potato/beetroot models fill the bed, with real age stages. Each 10-second harvest uses 250 mB water. The attached 16000 mB tank accepts buckets/pipes and renders its real water level. Grow lights support day/night and indoor operation."
+      ],
+      "tasks": [
+        {
+          "id": "5E400000000010C0",
+          "type": "item",
+          "item": {
+            "id": "revocultivation:iron_greenhouse",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5E4000000000000D",
+      "title": "Steel Mob Harvester",
+      "icon": {
+        "id": "revogenetics:steel_mob_harvester",
+        "count": 1
+      },
+      "x": 13.0,
+      "y": 8.0,
+      "shape": "diamond",
+      "dependencies": [
+        "5E40000000000002"
+      ],
+      "description": [
+        "Build the 3 x 3 x 3 steel cage from twelve supports, seven casings, three barred panels, a collection grate, species filter, item hatch and steel controller. See EMI for layers and directions.",
+        "The selected Zombie, Skeleton or Spider remains an actual persistent machine-owned mob. It cannot despawn or escape. Right-click the front filter to change species.",
+        "The steel harvester produces the existing species drops every 7.5 seconds. This is passive production. All drops must fit before a cycle completes; the hatch auto-ejects."
+      ],
+      "tasks": [
+        {
+          "id": "5E400000000010D0",
+          "type": "item",
+          "item": {
+            "id": "revogenetics:steel_mob_harvester",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "fluxnetworks"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "modern_industrialization"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "IRI",
+    "CMC",
+    "IRI"
+  ],
+  "key": {
+    "I": {
+      "item": "minecraft:gold_ingot"
+    },
+    "R": {
+      "item": "minecraft:redstone"
+    },
+    "C": {
+      "item": "minecraft:copper_ingot"
+    },
+    "M": {
+      "item": "revoindustry:power_converter"
+    }
+  },
+  "result": {
+    "id": "revoindustry:advanced_power_converter",
+    "count": 1
+  }
+}

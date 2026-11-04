@@ -1,0 +1,10 @@
+{
+  "kind": "hat",
+  "name": "Miner Helmet",
+  "description": "Proper headwear for void extraction.",
+  "unlock_hint": "Complete First Wooden Drill.",
+  "item": "revoachievements:miner_helmet",
+  "color": "#D0B785",
+  "order": 110,
+  "requires_mod": "simplehats"
+}

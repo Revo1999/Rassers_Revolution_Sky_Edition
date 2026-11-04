@@ -1,0 +1,34 @@
+{
+  "result": "passed",
+  "firstChapterQuests": 35,
+  "ungatedTips": 6,
+  "questIdsUnique": true,
+  "dependencyGraphAcyclic": true,
+  "renewableBootstrapReachable": [
+    "create:hand_crank",
+    "create:shaft",
+    "revocultivation:composter",
+    "revocultivation:crook",
+    "revoextraction:dust",
+    "revoextraction:stone_hammer",
+    "revoextraction:wooden_drill_controller",
+    "revoextraction:wooden_drill_core",
+    "revoextraction:wooden_drill_input",
+    "revoextraction:wooden_drill_output_hatch",
+    "revoextraction:wooden_drill_support",
+    "revoindustry:clay_bucket",
+    "revoindustry:clay_crucible",
+    "revoindustry:clay_lava_bucket",
+    "revoindustry:rain_barrel"
+  ],
+  "startingItems": [
+    "revoindustry:revolution_book"
+  ],
+  "placedCraftingStation": true,
+  "starterChestAndFreeLava": false,
+  "nativeVesselCubes": [
+    5,
+    9,
+    9
+  ]
+}

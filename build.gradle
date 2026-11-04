@@ -1,0 +1,80 @@
+plugins {
+    id 'base'
+    id 'net.neoforged.moddev' version '2.0.148' apply false
+}
+subprojects {
+    apply plugin: 'java-library'
+    apply plugin: 'net.neoforged.moddev'
+    group = 'dk.revo'
+    version = rootProject.mod_version
+    base { archivesName = project.name }
+    java.toolchain.languageVersion = JavaLanguageVersion.of(21)
+    sourceSets.main.resources.exclude '**/*.bbmodel'
+    neoForge {
+        version = rootProject.neo_version
+        mods {
+            "${project.name}" { sourceSet sourceSets.main }
+        }
+    }
+    tasks.withType(JavaCompile).configureEach { options.encoding = 'UTF-8' }
+    tasks.named('processResources') {
+        inputs.property 'version', project.version
+        filesMatching('META-INF/neoforge.mods.toml') { expand version: project.version }
+    }
+    if (project.name != 'revolib') {
+        dependencies { implementation project(':revolib') }
+    }
+}
+project(':revolib') {
+    if (providers.gradleProperty('revoCapture').isPresent()) {
+        sourceSets.main.java.srcDir 'src/cinematic/java'
+    }
+    def syncPackOverrides = tasks.register('syncPackOverrides', Copy) {
+        from rootProject.file('pack/overrides')
+        into layout.projectDirectory.dir('run')
+        exclude '**/.gitkeep', '**/README.md'
+    }
+    neoForge {
+        runs {
+            client {
+                client()
+                if (providers.gradleProperty('revoDrillUiQa').isPresent()) {
+                    programArguments.addAll '--quickPlaySingleplayer', 'Revo Drill Interface QA', '--width', '1280', '--height', '900'
+                }
+                if (providers.gradleProperty('revoFarmUiQa').isPresent()) {
+                    programArguments.addAll '--quickPlaySingleplayer', 'Revo First Tier QA', '--width', '1280', '--height', '900'
+                }
+                if (providers.gradleProperty('revoSmallUiQa').isPresent()) {
+                    programArguments.addAll '--quickPlaySingleplayer', 'Revo Single Block QA', '--width', '1280', '--height', '900'
+                }
+                if (providers.gradleProperty('revoChapterUiQa').isPresent()) {
+                    programArguments.addAll '--width', '1280', '--height', '900'
+                }
+                if (providers.gradleProperty('revoAchievementsUiQa').isPresent()) {
+                    programArguments.addAll '--quickPlaySingleplayer', 'Revo Wardrobe QA', '--width', '1280', '--height', '900'
+                    if (providers.gradleProperty('revoAchievementsReloadQa').isPresent()) systemProperty 'revo.wardrobe.reloadqa', 'true'
+                }
+                if (providers.gradleProperty('revoCapture').isPresent()) {
+                    systemProperty 'revo.capture', rootProject.file('.local/menu-frames').absolutePath
+                    programArguments.addAll '--width', '1280', '--height', '720'
+                }
+            }
+            server { server(); programArgument '--nogui' }
+        }
+        mods {
+            rootProject.subprojects.findAll { it.name != 'revolib' }.each { p ->
+                "${p.name}" { sourceSet p.sourceSets.main }
+            }
+        }
+    }
+    afterEvaluate {
+        tasks.named('runClient') { dependsOn syncPackOverrides }
+        tasks.named('runServer') { dependsOn syncPackOverrides }
+    }
+}
+tasks.named('build') { dependsOn subprojects.collect { it.tasks.named('build') } }
+tasks.register('collectMods', Copy) {
+    dependsOn subprojects.collect { it.tasks.named('jar') }
+    from subprojects.collect { it.tasks.named('jar').flatMap { jar -> jar.archiveFile } }
+    into layout.buildDirectory.dir('mods')
+}

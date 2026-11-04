@@ -1,0 +1,9 @@
+{
+  "kind": "title",
+  "name": "Senior Dirt Inspector",
+  "description": "All soil must pass your rigorous stare.",
+  "unlock_hint": "Complete A Greener Workplace.",
+  "item": "minecraft:name_tag",
+  "color": "#83B86D",
+  "order": 20
+}

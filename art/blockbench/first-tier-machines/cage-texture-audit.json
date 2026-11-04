@@ -1,0 +1,5677 @@
+{
+  "texture": "harvester_atlas.png",
+  "size": [
+    512,
+    512
+  ],
+  "islands": 54,
+  "usedBottom": 256,
+  "materialFaces": 354,
+  "geometryChanged": false,
+  "faces": [
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "roof_vent",
+      "face": "north",
+      "role": "vent",
+      "size": [
+        10,
+        1.9999999999999982
+      ],
+      "uv": [
+        7,
+        203,
+        17,
+        205
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "roof_vent",
+      "face": "south",
+      "role": "vent",
+      "size": [
+        10,
+        1.9999999999999982
+      ],
+      "uv": [
+        7,
+        203,
+        17,
+        205
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "roof_vent",
+      "face": "east",
+      "role": "vent",
+      "size": [
+        10,
+        1.9999999999999982
+      ],
+      "uv": [
+        7,
+        203,
+        17,
+        205
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "roof_vent",
+      "face": "west",
+      "role": "vent",
+      "size": [
+        10,
+        1.9999999999999982
+      ],
+      "uv": [
+        7,
+        203,
+        17,
+        205
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "roof_vent",
+      "face": "up",
+      "role": "vent",
+      "size": [
+        10,
+        10
+      ],
+      "uv": [
+        23,
+        203,
+        33,
+        213
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "roof_vent",
+      "face": "down",
+      "role": "vent",
+      "size": [
+        10,
+        10
+      ],
+      "uv": [
+        39,
+        203,
+        49,
+        213
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "lantern_cap_9_4",
+      "face": "north",
+      "role": "plate",
+      "size": [
+        3.999999999999999,
+        0.9999999999999964
+      ],
+      "uv": [
+        55,
+        203,
+        59,
+        204
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "lantern_cap_9_4",
+      "face": "south",
+      "role": "plate",
+      "size": [
+        3.999999999999999,
+        0.9999999999999964
+      ],
+      "uv": [
+        55,
+        203,
+        59,
+        204
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "lantern_cap_9_4",
+      "face": "east",
+      "role": "plate",
+      "size": [
+        4,
+        0.9999999999999964
+      ],
+      "uv": [
+        55,
+        203,
+        59,
+        204
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "lantern_cap_9_4",
+      "face": "west",
+      "role": "plate",
+      "size": [
+        4,
+        0.9999999999999964
+      ],
+      "uv": [
+        55,
+        203,
+        59,
+        204
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "lantern_cap_9_4",
+      "face": "up",
+      "role": "plate",
+      "size": [
+        3.999999999999999,
+        4
+      ],
+      "uv": [
+        65,
+        203,
+        69,
+        207
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "lantern_cap_9_4",
+      "face": "down",
+      "role": "plate",
+      "size": [
+        3.999999999999999,
+        4
+      ],
+      "uv": [
+        75,
+        203,
+        79,
+        207
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "lantern_foot_9_4",
+      "face": "north",
+      "role": "plate",
+      "size": [
+        3.999999999999999,
+        1.0000000000000018
+      ],
+      "uv": [
+        55,
+        203,
+        59,
+        204
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "lantern_foot_9_4",
+      "face": "south",
+      "role": "plate",
+      "size": [
+        3.999999999999999,
+        1.0000000000000018
+      ],
+      "uv": [
+        55,
+        203,
+        59,
+        204
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "lantern_foot_9_4",
+      "face": "east",
+      "role": "plate",
+      "size": [
+        4,
+        1.0000000000000018
+      ],
+      "uv": [
+        55,
+        203,
+        59,
+        204
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "lantern_foot_9_4",
+      "face": "west",
+      "role": "plate",
+      "size": [
+        4,
+        1.0000000000000018
+      ],
+      "uv": [
+        55,
+        203,
+        59,
+        204
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "lantern_foot_9_4",
+      "face": "up",
+      "role": "plate",
+      "size": [
+        3.999999999999999,
+        4
+      ],
+      "uv": [
+        65,
+        203,
+        69,
+        207
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "lantern_foot_9_4",
+      "face": "down",
+      "role": "plate",
+      "size": [
+        3.999999999999999,
+        4
+      ],
+      "uv": [
+        75,
+        203,
+        79,
+        207
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "lantern_cap_35_4",
+      "face": "north",
+      "role": "plate",
+      "size": [
+        4.000000000000002,
+        0.9999999999999964
+      ],
+      "uv": [
+        55,
+        203,
+        59,
+        204
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "lantern_cap_35_4",
+      "face": "south",
+      "role": "plate",
+      "size": [
+        4.000000000000002,
+        0.9999999999999964
+      ],
+      "uv": [
+        55,
+        203,
+        59,
+        204
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "lantern_cap_35_4",
+      "face": "east",
+      "role": "plate",
+      "size": [
+        4,
+        0.9999999999999964
+      ],
+      "uv": [
+        55,
+        203,
+        59,
+        204
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "lantern_cap_35_4",
+      "face": "west",
+      "role": "plate",
+      "size": [
+        4,
+        0.9999999999999964
+      ],
+      "uv": [
+        55,
+        203,
+        59,
+        204
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "lantern_cap_35_4",
+      "face": "up",
+      "role": "plate",
+      "size": [
+        4.000000000000002,
+        4
+      ],
+      "uv": [
+        65,
+        203,
+        69,
+        207
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "lantern_cap_35_4",
+      "face": "down",
+      "role": "plate",
+      "size": [
+        4.000000000000002,
+        4
+      ],
+      "uv": [
+        75,
+        203,
+        79,
+        207
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "lantern_foot_35_4",
+      "face": "north",
+      "role": "plate",
+      "size": [
+        4.000000000000002,
+        1.0000000000000018
+      ],
+      "uv": [
+        55,
+        203,
+        59,
+        204
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "lantern_foot_35_4",
+      "face": "south",
+      "role": "plate",
+      "size": [
+        4.000000000000002,
+        1.0000000000000018
+      ],
+      "uv": [
+        55,
+        203,
+        59,
+        204
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "lantern_foot_35_4",
+      "face": "east",
+      "role": "plate",
+      "size": [
+        4,
+        1.0000000000000018
+      ],
+      "uv": [
+        55,
+        203,
+        59,
+        204
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "lantern_foot_35_4",
+      "face": "west",
+      "role": "plate",
+      "size": [
+        4,
+        1.0000000000000018
+      ],
+      "uv": [
+        55,
+        203,
+        59,
+        204
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "lantern_foot_35_4",
+      "face": "up",
+      "role": "plate",
+      "size": [
+        4.000000000000002,
+        4
+      ],
+      "uv": [
+        65,
+        203,
+        69,
+        207
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "lantern_foot_35_4",
+      "face": "down",
+      "role": "plate",
+      "size": [
+        4.000000000000002,
+        4
+      ],
+      "uv": [
+        75,
+        203,
+        79,
+        207
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "filter_selector_plate",
+      "face": "north",
+      "role": "plate",
+      "size": [
+        3.999999999999999,
+        3.999999999999999
+      ],
+      "uv": [
+        85,
+        203,
+        89,
+        207
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "filter_selector_plate",
+      "face": "south",
+      "role": "plate",
+      "size": [
+        3.999999999999999,
+        3.999999999999999
+      ],
+      "uv": [
+        85,
+        203,
+        89,
+        207
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "filter_selector_plate",
+      "face": "east",
+      "role": "plate",
+      "size": [
+        0.9999999999999998,
+        3.999999999999999
+      ],
+      "uv": [
+        95,
+        203,
+        96,
+        207
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "filter_selector_plate",
+      "face": "west",
+      "role": "plate",
+      "size": [
+        0.9999999999999998,
+        3.999999999999999
+      ],
+      "uv": [
+        95,
+        203,
+        96,
+        207
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "filter_selector_plate",
+      "face": "up",
+      "role": "plate",
+      "size": [
+        3.999999999999999,
+        0.9999999999999998
+      ],
+      "uv": [
+        102,
+        203,
+        106,
+        204
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "filter_selector_plate",
+      "face": "down",
+      "role": "plate",
+      "size": [
+        3.999999999999999,
+        0.9999999999999998
+      ],
+      "uv": [
+        112,
+        203,
+        116,
+        204
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "weathered_rim",
+      "face": "north",
+      "role": "plate",
+      "size": [
+        12,
+        12
+      ],
+      "uv": [
+        122,
+        203,
+        134,
+        215
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "weathered_rim",
+      "face": "south",
+      "role": "plate",
+      "size": [
+        12,
+        12
+      ],
+      "uv": [
+        122,
+        203,
+        134,
+        215
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "weathered_rim",
+      "face": "east",
+      "role": "plate",
+      "size": [
+        0.6,
+        12
+      ],
+      "uv": [
+        140,
+        203,
+        140.6,
+        215
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "weathered_rim",
+      "face": "west",
+      "role": "plate",
+      "size": [
+        0.6,
+        12
+      ],
+      "uv": [
+        140,
+        203,
+        140.6,
+        215
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "weathered_rim",
+      "face": "up",
+      "role": "plate",
+      "size": [
+        12,
+        0.6
+      ],
+      "uv": [
+        147,
+        203,
+        159,
+        203.6
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "weathered_rim",
+      "face": "down",
+      "role": "plate",
+      "size": [
+        12,
+        0.6
+      ],
+      "uv": [
+        165,
+        203,
+        177,
+        203.6
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "hatch_iron_rim",
+      "face": "north",
+      "role": "plate",
+      "size": [
+        0.5999999999999979,
+        12
+      ],
+      "uv": [
+        140,
+        203,
+        140.6,
+        215
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "hatch_iron_rim",
+      "face": "south",
+      "role": "plate",
+      "size": [
+        0.5999999999999979,
+        12
+      ],
+      "uv": [
+        140,
+        203,
+        140.6,
+        215
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "hatch_iron_rim",
+      "face": "east",
+      "role": "plate",
+      "size": [
+        12,
+        12
+      ],
+      "uv": [
+        122,
+        203,
+        134,
+        215
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "hatch_iron_rim",
+      "face": "west",
+      "role": "plate",
+      "size": [
+        12,
+        12
+      ],
+      "uv": [
+        122,
+        203,
+        134,
+        215
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "hatch_iron_rim",
+      "face": "up",
+      "role": "plate",
+      "size": [
+        0.5999999999999979,
+        12
+      ],
+      "uv": [
+        183,
+        203,
+        183.6,
+        215
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "hatch_iron_rim",
+      "face": "down",
+      "role": "plate",
+      "size": [
+        0.5999999999999979,
+        12
+      ],
+      "uv": [
+        190,
+        203,
+        190.6,
+        215
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "hatch_lower_lip",
+      "face": "north",
+      "role": "plate",
+      "size": [
+        1.1000000000000014,
+        2
+      ],
+      "uv": [
+        197,
+        203,
+        198.1,
+        205
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "hatch_lower_lip",
+      "face": "south",
+      "role": "plate",
+      "size": [
+        1.1000000000000014,
+        2
+      ],
+      "uv": [
+        197,
+        203,
+        198.1,
+        205
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "hatch_lower_lip",
+      "face": "east",
+      "role": "plate",
+      "size": [
+        10,
+        2
+      ],
+      "uv": [
+        205,
+        203,
+        215,
+        205
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "hatch_lower_lip",
+      "face": "west",
+      "role": "plate",
+      "size": [
+        10,
+        2
+      ],
+      "uv": [
+        205,
+        203,
+        215,
+        205
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "hatch_lower_lip",
+      "face": "up",
+      "role": "plate",
+      "size": [
+        1.1000000000000014,
+        10
+      ],
+      "uv": [
+        221,
+        203,
+        222.1,
+        213
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "hatch_lower_lip",
+      "face": "down",
+      "role": "plate",
+      "size": [
+        1.1000000000000014,
+        10
+      ],
+      "uv": [
+        229,
+        203,
+        230.1,
+        213
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_front_lower_rail",
+      "face": "north",
+      "role": "rail",
+      "size": [
+        30,
+        2.000000000000001
+      ],
+      "uv": [
+        237,
+        203,
+        267,
+        205
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_front_lower_rail",
+      "face": "south",
+      "role": "rail",
+      "size": [
+        30,
+        2.000000000000001
+      ],
+      "uv": [
+        237,
+        203,
+        267,
+        205
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_front_lower_rail",
+      "face": "east",
+      "role": "rail",
+      "size": [
+        3.4999999999999996,
+        2.000000000000001
+      ],
+      "uv": [
+        273,
+        203,
+        276.5,
+        205
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_front_lower_rail",
+      "face": "west",
+      "role": "rail",
+      "size": [
+        3.4999999999999996,
+        2.000000000000001
+      ],
+      "uv": [
+        273,
+        203,
+        276.5,
+        205
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_front_lower_rail",
+      "face": "up",
+      "role": "rail",
+      "size": [
+        30,
+        3.4999999999999996
+      ],
+      "uv": [
+        283,
+        203,
+        313,
+        206.5
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_front_lower_rail",
+      "face": "down",
+      "role": "rail",
+      "size": [
+        30,
+        3.4999999999999996
+      ],
+      "uv": [
+        319,
+        203,
+        349,
+        206.5
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_front_waist_rail",
+      "face": "north",
+      "role": "rail",
+      "size": [
+        30,
+        1.9999999999999982
+      ],
+      "uv": [
+        237,
+        203,
+        267,
+        205
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_front_waist_rail",
+      "face": "south",
+      "role": "rail",
+      "size": [
+        30,
+        1.9999999999999982
+      ],
+      "uv": [
+        237,
+        203,
+        267,
+        205
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_front_waist_rail",
+      "face": "east",
+      "role": "rail",
+      "size": [
+        3.4999999999999996,
+        1.9999999999999982
+      ],
+      "uv": [
+        273,
+        203,
+        276.5,
+        205
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_front_waist_rail",
+      "face": "west",
+      "role": "rail",
+      "size": [
+        3.4999999999999996,
+        1.9999999999999982
+      ],
+      "uv": [
+        273,
+        203,
+        276.5,
+        205
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_front_waist_rail",
+      "face": "up",
+      "role": "rail",
+      "size": [
+        30,
+        3.4999999999999996
+      ],
+      "uv": [
+        283,
+        203,
+        313,
+        206.5
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_front_waist_rail",
+      "face": "down",
+      "role": "rail",
+      "size": [
+        30,
+        3.4999999999999996
+      ],
+      "uv": [
+        319,
+        203,
+        349,
+        206.5
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_front_upper_rail",
+      "face": "north",
+      "role": "rail",
+      "size": [
+        30,
+        3
+      ],
+      "uv": [
+        355,
+        203,
+        385,
+        206
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_front_upper_rail",
+      "face": "south",
+      "role": "rail",
+      "size": [
+        30,
+        3
+      ],
+      "uv": [
+        355,
+        203,
+        385,
+        206
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_front_upper_rail",
+      "face": "east",
+      "role": "rail",
+      "size": [
+        3.4999999999999996,
+        3
+      ],
+      "uv": [
+        391,
+        203,
+        394.5,
+        206
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_front_upper_rail",
+      "face": "west",
+      "role": "rail",
+      "size": [
+        3.4999999999999996,
+        3
+      ],
+      "uv": [
+        391,
+        203,
+        394.5,
+        206
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_front_upper_rail",
+      "face": "up",
+      "role": "rail",
+      "size": [
+        30,
+        3.4999999999999996
+      ],
+      "uv": [
+        283,
+        203,
+        313,
+        206.5
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_front_upper_rail",
+      "face": "down",
+      "role": "rail",
+      "size": [
+        30,
+        3.4999999999999996
+      ],
+      "uv": [
+        319,
+        203,
+        349,
+        206.5
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_front_pillar_stile_9.75",
+      "face": "north",
+      "role": "stile",
+      "size": [
+        2.25,
+        30
+      ],
+      "uv": [
+        401,
+        203,
+        403.25,
+        233
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_front_pillar_stile_9.75",
+      "face": "south",
+      "role": "stile",
+      "size": [
+        2.25,
+        30
+      ],
+      "uv": [
+        401,
+        203,
+        403.25,
+        233
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_front_pillar_stile_9.75",
+      "face": "east",
+      "role": "stile",
+      "size": [
+        4,
+        30
+      ],
+      "uv": [
+        410,
+        203,
+        414,
+        233
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_front_pillar_stile_9.75",
+      "face": "west",
+      "role": "stile",
+      "size": [
+        4,
+        30
+      ],
+      "uv": [
+        410,
+        203,
+        414,
+        233
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_front_pillar_stile_9.75",
+      "face": "up",
+      "role": "stile",
+      "size": [
+        2.25,
+        4
+      ],
+      "uv": [
+        420,
+        203,
+        422.25,
+        207
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_front_pillar_stile_9.75",
+      "face": "down",
+      "role": "stile",
+      "size": [
+        2.25,
+        4
+      ],
+      "uv": [
+        429,
+        203,
+        431.25,
+        207
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_front_pillar_stile_36",
+      "face": "north",
+      "role": "stile",
+      "size": [
+        2.25,
+        30
+      ],
+      "uv": [
+        401,
+        203,
+        403.25,
+        233
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_front_pillar_stile_36",
+      "face": "south",
+      "role": "stile",
+      "size": [
+        2.25,
+        30
+      ],
+      "uv": [
+        401,
+        203,
+        403.25,
+        233
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_front_pillar_stile_36",
+      "face": "east",
+      "role": "stile",
+      "size": [
+        4,
+        30
+      ],
+      "uv": [
+        410,
+        203,
+        414,
+        233
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_front_pillar_stile_36",
+      "face": "west",
+      "role": "stile",
+      "size": [
+        4,
+        30
+      ],
+      "uv": [
+        410,
+        203,
+        414,
+        233
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_front_pillar_stile_36",
+      "face": "up",
+      "role": "stile",
+      "size": [
+        2.25,
+        4
+      ],
+      "uv": [
+        420,
+        203,
+        422.25,
+        207
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_front_pillar_stile_36",
+      "face": "down",
+      "role": "stile",
+      "size": [
+        2.25,
+        4
+      ],
+      "uv": [
+        429,
+        203,
+        431.25,
+        207
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_front_inset_bar_14.5",
+      "face": "north",
+      "role": "bar",
+      "size": [
+        1.2500000000000009,
+        27.999999999999996
+      ],
+      "uv": [
+        438,
+        203,
+        439.25,
+        231
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_front_inset_bar_14.5",
+      "face": "south",
+      "role": "bar",
+      "size": [
+        1.2500000000000009,
+        27.999999999999996
+      ],
+      "uv": [
+        438,
+        203,
+        439.25,
+        231
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_front_inset_bar_14.5",
+      "face": "east",
+      "role": "bar",
+      "size": [
+        1.5000000000000007,
+        27.999999999999996
+      ],
+      "uv": [
+        446,
+        203,
+        447.5,
+        231
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_front_inset_bar_14.5",
+      "face": "west",
+      "role": "bar",
+      "size": [
+        1.5000000000000007,
+        27.999999999999996
+      ],
+      "uv": [
+        446,
+        203,
+        447.5,
+        231
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_front_inset_bar_14.5",
+      "face": "up",
+      "role": "bar",
+      "size": [
+        1.2500000000000009,
+        1.5000000000000007
+      ],
+      "uv": [
+        454,
+        203,
+        455.25,
+        204.5
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_front_inset_bar_14.5",
+      "face": "down",
+      "role": "bar",
+      "size": [
+        1.2500000000000009,
+        1.5000000000000007
+      ],
+      "uv": [
+        462,
+        203,
+        463.25,
+        204.5
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_front_inset_bar_20.5",
+      "face": "north",
+      "role": "bar",
+      "size": [
+        1.2500000000000009,
+        27.999999999999996
+      ],
+      "uv": [
+        438,
+        203,
+        439.25,
+        231
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_front_inset_bar_20.5",
+      "face": "south",
+      "role": "bar",
+      "size": [
+        1.2500000000000009,
+        27.999999999999996
+      ],
+      "uv": [
+        438,
+        203,
+        439.25,
+        231
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_front_inset_bar_20.5",
+      "face": "east",
+      "role": "bar",
+      "size": [
+        1.5000000000000007,
+        27.999999999999996
+      ],
+      "uv": [
+        446,
+        203,
+        447.5,
+        231
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_front_inset_bar_20.5",
+      "face": "west",
+      "role": "bar",
+      "size": [
+        1.5000000000000007,
+        27.999999999999996
+      ],
+      "uv": [
+        446,
+        203,
+        447.5,
+        231
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_front_inset_bar_20.5",
+      "face": "up",
+      "role": "bar",
+      "size": [
+        1.2500000000000009,
+        1.5000000000000007
+      ],
+      "uv": [
+        454,
+        203,
+        455.25,
+        204.5
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_front_inset_bar_20.5",
+      "face": "down",
+      "role": "bar",
+      "size": [
+        1.2500000000000009,
+        1.5000000000000007
+      ],
+      "uv": [
+        462,
+        203,
+        463.25,
+        204.5
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_front_inset_bar_26.5",
+      "face": "north",
+      "role": "bar",
+      "size": [
+        1.2499999999999982,
+        27.999999999999996
+      ],
+      "uv": [
+        438,
+        203,
+        439.25,
+        231
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_front_inset_bar_26.5",
+      "face": "south",
+      "role": "bar",
+      "size": [
+        1.2499999999999982,
+        27.999999999999996
+      ],
+      "uv": [
+        438,
+        203,
+        439.25,
+        231
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_front_inset_bar_26.5",
+      "face": "east",
+      "role": "bar",
+      "size": [
+        1.5000000000000007,
+        27.999999999999996
+      ],
+      "uv": [
+        446,
+        203,
+        447.5,
+        231
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_front_inset_bar_26.5",
+      "face": "west",
+      "role": "bar",
+      "size": [
+        1.5000000000000007,
+        27.999999999999996
+      ],
+      "uv": [
+        446,
+        203,
+        447.5,
+        231
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_front_inset_bar_26.5",
+      "face": "up",
+      "role": "bar",
+      "size": [
+        1.2499999999999982,
+        1.5000000000000007
+      ],
+      "uv": [
+        454,
+        203,
+        455.25,
+        204.5
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_front_inset_bar_26.5",
+      "face": "down",
+      "role": "bar",
+      "size": [
+        1.2499999999999982,
+        1.5000000000000007
+      ],
+      "uv": [
+        462,
+        203,
+        463.25,
+        204.5
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_front_inset_bar_32.5",
+      "face": "north",
+      "role": "bar",
+      "size": [
+        1.2499999999999982,
+        27.999999999999996
+      ],
+      "uv": [
+        438,
+        203,
+        439.25,
+        231
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_front_inset_bar_32.5",
+      "face": "south",
+      "role": "bar",
+      "size": [
+        1.2499999999999982,
+        27.999999999999996
+      ],
+      "uv": [
+        438,
+        203,
+        439.25,
+        231
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_front_inset_bar_32.5",
+      "face": "east",
+      "role": "bar",
+      "size": [
+        1.5000000000000007,
+        27.999999999999996
+      ],
+      "uv": [
+        446,
+        203,
+        447.5,
+        231
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_front_inset_bar_32.5",
+      "face": "west",
+      "role": "bar",
+      "size": [
+        1.5000000000000007,
+        27.999999999999996
+      ],
+      "uv": [
+        446,
+        203,
+        447.5,
+        231
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_front_inset_bar_32.5",
+      "face": "up",
+      "role": "bar",
+      "size": [
+        1.2499999999999982,
+        1.5000000000000007
+      ],
+      "uv": [
+        454,
+        203,
+        455.25,
+        204.5
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_front_inset_bar_32.5",
+      "face": "down",
+      "role": "bar",
+      "size": [
+        1.2499999999999982,
+        1.5000000000000007
+      ],
+      "uv": [
+        462,
+        203,
+        463.25,
+        204.5
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_back_lower_rail",
+      "face": "north",
+      "role": "rail",
+      "size": [
+        30,
+        2.000000000000001
+      ],
+      "uv": [
+        237,
+        203,
+        267,
+        205
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_back_lower_rail",
+      "face": "south",
+      "role": "rail",
+      "size": [
+        30,
+        2.000000000000001
+      ],
+      "uv": [
+        237,
+        203,
+        267,
+        205
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_back_lower_rail",
+      "face": "east",
+      "role": "rail",
+      "size": [
+        3.4999999999999982,
+        2.000000000000001
+      ],
+      "uv": [
+        273,
+        203,
+        276.5,
+        205
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_back_lower_rail",
+      "face": "west",
+      "role": "rail",
+      "size": [
+        3.4999999999999982,
+        2.000000000000001
+      ],
+      "uv": [
+        273,
+        203,
+        276.5,
+        205
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_back_lower_rail",
+      "face": "up",
+      "role": "rail",
+      "size": [
+        30,
+        3.4999999999999982
+      ],
+      "uv": [
+        283,
+        203,
+        313,
+        206.5
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_back_lower_rail",
+      "face": "down",
+      "role": "rail",
+      "size": [
+        30,
+        3.4999999999999982
+      ],
+      "uv": [
+        319,
+        203,
+        349,
+        206.5
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_back_waist_rail",
+      "face": "north",
+      "role": "rail",
+      "size": [
+        30,
+        1.9999999999999982
+      ],
+      "uv": [
+        237,
+        203,
+        267,
+        205
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_back_waist_rail",
+      "face": "south",
+      "role": "rail",
+      "size": [
+        30,
+        1.9999999999999982
+      ],
+      "uv": [
+        237,
+        203,
+        267,
+        205
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_back_waist_rail",
+      "face": "east",
+      "role": "rail",
+      "size": [
+        3.4999999999999982,
+        1.9999999999999982
+      ],
+      "uv": [
+        273,
+        203,
+        276.5,
+        205
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_back_waist_rail",
+      "face": "west",
+      "role": "rail",
+      "size": [
+        3.4999999999999982,
+        1.9999999999999982
+      ],
+      "uv": [
+        273,
+        203,
+        276.5,
+        205
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_back_waist_rail",
+      "face": "up",
+      "role": "rail",
+      "size": [
+        30,
+        3.4999999999999982
+      ],
+      "uv": [
+        283,
+        203,
+        313,
+        206.5
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_back_waist_rail",
+      "face": "down",
+      "role": "rail",
+      "size": [
+        30,
+        3.4999999999999982
+      ],
+      "uv": [
+        319,
+        203,
+        349,
+        206.5
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_back_upper_rail",
+      "face": "north",
+      "role": "rail",
+      "size": [
+        30,
+        3
+      ],
+      "uv": [
+        355,
+        203,
+        385,
+        206
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_back_upper_rail",
+      "face": "south",
+      "role": "rail",
+      "size": [
+        30,
+        3
+      ],
+      "uv": [
+        355,
+        203,
+        385,
+        206
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_back_upper_rail",
+      "face": "east",
+      "role": "rail",
+      "size": [
+        3.4999999999999982,
+        3
+      ],
+      "uv": [
+        391,
+        203,
+        394.5,
+        206
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_back_upper_rail",
+      "face": "west",
+      "role": "rail",
+      "size": [
+        3.4999999999999982,
+        3
+      ],
+      "uv": [
+        391,
+        203,
+        394.5,
+        206
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_back_upper_rail",
+      "face": "up",
+      "role": "rail",
+      "size": [
+        30,
+        3.4999999999999982
+      ],
+      "uv": [
+        283,
+        203,
+        313,
+        206.5
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_back_upper_rail",
+      "face": "down",
+      "role": "rail",
+      "size": [
+        30,
+        3.4999999999999982
+      ],
+      "uv": [
+        319,
+        203,
+        349,
+        206.5
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_back_pillar_stile_9.75",
+      "face": "north",
+      "role": "stile",
+      "size": [
+        2.25,
+        30
+      ],
+      "uv": [
+        401,
+        203,
+        403.25,
+        233
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_back_pillar_stile_9.75",
+      "face": "south",
+      "role": "stile",
+      "size": [
+        2.25,
+        30
+      ],
+      "uv": [
+        401,
+        203,
+        403.25,
+        233
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_back_pillar_stile_9.75",
+      "face": "east",
+      "role": "stile",
+      "size": [
+        4.000000000000002,
+        30
+      ],
+      "uv": [
+        410,
+        203,
+        414,
+        233
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_back_pillar_stile_9.75",
+      "face": "west",
+      "role": "stile",
+      "size": [
+        4.000000000000002,
+        30
+      ],
+      "uv": [
+        410,
+        203,
+        414,
+        233
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_back_pillar_stile_9.75",
+      "face": "up",
+      "role": "stile",
+      "size": [
+        2.25,
+        4.000000000000002
+      ],
+      "uv": [
+        420,
+        203,
+        422.25,
+        207
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_back_pillar_stile_9.75",
+      "face": "down",
+      "role": "stile",
+      "size": [
+        2.25,
+        4.000000000000002
+      ],
+      "uv": [
+        429,
+        203,
+        431.25,
+        207
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_back_pillar_stile_36",
+      "face": "north",
+      "role": "stile",
+      "size": [
+        2.25,
+        30
+      ],
+      "uv": [
+        401,
+        203,
+        403.25,
+        233
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_back_pillar_stile_36",
+      "face": "south",
+      "role": "stile",
+      "size": [
+        2.25,
+        30
+      ],
+      "uv": [
+        401,
+        203,
+        403.25,
+        233
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_back_pillar_stile_36",
+      "face": "east",
+      "role": "stile",
+      "size": [
+        4.000000000000002,
+        30
+      ],
+      "uv": [
+        410,
+        203,
+        414,
+        233
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_back_pillar_stile_36",
+      "face": "west",
+      "role": "stile",
+      "size": [
+        4.000000000000002,
+        30
+      ],
+      "uv": [
+        410,
+        203,
+        414,
+        233
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_back_pillar_stile_36",
+      "face": "up",
+      "role": "stile",
+      "size": [
+        2.25,
+        4.000000000000002
+      ],
+      "uv": [
+        420,
+        203,
+        422.25,
+        207
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_back_pillar_stile_36",
+      "face": "down",
+      "role": "stile",
+      "size": [
+        2.25,
+        4.000000000000002
+      ],
+      "uv": [
+        429,
+        203,
+        431.25,
+        207
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_back_inset_bar_14.5",
+      "face": "north",
+      "role": "bar",
+      "size": [
+        1.2499999999999982,
+        27.999999999999996
+      ],
+      "uv": [
+        438,
+        203,
+        439.25,
+        231
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_back_inset_bar_14.5",
+      "face": "south",
+      "role": "bar",
+      "size": [
+        1.2499999999999982,
+        27.999999999999996
+      ],
+      "uv": [
+        438,
+        203,
+        439.25,
+        231
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_back_inset_bar_14.5",
+      "face": "east",
+      "role": "bar",
+      "size": [
+        1.5,
+        27.999999999999996
+      ],
+      "uv": [
+        446,
+        203,
+        447.5,
+        231
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_back_inset_bar_14.5",
+      "face": "west",
+      "role": "bar",
+      "size": [
+        1.5,
+        27.999999999999996
+      ],
+      "uv": [
+        446,
+        203,
+        447.5,
+        231
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_back_inset_bar_14.5",
+      "face": "up",
+      "role": "bar",
+      "size": [
+        1.2499999999999982,
+        1.5
+      ],
+      "uv": [
+        454,
+        203,
+        455.25,
+        204.5
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_back_inset_bar_14.5",
+      "face": "down",
+      "role": "bar",
+      "size": [
+        1.2499999999999982,
+        1.5
+      ],
+      "uv": [
+        462,
+        203,
+        463.25,
+        204.5
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_back_inset_bar_20.5",
+      "face": "north",
+      "role": "bar",
+      "size": [
+        1.2499999999999982,
+        27.999999999999996
+      ],
+      "uv": [
+        438,
+        203,
+        439.25,
+        231
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_back_inset_bar_20.5",
+      "face": "south",
+      "role": "bar",
+      "size": [
+        1.2499999999999982,
+        27.999999999999996
+      ],
+      "uv": [
+        438,
+        203,
+        439.25,
+        231
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_back_inset_bar_20.5",
+      "face": "east",
+      "role": "bar",
+      "size": [
+        1.5,
+        27.999999999999996
+      ],
+      "uv": [
+        446,
+        203,
+        447.5,
+        231
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_back_inset_bar_20.5",
+      "face": "west",
+      "role": "bar",
+      "size": [
+        1.5,
+        27.999999999999996
+      ],
+      "uv": [
+        446,
+        203,
+        447.5,
+        231
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_back_inset_bar_20.5",
+      "face": "up",
+      "role": "bar",
+      "size": [
+        1.2499999999999982,
+        1.5
+      ],
+      "uv": [
+        454,
+        203,
+        455.25,
+        204.5
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_back_inset_bar_20.5",
+      "face": "down",
+      "role": "bar",
+      "size": [
+        1.2499999999999982,
+        1.5
+      ],
+      "uv": [
+        462,
+        203,
+        463.25,
+        204.5
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_back_inset_bar_26.5",
+      "face": "north",
+      "role": "bar",
+      "size": [
+        1.2500000000000009,
+        27.999999999999996
+      ],
+      "uv": [
+        438,
+        203,
+        439.25,
+        231
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_back_inset_bar_26.5",
+      "face": "south",
+      "role": "bar",
+      "size": [
+        1.2500000000000009,
+        27.999999999999996
+      ],
+      "uv": [
+        438,
+        203,
+        439.25,
+        231
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_back_inset_bar_26.5",
+      "face": "east",
+      "role": "bar",
+      "size": [
+        1.5,
+        27.999999999999996
+      ],
+      "uv": [
+        446,
+        203,
+        447.5,
+        231
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_back_inset_bar_26.5",
+      "face": "west",
+      "role": "bar",
+      "size": [
+        1.5,
+        27.999999999999996
+      ],
+      "uv": [
+        446,
+        203,
+        447.5,
+        231
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_back_inset_bar_26.5",
+      "face": "up",
+      "role": "bar",
+      "size": [
+        1.2500000000000009,
+        1.5
+      ],
+      "uv": [
+        454,
+        203,
+        455.25,
+        204.5
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_back_inset_bar_26.5",
+      "face": "down",
+      "role": "bar",
+      "size": [
+        1.2500000000000009,
+        1.5
+      ],
+      "uv": [
+        462,
+        203,
+        463.25,
+        204.5
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_back_inset_bar_32.5",
+      "face": "north",
+      "role": "bar",
+      "size": [
+        1.2500000000000009,
+        27.999999999999996
+      ],
+      "uv": [
+        438,
+        203,
+        439.25,
+        231
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_back_inset_bar_32.5",
+      "face": "south",
+      "role": "bar",
+      "size": [
+        1.2500000000000009,
+        27.999999999999996
+      ],
+      "uv": [
+        438,
+        203,
+        439.25,
+        231
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_back_inset_bar_32.5",
+      "face": "east",
+      "role": "bar",
+      "size": [
+        1.5,
+        27.999999999999996
+      ],
+      "uv": [
+        446,
+        203,
+        447.5,
+        231
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_back_inset_bar_32.5",
+      "face": "west",
+      "role": "bar",
+      "size": [
+        1.5,
+        27.999999999999996
+      ],
+      "uv": [
+        446,
+        203,
+        447.5,
+        231
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_back_inset_bar_32.5",
+      "face": "up",
+      "role": "bar",
+      "size": [
+        1.2500000000000009,
+        1.5
+      ],
+      "uv": [
+        454,
+        203,
+        455.25,
+        204.5
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_back_inset_bar_32.5",
+      "face": "down",
+      "role": "bar",
+      "size": [
+        1.2500000000000009,
+        1.5
+      ],
+      "uv": [
+        462,
+        203,
+        463.25,
+        204.5
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_left_lower_rail",
+      "face": "north",
+      "role": "rail",
+      "size": [
+        3.4999999999999996,
+        2.000000000000001
+      ],
+      "uv": [
+        273,
+        203,
+        276.5,
+        205
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_left_lower_rail",
+      "face": "south",
+      "role": "rail",
+      "size": [
+        3.4999999999999996,
+        2.000000000000001
+      ],
+      "uv": [
+        273,
+        203,
+        276.5,
+        205
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_left_lower_rail",
+      "face": "east",
+      "role": "rail",
+      "size": [
+        30,
+        2.000000000000001
+      ],
+      "uv": [
+        237,
+        203,
+        267,
+        205
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_left_lower_rail",
+      "face": "west",
+      "role": "rail",
+      "size": [
+        30,
+        2.000000000000001
+      ],
+      "uv": [
+        237,
+        203,
+        267,
+        205
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_left_lower_rail",
+      "face": "up",
+      "role": "rail",
+      "size": [
+        3.4999999999999996,
+        30
+      ],
+      "uv": [
+        470,
+        203,
+        473.5,
+        233
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_left_lower_rail",
+      "face": "down",
+      "role": "rail",
+      "size": [
+        3.4999999999999996,
+        30
+      ],
+      "uv": [
+        480,
+        203,
+        483.5,
+        233
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_left_waist_rail",
+      "face": "north",
+      "role": "rail",
+      "size": [
+        3.4999999999999996,
+        1.9999999999999982
+      ],
+      "uv": [
+        273,
+        203,
+        276.5,
+        205
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_left_waist_rail",
+      "face": "south",
+      "role": "rail",
+      "size": [
+        3.4999999999999996,
+        1.9999999999999982
+      ],
+      "uv": [
+        273,
+        203,
+        276.5,
+        205
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_left_waist_rail",
+      "face": "east",
+      "role": "rail",
+      "size": [
+        30,
+        1.9999999999999982
+      ],
+      "uv": [
+        237,
+        203,
+        267,
+        205
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_left_waist_rail",
+      "face": "west",
+      "role": "rail",
+      "size": [
+        30,
+        1.9999999999999982
+      ],
+      "uv": [
+        237,
+        203,
+        267,
+        205
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_left_waist_rail",
+      "face": "up",
+      "role": "rail",
+      "size": [
+        3.4999999999999996,
+        30
+      ],
+      "uv": [
+        470,
+        203,
+        473.5,
+        233
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_left_waist_rail",
+      "face": "down",
+      "role": "rail",
+      "size": [
+        3.4999999999999996,
+        30
+      ],
+      "uv": [
+        480,
+        203,
+        483.5,
+        233
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_left_upper_rail",
+      "face": "north",
+      "role": "rail",
+      "size": [
+        3.4999999999999996,
+        3
+      ],
+      "uv": [
+        391,
+        203,
+        394.5,
+        206
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_left_upper_rail",
+      "face": "south",
+      "role": "rail",
+      "size": [
+        3.4999999999999996,
+        3
+      ],
+      "uv": [
+        391,
+        203,
+        394.5,
+        206
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_left_upper_rail",
+      "face": "east",
+      "role": "rail",
+      "size": [
+        30,
+        3
+      ],
+      "uv": [
+        355,
+        203,
+        385,
+        206
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_left_upper_rail",
+      "face": "west",
+      "role": "rail",
+      "size": [
+        30,
+        3
+      ],
+      "uv": [
+        355,
+        203,
+        385,
+        206
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_left_upper_rail",
+      "face": "up",
+      "role": "rail",
+      "size": [
+        3.4999999999999996,
+        30
+      ],
+      "uv": [
+        470,
+        203,
+        473.5,
+        233
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_left_upper_rail",
+      "face": "down",
+      "role": "rail",
+      "size": [
+        3.4999999999999996,
+        30
+      ],
+      "uv": [
+        480,
+        203,
+        483.5,
+        233
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_left_pillar_stile_9.75",
+      "face": "north",
+      "role": "stile",
+      "size": [
+        4,
+        30
+      ],
+      "uv": [
+        410,
+        203,
+        414,
+        233
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_left_pillar_stile_9.75",
+      "face": "south",
+      "role": "stile",
+      "size": [
+        4,
+        30
+      ],
+      "uv": [
+        410,
+        203,
+        414,
+        233
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_left_pillar_stile_9.75",
+      "face": "east",
+      "role": "stile",
+      "size": [
+        2.25,
+        30
+      ],
+      "uv": [
+        401,
+        203,
+        403.25,
+        233
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_left_pillar_stile_9.75",
+      "face": "west",
+      "role": "stile",
+      "size": [
+        2.25,
+        30
+      ],
+      "uv": [
+        401,
+        203,
+        403.25,
+        233
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_left_pillar_stile_9.75",
+      "face": "up",
+      "role": "stile",
+      "size": [
+        4,
+        2.25
+      ],
+      "uv": [
+        490,
+        203,
+        494,
+        205.25
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_left_pillar_stile_9.75",
+      "face": "down",
+      "role": "stile",
+      "size": [
+        4,
+        2.25
+      ],
+      "uv": [
+        500,
+        203,
+        504,
+        205.25
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_left_pillar_stile_36",
+      "face": "north",
+      "role": "stile",
+      "size": [
+        4,
+        30
+      ],
+      "uv": [
+        410,
+        203,
+        414,
+        233
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_left_pillar_stile_36",
+      "face": "south",
+      "role": "stile",
+      "size": [
+        4,
+        30
+      ],
+      "uv": [
+        410,
+        203,
+        414,
+        233
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_left_pillar_stile_36",
+      "face": "east",
+      "role": "stile",
+      "size": [
+        2.25,
+        30
+      ],
+      "uv": [
+        401,
+        203,
+        403.25,
+        233
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_left_pillar_stile_36",
+      "face": "west",
+      "role": "stile",
+      "size": [
+        2.25,
+        30
+      ],
+      "uv": [
+        401,
+        203,
+        403.25,
+        233
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_left_pillar_stile_36",
+      "face": "up",
+      "role": "stile",
+      "size": [
+        4,
+        2.25
+      ],
+      "uv": [
+        490,
+        203,
+        494,
+        205.25
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_left_pillar_stile_36",
+      "face": "down",
+      "role": "stile",
+      "size": [
+        4,
+        2.25
+      ],
+      "uv": [
+        500,
+        203,
+        504,
+        205.25
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_left_inset_bar_14.5",
+      "face": "north",
+      "role": "bar",
+      "size": [
+        1.5000000000000007,
+        27.999999999999996
+      ],
+      "uv": [
+        446,
+        203,
+        447.5,
+        231
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_left_inset_bar_14.5",
+      "face": "south",
+      "role": "bar",
+      "size": [
+        1.5000000000000007,
+        27.999999999999996
+      ],
+      "uv": [
+        446,
+        203,
+        447.5,
+        231
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_left_inset_bar_14.5",
+      "face": "east",
+      "role": "bar",
+      "size": [
+        1.2499999999999982,
+        27.999999999999996
+      ],
+      "uv": [
+        438,
+        203,
+        439.25,
+        231
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_left_inset_bar_14.5",
+      "face": "west",
+      "role": "bar",
+      "size": [
+        1.2499999999999982,
+        27.999999999999996
+      ],
+      "uv": [
+        438,
+        203,
+        439.25,
+        231
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_left_inset_bar_14.5",
+      "face": "up",
+      "role": "bar",
+      "size": [
+        1.5000000000000007,
+        1.2499999999999982
+      ],
+      "uv": [
+        7,
+        239,
+        8.5,
+        240.25
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_left_inset_bar_14.5",
+      "face": "down",
+      "role": "bar",
+      "size": [
+        1.5000000000000007,
+        1.2499999999999982
+      ],
+      "uv": [
+        15,
+        239,
+        16.5,
+        240.25
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_left_inset_bar_20.5",
+      "face": "north",
+      "role": "bar",
+      "size": [
+        1.5000000000000007,
+        27.999999999999996
+      ],
+      "uv": [
+        446,
+        203,
+        447.5,
+        231
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_left_inset_bar_20.5",
+      "face": "south",
+      "role": "bar",
+      "size": [
+        1.5000000000000007,
+        27.999999999999996
+      ],
+      "uv": [
+        446,
+        203,
+        447.5,
+        231
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_left_inset_bar_20.5",
+      "face": "east",
+      "role": "bar",
+      "size": [
+        1.2499999999999982,
+        27.999999999999996
+      ],
+      "uv": [
+        438,
+        203,
+        439.25,
+        231
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_left_inset_bar_20.5",
+      "face": "west",
+      "role": "bar",
+      "size": [
+        1.2499999999999982,
+        27.999999999999996
+      ],
+      "uv": [
+        438,
+        203,
+        439.25,
+        231
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_left_inset_bar_20.5",
+      "face": "up",
+      "role": "bar",
+      "size": [
+        1.5000000000000007,
+        1.2499999999999982
+      ],
+      "uv": [
+        7,
+        239,
+        8.5,
+        240.25
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_left_inset_bar_20.5",
+      "face": "down",
+      "role": "bar",
+      "size": [
+        1.5000000000000007,
+        1.2499999999999982
+      ],
+      "uv": [
+        15,
+        239,
+        16.5,
+        240.25
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_left_inset_bar_26.5",
+      "face": "north",
+      "role": "bar",
+      "size": [
+        1.5000000000000007,
+        27.999999999999996
+      ],
+      "uv": [
+        446,
+        203,
+        447.5,
+        231
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_left_inset_bar_26.5",
+      "face": "south",
+      "role": "bar",
+      "size": [
+        1.5000000000000007,
+        27.999999999999996
+      ],
+      "uv": [
+        446,
+        203,
+        447.5,
+        231
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_left_inset_bar_26.5",
+      "face": "east",
+      "role": "bar",
+      "size": [
+        1.2500000000000009,
+        27.999999999999996
+      ],
+      "uv": [
+        438,
+        203,
+        439.25,
+        231
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_left_inset_bar_26.5",
+      "face": "west",
+      "role": "bar",
+      "size": [
+        1.2500000000000009,
+        27.999999999999996
+      ],
+      "uv": [
+        438,
+        203,
+        439.25,
+        231
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_left_inset_bar_26.5",
+      "face": "up",
+      "role": "bar",
+      "size": [
+        1.5000000000000007,
+        1.2500000000000009
+      ],
+      "uv": [
+        7,
+        239,
+        8.5,
+        240.25
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_left_inset_bar_26.5",
+      "face": "down",
+      "role": "bar",
+      "size": [
+        1.5000000000000007,
+        1.2500000000000009
+      ],
+      "uv": [
+        15,
+        239,
+        16.5,
+        240.25
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_left_inset_bar_32.5",
+      "face": "north",
+      "role": "bar",
+      "size": [
+        1.5000000000000007,
+        27.999999999999996
+      ],
+      "uv": [
+        446,
+        203,
+        447.5,
+        231
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_left_inset_bar_32.5",
+      "face": "south",
+      "role": "bar",
+      "size": [
+        1.5000000000000007,
+        27.999999999999996
+      ],
+      "uv": [
+        446,
+        203,
+        447.5,
+        231
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_left_inset_bar_32.5",
+      "face": "east",
+      "role": "bar",
+      "size": [
+        1.2500000000000009,
+        27.999999999999996
+      ],
+      "uv": [
+        438,
+        203,
+        439.25,
+        231
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_left_inset_bar_32.5",
+      "face": "west",
+      "role": "bar",
+      "size": [
+        1.2500000000000009,
+        27.999999999999996
+      ],
+      "uv": [
+        438,
+        203,
+        439.25,
+        231
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_left_inset_bar_32.5",
+      "face": "up",
+      "role": "bar",
+      "size": [
+        1.5000000000000007,
+        1.2500000000000009
+      ],
+      "uv": [
+        7,
+        239,
+        8.5,
+        240.25
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_left_inset_bar_32.5",
+      "face": "down",
+      "role": "bar",
+      "size": [
+        1.5000000000000007,
+        1.2500000000000009
+      ],
+      "uv": [
+        15,
+        239,
+        16.5,
+        240.25
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_right_lower_rail",
+      "face": "north",
+      "role": "rail",
+      "size": [
+        3.4999999999999982,
+        2.000000000000001
+      ],
+      "uv": [
+        273,
+        203,
+        276.5,
+        205
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_right_lower_rail",
+      "face": "south",
+      "role": "rail",
+      "size": [
+        3.4999999999999982,
+        2.000000000000001
+      ],
+      "uv": [
+        273,
+        203,
+        276.5,
+        205
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_right_lower_rail",
+      "face": "east",
+      "role": "rail",
+      "size": [
+        30,
+        2.000000000000001
+      ],
+      "uv": [
+        237,
+        203,
+        267,
+        205
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_right_lower_rail",
+      "face": "west",
+      "role": "rail",
+      "size": [
+        30,
+        2.000000000000001
+      ],
+      "uv": [
+        237,
+        203,
+        267,
+        205
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_right_lower_rail",
+      "face": "up",
+      "role": "rail",
+      "size": [
+        3.4999999999999982,
+        30
+      ],
+      "uv": [
+        470,
+        203,
+        473.5,
+        233
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_right_lower_rail",
+      "face": "down",
+      "role": "rail",
+      "size": [
+        3.4999999999999982,
+        30
+      ],
+      "uv": [
+        480,
+        203,
+        483.5,
+        233
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_right_waist_rail",
+      "face": "north",
+      "role": "rail",
+      "size": [
+        3.4999999999999982,
+        1.9999999999999982
+      ],
+      "uv": [
+        273,
+        203,
+        276.5,
+        205
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_right_waist_rail",
+      "face": "south",
+      "role": "rail",
+      "size": [
+        3.4999999999999982,
+        1.9999999999999982
+      ],
+      "uv": [
+        273,
+        203,
+        276.5,
+        205
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_right_waist_rail",
+      "face": "east",
+      "role": "rail",
+      "size": [
+        30,
+        1.9999999999999982
+      ],
+      "uv": [
+        237,
+        203,
+        267,
+        205
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_right_waist_rail",
+      "face": "west",
+      "role": "rail",
+      "size": [
+        30,
+        1.9999999999999982
+      ],
+      "uv": [
+        237,
+        203,
+        267,
+        205
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_right_waist_rail",
+      "face": "up",
+      "role": "rail",
+      "size": [
+        3.4999999999999982,
+        30
+      ],
+      "uv": [
+        470,
+        203,
+        473.5,
+        233
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_right_waist_rail",
+      "face": "down",
+      "role": "rail",
+      "size": [
+        3.4999999999999982,
+        30
+      ],
+      "uv": [
+        480,
+        203,
+        483.5,
+        233
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_right_upper_rail",
+      "face": "north",
+      "role": "rail",
+      "size": [
+        3.4999999999999982,
+        3
+      ],
+      "uv": [
+        391,
+        203,
+        394.5,
+        206
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_right_upper_rail",
+      "face": "south",
+      "role": "rail",
+      "size": [
+        3.4999999999999982,
+        3
+      ],
+      "uv": [
+        391,
+        203,
+        394.5,
+        206
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_right_upper_rail",
+      "face": "east",
+      "role": "rail",
+      "size": [
+        30,
+        3
+      ],
+      "uv": [
+        355,
+        203,
+        385,
+        206
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_right_upper_rail",
+      "face": "west",
+      "role": "rail",
+      "size": [
+        30,
+        3
+      ],
+      "uv": [
+        355,
+        203,
+        385,
+        206
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_right_upper_rail",
+      "face": "up",
+      "role": "rail",
+      "size": [
+        3.4999999999999982,
+        30
+      ],
+      "uv": [
+        470,
+        203,
+        473.5,
+        233
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_right_upper_rail",
+      "face": "down",
+      "role": "rail",
+      "size": [
+        3.4999999999999982,
+        30
+      ],
+      "uv": [
+        480,
+        203,
+        483.5,
+        233
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_right_pillar_stile_9.75",
+      "face": "north",
+      "role": "stile",
+      "size": [
+        4.000000000000002,
+        30
+      ],
+      "uv": [
+        410,
+        203,
+        414,
+        233
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_right_pillar_stile_9.75",
+      "face": "south",
+      "role": "stile",
+      "size": [
+        4.000000000000002,
+        30
+      ],
+      "uv": [
+        410,
+        203,
+        414,
+        233
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_right_pillar_stile_9.75",
+      "face": "east",
+      "role": "stile",
+      "size": [
+        2.25,
+        30
+      ],
+      "uv": [
+        401,
+        203,
+        403.25,
+        233
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_right_pillar_stile_9.75",
+      "face": "west",
+      "role": "stile",
+      "size": [
+        2.25,
+        30
+      ],
+      "uv": [
+        401,
+        203,
+        403.25,
+        233
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_right_pillar_stile_9.75",
+      "face": "up",
+      "role": "stile",
+      "size": [
+        4.000000000000002,
+        2.25
+      ],
+      "uv": [
+        490,
+        203,
+        494,
+        205.25
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_right_pillar_stile_9.75",
+      "face": "down",
+      "role": "stile",
+      "size": [
+        4.000000000000002,
+        2.25
+      ],
+      "uv": [
+        500,
+        203,
+        504,
+        205.25
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_right_pillar_stile_36",
+      "face": "north",
+      "role": "stile",
+      "size": [
+        4.000000000000002,
+        30
+      ],
+      "uv": [
+        410,
+        203,
+        414,
+        233
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_right_pillar_stile_36",
+      "face": "south",
+      "role": "stile",
+      "size": [
+        4.000000000000002,
+        30
+      ],
+      "uv": [
+        410,
+        203,
+        414,
+        233
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_right_pillar_stile_36",
+      "face": "east",
+      "role": "stile",
+      "size": [
+        2.25,
+        30
+      ],
+      "uv": [
+        401,
+        203,
+        403.25,
+        233
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_right_pillar_stile_36",
+      "face": "west",
+      "role": "stile",
+      "size": [
+        2.25,
+        30
+      ],
+      "uv": [
+        401,
+        203,
+        403.25,
+        233
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_right_pillar_stile_36",
+      "face": "up",
+      "role": "stile",
+      "size": [
+        4.000000000000002,
+        2.25
+      ],
+      "uv": [
+        490,
+        203,
+        494,
+        205.25
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_right_pillar_stile_36",
+      "face": "down",
+      "role": "stile",
+      "size": [
+        4.000000000000002,
+        2.25
+      ],
+      "uv": [
+        500,
+        203,
+        504,
+        205.25
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_right_inset_bar_14.5",
+      "face": "north",
+      "role": "bar",
+      "size": [
+        1.5,
+        27.999999999999996
+      ],
+      "uv": [
+        446,
+        203,
+        447.5,
+        231
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_right_inset_bar_14.5",
+      "face": "south",
+      "role": "bar",
+      "size": [
+        1.5,
+        27.999999999999996
+      ],
+      "uv": [
+        446,
+        203,
+        447.5,
+        231
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_right_inset_bar_14.5",
+      "face": "east",
+      "role": "bar",
+      "size": [
+        1.2500000000000009,
+        27.999999999999996
+      ],
+      "uv": [
+        438,
+        203,
+        439.25,
+        231
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_right_inset_bar_14.5",
+      "face": "west",
+      "role": "bar",
+      "size": [
+        1.2500000000000009,
+        27.999999999999996
+      ],
+      "uv": [
+        438,
+        203,
+        439.25,
+        231
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_right_inset_bar_14.5",
+      "face": "up",
+      "role": "bar",
+      "size": [
+        1.5,
+        1.2500000000000009
+      ],
+      "uv": [
+        7,
+        239,
+        8.5,
+        240.25
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_right_inset_bar_14.5",
+      "face": "down",
+      "role": "bar",
+      "size": [
+        1.5,
+        1.2500000000000009
+      ],
+      "uv": [
+        15,
+        239,
+        16.5,
+        240.25
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_right_inset_bar_20.5",
+      "face": "north",
+      "role": "bar",
+      "size": [
+        1.5,
+        27.999999999999996
+      ],
+      "uv": [
+        446,
+        203,
+        447.5,
+        231
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_right_inset_bar_20.5",
+      "face": "south",
+      "role": "bar",
+      "size": [
+        1.5,
+        27.999999999999996
+      ],
+      "uv": [
+        446,
+        203,
+        447.5,
+        231
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_right_inset_bar_20.5",
+      "face": "east",
+      "role": "bar",
+      "size": [
+        1.2500000000000009,
+        27.999999999999996
+      ],
+      "uv": [
+        438,
+        203,
+        439.25,
+        231
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_right_inset_bar_20.5",
+      "face": "west",
+      "role": "bar",
+      "size": [
+        1.2500000000000009,
+        27.999999999999996
+      ],
+      "uv": [
+        438,
+        203,
+        439.25,
+        231
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_right_inset_bar_20.5",
+      "face": "up",
+      "role": "bar",
+      "size": [
+        1.5,
+        1.2500000000000009
+      ],
+      "uv": [
+        7,
+        239,
+        8.5,
+        240.25
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_right_inset_bar_20.5",
+      "face": "down",
+      "role": "bar",
+      "size": [
+        1.5,
+        1.2500000000000009
+      ],
+      "uv": [
+        15,
+        239,
+        16.5,
+        240.25
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_right_inset_bar_26.5",
+      "face": "north",
+      "role": "bar",
+      "size": [
+        1.5,
+        27.999999999999996
+      ],
+      "uv": [
+        446,
+        203,
+        447.5,
+        231
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_right_inset_bar_26.5",
+      "face": "south",
+      "role": "bar",
+      "size": [
+        1.5,
+        27.999999999999996
+      ],
+      "uv": [
+        446,
+        203,
+        447.5,
+        231
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_right_inset_bar_26.5",
+      "face": "east",
+      "role": "bar",
+      "size": [
+        1.2499999999999982,
+        27.999999999999996
+      ],
+      "uv": [
+        438,
+        203,
+        439.25,
+        231
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_right_inset_bar_26.5",
+      "face": "west",
+      "role": "bar",
+      "size": [
+        1.2499999999999982,
+        27.999999999999996
+      ],
+      "uv": [
+        438,
+        203,
+        439.25,
+        231
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_right_inset_bar_26.5",
+      "face": "up",
+      "role": "bar",
+      "size": [
+        1.5,
+        1.2499999999999982
+      ],
+      "uv": [
+        7,
+        239,
+        8.5,
+        240.25
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_right_inset_bar_26.5",
+      "face": "down",
+      "role": "bar",
+      "size": [
+        1.5,
+        1.2499999999999982
+      ],
+      "uv": [
+        15,
+        239,
+        16.5,
+        240.25
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_right_inset_bar_32.5",
+      "face": "north",
+      "role": "bar",
+      "size": [
+        1.5,
+        27.999999999999996
+      ],
+      "uv": [
+        446,
+        203,
+        447.5,
+        231
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_right_inset_bar_32.5",
+      "face": "south",
+      "role": "bar",
+      "size": [
+        1.5,
+        27.999999999999996
+      ],
+      "uv": [
+        446,
+        203,
+        447.5,
+        231
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_right_inset_bar_32.5",
+      "face": "east",
+      "role": "bar",
+      "size": [
+        1.2499999999999982,
+        27.999999999999996
+      ],
+      "uv": [
+        438,
+        203,
+        439.25,
+        231
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_right_inset_bar_32.5",
+      "face": "west",
+      "role": "bar",
+      "size": [
+        1.2499999999999982,
+        27.999999999999996
+      ],
+      "uv": [
+        438,
+        203,
+        439.25,
+        231
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_right_inset_bar_32.5",
+      "face": "up",
+      "role": "bar",
+      "size": [
+        1.5,
+        1.2499999999999982
+      ],
+      "uv": [
+        7,
+        239,
+        8.5,
+        240.25
+      ]
+    },
+    {
+      "model": "mob_harvester_assembled",
+      "cube": "framed_cage_right_inset_bar_32.5",
+      "face": "down",
+      "role": "bar",
+      "size": [
+        1.5,
+        1.2499999999999982
+      ],
+      "uv": [
+        15,
+        239,
+        16.5,
+        240.25
+      ]
+    },
+    {
+      "model": "barred_panel",
+      "cube": "iron_header",
+      "face": "north",
+      "role": "rail",
+      "size": [
+        14,
+        2
+      ],
+      "uv": [
+        23,
+        239,
+        37,
+        241
+      ]
+    },
+    {
+      "model": "barred_panel",
+      "cube": "iron_header",
+      "face": "south",
+      "role": "rail",
+      "size": [
+        14,
+        2
+      ],
+      "uv": [
+        23,
+        239,
+        37,
+        241
+      ]
+    },
+    {
+      "model": "barred_panel",
+      "cube": "iron_header",
+      "face": "east",
+      "role": "rail",
+      "size": [
+        4,
+        2
+      ],
+      "uv": [
+        43,
+        239,
+        47,
+        241
+      ]
+    },
+    {
+      "model": "barred_panel",
+      "cube": "iron_header",
+      "face": "west",
+      "role": "rail",
+      "size": [
+        4,
+        2
+      ],
+      "uv": [
+        43,
+        239,
+        47,
+        241
+      ]
+    },
+    {
+      "model": "barred_panel",
+      "cube": "iron_header",
+      "face": "up",
+      "role": "rail",
+      "size": [
+        14,
+        4
+      ],
+      "uv": [
+        53,
+        239,
+        67,
+        243
+      ]
+    },
+    {
+      "model": "barred_panel",
+      "cube": "iron_header",
+      "face": "down",
+      "role": "rail",
+      "size": [
+        14,
+        4
+      ],
+      "uv": [
+        73,
+        239,
+        87,
+        243
+      ]
+    },
+    {
+      "model": "barred_panel",
+      "cube": "iron_sill",
+      "face": "north",
+      "role": "rail",
+      "size": [
+        14,
+        2
+      ],
+      "uv": [
+        23,
+        239,
+        37,
+        241
+      ]
+    },
+    {
+      "model": "barred_panel",
+      "cube": "iron_sill",
+      "face": "south",
+      "role": "rail",
+      "size": [
+        14,
+        2
+      ],
+      "uv": [
+        23,
+        239,
+        37,
+        241
+      ]
+    },
+    {
+      "model": "barred_panel",
+      "cube": "iron_sill",
+      "face": "east",
+      "role": "rail",
+      "size": [
+        4,
+        2
+      ],
+      "uv": [
+        43,
+        239,
+        47,
+        241
+      ]
+    },
+    {
+      "model": "barred_panel",
+      "cube": "iron_sill",
+      "face": "west",
+      "role": "rail",
+      "size": [
+        4,
+        2
+      ],
+      "uv": [
+        43,
+        239,
+        47,
+        241
+      ]
+    },
+    {
+      "model": "barred_panel",
+      "cube": "iron_sill",
+      "face": "up",
+      "role": "rail",
+      "size": [
+        14,
+        4
+      ],
+      "uv": [
+        53,
+        239,
+        67,
+        243
+      ]
+    },
+    {
+      "model": "barred_panel",
+      "cube": "iron_sill",
+      "face": "down",
+      "role": "rail",
+      "size": [
+        14,
+        4
+      ],
+      "uv": [
+        73,
+        239,
+        87,
+        243
+      ]
+    },
+    {
+      "model": "barred_panel",
+      "cube": "iron_waist_rail",
+      "face": "north",
+      "role": "rail",
+      "size": [
+        14,
+        2
+      ],
+      "uv": [
+        23,
+        239,
+        37,
+        241
+      ]
+    },
+    {
+      "model": "barred_panel",
+      "cube": "iron_waist_rail",
+      "face": "south",
+      "role": "rail",
+      "size": [
+        14,
+        2
+      ],
+      "uv": [
+        23,
+        239,
+        37,
+        241
+      ]
+    },
+    {
+      "model": "barred_panel",
+      "cube": "iron_waist_rail",
+      "face": "east",
+      "role": "rail",
+      "size": [
+        3,
+        2
+      ],
+      "uv": [
+        93,
+        239,
+        96,
+        241
+      ]
+    },
+    {
+      "model": "barred_panel",
+      "cube": "iron_waist_rail",
+      "face": "west",
+      "role": "rail",
+      "size": [
+        3,
+        2
+      ],
+      "uv": [
+        93,
+        239,
+        96,
+        241
+      ]
+    },
+    {
+      "model": "barred_panel",
+      "cube": "iron_waist_rail",
+      "face": "up",
+      "role": "rail",
+      "size": [
+        14,
+        3
+      ],
+      "uv": [
+        102,
+        239,
+        116,
+        242
+      ]
+    },
+    {
+      "model": "barred_panel",
+      "cube": "iron_waist_rail",
+      "face": "down",
+      "role": "rail",
+      "size": [
+        14,
+        3
+      ],
+      "uv": [
+        122,
+        239,
+        136,
+        242
+      ]
+    },
+    {
+      "model": "barred_panel",
+      "cube": "inset_bar_4",
+      "face": "north",
+      "role": "bar",
+      "size": [
+        1,
+        14
+      ],
+      "uv": [
+        142,
+        239,
+        143,
+        253
+      ]
+    },
+    {
+      "model": "barred_panel",
+      "cube": "inset_bar_4",
+      "face": "south",
+      "role": "bar",
+      "size": [
+        1,
+        14
+      ],
+      "uv": [
+        142,
+        239,
+        143,
+        253
+      ]
+    },
+    {
+      "model": "barred_panel",
+      "cube": "inset_bar_4",
+      "face": "east",
+      "role": "bar",
+      "size": [
+        2,
+        14
+      ],
+      "uv": [
+        149,
+        239,
+        151,
+        253
+      ]
+    },
+    {
+      "model": "barred_panel",
+      "cube": "inset_bar_4",
+      "face": "west",
+      "role": "bar",
+      "size": [
+        2,
+        14
+      ],
+      "uv": [
+        149,
+        239,
+        151,
+        253
+      ]
+    },
+    {
+      "model": "barred_panel",
+      "cube": "inset_bar_4",
+      "face": "up",
+      "role": "bar",
+      "size": [
+        1,
+        2
+      ],
+      "uv": [
+        157,
+        239,
+        158,
+        241
+      ]
+    },
+    {
+      "model": "barred_panel",
+      "cube": "inset_bar_4",
+      "face": "down",
+      "role": "bar",
+      "size": [
+        1,
+        2
+      ],
+      "uv": [
+        164,
+        239,
+        165,
+        241
+      ]
+    },
+    {
+      "model": "barred_panel",
+      "cube": "inset_bar_8",
+      "face": "north",
+      "role": "bar",
+      "size": [
+        1,
+        14
+      ],
+      "uv": [
+        142,
+        239,
+        143,
+        253
+      ]
+    },
+    {
+      "model": "barred_panel",
+      "cube": "inset_bar_8",
+      "face": "south",
+      "role": "bar",
+      "size": [
+        1,
+        14
+      ],
+      "uv": [
+        142,
+        239,
+        143,
+        253
+      ]
+    },
+    {
+      "model": "barred_panel",
+      "cube": "inset_bar_8",
+      "face": "east",
+      "role": "bar",
+      "size": [
+        2,
+        14
+      ],
+      "uv": [
+        149,
+        239,
+        151,
+        253
+      ]
+    },
+    {
+      "model": "barred_panel",
+      "cube": "inset_bar_8",
+      "face": "west",
+      "role": "bar",
+      "size": [
+        2,
+        14
+      ],
+      "uv": [
+        149,
+        239,
+        151,
+        253
+      ]
+    },
+    {
+      "model": "barred_panel",
+      "cube": "inset_bar_8",
+      "face": "up",
+      "role": "bar",
+      "size": [
+        1,
+        2
+      ],
+      "uv": [
+        157,
+        239,
+        158,
+        241
+      ]
+    },
+    {
+      "model": "barred_panel",
+      "cube": "inset_bar_8",
+      "face": "down",
+      "role": "bar",
+      "size": [
+        1,
+        2
+      ],
+      "uv": [
+        164,
+        239,
+        165,
+        241
+      ]
+    },
+    {
+      "model": "barred_panel",
+      "cube": "inset_bar_12",
+      "face": "north",
+      "role": "bar",
+      "size": [
+        1,
+        14
+      ],
+      "uv": [
+        142,
+        239,
+        143,
+        253
+      ]
+    },
+    {
+      "model": "barred_panel",
+      "cube": "inset_bar_12",
+      "face": "south",
+      "role": "bar",
+      "size": [
+        1,
+        14
+      ],
+      "uv": [
+        142,
+        239,
+        143,
+        253
+      ]
+    },
+    {
+      "model": "barred_panel",
+      "cube": "inset_bar_12",
+      "face": "east",
+      "role": "bar",
+      "size": [
+        2,
+        14
+      ],
+      "uv": [
+        149,
+        239,
+        151,
+        253
+      ]
+    },
+    {
+      "model": "barred_panel",
+      "cube": "inset_bar_12",
+      "face": "west",
+      "role": "bar",
+      "size": [
+        2,
+        14
+      ],
+      "uv": [
+        149,
+        239,
+        151,
+        253
+      ]
+    },
+    {
+      "model": "barred_panel",
+      "cube": "inset_bar_12",
+      "face": "up",
+      "role": "bar",
+      "size": [
+        1,
+        2
+      ],
+      "uv": [
+        157,
+        239,
+        158,
+        241
+      ]
+    },
+    {
+      "model": "barred_panel",
+      "cube": "inset_bar_12",
+      "face": "down",
+      "role": "bar",
+      "size": [
+        1,
+        2
+      ],
+      "uv": [
+        164,
+        239,
+        165,
+        241
+      ]
+    },
+    {
+      "model": "mob_filter",
+      "cube": "iron_header",
+      "face": "north",
+      "role": "rail",
+      "size": [
+        14,
+        2
+      ],
+      "uv": [
+        23,
+        239,
+        37,
+        241
+      ]
+    },
+    {
+      "model": "mob_filter",
+      "cube": "iron_header",
+      "face": "south",
+      "role": "rail",
+      "size": [
+        14,
+        2
+      ],
+      "uv": [
+        23,
+        239,
+        37,
+        241
+      ]
+    },
+    {
+      "model": "mob_filter",
+      "cube": "iron_header",
+      "face": "east",
+      "role": "rail",
+      "size": [
+        4,
+        2
+      ],
+      "uv": [
+        43,
+        239,
+        47,
+        241
+      ]
+    },
+    {
+      "model": "mob_filter",
+      "cube": "iron_header",
+      "face": "west",
+      "role": "rail",
+      "size": [
+        4,
+        2
+      ],
+      "uv": [
+        43,
+        239,
+        47,
+        241
+      ]
+    },
+    {
+      "model": "mob_filter",
+      "cube": "iron_header",
+      "face": "up",
+      "role": "rail",
+      "size": [
+        14,
+        4
+      ],
+      "uv": [
+        53,
+        239,
+        67,
+        243
+      ]
+    },
+    {
+      "model": "mob_filter",
+      "cube": "iron_header",
+      "face": "down",
+      "role": "rail",
+      "size": [
+        14,
+        4
+      ],
+      "uv": [
+        73,
+        239,
+        87,
+        243
+      ]
+    },
+    {
+      "model": "mob_filter",
+      "cube": "iron_sill",
+      "face": "north",
+      "role": "rail",
+      "size": [
+        14,
+        2
+      ],
+      "uv": [
+        23,
+        239,
+        37,
+        241
+      ]
+    },
+    {
+      "model": "mob_filter",
+      "cube": "iron_sill",
+      "face": "south",
+      "role": "rail",
+      "size": [
+        14,
+        2
+      ],
+      "uv": [
+        23,
+        239,
+        37,
+        241
+      ]
+    },
+    {
+      "model": "mob_filter",
+      "cube": "iron_sill",
+      "face": "east",
+      "role": "rail",
+      "size": [
+        4,
+        2
+      ],
+      "uv": [
+        43,
+        239,
+        47,
+        241
+      ]
+    },
+    {
+      "model": "mob_filter",
+      "cube": "iron_sill",
+      "face": "west",
+      "role": "rail",
+      "size": [
+        4,
+        2
+      ],
+      "uv": [
+        43,
+        239,
+        47,
+        241
+      ]
+    },
+    {
+      "model": "mob_filter",
+      "cube": "iron_sill",
+      "face": "up",
+      "role": "rail",
+      "size": [
+        14,
+        4
+      ],
+      "uv": [
+        53,
+        239,
+        67,
+        243
+      ]
+    },
+    {
+      "model": "mob_filter",
+      "cube": "iron_sill",
+      "face": "down",
+      "role": "rail",
+      "size": [
+        14,
+        4
+      ],
+      "uv": [
+        73,
+        239,
+        87,
+        243
+      ]
+    },
+    {
+      "model": "mob_filter",
+      "cube": "iron_waist_rail",
+      "face": "north",
+      "role": "rail",
+      "size": [
+        14,
+        2
+      ],
+      "uv": [
+        23,
+        239,
+        37,
+        241
+      ]
+    },
+    {
+      "model": "mob_filter",
+      "cube": "iron_waist_rail",
+      "face": "south",
+      "role": "rail",
+      "size": [
+        14,
+        2
+      ],
+      "uv": [
+        23,
+        239,
+        37,
+        241
+      ]
+    },
+    {
+      "model": "mob_filter",
+      "cube": "iron_waist_rail",
+      "face": "east",
+      "role": "rail",
+      "size": [
+        3,
+        2
+      ],
+      "uv": [
+        93,
+        239,
+        96,
+        241
+      ]
+    },
+    {
+      "model": "mob_filter",
+      "cube": "iron_waist_rail",
+      "face": "west",
+      "role": "rail",
+      "size": [
+        3,
+        2
+      ],
+      "uv": [
+        93,
+        239,
+        96,
+        241
+      ]
+    },
+    {
+      "model": "mob_filter",
+      "cube": "iron_waist_rail",
+      "face": "up",
+      "role": "rail",
+      "size": [
+        14,
+        3
+      ],
+      "uv": [
+        102,
+        239,
+        116,
+        242
+      ]
+    },
+    {
+      "model": "mob_filter",
+      "cube": "iron_waist_rail",
+      "face": "down",
+      "role": "rail",
+      "size": [
+        14,
+        3
+      ],
+      "uv": [
+        122,
+        239,
+        136,
+        242
+      ]
+    },
+    {
+      "model": "mob_filter",
+      "cube": "inset_bar_4",
+      "face": "north",
+      "role": "bar",
+      "size": [
+        1,
+        14
+      ],
+      "uv": [
+        142,
+        239,
+        143,
+        253
+      ]
+    },
+    {
+      "model": "mob_filter",
+      "cube": "inset_bar_4",
+      "face": "south",
+      "role": "bar",
+      "size": [
+        1,
+        14
+      ],
+      "uv": [
+        142,
+        239,
+        143,
+        253
+      ]
+    },
+    {
+      "model": "mob_filter",
+      "cube": "inset_bar_4",
+      "face": "east",
+      "role": "bar",
+      "size": [
+        2,
+        14
+      ],
+      "uv": [
+        149,
+        239,
+        151,
+        253
+      ]
+    },
+    {
+      "model": "mob_filter",
+      "cube": "inset_bar_4",
+      "face": "west",
+      "role": "bar",
+      "size": [
+        2,
+        14
+      ],
+      "uv": [
+        149,
+        239,
+        151,
+        253
+      ]
+    },
+    {
+      "model": "mob_filter",
+      "cube": "inset_bar_4",
+      "face": "up",
+      "role": "bar",
+      "size": [
+        1,
+        2
+      ],
+      "uv": [
+        157,
+        239,
+        158,
+        241
+      ]
+    },
+    {
+      "model": "mob_filter",
+      "cube": "inset_bar_4",
+      "face": "down",
+      "role": "bar",
+      "size": [
+        1,
+        2
+      ],
+      "uv": [
+        164,
+        239,
+        165,
+        241
+      ]
+    },
+    {
+      "model": "mob_filter",
+      "cube": "inset_bar_8",
+      "face": "north",
+      "role": "bar",
+      "size": [
+        1,
+        14
+      ],
+      "uv": [
+        142,
+        239,
+        143,
+        253
+      ]
+    },
+    {
+      "model": "mob_filter",
+      "cube": "inset_bar_8",
+      "face": "south",
+      "role": "bar",
+      "size": [
+        1,
+        14
+      ],
+      "uv": [
+        142,
+        239,
+        143,
+        253
+      ]
+    },
+    {
+      "model": "mob_filter",
+      "cube": "inset_bar_8",
+      "face": "east",
+      "role": "bar",
+      "size": [
+        2,
+        14
+      ],
+      "uv": [
+        149,
+        239,
+        151,
+        253
+      ]
+    },
+    {
+      "model": "mob_filter",
+      "cube": "inset_bar_8",
+      "face": "west",
+      "role": "bar",
+      "size": [
+        2,
+        14
+      ],
+      "uv": [
+        149,
+        239,
+        151,
+        253
+      ]
+    },
+    {
+      "model": "mob_filter",
+      "cube": "inset_bar_8",
+      "face": "up",
+      "role": "bar",
+      "size": [
+        1,
+        2
+      ],
+      "uv": [
+        157,
+        239,
+        158,
+        241
+      ]
+    },
+    {
+      "model": "mob_filter",
+      "cube": "inset_bar_8",
+      "face": "down",
+      "role": "bar",
+      "size": [
+        1,
+        2
+      ],
+      "uv": [
+        164,
+        239,
+        165,
+        241
+      ]
+    },
+    {
+      "model": "mob_filter",
+      "cube": "inset_bar_12",
+      "face": "north",
+      "role": "bar",
+      "size": [
+        1,
+        14
+      ],
+      "uv": [
+        142,
+        239,
+        143,
+        253
+      ]
+    },
+    {
+      "model": "mob_filter",
+      "cube": "inset_bar_12",
+      "face": "south",
+      "role": "bar",
+      "size": [
+        1,
+        14
+      ],
+      "uv": [
+        142,
+        239,
+        143,
+        253
+      ]
+    },
+    {
+      "model": "mob_filter",
+      "cube": "inset_bar_12",
+      "face": "east",
+      "role": "bar",
+      "size": [
+        2,
+        14
+      ],
+      "uv": [
+        149,
+        239,
+        151,
+        253
+      ]
+    },
+    {
+      "model": "mob_filter",
+      "cube": "inset_bar_12",
+      "face": "west",
+      "role": "bar",
+      "size": [
+        2,
+        14
+      ],
+      "uv": [
+        149,
+        239,
+        151,
+        253
+      ]
+    },
+    {
+      "model": "mob_filter",
+      "cube": "inset_bar_12",
+      "face": "up",
+      "role": "bar",
+      "size": [
+        1,
+        2
+      ],
+      "uv": [
+        157,
+        239,
+        158,
+        241
+      ]
+    },
+    {
+      "model": "mob_filter",
+      "cube": "inset_bar_12",
+      "face": "down",
+      "role": "bar",
+      "size": [
+        1,
+        2
+      ],
+      "uv": [
+        164,
+        239,
+        165,
+        241
+      ]
+    },
+    {
+      "model": "mob_filter",
+      "cube": "attached_selector_plate",
+      "face": "north",
+      "role": "plate",
+      "size": [
+        4,
+        4
+      ],
+      "uv": [
+        85,
+        203,
+        89,
+        207
+      ]
+    },
+    {
+      "model": "mob_filter",
+      "cube": "attached_selector_plate",
+      "face": "south",
+      "role": "plate",
+      "size": [
+        4,
+        4
+      ],
+      "uv": [
+        85,
+        203,
+        89,
+        207
+      ]
+    },
+    {
+      "model": "mob_filter",
+      "cube": "attached_selector_plate",
+      "face": "east",
+      "role": "plate",
+      "size": [
+        1.5,
+        4
+      ],
+      "uv": [
+        171,
+        239,
+        172.5,
+        243
+      ]
+    },
+    {
+      "model": "mob_filter",
+      "cube": "attached_selector_plate",
+      "face": "west",
+      "role": "plate",
+      "size": [
+        1.5,
+        4
+      ],
+      "uv": [
+        171,
+        239,
+        172.5,
+        243
+      ]
+    },
+    {
+      "model": "mob_filter",
+      "cube": "attached_selector_plate",
+      "face": "up",
+      "role": "plate",
+      "size": [
+        4,
+        1.5
+      ],
+      "uv": [
+        179,
+        239,
+        183,
+        240.5
+      ]
+    },
+    {
+      "model": "mob_filter",
+      "cube": "attached_selector_plate",
+      "face": "down",
+      "role": "plate",
+      "size": [
+        4,
+        1.5
+      ],
+      "uv": [
+        189,
+        239,
+        193,
+        240.5
+      ]
+    },
+    {
+      "model": "mob_harvester_controller",
+      "cube": "weathered_rim",
+      "face": "north",
+      "role": "plate",
+      "size": [
+        12,
+        12
+      ],
+      "uv": [
+        122,
+        203,
+        134,
+        215
+      ]
+    },
+    {
+      "model": "mob_harvester_controller",
+      "cube": "weathered_rim",
+      "face": "south",
+      "role": "plate",
+      "size": [
+        12,
+        12
+      ],
+      "uv": [
+        122,
+        203,
+        134,
+        215
+      ]
+    },
+    {
+      "model": "mob_harvester_controller",
+      "cube": "weathered_rim",
+      "face": "east",
+      "role": "plate",
+      "size": [
+        0.6,
+        12
+      ],
+      "uv": [
+        140,
+        203,
+        140.6,
+        215
+      ]
+    },
+    {
+      "model": "mob_harvester_controller",
+      "cube": "weathered_rim",
+      "face": "west",
+      "role": "plate",
+      "size": [
+        0.6,
+        12
+      ],
+      "uv": [
+        140,
+        203,
+        140.6,
+        215
+      ]
+    },
+    {
+      "model": "mob_harvester_controller",
+      "cube": "weathered_rim",
+      "face": "up",
+      "role": "plate",
+      "size": [
+        12,
+        0.6
+      ],
+      "uv": [
+        147,
+        203,
+        159,
+        203.6
+      ]
+    },
+    {
+      "model": "mob_harvester_controller",
+      "cube": "weathered_rim",
+      "face": "down",
+      "role": "plate",
+      "size": [
+        12,
+        0.6
+      ],
+      "uv": [
+        165,
+        203,
+        177,
+        203.6
+      ]
+    }
+  ]
+}

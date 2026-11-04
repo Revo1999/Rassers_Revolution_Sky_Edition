@@ -1,0 +1,8 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {"label":"Build all Revo mods","type":"shell","command":".\\dev.cmd build collectMods","group":{"kind":"build","isDefault":true},"problemMatcher":["$javac"]},
+    {"label":"Run development client","type":"shell","command":".\\dev.cmd :revolib:runClient","problemMatcher":[]},
+    {"label":"Run development server","type":"shell","command":".\\dev.cmd :revolib:runServer","problemMatcher":[]}
+  ]
+}

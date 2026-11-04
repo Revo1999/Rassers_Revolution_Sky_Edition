@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "PGP",
+    "GTG",
+    "PCP"
+  ],
+  "key": {
+    "P": {
+      "tag": "c:plates/steel"
+    },
+    "G": {
+      "item": "minecraft:glass_pane"
+    },
+    "T": {
+      "item": "minecraft:bucket"
+    },
+    "C": {
+      "tag": "c:ingots/copper"
+    }
+  },
+  "result": {
+    "id": "revoextraction:steel_drill_water_tank",
+    "count": 1
+  }
+}

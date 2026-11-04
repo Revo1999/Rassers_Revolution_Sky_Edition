@@ -1,0 +1,24 @@
+{
+  "biomes": {
+    "minecraft:overworld": {
+      "allow_list": true,
+      "elements": [
+        "minecraft:plains"
+      ]
+    },
+    "minecraft:the_nether": {
+      "allow_list": false,
+      "elements": []
+    }
+  },
+  "surface": false,
+  "surfaceSettings": {
+    "minecraft:overworld": [],
+    "minecraft:the_nether": [],
+    "minecraft:the_end": []
+  },
+  "islandDistance": 1024,
+  "seaHeight": 63,
+  "preventScheduledTicks": true,
+  "leaveToOverworld": false
+}

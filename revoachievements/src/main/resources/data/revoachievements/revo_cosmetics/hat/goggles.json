@@ -1,0 +1,10 @@
+{
+  "kind": "hat",
+  "name": "Workshop Goggles",
+  "description": "For excellent-looking inspections.",
+  "unlock_hint": "Assigned by Revo quest rewards.",
+  "item": "simplehats:goggles",
+  "color": "#D0B785",
+  "order": 160,
+  "requires_mod": "simplehats"
+}

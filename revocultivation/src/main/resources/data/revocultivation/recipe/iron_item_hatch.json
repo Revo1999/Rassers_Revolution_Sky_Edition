@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "revocultivation:item_hatch"
+    },
+    {
+      "tag": "c:plates/iron"
+    },
+    {
+      "tag": "c:plates/iron"
+    }
+  ],
+  "result": {
+    "id": "revocultivation:iron_item_hatch",
+    "count": 1
+  }
+}

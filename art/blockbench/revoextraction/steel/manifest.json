@@ -1,0 +1,158 @@
+{
+  "models": [
+    {
+      "name": "steel_drill_support",
+      "cubes": 4,
+      "faces": 24
+    },
+    {
+      "name": "steel_drill_casing",
+      "cubes": 3,
+      "faces": 18
+    },
+    {
+      "name": "steel_drill_core",
+      "cubes": 4,
+      "faces": 24
+    },
+    {
+      "name": "steel_drill_controller",
+      "cubes": 3,
+      "faces": 18
+    },
+    {
+      "name": "steel_drill_input",
+      "cubes": 7,
+      "faces": 42
+    },
+    {
+      "name": "steel_drill_output_hatch",
+      "cubes": 2,
+      "faces": 12
+    },
+    {
+      "name": "steel_drill_water_tank",
+      "cubes": 11,
+      "faces": 66
+    },
+    {
+      "name": "steel_drill_unassembled",
+      "cubes": 102,
+      "faces": 612
+    },
+    {
+      "name": "steel_drill_assembled",
+      "cubes": 84,
+      "faces": 504
+    }
+  ],
+  "palette": {
+    "paint": [
+      66,
+      94,
+      91
+    ],
+    "steel": [
+      145,
+      155,
+      156
+    ],
+    "cast": [
+      71,
+      79,
+      82
+    ],
+    "polished": [
+      166,
+      180,
+      184
+    ],
+    "dark": [
+      24,
+      32,
+      35
+    ],
+    "copper": [
+      141,
+      105,
+      73
+    ],
+    "tank": [
+      157,
+      169,
+      159
+    ],
+    "screen": [
+      24,
+      44,
+      45
+    ],
+    "switch": [
+      76,
+      89,
+      87
+    ],
+    "inlet": [
+      45,
+      107,
+      125
+    ],
+    "water": [
+      42,
+      132,
+      165
+    ],
+    "graphite": [
+      35,
+      43,
+      49
+    ],
+    "bit": [
+      57,
+      68,
+      76
+    ],
+    "vent": [
+      46,
+      58,
+      60
+    ],
+    "output": [
+      23,
+      29,
+      31
+    ]
+  },
+  "atlas": [
+    512,
+    512
+  ],
+  "physicalEnvelope": [
+    48,
+    48,
+    48
+  ],
+  "sourceScale": 3,
+  "pixelsPerBlock": 16,
+  "shaftCenter": [
+    48,
+    24,
+    24
+  ],
+  "fluidInterior": {
+    "from": [
+      2.2,
+      19.6,
+      19.2
+    ],
+    "to": [
+      10.8,
+      32.8,
+      28.8
+    ],
+    "runtimeTexture": "minecraft:block/water_still",
+    "previewUsesFirstVanillaFrame": true
+  },
+  "nativeBlockbench": true,
+  "tiles": 160
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "minecraft:planks"
+    },
+    {
+      "item": "minecraft:stick"
+    }
+  ],
+  "result": {
+    "id": "revoindustry:revolution_book",
+    "count": 1
+  }
+}

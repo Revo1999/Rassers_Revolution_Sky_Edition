@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "minecraftLaunched": false,
+  "gameplayTested": false,
+  "nativeSourceModels": [
+    "steel_drill_assembled.bbmodel",
+    "steel_drill_casing.bbmodel",
+    "steel_drill_controller.bbmodel",
+    "steel_drill_core.bbmodel",
+    "steel_drill_input.bbmodel",
+    "steel_drill_output_hatch.bbmodel",
+    "steel_drill_support.bbmodel",
+    "steel_drill_unassembled.bbmodel",
+    "steel_drill_water_tank.bbmodel"
+  ],
+  "assembledCubes": 84,
+  "runtimeCubes": 83,
+  "minimumFullSweepClearancePhysicalPixels": 0.2296415317709517,
+  "shaftCenter": [
+    48,
+    24,
+    24
+  ],
+  "uvDensityPixelsPerPhysicalUnit": 1,
+  "questCount": 113,
+  "newQuests": 10,
+  "runtimeWater": "minecraft:block/water_still",
+  "jarMatchesSourceAssets": true
+}

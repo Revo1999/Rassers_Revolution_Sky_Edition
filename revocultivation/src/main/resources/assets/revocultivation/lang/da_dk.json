@@ -1,0 +1,21 @@
+{
+  "block.revocultivation.composter": "Composter",
+  "block.revocultivation.silkworm_cultivator": "Silk Worm Cultivator",
+  "item.revocultivation.compost": "Compost",
+  "item.revocultivation.silkworm": "Silkworm",
+  "item.revocultivation.silk_cocoon": "Silk Cocoon",
+  "item.revocultivation.silk": "Silk",
+  "small.revocultivation.status.0": "Working",
+  "small.revocultivation.status.1": "Needs plant material",
+  "small.revocultivation.status.2": "Needs a starter silkworm",
+  "small.revocultivation.status.3": "Output full",
+  "recipe.revocultivation.worm": "20s \u00b7 starter worm retained",
+  "recipe.revocultivation.small_output": "Front output auto-ejects",
+  "emi.category.revocultivation.composting": "Composting",
+  "emi.category.revocultivation.silkworm_cultivation": "Silkworm Cultivation",
+  "small.revocultivation.ready": "Ready - collect output",
+  "small.revocultivation.status.5": "Ready - collect output",
+  "gui.revocultivation.duration": "%ss cycle",
+  "recipe.revocultivation.compost_time": "8s per full batch",
+  "recipe.revocultivation.passive_time": "Automatic, no power"
+}

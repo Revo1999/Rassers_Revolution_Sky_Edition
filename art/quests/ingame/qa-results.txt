@@ -1,0 +1,9 @@
+Fresh world: Revo First Chapter QA 3
+PASS: actual fresh Skyblock world; placed crafting station; only one starting Revolution Book; no free starter chest; non-op player; all 35 first-chapter quests and six Tips entries loaded.
+PASS: actual Revolution Book use opened FTB Quests.
+PASS: real FTB reward pipeline granted ungated manuals; first-barrel command started rain for a non-op player.
+PASS: actual AE2 manual opened guideme.internal.screen.GuideScreen
+PASS: actual MI manual opened guideme.internal.screen.GuideScreen
+PASS: real rain filled the exposed barrel and real torch heat melted cobblestone over elapsed server ticks.
+PASS: actual dust-to-clay mixing, synchronized vessel menus and standard inventory layout.
+PASS: real Jade server payload. Fresh-world quest and primitive machine QA complete.

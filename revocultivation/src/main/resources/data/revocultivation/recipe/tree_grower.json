@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "CCC",
+    "LSL",
+    "CBC"
+  ],
+  "key": {
+    "C": {
+      "item": "revocultivation:wooden_casing"
+    },
+    "L": {
+      "item": "minecraft:lever"
+    },
+    "S": {
+      "item": "minecraft:oak_sapling"
+    },
+    "B": {
+      "item": "minecraft:stone_button"
+    }
+  },
+  "result": {
+    "id": "revocultivation:tree_grower",
+    "count": 1
+  }
+}

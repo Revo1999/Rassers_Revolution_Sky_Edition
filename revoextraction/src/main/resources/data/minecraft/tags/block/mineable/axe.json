@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "revoextraction:wooden_drill_support",
+    "revoextraction:wooden_drill_casing",
+    "revoextraction:wooden_drill_controller",
+    "revoextraction:wooden_drill_input",
+    "revoextraction:wooden_drill_output_hatch"
+  ]
+}

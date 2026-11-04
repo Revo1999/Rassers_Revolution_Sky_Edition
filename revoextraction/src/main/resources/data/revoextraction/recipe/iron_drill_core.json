@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "IPI",
+    "PCP",
+    "IPI"
+  ],
+  "key": {
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "P": {
+      "tag": "c:plates/iron"
+    },
+    "C": {
+      "item": "revoextraction:wooden_drill_core"
+    }
+  },
+  "result": {
+    "id": "revoextraction:iron_drill_core",
+    "count": 1
+  }
+}

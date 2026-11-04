@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "BIB",
+    "BLB"
+  ],
+  "key": {
+    "B": {
+      "item": "revocultivation:barred_panel"
+    },
+    "I": {
+      "item": "minecraft:iron_nugget"
+    },
+    "L": {
+      "item": "minecraft:lever"
+    }
+  },
+  "result": {
+    "id": "revocultivation:mob_filter",
+    "count": 1
+  }
+}

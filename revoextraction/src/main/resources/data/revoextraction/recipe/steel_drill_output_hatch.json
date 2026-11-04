@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "revoextraction:iron_drill_output_hatch"
+    },
+    {
+      "tag": "c:plates/steel"
+    },
+    {
+      "tag": "c:plates/steel"
+    }
+  ],
+  "result": {
+    "id": "revoextraction:steel_drill_output_hatch",
+    "count": 1
+  }
+}

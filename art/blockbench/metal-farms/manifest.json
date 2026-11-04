@@ -1,0 +1,220 @@
+{
+  "nativeBlockbench": true,
+  "palette": {
+    "steel": [
+      65,
+      91,
+      86
+    ],
+    "iron": [
+      97,
+      117,
+      131
+    ],
+    "silver": [
+      156,
+      168,
+      170
+    ],
+    "cast": [
+      66,
+      76,
+      80
+    ],
+    "dark": [
+      25,
+      35,
+      39
+    ],
+    "copper": [
+      149,
+      111,
+      76
+    ],
+    "amber": [
+      217,
+      153,
+      57
+    ],
+    "screen": [
+      20,
+      43,
+      45
+    ],
+    "switch": [
+      105,
+      125,
+      118
+    ],
+    "vent": [
+      61,
+      77,
+      83
+    ],
+    "output": [
+      27,
+      37,
+      41
+    ],
+    "light_off": [
+      82,
+      98,
+      102
+    ],
+    "light_on": [
+      194,
+      226,
+      215
+    ]
+  },
+  "atlas": [
+    512,
+    512
+  ],
+  "pixelsPerPhysicalUnit": 1,
+  "assemblySourceScale": {
+    "iron_greenhouse_assembled": 5,
+    "steel_tree_grower_assembled": 5,
+    "steel_mob_harvester_assembled": 3
+  },
+  "models": [
+    {
+      "name": "steel_support",
+      "cubes": 4,
+      "runtimeCubes": 4
+    },
+    {
+      "name": "steel_casing",
+      "cubes": 3,
+      "runtimeCubes": 3
+    },
+    {
+      "name": "steel_soil_bed",
+      "cubes": 3,
+      "runtimeCubes": 3
+    },
+    {
+      "name": "steel_item_hatch",
+      "cubes": 2,
+      "runtimeCubes": 2
+    },
+    {
+      "name": "iron_support",
+      "cubes": 4,
+      "runtimeCubes": 4
+    },
+    {
+      "name": "iron_casing",
+      "cubes": 3,
+      "runtimeCubes": 3
+    },
+    {
+      "name": "iron_soil_bed",
+      "cubes": 3,
+      "runtimeCubes": 3
+    },
+    {
+      "name": "iron_item_hatch",
+      "cubes": 2,
+      "runtimeCubes": 2
+    },
+    {
+      "name": "steel_collection_grate",
+      "cubes": 6,
+      "runtimeCubes": 6
+    },
+    {
+      "name": "steel_barred_panel",
+      "cubes": 7,
+      "runtimeCubes": 7
+    },
+    {
+      "name": "steel_mob_filter",
+      "cubes": 9,
+      "runtimeCubes": 9
+    },
+    {
+      "name": "iron_glass_panel",
+      "scale": 1,
+      "cubes": 1,
+      "runtimeCubes": 1
+    },
+    {
+      "name": "iron_grow_light",
+      "cubes": 3,
+      "runtimeCubes": 3
+    },
+    {
+      "name": "steel_tree_grower_controller",
+      "cubes": 3,
+      "runtimeCubes": 3
+    },
+    {
+      "name": "steel_mob_harvester_controller",
+      "cubes": 3,
+      "runtimeCubes": 3
+    },
+    {
+      "name": "iron_greenhouse_controller",
+      "cubes": 3,
+      "runtimeCubes": 3
+    },
+    {
+      "name": "steel_tree_grower_assembled",
+      "scale": 5,
+      "cubes": 119,
+      "runtimeCubes": 62
+    },
+    {
+      "name": "steel_mob_harvester_assembled",
+      "cubes": 67,
+      "runtimeCubes": 67
+    },
+    {
+      "name": "iron_greenhouse_assembled",
+      "scale": 5,
+      "cubes": 180,
+      "runtimeCubes": 107
+    },
+    {
+      "name": "iron_water_tank",
+      "scale": 1,
+      "cubes": 12,
+      "runtimeCubes": 12
+    },
+    {
+      "name": "steel_water_tank",
+      "scale": 1,
+      "cubes": 12,
+      "runtimeCubes": 12
+    }
+  ],
+  "glass": "Borderless full-block component, continuous framed assembly panes; adjacent internal faces suppressed.",
+  "converterPlacement": {
+    "localBlock": [
+      2,
+      0,
+      2
+    ],
+    "physicalCell": [
+      [
+        64,
+        0,
+        64
+      ],
+      [
+        80,
+        16,
+        80
+      ]
+    ],
+    "hatchLocalBlock": [
+      2,
+      0,
+      1
+    ],
+    "formedAppearance": "Fitted housing replaces chunk model; functional converter block remains."
+  },
+  "converterRemainsSeparateBlock": true,
+  "refinement": "greenhouse-tree-manifest.json"
+}

@@ -1,0 +1,5 @@
+{
+  "clearInitialInventory": true,
+  "dropItems": true,
+  "initialInventoryType": "spawn"
+}

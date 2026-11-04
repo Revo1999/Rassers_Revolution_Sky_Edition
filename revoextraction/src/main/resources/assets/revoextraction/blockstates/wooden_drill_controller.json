@@ -1,0 +1,36 @@
+{
+  "variants": {
+    "facing=north,formed=false": {
+      "model": "revoextraction:block/wooden_drill_controller",
+      "y": 0
+    },
+    "facing=east,formed=false": {
+      "model": "revoextraction:block/wooden_drill_controller",
+      "y": 90
+    },
+    "facing=south,formed=false": {
+      "model": "revoextraction:block/wooden_drill_controller",
+      "y": 180
+    },
+    "facing=west,formed=false": {
+      "model": "revoextraction:block/wooden_drill_controller",
+      "y": 270
+    },
+    "facing=north,formed=true": {
+      "model": "revoextraction:block/empty",
+      "y": 0
+    },
+    "facing=east,formed=true": {
+      "model": "revoextraction:block/empty",
+      "y": 90
+    },
+    "facing=south,formed=true": {
+      "model": "revoextraction:block/empty",
+      "y": 180
+    },
+    "facing=west,formed=true": {
+      "model": "revoextraction:block/empty",
+      "y": 270
+    }
+  }
+}

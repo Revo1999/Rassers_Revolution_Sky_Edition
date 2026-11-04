@@ -1,0 +1,9 @@
+{
+  "kind": "title",
+  "name": "Unpaid Factory Intern",
+  "description": "Your first official Revo job. Salary remains theoretical.",
+  "unlock_hint": "Complete Clock in at Revo.",
+  "item": "minecraft:name_tag",
+  "color": "#B3BDAB",
+  "order": 0
+}

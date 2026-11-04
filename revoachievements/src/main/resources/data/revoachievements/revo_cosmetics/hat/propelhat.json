@@ -1,0 +1,10 @@
+{
+  "kind": "hat",
+  "name": "Propeller Hat",
+  "description": "An exceptionally aerodynamic promotion.",
+  "unlock_hint": "Complete Branch Office.",
+  "item": "simplehats:propelhat",
+  "color": "#D0B785",
+  "order": 140,
+  "requires_mod": "simplehats"
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "L L",
+    "P P",
+    "PPP"
+  ],
+  "key": {
+    "L": {
+      "tag": "minecraft:logs"
+    },
+    "P": {
+      "tag": "minecraft:planks"
+    }
+  },
+  "result": {
+    "id": "revocultivation:composter",
+    "count": 1
+  }
+}

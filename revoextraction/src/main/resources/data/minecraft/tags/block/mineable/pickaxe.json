@@ -1,0 +1,18 @@
+{
+  "replace": false,
+  "values": [
+    "revoextraction:iron_drill_support",
+    "revoextraction:iron_drill_casing",
+    "revoextraction:iron_drill_core",
+    "revoextraction:iron_drill_controller",
+    "revoextraction:iron_drill_input",
+    "revoextraction:iron_drill_output_hatch",
+    "revoextraction:steel_drill_support",
+    "revoextraction:steel_drill_casing",
+    "revoextraction:steel_drill_core",
+    "revoextraction:steel_drill_controller",
+    "revoextraction:steel_drill_input",
+    "revoextraction:steel_drill_output_hatch",
+    "revoextraction:steel_drill_water_tank"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "items": [
+    {
+      "Slot": "mainhand",
+      "Item": {
+        "id": "revoindustry:revolution_book",
+        "count": 1
+      }
+    }
+  ]
+}

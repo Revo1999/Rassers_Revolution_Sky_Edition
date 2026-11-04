@@ -1,0 +1,159 @@
+{
+  "preference": "balance",
+  "texture": [
+    512,
+    512
+  ],
+  "nativeDensity": "16 px/block after runtime x3",
+  "models": [
+    {
+      "name": "timber_support",
+      "cubes": 3,
+      "triangles": 36,
+      "scale": 1,
+      "groups": [
+        "body"
+      ]
+    },
+    {
+      "name": "wooden_casing",
+      "cubes": 2,
+      "triangles": 24,
+      "scale": 1,
+      "groups": [
+        "body"
+      ]
+    },
+    {
+      "name": "soil_bed",
+      "cubes": 1,
+      "triangles": 12,
+      "scale": 1,
+      "groups": [
+        "body"
+      ]
+    },
+    {
+      "name": "collection_grate",
+      "cubes": 5,
+      "triangles": 60,
+      "scale": 1,
+      "groups": [
+        "body"
+      ]
+    },
+    {
+      "name": "glass_panel",
+      "cubes": 5,
+      "triangles": 60,
+      "scale": 1,
+      "groups": [
+        "body"
+      ]
+    },
+    {
+      "name": "barred_panel",
+      "cubes": 8,
+      "triangles": 96,
+      "scale": 1,
+      "groups": [
+        "body"
+      ]
+    },
+    {
+      "name": "mob_filter",
+      "cubes": 8,
+      "triangles": 96,
+      "scale": 1,
+      "groups": [
+        "body"
+      ]
+    },
+    {
+      "name": "item_hatch",
+      "cubes": 4,
+      "triangles": 48,
+      "scale": 1,
+      "groups": [
+        "body"
+      ]
+    },
+    {
+      "name": "tree_grower_controller",
+      "cubes": 5,
+      "triangles": 60,
+      "scale": 1,
+      "groups": [
+        "body"
+      ]
+    },
+    {
+      "name": "greenhouse_controller",
+      "cubes": 5,
+      "triangles": 60,
+      "scale": 1,
+      "groups": [
+        "body"
+      ]
+    },
+    {
+      "name": "mob_harvester_controller",
+      "cubes": 5,
+      "triangles": 60,
+      "scale": 1,
+      "groups": [
+        "body"
+      ]
+    },
+    {
+      "name": "tree_grower_assembled",
+      "cubes": 37,
+      "triangles": 444,
+      "scale": 3,
+      "groups": [
+        "body",
+        "plant"
+      ]
+    },
+    {
+      "name": "greenhouse_assembled",
+      "cubes": 52,
+      "triangles": 624,
+      "scale": 3,
+      "groups": [
+        "body",
+        "plant"
+      ]
+    },
+    {
+      "name": "mob_harvester_assembled",
+      "cubes": 67,
+      "triangles": 804,
+      "scale": 3,
+      "groups": [
+        "body",
+        "actor"
+      ]
+    },
+    {
+      "name": "mob_harvester_skeleton_assembled",
+      "cubes": 67,
+      "triangles": 804,
+      "scale": 3,
+      "groups": [
+        "body",
+        "actor"
+      ]
+    },
+    {
+      "name": "mob_harvester_spider_assembled",
+      "cubes": 79,
+      "triangles": 948,
+      "scale": 3,
+      "groups": [
+        "body",
+        "actor"
+      ]
+    }
+  ]
+}

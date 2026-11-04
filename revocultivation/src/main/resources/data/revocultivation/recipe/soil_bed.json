@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "DDD",
+    "DWD"
+  ],
+  "key": {
+    "D": {
+      "item": "minecraft:dirt"
+    },
+    "W": {
+      "item": "revocultivation:wooden_casing"
+    }
+  },
+  "result": {
+    "id": "revocultivation:soil_bed",
+    "count": 4
+  }
+}

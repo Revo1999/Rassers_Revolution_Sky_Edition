@@ -1,0 +1,20 @@
+{
+  "design": "Continuous framed iron rails seated into timber posts and stone collars; inset bars; clear centre view; texture bolts; 16 px/world block",
+  "models": [
+    {
+      "name": "mob_harvester_assembled",
+      "sourceCubes": 87,
+      "runtimeCubes": 81
+    },
+    {
+      "name": "barred_panel",
+      "sourceCubes": 8,
+      "runtimeCubes": 8
+    },
+    {
+      "name": "mob_filter",
+      "sourceCubes": 10,
+      "runtimeCubes": 10
+    }
+  ]
+}

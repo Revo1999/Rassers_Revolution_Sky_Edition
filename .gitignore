@@ -1,0 +1,15 @@
+.gradle/
+**/build/
+**/run/
+**/run-data/
+.idea/
+*.iml
+.vscode/settings.json
+.local/
+*.log
+pack/overrides/mods/*.jar
+__pycache__/
+*.py[cod]
+.env
+.env.*
+!.env.example

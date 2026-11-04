@@ -1,0 +1,203 @@
+{
+  "credit": "Made with Blockbench",
+  "textures": {
+    "0": "revoindustry:block/power_converter/side",
+    "1": "revoindustry:block/power_converter/top",
+    "2": "revoindustry:block/power_converter/front",
+    "3": "revoindustry:block/power_converter/back",
+    "particle": "revoindustry:block/power_converter/side"
+  },
+  "elements": [
+    {
+      "name": "steel_enclosure",
+      "from": [
+        0,
+        0,
+        1
+      ],
+      "to": [
+        16,
+        16,
+        15
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": "#0"
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            14,
+            16
+          ],
+          "texture": "#0"
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": "#0"
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            14,
+            16
+          ],
+          "texture": "#0"
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            16,
+            14
+          ],
+          "rotation": 180,
+          "texture": "#1"
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            16,
+            14
+          ],
+          "texture": "#0"
+        }
+      }
+    },
+    {
+      "name": "FE_terminal",
+      "from": [
+        2,
+        2,
+        0
+      ],
+      "to": [
+        14,
+        14,
+        1
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            2,
+            2,
+            14,
+            14
+          ],
+          "texture": "#2"
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            1,
+            12
+          ],
+          "texture": "#2"
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            1,
+            12
+          ],
+          "texture": "#2"
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            12,
+            1
+          ],
+          "texture": "#2"
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            12,
+            1
+          ],
+          "texture": "#2"
+        }
+      }
+    },
+    {
+      "name": "EU_terminal",
+      "from": [
+        2,
+        2,
+        15
+      ],
+      "to": [
+        14,
+        14,
+        16
+      ],
+      "faces": {
+        "east": {
+          "uv": [
+            0,
+            0,
+            1,
+            12
+          ],
+          "texture": "#3"
+        },
+        "south": {
+          "uv": [
+            2,
+            2,
+            14,
+            14
+          ],
+          "texture": "#3"
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            1,
+            12
+          ],
+          "texture": "#3"
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            12,
+            1
+          ],
+          "texture": "#3"
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            12,
+            1
+          ],
+          "texture": "#3"
+        }
+      }
+    }
+  ],
+  "parent": "minecraft:block/block"
+}

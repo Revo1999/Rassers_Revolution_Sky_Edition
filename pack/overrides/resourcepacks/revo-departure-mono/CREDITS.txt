@@ -1,0 +1,12 @@
+Departure Mono 1.500 by Helena Zhang
+Copyright 2022–2024 Helena Zhang (helenazhang.com).
+Original font: https://departuremono.com/
+Author: https://helenazhang.com/
+Licensed under the SIL Open Font License, Version 1.1.
+See LICENSE-DepartureMono.txt for the full license.
+
+Revo Departure Mono is a TrueType format conversion for Minecraft.
+Original character mappings and glyph outlines are retained.
+Original advance widths and bearings retained; native 8px capitals without rescaling.
+The converted font remains licensed under SIL OFL 1.1.
+Original OTF is preserved in the project art/fonts directory.

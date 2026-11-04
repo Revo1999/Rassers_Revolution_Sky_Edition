@@ -1,0 +1,14 @@
+{
+  "spawnProtectionRadius": 0,
+  "spawnDimension": "minecraft:overworld",
+  "skipCenterIslandCreation": false,
+  "radiusToFindValidSpawn": 8,
+  "Height": {
+    "heightCalculationType": "set",
+    "range": {
+      "bottom": 64,
+      "top": 319
+    },
+    "offset": 0
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "kind": "title",
+  "name": "Chief Egg Hatcher",
+  "description": "Responsible for suspicious noises from the incubator.",
+  "unlock_hint": "Assigned by Revo quest rewards.",
+  "item": "minecraft:name_tag",
+  "color": "#DCC98E",
+  "order": 30
+}

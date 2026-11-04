@@ -1,0 +1,20 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "revocultivation:block/silkworm_cultivator",
+      "y": 0
+    },
+    "facing=east": {
+      "model": "revocultivation:block/silkworm_cultivator",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "revocultivation:block/silkworm_cultivator",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "revocultivation:block/silkworm_cultivator",
+      "y": 270
+    }
+  }
+}

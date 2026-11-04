@@ -1,0 +1,14 @@
+{
+  "chapters": 5,
+  "quests": 103,
+  "chapterOne": 35,
+  "createChapter": 29,
+  "steamChapter": 28,
+  "allIdsUnique": true,
+  "dependencyGraphAcyclic": true,
+  "manualIronRouteWithoutWater": true,
+  "ironPlateBudget": 42,
+  "earlyQuestIcons": 64,
+  "sectionBanners": 9,
+  "gameplayTested": false
+}

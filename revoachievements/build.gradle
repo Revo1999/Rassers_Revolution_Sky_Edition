@@ -1,0 +1,18 @@
+repositories {
+    maven { url = 'https://maven.ftb.dev/releases' }
+    maven { url = 'https://api.modrinth.com/maven' }
+}
+dependencies {
+    // Compile against the pack's exact versions; optional APIs are never bundled.
+    compileOnly('dev.ftb.mods:ftb-quests-neoforge:2101.1.37') { transitive = false }
+    compileOnly('dev.ftb.mods:ftb-library-neoforge:2101.1.39') { transitive = false }
+    compileOnly('dev.ftb.mods:ftb-teams-neoforge:2101.1.11') { transitive = false }
+    compileOnly('maven.modrinth:playername-styler:grQoBXOC') { transitive = false }
+}
+if (providers.gradleProperty('revoAchievementsTests').isPresent()) {
+    sourceSets.main.java.srcDir 'src/gametest/java'
+    sourceSets.main.resources.srcDir 'src/gametest/resources'
+    neoForge.runs { achievementTests { type = 'gameTestServer'; systemProperty 'neoforge.enabledGameTestNamespaces', 'revoachievements' } }
+}
+if (providers.gradleProperty('revoAchievementsUiQa').isPresent()) { sourceSets.main.java.srcDir 'src/uiqa/java' }
+tasks.named('jar', Jar) { exclude '**/AchievementsGameTests*', '**/AchievementsUiQa*', 'data/revoachievements/structure/achievements_test.nbt' }

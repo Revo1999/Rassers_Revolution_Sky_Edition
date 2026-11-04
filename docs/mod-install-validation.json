@@ -1,0 +1,12 @@
+{
+  "minecraft": "1.21.1",
+  "neoForge": "21.1.265",
+  "externalJarCount": 75,
+  "sha512AllInstalledFilesVerified": true,
+  "duplicateArtifactFilenames": false,
+  "excludedModsPresent": false,
+  "sixRevoModules": "existing scaffolds",
+  "energyBridge": "MI Tweaks 1.9.6 Flux Transformer; gameplay not yet verified",
+  "dedicatedServerTested": false,
+  "balanceImplemented": false
+}

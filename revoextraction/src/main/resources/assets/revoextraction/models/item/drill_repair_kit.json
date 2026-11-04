@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "revoextraction:item/drill_repair_kit"
+  }
+}

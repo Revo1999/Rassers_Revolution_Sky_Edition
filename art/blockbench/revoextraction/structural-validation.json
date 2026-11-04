@@ -1,0 +1,15 @@
+{
+  "sourceCubes": 84,
+  "staticCubes": 74,
+  "splayedLegs": 4,
+  "steelISectionColumns": 4,
+  "kneeBraces": 4,
+  "cuttingSweepIntersections": [],
+  "shaftEndFlush": true,
+  "shaftCentreWorldPixels": [
+    24,
+    24
+  ],
+  "originalCuttingAndHatchGeometryPreserved": true,
+  "gameplayTested": false
+}

@@ -1,0 +1,942 @@
+{
+  "id": "5E10000000000000",
+  "filename": "5e10000000000000",
+  "title": "Chapter 1: From Nothing",
+  "icon": {
+    "id": "revoindustry:revolution_book",
+    "count": 1
+  },
+  "order_index": 0,
+  "default_quest_shape": "square",
+  "quests": [
+    {
+      "id": "5E10000000000001",
+      "title": "From Nothing",
+      "x": 0.0,
+      "y": 0.0,
+      "description": [
+        "One oak, a crafting station and the Revolution Book. Build everything else yourself.",
+        "Right-click this book to open FTB Quests. Your other mod manuals are freely available in Tips & Guides.",
+        "The island has no free ice or lava. Preserve the island and grow a renewable supply of trees."
+      ],
+      "tasks": [
+        {
+          "id": "5E10000000000101",
+          "type": "checkmark"
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5E10000000000002",
+      "title": "Your First Workshop",
+      "x": 0.0,
+      "y": -2.0,
+      "description": [
+        "A Crafting Station is already placed on the island. It keeps its grid when you close it.",
+        "Use it for the recipes below. This checkmark does not require breaking your station."
+      ],
+      "tasks": [
+        {
+          "id": "5E10000000000102",
+          "type": "checkmark"
+        }
+      ],
+      "rewards": [],
+      "dependencies": [
+        "5E10000000000001"
+      ]
+    },
+    {
+      "id": "5E10000000000003",
+      "title": "A Handful of Wood",
+      "x": 2.0,
+      "y": 0.0,
+      "description": [
+        "Punch the starting oak logs. Save the leaves until you have a crook.",
+        "Plant replacement saplings on dirt and give them space and daylight."
+      ],
+      "tasks": [
+        {
+          "id": "5E10000000000103",
+          "type": "item",
+          "item": {
+            "id": "minecraft:oak_log",
+            "count": 1
+          },
+          "count": 4,
+          "consume_items": false
+        }
+      ],
+      "rewards": [],
+      "dependencies": [
+        "5E10000000000001"
+      ]
+    },
+    {
+      "id": "5E10000000000004",
+      "title": "Stick With It",
+      "x": 4.0,
+      "y": 0.0,
+      "description": [
+        "Turn logs into planks, then make sticks.",
+        "These are the handles for your crook and first wooden hammer."
+      ],
+      "tasks": [
+        {
+          "id": "5E10000000000104",
+          "type": "item",
+          "item": {
+            "id": "minecraft:stick",
+            "count": 1
+          },
+          "count": 8,
+          "consume_items": false
+        }
+      ],
+      "rewards": [],
+      "dependencies": [
+        "5E10000000000003"
+      ]
+    },
+    {
+      "id": "5E10000000000005",
+      "title": "A Hook in the Sky",
+      "x": 6.0,
+      "y": 0.0,
+      "description": [
+        "Craft the Wooden Crook using four sticks. Break leaves with it.",
+        "It collects leaf blocks, supplies replacement saplings regularly and helps oak trees provide apples."
+      ],
+      "tasks": [
+        {
+          "id": "5E10000000000105",
+          "type": "item",
+          "item": {
+            "id": "revocultivation:crook",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [],
+      "dependencies": [
+        "5E10000000000004"
+      ]
+    },
+    {
+      "id": "5E10000000000006",
+      "title": "A Renewable Pile",
+      "x": 8.0,
+      "y": 0.0,
+      "description": [
+        "Harvest leaves using the crook, and keep replanting saplings.",
+        "Leaf blocks are your early source of compost, dirt and silkworm feed."
+      ],
+      "tasks": [
+        {
+          "id": "5E10000000000106",
+          "type": "item",
+          "item": {
+            "id": "minecraft:oak_leaves",
+            "count": 1
+          },
+          "count": 16,
+          "consume_items": false
+        }
+      ],
+      "rewards": [],
+      "dependencies": [
+        "5E10000000000005"
+      ]
+    },
+    {
+      "id": "5E10000000000007",
+      "title": "Never Lose Your Last Tree",
+      "x": 6.0,
+      "y": 2.0,
+      "description": [
+        "Keep a spare sapling. Plant before harvesting the next tree.",
+        "The crook supplies replacement saplings while collecting leaf blocks."
+      ],
+      "tasks": [
+        {
+          "id": "5E10000000000107",
+          "type": "item",
+          "item": {
+            "id": "minecraft:oak_sapling",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [],
+      "dependencies": [
+        "5E10000000000005"
+      ]
+    },
+    {
+      "id": "5E10000000000008",
+      "title": "A Wooden Composter",
+      "x": 10.0,
+      "y": 0.0,
+      "description": [
+        "The Composter recipe is entirely wood: logs and planks.",
+        "Insert four matching leaves or other compostable plants. A full batch automatically runs for 8 seconds. No crank, power or tamping.",
+        "Right-click held inputs to fill it, or use its interface. Watch the contents rise."
+      ],
+      "tasks": [
+        {
+          "id": "5E10000000000108",
+          "type": "item",
+          "item": {
+            "id": "revocultivation:composter",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [],
+      "dependencies": [
+        "5E10000000000006"
+      ]
+    },
+    {
+      "id": "5E10000000000009",
+      "title": "Let Nature Work",
+      "x": 12.0,
+      "y": 0.0,
+      "description": [
+        "Four compostable inputs produce one Compost after 8 seconds.",
+        "The result stays visible until taken or auto-ejected into an inventory in front."
+      ],
+      "tasks": [
+        {
+          "id": "5E10000000000109",
+          "type": "item",
+          "item": {
+            "id": "revocultivation:compost",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [],
+      "dependencies": [
+        "5E10000000000008"
+      ]
+    },
+    {
+      "id": "5E1000000000000A",
+      "title": "Grow Your Own Ground",
+      "x": 14.0,
+      "y": 0.0,
+      "description": [
+        "Craft each Compost into one Dirt. Keep making this renewably from leaves.",
+        "You can also use Compost as bone meal, but save enough for the stone loop."
+      ],
+      "tasks": [
+        {
+          "id": "5E1000000000010A",
+          "type": "item",
+          "item": {
+            "id": "minecraft:dirt",
+            "count": 1
+          },
+          "count": 4,
+          "consume_items": false
+        }
+      ],
+      "rewards": [],
+      "dependencies": [
+        "5E10000000000009"
+      ]
+    },
+    {
+      "id": "5E1000000000000B",
+      "title": "The Bootstrap Hammer",
+      "x": 6.0,
+      "y": 4.0,
+      "description": [
+        "Make a Wooden Hammer from planks and sticks. It is the stone-free starting tool.",
+        "The Stone Hammer does the same conversions and lasts longer once you can afford cobblestone."
+      ],
+      "tasks": [
+        {
+          "id": "5E1000000000010B",
+          "type": "item",
+          "item": {
+            "id": "revoextraction:wooden_hammer",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [],
+      "dependencies": [
+        "5E10000000000004"
+      ]
+    },
+    {
+      "id": "5E1000000000000C",
+      "title": "Stone From Soil",
+      "x": 16.0,
+      "y": 0.0,
+      "description": [
+        "Place Dirt and hammer it with either hammer. One dirt gives four Stone Pebbles.",
+        "Mining with the hammer or right-clicking the block both work. You never need to destroy your island to bootstrap stone."
+      ],
+      "tasks": [
+        {
+          "id": "5E1000000000010C",
+          "type": "item",
+          "item": {
+            "id": "revoextraction:stone_pebble",
+            "count": 1
+          },
+          "count": 4,
+          "consume_items": false
+        }
+      ],
+      "rewards": [],
+      "dependencies": [
+        "5E1000000000000A",
+        "5E1000000000000B"
+      ]
+    },
+    {
+      "id": "5E1000000000000D",
+      "title": "Four Pebbles, One Block",
+      "x": 18.0,
+      "y": 0.0,
+      "description": [
+        "Craft four Stone Pebbles in a 2 by 2 square into one Cobblestone.",
+        "Repeat leaves -> compost -> dirt -> pebbles -> cobblestone whenever you need more."
+      ],
+      "tasks": [
+        {
+          "id": "5E1000000000010D",
+          "type": "item",
+          "item": {
+            "id": "minecraft:cobblestone",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [],
+      "dependencies": [
+        "5E1000000000000C"
+      ]
+    },
+    {
+      "id": "5E1000000000000E",
+      "title": "A Better Hammer",
+      "x": 20.0,
+      "y": 0.0,
+      "description": [
+        "Craft a Stone Hammer with three cobblestone and two sticks.",
+        "It works on dirt too. Your wooden hammer stays useful as a backup."
+      ],
+      "tasks": [
+        {
+          "id": "5E1000000000010E",
+          "type": "item",
+          "item": {
+            "id": "revoextraction:stone_hammer",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [],
+      "dependencies": [
+        "5E1000000000000D"
+      ]
+    },
+    {
+      "id": "5E1000000000000F",
+      "title": "Break It Down",
+      "x": 22.0,
+      "y": 0.0,
+      "description": [
+        "Hammer a placed cobblestone block into gravel.",
+        "The hammer replaces its normal drop rather than giving both."
+      ],
+      "tasks": [
+        {
+          "id": "5E1000000000010F",
+          "type": "item",
+          "item": {
+            "id": "minecraft:gravel",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [],
+      "dependencies": [
+        "5E1000000000000E"
+      ]
+    },
+    {
+      "id": "5E10000000000010",
+      "title": "Finer Still",
+      "x": 24.0,
+      "y": 0.0,
+      "description": [
+        "Hammer gravel into sand."
+      ],
+      "tasks": [
+        {
+          "id": "5E10000000000110",
+          "type": "item",
+          "item": {
+            "id": "minecraft:sand",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [],
+      "dependencies": [
+        "5E1000000000000F"
+      ]
+    },
+    {
+      "id": "5E10000000000011",
+      "title": "The Finest Stone",
+      "x": 26.0,
+      "y": 0.0,
+      "description": [
+        "Hammer sand into Stone Dust. This is the last step: cobblestone -> gravel -> sand -> dust.",
+        "Make at least three dust for your first clay crucible and bucket."
+      ],
+      "tasks": [
+        {
+          "id": "5E10000000000111",
+          "type": "item",
+          "item": {
+            "id": "revoextraction:dust",
+            "count": 1
+          },
+          "count": 3,
+          "consume_items": false
+        }
+      ],
+      "rewards": [],
+      "dependencies": [
+        "5E10000000000010"
+      ]
+    },
+    {
+      "id": "5E10000000000012",
+      "title": "Catch a Cloud",
+      "x": 10.0,
+      "y": -3.0,
+      "description": [
+        "Make a Rain Barrel from planks and wooden slabs, then place it with clear sky above.",
+        "Finishing this quest starts a five-minute shower, so your opening clay loop does not depend on waiting for random weather.",
+        "During rain it collects one bucket of water in 10 seconds. Keep the top uncovered."
+      ],
+      "tasks": [
+        {
+          "id": "5E10000000000112",
+          "type": "item",
+          "item": {
+            "id": "revoindustry:rain_barrel",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [
+        {
+          "id": "5E10000000000500",
+          "type": "command",
+          "command": "/weather rain 300",
+          "permission_level": 2,
+          "silent": true,
+          "auto": "enabled"
+        }
+      ],
+      "dependencies": [
+        "5E10000000000006"
+      ]
+    },
+    {
+      "id": "5E10000000000013",
+      "title": "Dust Meets Rain",
+      "x": 28.0,
+      "y": -3.0,
+      "description": [
+        "Right-click one Stone Dust into a full Rain Barrel. 1000 mB water and one dust make one Clay block.",
+        "Take the clay from the barrel interface. Item/fluid automation and front item auto-ejection also work."
+      ],
+      "tasks": [
+        {
+          "id": "5E10000000000113",
+          "type": "item",
+          "item": {
+            "id": "minecraft:clay",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [],
+      "dependencies": [
+        "5E10000000000011",
+        "5E10000000000012"
+      ]
+    },
+    {
+      "id": "5E10000000000014",
+      "title": "Soft Foundations",
+      "x": 30.0,
+      "y": -3.0,
+      "description": [
+        "Break clay blocks or craft them back into four clay balls.",
+        "You need seven balls for the crucible and three for a clay bucket."
+      ],
+      "tasks": [
+        {
+          "id": "5E10000000000114",
+          "type": "item",
+          "item": {
+            "id": "minecraft:clay_ball",
+            "count": 1
+          },
+          "count": 10,
+          "consume_items": false
+        }
+      ],
+      "rewards": [],
+      "dependencies": [
+        "5E10000000000013"
+      ]
+    },
+    {
+      "id": "5E10000000000015",
+      "title": "A Small Kiln",
+      "x": 20.0,
+      "y": 3.0,
+      "description": [
+        "Eight cobblestone make a furnace. Logs or charcoal can fire your clay items.",
+        "Smelt logs into charcoal if you need renewable fuel or more torches."
+      ],
+      "tasks": [
+        {
+          "id": "5E10000000000115",
+          "type": "item",
+          "item": {
+            "id": "minecraft:furnace",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [],
+      "dependencies": [
+        "5E1000000000000D"
+      ]
+    },
+    {
+      "id": "5E10000000000016",
+      "title": "Shape the Crucible",
+      "x": 32.0,
+      "y": -3.0,
+      "description": [
+        "Arrange seven clay balls in a U shape. The unfired block cannot make lava yet."
+      ],
+      "tasks": [
+        {
+          "id": "5E10000000000116",
+          "type": "item",
+          "item": {
+            "id": "revoindustry:unfired_crucible",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [],
+      "dependencies": [
+        "5E10000000000014"
+      ]
+    },
+    {
+      "id": "5E10000000000017",
+      "title": "Fire It First",
+      "x": 34.0,
+      "y": -3.0,
+      "description": [
+        "Smelt the Unfired Clay Crucible in a furnace.",
+        "Place the fired crucible above a heat source and insert cobblestone."
+      ],
+      "tasks": [
+        {
+          "id": "5E10000000000117",
+          "type": "item",
+          "item": {
+            "id": "revoindustry:clay_crucible",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [],
+      "dependencies": [
+        "5E10000000000016",
+        "5E10000000000015"
+      ]
+    },
+    {
+      "id": "5E10000000000018",
+      "title": "A Bucket Before Iron",
+      "x": 32.0,
+      "y": -5.0,
+      "description": [
+        "Craft three clay balls into an Unfired Clay Bucket and smelt it.",
+        "Clay buckets collect water or lava from vessels and world sources. They never turn into free iron buckets.",
+        "Water pouring returns the empty clay bucket. Pouring lava breaks the clay bucket, so place your water first."
+      ],
+      "tasks": [
+        {
+          "id": "5E10000000000118",
+          "type": "item",
+          "item": {
+            "id": "revoindustry:clay_bucket",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [],
+      "dependencies": [
+        "5E10000000000014",
+        "5E10000000000015"
+      ]
+    },
+    {
+      "id": "5E10000000000019",
+      "title": "A Little Warmth",
+      "x": 36.0,
+      "y": -3.0,
+      "description": [
+        "Put a torch beneath the fired crucible. There is already one on the starting island, or craft more with charcoal.",
+        "Four cobblestone melt into 1000 mB lava: 40 seconds above a torch, 20 above a lit campfire. Unlit campfires do not heat it.",
+        "The machine works while loaded and pauses if heat or input is missing."
+      ],
+      "tasks": [
+        {
+          "id": "5E10000000000119",
+          "type": "checkmark"
+        }
+      ],
+      "rewards": [],
+      "dependencies": [
+        "5E10000000000017"
+      ]
+    },
+    {
+      "id": "5E1000000000001A",
+      "title": "Save Some Water",
+      "x": 34.0,
+      "y": -5.0,
+      "description": [
+        "Use an empty Clay Bucket on a full Rain Barrel to collect water.",
+        "Reserve water for your generator before spending every refill on clay."
+      ],
+      "tasks": [
+        {
+          "id": "5E1000000000011A",
+          "type": "item",
+          "item": {
+            "id": "revoindustry:clay_water_bucket",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [],
+      "dependencies": [
+        "5E10000000000018",
+        "5E10000000000012"
+      ]
+    },
+    {
+      "id": "5E1000000000001B",
+      "title": "Your First Lava",
+      "x": 38.0,
+      "y": -3.0,
+      "description": [
+        "Insert four cobblestone into the heated crucible and let the tank reach 1000 mB.",
+        "Collect it with an empty Clay Bucket. Lava is earned through your clay and heat chain, not supplied in the starter chest."
+      ],
+      "tasks": [
+        {
+          "id": "5E1000000000011B",
+          "type": "item",
+          "item": {
+            "id": "revoindustry:clay_lava_bucket",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [],
+      "dependencies": [
+        "5E10000000000019",
+        "5E10000000000018"
+      ]
+    },
+    {
+      "id": "5E1000000000001C",
+      "title": "Stone on Demand",
+      "x": 40.0,
+      "y": -3.0,
+      "description": [
+        "Build a normal water-and-lava cobblestone generator if you want a backup to composted dirt.",
+        "Place water first, reuse the empty clay bucket to collect lava, then place lava. Keep the lava source safe; flowing lava should meet flowing water in the cobble gap.",
+        "The lava bucket breaks when poured. These fluids otherwise use normal Minecraft behavior."
+      ],
+      "tasks": [
+        {
+          "id": "5E1000000000011C",
+          "type": "checkmark"
+        }
+      ],
+      "rewards": [],
+      "dependencies": [
+        "5E1000000000001A",
+        "5E1000000000001B"
+      ]
+    },
+    {
+      "id": "5E1000000000001D",
+      "title": "A Primitive Drive",
+      "x": 22.0,
+      "y": 5.0,
+      "description": [
+        "Use the pack starter recipe: a cobblestone and two sticks make two Create shafts.",
+        "This avoids needing metal before your first drill. Later Create recipes remain available."
+      ],
+      "tasks": [
+        {
+          "id": "5E1000000000011D",
+          "type": "item",
+          "item": {
+            "id": "create:shaft",
+            "count": 1
+          },
+          "count": 2,
+          "consume_items": false
+        }
+      ],
+      "rewards": [],
+      "dependencies": [
+        "5E1000000000000D"
+      ]
+    },
+    {
+      "id": "5E1000000000001E",
+      "title": "Turn It Yourself",
+      "x": 24.0,
+      "y": 5.0,
+      "description": [
+        "The starter crank recipe uses planks and a shaft.",
+        "This crank powers the wooden drill. The Composter and Silk Worm Cultivator remain passive."
+      ],
+      "tasks": [
+        {
+          "id": "5E1000000000011E",
+          "type": "item",
+          "item": {
+            "id": "create:hand_crank",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [],
+      "dependencies": [
+        "5E1000000000001D"
+      ]
+    },
+    {
+      "id": "5E1000000000001F",
+      "title": "The Heart of the Drill",
+      "x": 26.0,
+      "y": 5.0,
+      "description": [
+        "Make two drill cores. One is used to craft the controller, and one is placed inside the multiblock."
+      ],
+      "tasks": [
+        {
+          "id": "5E1000000000011F",
+          "type": "item",
+          "item": {
+            "id": "revoextraction:wooden_drill_core",
+            "count": 1
+          },
+          "count": 2,
+          "consume_items": false
+        }
+      ],
+      "rewards": [],
+      "dependencies": [
+        "5E1000000000000D"
+      ]
+    },
+    {
+      "id": "5E10000000000020",
+      "title": "Twelve Timber Supports",
+      "x": 28.0,
+      "y": 7.0,
+      "description": [
+        "The four corners each stand three blocks tall: twelve supports total.",
+        "Use renewable cobblestone for their feet and braces."
+      ],
+      "tasks": [
+        {
+          "id": "5E10000000000120",
+          "type": "item",
+          "item": {
+            "id": "revoextraction:wooden_drill_support",
+            "count": 1
+          },
+          "count": 12,
+          "consume_items": false
+        }
+      ],
+      "rewards": [],
+      "dependencies": [
+        "5E1000000000000D"
+      ]
+    },
+    {
+      "id": "5E10000000000021",
+      "title": "The First Controller",
+      "x": 28.0,
+      "y": 5.0,
+      "description": [
+        "Craft the Wooden Drill Controller using one core and wooden casings.",
+        "Open the drill in EMI and use its interactive multiblock construction guide."
+      ],
+      "tasks": [
+        {
+          "id": "5E10000000000121",
+          "type": "item",
+          "item": {
+            "id": "revoextraction:wooden_drill_controller",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [],
+      "dependencies": [
+        "5E1000000000001F"
+      ]
+    },
+    {
+      "id": "5E10000000000022",
+      "title": "Finish the Shell",
+      "x": 30.0,
+      "y": 5.0,
+      "description": [
+        "For the assembled 3 x 3 x 3 drill you need 12 timber supports, 10 casings, 1 placed core, 1 controller, 1 kinetic input and 1 output hatch.",
+        "Some casings are also consumed when crafting the controller, input and hatch. EMI shows each recipe."
+      ],
+      "tasks": [
+        {
+          "id": "5E10000000000300",
+          "type": "item",
+          "item": {
+            "id": "revoextraction:wooden_drill_casing",
+            "count": 1
+          },
+          "count": 10,
+          "consume_items": false
+        },
+        {
+          "id": "5E10000000000301",
+          "type": "item",
+          "item": {
+            "id": "revoextraction:wooden_drill_input",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "5E10000000000302",
+          "type": "item",
+          "item": {
+            "id": "revoextraction:wooden_drill_output_hatch",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "5E10000000000303",
+          "type": "item",
+          "item": {
+            "id": "revoextraction:wooden_drill_core",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [],
+      "dependencies": [
+        "5E10000000000021"
+      ]
+    },
+    {
+      "id": "5E10000000000023",
+      "title": "From Dirt to Industry",
+      "x": 32.0,
+      "y": 5.0,
+      "description": [
+        "Follow EMI to assemble the drill, attach the hand crank to its kinetic input, and turn it.",
+        "Check the controller for formation, RPM and cycle status. Open the output hatch for its inventory, or put a chest against its output face.",
+        "Confirm this checkmark once your first drill works. The rest of the pack starts with the resources you can now renew."
+      ],
+      "tasks": [
+        {
+          "id": "5E10000000000123",
+          "type": "checkmark"
+        }
+      ],
+      "rewards": [],
+      "dependencies": [
+        "5E10000000000020",
+        "5E10000000000022",
+        "5E1000000000001E"
+      ]
+    }
+  ]
+}

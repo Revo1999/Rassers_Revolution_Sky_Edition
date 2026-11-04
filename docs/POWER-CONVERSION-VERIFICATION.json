@@ -1,0 +1,27 @@
+{
+  "result": "build and artifact checks passed",
+  "scope": "Compilation and static release assets only; gameplay testing left to user",
+  "tiers": [
+    {
+      "name": "Basic",
+      "euPerTick": 32,
+      "fePerTickAtRatio10": 320
+    },
+    {
+      "name": "Advanced",
+      "euPerTick": 128,
+      "fePerTickAtRatio10": 1280
+    },
+    {
+      "name": "Elite",
+      "euPerTick": 512,
+      "fePerTickAtRatio10": 5120
+    }
+  ],
+  "storage": "none",
+  "orientations": 6,
+  "kineticConversion": false,
+  "radioRemoved": true,
+  "itemTextures": "four clay buckets and wooden crook, 16px",
+  "pack": "C:\\Users\\Victor\\Documents\\Codex\\2026-10-31\\https-github-com-revo1999-rassers-revolution\\outputs\\Rassers-Revolution-Sky-Edition-0.1.21-dev.mrpack"
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "revocultivation:mob_filter"
+    },
+    {
+      "tag": "c:plates/steel"
+    },
+    {
+      "tag": "c:plates/steel"
+    }
+  ],
+  "result": {
+    "id": "revocultivation:steel_mob_filter",
+    "count": 1
+  }
+}

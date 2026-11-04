@@ -1,0 +1,39 @@
+{
+  "source": "https://github.com/Mojang/bedrock-samples",
+  "ref": "main",
+  "license": "Mojang AB, all rights reserved. Use is subject to the Minecraft EULA and Usage Guidelines.",
+  "requests": [
+    {
+      "spec": "stone",
+      "kind": "block",
+      "carried": false,
+      "has_carried": false,
+      "faces": {
+        "north": "flattened_stone",
+        "south": "flattened_stone",
+        "east": "flattened_stone",
+        "west": "flattened_stone",
+        "up": "flattened_stone",
+        "down": "flattened_stone"
+      },
+      "atlas_keys": {
+        "flattened_stone": {
+          "path": "blocks/stone",
+          "variants": 1
+        }
+      }
+    }
+  ],
+  "textures": [
+    {
+      "texture": "blocks/stone",
+      "file": "C:\\Users\\Victor\\Documents\\Codex\\2026-10-31\\https-github-com-revo1999-rassers-revolution\\outputs\\Rassers_Revolution_Sky_Edition\\art\\blockbench\\revoextraction\\textures\\stone_panel\\blocks\\stone.png",
+      "url": "https://cdn.jsdelivr.net/gh/Mojang/bedrock-samples@main/resource_pack/textures/blocks/stone.png",
+      "format": "png",
+      "width": 16,
+      "height": 16,
+      "frames": 1,
+      "variants": 1
+    }
+  ]
+}

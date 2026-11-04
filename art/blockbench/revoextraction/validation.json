@@ -1,0 +1,129 @@
+{
+  "sources": [
+    {
+      "name": "wooden_drill_assembled.bbmodel",
+      "cubes": 70,
+      "quads": 420,
+      "texture_size": [
+        512,
+        512
+      ],
+      "target_pixels_per_source_unit": 3
+    },
+    {
+      "name": "wooden_drill_casing.bbmodel",
+      "cubes": 3,
+      "quads": 18,
+      "texture_size": [
+        512,
+        512
+      ],
+      "target_pixels_per_source_unit": 1
+    },
+    {
+      "name": "wooden_drill_controller.bbmodel",
+      "cubes": 8,
+      "quads": 48,
+      "texture_size": [
+        512,
+        512
+      ],
+      "target_pixels_per_source_unit": 1
+    },
+    {
+      "name": "wooden_drill_core.bbmodel",
+      "cubes": 12,
+      "quads": 72,
+      "texture_size": [
+        512,
+        512
+      ],
+      "target_pixels_per_source_unit": 1
+    },
+    {
+      "name": "wooden_drill_input.bbmodel",
+      "cubes": 7,
+      "quads": 42,
+      "texture_size": [
+        512,
+        512
+      ],
+      "target_pixels_per_source_unit": 1
+    },
+    {
+      "name": "wooden_drill_output_hatch.bbmodel",
+      "cubes": 11,
+      "quads": 66,
+      "texture_size": [
+        512,
+        512
+      ],
+      "target_pixels_per_source_unit": 1
+    },
+    {
+      "name": "wooden_drill_support.bbmodel",
+      "cubes": 9,
+      "quads": 54,
+      "texture_size": [
+        512,
+        512
+      ],
+      "target_pixels_per_source_unit": 1
+    },
+    {
+      "name": "wooden_drill_unassembled.bbmodel",
+      "cubes": 176,
+      "quads": 1056,
+      "texture_size": [
+        512,
+        512
+      ],
+      "target_pixels_per_source_unit": 3
+    }
+  ],
+  "runtime_models": [
+    {
+      "name": "wooden_drill_body.json",
+      "cubes": 61
+    },
+    {
+      "name": "wooden_drill_casing.json",
+      "cubes": 3
+    },
+    {
+      "name": "wooden_drill_controller.json",
+      "cubes": 8
+    },
+    {
+      "name": "wooden_drill_core.json",
+      "cubes": 12
+    },
+    {
+      "name": "wooden_drill_drill_bit.json",
+      "cubes": 8
+    },
+    {
+      "name": "wooden_drill_drive_gear.json",
+      "cubes": 1
+    },
+    {
+      "name": "wooden_drill_input.json",
+      "cubes": 7
+    },
+    {
+      "name": "wooden_drill_output_hatch.json",
+      "cubes": 11
+    },
+    {
+      "name": "wooden_drill_support.json",
+      "cubes": 9
+    }
+  ],
+  "animation": {
+    "name": "working",
+    "length": 4,
+    "loop": "loop",
+    "bones": 3
+  },
+  "issues": []
+}

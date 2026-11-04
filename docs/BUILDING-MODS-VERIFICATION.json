@@ -1,0 +1,76 @@
+{
+  "minecraft": "1.21.1",
+  "neoForge": "21.1.265",
+  "added": [
+    {
+      "project": "macaws-fences-and-walls",
+      "version": "1.2.1",
+      "versionId": "jVdb0r4W",
+      "file": "mcw-mcwfences-1.2.1-mc1.21.1neoforge.jar",
+      "sha512": "9bf496a8db8c6074ab32374042ae15e87fe87d897e21de29d459556fa8d7d0e73f2718f28a0236181cfb3c1bc66c776b4d079f0a7084696ad490275ab1b9eb6e"
+    },
+    {
+      "project": "macaws-doors",
+      "version": "1.1.5",
+      "versionId": "u7BRX44F",
+      "file": "mcw-doors-1.1.5-mc1.21.1neoforge.jar",
+      "sha512": "43ddf00be46af91c009a95392a094f05017155214c46c7980042cbcf871864dc792416497019e688eb558897c87848bd70c282ec4a6d7b268e1ba30389ba987a"
+    },
+    {
+      "project": "macaws-windows",
+      "version": "2.4.2",
+      "versionId": "rQUE4LCz",
+      "file": "mcw-mcwwindows-2.4.2-mc1.21.1neoforge.jar",
+      "sha512": "7628aa390a689a211013e5856cca1c695729b1faa7e20da16fa1f8a3822d5b569631829e91222caa8f1b27c4a7d28ab49110502551551216de2fb471b6f2549f"
+    },
+    {
+      "project": "macaws-roofs",
+      "version": "2.3.2",
+      "versionId": "jiXRXiSt",
+      "file": "mcw-roofs-2.3.2-mc1.21.1neoforge.jar",
+      "sha512": "c0e82a3d0a3ab2f2fac5fb0bdd7c7c228f084feaa816540d3d9524f341c8b108c3bb1afecadae2e8118e6c93f0e73280c62da1af4349aca87b6aa337e5e22ae4"
+    },
+    {
+      "project": "macaws-stairs",
+      "version": "1.0.2",
+      "versionId": "4t8L0dGP",
+      "file": "mcw-mcwstairs-1.0.2-mc1.21.1neoforge.jar",
+      "sha512": "51533899b5e64610a642ee9e9d89eb9f193d0877a8cba16d3bfa262789334c864128b01757bff9d3db2718bd3df1fc177f9b2d45b84f06fc0a6ee15474af2fac"
+    },
+    {
+      "project": "create-deco",
+      "version": "2.1.3",
+      "versionId": "qrcMVoBD",
+      "file": "createdeco-2.1.3.jar",
+      "sha512": "c536662f9d47ad57a37419165ded14835b23ad6c3e82a920298ecd7ee074244b0b6062ef9cc7ea4501ddd35919a840faccd7fc64e43eb8df31e12076681c3c0d"
+    },
+    {
+      "project": "betterblockz",
+      "version": "0.2.10-1.21.1-neoforge",
+      "versionId": "7E52UnH3",
+      "file": "betterblockz-0.2.10-1.21.1-neoforge.jar",
+      "sha512": "aa68aea80c5ab0c3d02ea41bb3eaafc3d29e23502dbfb24e7fd470a920ccf07f1fc91acc7c29268324a8ba9f4b09ce48b140ed053f9570982cbefbf55807b8f3"
+    },
+    {
+      "project": "athena-ctm",
+      "version": "4.0.6",
+      "versionId": "dJgL278E",
+      "file": "athena-neoforge-1.21.1-4.0.6.jar",
+      "sha512": "ab40a306a26ce834daae921a1e87768cd2538a4bfe27a4480f97af854084cc334e7416b1bd0b7583834a32a86951283f29fd4b1df7b98a967a6b26a3ec05e2cf"
+    }
+  ],
+  "note": "Athena is included for BetterBlockZ connected textures and is excluded from server downloads.",
+  "externalArtifactCount": 84,
+  "validation": [
+    "Every active jar matches its SHA-512 lock",
+    "All prior mod versions retained",
+    "All 8 new mod IDs loaded in the client",
+    "Copied test world opened successfully",
+    "Controller, hatch, EMI guide and Jade regression passed",
+    "No new-mod model/dependency loading failures found",
+    "Production jars contain no optional QA fixtures",
+    "MRPACK ZIP, manifest, source URLs, hashes and Revo jars verified"
+  ],
+  "pack": "C:\\Users\\Victor\\Documents\\Codex\\2026-10-31\\https-github-com-revo1999-rassers-revolution\\outputs\\Rassers-Revolution-Sky-Edition-0.1.8-dev.mrpack",
+  "packSha512": "9017d5d367567057421d4f299ce076ba31604aad0bb8fae5415e02cfd77c6c324bc3baf02759d383bdb2855c218d02dbd77e0db1366e7e84749b46391bbb3113"
+}

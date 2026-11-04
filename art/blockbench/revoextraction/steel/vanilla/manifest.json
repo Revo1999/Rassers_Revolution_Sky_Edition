@@ -1,0 +1,16 @@
+{
+  "source": "Minecraft Java 1.21.1 official client assets",
+  "copyright": "Copyright Mojang AB. Minecraft content use.",
+  "textures": [
+    {
+      "id": "minecraft:block/glass",
+      "file": "glass.png",
+      "sha256": "cb89c706dce86eac3123cef087d359b5f23098b658a468fb91662b4a9922bcd0"
+    },
+    {
+      "id": "minecraft:block/water_still",
+      "file": "water_still.png",
+      "sha256": "5843e8826507c484dfc15d5d255843d041804bcaa2036ed137320610d7fb9af7"
+    }
+  ]
+}

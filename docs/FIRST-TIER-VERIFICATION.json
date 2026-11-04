@@ -1,0 +1,33 @@
+{
+  "pack": "C:\\Users\\Victor\\Documents\\Codex\\2026-10-31\\https-github-com-revo1999-rassers-revolution\\outputs\\Rassers-Revolution-Sky-Edition-0.1.20-dev.mrpack",
+  "sha512": "2c7e1a270515953744862a6439de5cac68210ef525cb729a73dea308b5ad3f98865d7a05fd0990e1688436a288e85fac577726f7d23358e0dcd837c5bc7d0648",
+  "firstTierGameTests": 9,
+  "liveClientScreenshots": 16,
+  "clientChecks": [
+    "Three real structures and all controller/hatch network menus",
+    "Standard player inventory geometry; no hatch R/footer",
+    "Three EMI assembly categories and full 3D guide",
+    "Native Minecraft zombie/skeleton/spider rendering and persistent contained mob identity",
+    "Compact Jade server payload"
+  ],
+  "compactDrillUiQa": "passed; orientation details controller-only; hatch footer removed",
+  "assetChecks": "16 editable native Blockbench projects, 19 runtime models; embedded atlases, bounds, UV density, 56 cage-attachment checks, 354 opaque iron faces and unchanged geometry",
+  "production": {
+    "revoJars": 7,
+    "externalMods": 87,
+    "shader": 1,
+    "sourceResourceMatches": 264,
+    "qaClassesAndTemplatesExcluded": true,
+    "normalDevClasspathClean": true,
+    "zipIntegrity": "passed"
+  },
+  "jarSha512": {
+    "revoachievements-0.1.0-dev.jar": "ac8c0aa02d3a25bd286db5f511e38bb871366a8bf570d93ad28b63261a9406ed41b85c879005214775b5a7383f434c2128847ad5d0e744700cfc5eee5caf7ec1",
+    "revocultivation-0.1.0-dev.jar": "d6ddaa88552056dff347035ad19c8a4204d4dfa52603127d68689d55dbbb10709e8dfc4bbeb4337b9e786a922ea14f418fd839e3d501cb41f02b87cf1e0e98b5",
+    "revoextraction-0.1.0-dev.jar": "733d1a636f11bf07896ed3d96119e71fbdf8053a7ea3ea111e7c319ace8934a5d57b9b06e4b9f24ecbadfbcb09341dc84fc82b3fe82f6328bc66c322ab8840db",
+    "revogenetics-0.1.0-dev.jar": "774591c0af7a11cbd7d453234839ce01e32befb3f51b6f7d912634dc3285cc068eb0de30972cdc061e3b724c97893953adefa12c899971135d8415bda04d493b",
+    "revoindustry-0.1.0-dev.jar": "a6a5a322d7c83c0b963783df75903d89ff4a7057676e7025e8578fda48f692a159364c589b67d03b316f948470b409c008d7ede4cabc06e9ab055713231d6567",
+    "revolib-0.1.0-dev.jar": "2604502e882c00dbb7e1b06f729f1906eb375652bd8825f41781bbd813cf58a24db74062ee92c2a20b33b1b110deaf3797721355c5bda31e27f01b27c96917b7",
+    "revostorage-0.1.0-dev.jar": "038385d4d1728db1edaa4bfcc9f402e0563193ca92c7b810e5600342571aa53e97aada714db8780ef7fc5ac474b45451df0b0eeafe90c9c0cdc25348eb38f62e"
+  }
+}

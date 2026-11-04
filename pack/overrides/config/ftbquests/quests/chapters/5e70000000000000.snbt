@@ -1,0 +1,209 @@
+{
+  "id": "5E70000000000000",
+  "title": "Revo Employee Handbook",
+  "icon": {
+    "id": "minecraft:name_tag",
+    "count": 1
+  },
+  "order_index": 100,
+  "quests": [
+    {
+      "id": "5E70000000000001",
+      "title": "Clock in at Revo",
+      "x": 0.0,
+      "y": 0.0,
+      "tasks": [
+        {
+          "id": "5E70000000000101",
+          "type": "checkmark"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "5E70000000000202",
+          "type": "revoachievements:title",
+          "cosmetic": "revoachievements:title/unpaid_factory_intern",
+          "team_reward": false,
+          "auto": "enabled"
+        },
+        {
+          "id": "5E70000000000203",
+          "type": "revoachievements:hat",
+          "cosmetic": "revoachievements:hat/capbackwards",
+          "team_reward": false,
+          "auto": "enabled"
+        }
+      ],
+      "description": [
+        "Welcome to the Revo workforce. Complete this checkmark to collect your first title and hat.",
+        "Press K, use the R button in your inventory, or run /revoachievements wardrobe to choose your cosmetics.",
+        "Unlocks are personal, permanent and cosmetic only. They do not equip automatically."
+      ]
+    },
+    {
+      "id": "5E70000000000002",
+      "title": "First Wooden Drill",
+      "x": -3.0,
+      "y": 2.0,
+      "tasks": [
+        {
+          "id": "5E70000000000102",
+          "type": "item",
+          "item": {
+            "id": "revoextraction:wooden_drill_controller",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [
+        {
+          "id": "5E70000000000204",
+          "type": "revoachievements:title",
+          "cosmetic": "revoachievements:title/certified_crank_operator",
+          "team_reward": false,
+          "auto": "enabled"
+        },
+        {
+          "id": "5E70000000000205",
+          "type": "revoachievements:hat",
+          "cosmetic": "revoachievements:hat/minerhat",
+          "team_reward": false,
+          "auto": "enabled"
+        }
+      ],
+      "description": [
+        "Obtain a Wooden Drill Controller. Build guidance is available in EMI.",
+        "This task detects the controller and does not consume it."
+      ],
+      "dependencies": [
+        "5E70000000000001"
+      ]
+    },
+    {
+      "id": "5E70000000000003",
+      "title": "A Greener Workplace",
+      "x": -1.0,
+      "y": 2.0,
+      "tasks": [
+        {
+          "id": "5E70000000000103",
+          "type": "item",
+          "item": {
+            "id": "revocultivation:greenhouse",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [
+        {
+          "id": "5E70000000000206",
+          "type": "revoachievements:title",
+          "cosmetic": "revoachievements:title/senior_dirt_inspector",
+          "team_reward": false,
+          "auto": "enabled"
+        },
+        {
+          "id": "5E70000000000207",
+          "type": "revoachievements:hat",
+          "cosmetic": "revoachievements:hat/flowercrown",
+          "team_reward": false,
+          "auto": "enabled"
+        }
+      ],
+      "description": [
+        "Obtain a Wooden Greenhouse Controller.",
+        "Your crops approve of this workplace dress code."
+      ],
+      "dependencies": [
+        "5E70000000000001"
+      ]
+    },
+    {
+      "id": "5E70000000000004",
+      "title": "Contained Curiosity",
+      "x": 1.0,
+      "y": 2.0,
+      "tasks": [
+        {
+          "id": "5E70000000000104",
+          "type": "item",
+          "item": {
+            "id": "revogenetics:mob_harvester",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [
+        {
+          "id": "5E70000000000208",
+          "type": "revoachievements:title",
+          "cosmetic": "revoachievements:title/director_questionable_science",
+          "team_reward": false,
+          "auto": "enabled"
+        },
+        {
+          "id": "5E70000000000209",
+          "type": "revoachievements:hat",
+          "cosmetic": "revoachievements:hat/madscientist",
+          "team_reward": false,
+          "auto": "enabled"
+        }
+      ],
+      "description": [
+        "Obtain a Wooden Mob Harvester Controller.",
+        "The mob is contained. Your scientific ambitions are not."
+      ],
+      "dependencies": [
+        "5E70000000000001"
+      ]
+    },
+    {
+      "id": "5E70000000000005",
+      "title": "Branch Office",
+      "x": 3.0,
+      "y": 2.0,
+      "tasks": [
+        {
+          "id": "5E70000000000105",
+          "type": "item",
+          "item": {
+            "id": "revocultivation:tree_grower",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [
+        {
+          "id": "5E7000000000020A",
+          "type": "revoachievements:title",
+          "cosmetic": "revoachievements:title/deforestation_supervisor",
+          "team_reward": false,
+          "auto": "enabled"
+        },
+        {
+          "id": "5E7000000000020B",
+          "type": "revoachievements:hat",
+          "cosmetic": "revoachievements:hat/propelhat",
+          "team_reward": false,
+          "auto": "enabled"
+        }
+      ],
+      "description": [
+        "Obtain a Wooden Tree Grower Controller.",
+        "Your new hat demonstrates excellent upward mobility."
+      ],
+      "dependencies": [
+        "5E70000000000001"
+      ]
+    }
+  ],
+  "filename": "5e70000000000000"
+}

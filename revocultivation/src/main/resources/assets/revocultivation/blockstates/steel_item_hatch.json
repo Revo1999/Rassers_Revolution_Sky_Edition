@@ -1,0 +1,36 @@
+{
+  "variants": {
+    "facing=north,formed=false": {
+      "model": "revocultivation:block/steel_item_hatch",
+      "y": 0
+    },
+    "facing=east,formed=false": {
+      "model": "revocultivation:block/steel_item_hatch",
+      "y": 90
+    },
+    "facing=south,formed=false": {
+      "model": "revocultivation:block/steel_item_hatch",
+      "y": 180
+    },
+    "facing=west,formed=false": {
+      "model": "revocultivation:block/steel_item_hatch",
+      "y": 270
+    },
+    "facing=north,formed=true": {
+      "model": "revocultivation:block/empty",
+      "y": 0
+    },
+    "facing=east,formed=true": {
+      "model": "revocultivation:block/empty",
+      "y": 90
+    },
+    "facing=south,formed=true": {
+      "model": "revocultivation:block/empty",
+      "y": 180
+    },
+    "facing=west,formed=true": {
+      "model": "revocultivation:block/empty",
+      "y": 270
+    }
+  }
+}

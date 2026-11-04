@@ -1,0 +1,21 @@
+{
+  "type": "create:milling",
+  "ingredients": [
+    {
+      "item": "minecraft:raw_copper"
+    }
+  ],
+  "processing_time": 100,
+  "results": [
+    {
+      "id": "modern_industrialization:copper_dust",
+      "count": 1
+    }
+  ],
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "modern_industrialization"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+Original Flux Networks mod: Sonar Sonic and BloCamLimb.
+Revo Industrial Power Grid is a presentation overlay; registry IDs and gameplay belong to Flux Networks.
+Original material atlas created with the built-in imagegen tool and fitted/painted in Aseprite.
+Native editable art and prompts are in art/flux-industrial in the Revo source project.

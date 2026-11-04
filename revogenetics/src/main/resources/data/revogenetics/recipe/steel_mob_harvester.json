@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "PPP",
+    "PCP",
+    "PPP"
+  ],
+  "key": {
+    "P": {
+      "tag": "c:plates/steel"
+    },
+    "C": {
+      "item": "revogenetics:mob_harvester"
+    }
+  },
+  "result": {
+    "id": "revogenetics:steel_mob_harvester",
+    "count": 1
+  }
+}

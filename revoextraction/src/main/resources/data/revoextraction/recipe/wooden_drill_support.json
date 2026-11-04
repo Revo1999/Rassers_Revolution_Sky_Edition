@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "S",
+    "L",
+    "S"
+  ],
+  "key": {
+    "S": {
+      "item": "minecraft:cobblestone"
+    },
+    "L": {
+      "tag": "minecraft:logs"
+    }
+  },
+  "result": {
+    "id": "revoextraction:wooden_drill_support",
+    "count": 1
+  }
+}

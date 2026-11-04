@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "PGP",
+    "GBG",
+    "PGP"
+  ],
+  "key": {
+    "P": {
+      "tag": "c:plates/steel"
+    },
+    "G": {
+      "item": "minecraft:glass"
+    },
+    "B": {
+      "item": "minecraft:bucket"
+    }
+  },
+  "result": {
+    "id": "revocultivation:steel_water_tank",
+    "count": 1
+  }
+}

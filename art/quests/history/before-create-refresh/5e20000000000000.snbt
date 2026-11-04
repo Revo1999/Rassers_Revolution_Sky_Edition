@@ -1,0 +1,772 @@
+{
+  "id": "5E20000000000000",
+  "filename": "5e20000000000000",
+  "title": "Chapter 2: The Create Revolution",
+  "icon": {
+    "id": "create:water_wheel",
+    "count": 1
+  },
+  "order_index": 10,
+  "default_quest_shape": "square",
+  "quests": [
+    {
+      "id": "5E20000000000001",
+      "title": "A Revolution in Motion",
+      "x": 0.0,
+      "y": 0.0,
+      "description": [
+        "Your wooden drill turns composted leaves into an industrial supply chain. Now replace hand power with Create, press iron plates and build the Iron Drill.",
+        "Item tasks detect your inventory without consuming it. Checkmarks are practical milestones to confirm after building.",
+        "Use EMI for recipes and Revo multiblock layers. Hold the Ponder key over Create blocks for animated instructions."
+      ],
+      "tasks": [
+        {
+          "id": "5E20000000001010",
+          "type": "checkmark"
+        }
+      ],
+      "rewards": [],
+      "dependencies": [
+        "5E10000000000023"
+      ]
+    },
+    {
+      "id": "5E20000000000002",
+      "title": "Iron From the Void",
+      "x": 2.0,
+      "y": 0.0,
+      "description": [
+        "The wooden drill gives one Raw Iron in every five-item sequence. Smelt it in your furnace.",
+        "Save the cobble, gravel and sand too. Leave the drill turning while you build the workshop."
+      ],
+      "tasks": [
+        {
+          "id": "5E20000000001020",
+          "type": "item",
+          "item": {
+            "id": "minecraft:iron_ingot",
+            "count": 1
+          },
+          "count": 16,
+          "consume_items": false
+        }
+      ],
+      "rewards": [],
+      "icon": {
+        "id": "minecraft:iron_ingot",
+        "count": 1
+      },
+      "dependencies": [
+        "5E20000000000001"
+      ]
+    },
+    {
+      "id": "5E20000000000003",
+      "title": "Stone for the Workshop",
+      "x": 4.0,
+      "y": 0.0,
+      "description": [
+        "Craft two cobblestone and two gravel in an alternating 2 x 2 square into two Andesite.",
+        "Both ingredients come from your wooden drill or hammer. No quartz or trip to the Nether is needed."
+      ],
+      "tasks": [
+        {
+          "id": "5E20000000001030",
+          "type": "item",
+          "item": {
+            "id": "minecraft:andesite",
+            "count": 1
+          },
+          "count": 4,
+          "consume_items": false
+        }
+      ],
+      "rewards": [],
+      "icon": {
+        "id": "minecraft:andesite",
+        "count": 1
+      },
+      "dependencies": [
+        "5E20000000000002"
+      ]
+    },
+    {
+      "id": "5E20000000000004",
+      "title": "Andesite Alloy",
+      "x": 6.0,
+      "y": 0.0,
+      "description": [
+        "Craft Andesite Alloy with andesite and iron nuggets. Later the Mechanical Mixer makes this recipe more efficient.",
+        "Alloy is the foundation for Create casings and mechanisms."
+      ],
+      "tasks": [
+        {
+          "id": "5E20000000001040",
+          "type": "item",
+          "item": {
+            "id": "create:andesite_alloy",
+            "count": 1
+          },
+          "count": 8,
+          "consume_items": false
+        }
+      ],
+      "rewards": [],
+      "icon": {
+        "id": "create:andesite_alloy",
+        "count": 1
+      },
+      "dependencies": [
+        "5E20000000000003"
+      ]
+    },
+    {
+      "id": "5E20000000000005",
+      "title": "Wrap It in Alloy",
+      "x": 8.0,
+      "y": 0.0,
+      "description": [
+        "Strip a log, then apply Andesite Alloy to it. Check the casing recipe and Ponder if needed."
+      ],
+      "tasks": [
+        {
+          "id": "5E20000000001050",
+          "type": "item",
+          "item": {
+            "id": "create:andesite_casing",
+            "count": 1
+          },
+          "count": 4,
+          "consume_items": false
+        }
+      ],
+      "rewards": [],
+      "icon": {
+        "id": "create:andesite_casing",
+        "count": 1
+      },
+      "dependencies": [
+        "5E20000000000004"
+      ]
+    },
+    {
+      "id": "5E20000000000006",
+      "title": "Move the Motion",
+      "x": 10.0,
+      "y": 0.0,
+      "description": [
+        "Extend shaft lines from the wheels to machines. The pack starter recipe still works.",
+        "Shafts carry rotational speed and stress capacity. They do not transmit FE or MI electricity."
+      ],
+      "tasks": [
+        {
+          "id": "5E20000000001060",
+          "type": "item",
+          "item": {
+            "id": "create:shaft",
+            "count": 1
+          },
+          "count": 8,
+          "consume_items": false
+        }
+      ],
+      "rewards": [],
+      "icon": {
+        "id": "create:shaft",
+        "count": 1
+      },
+      "dependencies": [
+        "5E20000000000005"
+      ]
+    },
+    {
+      "id": "5E20000000000007",
+      "title": "Around the Corner",
+      "x": 12.0,
+      "y": 0.0,
+      "description": [
+        "Small cogs transfer rotation between adjacent cogwheels. Ponder shows which faces mesh."
+      ],
+      "tasks": [
+        {
+          "id": "5E20000000001070",
+          "type": "item",
+          "item": {
+            "id": "create:cogwheel",
+            "count": 1
+          },
+          "count": 4,
+          "consume_items": false
+        }
+      ],
+      "rewards": [],
+      "icon": {
+        "id": "create:cogwheel",
+        "count": 1
+      },
+      "dependencies": [
+        "5E20000000000006"
+      ]
+    },
+    {
+      "id": "5E20000000000008",
+      "title": "A Change of Gear",
+      "x": 14.0,
+      "y": 0.0,
+      "description": [
+        "A powered large cog driving a small cog doubles RPM. Driving a large cog with a small cog halves it.",
+        "Use multiple stages when needed. Higher RPM increases stress demand; it does not create more capacity."
+      ],
+      "tasks": [
+        {
+          "id": "5E20000000001080",
+          "type": "item",
+          "item": {
+            "id": "create:large_cogwheel",
+            "count": 1
+          },
+          "count": 2,
+          "consume_items": false
+        }
+      ],
+      "rewards": [],
+      "icon": {
+        "id": "create:large_cogwheel",
+        "count": 1
+      },
+      "dependencies": [
+        "5E20000000000007"
+      ]
+    },
+    {
+      "id": "5E20000000000009",
+      "title": "Let Water Do the Work",
+      "x": 16.0,
+      "y": 0.0,
+      "description": [
+        "Build two Water Wheels and supply flowing water as shown in Ponder. Align connected wheel shafts so their rotation agrees.",
+        "Connect more wheels if your workshop becomes overstressed. Leave room to extend the power line."
+      ],
+      "tasks": [
+        {
+          "id": "5E20000000001090",
+          "type": "item",
+          "item": {
+            "id": "create:water_wheel",
+            "count": 1
+          },
+          "count": 2,
+          "consume_items": false
+        }
+      ],
+      "rewards": [],
+      "icon": {
+        "id": "create:water_wheel",
+        "count": 1
+      },
+      "dependencies": [
+        "5E20000000000008"
+      ]
+    },
+    {
+      "id": "5E2000000000000A",
+      "title": "A Tidy Power Line",
+      "x": 18.0,
+      "y": 0.0,
+      "description": [
+        "A Gearbox changes the direction of a shaft line. It does not increase RPM.",
+        "Route a branch to the wooden drill input, keeping the hatch face clear for a chest."
+      ],
+      "tasks": [
+        {
+          "id": "5E200000000010A0",
+          "type": "item",
+          "item": {
+            "id": "create:gearbox",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [],
+      "icon": {
+        "id": "create:gearbox",
+        "count": 1
+      },
+      "dependencies": [
+        "5E20000000000009"
+      ]
+    },
+    {
+      "id": "5E2000000000000B",
+      "title": "Retire the Hand Crank",
+      "x": 20.0,
+      "y": 0.0,
+      "description": [
+        "Power the wooden drill from your water wheels. Open the controller and check it reports Working with a non-zero RPM.",
+        "The output hatch auto-ejects at cycle end into an inventory against its outward face. Confirm once it runs unattended."
+      ],
+      "tasks": [
+        {
+          "id": "5E200000000010B0",
+          "type": "checkmark"
+        }
+      ],
+      "rewards": [],
+      "dependencies": [
+        "5E2000000000000A"
+      ]
+    },
+    {
+      "id": "5E2000000000000C",
+      "title": "The First Press",
+      "x": 22.0,
+      "y": 0.0,
+      "description": [
+        "Craft a Mechanical Press using an iron block, Andesite Casing and a Shaft. Give it rotational power."
+      ],
+      "tasks": [
+        {
+          "id": "5E200000000010C0",
+          "type": "item",
+          "item": {
+            "id": "create:mechanical_press",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [],
+      "icon": {
+        "id": "create:mechanical_press",
+        "count": 1
+      },
+      "dependencies": [
+        "5E2000000000000B"
+      ]
+    },
+    {
+      "id": "5E2000000000000D",
+      "title": "A Place to Press",
+      "x": 24.0,
+      "y": 0.0,
+      "description": [
+        "Put a Depot beneath the press with the working space shown by Ponder. Place ingots on the depot."
+      ],
+      "tasks": [
+        {
+          "id": "5E200000000010D0",
+          "type": "item",
+          "item": {
+            "id": "create:depot",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [],
+      "icon": {
+        "id": "create:depot",
+        "count": 1
+      },
+      "dependencies": [
+        "5E2000000000000C"
+      ]
+    },
+    {
+      "id": "5E2000000000000E",
+      "title": "Hammered Into Shape",
+      "x": 26.0,
+      "y": 0.0,
+      "description": [
+        "Press iron ingots into Iron Sheets. Revo iron-tier recipes accept the shared iron plate tag, including these sheets.",
+        "This is a first batch; the full drill consumes more plates. Keep pressing while you prepare its parts."
+      ],
+      "tasks": [
+        {
+          "id": "5E200000000010E0",
+          "type": "item",
+          "item": {
+            "id": "create:iron_sheet",
+            "count": 1
+          },
+          "count": 32,
+          "consume_items": false
+        }
+      ],
+      "rewards": [],
+      "icon": {
+        "id": "create:iron_sheet",
+        "count": 1
+      },
+      "dependencies": [
+        "5E2000000000000D"
+      ]
+    },
+    {
+      "id": "5E2000000000000F",
+      "title": "A Stronger Cutting Core",
+      "x": 26.0,
+      "y": 3.0,
+      "description": [
+        "Surround each Wooden Drill Core with four iron ingots and four iron plates.",
+        "Craft TWO Iron Drill Cores: one is consumed by the controller recipe and the other goes in the centre of the structure."
+      ],
+      "tasks": [
+        {
+          "id": "5E200000000010F0",
+          "type": "item",
+          "item": {
+            "id": "revoextraction:iron_drill_core",
+            "count": 1
+          },
+          "count": 2,
+          "consume_items": false
+        }
+      ],
+      "rewards": [],
+      "icon": {
+        "id": "revoextraction:iron_drill_core",
+        "count": 1
+      },
+      "dependencies": [
+        "5E2000000000000E"
+      ]
+    },
+    {
+      "id": "5E20000000000010",
+      "title": "An Iron Skeleton",
+      "x": 28.0,
+      "y": 3.0,
+      "description": [
+        "Upgrade Wooden Drill Supports using iron plates. The structure needs twelve iron supports: all four corners on each of three layers.",
+        "Empty and dismantle the wooden drill before reusing its parts, or build the iron drill beside it. Wooden and iron parts cannot be mixed."
+      ],
+      "tasks": [
+        {
+          "id": "5E20000000001100",
+          "type": "item",
+          "item": {
+            "id": "revoextraction:iron_drill_support",
+            "count": 1
+          },
+          "count": 12,
+          "consume_items": false
+        }
+      ],
+      "rewards": [],
+      "icon": {
+        "id": "revoextraction:iron_drill_support",
+        "count": 1
+      },
+      "dependencies": [
+        "5E2000000000000F"
+      ]
+    },
+    {
+      "id": "5E20000000000011",
+      "title": "The Next Machine",
+      "x": 26.0,
+      "y": 6.0,
+      "description": [
+        "Craft the Iron Drill Controller with eight Iron Drill Casings around an Iron Drill Core.",
+        "Its panel reports RPM, cycle progress and structure problems. Items are managed in the hatch interface."
+      ],
+      "tasks": [
+        {
+          "id": "5E20000000001110",
+          "type": "item",
+          "item": {
+            "id": "revoextraction:iron_drill_controller",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [],
+      "icon": {
+        "id": "revoextraction:iron_drill_controller",
+        "count": 1
+      },
+      "dependencies": [
+        "5E2000000000000F"
+      ]
+    },
+    {
+      "id": "5E20000000000012",
+      "title": "Finish the Iron Frame",
+      "x": 28.0,
+      "y": 6.0,
+      "description": [
+        "Prepare ten placed casings, the kinetic input, the output hatch and the remaining core. The controller already consumed eight additional casings.",
+        "Upgrade each wooden input/hatch with two iron plates. Open the controller assembly category in EMI for all three layers."
+      ],
+      "tasks": [
+        {
+          "id": "5E20000000001120",
+          "type": "item",
+          "item": {
+            "id": "revoextraction:iron_drill_casing",
+            "count": 1
+          },
+          "count": 10,
+          "consume_items": false
+        },
+        {
+          "id": "5E20000000001121",
+          "type": "item",
+          "item": {
+            "id": "revoextraction:iron_drill_input",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "5E20000000001122",
+          "type": "item",
+          "item": {
+            "id": "revoextraction:iron_drill_output_hatch",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "5E20000000001123",
+          "type": "item",
+          "item": {
+            "id": "revoextraction:iron_drill_core",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [],
+      "dependencies": [
+        "5E20000000000011"
+      ]
+    },
+    {
+      "id": "5E20000000000013",
+      "title": "Thirty-Two and Turning",
+      "x": 30.0,
+      "y": 6.0,
+      "description": [
+        "Gear the iron drill input to AT LEAST 32 RPM. Its controller shows Too slow below that speed.",
+        "Stress impact is 8 SU per RPM: 256 SU at 32 RPM, 512 SU at 64 RPM. Leave capacity for other machines or give the drill its own wheels.",
+        "Confirm after your shaft line reaches the required speed without becoming overstressed."
+      ],
+      "tasks": [
+        {
+          "id": "5E20000000001130",
+          "type": "checkmark"
+        }
+      ],
+      "rewards": [],
+      "dependencies": [
+        "5E20000000000012",
+        "5E20000000000008",
+        "5E20000000000009"
+      ]
+    },
+    {
+      "id": "5E20000000000014",
+      "title": "Iron Into Industry",
+      "x": 32.0,
+      "y": 6.0,
+      "description": [
+        "Build the 3 x 3 x 3 Iron Drill using its interactive EMI construction guide. Keep the bottom centre empty.",
+        "Controller at front, shaft input on its right at the middle block height, output hatch low on its left. Ports must face outward.",
+        "It uses 600 rotational work per item, pauses when full and resumes without losing the next output. Confirm once the rotating drill is producing."
+      ],
+      "tasks": [
+        {
+          "id": "5E20000000001140",
+          "type": "checkmark"
+        }
+      ],
+      "rewards": [],
+      "dependencies": [
+        "5E20000000000013",
+        "5E20000000000010"
+      ]
+    },
+    {
+      "id": "5E20000000000015",
+      "title": "The Bronze Ingredients",
+      "x": 34.0,
+      "y": 6.0,
+      "description": [
+        "The iron drill has a repeating twelve-item sequence: three raw iron, two raw copper, two raw tin, two coal, one raw zinc, one raw gold and one redstone.",
+        "Copper and tin lead into MI bronze. Coal fuels the first boiler. The next chapter begins here."
+      ],
+      "tasks": [
+        {
+          "id": "5E20000000001150",
+          "type": "item",
+          "item": {
+            "id": "minecraft:raw_copper",
+            "count": 1
+          },
+          "count": 3,
+          "consume_items": false
+        },
+        {
+          "id": "5E20000000001151",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:raw_tin",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "5E20000000001152",
+          "type": "item",
+          "item": {
+            "id": "minecraft:coal",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [],
+      "dependencies": [
+        "5E20000000000014"
+      ]
+    },
+    {
+      "id": "5E20000000000016",
+      "title": "Somewhere for Everything",
+      "x": 20.0,
+      "y": -3.0,
+      "description": [
+        "Put a chest directly against the hatch output face for automatic ejection after each cycle.",
+        "A hopper or item pipe can also extract from the hatch. The controller has no inventory slots.",
+        "Storage is a useful side branch; it does not gate the steam chapter."
+      ],
+      "tasks": [
+        {
+          "id": "5E20000000001160",
+          "type": "item",
+          "item": {
+            "id": "minecraft:chest",
+            "count": 1
+          },
+          "count": 2,
+          "consume_items": false
+        },
+        {
+          "id": "5E20000000001161",
+          "type": "item",
+          "item": {
+            "id": "minecraft:hopper",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [],
+      "dependencies": [
+        "5E2000000000000B"
+      ]
+    },
+    {
+      "id": "5E20000000000017",
+      "title": "A Little Gold on the Side",
+      "x": 34.0,
+      "y": 9.0,
+      "description": [
+        "Smelt the iron drill raw gold. Save zinc and redstone for later chapters; brass is not needed to start MI steam."
+      ],
+      "tasks": [
+        {
+          "id": "5E20000000001170",
+          "type": "item",
+          "item": {
+            "id": "minecraft:gold_ingot",
+            "count": 1
+          },
+          "count": 3,
+          "consume_items": false
+        }
+      ],
+      "rewards": [],
+      "icon": {
+        "id": "minecraft:gold_ingot",
+        "count": 1
+      },
+      "dependencies": [
+        "5E20000000000015"
+      ]
+    },
+    {
+      "id": "5E20000000000018",
+      "title": "Sheets of Gold",
+      "x": 32.0,
+      "y": 9.0,
+      "description": [
+        "Press gold ingots into Golden Sheets for the normal Create wrench recipe."
+      ],
+      "tasks": [
+        {
+          "id": "5E20000000001180",
+          "type": "item",
+          "item": {
+            "id": "create:golden_sheet",
+            "count": 1
+          },
+          "count": 3,
+          "consume_items": false
+        }
+      ],
+      "rewards": [],
+      "icon": {
+        "id": "create:golden_sheet",
+        "count": 1
+      },
+      "dependencies": [
+        "5E20000000000017"
+      ]
+    },
+    {
+      "id": "5E20000000000019",
+      "title": "The Workshop Wrench",
+      "x": 30.0,
+      "y": 9.0,
+      "description": [
+        "Craft the Create Wrench. It helps rearrange kinetic machines and rotate supported Revo machines.",
+        "The MI steam machines also have their own wrench tools; check EMI and the MI manual for their controls."
+      ],
+      "tasks": [
+        {
+          "id": "5E20000000001190",
+          "type": "item",
+          "item": {
+            "id": "create:wrench",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [],
+      "icon": {
+        "id": "create:wrench",
+        "count": 1
+      },
+      "dependencies": [
+        "5E20000000000018"
+      ]
+    }
+  ]
+}

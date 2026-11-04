@@ -1,0 +1,18 @@
+{
+  "minecraft": "1.21.1",
+  "shader": "Complementary Reimagined r5.9.3",
+  "source": "Minecraft framebuffer, real-time clock",
+  "frames": 600,
+  "fps": 30,
+  "durationSeconds": 20,
+  "centered": true,
+  "characterVisible": false,
+  "viewBobbing": false,
+  "captureTiming": "frames=600 fps=30 wallSeconds=19.973707 playbackSeconds=20.0 uniqueSamples=600 repeatedFrames=0",
+  "resolution": [
+    1280,
+    720
+  ],
+  "audio": false,
+  "island": "revo_start.nbt"
+}

@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "PGP",
+    "RTR",
+    "PGP"
+  ],
+  "key": {
+    "P": {
+      "tag": "c:plates/iron"
+    },
+    "G": {
+      "item": "minecraft:glass_pane"
+    },
+    "R": {
+      "item": "minecraft:redstone"
+    },
+    "T": {
+      "item": "minecraft:torch"
+    }
+  },
+  "result": {
+    "id": "revocultivation:iron_grow_light",
+    "count": 1
+  }
+}

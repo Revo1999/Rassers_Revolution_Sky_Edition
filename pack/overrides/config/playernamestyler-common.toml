@@ -1,0 +1,6 @@
+# RevoAchievements supplies %revo_title%; empty when no title is equipped.
+nameplateRenderer = "text_display"
+chatFormat = "&f<%prefix%%revo_title%&r%displayname%%suffix%&f>%colon%&r%chatmessage%"
+tabListFormat = "%prefix%%revo_title%&r%displayname%%suffix%"
+nameplateFormat = "%prefix%%revo_title%&r%displayname%%suffix%"
+showBelowName = true

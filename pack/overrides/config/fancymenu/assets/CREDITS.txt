@@ -1,0 +1,10 @@
+Rassers Revolution: Sky Edition — starting island menu film
+Recorded in Minecraft Java 1.21.1, NeoForge 21.1.265.
+Shader: Complementary Reimagined r5.9.3 by EminGTR / Complementary Development.
+https://www.complementary.dev/shaders/
+Shader loader: Iris 1.8.12 with Sodium 0.6.13.
+Island template: config/skyblockbuilder/templates/islands/revo_start.nbt
+20-second centered 1280x720 H.264 loop, 30 fps, real-time animation, no audio.
+Character and shadow hidden using spectator mode in the QA world.
+The shader source is downloaded separately, not bundled into these assets.
+Font: Departure Mono by Helena Zhang; see the resource pack for its SIL OFL license.

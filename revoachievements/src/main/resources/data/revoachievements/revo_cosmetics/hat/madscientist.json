@@ -1,0 +1,10 @@
+{
+  "kind": "hat",
+  "name": "Scientist Hat",
+  "description": "Absolutely standard laboratory attire.",
+  "unlock_hint": "Complete Contained Curiosity.",
+  "item": "simplehats:madscientist",
+  "color": "#D0B785",
+  "order": 130,
+  "requires_mod": "simplehats"
+}

@@ -1,0 +1,27 @@
+{
+  "composter": {
+    "sourceCubes": 5,
+    "bakedCubes": 5,
+    "sourceQuads": 30,
+    "sourceTriangles": 60,
+    "dimensions": "1 x 1 x 1",
+    "density": "16px/block",
+    "power": "none"
+  },
+  "silkworm_cultivator": {
+    "sourceCubes": 12,
+    "bakedCubes": 8,
+    "sourceQuads": 72,
+    "sourceTriangles": 144,
+    "dimensions": "1 x 1 x 1",
+    "density": "16px/block",
+    "power": "none"
+  },
+  "liveContents": {
+    "surfaceModels": 6,
+    "wormCubes": 1,
+    "cocoonCubes": 2,
+    "staticContentsRemoved": true
+  },
+  "serverTests": "19 passed (9 existing farms + 10 single-block tests, including fixed passive timers)"
+}

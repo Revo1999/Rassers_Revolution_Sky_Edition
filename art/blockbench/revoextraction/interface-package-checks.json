@@ -1,0 +1,24 @@
+{
+  "gameTests": 9,
+  "unitTests": 3,
+  "liveClient": [
+    "vanilla player inventory coordinates and rendering",
+    "controller facing-error synchronization",
+    "Jade wrong orientation and working state through real network data",
+    "Jade hatch buffer info",
+    "EMI guide controls and navigation"
+  ],
+  "production": [
+    "New shared layout and diagnostics classes included",
+    "Jade integration is optional and not bundled",
+    "QA and game-test classes/templates excluded",
+    "Latest model/atlas files retained",
+    "Pack ZIP integrity and updated Revo jars verified"
+  ],
+  "pack": "C:\\Users\\Victor\\Documents\\Codex\\2026-10-31\\https-github-com-revo1999-rassers-revolution\\outputs\\Rassers-Revolution-Sky-Edition-0.1.7-dev.mrpack",
+  "sha512": "6c6bc7a0e3efed2bdf0bc9bb0844a0a03dc737cbeedd98f6715d2e7d3b367cc47f8738b5804a8719eeb2fff448caf28b999c01c41a027529b66c8de6fd3f6342",
+  "jarSha512": {
+    "revoextraction-0.1.0-dev.jar": "503ed3206b4c6f8289622011254839c95e46e769e2e8743d6a649ccbf6bd29b21a5bfeecdd6187798dd21b554f0e1f57ae766645670aaef5f8f23216cd1982aa",
+    "revolib-0.1.0-dev.jar": "d499de6165d3921ea4e11b4f4d41e5e5ab15bb20cbbe67d5e3d8a5539921d09d24cdbd2774f0d1de9c33eb1016707551c1192ea18bab0025cb5ed3557f918fe8"
+  }
+}

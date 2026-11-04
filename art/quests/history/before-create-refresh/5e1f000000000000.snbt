@@ -1,0 +1,169 @@
+{
+  "id": "5E1F000000000000",
+  "filename": "5e1f000000000000",
+  "title": "Tips & Guides",
+  "icon": {
+    "id": "minecraft:knowledge_book",
+    "count": 1
+  },
+  "order_index": 90,
+  "quests": [
+    {
+      "id": "5E1F000000000001",
+      "title": "The Revolution Book",
+      "x": 0.0,
+      "y": 0.0,
+      "description": [
+        "Your pack quest menu. Claim a replacement here or craft one from a plank and a stick."
+      ],
+      "dependencies": [],
+      "can_repeat": "enabled",
+      "repeat_cooldown": 0,
+      "tasks": [
+        {
+          "id": "5E1F000000000101",
+          "type": "checkmark"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "5E1F000000000201",
+          "type": "item",
+          "item": {
+            "id": "revoindustry:revolution_book",
+            "count": 1
+          },
+          "auto": "disabled"
+        }
+      ]
+    },
+    {
+      "id": "5E1F000000000002",
+      "title": "Modern Industrialization",
+      "x": 3.0,
+      "y": 0.0,
+      "description": [
+        "The official MI guidebook. No unlock guard is applied yet."
+      ],
+      "dependencies": [],
+      "can_repeat": "enabled",
+      "repeat_cooldown": 0,
+      "tasks": [
+        {
+          "id": "5E1F000000000102",
+          "type": "checkmark"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "5E1F000000000202",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:guidebook",
+            "count": 1
+          },
+          "auto": "disabled"
+        }
+      ]
+    },
+    {
+      "id": "5E1F000000000003",
+      "title": "Applied Energistics 2 and Addons",
+      "x": 6.0,
+      "y": 0.0,
+      "description": [
+        "The AE2 guide also contains installed guide pages for AdvancedAE, ExtendedAE, Wireless Terminals, AE2 Helpers, MEGA Cells and Applied Create.",
+        "These addons share the AE2 guide instead of shipping separate physical manuals. No unlock guard is applied yet."
+      ],
+      "dependencies": [],
+      "can_repeat": "enabled",
+      "repeat_cooldown": 0,
+      "tasks": [
+        {
+          "id": "5E1F000000000103",
+          "type": "checkmark"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "5E1F000000000203",
+          "type": "item",
+          "item": {
+            "id": "ae2:guide",
+            "count": 1
+          },
+          "auto": "disabled"
+        }
+      ]
+    },
+    {
+      "id": "5E1F000000000004",
+      "title": "FTB Quests Handbook",
+      "x": 0.0,
+      "y": 3.0,
+      "description": [
+        "The standard FTB quest book opens the same quests as your Revolution Book."
+      ],
+      "dependencies": [],
+      "can_repeat": "enabled",
+      "repeat_cooldown": 0,
+      "tasks": [
+        {
+          "id": "5E1F000000000104",
+          "type": "checkmark"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "5E1F000000000204",
+          "type": "item",
+          "item": {
+            "id": "ftbquests:book",
+            "count": 1
+          },
+          "auto": "disabled"
+        }
+      ]
+    },
+    {
+      "id": "5E1F000000000005",
+      "title": "Create Ponder",
+      "x": 3.0,
+      "y": 3.0,
+      "description": [
+        "Create uses Ponder rather than a separate physical manual. Hold its Ponder key on supported Create items in EMI or your inventory.",
+        "For Revo multiblocks, open their assembly recipe in EMI and use the 3D build guide."
+      ],
+      "dependencies": [],
+      "can_repeat": "enabled",
+      "repeat_cooldown": 0,
+      "tasks": [
+        {
+          "id": "5E1F000000000105",
+          "type": "checkmark"
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5E1F000000000006",
+      "title": "Building and Utility Mods",
+      "x": 6.0,
+      "y": 3.0,
+      "description": [
+        "Macaw blocks, Create Deco, BetterBlockz, Simply Light and the other utility mods have their recipes in EMI and information in item tooltips.",
+        "No fake book items are supplied for mods that do not ship manuals."
+      ],
+      "dependencies": [],
+      "can_repeat": "enabled",
+      "repeat_cooldown": 0,
+      "tasks": [
+        {
+          "id": "5E1F000000000106",
+          "type": "checkmark"
+        }
+      ],
+      "rewards": []
+    }
+  ]
+}

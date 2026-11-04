@@ -1,0 +1,5 @@
+Command: .\dev.cmd -PrevoDrillTests :revoextraction:runDrillTests
+[16:53:35] [Server thread/INFO] [minecraft/GameTestServer]: ========= 9 GAME TESTS COMPLETE IN 708.4 ms ======================
+[16:53:35] [Server thread/INFO] [minecraft/GameTestServer]: All 9 required tests passed :)
+BUILD SUCCESSFUL in 38s
+Coverage: formation/orientations, guide blueprint, Create production/stopping, blocked output/save, hatch transfers, cycle-boundary auto-export, partial/full destinations and recovery, sided inventory rejection, wrong input/hatch/controller facing.

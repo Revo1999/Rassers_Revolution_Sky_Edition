@@ -1,0 +1,36 @@
+package dk.revo.revoextraction;
+
+import com.mojang.serialization.MapCodec;
+import net.minecraft.core.*;
+import net.minecraft.world.*;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.level.block.*;
+import net.minecraft.world.level.block.entity.*;
+import net.minecraft.world.level.block.state.*;
+import net.minecraft.world.phys.BlockHitResult;
+import net.neoforged.neoforge.fluids.FluidUtil;
+
+/** Dedicated, persistent water port: tank capacity never lives in a disposable capability wrapper. */
+public final class DrillWaterTank extends BaseEntityBlock {
+    public static final MapCodec<DrillWaterTank> CODEC=simpleCodec(p->new DrillWaterTank());
+    public DrillWaterTank(){super(Properties.of().strength(5).sound(SoundType.METAL).noOcclusion());registerDefaultState(stateDefinition.any().setValue(DrillPart.FORMED,false));}
+    @Override protected MapCodec<? extends BaseEntityBlock> codec(){return CODEC;}
+    @Override protected void createBlockStateDefinition(StateDefinition.Builder<Block,BlockState> b){b.add(DrillPart.FORMED);}
+    @Override public BlockEntity newBlockEntity(BlockPos pos,BlockState state){return new DrillWaterTankEntity(pos,state);}
+    @Override protected RenderShape getRenderShape(BlockState s){return RenderShape.MODEL;}
+    @Override protected ItemInteractionResult useItemOn(ItemStack stack,BlockState s,Level level,BlockPos pos,Player player,InteractionHand hand,BlockHitResult hit){
+        if(FluidUtil.getFluidHandler(stack).isPresent()){
+            if(level.isClientSide)return ItemInteractionResult.SUCCESS;
+            return FluidUtil.interactWithFluidHandler(player,hand,level,pos,hit.getDirection())?ItemInteractionResult.SUCCESS:ItemInteractionResult.CONSUME;
+        }
+        return ItemInteractionResult.PASS_TO_DEFAULT_BLOCK_INTERACTION;
+    }
+    @Override protected InteractionResult useWithoutItem(BlockState s,Level l,BlockPos p,Player player,BlockHitResult hit){
+        var machine=DrillMachine.controllerFor(l,p);
+        if(machine!=null)return RevoExtraction.STEEL_CONTROLLER.get().openPanel(l,player,machine);
+        if(!l.isClientSide&&l.getBlockEntity(p) instanceof DrillWaterTankEntity tank)player.displayClientMessage(net.minecraft.network.chat.Component.translatable("gui.revoextraction.water",tank.water.getFluidAmount(),DrillWaterTankEntity.CAPACITY),true);
+        return InteractionResult.sidedSuccess(l.isClientSide);
+    }
+}

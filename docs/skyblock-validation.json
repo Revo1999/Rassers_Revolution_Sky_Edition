@@ -1,0 +1,29 @@
+{
+  "result": "passed",
+  "newWorld": "Revo Island QA",
+  "generatedChunks": 3180,
+  "islandBlocks": 324,
+  "worldSpawn": [
+    9,
+    69,
+    10
+  ],
+  "playerPosition": [
+    9.5,
+    69,
+    10.5
+  ],
+  "floor": "minecraft:grass_block",
+  "clearHeadroom": 2,
+  "outsideIsland": "All generated blocks match the island template; all other sampled generated terrain is void.",
+  "starterChest": {
+    "minecraft:ice": 2,
+    "minecraft:lava_bucket": 1,
+    "minecraft:oak_sapling": 2,
+    "minecraft:bread": 8,
+    "minecraft:wheat_seeds": 4,
+    "minecraft:bone_meal": 8
+  },
+  "dedicatedServerTested": false,
+  "deathRespawnTested": false
+}

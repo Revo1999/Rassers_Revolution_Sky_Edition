@@ -1,0 +1,94 @@
+{
+  "chapters": [
+    {
+      "id": "5E20000000000000",
+      "title": "Chapter 2: The Create Revolution",
+      "quests": {
+        "welcome": "5E20000000000001",
+        "iron": "5E20000000000002",
+        "andesite": "5E20000000000003",
+        "alloy": "5E20000000000004",
+        "casing": "5E20000000000005",
+        "shafts": "5E20000000000006",
+        "cogs": "5E20000000000007",
+        "largecogs": "5E20000000000008",
+        "wheels": "5E20000000000009",
+        "gearbox": "5E2000000000000A",
+        "continuous": "5E2000000000000B",
+        "press": "5E2000000000000C",
+        "depot": "5E2000000000000D",
+        "sheets": "5E2000000000000E",
+        "cores": "5E2000000000000F",
+        "supports": "5E20000000000010",
+        "controller": "5E20000000000011",
+        "parts": "5E20000000000012",
+        "speed": "5E20000000000013",
+        "assembly": "5E20000000000014",
+        "metals": "5E20000000000015",
+        "storage": "5E20000000000016",
+        "gold": "5E20000000000017",
+        "goldsheet": "5E20000000000018",
+        "wrench": "5E20000000000019",
+        "manual": "5E2000000000001A",
+        "torque": "5E2000000000001B",
+        "water_iron": "5E2000000000001C",
+        "auto_eject": "5E2000000000001D"
+      },
+      "questCount": 29
+    },
+    {
+      "id": "5E30000000000000",
+      "title": "Chapter 3: MI - The Steam Age",
+      "quests": {
+        "welcome": "5E30000000000001",
+        "metals": "5E30000000000002",
+        "mill": "5E30000000000003",
+        "basin": "5E30000000000004",
+        "mixer": "5E30000000000005",
+        "dusts": "5E30000000000006",
+        "bronzedust": "5E30000000000007",
+        "bronze": "5E30000000000008",
+        "forge": "5E30000000000009",
+        "plates": "5E3000000000000A",
+        "curved": "5E3000000000000B",
+        "copperparts": "5E3000000000000C",
+        "gears": "5E3000000000000D",
+        "rotors": "5E3000000000000E",
+        "pipes": "5E3000000000000F",
+        "brickdust": "5E30000000000010",
+        "fireclay": "5E30000000000011",
+        "refractory": "5E30000000000012",
+        "tank": "5E30000000000013",
+        "boiler": "5E30000000000014",
+        "steam": "5E30000000000015",
+        "casing": "5E30000000000016",
+        "compressor": "5E30000000000017",
+        "compressed": "5E30000000000018",
+        "mimixer": "5E30000000000019",
+        "pump": "5E3000000000001A",
+        "cokeoven": "5E3000000000001B",
+        "coke": "5E3000000000001C"
+      },
+      "questCount": 28
+    }
+  ],
+  "ironDrill": {
+    "size": [
+      3,
+      3,
+      3
+    ],
+    "minimumRpm": 32,
+    "stressPerRpm": 8,
+    "workPerItem": 600,
+    "outputsPer12": {
+      "minecraft:raw_iron": 3,
+      "minecraft:raw_copper": 2,
+      "modern_industrialization:raw_tin": 2,
+      "minecraft:coal": 2,
+      "create:raw_zinc": 1,
+      "minecraft:raw_gold": 1,
+      "minecraft:redstone": 1
+    }
+  }
+}

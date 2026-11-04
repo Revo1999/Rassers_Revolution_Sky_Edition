@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "revocultivation:silk_cocoon"
+    },
+    {
+      "item": "revocultivation:silk_cocoon"
+    }
+  ],
+  "result": {
+    "id": "revocultivation:silk",
+    "count": 1
+  }
+}
