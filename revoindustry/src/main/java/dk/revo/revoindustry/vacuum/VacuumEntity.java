@@ -20,7 +20,7 @@ public final class VacuumEntity extends BlockEntity implements MenuProvider {
  public VacuumEntity(BlockPos p,BlockState s){super(Vacuums.ENTITY.get(),p,s);inventory=new ItemStackHandler(Vacuums.slots(tier())){protected void onContentsChanged(int slot){setChanged();}};}
  public int tier(){return ((VacuumBlock)getBlockState().getBlock()).tier;}
  public Direction outlet(){return getBlockState().getValue(VacuumBlock.OUTLET);}
- public Vec3 intake(){return Vec3.atCenterOf(worldPosition).relative(outlet().getOpposite(),.48); }
+ public Vec3 intake(){return Vacuums.mouth(worldPosition,outlet()); }
  public boolean accepts(ItemStack stack){return ItemHandlerHelper.insertItemStacked(inventory,stack.copy(),true).getCount()<stack.getCount();}
  public void tick(){
   if(!(level instanceof ServerLevel server))return;

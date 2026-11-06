@@ -51,9 +51,9 @@ with zipfile.ZipFile(ROOT/'build/mods/revoindustry-0.1.0-dev.jar') as z:
  assert not any('FurnaceGameTests' in n or 'FurnaceUiQa' in n or 'furnace_test.nbt' in n for n in z.namelist())
  for name in ['FurnaceController','FurnaceFuelHatch','FurnaceItemHatch','FurnaceVent']:assert f'dk/revo/revoindustry/furnace/{name}.class' in z.namelist()
  assert 'dk/revo/revoindustry/mixin/DisableFactoryAugmentMixin.class' in z.namelist()
-with zipfile.ZipFile(ROOT.parent/'Rassers-Revolution-Sky-Edition-0.1.32-dev.mrpack') as z:
+with zipfile.ZipFile(ROOT.parent/'Rassers-Revolution-Sky-Edition-0.1.33-dev.mrpack') as z:
  assert read(ART/'manifest.json')
- assert json.loads(z.read('modrinth.index.json'))['versionId']=='0.1.32-dev-vacuum-area'
+ assert json.loads(z.read('modrinth.index.json'))['versionId']=='0.1.33-dev-nozzle-alignment'
  assert z.read('overrides/REVO-FURNACES.md')==(ROOT/'docs/REVO-FURNACES.md').read_bytes()
  for p in (ROOT/'build/mods').glob('*.jar'):assert z.read('overrides/mods/'+p.name)==p.read_bytes()
 report={'passed':True,'tiers':10,'nativeMiIntegration':True,'registeredBlocks':33,'itemHatchGrades':3,'itemSlots':[1,2,4],'fuelHatches':9,'fuelHeatRates':[64,512,4096],'mandatoryRoofCentreVent':True,'adaptiveControllerHatchesAndVent':True,'exactMiHatchPixels':True,'factoryAugmentDisabled':True,'editableAssemblies':10,'inGameTierCaptures':10,'nativeMenusCaptured':True,'rainbowAnimated':True,'sourceJarAndPackBytesVerified':True}

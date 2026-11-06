@@ -78,4 +78,22 @@ public final class VacuumGameTests {
   }h.succeed();
  }
 
+ @GameTest(template="vacuum_test",timeoutTicks=100)
+ public static void collectionStartsAtAuthoredNozzlePlane(GameTestHelper h) throws Exception {
+  for(int tier=0;tier<3;tier++){
+   String path="assets/revoindustry/models/block/vacuum_"+(tier+1)+".json";
+   try(var stream=VacuumGameTests.class.getClassLoader().getResourceAsStream(path)){
+    h.assertTrue(stream!=null,"Runtime model is available");var model=com.google.gson.JsonParser.parseReader(new java.io.InputStreamReader(stream)).getAsJsonObject();double nozzleZ=16;
+    for(var element:model.getAsJsonArray("elements")){var e=element.getAsJsonObject();if(e.get("name").getAsString().startsWith("flange_"))nozzleZ=Math.min(nozzleZ,e.getAsJsonArray("from").get(2).getAsDouble());}
+    h.assertTrue(nozzleZ==0,"Every tier's authored mouth must be flush with its block front");
+   }
+   for(var outlet:Direction.values()){
+    var v=make(h,tier,outlet);var area=Vacuums.area(v.getBlockPos(),tier,outlet);var mouth=v.intake();var front=outlet.getOpposite();var near=mouth.relative(front,.01);var behind=mouth.relative(outlet,.01);
+    h.assertTrue(area.contains(near)&&!area.contains(behind),"Pickup starts immediately at the actual nozzle plane, with no gap or rear overlap");
+    double size=Vacuums.size(tier);h.assertTrue(area.contains(mouth.relative(front,size-.01))&&!area.contains(mouth.relative(front,size+.01)),"Exactly the requested number of blocks extend out from the nozzle");
+    var accepted=item(h,near,Items.DIAMOND,1);var rejected=item(h,behind,Items.GOLD_INGOT,1);step(v,4);h.assertTrue(!accepted.isAlive()&&rejected.isAlive()&&rejected.getDeltaMovement().lengthSqr()==0,"Actual collection matches the nozzle-aligned outline");rejected.discard();
+   }
+  }h.succeed();
+ }
+
 }

@@ -9,6 +9,7 @@ for tier in range(1,4):
  assert len(model['elements'])==[24,26,31][tier-1] and len(native['elements'])==[24,26,31][tier-1]
  assert len(native['textures'])==7
  assert not any(any(w in e.get('name','') for w in ['wheel','handle','canister']) for e in model['elements'])
+ assert min(e['from'][2] for e in model['elements'] if e['name'].startswith('flange_'))==0, 'Nozzle must meet collection origin'
  flange=next(e for e in model['elements'] if e['name']=='flange_0');assert abs(flange['to'][1]-(8+[5,6,7][tier-1]))<.001
  assert not coplanar_overlaps(model),coplanar_overlaps(model)
  assert sum(bool(e.get('rotation',{}).get('angle',0)) for e in model['elements'])==8
@@ -48,9 +49,9 @@ with zipfile.ZipFile(ROOT/'build/mods/revoindustry-0.1.0-dev.jar') as jar:
   if p.is_file():
    expected=p.read_bytes().replace(b'${version}',b'0.1.0-dev').replace(b'\r\n',b'\n') if p.name=='neoforge.mods.toml' else p.read_bytes()
    assert jar.read(p.relative_to(RES).as_posix())==expected,p
-with zipfile.ZipFile(ROOT.parent/'Rassers-Revolution-Sky-Edition-0.1.32-dev.mrpack') as pack:
- assert json.loads(pack.read('modrinth.index.json'))['versionId']=='0.1.32-dev-vacuum-area'
+with zipfile.ZipFile(ROOT.parent/'Rassers-Revolution-Sky-Edition-0.1.33-dev.mrpack') as pack:
+ assert json.loads(pack.read('modrinth.index.json'))['versionId']=='0.1.33-dev-nozzle-alignment'
  assert pack.read('overrides/REVO-VACUUMS.md')==(ROOT/'docs/REVO-VACUUMS.md').read_bytes()
  for p in (ROOT/'build/mods').glob('*.jar'):assert pack.read('overrides/mods/'+p.name)==p.read_bytes()
-report={'passed':True,'singleBlockTiers':3,'slots':[1,3,9],'cubeSize':[3,5,9],'cubeFullyInFrontOfIntake':True,'transferIntervalTicks':[8,4,1],'cubesPerTier':[24,26,31],'texturesPerTier':7,'pipeDiameterPixels':[10,12,14],'coplanarOverlappingFaces':0,'rearPlateOutput':True,'sixWayOutlet':True,'hollowOctagonalIntake':True,'singlePixelCheckerDither':True,'limitedPaletteVerified':True,'nativeTexturePixelsVerified':True,'boundsAndUvVerified':True,'inGameCaptures':15,'uiAreaToggleVerified':True,'allTierPlacementPreviewsCaptured':True,'sourceJarPackBytesVerified':True}
+report={'passed':True,'singleBlockTiers':3,'slots':[1,3,9],'cubeSize':[3,5,9],'cubeFullyInFrontOfIntake':True,'nozzleAndRangeShareOrigin':True,'transferIntervalTicks':[8,4,1],'cubesPerTier':[24,26,31],'texturesPerTier':7,'pipeDiameterPixels':[10,12,14],'coplanarOverlappingFaces':0,'rearPlateOutput':True,'sixWayOutlet':True,'hollowOctagonalIntake':True,'singlePixelCheckerDither':True,'limitedPaletteVerified':True,'nativeTexturePixelsVerified':True,'boundsAndUvVerified':True,'inGameCaptures':15,'uiAreaToggleVerified':True,'allTierPlacementPreviewsCaptured':True,'sourceJarPackBytesVerified':True}
 (ART/'validation.json').write_text(json.dumps(report,indent=2)+'\n');print(json.dumps(report,indent=2))

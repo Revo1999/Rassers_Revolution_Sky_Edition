@@ -12,6 +12,7 @@
     9
   ],
   "cubeFullyInFrontOfIntake": true,
+  "nozzleAndRangeShareOrigin": true,
   "transferIntervalTicks": [
     8,
     4,

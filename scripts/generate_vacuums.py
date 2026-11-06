@@ -6,7 +6,7 @@ def put(path,obj):path.parent.mkdir(parents=True,exist_ok=True);path.write_text(
 lang=json.loads((res/'assets/revoindustry/lang/en_us.json').read_text());tag=res/'data/minecraft/tags/block/mineable/pickaxe.json';tags=json.loads(tag.read_text())
 def geometry(tier):
  parts=[('mount',[2,0,9],[14,1.75,15],'dark'),('motor',[3,3,9],[13,13,15],'body'),('motor_cap',[2,12.125,8.75],[14,13.75,14.75],'metal'),('motor_foot',[2.75,1.75,8.5],[13.25,2.875,14.5],'metal'),('rear_plate',[2,2,15],[14,14,15.75],'metal'),('rear_output',[4,4,15.8],[12,12,16],'output'),('fan_shadow',[4,4,8.6],[12,12,8.7],'fan'),('status',[12.125,8,8.45],[13,10,8.6],'light')]
- rotations={};radius=[5,6,7][tier-1];start=[2,1,0][tier-1]
+ rotations={};radius=[5,6,7][tier-1];start=0
  for section,z0,z1,r,wall,mat in [('flange',start,start+2.5,radius,1.5,'metal'),('duct',start+2,10,radius-.65,1.35,'dark')]:
   half=r*math.tan(math.pi/8);outer=8+r;inner=outer-wall
   for side in range(8):
