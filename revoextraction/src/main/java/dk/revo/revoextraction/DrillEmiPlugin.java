@@ -21,7 +21,7 @@ public class DrillEmiPlugin implements EmiPlugin {
             net.minecraft.network.chat.Component.literal("Fill the left-middle tank with buckets or fluid pipes on any face. An MI water pump or Create fluid network can supply it. No kinetic-to-electric conversion."),
             net.minecraft.network.chat.Component.literal("Attempting to run dry stops production and seizes the drill after 5 seconds. Stopping the shaft pauses damage; adding water before seizure clears the warning. Full outputs do not consume water or cause damage."),
             net.minecraft.network.chat.Component.literal("Repair: form the structure, STOP the shaft, supply at least 100 mB water, then right-click any machine part with a Drill Repair Kit. Output survives seizure and repair."),
-            net.minecraft.network.chat.Component.literal("Fixed 12-item cycle: 3 raw iron, 1 copper, 1 tin, 2 coal, 1 zinc, 1 gold, 1 redstone, 1 lapis and 1 diamond. Auto-ejects at cycle end.")),ResourceLocation.fromNamespaceAndPath(RevoExtraction.MOD_ID,"info/steel_drill")));
+            net.minecraft.network.chat.Component.literal("Regular 12-item cycle: 3 raw iron, 1 copper, 1 tin, 2 coal, 1 zinc, 1 gold, 1 redstone, 1 lapis and 1 diamond. Every 128th output is Flux Dust instead of its regular item. Auto-ejects at cycle end.")),ResourceLocation.fromNamespaceAndPath(RevoExtraction.MOD_ID,"info/steel_drill")));
 
         r.addCategory(CATEGORY);r.addWorkstation(CATEGORY,EmiStack.of(RevoExtraction.CONTROLLER.get()));r.addRecipe(new Assembly());
         r.addCategory(IRON_CATEGORY);r.addWorkstation(IRON_CATEGORY,EmiStack.of(RevoExtraction.IRON_CONTROLLER.get()));
@@ -29,7 +29,7 @@ public class DrillEmiPlugin implements EmiPlugin {
         r.addRecipe(new EmiInfoRecipe(java.util.List.of(EmiStack.of(RevoExtraction.IRON_CONTROLLER.get())),java.util.List.of(
             net.minecraft.network.chat.Component.literal("Iron Drill: 3 x 3 x 3. Uses only iron-tier parts. Craft two cores: one for the controller and one to place."),
             net.minecraft.network.chat.Component.literal("Create input: at least 32 RPM, 8 SU/RPM. 600 rotational work per item (18.75 ticks at 32 RPM)."),
-            net.minecraft.network.chat.Component.literal("Fixed 12-item cycle: 3 raw iron, 2 raw copper, 2 raw tin, 2 coal, 1 raw zinc, 1 raw gold, 1 redstone."),
+            net.minecraft.network.chat.Component.literal("Regular 12-item cycle: 3 raw iron, 2 raw copper, 2 raw tin, 2 coal, 1 raw zinc, 1 raw gold, 1 redstone. Every 128th output is Flux Dust instead of its regular item."),
             net.minecraft.network.chat.Component.literal("Outputs through the lower left hatch; auto-ejects forward at cycle end. Stops if output is full. Recipe view opens the interactive layer-by-layer build guide.")),ResourceLocation.fromNamespaceAndPath(RevoExtraction.MOD_ID,"info/iron_drill")));
     }
     static MultiblockGuide guide(){return DrillGuideDefinition.create();}

@@ -57,7 +57,7 @@ lang={
 }
 states={0:('Incomplete multiblock','Follow the interactive EMI build guide.'),1:('Working','Collect output through the side hatch.'),2:('Starter missing','Put the starter in the hatch input slot.'),3:('Water needed','Add a water bucket or pipe water into the hatch.'),4:('Daylight needed','Expose the roof to natural daytime sky.'),5:('Output blocked','Clear space in the hatch or adjacent inventory.'),6:('Tree space obstructed','Clear 3 x 3 x 3 space above the base.'),7:('Wrong block orientation','Rotate the indicated part.'),8:('Structure not loaded','Load the entire structure to resume.')}
 for i,(name,hint) in states.items():lang['state.revocultivation.'+str(i)]=name;lang['hint.revocultivation.'+str(i)]=hint
-for name in ['oak','wheat','carrot','potato','beetroot','zombie','skeleton','spider','none']:lang['program.revocultivation.'+name]=name.capitalize() if name!='none' else 'No starter'
+for name in ['oak','wheat','carrot','potato','beetroot','zombie','skeleton','spider','cow','blaze','none']:lang['program.revocultivation.'+name]=name.capitalize() if name!='none' else 'No starter'
 for part in ['support','casing','controller','hatch','bed','grate','glass','bars','filter','air']:lang['part.revocultivation.'+part]=part.capitalize()
 for face in ['north','east','south','west','up','down']:lang['direction.revocultivation.'+face]=face
 for name in parts:lang['block.revocultivation.'+name]={'timber_support':'Reinforced Timber Support','wooden_casing':'Wooden Casing','soil_bed':'Cultivation Soil Bed','collection_grate':'Collection Grate','glass_panel':'Greenhouse Glass Panel','barred_panel':'Barred Cage Panel','mob_filter':'Mob Species Filter','item_hatch':'Timber I/O Hatch'}[name]

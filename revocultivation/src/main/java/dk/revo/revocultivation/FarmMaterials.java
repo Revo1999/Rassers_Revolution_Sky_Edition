@@ -16,7 +16,7 @@ public final class FarmMaterials {
         }
         parts.put(MachineKind.Part.HATCH,RevoCultivation.BLOCKS.register(tier+"_item_hatch",FarmHatch::new));
         parts.put(MachineKind.Part.TANK,RevoCultivation.BLOCKS.register(tier+"_water_tank",FarmWaterTank::new));
-        if(steel){parts.put(MachineKind.Part.BARS,RevoCultivation.BLOCKS.register("steel_barred_panel",()->new FarmPart(Block.Properties.of().strength(5).noOcclusion().sound(SoundType.METAL))));parts.put(MachineKind.Part.FILTER,RevoCultivation.BLOCKS.register("steel_mob_filter",FarmFilter::new));}
+        if(steel){parts.put(MachineKind.Part.BARS,RevoCultivation.BLOCKS.register("steel_barred_panel",()->new FarmPart(Block.Properties.of().strength(5).noOcclusion().sound(SoundType.METAL))));parts.put(MachineKind.Part.FILTER,RevoCultivation.BLOCKS.register("steel_mob_filter",()->new FarmFilter(true)));}
         return parts;
     }
     public static Block block(MachineKind kind,MachineKind.Part part){return (kind.metal==2?STEEL:IRON).get(part).get();}

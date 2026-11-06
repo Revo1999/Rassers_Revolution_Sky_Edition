@@ -66,3 +66,24 @@ if (providers.gradleProperty('revoDrillUiQa').isPresent()) {
 if (!providers.gradleProperty('revoDrillUiQa').isPresent()) {
     tasks.named('jar', Jar) { exclude 'dk/revo/revoextraction/DrillInterfaceQa*' }
 }
+
+if (providers.gradleProperty('revoProgressionTests').isPresent()) {
+ sourceSets.main.java.srcDir 'src/progressiontest/java'
+ sourceSets.main.resources.srcDir 'src/gametest/resources'
+ dependencies {
+  implementation project(':revocultivation'); implementation project(':revogenetics'); implementation project(':revoindustry')
+  runtimeOnly 'dev.engine-room.flywheel:flywheel-neoforge-1.21.1:1.0.6'
+  runtimeOnly files(rootProject.file('.local/integration-mods/Modern-Industrialization-2.5.11.jar'),rootProject.file('.local/integration-mods/ironfurnaces-neoforge-1.21.1-4.3.2.jar'),rootProject.file('.local/integration-mods/guideme-21.1.22.jar'),rootProject.file('.local/integration-mods/FluxNetworks-1.21.1-8.0.0.jar'))
+ }
+ neoForge { mods {
+  revocultivation { sourceSet project(':revocultivation').sourceSets.main }
+  revogenetics { sourceSet project(':revogenetics').sourceSets.main }
+  revoindustry { sourceSet project(':revoindustry').sourceSets.main }
+  revolib { sourceSet project(':revolib').sourceSets.main }
+ }; runs { progressionTests { type='gameTestServer'; systemProperty 'neoforge.enabledGameTestNamespaces','revoextraction' } } }
+}
+if (providers.gradleProperty('revoProgressionUiQa').isPresent()) {
+ sourceSets.main.java.srcDir 'src/progressionuiqa/java'
+ dependencies { implementation project(':revocultivation') }
+}
+tasks.named('jar', Jar) { exclude '**/ProgressionBridgeTests*','**/ProgressionBridgeUiQa*' }

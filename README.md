@@ -121,3 +121,6 @@ Steel Tree Grower / Mob Harvester upgrades and an Iron Electric Greenhouse with 
 Ten Iron Furnaces tiers now have native MI-backed 3 x 3 x 3 multiblocks, permanently parallel smelting, three item-hatch grades, nine solid/liquid/gas fuel inputs and an adapting roof vent. Factory Augments are disabled. See [furnace recipes, structure and validation](docs/REVO-FURNACES.md).
 
 RevoIndustry also includes three single-block vacuum collectors with large dithered intake pipes, 1/3/9-slot buffers, directional chest output and suction particles. See [the vacuum guide](docs/REVO-VACUUMS.md).
+
+
+Early resource bridges now provide Create coke milling, Cow leather, Steel Blaze rods and saved rare Flux Dust outputs from Iron/Steel Drills. See [resource bridge details](docs/EARLY-RESOURCE-BRIDGES.md) and [remaining progression audit](docs/EARLY-PROGRESSION-AUDIT-2.md).

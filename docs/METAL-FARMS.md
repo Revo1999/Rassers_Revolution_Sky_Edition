@@ -72,3 +72,6 @@ Bed tops Y=16; ribbon Y=11..18. Greenhouse columns meet uniform six-unit top bea
 Generator order: first chapter, Create/steam, steel drill, metal farms, then `python scripts/refine_greenhouse_tree_content.py` LAST. The last step retains wide layouts, tanks, converter states and updated quest instructions without changing quest IDs. Native art uses `refine_greenhouse_tree.js`; preserve user edits before regeneration.
 
 Checks: front/rear native renders plus close views of the clear greenhouse and empty solid tree base, glass alpha and separate material passes, UV scale/preview exclusion, blueprint counts, converter states, compile/assemble, synced dev overrides and exact packaged files. Focused headless lighting GameTest: `gradlew :revocultivation:runFarmLightingTests -PrevoFarmLightingTests`. It checks day/night boundaries, daytime rain, rain stopping, idle energy, shade independence, power loss and dismantling. The graphical client and shaders still require owner playtesting.
+
+
+Cow is available in wooden and steel harvesters (1 leather + 2 beef/cycle). Blaze is steel-only (1 rod/cycle). These are machine-owned vanilla entities. See EARLY-RESOURCE-BRIDGES.md.

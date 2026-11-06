@@ -144,3 +144,6 @@ Only compilation, native model inspection and static artifact/quest checks were
 performed for this release, at the owner's request. No client or GameTests were
 launched. Play-test recipe pacing, Create stress capacity, steam pipe configuration
 and the quest layout in game. Older verification reports describe earlier builds.
+
+
+Millstone Coke -> Coke Dust is available before diamonds; use the native MI uncooked-steel and Steam Blast Furnace chain.

@@ -31,7 +31,7 @@ for name,part in parts.items():
     ns=part.get('ns','revocultivation');res=GEN if ns=='revogenetics' else RES;variants={}
     for formed in [False,True]:
         for facing,rotation in ([('north',0),('east',90),('south',180),('west',270)] if part['facing'] else [(None,None)]):
-            for species in range(3) if part.get('filter') else [None]:
+            for species in [None]: # Filter species changes behavior, not its block model.
                 for lit in [False,True] if part.get('light') else [None]:
                     key=(','.join(([f'facing={facing}'] if facing else [])+[f'formed={str(formed).lower()}']+([f'species={species}'] if species is not None else [])+([f'lit={str(lit).lower()}'] if lit is not None else [])))
                     value={'model':'revocultivation:block/'+('empty' if formed else part['model'])}

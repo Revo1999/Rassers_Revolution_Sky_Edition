@@ -105,7 +105,4 @@ reaches the final disc. The visible fluid interior spans (2.2,19.6,19.2) to
 (10.8,32.8,28.8). Four-second native working animation previews bit Y rotation
 and opposite drive X rotation; runtime follows actual Create RPM.
 
-Verification is compilation, native model renders, continuous cutting-clearance,
-UV/resource/recipe/quest checks and package inspection. Minecraft and GameTests
-are deliberately not launched; gameplay and shader-pack fluid appearance remain
-for the owner's play-test.
+The original visual checks covered native model renders, cutting clearance and UVs. The resource-bridge update additionally passed six native server GameTests, including a formed Iron Drill producing Flux Dust, full-buffer pause and save/reload persistence. See EARLY-RESOURCE-BRIDGES.md.

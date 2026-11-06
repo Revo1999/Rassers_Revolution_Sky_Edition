@@ -24,9 +24,13 @@ public class FarmEmiPlugin implements EmiPlugin {
         for(var kind:MachineKind.values())if(kind.registered()){
             var category=category(kind);registry.addCategory(category);registry.addWorkstation(category,EmiStack.of(kind.controller()));registry.addRecipe(assembly(kind));
             var production=new EmiRecipeCategory(id(kind.id+"_production"),EmiStack.of(kind.controller()));registry.addCategory(production);registry.addWorkstation(production,EmiStack.of(kind.controller()));
-            int[] programs=kind.isTree()?new int[]{0}:kind.isGreenhouse()?new int[]{10,11,12,13}:new int[]{20,21,22};
+            int[] programs=kind.isTree()?new int[]{0}:kind.isGreenhouse()?new int[]{10,11,12,13}:kind.harvesterPrograms();
             for(int program:programs)registry.addRecipe(new Production(production,kind,program));
         }
+        registry.addRecipe(new EmiInfoRecipe(List.of(EmiStack.of(MachineKind.HARVESTER.controller()),EmiStack.of(MachineKind.STEEL_HARVESTER.controller())),List.of(
+            Component.literal("Right-click the species filter to select the contained mob. Wooden: Zombie, Skeleton, Spider, Cow. Steel also unlocks Blaze."),
+            Component.literal("Cow produces 1 leather and 2 raw beef per harvest: 15 seconds in wood, 7.5 seconds in steel. Leather is available before Steel Drill maintenance."),
+            Component.literal("Steel Blaze mode produces 1 blaze rod every 7.5 seconds. The contained creature is retained and never becomes a roaming world entity.")),id("info/harvester_species")));
         registry.addRecipe(new EmiInfoRecipe(List.of(EmiStack.of(MachineKind.IRON_GREENHOUSE.controller())),List.of(
             Component.literal("Iron Greenhouse: 5 x 5 x 3 structure enclosing a full 3 x 3 crop bed. Square steel beams enclose connected glass panes with thin white LED strips under the top frame. A Basic Power Converter replaces the rear-right bottom support; the right-facing hatch sits immediately in front of it."),
             Component.literal("Wrench the converter so its FE face points to the REAR, with its EU face directly touching the iron I/O hatch. Set FE to EU mode. The formed machine supplies a fitted housing; the converter remains functional and stores zero power."),

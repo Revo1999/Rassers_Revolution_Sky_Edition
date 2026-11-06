@@ -1,98 +1,34 @@
 {
   "variants": {
-    "facing=north,formed=false,species=0": {
+    "facing=north,formed=false": {
       "model": "revocultivation:block/steel_mob_filter",
       "y": 0
     },
-    "facing=north,formed=false,species=1": {
-      "model": "revocultivation:block/steel_mob_filter",
-      "y": 0
-    },
-    "facing=north,formed=false,species=2": {
-      "model": "revocultivation:block/steel_mob_filter",
-      "y": 0
-    },
-    "facing=east,formed=false,species=0": {
+    "facing=east,formed=false": {
       "model": "revocultivation:block/steel_mob_filter",
       "y": 90
     },
-    "facing=east,formed=false,species=1": {
-      "model": "revocultivation:block/steel_mob_filter",
-      "y": 90
-    },
-    "facing=east,formed=false,species=2": {
-      "model": "revocultivation:block/steel_mob_filter",
-      "y": 90
-    },
-    "facing=south,formed=false,species=0": {
+    "facing=south,formed=false": {
       "model": "revocultivation:block/steel_mob_filter",
       "y": 180
     },
-    "facing=south,formed=false,species=1": {
-      "model": "revocultivation:block/steel_mob_filter",
-      "y": 180
-    },
-    "facing=south,formed=false,species=2": {
-      "model": "revocultivation:block/steel_mob_filter",
-      "y": 180
-    },
-    "facing=west,formed=false,species=0": {
+    "facing=west,formed=false": {
       "model": "revocultivation:block/steel_mob_filter",
       "y": 270
     },
-    "facing=west,formed=false,species=1": {
-      "model": "revocultivation:block/steel_mob_filter",
-      "y": 270
-    },
-    "facing=west,formed=false,species=2": {
-      "model": "revocultivation:block/steel_mob_filter",
-      "y": 270
-    },
-    "facing=north,formed=true,species=0": {
+    "facing=north,formed=true": {
       "model": "revocultivation:block/empty",
       "y": 0
     },
-    "facing=north,formed=true,species=1": {
-      "model": "revocultivation:block/empty",
-      "y": 0
-    },
-    "facing=north,formed=true,species=2": {
-      "model": "revocultivation:block/empty",
-      "y": 0
-    },
-    "facing=east,formed=true,species=0": {
+    "facing=east,formed=true": {
       "model": "revocultivation:block/empty",
       "y": 90
     },
-    "facing=east,formed=true,species=1": {
-      "model": "revocultivation:block/empty",
-      "y": 90
-    },
-    "facing=east,formed=true,species=2": {
-      "model": "revocultivation:block/empty",
-      "y": 90
-    },
-    "facing=south,formed=true,species=0": {
+    "facing=south,formed=true": {
       "model": "revocultivation:block/empty",
       "y": 180
     },
-    "facing=south,formed=true,species=1": {
-      "model": "revocultivation:block/empty",
-      "y": 180
-    },
-    "facing=south,formed=true,species=2": {
-      "model": "revocultivation:block/empty",
-      "y": 180
-    },
-    "facing=west,formed=true,species=0": {
-      "model": "revocultivation:block/empty",
-      "y": 270
-    },
-    "facing=west,formed=true,species=1": {
-      "model": "revocultivation:block/empty",
-      "y": 270
-    },
-    "facing=west,formed=true,species=2": {
+    "facing=west,formed=true": {
       "model": "revocultivation:block/empty",
       "y": 270
     }

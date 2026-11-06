@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "nativeServerTests": 6,
+  "unitTests": "revolib and revoextraction passed",
+  "graphicalFixture": "isolated copied save, five real client screenshots visually reviewed",
+  "filterModels": "all facing/formed/species combinations covered; missing steel species states corrected",
+  "sourceResourceJarPackBytesVerified": true,
+  "testHelpersExcludedFromProduction": true,
+  "firstChapterValidation": true,
+  "existingFurnaceFarmVacuumVerification": true,
+  "fullFreshSurvivalPlaythrough": false,
+  "packVersion": "0.1.34-dev-resource-bridges",
+  "screenshots": {
+    "blaze-output.png": "2e500db48cca6c6cd9d64a70c5d8af134c55994ee917af2c49116ade91954ff5",
+    "blaze-world.png": "64ef2a2c8216f565dcd775c970f2d58531aae3e902440b0b85d038b71466dcc0",
+    "cow-output.png": "ca16f02f857e6f30d154f6a78d476e9e22b6dc43f50ca711fb39070e1da68633",
+    "cow-world.png": "ce0af571b434a67f0f3856f5b609cc1a3ed4712841eaa2a868062b7c9c64b8ae",
+    "flux-dust.png": "7cb46f74ae1c64ea09d121fdb76be7193988d87f197afd97fc47022ba4fd28e7"
+  }
+}

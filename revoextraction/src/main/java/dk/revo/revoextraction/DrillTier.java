@@ -33,7 +33,9 @@ public enum DrillTier {
         Item item=BuiltInRegistries.ITEM.get(ResourceLocation.parse(id));
         return item==Items.AIR?Items.RAW_IRON:item;
     }
+    public static final int FLUX_INTERVAL=128;
     public Item output(int cycle){
+        if(this!=WOODEN&&Math.floorMod(cycle,FLUX_INTERVAL)==FLUX_INTERVAL-1){var flux=BuiltInRegistries.ITEM.get(ResourceLocation.parse("fluxnetworks:flux_dust"));if(flux!=Items.AIR)return flux;}
         // Fixed sequence is saved by the controller: blocked outputs cannot be rerolled.
         Item[] pool=this==STEEL?new Item[]{Items.RAW_IRON,Items.RAW_COPPER,optional("modern_industrialization:raw_tin"),Items.COAL,
             Items.REDSTONE,Items.RAW_IRON,optional("create:raw_zinc"),Items.RAW_GOLD,Items.LAPIS_LAZULI,Items.RAW_IRON,Items.DIAMOND,Items.COAL}:this==WOODEN

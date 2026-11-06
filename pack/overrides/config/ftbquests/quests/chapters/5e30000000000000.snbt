@@ -886,7 +886,8 @@
       "y": 0.0,
       "description": [
         "Finish the Coke Oven multiblock, supply steam and coal through its hatches, then collect Coke. Maintain your drill, bronze supply and working steam line.",
-        "Continue to Chapter 4 for the water-cooled Steel Drill and maintenance. Its diamond supply unlocks native MI maceration; electricity comes later."
+        "Continue to Chapter 4 for the water-cooled Steel Drill and maintenance. Its diamond supply unlocks native MI maceration; electricity comes later.",
+        "Next, mill your coke into coke dust in the Create Millstone. This closes the first-steel route before diamonds and the MI macerator."
       ],
       "tasks": [
         {

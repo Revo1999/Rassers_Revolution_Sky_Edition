@@ -26,7 +26,7 @@ public final class RevoCultivation {
     public static final DeferredBlock<FarmPart> GRATE=BLOCKS.register("collection_grate",()->new FarmPart(BlockBehaviour.Properties.of().strength(3).noOcclusion().sound(SoundType.METAL)));
     public static final DeferredBlock<FarmPart> GLASS=BLOCKS.register("glass_panel",()->new FarmPart(BlockBehaviour.Properties.of().strength(.6f).noOcclusion().sound(SoundType.GLASS)));
     public static final DeferredBlock<FarmPart> BARS=BLOCKS.register("barred_panel",()->new FarmPart(BlockBehaviour.Properties.of().strength(3).noOcclusion().sound(SoundType.METAL)));
-    public static final DeferredBlock<FarmFilter> FILTER=BLOCKS.register("mob_filter",FarmFilter::new);
+    public static final DeferredBlock<FarmFilter> FILTER=BLOCKS.register("mob_filter",()->new FarmFilter(false));
     public static final DeferredBlock<FarmHatch> HATCH=BLOCKS.register("item_hatch",FarmHatch::new);
     public static final DeferredBlock<FarmController> TREE=BLOCKS.register("tree_grower",()->new FarmController(MachineKind.TREE));
     public static final DeferredBlock<FarmController> GREENHOUSE=BLOCKS.register("greenhouse",()->new FarmController(MachineKind.GREENHOUSE));

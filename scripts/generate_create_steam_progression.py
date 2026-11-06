@@ -278,7 +278,7 @@ s.q('cokeoven', 'A Foundation for Steel', 'modern_industrialization:coke_oven', 
     'The oven needs STEAM through the fluid input hatch and COAL through the item input. Take Coke from the item output. An optional fluid output hatch replaces another brick to collect creosote.'], items=[('modern_industrialization:coke_oven',1), ('minecraft:bricks',21), ('modern_industrialization:bronze_item_input_hatch',1), ('modern_industrialization:bronze_item_output_hatch',1), ('modern_industrialization:bronze_fluid_input_hatch',1)])
 s.q('coke', 'Ready for the Next Revolution', 'modern_industrialization:coke', 1, ['cokeoven'], 34, 0, [
     'Finish the Coke Oven multiblock, supply steam and coal through its hatches, then collect Coke. Maintain your drill, bronze supply and working steam line.',
-    'Continue to Chapter 4 for the water-cooled Steel Drill and maintenance. Its diamond supply unlocks native MI maceration; electricity comes later.'])
+    'Mill Coke into Coke Dust in a Create Millstone. This closes the steel route before the Steel Drill supplies your first diamonds. Continue to Chapter 4 for the water-cooled Steel Drill and maintenance.'])
 s.save()
 
 tips = CHAPTERS / '5e1f000000000000.snbt'
@@ -289,3 +289,6 @@ put(ROOT / 'art/quests/create-steam-map.json', {'chapters': [
         'outputsPer12': {'minecraft:raw_iron': 3, 'minecraft:raw_copper': 2, 'modern_industrialization:raw_tin': 2,
             'minecraft:coal': 2, 'create:raw_zinc': 1, 'minecraft:raw_gold': 1, 'minecraft:redstone': 1}}})
 print(f'Generated {len(c.quests)} Create quests + {len(s.quests)} MI steam quests; six iron parts and six bridge recipes.')
+
+# The early coke bridge must remain available without a diamond-gated macerator.
+put(ROOT / "revoextraction/src/main/resources/data/revoextraction/recipe/milling/coke_dust.json", {"type":"create:milling","ingredients":[{"item":"modern_industrialization:coke"}],"processing_time":100,"results":[{"id":"modern_industrialization:coke_dust","count":1}],"neoforge:conditions":[{"type":"neoforge:mod_loaded","modid":"modern_industrialization"}]})

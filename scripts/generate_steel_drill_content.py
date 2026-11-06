@@ -56,12 +56,12 @@ def quest(key,title,item=None,count=1,deps=(),x=0,y=0,text=(),items=None):
     tasks=[{'id':hid(0x1000+n*16+i),'type':'item','item':{'id':name,'count':1},'count':amount,'consume_items':False} for i,(name,amount) in enumerate(inputs)] or [{'id':hid(0x1000+n*16),'type':'checkmark'}]
     quests.append({'id':hid(n),'title':title,'icon':{'id':item or 'revoextraction:steel_drill_controller','count':1},'x':float(x),'y':float(y),'shape':'hexagon' if key in ['steel','controller','commission','diamonds'] else 'circle','dependencies':[ids.get(d,d) for d in deps],'description':list(text),'tasks':tasks,'rewards':[]})
 quest('steel','Steel from Steam','modern_industrialization:steel_ingot',8,['5E3000000000001C'],0,0,[
- 'Your coke and steam workshop leads into steel. Follow the native MI guidebook and EMI for uncooked steel and the Steam Blast Furnace; this drill does not bypass steel production.',
+ 'Mill Coke in a Create Millstone for Coke Dust. Forge-hammer iron into dust, combine seven Iron Dust with two Coke Dust for Uncooked Steel Dust, then process it in the native MI Steam Blast Furnace.',
  'The next Revo drill stays Create-powered, but adds real water cooling and maintenance. Keep the Iron Drill working while building the upgrade.'])
 quest('plates','A Reinforced Frame','modern_industrialization:steel_plate',45,['steel'],3,0,[
  'Press steel ingots into steel plates with the Create Mechanical Press, or use native MI plate recipes.',
  'The drill itself needs 45 steel plates: 12 supports, 17 casings (8 inside the controller), 8 for two cores, 4 for the ports and 4 for the tank. Also reserve 8 loose steel ingots for the cores.',
- 'A repair kit needs another two steel plates, copper and leather. The underlying iron components must be crafted separately.'])
+ 'A repair kit needs another two steel plates, copper and leather. Select Cow on the Wooden Mob Harvester filter; each cycle gives one leather and two raw beef. The underlying iron components must be crafted separately.'])
 quest('frame','Build the Portal Gantry',deps=['plates'],x=6,y=-2,items=[('revoextraction:steel_drill_support',12),('revoextraction:steel_drill_casing',9)],text=[
  'Upgrade Iron Drill Supports and Casings with steel plates. The finished structure uses 12 supports and 9 placed casings.',
  'A water tank replaces the casing directly above the output hatch. Use the Steel Drill construction view in EMI.'])

@@ -23,7 +23,7 @@
         "5E3000000000001C"
       ],
       "description": [
-        "Your coke and steam workshop leads into steel. Follow the native MI guidebook and EMI for uncooked steel and the Steam Blast Furnace; this drill does not bypass steel production.",
+        "Mill coke in a Create Millstone to get coke dust without a macerator. Use the MI Forge Hammer for iron dust, combine seven iron dust with two coke dust, then smelt uncooked steel dust in the Steam Blast Furnace. Follow the native MI construction guide for its complete multiblock.",
         "The next Revo drill stays Create-powered, but adds real water cooling and maintenance. Keep the Iron Drill working while building the upgrade."
       ],
       "tasks": [
@@ -267,7 +267,8 @@
       "description": [
         "Keep a repair kit nearby. If the Steel Drill seizes, its output is preserved.",
         "Stop the Create shaft, rebuild any missing frame parts, add at least 100 mB water, then right-click any part with the kit. One kit is consumed only after a successful repair.",
-        "Breaking and replacing the controller preserves dry-running damage; it does not repair the machine."
+        "Breaking and replacing the controller preserves dry-running damage; it does not repair the machine.",
+        "Select Cow on the wooden Mob Harvester filter for leather and raw beef. One cycle produces one leather; a kit needs two. No diamond-gated machine or wild animal is required."
       ],
       "tasks": [
         {
@@ -393,7 +394,8 @@
         "Build a 5 x 5 x 3 Iron Greenhouse around a full 3 x 3 soil bed: 11 supports, 21 casings, 20 glass panels, 9 soil beds, controller, hatch, Iron Water Tank, Basic Power Converter and grow light. Leave the 3 x 3 middle chamber empty. EMI shows every layer.",
         "Steel framing supports the connected glass borders and four thin white LED strips. Fit the tank left-centre and converter rear-right on the bottom layer. The hatch goes immediately in front of the converter on the right side. Face converter FE rearward so EU touches the hatch; keep FE to EU mode. The fitted enclosure appears when formed.",
         "Supply 8 EU/t to the hatch, or 80 FE/t to the converter with the default ratio. The greenhouse buffer stores 1600 EU; the converter stores no power.",
-        "Nine native wheat/carrot/potato/beetroot models fill the bed, with real age stages. Each 10-second harvest uses 250 mB water. The attached 16000 mB tank accepts buckets/pipes and renders its real water level. Grow lights support day/night and indoor operation."
+        "Nine native wheat/carrot/potato/beetroot models fill the bed, with real age stages. Each 10-second harvest uses 250 mB water. The attached 16000 mB tank accepts buckets/pipes and renders its real water level. Grow lights support day/night and indoor operation.",
+        "Iron and Steel Drills produce rare Flux Dust: one every 128 completed cycles. Steel Mob Harvester Blaze mode supplies blaze rods. Eye of Ender crafting still needs an Ender Pearl source."
       ],
       "tasks": [
         {

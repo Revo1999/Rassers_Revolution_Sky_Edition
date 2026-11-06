@@ -51,7 +51,7 @@ public final class FarmClient {
                         // equipment, eye layers and idle/limb animation at actual mob scale.
                         // Invoke it directly to avoid world shadow/hitbox/fire passes for a
                         // machine-owned mob that is not in the world's entity collection.
-                        mc.getEntityRenderDispatcher().getRenderer(mob).render(mob,180,partial,pose,buffers,light);
+                        mc.getEntityRenderDispatcher().getRenderer(mob).render(mob,180,partial,pose,buffers,mob.getType()==net.minecraft.world.entity.EntityType.BLAZE?LightTexture.FULL_BRIGHT:light);
                         pose.popPose();
                     }
                 }

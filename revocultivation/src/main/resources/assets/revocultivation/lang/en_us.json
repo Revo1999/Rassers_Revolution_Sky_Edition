@@ -148,5 +148,7 @@
   "part.revocultivation.tank": "Attached water tank",
   "part.revocultivation.soil": "Dirt planting block",
   "guide.revocultivation.steel_tree": "5 x 5 base: dirt centre, 8 soil beds, 4 corners, 9 casings. Tank left, hatch right, controller front. Leave 7 blocks above clear.",
-  "hint.revocultivation.real_tree": "Clear 5 x 5 x 7 above the base. Farm-grown tree blocks are tracked."
+  "hint.revocultivation.real_tree": "Clear 5 x 5 x 7 above the base. Farm-grown tree blocks are tracked.",
+  "program.revocultivation.cow": "Cow",
+  "program.revocultivation.blaze": "Blaze"
 }
