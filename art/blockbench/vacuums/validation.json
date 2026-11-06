@@ -6,11 +6,12 @@
     3,
     9
   ],
-  "radius": [
+  "cubeSize": [
     3,
     5,
-    7
+    9
   ],
+  "cubeFullyInFrontOfIntake": true,
   "transferIntervalTicks": [
     8,
     4,
@@ -35,6 +36,8 @@
   "limitedPaletteVerified": true,
   "nativeTexturePixelsVerified": true,
   "boundsAndUvVerified": true,
-  "inGameCaptures": 8,
+  "inGameCaptures": 15,
+  "uiAreaToggleVerified": true,
+  "allTierPlacementPreviewsCaptured": true,
   "sourceJarPackBytesVerified": true
 }

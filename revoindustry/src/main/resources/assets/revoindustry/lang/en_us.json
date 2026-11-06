@@ -67,7 +67,10 @@
   "block.revoindustry.vacuum_1": "Vacuum Mk 1",
   "block.revoindustry.vacuum_2": "Vacuum Mk 2",
   "block.revoindustry.vacuum_3": "Vacuum Mk 3",
-  "tooltip.revoindustry.vacuum.stats": "Radius: %s blocks | %s slots | %s items/s",
+  "tooltip.revoindustry.vacuum.stats": "Area: %1$s x %1$s x %1$s | %2$s slots | %3$s items/s",
   "tooltip.revoindustry.vacuum.outlet": "Place on an inventory to aim the rear plate outlet into it.",
-  "tooltip.revoindustry.vacuum.wrench": "Wrench rotates the outlet; no power required."
+  "tooltip.revoindustry.vacuum.wrench": "Wrench rotates the outlet; no power required.",
+  "gui.revoindustry.vacuum.show_area": "Show suction area",
+  "gui.revoindustry.vacuum.hide_area": "Hide suction area",
+  "gui.revoindustry.vacuum.area_hint": "Outline this vacuum's pickup range. Close this screen to inspect it."
 }

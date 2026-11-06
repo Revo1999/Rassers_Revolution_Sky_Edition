@@ -19,7 +19,11 @@ public final class VacuumBlock extends Block implements EntityBlock {
  public VacuumBlock(int tier){super(Properties.of().strength(3.5f).sound(SoundType.METAL).noOcclusion());this.tier=tier;registerDefaultState(stateDefinition.any().setValue(OUTLET,Direction.SOUTH));}
  protected void createBlockStateDefinition(StateDefinition.Builder<Block,BlockState> b){b.add(OUTLET);}
  protected net.minecraft.world.phys.shapes.VoxelShape getShape(BlockState s,BlockGetter l,BlockPos p,net.minecraft.world.phys.shapes.CollisionContext c){return VacuumShape.get(tier,s.getValue(OUTLET));}
- public BlockState getStateForPlacement(BlockPlaceContext c){return defaultBlockState().setValue(OUTLET,c.getClickedFace().getOpposite());}
+ public BlockState getStateForPlacement(BlockPlaceContext c){
+  var outlet=c.getClickedFace().getOpposite();
+  if(outlet.getAxis()==Direction.Axis.Y){var support=c.getClickedPos().relative(c.getClickedFace().getOpposite());if(c.getLevel().getCapability(net.neoforged.neoforge.capabilities.Capabilities.ItemHandler.BLOCK,support,c.getClickedFace())==null)outlet=c.getHorizontalDirection();}
+  return defaultBlockState().setValue(OUTLET,outlet);
+ }
  protected BlockState rotate(BlockState s,Rotation r){return s.setValue(OUTLET,r.rotate(s.getValue(OUTLET)));}
  protected BlockState mirror(BlockState s,Mirror m){return s.rotate(m.getRotation(s.getValue(OUTLET)));}
  protected ItemInteractionResult useItemOn(ItemStack stack,BlockState s,Level l,BlockPos pos,Player p,InteractionHand hand,BlockHitResult hit){
@@ -32,6 +36,6 @@ public final class VacuumBlock extends Block implements EntityBlock {
  }
  public BlockEntity newBlockEntity(BlockPos p,BlockState s){return new VacuumEntity(p,s);}
  public <T extends BlockEntity> BlockEntityTicker<T> getTicker(Level l,BlockState s,BlockEntityType<T> t){return !l.isClientSide&&t==Vacuums.ENTITY.get()?(world,pos,state,be)->((VacuumEntity)be).tick():null;}
- protected InteractionResult useWithoutItem(BlockState s,Level l,BlockPos pos,Player p,BlockHitResult hit){if(l.getBlockEntity(pos) instanceof VacuumEntity v){if(!l.isClientSide)p.openMenu(v,b->b.writeVarInt(tier));return InteractionResult.sidedSuccess(l.isClientSide);}return InteractionResult.PASS;}
+ protected InteractionResult useWithoutItem(BlockState s,Level l,BlockPos pos,Player p,BlockHitResult hit){if(l.getBlockEntity(pos) instanceof VacuumEntity v){if(!l.isClientSide)p.openMenu(v,b->{b.writeVarInt(tier);b.writeBlockPos(pos);});return InteractionResult.sidedSuccess(l.isClientSide);}return InteractionResult.PASS;}
  protected void onRemove(BlockState s,Level l,BlockPos pos,BlockState next,boolean moving){if(!s.is(next.getBlock())&&!l.isClientSide&&l.getBlockEntity(pos) instanceof VacuumEntity v)for(int i=0;i<v.inventory.getSlots();i++)Containers.dropItemStack(l,pos.getX(),pos.getY(),pos.getZ(),v.inventory.extractItem(i,Integer.MAX_VALUE,false));super.onRemove(s,l,pos,next,moving);}
 }

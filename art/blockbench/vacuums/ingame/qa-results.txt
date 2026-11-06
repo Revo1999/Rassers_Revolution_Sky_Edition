@@ -1,1 +1,1 @@
-All three single-block vacuums rendered with exact 1/3/9-slot menus, rear output plate and live suction particles.
+All three single-block vacuums rendered with exact 1/3/9-slot menus, rear output plate, live suction particles, working UI area toggle on/off and all three automatic placement range previews.

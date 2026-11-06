@@ -27,8 +27,8 @@ public final class VacuumEntity extends BlockEntity implements MenuProvider {
   if(cooldown>0){cooldown--;setChanged();}
   if(cooldown==0){transfer();cooldown=Vacuums.interval(tier());setChanged();}
   if(level.getGameTime()%4!=0)return;
-  var centre=Vec3.atCenterOf(worldPosition);int radius=Vacuums.radius(tier());
-  var found=level.getEntitiesOfClass(ItemEntity.class,new AABB(worldPosition).inflate(radius),e->e.isAlive()&&!e.getItem().isEmpty()&&e.position().distanceToSqr(centre)<=radius*radius);
+  var centre=Vec3.atCenterOf(worldPosition);var area=Vacuums.area(worldPosition,tier(),outlet());
+  var found=level.getEntitiesOfClass(ItemEntity.class,area,e->e.isAlive()&&!e.getItem().isEmpty()&&area.contains(e.position()));
   found.sort(java.util.Comparator.comparingDouble(e->e.position().distanceToSqr(centre)));
   int handled=0;
   for(var entity:found){

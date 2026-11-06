@@ -106,10 +106,10 @@ for module in ['revocultivation','revogenetics','revolib','revoindustry']:
             if p.is_file() and (p.suffix=='.json' and p.name.startswith(('steel_','iron_')) or p.name in ['metal_farms_atlas.png','greenhouse_tree_atlas.png','greenhouse_glass.png','en_us.json']):
                 assert jar.read(p.relative_to(resources).as_posix())==p.read_bytes(),p
         assert not any('GameTests' in n or 'UiQa' in n for n in jar.namelist())
-pack=ROOT.parent/'Rassers-Revolution-Sky-Edition-0.1.31-dev.mrpack'
+pack=ROOT.parent/'Rassers-Revolution-Sky-Edition-0.1.32-dev.mrpack'
 with zipfile.ZipFile(pack) as z:
     assert read(ROOT/'pack/mods.lock.json') # Existing external mod set is retained.
-    assert json.loads(z.read('modrinth.index.json'))['versionId']=='0.1.31-dev-vacuum-dither'
+    assert json.loads(z.read('modrinth.index.json'))['versionId']=='0.1.32-dev-vacuum-area'
     for p in (ROOT/'build/mods').glob('*.jar'):assert z.read('overrides/mods/'+p.name)==p.read_bytes()
     for p in (ROOT/'pack/overrides/config/ftbquests/quests/chapters').glob('*.snbt'):assert z.read('overrides/config/ftbquests/quests/chapters/'+p.name)==p.read_bytes()
     assert z.read('overrides/METAL-FARMS.md')==(ROOT/'docs/METAL-FARMS.md').read_bytes()
