@@ -16,9 +16,9 @@ import net.minecraft.world.phys.BlockHitResult;
 public final class VacuumBlock extends Block implements EntityBlock {
  public static final DirectionProperty OUTLET=BlockStateProperties.FACING;
  public final int tier;
- public VacuumBlock(int tier){super(Properties.of().strength(3.5f).sound(SoundType.METAL).noOcclusion());this.tier=tier;registerDefaultState(stateDefinition.any().setValue(OUTLET,Direction.DOWN));}
+ public VacuumBlock(int tier){super(Properties.of().strength(3.5f).sound(SoundType.METAL).noOcclusion());this.tier=tier;registerDefaultState(stateDefinition.any().setValue(OUTLET,Direction.SOUTH));}
  protected void createBlockStateDefinition(StateDefinition.Builder<Block,BlockState> b){b.add(OUTLET);}
- protected net.minecraft.world.phys.shapes.VoxelShape getShape(BlockState s,BlockGetter l,BlockPos p,net.minecraft.world.phys.shapes.CollisionContext c){return VacuumShape.get(s.getValue(OUTLET));}
+ protected net.minecraft.world.phys.shapes.VoxelShape getShape(BlockState s,BlockGetter l,BlockPos p,net.minecraft.world.phys.shapes.CollisionContext c){return VacuumShape.get(tier,s.getValue(OUTLET));}
  public BlockState getStateForPlacement(BlockPlaceContext c){return defaultBlockState().setValue(OUTLET,c.getClickedFace().getOpposite());}
  protected BlockState rotate(BlockState s,Rotation r){return s.setValue(OUTLET,r.rotate(s.getValue(OUTLET)));}
  protected BlockState mirror(BlockState s,Mirror m){return s.rotate(m.getRotation(s.getValue(OUTLET)));}

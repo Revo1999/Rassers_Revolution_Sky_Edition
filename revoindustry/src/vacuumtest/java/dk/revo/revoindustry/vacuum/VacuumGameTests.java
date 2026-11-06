@@ -15,7 +15,7 @@ public final class VacuumGameTests {
  @GameTest(template="vacuum_test",timeoutTicks=100)
  public static void tiersSlotsAndSixDirectionalChestTransfer(GameTestHelper h){
   for(int tier=0;tier<3;tier++)for(var face:Direction.values()){
-   var v=make(h,tier,face);var target=v.getBlockPos().relative(face);h.getLevel().setBlockAndUpdate(target,Blocks.CHEST.defaultBlockState());var chest=(ChestBlockEntity)h.getLevel().getBlockEntity(target);
+   var v=make(h,tier,face);h.assertTrue(v.intake().subtract(Vec3.atCenterOf(v.getBlockPos())).normalize().dot(Vec3.atLowerCornerOf(face.getNormal()))<-.999,"Intake must be opposite the rear output plate");var target=v.getBlockPos().relative(face);h.getLevel().setBlockAndUpdate(target,Blocks.CHEST.defaultBlockState());var chest=(ChestBlockEntity)h.getLevel().getBlockEntity(target);
    h.assertTrue(v.inventory.getSlots()==new int[]{1,3,9}[tier],"Exact buffer slot count");
    v.inventory.insertItem(0,new ItemStack(Items.COBBLESTONE,32),false);step(v,Vacuums.interval(tier)*3);
    h.assertTrue(chest.getItem(0).getCount()==3,"Tier transfer cadence facing "+face+" tier "+tier);h.assertTrue(v.inventory.getStackInSlot(0).getCount()==29,"Transferred only three items");

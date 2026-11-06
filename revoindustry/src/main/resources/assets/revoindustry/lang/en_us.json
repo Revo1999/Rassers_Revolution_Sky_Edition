@@ -68,6 +68,6 @@
   "block.revoindustry.vacuum_2": "Vacuum Mk 2",
   "block.revoindustry.vacuum_3": "Vacuum Mk 3",
   "tooltip.revoindustry.vacuum.stats": "Radius: %s blocks | %s slots | %s items/s",
-  "tooltip.revoindustry.vacuum.outlet": "Place on an inventory to aim the underside outlet into it.",
+  "tooltip.revoindustry.vacuum.outlet": "Place on an inventory to aim the rear plate outlet into it.",
   "tooltip.revoindustry.vacuum.wrench": "Wrench rotates the outlet; no power required."
 }

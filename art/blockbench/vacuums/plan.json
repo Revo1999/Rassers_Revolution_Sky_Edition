@@ -3,9 +3,15 @@
   "format": "java_block",
   "shading": "Opaque vanilla albedo with deliberate pixel dithering",
   "texel_density": "16 pixels per block; proportionate per-face UVs",
-  "budget": "24 cubes / 288 triangles per tier",
-  "textures": "Six shared 16px material tiles per tier; ordered Bayer dithering",
+  "budget": "24 / 26 / 31 cubes for distinct tier silhouettes",
+  "textures": "Seven shared 16px material tiles per tier; ordered Bayer dithering",
   "animation": "Runtime item attraction and native end-rod suction stream",
   "bounds": "All geometry within one 16x16x16 block",
-  "output": "Local down, rotated with six-way facing"
+  "pipeDiameterPixels": [
+    10,
+    12,
+    14
+  ],
+  "seams": "Ring segments have unique front/back depths; cap and trim surfaces are separated",
+  "output": "Rear plate opposite the intake; local south, six-way facing"
 }

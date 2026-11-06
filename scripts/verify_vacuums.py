@@ -1,13 +1,16 @@
 from pathlib import Path
 import json,zipfile,base64,io,math
 from PIL import Image
+from vacuum_geometry_checks import coplanar_overlaps
 ROOT=Path(__file__).resolve().parents[1];RES=ROOT/'revoindustry/src/main/resources';ART=ROOT/'art/blockbench/vacuums'
 def read(p):return json.loads(p.read_text(encoding='utf-8-sig'))
 for tier in range(1,4):
  model=read(RES/f'assets/revoindustry/models/block/vacuum_{tier}.json');native=read(ART/f'vacuum_{tier}.bbmodel')
- assert len(model['elements'])==24 and len(native['elements'])==24
- assert len(native['textures'])==6
+ assert len(model['elements'])==[24,26,31][tier-1] and len(native['elements'])==[24,26,31][tier-1]
+ assert len(native['textures'])==7
  assert not any(any(w in e.get('name','') for w in ['wheel','handle','canister']) for e in model['elements'])
+ flange=next(e for e in model['elements'] if e['name']=='flange_0');assert abs(flange['to'][1]-(8+[5,6,7][tier-1]))<.001
+ assert not coplanar_overlaps(model),coplanar_overlaps(model)
  assert sum(bool(e.get('rotation',{}).get('angle',0)) for e in model['elements'])==8
  for e in model['elements']:
   a,b=e['from'],e['to'];r=e.get('rotation')
@@ -28,12 +31,12 @@ for tier in range(1,4):
  for texture in native['textures']:
   im=Image.open(io.BytesIO(base64.b64decode(texture['source'].split(',')[1])));assert im.size==(16,16)
  variants=read(RES/f'assets/revoindustry/blockstates/vacuum_{tier}.json')['variants'];assert len(variants)==6
- assert variants['facing=north']['x']==270 and variants['facing=south']['x']==90
- assert variants['facing=east']['x']==270 and variants['facing=east']['y']==90
+ assert variants['facing=north']['y']==180 and 'x' not in variants['facing=south']
+ assert variants['facing=east']['y']==270 and variants['facing=down']['x']==270
  for folder in ['recipe','loot_table/blocks']:assert (RES/f'data/revoindustry/{folder}/vacuum_{tier}.json').exists()
  for name in [f'tier-{tier}.png',f'tier-{tier}-menu.png']:
   assert Image.open(ART/'ingame'/name).size==(1280,900)
-for name in ['side-outlet.png','suction.png']:assert Image.open(ART/'ingame'/name).size==(1280,900)
+for name in ['rear-output.png','suction.png']:assert Image.open(ART/'ingame'/name).size==(1280,900)
 with zipfile.ZipFile(ROOT/'build/mods/revoindustry-0.1.0-dev.jar') as jar:
  assert not any('VacuumGameTests' in n or 'VacuumUiQa' in n or 'vacuum_test.nbt' in n for n in jar.namelist())
  for n in ['VacuumBlock','VacuumEntity','VacuumMenu','VacuumShape','Vacuums']:assert f'dk/revo/revoindustry/vacuum/{n}.class' in jar.namelist()
@@ -45,5 +48,5 @@ with zipfile.ZipFile(ROOT.parent/'Rassers-Revolution-Sky-Edition-0.1.30-dev.mrpa
  assert json.loads(pack.read('modrinth.index.json'))['versionId']=='0.1.30-dev-vacuums'
  assert pack.read('overrides/REVO-VACUUMS.md')==(ROOT/'docs/REVO-VACUUMS.md').read_bytes()
  for p in (ROOT/'build/mods').glob('*.jar'):assert pack.read('overrides/mods/'+p.name)==p.read_bytes()
-report={'passed':True,'singleBlockTiers':3,'slots':[1,3,9],'radius':[3,5,7],'transferIntervalTicks':[8,4,1],'cubesPerTier':24,'texturesPerTier':6,'sixWayOutlet':True,'hollowOctagonalIntake':True,'orderedDitherTextures':True,'boundsAndUvVerified':True,'inGameCaptures':8,'sourceJarPackBytesVerified':True}
+report={'passed':True,'singleBlockTiers':3,'slots':[1,3,9],'radius':[3,5,7],'transferIntervalTicks':[8,4,1],'cubesPerTier':[24,26,31],'texturesPerTier':7,'pipeDiameterPixels':[10,12,14],'coplanarOverlappingFaces':0,'rearPlateOutput':True,'sixWayOutlet':True,'hollowOctagonalIntake':True,'orderedDitherTextures':True,'boundsAndUvVerified':True,'inGameCaptures':8,'sourceJarPackBytesVerified':True}
 (ART/'validation.json').write_text(json.dumps(report,indent=2)+'\n');print(json.dumps(report,indent=2))
