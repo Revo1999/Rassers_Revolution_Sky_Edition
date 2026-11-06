@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "CCC",
+    "CFC",
+    "CCC"
+  ],
+  "key": {
+    "C": {
+      "item": "revoindustry:obsidian_furnace_casing"
+    },
+    "F": {
+      "item": "ironfurnaces:obsidian_furnace"
+    }
+  },
+  "result": {
+    "id": "revoindustry:obsidian_multiblock_furnace",
+    "count": 1
+  }
+}

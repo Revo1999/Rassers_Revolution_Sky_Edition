@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "CCC",
+    "CFC",
+    "CCC"
+  ],
+  "key": {
+    "C": {
+      "item": "revoindustry:diamond_furnace_casing"
+    },
+    "F": {
+      "item": "ironfurnaces:diamond_furnace"
+    }
+  },
+  "result": {
+    "id": "revoindustry:diamond_multiblock_furnace",
+    "count": 1
+  }
+}

@@ -38,6 +38,9 @@ project(':revolib') {
         runs {
             client {
                 client()
+                if (providers.gradleProperty('revoFurnaceUiQa').isPresent()) {
+                    programArguments.addAll '--quickPlaySingleplayer', 'Revo Furnace QA', '--width', '1280', '--height', '900'
+                }
                 if (providers.gradleProperty('revoDrillUiQa').isPresent()) {
                     programArguments.addAll '--quickPlaySingleplayer', 'Revo Drill Interface QA', '--width', '1280', '--height', '900'
                 }

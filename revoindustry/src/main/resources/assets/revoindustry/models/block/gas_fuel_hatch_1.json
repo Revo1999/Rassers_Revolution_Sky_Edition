@@ -1,0 +1,7 @@
+{
+  "loader": "modern_industrialization:machine",
+  "casing": "modern_industrialization:bronze",
+  "default_overlays": {
+    "side": "revoindustry:block/furnaces/gas_fuel_hatch_1"
+  }
+}

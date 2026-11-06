@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "tiers": 10,
+  "nativeMiIntegration": true,
+  "registeredBlocks": 33,
+  "itemHatchGrades": 3,
+  "itemSlots": [
+    1,
+    2,
+    4
+  ],
+  "fuelHatches": 9,
+  "fuelHeatRates": [
+    64,
+    512,
+    4096
+  ],
+  "mandatoryRoofCentreVent": true,
+  "adaptiveControllerHatchesAndVent": true,
+  "exactMiHatchPixels": true,
+  "factoryAugmentDisabled": true,
+  "editableAssemblies": 10,
+  "inGameTierCaptures": 10,
+  "nativeMenusCaptured": true,
+  "rainbowAnimated": true,
+  "sourceJarAndPackBytesVerified": true
+}

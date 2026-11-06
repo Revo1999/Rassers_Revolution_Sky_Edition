@@ -142,7 +142,7 @@
   "part.revocultivation.light": "Grow light panel",
   "guide.revocultivation.iron_base": "5 x 5 base around a full 3 x 3 soil bed. Tank left-centre; converter rear-right; hatch immediately in front of converter, facing right.",
   "guide.revocultivation.iron_glass": "Leave the 3 x 3 middle chamber empty for nine crop models. Join the borderless glass walls inside the steel frame. Keep corner supports.",
-  "guide.revocultivation.iron_lights": "Roof: 8 interior glass panels around the central grow light; casing border and corner supports. Three light rails join the upper steel frame. Supply 8 EU/t and water.",
+  "guide.revocultivation.iron_lights": "Roof: 8 interior glass panels around the central grow light; casing border and corner supports. Four thin white LED strips run under the square top beams and switch on automatically at night or during rain. Supply 8 EU/t and water.",
   "block.revocultivation.iron_water_tank": "Iron Farm Water Tank",
   "block.revocultivation.steel_water_tank": "Steel Farm Water Tank",
   "part.revocultivation.tank": "Attached water tank",

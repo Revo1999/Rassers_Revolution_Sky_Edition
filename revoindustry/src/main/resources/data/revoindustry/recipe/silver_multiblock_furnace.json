@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "CCC",
+    "CFC",
+    "CCC"
+  ],
+  "key": {
+    "C": {
+      "item": "revoindustry:silver_furnace_casing"
+    },
+    "F": {
+      "item": "ironfurnaces:silver_furnace"
+    }
+  },
+  "result": {
+    "id": "revoindustry:silver_multiblock_furnace",
+    "count": 1
+  }
+}

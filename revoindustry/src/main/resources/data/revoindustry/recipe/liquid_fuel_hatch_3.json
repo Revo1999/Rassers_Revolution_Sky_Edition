@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "PPP",
+    "PHP",
+    "PPP"
+  ],
+  "key": {
+    "P": {
+      "tag": "c:plates/stainless_steel"
+    },
+    "H": {
+      "item": "revoindustry:liquid_fuel_hatch_2"
+    }
+  },
+  "result": {
+    "id": "revoindustry:liquid_fuel_hatch_3",
+    "count": 1
+  }
+}

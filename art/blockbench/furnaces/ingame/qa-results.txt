@@ -1,0 +1,1 @@
+All ten furnace tiers built and rendered in-game; controller/hatch native MI menus and casing-adapted assembly guide captured in an isolated QA save.

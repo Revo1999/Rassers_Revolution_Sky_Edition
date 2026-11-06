@@ -22,14 +22,14 @@
     {
       "name": "iron_greenhouse_assembled",
       "scale": 5,
-      "cubes": 180,
-      "runtimeCubes": 107
+      "cubes": 173,
+      "runtimeCubes": 100
     },
     {
       "name": "steel_tree_grower_assembled",
       "scale": 5,
-      "cubes": 119,
-      "runtimeCubes": 62
+      "cubes": 140,
+      "runtimeCubes": 83
     }
   ],
   "atlas": [
@@ -370,6 +370,10 @@
     }
   ],
   "glassBorderPixelsRemoved": true,
+  "glassRendering": "connected-pane cutout pattern: outer perimeter only, repeated vanilla-style diagonal glints, transparent centre; separate translucent runtime pass",
+  "greenhouseFrame": "square aligned six-unit beams; unbroken pane infills; four thin white underside LED strips",
+  "lighting": "world clock: 13000 inclusive to 23000 exclusive, or rain; powered idle lighting",
+  "treeBase": "continuous cast plinth, steel casing ring and broad service shoulders",
   "cropPreviewUsesNativeModelScale": 1,
   "vanillaAttribution": "vanilla/manifest.json"
 }

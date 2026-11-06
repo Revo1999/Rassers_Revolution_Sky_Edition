@@ -9,11 +9,13 @@ import net.minecraft.world.level.block.state.BlockState;
 /** Client guide data. Offsets are relative to the controller, using the real formation blueprint. */
 public record MultiblockGuide(Component title, List<Part> parts, List<Component> layerSteps, Component power) {
     public enum Role {
-        BLOCK("Structure"), CONTROLLER("Controller"), OUTPUT("Item output hatch"), POWER("Create shaft input"), INPUT_OUTPUT("Item input/output hatch"), FLUID_INPUT("Water tank / fluid input"), ELECTRIC_INPUT("Electrical power converter");
+        BLOCK("Structure"), CONTROLLER("Controller"), OUTPUT("Item output hatch"), POWER("Create shaft input"), INPUT_OUTPUT("Item input/output hatch"), FLUID_INPUT("Water tank / fluid input"), ELECTRIC_INPUT("Electrical power converter"), ITEM_INPUT("Item input hatch"), FUEL_INPUT("Fuel input hatch"), VENT("Exhaust vent");
         public final String label;
         Role(String label) { this.label=label; }
     }
-    public record Part(BlockPos offset, BlockState state, Role role) {}
+    public record Part(BlockPos offset, BlockState state, Role role, net.neoforged.neoforge.client.model.data.ModelData modelData) {
+        public Part(BlockPos offset,BlockState state,Role role){this(offset,state,role,net.neoforged.neoforge.client.model.data.ModelData.EMPTY);}
+    }
     public MultiblockGuide {
         parts=List.copyOf(parts);layerSteps=List.copyOf(layerSteps);
         if(parts.isEmpty()||layerSteps.isEmpty())throw new IllegalArgumentException("Guide needs blocks and layer instructions");

@@ -1,0 +1,8 @@
+{
+  "loader": "modern_industrialization:machine",
+  "casing": "revoindustry:diamond_furnace",
+  "default_overlays": {
+    "front": "revoindustry:block/furnaces/controller_front",
+    "front_active": "revoindustry:block/furnaces/controller_front_on"
+  }
+}

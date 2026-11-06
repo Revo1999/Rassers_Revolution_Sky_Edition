@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "CCC",
+    "CFC",
+    "CCC"
+  ],
+  "key": {
+    "C": {
+      "item": "modern_industrialization:steel_machine_casing"
+    },
+    "F": {
+      "item": "ironfurnaces:iron_furnace"
+    }
+  },
+  "result": {
+    "id": "revoindustry:iron_multiblock_furnace",
+    "count": 1
+  }
+}

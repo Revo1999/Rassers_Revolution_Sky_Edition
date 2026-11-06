@@ -1,4 +1,4 @@
-# Metal farm upgrades — pack 0.1.26
+# Metal farm upgrades â€” pack 0.1.28
 
 Rebuild older Steel Tree Grower and Iron Greenhouse structures using the updated EMI guide. Wooden machines, the Steel Mob Harvester and single-block Composter/Silk Worm Cultivator keep their previous layouts.
 
@@ -33,7 +33,7 @@ EMI derives layers, required counts, orientations and port highlights from the s
 
 Local coordinates use the base centre, front at negative Z. Both wide farms put the controller at (0,0,-2) and tank at (-2,0,0). Tree hatch: (2,0,0). Greenhouse hatch: (2,0,1), immediately in front of converter (2,0,2). Hatches face right. Greenhouse middle layer has a 3 x 3 empty chamber; roof has eight interior glass around the central light.
 
-The tree soil meets at one height inside a continuous steel ribbon. A visible collection duct connects bed and hatch; this is an item chute, not a kinetic port. Greenhouse steel borders frame seamless glass and support three top light rails above nine native crop models. Both attached tanks accept buckets/pipes into one persistent 16000 mB reservoir. Each tank recipe uses four matching plates, four glass and a bucket.
+The tree soil meets at one height inside a continuous steel ribbon. A continuous cast plinth, closed steel casing ring and wide top shoulders fill the outer base. The controller, hatch and tank have solid connections back to the planting bed. A visible collection duct connects bed and hatch; this is an item chute, not a kinetic port. The greenhouse has a square frame of aligned steel beams. Thin connected glass fills the beam openings; only the outer pane perimeter is outlined, with vanilla-style diagonal highlights and no internal tile borders. Four thin white LED strips sit under the top beams above nine native crop models. Both attached tanks accept buckets/pipes into one persistent 16000 mB reservoir. Each tank recipe uses four matching plates, four glass and a bucket.
 
 ## Real oak growth
 
@@ -49,7 +49,7 @@ Face FE rearward, opposite the controller facing; EU touches the adjacent hatch.
 
 Consumption: 8 EU/t, or 80 FE/t at default 10 FE/EU. EMI uses the actual MI ratio. Each 200-tick harvest uses 1600 EU; the greenhouse buffers 1600 EU. Converter stores zero power and keeps its 32 EU/t limit. No kinetic power is accepted.
 
-Water is consumed on completed harvests; energy only on productive ticks. Missing power/starter/water or full output pauses work and switches lights off. The centre roof light emits level 12. Three diffusers render full-bright while working. Artificial lighting permits night/indoor operation. Wheat/carrot/potato/beetroot native models show synchronized real growth stages across the full bed. Wider bed keeps established yield.
+Water is consumed on completed harvests; production energy only on productive ticks, with separate idle LED energy below. Missing power/starter/water or full output pauses production. White LED strips follow world time and rain. They turn on at night (day ticks 13000 inclusive through 23000 exclusive) or whenever the world is raining. They turn off during clear daytime. Shade, artificial lighting and their own emitted light do not affect the schedule. The centre roof light emits level 12 and four thin diffusers render full-bright while lit. Lighting remains available while production is idle: 1 EU/t, using the existing buffer. Productive ticks retain their existing total 8 EU/t. Clear dawn, an empty buffer or dismantling turns the lights off. Rain keeps them on during daytime. Artificial lighting permits night/indoor operation. Wheat/carrot/potato/beetroot native models show synchronized real growth stages across the full bed. Wider bed keeps established yield.
 
 ## UI, storage and Jade
 
@@ -59,16 +59,16 @@ The Steel Harvester keeps its persistent selected vanilla mob, without world AI,
 
 ## Native modeling and texture contract
 
-Sources, atlases, manifests, builders and front/rear renders live under `art/blockbench/metal-farms`. Refinements were built/painted/exported through desktop Blockbench MCP with native undo and codecs. Previous models are preserved in `history/before-connected-glass`.
+Sources, atlases, manifests, builders and front/rear renders live under `art/blockbench/metal-farms`. Refinements were built/painted/exported through desktop Blockbench MCP with native undo and codecs. Previous models are preserved in `history/before-connected-glass` and `history/before-presence-refinement`.
 
-Java 1.21.1 desktop, balanced cubes, albedo/cutout, 16 texels per world block. Iron is blue-grey; steel muted green/cast grey. Clustered dithering, small fasteners and wear are painted with proportional UV density. The refinement atlas is 512-square. Original Mojang textures/attribution remain in `vanilla/manifest.json`. Glass removes tile-border lines; FarmGlass also suppresses internal matching-block faces.
+Java 1.21.1 desktop, balanced cubes, albedo/cutout, 16 texels per world block. Iron is blue-grey; steel muted green/cast grey. Clustered dithering, small fasteners and wear are painted with proportional UV density. The refinement atlas is 512-square. Original Mojang textures/attribution remain in `vanilla/manifest.json`. Glass panes use a dedicated transparent texture patterned like connected vanilla panes: one continuous outer border, diagonal highlights and no repeated internal border lines. Tank glass retains its subtle tint. FarmGlass suppresses internal matching-block faces. Assembled glazing uses the same entityTranslucentCull buffer as live tank water; standalone glass/tanks use the translucent chunk layer.
 
 Wide footprints are 80 physical units, source geometry divided by five and restored by runtime scale five. Components use ordinary 16-unit blocks. Tree base height: 16; greenhouse height: 48. Harvester keeps 48-wide/divide-by-three. Front: negative Z. Wide controller cell: (32..48,0..16,0..16); tree hatch: (64..80,0..16,32..48); greenhouse hatch: (64..80,0..16,48..64); converter: (64..80,0..16,64..80).
 
-Bed tops Y=16; ribbon Y=11..18. Greenhouse glass Y=16..43; roof Y=44..44.15; supported light rails Y=44.5..46.5. Diffusers are separated from glass to avoid coplanar flicker. Tree centre dirt is a real world block: its editor proxy is excluded from runtime body. Tree/crop/water preview groups are also excluded; the game supplies real world tree blocks, native age-based crops and live water. Current runtime cubes: greenhouse 107 including three active diffusers; tree base 62; each tank 12; connected glass one.
+Bed tops Y=16; ribbon Y=11..18. Greenhouse columns meet uniform six-unit top beams at Y=42; the frame top is Y=48. Pane infills meet the beam inner edges at X/Z=9..71, Y=16..42; roof glazing is Y=44.9..45.1. Four slim strip channels sit at Y=41..42, with thin white diffusers below. Tree centre dirt remains a real world block. Tree/crop/water editor previews are excluded from runtime. Runtime geometry: greenhouse 100 cubes including eleven glass panels and four active LED diffusers; tree base 83; standalone tanks 12 each; connected glass one. Texture UV density remains 16 texels per world block.
 
 ## Regeneration and verification
 
 Generator order: first chapter, Create/steam, steel drill, metal farms, then `python scripts/refine_greenhouse_tree_content.py` LAST. The last step retains wide layouts, tanks, converter states and updated quest instructions without changing quest IDs. Native art uses `refine_greenhouse_tree.js`; preserve user edits before regeneration.
 
-Checks: native renders, UV scale/preview exclusion, blueprint counts, converter states, compile/assemble, synced dev overrides and exact packaged files. No Minecraft or GameTests were launched; gameplay and shaders are left for owner playtesting.
+Checks: front/rear native renders plus close views of the clear greenhouse and empty solid tree base, glass alpha and separate material passes, UV scale/preview exclusion, blueprint counts, converter states, compile/assemble, synced dev overrides and exact packaged files. Focused headless lighting GameTest: `gradlew :revocultivation:runFarmLightingTests -PrevoFarmLightingTests`. It checks day/night boundaries, daytime rain, rain stopping, idle energy, shade independence, power loss and dismantling. The graphical client and shaders still require owner playtesting.

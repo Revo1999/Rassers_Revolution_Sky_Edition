@@ -12,3 +12,24 @@ dependencies {
 }
 if (providers.gradleProperty('revoChapterUiQa').isPresent()) { sourceSets.main.java.srcDir 'src/chapterqa/java' }
 tasks.named('jar', Jar) { exclude '**/ChapterOneUiQa*', '**/IndustrialGridUiQa*' }
+
+repositories { maven { url='https://modmaven.dev' }; mavenCentral() }
+dependencies {
+ compileOnly('maven.modrinth:modern-industrialization:hN58r67E') { transitive=false }
+ compileOnly('maven.modrinth:iron-furnaces:WZ25JeYB') { transitive=false }
+ compileOnly('dev.technici4n:GrandPower:3.0.0') { transitive=false }
+ compileOnly 'org.jspecify:jspecify:1.0.0'
+}
+
+if (providers.gradleProperty('revoFurnaceTests').isPresent()) {
+ sourceSets.main.java.srcDir 'src/furnacetest/java'
+ sourceSets.main.resources.srcDir 'src/furnacetest/resources'
+ dependencies { runtimeOnly files(rootProject.file('.local/integration-mods/Modern-Industrialization-2.5.11.jar'),rootProject.file('.local/integration-mods/ironfurnaces-neoforge-1.21.1-4.3.2.jar'),rootProject.file('.local/integration-mods/guideme-21.1.22.jar')) }
+ neoForge { mods { revolib { sourceSet project(':revolib').sourceSets.main } }
+  runs { furnaceTests { type='gameTestServer'; systemProperty 'neoforge.enabledGameTestNamespaces','revoindustry' } }
+ }
+}
+tasks.named('jar', Jar) { exclude '**/FurnaceGameTests*','data/revoindustry/structure/furnace_test.nbt' }
+
+if (providers.gradleProperty('revoFurnaceUiQa').isPresent()) { sourceSets.main.java.srcDir 'src/furnaceuiqa/java' }
+tasks.named('jar', Jar) { exclude '**/FurnaceUiQa*' }

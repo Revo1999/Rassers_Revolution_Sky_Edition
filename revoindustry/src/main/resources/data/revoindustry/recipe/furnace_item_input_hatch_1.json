@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "PPP",
+    "PHP",
+    "PPP"
+  ],
+  "key": {
+    "P": {
+      "tag": "c:plates/copper"
+    },
+    "H": {
+      "item": "modern_industrialization:bronze_item_input_hatch"
+    }
+  },
+  "result": {
+    "id": "revoindustry:furnace_item_input_hatch_1",
+    "count": 1
+  }
+}

@@ -84,6 +84,16 @@ public class FarmMachine extends BlockEntity implements dk.revo.revolib.energy.I
         }
     }
     public void dismantle(){if(level!=null&&!level.isClientSide){setLights(false);if(kind().realTree()){realTree.clear(level);treeWaterPaid=false;}formation(facing(),false);if(issue!=null&&issue.part()==MachineKind.Part.CONTROLLER)formation(issue.expected(),false);work=0;setChanged();}}
+    public boolean needsGrowLights(){
+        if(!kind().electric()||level==null)return false;
+        long time=Math.floorMod(level.getDayTime(),24000L);
+        return (time>=13000&&time<23000)||level.isRaining();
+    }
+    public boolean growLightsOn(){
+        if(!kind().electric()||level==null||!formed())return false;
+        var light=level.getBlockState(at(0,2,0));
+        return light.is(FarmMaterials.LIGHT.get())&&light.getValue(FarmGrowLight.LIT);
+    }
     private void setLights(boolean on){if(!kind().electric()||level==null||level.isClientSide)return;var p=at(0,2,0);if(!level.hasChunkAt(p))return;var s=level.getBlockState(p);if(s.is(FarmMaterials.LIGHT.get())&&s.getValue(FarmGrowLight.LIT)!=on)level.setBlock(p,s.setValue(FarmGrowLight.LIT,on),3);}
     public void dropContents(){for(var inv:List.of(inputs,outputs))for(int i=0;i<inv.getSlots();i++)Containers.dropItemStack(level,worldPosition.getX(),worldPosition.getY(),worldPosition.getZ(),inv.extractItem(i,64,false));}
     public static FarmMachine find(Level level,BlockPos part){
@@ -142,7 +152,10 @@ public class FarmMachine extends BlockEntity implements dk.revo.revolib.energy.I
     public static void tick(Level level,BlockPos pos,BlockState block,FarmMachine machine){
         if(level.isClientSide){if(machine.state==1)machine.work=Math.min(machine.kind().ticks-1,machine.work+1);if(machine.kind().isHarvester())machine.containedMob.animate(level.getGameTime(),machine.state==1);return;}
         int oldState=machine.state,oldProgram=machine.program,oldCycles=machine.cycles;machine.step();
-        machine.setLights(machine.formed()&&machine.state==1);
+        boolean illuminate=machine.formed()&&machine.needsGrowLights()&&(machine.state==1||machine.energy>0);
+        // Night/rain lighting: productive ticks include lighting in the existing 8 EU/t; idle LEDs use 1 EU/t.
+        if(illuminate&&machine.state!=1)machine.energy--;
+        machine.setLights(illuminate);
         if(oldState!=machine.state||oldProgram!=machine.program||oldCycles!=machine.cycles||level.getGameTime()%20==0)level.sendBlockUpdated(pos,machine.getBlockState(),machine.getBlockState(),3);
         machine.setChanged();
     }

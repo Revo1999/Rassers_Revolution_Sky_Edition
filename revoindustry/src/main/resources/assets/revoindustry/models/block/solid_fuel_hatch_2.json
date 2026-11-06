@@ -1,0 +1,7 @@
+{
+  "loader": "modern_industrialization:machine",
+  "casing": "modern_industrialization:steel",
+  "default_overlays": {
+    "side": "revoindustry:block/furnaces/solid_fuel_hatch_2"
+  }
+}

@@ -115,3 +115,7 @@ Athena is included for BetterBlockZ connected textures.
 The water-cooled Steel Drill is the third extraction tier, with real vanilla-water tank rendering, dry-running damage, repair kits and ten Chapter 4 quests. See [STEEL-DRILL.md](docs/STEEL-DRILL.md).
 
 Steel Tree Grower / Mob Harvester upgrades and an Iron Electric Greenhouse with glass, powered grow lights and an integrated converter are documented in [METAL-FARMS.md](docs/METAL-FARMS.md).
+
+### RevoIndustry furnace multiblocks
+
+Ten Iron Furnaces tiers now have native MI-backed 3 x 3 x 3 multiblocks, permanently parallel smelting, three item-hatch grades, nine solid/liquid/gas fuel inputs and an adapting roof vent. Factory Augments are disabled. See [furnace recipes, structure and validation](docs/REVO-FURNACES.md).

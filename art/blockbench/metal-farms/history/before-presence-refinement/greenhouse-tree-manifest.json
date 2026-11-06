@@ -1,0 +1,375 @@
+{
+  "nativeBlockbench": true,
+  "models": [
+    {
+      "name": "iron_glass_panel",
+      "scale": 1,
+      "cubes": 1,
+      "runtimeCubes": 1
+    },
+    {
+      "name": "iron_water_tank",
+      "scale": 1,
+      "cubes": 12,
+      "runtimeCubes": 12
+    },
+    {
+      "name": "steel_water_tank",
+      "scale": 1,
+      "cubes": 12,
+      "runtimeCubes": 12
+    },
+    {
+      "name": "iron_greenhouse_assembled",
+      "scale": 5,
+      "cubes": 180,
+      "runtimeCubes": 107
+    },
+    {
+      "name": "steel_tree_grower_assembled",
+      "scale": 5,
+      "cubes": 119,
+      "runtimeCubes": 62
+    }
+  ],
+  "atlas": [
+    512,
+    512
+  ],
+  "pixelsPerPhysicalUnit": 1,
+  "realTreeBlocks": [
+    {
+      "x": 0,
+      "y": 1,
+      "z": 0,
+      "log": true
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "z": 0,
+      "log": true
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "z": 0,
+      "log": true
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "z": 0,
+      "log": true
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "z": 0,
+      "log": true
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "z": 0,
+      "log": true
+    },
+    {
+      "x": -2,
+      "y": 4,
+      "z": -1,
+      "log": false
+    },
+    {
+      "x": -2,
+      "y": 4,
+      "z": 0,
+      "log": false
+    },
+    {
+      "x": -2,
+      "y": 4,
+      "z": 1,
+      "log": false
+    },
+    {
+      "x": -1,
+      "y": 4,
+      "z": -2,
+      "log": false
+    },
+    {
+      "x": -1,
+      "y": 4,
+      "z": -1,
+      "log": false
+    },
+    {
+      "x": -1,
+      "y": 4,
+      "z": 0,
+      "log": false
+    },
+    {
+      "x": -1,
+      "y": 4,
+      "z": 1,
+      "log": false
+    },
+    {
+      "x": -1,
+      "y": 4,
+      "z": 2,
+      "log": false
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "z": -2,
+      "log": false
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "z": -1,
+      "log": false
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "z": 1,
+      "log": false
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "z": 2,
+      "log": false
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "z": -2,
+      "log": false
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "z": -1,
+      "log": false
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "z": 0,
+      "log": false
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "z": 1,
+      "log": false
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "z": 2,
+      "log": false
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "z": -1,
+      "log": false
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "z": 0,
+      "log": false
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "z": 1,
+      "log": false
+    },
+    {
+      "x": -2,
+      "y": 5,
+      "z": -1,
+      "log": false
+    },
+    {
+      "x": -2,
+      "y": 5,
+      "z": 0,
+      "log": false
+    },
+    {
+      "x": -2,
+      "y": 5,
+      "z": 1,
+      "log": false
+    },
+    {
+      "x": -1,
+      "y": 5,
+      "z": -2,
+      "log": false
+    },
+    {
+      "x": -1,
+      "y": 5,
+      "z": -1,
+      "log": false
+    },
+    {
+      "x": -1,
+      "y": 5,
+      "z": 0,
+      "log": false
+    },
+    {
+      "x": -1,
+      "y": 5,
+      "z": 1,
+      "log": false
+    },
+    {
+      "x": -1,
+      "y": 5,
+      "z": 2,
+      "log": false
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "z": -2,
+      "log": false
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "z": -1,
+      "log": false
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "z": 1,
+      "log": false
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "z": 2,
+      "log": false
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "z": -2,
+      "log": false
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "z": -1,
+      "log": false
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "z": 0,
+      "log": false
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "z": 1,
+      "log": false
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "z": 2,
+      "log": false
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "z": -1,
+      "log": false
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "z": 0,
+      "log": false
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "z": 1,
+      "log": false
+    },
+    {
+      "x": -1,
+      "y": 6,
+      "z": 0,
+      "log": false
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "z": -1,
+      "log": false
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "z": 1,
+      "log": false
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "z": 0,
+      "log": false
+    },
+    {
+      "x": -1,
+      "y": 7,
+      "z": 0,
+      "log": false
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "z": -1,
+      "log": false
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "z": 0,
+      "log": false
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "z": 1,
+      "log": false
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "z": 0,
+      "log": false
+    }
+  ],
+  "glassBorderPixelsRemoved": true,
+  "cropPreviewUsesNativeModelScale": 1,
+  "vanillaAttribution": "vanilla/manifest.json"
+}

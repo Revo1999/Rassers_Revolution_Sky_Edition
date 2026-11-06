@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "CCC",
+    "CFC",
+    "CCC"
+  ],
+  "key": {
+    "C": {
+      "item": "revoindustry:gold_furnace_casing"
+    },
+    "F": {
+      "item": "ironfurnaces:gold_furnace"
+    }
+  },
+  "result": {
+    "id": "revoindustry:gold_multiblock_furnace",
+    "count": 1
+  }
+}

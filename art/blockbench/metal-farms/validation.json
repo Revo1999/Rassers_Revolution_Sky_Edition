@@ -2,9 +2,9 @@
   "passed": true,
   "nativeModels": 21,
   "assemblyCubesIncludingEditorPreviews": {
-    "iron_greenhouse_assembled": 180,
+    "iron_greenhouse_assembled": 173,
     "steel_mob_harvester_assembled": 67,
-    "steel_tree_grower_assembled": 119
+    "steel_tree_grower_assembled": 140
   },
   "blueprints": {
     "steel_tree_grower": {
@@ -40,6 +40,8 @@
     }
   },
   "fittedConverterHousing": true,
+  "glassLayer": "entityTranslucentCull, shared with tank water",
+  "continuousSteelPlinth": true,
   "previewGeometryExcluded": true,
   "electricGreenhouse": {
     "euPerTick": 8,
@@ -48,6 +50,22 @@
     "cycleTicks": 200
   },
   "questCount": 116,
-  "minecraftLaunched": false,
+  "minecraftLaunched": true,
+  "graphicalClientLaunched": false,
+  "lightingGameTest": {
+    "passed": true,
+    "scenarios": [
+      "clear day off",
+      "night on",
+      "clock boundaries",
+      "daytime rain on",
+      "rain stops off",
+      "idle energy",
+      "shade ignored",
+      "power loss off",
+      "power restored on",
+      "dismantling off"
+    ]
+  },
   "gameplayTested": false
 }

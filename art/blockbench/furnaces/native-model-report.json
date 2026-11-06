@@ -1,0 +1,52 @@
+[
+  {
+    "name": "copper_multiblock_furnace_assembled",
+    "cubes": 26,
+    "textures": 6
+  },
+  {
+    "name": "iron_multiblock_furnace_assembled",
+    "cubes": 26,
+    "textures": 6
+  },
+  {
+    "name": "silver_multiblock_furnace_assembled",
+    "cubes": 26,
+    "textures": 6
+  },
+  {
+    "name": "gold_multiblock_furnace_assembled",
+    "cubes": 26,
+    "textures": 6
+  },
+  {
+    "name": "diamond_multiblock_furnace_assembled",
+    "cubes": 26,
+    "textures": 6
+  },
+  {
+    "name": "emerald_multiblock_furnace_assembled",
+    "cubes": 26,
+    "textures": 6
+  },
+  {
+    "name": "obsidian_multiblock_furnace_assembled",
+    "cubes": 26,
+    "textures": 6
+  },
+  {
+    "name": "crystal_multiblock_furnace_assembled",
+    "cubes": 26,
+    "textures": 6
+  },
+  {
+    "name": "netherite_multiblock_furnace_assembled",
+    "cubes": 26,
+    "textures": 6
+  },
+  {
+    "name": "rainbow_multiblock_furnace_assembled",
+    "cubes": 26,
+    "textures": 6
+  }
+]

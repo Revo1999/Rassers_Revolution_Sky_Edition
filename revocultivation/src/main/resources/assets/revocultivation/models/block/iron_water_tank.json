@@ -6,6 +6,7 @@
   ],
   "textures": {
     "0": "revocultivation:block/greenhouse_tree_atlas",
+    "1": "revocultivation:block/greenhouse_glass",
     "particle": "revocultivation:block/greenhouse_tree_atlas"
   },
   "elements": [
@@ -443,7 +444,7 @@
             4.3125,
             0.375
           ],
-          "texture": "#0"
+          "texture": "#1"
         },
         "east": {
           "uv": [
@@ -452,7 +453,7 @@
             4.4109375,
             0.375
           ],
-          "texture": "#0"
+          "texture": "#1"
         },
         "south": {
           "uv": [
@@ -461,7 +462,7 @@
             4.3125,
             0.375
           ],
-          "texture": "#0"
+          "texture": "#1"
         },
         "west": {
           "uv": [
@@ -470,7 +471,7 @@
             4.4109375,
             0.375
           ],
-          "texture": "#0"
+          "texture": "#1"
         },
         "up": {
           "uv": [
@@ -479,7 +480,7 @@
             4.875,
             0.0671875
           ],
-          "texture": "#0"
+          "texture": "#1"
         },
         "down": {
           "uv": [
@@ -488,7 +489,7 @@
             4.875,
             0.0671875
           ],
-          "texture": "#0"
+          "texture": "#1"
         }
       }
     },
@@ -512,7 +513,7 @@
             4.3125,
             0.375
           ],
-          "texture": "#0"
+          "texture": "#1"
         },
         "east": {
           "uv": [
@@ -521,7 +522,7 @@
             4.4109375,
             0.375
           ],
-          "texture": "#0"
+          "texture": "#1"
         },
         "south": {
           "uv": [
@@ -530,7 +531,7 @@
             4.3125,
             0.375
           ],
-          "texture": "#0"
+          "texture": "#1"
         },
         "west": {
           "uv": [
@@ -539,7 +540,7 @@
             4.4109375,
             0.375
           ],
-          "texture": "#0"
+          "texture": "#1"
         },
         "up": {
           "uv": [
@@ -548,7 +549,7 @@
             4.875,
             0.06718750000000001
           ],
-          "texture": "#0"
+          "texture": "#1"
         },
         "down": {
           "uv": [
@@ -557,7 +558,7 @@
             4.875,
             0.06718750000000001
           ],
-          "texture": "#0"
+          "texture": "#1"
         }
       }
     },
@@ -581,7 +582,7 @@
             4.4109375,
             0.375
           ],
-          "texture": "#0"
+          "texture": "#1"
         },
         "east": {
           "uv": [
@@ -590,7 +591,7 @@
             5.34375,
             0.375
           ],
-          "texture": "#0"
+          "texture": "#1"
         },
         "south": {
           "uv": [
@@ -599,7 +600,7 @@
             4.4109375,
             0.375
           ],
-          "texture": "#0"
+          "texture": "#1"
         },
         "west": {
           "uv": [
@@ -608,7 +609,7 @@
             5.34375,
             0.375
           ],
-          "texture": "#0"
+          "texture": "#1"
         },
         "up": {
           "uv": [
@@ -617,7 +618,7 @@
             5.4421875,
             0.4375
           ],
-          "texture": "#0"
+          "texture": "#1"
         },
         "down": {
           "uv": [
@@ -626,7 +627,7 @@
             5.4421875,
             0.4375
           ],
-          "texture": "#0"
+          "texture": "#1"
         }
       }
     },
@@ -650,7 +651,7 @@
             4.4109375,
             0.375
           ],
-          "texture": "#0"
+          "texture": "#1"
         },
         "east": {
           "uv": [
@@ -659,7 +660,7 @@
             5.34375,
             0.375
           ],
-          "texture": "#0"
+          "texture": "#1"
         },
         "south": {
           "uv": [
@@ -668,7 +669,7 @@
             4.4109375,
             0.375
           ],
-          "texture": "#0"
+          "texture": "#1"
         },
         "west": {
           "uv": [
@@ -677,7 +678,7 @@
             5.34375,
             0.375
           ],
-          "texture": "#0"
+          "texture": "#1"
         },
         "up": {
           "uv": [
@@ -686,7 +687,7 @@
             5.4421875,
             0.4375
           ],
-          "texture": "#0"
+          "texture": "#1"
         },
         "down": {
           "uv": [
@@ -695,7 +696,7 @@
             5.4421875,
             0.4375
           ],
-          "texture": "#0"
+          "texture": "#1"
         }
       }
     },
@@ -839,5 +840,5 @@
     }
   ],
   "parent": "minecraft:block/block",
-  "render_type": "minecraft:cutout"
+  "render_type": "minecraft:translucent"
 }

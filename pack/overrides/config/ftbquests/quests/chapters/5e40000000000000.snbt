@@ -391,7 +391,7 @@
       ],
       "description": [
         "Build a 5 x 5 x 3 Iron Greenhouse around a full 3 x 3 soil bed: 11 supports, 21 casings, 20 glass panels, 9 soil beds, controller, hatch, Iron Water Tank, Basic Power Converter and grow light. Leave the 3 x 3 middle chamber empty. EMI shows every layer.",
-        "Steel framing supports the connected glass borders and three ceiling light rails. Fit the tank left-centre and converter rear-right on the bottom layer. The hatch goes immediately in front of the converter on the right side. Face converter FE rearward so EU touches the hatch; keep FE to EU mode. The fitted enclosure appears when formed.",
+        "Steel framing supports the connected glass borders and four thin white LED strips. Fit the tank left-centre and converter rear-right on the bottom layer. The hatch goes immediately in front of the converter on the right side. Face converter FE rearward so EU touches the hatch; keep FE to EU mode. The fitted enclosure appears when formed.",
         "Supply 8 EU/t to the hatch, or 80 FE/t to the converter with the default ratio. The greenhouse buffer stores 1600 EU; the converter stores no power.",
         "Nine native wheat/carrot/potato/beetroot models fill the bed, with real age stages. Each 10-second harvest uses 250 mB water. The attached 16000 mB tank accepts buckets/pipes and renders its real water level. Grow lights support day/night and indoor operation."
       ],

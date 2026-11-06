@@ -16,14 +16,15 @@ import net.neoforged.neoforge.client.event.*;
 public final class FarmClient {
     private static ModelResourceLocation model(String name){return ModelResourceLocation.standalone(ResourceLocation.fromNamespaceAndPath(RevoCultivation.MOD_ID,"block/"+name));}
     @SubscribeEvent public static void screens(RegisterMenuScreensEvent e){e.register(RevoCultivation.CONTROLLER_MENU.get(),FarmControllerScreen::new);e.register(RevoCultivation.HATCH_MENU.get(),FarmHatchScreen::new);}
-    @SubscribeEvent public static void models(ModelEvent.RegisterAdditional e){for(var kind:MachineKind.values())if(kind.registered())e.register(model(kind.id+"_body"));e.register(model("tree_grower_tree"));e.register(model("iron_greenhouse_lights"));}
+    @SubscribeEvent public static void models(ModelEvent.RegisterAdditional e){for(var kind:MachineKind.values())if(kind.registered())e.register(model(kind.id+"_body"));e.register(model("tree_grower_tree"));e.register(model("iron_greenhouse_lights"));e.register(model("iron_greenhouse_glass"));e.register(model("steel_tree_grower_glass"));}
     @SubscribeEvent public static void renderers(EntityRenderersEvent.RegisterRenderers e){e.registerBlockEntityRenderer(RevoCultivation.MACHINE.get(),Renderer::new);}
     public static class Renderer implements BlockEntityRenderer<FarmMachine> {
         public Renderer(BlockEntityRendererProvider.Context context){}
-        private void draw(String name,PoseStack pose,MultiBufferSource buffers,int light,int overlay){var mc=Minecraft.getInstance();mc.getBlockRenderer().getModelRenderer().renderModel(pose.last(),buffers.getBuffer(RenderType.cutout()),null,mc.getModelManager().getModel(model(name)),1,1,1,light,overlay);}
+        private void draw(String name,PoseStack pose,MultiBufferSource buffers,int light,int overlay){var mc=Minecraft.getInstance();mc.getBlockRenderer().getModelRenderer().renderModel(pose.last(),buffers.getBuffer(name.endsWith("_glass")?RenderType.entityTranslucentCull(net.minecraft.client.renderer.texture.TextureAtlas.LOCATION_BLOCKS):RenderType.cutout()),null,mc.getModelManager().getModel(model(name)),1,1,1,light,overlay);}
         @Override public void render(FarmMachine machine,float partial,PoseStack pose,MultiBufferSource buffers,int light,int overlay){
             if(!machine.formed())return;var mc=Minecraft.getInstance();pose.pushPose();pose.translate(.5,0,.5);pose.mulPose(Axis.YP.rotationDegrees(180-machine.facing().toYRot()));pose.translate(-machine.kind().width()/2d,0,-.5);pose.scale(machine.kind().width(),machine.kind().width(),machine.kind().width());draw(machine.kind().id+"_body",pose,buffers,light,overlay);
-            if(machine.kind().electric()&&machine.state()==1)draw("iron_greenhouse_lights",pose,buffers,LightTexture.FULL_BRIGHT,overlay);
+            if(machine.kind().attachedTank())draw(machine.kind().id+"_glass",pose,buffers,light,overlay);
+            if(machine.growLightsOn())draw("iron_greenhouse_lights",pose,buffers,LightTexture.FULL_BRIGHT,overlay);
             if(machine.kind().attachedTank()){
                 float[] low=machine.kind().realTree()?new float[]{2.2f,3,35.2f}:new float[]{2.2f,3,35.2f};
                 float[] high=machine.kind().realTree()?new float[]{12.8f,23,44.8f}:new float[]{10.8f,22,44.8f};

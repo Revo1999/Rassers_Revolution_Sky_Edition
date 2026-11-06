@@ -1,0 +1,16 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:false"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:bedrock"
+    }
+  ],
+  "result": {
+    "id": "ironfurnaces:augment_factory"
+  }
+}

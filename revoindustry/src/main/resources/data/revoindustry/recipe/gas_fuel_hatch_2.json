@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "PPP",
+    "PHP",
+    "PPP"
+  ],
+  "key": {
+    "P": {
+      "tag": "c:plates/steel"
+    },
+    "H": {
+      "item": "revoindustry:gas_fuel_hatch_1"
+    }
+  },
+  "result": {
+    "id": "revoindustry:gas_fuel_hatch_2",
+    "count": 1
+  }
+}

@@ -5,7 +5,7 @@
     512
   ],
   "textures": {
-    "0": "revocultivation:block/greenhouse_tree_atlas",
+    "1": "revocultivation:block/greenhouse_glass",
     "particle": "revocultivation:block/greenhouse_tree_atlas"
   },
   "elements": [
@@ -29,7 +29,7 @@
             0.5625,
             0.5625
           ],
-          "texture": "#0",
+          "texture": "#1",
           "cullface": "north"
         },
         "east": {
@@ -39,7 +39,7 @@
             0.5625,
             0.5625
           ],
-          "texture": "#0",
+          "texture": "#1",
           "cullface": "east"
         },
         "south": {
@@ -49,7 +49,7 @@
             0.5625,
             0.5625
           ],
-          "texture": "#0",
+          "texture": "#1",
           "cullface": "south"
         },
         "west": {
@@ -59,7 +59,7 @@
             0.5625,
             0.5625
           ],
-          "texture": "#0",
+          "texture": "#1",
           "cullface": "west"
         },
         "up": {
@@ -69,7 +69,7 @@
             0.5625,
             0.5625
           ],
-          "texture": "#0",
+          "texture": "#1",
           "cullface": "up"
         },
         "down": {
@@ -79,12 +79,12 @@
             0.5625,
             0.5625
           ],
-          "texture": "#0",
+          "texture": "#1",
           "cullface": "down"
         }
       }
     }
   ],
   "parent": "minecraft:block/block",
-  "render_type": "minecraft:cutout"
+  "render_type": "minecraft:translucent"
 }

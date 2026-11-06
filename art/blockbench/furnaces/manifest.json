@@ -1,0 +1,181 @@
+{
+  "tiers": [
+    {
+      "tier": "copper",
+      "controller": "revoindustry:copper_multiblock_furnace",
+      "furnace": "ironfurnaces:copper_furnace",
+      "casing": "modern_industrialization:bronze_machine_casing",
+      "casingKey": "revoindustry:copper_furnace",
+      "nativeCasing": true,
+      "hatchGrade": 1,
+      "lanes": 2,
+      "batch": 1
+    },
+    {
+      "tier": "iron",
+      "controller": "revoindustry:iron_multiblock_furnace",
+      "furnace": "ironfurnaces:iron_furnace",
+      "casing": "modern_industrialization:steel_machine_casing",
+      "casingKey": "revoindustry:iron_furnace",
+      "nativeCasing": true,
+      "hatchGrade": 1,
+      "lanes": 2,
+      "batch": 1
+    },
+    {
+      "tier": "silver",
+      "controller": "revoindustry:silver_multiblock_furnace",
+      "furnace": "ironfurnaces:silver_furnace",
+      "casing": "revoindustry:silver_furnace_casing",
+      "casingKey": "revoindustry:silver_furnace",
+      "nativeCasing": false,
+      "hatchGrade": 2,
+      "lanes": 4,
+      "batch": 1
+    },
+    {
+      "tier": "gold",
+      "controller": "revoindustry:gold_multiblock_furnace",
+      "furnace": "ironfurnaces:gold_furnace",
+      "casing": "revoindustry:gold_furnace_casing",
+      "casingKey": "revoindustry:gold_furnace",
+      "nativeCasing": false,
+      "hatchGrade": 2,
+      "lanes": 4,
+      "batch": 1
+    },
+    {
+      "tier": "diamond",
+      "controller": "revoindustry:diamond_multiblock_furnace",
+      "furnace": "ironfurnaces:diamond_furnace",
+      "casing": "revoindustry:diamond_furnace_casing",
+      "casingKey": "revoindustry:diamond_furnace",
+      "nativeCasing": false,
+      "hatchGrade": 3,
+      "lanes": 6,
+      "batch": 1
+    },
+    {
+      "tier": "emerald",
+      "controller": "revoindustry:emerald_multiblock_furnace",
+      "furnace": "ironfurnaces:emerald_furnace",
+      "casing": "revoindustry:emerald_furnace_casing",
+      "casingKey": "revoindustry:emerald_furnace",
+      "nativeCasing": false,
+      "hatchGrade": 3,
+      "lanes": 6,
+      "batch": 1
+    },
+    {
+      "tier": "obsidian",
+      "controller": "revoindustry:obsidian_multiblock_furnace",
+      "furnace": "ironfurnaces:obsidian_furnace",
+      "casing": "revoindustry:obsidian_furnace_casing",
+      "casingKey": "revoindustry:obsidian_furnace",
+      "nativeCasing": false,
+      "hatchGrade": 3,
+      "lanes": 6,
+      "batch": 1
+    },
+    {
+      "tier": "crystal",
+      "controller": "revoindustry:crystal_multiblock_furnace",
+      "furnace": "ironfurnaces:crystal_furnace",
+      "casing": "revoindustry:crystal_furnace_casing",
+      "casingKey": "revoindustry:crystal_furnace",
+      "nativeCasing": false,
+      "hatchGrade": 3,
+      "lanes": 6,
+      "batch": 1
+    },
+    {
+      "tier": "netherite",
+      "controller": "revoindustry:netherite_multiblock_furnace",
+      "furnace": "ironfurnaces:netherite_furnace",
+      "casing": "modern_industrialization:blastproof_casing",
+      "casingKey": "revoindustry:netherite_furnace",
+      "nativeCasing": true,
+      "hatchGrade": 3,
+      "lanes": 6,
+      "batch": 1
+    },
+    {
+      "tier": "rainbow",
+      "controller": "revoindustry:rainbow_multiblock_furnace",
+      "furnace": "ironfurnaces:million_furnace",
+      "casing": "revoindustry:rainbow_furnace_casing",
+      "casingKey": "revoindustry:rainbow_furnace",
+      "nativeCasing": false,
+      "hatchGrade": 3,
+      "lanes": 6,
+      "batch": 64
+    }
+  ],
+  "shape": [
+    3,
+    3,
+    3
+  ],
+  "minimumCasings": 21,
+  "minimumPorts": {
+    "itemInput": 1,
+    "itemOutput": 1,
+    "fuelInput": 1
+  },
+  "roofVent": [
+    0,
+    2,
+    1
+  ],
+  "hollowCentre": [
+    0,
+    1,
+    1
+  ],
+  "fuelRates": [
+    64,
+    512,
+    4096
+  ],
+  "fuelTankCapacities": [
+    4000,
+    16000,
+    64000
+  ],
+  "factoryAugmentDisabled": true,
+  "registeredBlocks": [
+    "copper_multiblock_furnace",
+    "iron_multiblock_furnace",
+    "silver_furnace_casing",
+    "silver_multiblock_furnace",
+    "gold_furnace_casing",
+    "gold_multiblock_furnace",
+    "diamond_furnace_casing",
+    "diamond_multiblock_furnace",
+    "emerald_furnace_casing",
+    "emerald_multiblock_furnace",
+    "obsidian_furnace_casing",
+    "obsidian_multiblock_furnace",
+    "crystal_furnace_casing",
+    "crystal_multiblock_furnace",
+    "netherite_multiblock_furnace",
+    "rainbow_furnace_casing",
+    "rainbow_multiblock_furnace",
+    "furnace_item_input_hatch_1",
+    "furnace_item_output_hatch_1",
+    "furnace_item_input_hatch_2",
+    "furnace_item_output_hatch_2",
+    "furnace_item_input_hatch_3",
+    "furnace_item_output_hatch_3",
+    "solid_fuel_hatch_1",
+    "liquid_fuel_hatch_1",
+    "gas_fuel_hatch_1",
+    "solid_fuel_hatch_2",
+    "liquid_fuel_hatch_2",
+    "gas_fuel_hatch_2",
+    "solid_fuel_hatch_3",
+    "liquid_fuel_hatch_3",
+    "gas_fuel_hatch_3",
+    "furnace_vent"
+  ]
+}

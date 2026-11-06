@@ -15,7 +15,7 @@ lang.update({'block.revocultivation.iron_water_tank':'Iron Farm Water Tank','blo
  'guide.revocultivation.steel_tree':'5 x 5 base: dirt centre, 8 soil beds, 4 corners, 9 casings. Tank left, hatch right, controller front. Leave 7 blocks above clear.',
  'guide.revocultivation.iron_base':'5 x 5 base around a full 3 x 3 soil bed. Tank left-centre; converter rear-right; hatch immediately in front of converter, facing right.',
  'guide.revocultivation.iron_glass':'Leave the 3 x 3 middle chamber empty for nine crop models. Join the borderless glass walls inside the steel frame. Keep corner supports.',
- 'guide.revocultivation.iron_lights':'Roof: 8 interior glass panels around the central grow light; casing border and corner supports. Three light rails join the upper steel frame. Supply 8 EU/t and water.',
+ 'guide.revocultivation.iron_lights':'Roof: 8 interior glass panels around the central grow light; casing border and corner supports. Four thin white LED strips run under the square top beams and switch on automatically at night or during rain. Supply 8 EU/t and water.',
  'hint.revocultivation.real_tree':'Clear 5 x 5 x 7 above the base. Farm-grown tree blocks are tracked.'})
 put(langpath,lang)
 industry=ROOT/'revoindustry/src/main/resources/assets/revoindustry'
@@ -41,7 +41,7 @@ for quest in book['quests']:
         'The farm records its own tree blocks across reloads and removes only those. Manually harvesting or replacing them cancels the automatic harvest, preventing duplicate output. Collect the cycle output through the hatch.']
     if quest['id']=='5E4000000000000C':quest['description']=[
         'Build a 5 x 5 x 3 Iron Greenhouse around a full 3 x 3 soil bed: 11 supports, 21 casings, 20 glass panels, 9 soil beds, controller, hatch, Iron Water Tank, Basic Power Converter and grow light. Leave the 3 x 3 middle chamber empty. EMI shows every layer.',
-        'Steel framing supports the connected glass borders and three ceiling light rails. Fit the tank left-centre and converter rear-right on the bottom layer. The hatch goes immediately in front of the converter on the right side. Face converter FE rearward so EU touches the hatch; keep FE to EU mode. The fitted enclosure appears when formed.',
+        'Steel framing supports the connected glass borders and four thin white LED strips. Fit the tank left-centre and converter rear-right on the bottom layer. The hatch goes immediately in front of the converter on the right side. Face converter FE rearward so EU touches the hatch; keep FE to EU mode. The fitted enclosure appears when formed.',
         'Supply 8 EU/t to the hatch, or 80 FE/t to the converter with the default ratio. The greenhouse buffer stores 1600 EU; the converter stores no power.',
         'Nine native wheat/carrot/potato/beetroot models fill the bed, with real age stages. Each 10-second harvest uses 250 mB water. The attached 16000 mB tank accepts buckets/pipes and renders its real water level. Grow lights support day/night and indoor operation.']
 put(chapter,book)

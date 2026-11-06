@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "revoindustry:block/furnaces/crystal_casing"
+  }
+}

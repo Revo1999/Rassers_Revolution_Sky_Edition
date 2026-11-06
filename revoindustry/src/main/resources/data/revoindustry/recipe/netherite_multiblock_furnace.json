@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "CCC",
+    "CFC",
+    "CCC"
+  ],
+  "key": {
+    "C": {
+      "item": "modern_industrialization:blastproof_casing"
+    },
+    "F": {
+      "item": "ironfurnaces:netherite_furnace"
+    }
+  },
+  "result": {
+    "id": "revoindustry:netherite_multiblock_furnace",
+    "count": 1
+  }
+}
