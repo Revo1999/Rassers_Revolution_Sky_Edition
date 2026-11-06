@@ -63,5 +63,11 @@
   "block.revoindustry.furnace_item_output_hatch_2": "Furnace Item Output Hatch 2",
   "block.revoindustry.furnace_item_input_hatch_3": "Furnace Item Input Hatch 3",
   "block.revoindustry.furnace_item_output_hatch_3": "Furnace Item Output Hatch 3",
-  "block.revoindustry.silver_furnace_casing": "Silver Furnace Casing"
+  "block.revoindustry.silver_furnace_casing": "Silver Furnace Casing",
+  "block.revoindustry.vacuum_1": "Vacuum Mk 1",
+  "block.revoindustry.vacuum_2": "Vacuum Mk 2",
+  "block.revoindustry.vacuum_3": "Vacuum Mk 3",
+  "tooltip.revoindustry.vacuum.stats": "Radius: %s blocks | %s slots | %s items/s",
+  "tooltip.revoindustry.vacuum.outlet": "Place on an inventory to aim the underside outlet into it.",
+  "tooltip.revoindustry.vacuum.wrench": "Wrench rotates the outlet; no power required."
 }

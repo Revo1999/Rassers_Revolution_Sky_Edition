@@ -1,0 +1,29 @@
+{
+  "variants": {
+    "facing=down": {
+      "model": "revoindustry:block/vacuum_3"
+    },
+    "facing=up": {
+      "model": "revoindustry:block/vacuum_3",
+      "x": 180
+    },
+    "facing=north": {
+      "model": "revoindustry:block/vacuum_3",
+      "x": 270
+    },
+    "facing=south": {
+      "model": "revoindustry:block/vacuum_3",
+      "x": 90
+    },
+    "facing=east": {
+      "model": "revoindustry:block/vacuum_3",
+      "x": 270,
+      "y": 90
+    },
+    "facing=west": {
+      "model": "revoindustry:block/vacuum_3",
+      "x": 270,
+      "y": 270
+    }
+  }
+}

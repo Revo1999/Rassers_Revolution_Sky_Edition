@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " M ",
+    "MCM",
+    "RHR"
+  ],
+  "key": {
+    "M": {
+      "item": "modern_industrialization:steel_ingot"
+    },
+    "C": {
+      "item": "revoindustry:vacuum_1"
+    },
+    "R": {
+      "item": "minecraft:redstone"
+    },
+    "H": {
+      "item": "minecraft:hopper"
+    }
+  },
+  "result": {
+    "id": "revoindustry:vacuum_2",
+    "count": 1
+  }
+}

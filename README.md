@@ -119,3 +119,5 @@ Steel Tree Grower / Mob Harvester upgrades and an Iron Electric Greenhouse with 
 ### RevoIndustry furnace multiblocks
 
 Ten Iron Furnaces tiers now have native MI-backed 3 x 3 x 3 multiblocks, permanently parallel smelting, three item-hatch grades, nine solid/liquid/gas fuel inputs and an adapting roof vent. Factory Augments are disabled. See [furnace recipes, structure and validation](docs/REVO-FURNACES.md).
+
+RevoIndustry also includes three single-block vacuum collectors with large dithered intake pipes, 1/3/9-slot buffers, directional chest output and suction particles. See [the vacuum guide](docs/REVO-VACUUMS.md).

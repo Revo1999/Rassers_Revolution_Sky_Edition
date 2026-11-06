@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "singleBlockTiers": 3,
+  "slots": [
+    1,
+    3,
+    9
+  ],
+  "radius": [
+    3,
+    5,
+    7
+  ],
+  "transferIntervalTicks": [
+    8,
+    4,
+    1
+  ],
+  "cubesPerTier": 24,
+  "texturesPerTier": 6,
+  "sixWayOutlet": true,
+  "hollowOctagonalIntake": true,
+  "orderedDitherTextures": true,
+  "boundsAndUvVerified": true,
+  "inGameCaptures": 8,
+  "sourceJarPackBytesVerified": true
+}

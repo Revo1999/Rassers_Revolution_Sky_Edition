@@ -35,6 +35,9 @@
     "revoindustry:furnace_item_output_hatch_2",
     "revoindustry:furnace_item_input_hatch_3",
     "revoindustry:furnace_item_output_hatch_3",
-    "revoindustry:silver_furnace_casing"
+    "revoindustry:silver_furnace_casing",
+    "revoindustry:vacuum_1",
+    "revoindustry:vacuum_2",
+    "revoindustry:vacuum_3"
   ]
 }
