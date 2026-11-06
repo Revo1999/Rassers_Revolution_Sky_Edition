@@ -1,6 +1,6 @@
 # RevoIndustry Vacuums
 
-Three passive, single-block item collectors. Each has a large hollow octagonal intake pipe, a recessed fan and a mechanical motor housing. Ordered pixel dithering shades the painted housing, metal flange and dark duct at 16 pixels per block. Red, blue and violet identify Mk 1, Mk 2 and Mk 3. Their pipe diameters grow from 10 to 12 to 14 pixels. Mk 2 gains side cooling panels; Mk 3 adds braces, top rails and a second indicator.
+Three passive, single-block item collectors. Each has a large hollow octagonal intake pipe, a recessed fan and a mechanical motor housing. Four-tone palettes and classic single-pixel checker dithering shade the painted housing, metal flange and dark duct at 16 pixels per block. Red, blue and violet identify Mk 1, Mk 2 and Mk 3. Their pipe diameters grow from 10 to 12 to 14 pixels. Mk 2 gains side cooling panels; Mk 3 adds braces, top rails and a second indicator.
 
 | Tier | Pickup radius | Buffer slots | Transfer interval | Output rate |
 | --- | --- | --- | --- | --- |
@@ -25,3 +25,5 @@ Recipes appear in EMI. Mk 1 uses iron, hoppers and redstone. Mk 2 upgrades it wi
 - Production jars exclude the opt-in test and screenshot helpers.
 
 Rebuild assets with `python scripts/generate_vacuums.py`, then run the emitted `art/blockbench/vacuums/build_native.js` in Blockbench through MCP, then `python scripts/update_vacuum_shape.py`. The native script saves editable projects, runtime models and previews. Run tests with `:revoindustry:runVacuumTests -PrevoVacuumTests` and graphical checks with `:revolib:runClient -PrevoVacuumUiQa` against the isolated copied `Revo Vacuum QA` save.
+
+To repaint textures without rebuilding geometry, run `python scripts/vacuum_textures.py`, then run `art/blockbench/vacuums/retexture_native.js` through Blockbench MCP. This updates the native texture bitmaps while preserving cube UUIDs, geometry, UVs and the outliner.

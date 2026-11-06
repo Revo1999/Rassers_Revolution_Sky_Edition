@@ -31,7 +31,9 @@
   "rearPlateOutput": true,
   "sixWayOutlet": true,
   "hollowOctagonalIntake": true,
-  "orderedDitherTextures": true,
+  "singlePixelCheckerDither": true,
+  "limitedPaletteVerified": true,
+  "nativeTexturePixelsVerified": true,
   "boundsAndUvVerified": true,
   "inGameCaptures": 8,
   "sourceJarPackBytesVerified": true

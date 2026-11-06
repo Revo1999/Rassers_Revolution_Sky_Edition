@@ -27,9 +27,11 @@ for tier in range(1,4):
    u,v,U,V=f['uv'];assert abs(abs(U-u)-w)<.001 and abs(abs(V-v)-h)<.001
  for material in ['body','metal','dark']:
   im=Image.open(RES/f'assets/revoindustry/textures/block/vacuum_{tier}_{material}.png');assert im.size==(16,16)
-  assert im.getpixel((10,8))!=im.getpixel((11,8)), 'Ordered dithering must remain visible'
+  colours=im.getcolors();assert colours and 4<=len(colours)<=12, 'Dithered material must use a limited shade palette'
+  alternating=sum(im.getpixel((x,y))==im.getpixel((x+1,y+1)) and im.getpixel((x+1,y))==im.getpixel((x,y+1)) and im.getpixel((x,y))!=im.getpixel((x+1,y)) for y in range(7,13) for x in range(2,13));assert alternating>=2,'Single-pixel checker dithering must remain visible'
  for texture in native['textures']:
   im=Image.open(io.BytesIO(base64.b64decode(texture['source'].split(',')[1])));assert im.size==(16,16)
+  source=Image.open(RES/'assets/revoindustry/textures/block'/texture['name']);assert im.convert('RGB').tobytes()==source.convert('RGB').tobytes(), 'Native model texture is stale'
  variants=read(RES/f'assets/revoindustry/blockstates/vacuum_{tier}.json')['variants'];assert len(variants)==6
  assert variants['facing=north']['y']==180 and 'x' not in variants['facing=south']
  assert variants['facing=east']['y']==270 and variants['facing=down']['x']==270
@@ -44,9 +46,9 @@ with zipfile.ZipFile(ROOT/'build/mods/revoindustry-0.1.0-dev.jar') as jar:
   if p.is_file():
    expected=p.read_bytes().replace(b'${version}',b'0.1.0-dev').replace(b'\r\n',b'\n') if p.name=='neoforge.mods.toml' else p.read_bytes()
    assert jar.read(p.relative_to(RES).as_posix())==expected,p
-with zipfile.ZipFile(ROOT.parent/'Rassers-Revolution-Sky-Edition-0.1.30-dev.mrpack') as pack:
- assert json.loads(pack.read('modrinth.index.json'))['versionId']=='0.1.30-dev-vacuums'
+with zipfile.ZipFile(ROOT.parent/'Rassers-Revolution-Sky-Edition-0.1.31-dev.mrpack') as pack:
+ assert json.loads(pack.read('modrinth.index.json'))['versionId']=='0.1.31-dev-vacuum-dither'
  assert pack.read('overrides/REVO-VACUUMS.md')==(ROOT/'docs/REVO-VACUUMS.md').read_bytes()
  for p in (ROOT/'build/mods').glob('*.jar'):assert pack.read('overrides/mods/'+p.name)==p.read_bytes()
-report={'passed':True,'singleBlockTiers':3,'slots':[1,3,9],'radius':[3,5,7],'transferIntervalTicks':[8,4,1],'cubesPerTier':[24,26,31],'texturesPerTier':7,'pipeDiameterPixels':[10,12,14],'coplanarOverlappingFaces':0,'rearPlateOutput':True,'sixWayOutlet':True,'hollowOctagonalIntake':True,'orderedDitherTextures':True,'boundsAndUvVerified':True,'inGameCaptures':8,'sourceJarPackBytesVerified':True}
+report={'passed':True,'singleBlockTiers':3,'slots':[1,3,9],'radius':[3,5,7],'transferIntervalTicks':[8,4,1],'cubesPerTier':[24,26,31],'texturesPerTier':7,'pipeDiameterPixels':[10,12,14],'coplanarOverlappingFaces':0,'rearPlateOutput':True,'sixWayOutlet':True,'hollowOctagonalIntake':True,'singlePixelCheckerDither':True,'limitedPaletteVerified':True,'nativeTexturePixelsVerified':True,'boundsAndUvVerified':True,'inGameCaptures':8,'sourceJarPackBytesVerified':True}
 (ART/'validation.json').write_text(json.dumps(report,indent=2)+'\n');print(json.dumps(report,indent=2))

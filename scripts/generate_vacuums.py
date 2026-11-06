@@ -1,6 +1,6 @@
 from pathlib import Path
 import json,math
-from PIL import Image,ImageDraw
+from vacuum_textures import paint_texture
 root=Path('.');res=root/'revoindustry/src/main/resources';art=root/'art/blockbench/vacuums';art.mkdir(parents=True,exist_ok=True)
 def put(path,obj):path.parent.mkdir(parents=True,exist_ok=True);path.write_text(json.dumps(obj,indent=2)+'\n')
 lang=json.loads((res/'assets/revoindustry/lang/en_us.json').read_text());tag=res/'data/minecraft/tags/block/mineable/pickaxe.json';tags=json.loads(tag.read_text())
@@ -27,26 +27,7 @@ for tier,color in enumerate([(155,54,43),(43,110,159),(123,71,172)],1):
  parts,rotations=geometry(tier)
  textures={};palette={'body':color,'metal':(151,159,160),'dark':(49,57,62),'grille':(28,36,40),'light':(192,238,236),'fan':(24,30,33),'output':(58,68,73)}
  for material,base in palette.items():
-  im=Image.new('RGB',(16,16));pix=im.load()
-  for y in range(16):
-   for x in range(16):
-    bayer=((0,8,2,10),(12,4,14,6),(3,11,1,9),(15,7,13,5))
-    ramp=(x+y)/30
-    threshold=int((.15+.7*ramp)*16)
-    n=-13 if bayer[y%4][x%4]<threshold else 9
-    if material=='dark':n=-6 if bayer[y%4][x%4]<threshold else 5
-    elif material=='grille':n=-5 if x%3 else 21
-    elif material=='fan':n=-2 if (x+y)%2 else 2
-    elif material=='metal':n+=9 if y==0 or x==0 else -10 if x==15 or y==15 else 0
-    pix[x,y]=tuple(max(0,min(255,v+n)) for v in base)
-  if material=='metal':
-   d=ImageDraw.Draw(im);d.point((2,1),fill=(68,79,84));d.point((3,1),fill=(210,218,218))
-  if material=='body':
-   d=ImageDraw.Draw(im);d.line((0,0,15,0),fill=tuple(min(255,v+26) for v in base));d.line((0,15,15,15),fill=tuple(v//2 for v in base));d.rectangle((3,4,12,5),fill=(199,203,193));d.rectangle((4,5,11,6),fill=(41,48,50));d.rectangle((6,9,9,10),fill=(204,210,205))
-  if material=='output':
-   d=ImageDraw.Draw(im);d.rectangle((0,0,7,7),fill=(118,133,141));d.rectangle((1,1,6,6),fill=tuple(min(255,v+16) for v in color));d.rectangle((2,2,5,5),fill=(29,38,43));d.line((2,3,5,3),fill=(206,225,225));d.point((4,2),fill=(206,225,225));d.point((4,4),fill=(206,225,225))
-  if material=='fan':
-   d=ImageDraw.Draw(im);d.ellipse((0,0,7,7),fill=(42,50,54));d.line((1,1,6,6),fill=(130,143,148),width=2);d.line((1,6,6,1),fill=(103,119,126),width=2);d.rectangle((3,3,4,4),fill=(173,184,188))
+  im=paint_texture(material,base,color)
   path=res/f'assets/revoindustry/textures/block/vacuum_{tier}_{material}.png';path.parent.mkdir(parents=True,exist_ok=True);im.save(path);textures[material]=f'revoindustry:block/vacuum_{tier}_{material}'
  elements=[]
  for name,a,b,mat in parts:
@@ -71,7 +52,7 @@ for tier,color in enumerate([(155,54,43),(43,110,159),(123,71,172)],1):
  if f'revoindustry:vacuum_{tier}' not in tags['values']:tags['values'].append(f'revoindustry:vacuum_{tier}')
 lang.update({'tooltip.revoindustry.vacuum.stats':'Radius: %s blocks | %s slots | %s items/s','tooltip.revoindustry.vacuum.outlet':'Place on an inventory to aim the rear plate outlet into it.','tooltip.revoindustry.vacuum.wrench':'Wrench rotates the outlet; no power required.'})
 put(res/'assets/revoindustry/lang/en_us.json',lang);put(tag,tags)
-put(art/'plan.json',{'target':'Minecraft Java 1.21.1 NeoForge desktop','format':'java_block','shading':'Opaque vanilla albedo with deliberate pixel dithering','texel_density':'16 pixels per block; proportionate per-face UVs','budget':'24 / 26 / 31 cubes for distinct tier silhouettes','textures':'Seven shared 16px material tiles per tier; ordered Bayer dithering','animation':'Runtime item attraction and native end-rod suction stream','bounds':'All geometry within one 16x16x16 block','pipeDiameterPixels':[10,12,14],'seams':'Ring segments have unique front/back depths; cap and trim surfaces are separated','output':'Rear plate opposite the intake; local south, six-way facing'})
+put(art/'plan.json',{'target':'Minecraft Java 1.21.1 NeoForge desktop','format':'java_block','shading':'Opaque vanilla albedo with deliberate pixel dithering','texel_density':'16 pixels per block; proportionate per-face UVs','budget':'24 / 26 / 31 cubes for distinct tier silhouettes','textures':'Seven shared 16px material tiles per tier; four-tone palettes with single-pixel checker dithering','animation':'Runtime item attraction and native end-rod suction stream','bounds':'All geometry within one 16x16x16 block','pipeDiameterPixels':[10,12,14],'seams':'Ring segments have unique front/back depths; cap and trim surfaces are separated','output':'Rear plate opposite the intake; local south, six-way facing'})
 base=str(root.resolve()).replace('\\','/')
 js="""(async()=>{
  const fs=require('fs'),root=ROOT,dir=root+'/art/blockbench/vacuums',report=[];
