@@ -1,0 +1,20 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "revostorage:block/chest_drive",
+      "y": 0
+    },
+    "facing=east": {
+      "model": "revostorage:block/chest_drive",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "revostorage:block/chest_drive",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "revostorage:block/chest_drive",
+      "y": 270
+    }
+  }
+}

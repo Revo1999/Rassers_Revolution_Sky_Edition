@@ -21,6 +21,15 @@ public class FarmController extends BaseEntityBlock {
     @Override protected RenderShape getRenderShape(BlockState s){return RenderShape.MODEL;}
     @Override public BlockEntity newBlockEntity(BlockPos p,BlockState s){return new FarmMachine(p,s);}
     @Override public <T extends BlockEntity> BlockEntityTicker<T> getTicker(Level l,BlockState s,BlockEntityType<T> t){return createTickerHelper(t,RevoCultivation.MACHINE.get(),FarmMachine::tick);}
+    @Override protected net.minecraft.world.ItemInteractionResult useItemOn(net.minecraft.world.item.ItemStack stack,BlockState s,Level l,BlockPos pos,Player player,net.minecraft.world.InteractionHand hand,BlockHitResult hit){
+        var empty=net.minecraft.core.registries.BuiltInRegistries.ITEM.get(net.minecraft.resources.ResourceLocation.parse("create:empty_blaze_burner"));
+        if(stack.is(empty)&&kind==MachineKind.STEEL_HARVESTER){
+            if(!l.isClientSide&&l.getBlockEntity(pos) instanceof FarmMachine machine){
+                if(machine.captureBurner()){stack.shrink(1);var filled=new net.minecraft.world.item.ItemStack(net.minecraft.core.registries.BuiltInRegistries.ITEM.get(net.minecraft.resources.ResourceLocation.parse("create:blaze_burner")));if(!player.addItem(filled))player.drop(filled,false);}
+                else player.displayClientMessage(net.minecraft.network.chat.Component.literal("Select Blaze and complete a production cycle before filling a burner."),true);
+            }return net.minecraft.world.ItemInteractionResult.sidedSuccess(l.isClientSide);
+        }return net.minecraft.world.ItemInteractionResult.PASS_TO_DEFAULT_BLOCK_INTERACTION;
+    }
     @Override protected InteractionResult useWithoutItem(BlockState s,Level l,BlockPos pos,Player player,BlockHitResult hit){
         if(!l.isClientSide&&l.getBlockEntity(pos) instanceof FarmMachine machine){machine.checkStructure();player.openMenu(new SimpleMenuProvider((id,inv,p)->new FarmControllerMenu(id,inv,machine),kind.title()));}
         return InteractionResult.sidedSuccess(l.isClientSide);

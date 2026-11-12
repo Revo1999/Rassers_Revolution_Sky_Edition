@@ -13,6 +13,7 @@
     "revoextraction:steel_drill_controller",
     "revoextraction:steel_drill_input",
     "revoextraction:steel_drill_output_hatch",
-    "revoextraction:steel_drill_water_tank"
+    "revoextraction:steel_drill_water_tank",
+    "revoextraction:electric_drill"
   ]
 }

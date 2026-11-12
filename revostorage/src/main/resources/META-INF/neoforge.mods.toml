@@ -6,7 +6,7 @@ modId="revostorage"
 version="${version}"
 displayName="RevoStorage"
 authors="Revo1999"
-description='''Development scaffold for Rassers Revolution: Sky Edition.'''
+description='''Chest-drive storage and a spring-powered crafting terminal.'''
 [[dependencies.revostorage]]
 modId="neoforge"
 type="required"
@@ -25,3 +25,9 @@ type="required"
 versionRange="[0.1.0-dev,)"
 ordering="AFTER"
 side="BOTH"
+[[dependencies.revostorage]]
+modId="emi"
+type="optional"
+versionRange="[1.1.24,)"
+ordering="AFTER"
+side="CLIENT"

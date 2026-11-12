@@ -20,6 +20,8 @@ public class FarmMachine extends BlockEntity implements dk.revo.revolib.energy.I
     public record FacingIssue(MachineKind.Part part,BlockPos position,Direction expected){}
     public static final int DATA_SIZE=16;
     private int work,cycles,program=-1,state,energy;
+    private boolean burnerReady;
+    public boolean captureBurner(){if(kind()!=MachineKind.STEEL_HARVESTER||!checkStructure()||program!=24||level.getBlockState(at(0,1,-1)).getValue(FarmFilter.SPECIES)!=4||!burnerReady)return false;burnerReady=false;setChanged();return true;}
     private FacingIssue issue;
     private final ContainedHarvesterMob containedMob=new ContainedHarvesterMob();
     private final ManagedOakTree realTree=new ManagedOakTree();
@@ -117,7 +119,7 @@ public class FarmMachine extends BlockEntity implements dk.revo.revolib.energy.I
             water.fill(new FluidStack(Fluids.WATER,1000),FluidAction.EXECUTE);inputs.setStackInSlot(1,new ItemStack(Items.BUCKET));
         }
         int selected=kind().program(inputs.getStackInSlot(0),kind().isHarvester()?level.getBlockState(at(0,1,-1)).getValue(FarmFilter.SPECIES):0);
-        if(selected!=program){if(kind().realTree()){realTree.clear(level);treeWaterPaid=false;}program=selected;work=0;}
+        if(selected!=program){if(kind().realTree()){realTree.clear(level);treeWaterPaid=false;}program=selected;work=0;burnerReady=false;}
         if(kind().isHarvester())containedMob();
         if(program<0){state=2;return;}
         if(kind().needsWater()&&!(kind().realTree()&&treeWaterPaid)&&water.getFluidAmount()<kind().waterPerCycle()){state=3;return;}
@@ -145,7 +147,7 @@ public class FarmMachine extends BlockEntity implements dk.revo.revolib.energy.I
                 realTree.clear(level);treeWaterPaid=false;
             }else if(kind().needsWater())water.drain(kind().waterPerCycle(),FluidAction.EXECUTE);
             for(var product:products)ItemHandlerHelper.insertItemStacked(outputs,product.copy(),false);
-            work=0;cycles++;export();
+            work=0;cycles++;if(program==24)burnerReady=true;export();
             level.levelEvent(2001,at(0,1,0),net.minecraft.world.level.block.Block.getId(kind().isTree()?net.minecraft.world.level.block.Blocks.OAK_LEAVES.defaultBlockState():kind().isGreenhouse()?net.minecraft.world.level.block.Blocks.WHEAT.defaultBlockState():net.minecraft.world.level.block.Blocks.IRON_BARS.defaultBlockState()));
         }
     }
@@ -160,11 +162,11 @@ public class FarmMachine extends BlockEntity implements dk.revo.revolib.energy.I
         machine.setChanged();
     }
     @Override protected void saveAdditional(CompoundTag tag,HolderLookup.Provider registries){
-        super.saveAdditional(tag,registries);tag.put("Inputs",inputs.serializeNBT(registries));tag.put("Outputs",outputs.serializeNBT(registries));tag.put("Water",water.writeToNBT(registries,new CompoundTag()));tag.putInt("Work",work);tag.putInt("Cycles",cycles);tag.putInt("Program",program);tag.putInt("State",state);tag.putInt("EnergyEu",energy);tag.putBoolean("TreeWaterPaid",treeWaterPaid);if(kind().realTree())realTree.save(tag);
+        super.saveAdditional(tag,registries);tag.put("Inputs",inputs.serializeNBT(registries));tag.put("Outputs",outputs.serializeNBT(registries));tag.put("Water",water.writeToNBT(registries,new CompoundTag()));tag.putBoolean("BurnerReady",burnerReady);tag.putInt("Work",work);tag.putInt("Cycles",cycles);tag.putInt("Program",program);tag.putInt("State",state);tag.putInt("EnergyEu",energy);tag.putBoolean("TreeWaterPaid",treeWaterPaid);if(kind().realTree())realTree.save(tag);
         if(kind().isHarvester())tag.put("ContainedMob",containedMob.save());
     }
     @Override protected void loadAdditional(CompoundTag tag,HolderLookup.Provider registries){
-        super.loadAdditional(tag,registries);inputs.deserializeNBT(registries,tag.getCompound("Inputs"));outputs.deserializeNBT(registries,tag.getCompound("Outputs"));water.readFromNBT(registries,tag.getCompound("Water"));work=Math.clamp(tag.getInt("Work"),0,kind().ticks-1);cycles=tag.getInt("Cycles");program=tag.getInt("Program");state=tag.getInt("State");energy=Math.clamp(tag.getInt("EnergyEu"),0,energyCapacity());treeWaterPaid=tag.getBoolean("TreeWaterPaid");if(kind().realTree())realTree.load(tag,at(0,0,0));
+        super.loadAdditional(tag,registries);inputs.deserializeNBT(registries,tag.getCompound("Inputs"));outputs.deserializeNBT(registries,tag.getCompound("Outputs"));water.readFromNBT(registries,tag.getCompound("Water"));burnerReady=tag.getBoolean("BurnerReady");work=Math.clamp(tag.getInt("Work"),0,kind().ticks-1);cycles=tag.getInt("Cycles");program=tag.getInt("Program");state=tag.getInt("State");energy=Math.clamp(tag.getInt("EnergyEu"),0,energyCapacity());treeWaterPaid=tag.getBoolean("TreeWaterPaid");if(kind().realTree())realTree.load(tag,at(0,0,0));
         containedMob.load(tag.getCompound("ContainedMob"));
     }
     @Override public CompoundTag getUpdateTag(HolderLookup.Provider registries){return saveWithoutMetadata(registries);}

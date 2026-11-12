@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SMS",
+    "CHC",
+    "SDS"
+  ],
+  "key": {
+    "S": {
+      "item": "modern_industrialization:steel_plate"
+    },
+    "M": {
+      "item": "modern_industrialization:motor"
+    },
+    "C": {
+      "item": "modern_industrialization:analog_circuit"
+    },
+    "H": {
+      "item": "modern_industrialization:basic_machine_hull"
+    },
+    "D": {
+      "item": "minecraft:diamond_pickaxe"
+    }
+  },
+  "result": {
+    "id": "revoextraction:electric_drill",
+    "count": 1
+  }
+}

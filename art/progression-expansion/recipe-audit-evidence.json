@@ -1,0 +1,163 @@
+{
+  "data/ae2/recipe/charger/charged_certus_quartz_crystal.json": {
+    "source": "appliedenergistics2-19.2.18.jar",
+    "data": {
+      "type": "ae2:charger",
+      "ingredient": {
+        "item": "ae2:certus_quartz_crystal"
+      },
+      "result": {
+        "count": 1,
+        "id": "ae2:charged_certus_quartz_crystal"
+      }
+    }
+  },
+  "data/ae2/recipe/blasting/sky_stone_block.json": {
+    "source": "appliedenergistics2-19.2.18.jar",
+    "data": {
+      "type": "minecraft:smelting",
+      "category": "blocks",
+      "cookingtime": 200,
+      "experience": 0.0,
+      "ingredient": {
+        "item": "ae2:sky_dust"
+      },
+      "result": {
+        "count": 1,
+        "id": "ae2:sky_stone_block"
+      }
+    }
+  },
+  "data/ae2/recipe/inscriber/calculation_processor_press.json": {
+    "source": "appliedenergistics2-19.2.18.jar",
+    "data": {
+      "type": "ae2:inscriber",
+      "ingredients": {
+        "middle": {
+          "item": "minecraft:iron_block"
+        },
+        "top": {
+          "item": "ae2:calculation_processor_press"
+        }
+      },
+      "mode": "inscribe",
+      "result": {
+        "count": 1,
+        "id": "ae2:calculation_processor_press"
+      }
+    }
+  },
+  "data/modern_industrialization/recipe/vanilla_recipes/centrifuge/lava.json": {
+    "source": "Modern-Industrialization-2.5.11.jar",
+    "data": {
+      "type": "modern_industrialization:centrifuge",
+      "eu": 32,
+      "duration": 600,
+      "fluid_inputs": {
+        "fluid": "minecraft:lava",
+        "amount": 1000
+      },
+      "item_outputs": [
+        {
+          "item": "modern_industrialization:sulfur_dust",
+          "amount": 17
+        },
+        {
+          "item": "modern_industrialization:copper_nugget",
+          "amount": 11
+        },
+        {
+          "item": "modern_industrialization:aluminum_nugget",
+          "amount": 3,
+          "probability": 0.5
+        },
+        {
+          "item": "modern_industrialization:chromium_nugget",
+          "amount": 1,
+          "probability": 0.25
+        }
+      ]
+    }
+  },
+  "data/modern_industrialization/recipe/materials/electrolyzer/bauxite.json": {
+    "source": "Modern-Industrialization-2.5.11.jar",
+    "data": {
+      "type": "modern_industrialization:electrolyzer",
+      "eu": 32,
+      "duration": 1200,
+      "item_inputs": {
+        "tag": "c:dusts/bauxite",
+        "amount": 10
+      },
+      "item_outputs": [
+        {
+          "item": "modern_industrialization:aluminum_dust",
+          "amount": 4
+        },
+        {
+          "item": "modern_industrialization:titanium_tiny_dust",
+          "amount": 3
+        }
+      ],
+      "fluid_outputs": {
+        "fluid": "modern_industrialization:oxygen",
+        "amount": 2000,
+        "probability": 0.5
+      }
+    }
+  },
+  "data/modern_industrialization/recipe/vanilla_recipes/mixer/endstone.json": {
+    "source": "Modern-Industrialization-2.5.11.jar",
+    "data": {
+      "type": "modern_industrialization:mixer",
+      "eu": 8,
+      "duration": 200,
+      "item_inputs": {
+        "item": "minecraft:end_stone",
+        "amount": 1
+      },
+      "fluid_inputs": [
+        {
+          "fluid": "modern_industrialization:heavy_water",
+          "amount": 1
+        },
+        {
+          "fluid": "minecraft:lava",
+          "amount": 1,
+          "probability": 0
+        }
+      ],
+      "item_outputs": {
+        "item": "minecraft:end_stone",
+        "amount": 2
+      }
+    }
+  },
+  "data/minecraft/recipe/netherite_upgrade_smithing_template.json": {
+    "source": "sourcesAndCompiledWithNeoForge_7fe14eb9de5e4da75f30592c7fa1cb72f0bbb708_output.jar",
+    "data": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "#": {
+          "tag": "c:gems/diamond"
+        },
+        "C": {
+          "item": "minecraft:netherrack"
+        },
+        "S": {
+          "item": "minecraft:netherite_upgrade_smithing_template"
+        }
+      },
+      "pattern": [
+        "#S#",
+        "#C#",
+        "###"
+      ],
+      "result": {
+        "count": 2,
+        "id": "minecraft:netherite_upgrade_smithing_template"
+      }
+    }
+  }
+}

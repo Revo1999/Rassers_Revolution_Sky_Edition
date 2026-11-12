@@ -38,6 +38,9 @@ project(':revolib') {
         runs {
             client {
                 client()
+                if (providers.gradleProperty('revoExpansionUiQa').isPresent()) {
+                    programArguments.addAll '--quickPlaySingleplayer', 'Revo Progression Expansion QA', '--width', '1440', '--height', '1000'
+                }
                 if (providers.gradleProperty('revoProgressionUiQa').isPresent()) {
                     programArguments.addAll '--quickPlaySingleplayer', 'Revo Resource Bridge QA', '--width', '1280', '--height', '900'
                 }

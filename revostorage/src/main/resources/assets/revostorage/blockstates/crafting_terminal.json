@@ -1,0 +1,20 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "revostorage:block/crafting_terminal",
+      "y": 0
+    },
+    "facing=east": {
+      "model": "revostorage:block/crafting_terminal",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "revostorage:block/crafting_terminal",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "revostorage:block/crafting_terminal",
+      "y": 270
+    }
+  }
+}

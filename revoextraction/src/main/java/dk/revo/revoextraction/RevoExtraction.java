@@ -43,8 +43,12 @@ public final class RevoExtraction {
     public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<DrillMachine>> MACHINE = ENTITIES.register("wooden_drill", () -> BlockEntityType.Builder.of(DrillMachine::new, CONTROLLER.get(), IRON_CONTROLLER.get(), STEEL_CONTROLLER.get()).build(null));
     public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<DrillDrive>> DRIVE = ENTITIES.register("wooden_drill_drive", () -> BlockEntityType.Builder.of(DrillDrive::new, INPUT.get(), IRON_INPUT.get(), STEEL_INPUT.get()).build(null));
     public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<HatchEntity>> OUTPUT = ENTITIES.register("wooden_drill_output", () -> BlockEntityType.Builder.of(HatchEntity::new, HATCH.get(), IRON_HATCH.get(), STEEL_HATCH.get()).build(null));
+    public static final DeferredBlock<ElectricDrill> ELECTRIC=BLOCKS.register("electric_drill",ElectricDrill::new);
+    public static final DeferredItem<Item> SURVEY_CORE=ITEMS.register("deep_survey_core",()->new Item(new Item.Properties().stacksTo(1)));
+    public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<ElectricDrillEntity>> ELECTRIC_ENTITY=ENTITIES.register("electric_drill",()->BlockEntityType.Builder.of(ElectricDrillEntity::new,ELECTRIC.get()).build(null));
+    public static final DeferredHolder<net.minecraft.world.inventory.MenuType<?>,net.minecraft.world.inventory.MenuType<ElectricDrillMenu>> ELECTRIC_MENU=MENUS.register("electric_drill",()->new net.minecraft.world.inventory.MenuType<>(ElectricDrillMenu::new,net.minecraft.world.flag.FeatureFlags.DEFAULT_FLAGS));
     public RevoExtraction(IEventBus bus) {
-        HammerItems.bootstrap();ITEMS.registerSimpleBlockItem(HammerItems.DUST);
+        ITEMS.registerSimpleBlockItem(ELECTRIC);HammerItems.bootstrap();ITEMS.registerSimpleBlockItem(HammerItems.DUST);
         for (var block : new DeferredBlock<?>[]{SUPPORT, CASING, CORE, CONTROLLER, INPUT, HATCH, IRON_SUPPORT, IRON_CASING, IRON_CORE, IRON_CONTROLLER, IRON_INPUT, IRON_HATCH, STEEL_SUPPORT, STEEL_CASING, STEEL_CORE, STEEL_CONTROLLER, STEEL_INPUT, STEEL_HATCH, STEEL_TANK}) ITEMS.registerSimpleBlockItem(block);
         BLOCKS.register(bus); ITEMS.register(bus); ENTITIES.register(bus); MENUS.register(bus);
         bus.addListener(this::capabilities);
@@ -53,6 +57,8 @@ public final class RevoExtraction {
         });
     }
     private void capabilities(RegisterCapabilitiesEvent event) {
+        event.registerBlockEntity(Capabilities.ItemHandler.BLOCK,ELECTRIC_ENTITY.get(),(be,side)->side==net.minecraft.core.Direction.UP?new net.neoforged.neoforge.items.wrapper.RangedWrapper(be.items,0,2):be.outputPort());
+        dk.revo.revolib.energy.EnergyInterop.registerEuStorage(event,ELECTRIC_ENTITY.get(),(be,side)->be);
         event.registerBlockEntity(Capabilities.FluidHandler.BLOCK,WATER_TANK_ENTITY.get(),(be,side)->be.water);
         event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, OUTPUT.get(), (be, side) -> be.output());
     }

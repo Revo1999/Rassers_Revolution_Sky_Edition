@@ -32,12 +32,12 @@ public final class ProgressionBridgeTests {
  }
  @GameTest(template="drill_test",timeoutTicks=100)
  public static void steelBlazeUnlockAndWoodenTierGuard(GameTestHelper h){
-  h.assertTrue(MachineKind.HARVESTER.program(ItemStack.EMPTY,4)==-1,"Wood cannot select blaze even with edited block state");var m=farm(h,MachineKind.STEEL_HARVESTER,4);ticks(m,150);h.assertTrue(m.program()==24&&count(m.outputs,Items.BLAZE_ROD)==1,"Steel blaze produces a rod per cycle");h.assertTrue(m.containedMob().getType()==EntityType.BLAZE&&m.containedMob().isNoAi()&&h.getLevel().getEntity(m.containedMob().getUUID())==null,"Blaze cannot roam, attack or create extra world drops");h.succeed();
+  h.assertTrue(MachineKind.HARVESTER.program(ItemStack.EMPTY,5)==-1,"Wood cannot select blaze even with edited block state");var m=farm(h,MachineKind.STEEL_HARVESTER,4);ticks(m,150);h.assertTrue(m.program()==24&&count(m.outputs,Items.BLAZE_ROD)==1,"Steel blaze produces a rod per cycle");h.assertTrue(m.containedMob().getType()==EntityType.BLAZE&&m.containedMob().isNoAi()&&h.getLevel().getEntity(m.containedMob().getUUID())==null,"Blaze cannot roam, attack or create extra world drops");h.succeed();
  }
  @GameTest(template="drill_test",timeoutTicks=100)
  public static void filterCyclesAndFullStorageAreSafe(GameTestHelper h){
   for(var kind:new MachineKind[]{MachineKind.HARVESTER,MachineKind.STEEL_HARVESTER}){
-   int last=kind==MachineKind.HARVESTER?3:4;var m=farm(h,kind,last);var at=m.at(0,1,-1);var player=h.makeMockPlayer(net.minecraft.world.level.GameType.CREATIVE);h.getLevel().getBlockState(at).useWithoutItem(h.getLevel(),player,new BlockHitResult(Vec3.atCenterOf(at),Direction.NORTH,at,false));h.assertTrue(h.getLevel().getBlockState(at).getValue(FarmFilter.SPECIES)==0,"Correct tier-specific selector wraps");
+   int last=kind==MachineKind.HARVESTER?4:7;var m=farm(h,kind,last);var at=m.at(0,1,-1);var player=h.makeMockPlayer(net.minecraft.world.level.GameType.CREATIVE);h.getLevel().getBlockState(at).useWithoutItem(h.getLevel(),player,new BlockHitResult(Vec3.atCenterOf(at),Direction.NORTH,at,false));h.assertTrue(h.getLevel().getBlockState(at).getValue(FarmFilter.SPECIES)==0,"Correct tier-specific selector wraps");
    h.getLevel().setBlockAndUpdate(at,h.getLevel().getBlockState(at).setValue(FarmFilter.SPECIES,last));for(int i=0;i<9;i++)m.outputs.setStackInSlot(i,new ItemStack(Items.COBBLESTONE,64));ticks(m,kind.ticks*2);h.assertTrue(m.state()==5&&m.progress()==0,"Full inventory prevents all products and progress");
   }h.succeed();
  }

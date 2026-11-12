@@ -1,0 +1,562 @@
+{
+  "id": "5E50000000000000",
+  "filename": "5e50000000000000",
+  "title": "Progression Routes: Biology to Electricity",
+  "icon": {
+    "id": "revostorage:crafting_terminal",
+    "count": 1
+  },
+  "order_index": 40,
+  "default_quest_shape": "circle",
+  "quests": [
+    {
+      "id": "5E50000000000001",
+      "title": "Greenhouse Starters",
+      "icon": {
+        "id": "minecraft:sugar_cane",
+        "count": 1
+      },
+      "x": 0.0,
+      "y": 0.0,
+      "shape": "circle",
+      "dependencies": [],
+      "description": [
+        "Grow wheat first. Combine compost, wheat seed and oak leaves for your first sugar cane. The wooden greenhouse retains one starter and produces three cane per 250 mB water. Paper unlocks the native MI rubber route.",
+        "Kelp starter: compost + wheat seed + water bucket (bucket returned). Cactus: sand + compost + wheat seed. Beetroot seed: compost + wheat seed + red dye. All are retained greenhouse starters."
+      ],
+      "tasks": [
+        {
+          "id": "5E50000000100001",
+          "type": "item",
+          "item": {
+            "id": "minecraft:sugar_cane",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5E50000000000002",
+      "title": "Mob Filter Programs",
+      "icon": {
+        "id": "minecraft:slime_ball",
+        "count": 1
+      },
+      "x": 3.0,
+      "y": 0.0,
+      "shape": "circle",
+      "dependencies": [],
+      "description": [
+        "Right-click the wooden species filter: Zombie, Skeleton, Spider, Cow, Slime. Slime supplies one slimeball per cycle for Create Super Glue. Cow supplies leather and beef before steel drill maintenance.",
+        "Steel adds Blaze, Enderman and Magma Cube. No captured mob, spawn egg or rare drop is required to start any program."
+      ],
+      "tasks": [
+        {
+          "id": "5E50000000100002",
+          "type": "item",
+          "item": {
+            "id": "minecraft:slime_ball",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5E50000000000003",
+      "title": "Early Quartz",
+      "icon": {
+        "id": "minecraft:quartz",
+        "count": 1
+      },
+      "x": 6.0,
+      "y": 0.0,
+      "shape": "circle",
+      "dependencies": [],
+      "description": [
+        "Mill one raw gold from the Iron Drill into one crushed raw gold (400 processing time), then wash it with a Create fan and water. Native washing returns nine gold nuggets and a 50% quartz chance.",
+        "Quartz enables electron tubes and mechanical crafters before crushing wheels."
+      ],
+      "tasks": [
+        {
+          "id": "5E50000000100003",
+          "type": "item",
+          "item": {
+            "id": "minecraft:quartz",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5E50000000000004",
+      "title": "Safe Filled Blaze Burners",
+      "icon": {
+        "id": "create:blaze_burner",
+        "count": 1
+      },
+      "x": 9.0,
+      "y": 0.0,
+      "shape": "circle",
+      "dependencies": [
+        "5E50000000000002"
+      ],
+      "description": [
+        "Craft an Empty Blaze Burner from four iron sheets around a brick block. Steel Harvester Blaze mode supplies rods and burner capture.",
+        "Complete a Blaze cycle, then right-click the controller holding an empty burner. One completed cycle permits one filled burner; the contained Blaze remains. Switching species clears the capture credit."
+      ],
+      "tasks": [
+        {
+          "id": "5E50000000100004",
+          "type": "item",
+          "item": {
+            "id": "create:blaze_burner",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5E50000000000005",
+      "title": "Ender Pearls and Flux Cores",
+      "icon": {
+        "id": "minecraft:ender_pearl",
+        "count": 1
+      },
+      "x": 0.0,
+      "y": 3.0,
+      "shape": "circle",
+      "dependencies": [
+        "5E50000000000002"
+      ],
+      "description": [
+        "Select Enderman in the Steel Mob Harvester: one pearl per cycle. Combine with Blaze powder for vanilla Eyes of Ender. Iron and Steel Drills supply one Flux Dust every 128 completed outputs."
+      ],
+      "tasks": [
+        {
+          "id": "5E50000000100005",
+          "type": "item",
+          "item": {
+            "id": "minecraft:ender_pearl",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5E50000000000006",
+      "title": "Rubber from Steam",
+      "icon": {
+        "id": "modern_industrialization:rubber_sheet",
+        "count": 1
+      },
+      "x": 3.0,
+      "y": 3.0,
+      "shape": "circle",
+      "dependencies": [
+        "5E50000000000001"
+      ],
+      "description": [
+        "Follow native MI recipes: coke dust + water in a Bronze Mixer -> raw synthetic oil; Steam Blast Furnace -> synthetic oil; paper + synthetic oil in the mixer -> rubber sheets.",
+        "Mill coke for coke dust. These steam machines run without an electric assembler. EMI shows exact quantities. Six rubber sheets can later make a Create belt; earlier belts use dried greenhouse kelp."
+      ],
+      "tasks": [
+        {
+          "id": "5E50000000100006",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:rubber_sheet",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5E50000000000007",
+      "title": "Tin Cables",
+      "icon": {
+        "id": "modern_industrialization:tin_cable",
+        "count": 1
+      },
+      "x": 6.0,
+      "y": 3.0,
+      "shape": "circle",
+      "dependencies": [
+        "5E50000000000006"
+      ],
+      "description": [
+        "Use tin from the Iron Drill and native MI wire/compressor recipes. Rubber insulation makes tin cables."
+      ],
+      "tasks": [
+        {
+          "id": "5E50000000100007",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:tin_cable",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5E50000000000008",
+      "title": "Analog Circuits",
+      "icon": {
+        "id": "modern_industrialization:analog_circuit",
+        "count": 1
+      },
+      "x": 9.0,
+      "y": 3.0,
+      "shape": "circle",
+      "dependencies": [
+        "5E50000000000006"
+      ],
+      "description": [
+        "Hand-craft the analog circuit board from rubber sheets and a copper plate. Craft resistors, capacitors, inductor and copper wire, then use the native crafting-table circuit recipe.",
+        "Select the crafting variant in EMI. An assembler is not required for your first circuit."
+      ],
+      "tasks": [
+        {
+          "id": "5E50000000100008",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:analog_circuit",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5E50000000000009",
+      "title": "Electric Motors",
+      "icon": {
+        "id": "modern_industrialization:motor",
+        "count": 1
+      },
+      "x": 0.0,
+      "y": 6.0,
+      "shape": "circle",
+      "dependencies": [
+        "5E50000000000007"
+      ],
+      "description": [
+        "Use the native crafting-table motor recipe with available iron, copper and tin parts. Keep steam machinery running to prepare the rest of the LV turbine."
+      ],
+      "tasks": [
+        {
+          "id": "5E50000000100009",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:motor",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5E5000000000000A",
+      "title": "First LV Electricity",
+      "icon": {
+        "id": "modern_industrialization:lv_steam_turbine",
+        "count": 1
+      },
+      "x": 3.0,
+      "y": 6.0,
+      "shape": "circle",
+      "dependencies": [
+        "5E50000000000007",
+        "5E50000000000008",
+        "5E50000000000009"
+      ],
+      "description": [
+        "Hand-craft the LV Steam Turbine from a basic hull, circuit, two motors, two tin rotors, pipes and a tin cable. Feed steam from your existing steam infrastructure.",
+        "Connect turbine -> tin cable -> electric machine. EU powers machines; the Basic Power Converter changes energy format and generates no power. Create New Age has an optional steel-gated magnetite crafting route."
+      ],
+      "tasks": [
+        {
+          "id": "5E5000000010000A",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:lv_steam_turbine",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5E5000000000000B",
+      "title": "Electric Geological Drill",
+      "icon": {
+        "id": "revoextraction:electric_drill",
+        "count": 1
+      },
+      "x": 6.0,
+      "y": 6.0,
+      "shape": "circle",
+      "dependencies": [
+        "5E5000000000000A"
+      ],
+      "description": [
+        "The compact LV Electric Drill consumes 16 EU/t and produces one resource every 200 powered ticks. Mixed mode cycles silver, nickel, lead and bauxite dust; select individual deposits with the menu.",
+        "Build it from steel plates, motor, circuits, basic hull and a diamond pickaxe. No exclusive electric-drill metal is required. Hopper insert from the top for upgrades/water; extract resources from other faces."
+      ],
+      "tasks": [
+        {
+          "id": "5E5000000010000B",
+          "type": "item",
+          "item": {
+            "id": "revoextraction:electric_drill",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5E5000000000000C",
+      "title": "Trading Colony",
+      "icon": {
+        "id": "revocultivation:trading_colony",
+        "count": 1
+      },
+      "x": 9.0,
+      "y": 6.0,
+      "shape": "circle",
+      "dependencies": [
+        "5E50000000000002"
+      ],
+      "description": [
+        "Build a steel-gated Trading Colony. Place wheat or paper in the first 26 slots; every 10 seconds it exchanges 16 of one input for one emerald in the bottom-right slot. Hoppers are supported."
+      ],
+      "tasks": [
+        {
+          "id": "5E5000000010000C",
+          "type": "item",
+          "item": {
+            "id": "revocultivation:trading_colony",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5E5000000000000D",
+      "title": "Magma and Synthetic Terrain",
+      "icon": {
+        "id": "minecraft:magma_cream",
+        "count": 1
+      },
+      "x": 0.0,
+      "y": 9.0,
+      "shape": "circle",
+      "dependencies": [
+        "5E50000000000004"
+      ],
+      "description": [
+        "Steel Harvester Magma Cube mode supplies magma cream. Heated Create mixing: cobblestone + redstone + magma cream -> two netherrack; sand + rotten flesh + Blaze powder -> two soul sand."
+      ],
+      "tasks": [
+        {
+          "id": "5E5000000010000D",
+          "type": "item",
+          "item": {
+            "id": "minecraft:magma_cream",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5E5000000000000E",
+      "title": "Glacial Extraction",
+      "icon": {
+        "id": "minecraft:packed_ice",
+        "count": 1
+      },
+      "x": 3.0,
+      "y": 9.0,
+      "shape": "circle",
+      "dependencies": [
+        "5E5000000000000B"
+      ],
+      "description": [
+        "Select Glacial Ice in the electric drill. One water bucket and one completed 16 EU/t cycle produce ice and return the empty bucket. Nine ice craft packed ice; nine packed ice craft blue ice."
+      ],
+      "tasks": [
+        {
+          "id": "5E5000000010000E",
+          "type": "item",
+          "item": {
+            "id": "minecraft:packed_ice",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5E5000000000000F",
+      "title": "Deep Survey",
+      "icon": {
+        "id": "revoextraction:deep_survey_core",
+        "count": 1
+      },
+      "x": 6.0,
+      "y": 9.0,
+      "shape": "circle",
+      "dependencies": [
+        "5E5000000000000B"
+      ],
+      "description": [
+        "Build the survey core from silver, nickel, lead, aluminum and a diamond. Install it in the electric drill upgrade slot and select Deep Survey.",
+        "Deep Survey consumes 128 EU/t for 1200 ticks per result. A saved 64-result cycle supplies netherrack, soul sand and glowstone; every 64th result is Ancient Debris. This is a later power upgrade, not a Steel Drill handout."
+      ],
+      "tasks": [
+        {
+          "id": "5E5000000010000F",
+          "type": "item",
+          "item": {
+            "id": "revoextraction:deep_survey_core",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5E50000000000010",
+      "title": "Chest Drive",
+      "icon": {
+        "id": "revostorage:chest_drive",
+        "count": 1
+      },
+      "x": 9.0,
+      "y": 9.0,
+      "shape": "circle",
+      "dependencies": [
+        "5E50000000000004"
+      ],
+      "description": [
+        "Nine chest bays add their native slot counts. Empty vanilla and Iron Chests are supported. Nine diamond chests give 972 storage slots, or 62,208 items when every slot holds 64.",
+        "Connect drives and terminals by placing them face-adjacent. The connected component is limited to 128 storage blocks and never loads chunks. Empty a bay before removing its chest. Breaking a drive drops its chests and all contents."
+      ],
+      "tasks": [
+        {
+          "id": "5E50000000100010",
+          "type": "item",
+          "item": {
+            "id": "revostorage:chest_drive",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5E50000000000011",
+      "title": "Mechanical Crafting Terminal",
+      "icon": {
+        "id": "revostorage:crafting_terminal",
+        "count": 1
+      },
+      "x": 0.0,
+      "y": 12.0,
+      "shape": "circle",
+      "dependencies": [
+        "5E50000000000010"
+      ],
+      "description": [
+        "Search, sort and browse the shared item list. Click extracts a stack, right-click half a stack, shift-click withdraws to inventory, and shift-clicking your inventory deposits it. @mod filters by mod ID.",
+        "Use the persistent 3 x 3 grid or EMI recipe + to fill it from the network and inventory; shift-click + requests multiple crafts. Shift-click the result for repeated crafting. Depleted grid slots refill from storage.",
+        "Wind the spring with the Wind button or shift-right-click the block. One craft costs one charge. Adjacent spinning Create shafts recharge the spring at 16 RPM or more. Hoppers access the network."
+      ],
+      "tasks": [
+        {
+          "id": "5E50000000100011",
+          "type": "item",
+          "item": {
+            "id": "revostorage:crafting_terminal",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5E50000000000012",
+      "title": "First Powered Greenhouse",
+      "icon": {
+        "id": "revocultivation:iron_greenhouse",
+        "count": 1
+      },
+      "x": 3.0,
+      "y": 12.0,
+      "shape": "circle",
+      "dependencies": [
+        "5E5000000000000A"
+      ],
+      "description": [
+        "Build the Iron Greenhouse using its EMI construction guide, then feed EU to its hatch or FE through its integrated converter. Add water and a retained starter.",
+        "Verify one complete harvest and confirm the water and power counters decrease, output arrives, and full output storage pauses production."
+      ],
+      "tasks": [
+        {
+          "id": "5E50000000100012",
+          "type": "item",
+          "item": {
+            "id": "revocultivation:iron_greenhouse",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    }
+  ]
+}

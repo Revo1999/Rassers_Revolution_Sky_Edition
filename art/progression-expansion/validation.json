@@ -1,0 +1,19 @@
+{
+  "date": "2026-11-12",
+  "nativeTests": 16,
+  "nativeTestsPassed": 16,
+  "fullModpackClient": "passed",
+  "emiRecipeTransfer": "passed",
+  "shiftCraftLogs": 16,
+  "shiftCraftPlanks": 64,
+  "springOperationsConsumed": 16,
+  "diamondChestCount": 9,
+  "storageSlots": 972,
+  "newQuests": 18,
+  "firstPoweredGreenhouse": "passed",
+  "freshSurvivalPlaythrough": false,
+  "kineticCharging": "passed",
+  "hopperCapability": "passed",
+  "terminalBucketRemainder": "passed",
+  "releasePackage": "0.1.35-dev-progression-storage"
+}

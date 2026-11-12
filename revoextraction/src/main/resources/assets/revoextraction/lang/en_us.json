@@ -78,5 +78,7 @@
   "gui.revoextraction.repair.incomplete": "Rebuild the complete multiblock before repairing.",
   "gui.revoextraction.repair.stop_drive": "Stop the shaft before using the repair kit.",
   "gui.revoextraction.repair.need_water": "Add at least 100 mB water before repairing.",
-  "gui.revoextraction.repair.success": "Drill repaired. Restore the coolant supply before restarting."
+  "gui.revoextraction.repair.success": "Drill repaired. Restore the coolant supply before restarting.",
+  "block.revoextraction.electric_drill": "Electric Drill",
+  "item.revoextraction.deep_survey_core": "Deep Survey Core"
 }

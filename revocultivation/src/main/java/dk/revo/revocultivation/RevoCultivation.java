@@ -37,8 +37,10 @@ public final class RevoCultivation {
     public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<FarmWaterTankEntity>> TANK_ENTITY=ENTITIES.register("farm_water_tank",()->BlockEntityType.Builder.of(FarmWaterTankEntity::new,FarmMaterials.IRON.get(MachineKind.Part.TANK).get(),FarmMaterials.STEEL.get(MachineKind.Part.TANK).get()).build(null));
     public static final DeferredHolder<MenuType<?>,MenuType<FarmControllerMenu>> CONTROLLER_MENU=MENUS.register("controller",()->new MenuType<>(FarmControllerMenu::new,net.minecraft.world.flag.FeatureFlags.DEFAULT_FLAGS));
     public static final DeferredHolder<MenuType<?>,MenuType<FarmHatchMenu>> HATCH_MENU=MENUS.register("hatch",()->IMenuTypeExtension.create((id,inv,buf)->new FarmHatchMenu(id,inv,buf.readEnum(MachineKind.class))));
+    public static final DeferredBlock<TradingColony> TRADE=BLOCKS.register("trading_colony",TradingColony::new);
+    public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<TradingColony.Entity>> TRADE_ENTITY=ENTITIES.register("trading_colony",()->BlockEntityType.Builder.of(TradingColony.Entity::new,TRADE.get()).build(null));
     public RevoCultivation(IEventBus bus) {
-        SmallMachines.bootstrap();FarmMaterials.bootstrap();
+        bus.addListener((RegisterCapabilitiesEvent e)->e.registerBlockEntity(Capabilities.ItemHandler.BLOCK,TRADE_ENTITY.get(),(be,side)->be.items));SmallMachines.bootstrap();FarmMaterials.bootstrap();
         MachineKind.TREE.bind(TREE);MachineKind.GREENHOUSE.bind(GREENHOUSE);
         MachineKind.STEEL_TREE.bind(STEEL_TREE);MachineKind.IRON_GREENHOUSE.bind(IRON_GREENHOUSE);
         for(var block:BLOCKS.getEntries())ITEMS.registerSimpleBlockItem(block);

@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SNL",
+    "ADA",
+    "SNL"
+  ],
+  "key": {
+    "S": {
+      "item": "modern_industrialization:silver_ingot"
+    },
+    "N": {
+      "item": "modern_industrialization:nickel_ingot"
+    },
+    "L": {
+      "item": "modern_industrialization:lead_ingot"
+    },
+    "A": {
+      "item": "modern_industrialization:aluminum_ingot"
+    },
+    "D": {
+      "item": "minecraft:diamond"
+    }
+  },
+  "result": {
+    "id": "revoextraction:deep_survey_core",
+    "count": 1
+  }
+}
