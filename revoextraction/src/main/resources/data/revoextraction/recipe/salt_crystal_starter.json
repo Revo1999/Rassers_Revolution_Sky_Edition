@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:quartz"
+    },
+    {
+      "item": "minecraft:sand"
+    },
+    {
+      "item": "minecraft:water_bucket"
+    },
+    {
+      "item": "revocultivation:compost"
+    }
+  ],
+  "result": {
+    "id": "revocultivation:salt_crystal_starter",
+    "count": 1
+  }
+}

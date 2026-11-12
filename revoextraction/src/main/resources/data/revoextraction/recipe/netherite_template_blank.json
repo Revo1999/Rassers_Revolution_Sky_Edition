@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:diamond_block"
+    },
+    {
+      "item": "minecraft:netherite_ingot"
+    },
+    {
+      "item": "modern_industrialization:steel_plate"
+    }
+  ],
+  "result": {
+    "id": "revoextraction:netherite_template_blank",
+    "count": 1
+  }
+}

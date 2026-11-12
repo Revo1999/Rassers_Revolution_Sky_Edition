@@ -128,3 +128,5 @@ Early resource bridges now provide Create coke milling, Cow leather, Steel Blaze
 ## Progression and chest-drive storage update
 
 The twelve-task progression batch is implemented, including controlled crop/mob starters, quartz and burners, first-electricity quests, electric geology, trading, glacial/deep resources and local mechanical storage. RevoStorage adds nine-chest drives with native Iron Chests capacity plus an AE-style crafting terminal with search, shift-click crafting and EMI recipe transfer. See [implementation details](docs/PROGRESSION-EXPANSION.md), [verification](docs/PROGRESSION-EXPANSION-QA.md) and the [next recipe audit](docs/RECIPE-AUDIT-3.md).
+
+The crystal/late-resource update implements the next ten audit items. See [routes and gates](docs/CRYSTAL-AND-LATE-RESOURCES.md), the [machine screenshot gallery](screenshots/machines/INDEX.md) and [audit 4](docs/RECIPE-AUDIT-4.md).

@@ -38,6 +38,7 @@ project(':revolib') {
         runs {
             client {
                 client()
+                if (providers.gradleProperty('revoGalleryQa').isPresent()) { programArguments.addAll '--quickPlaySingleplayer', 'Revo Machine Gallery QA', '--width', '1440', '--height', '1000' }
                 if (providers.gradleProperty('revoExpansionUiQa').isPresent()) {
                     programArguments.addAll '--quickPlaySingleplayer', 'Revo Progression Expansion QA', '--width', '1440', '--height', '1000'
                 }

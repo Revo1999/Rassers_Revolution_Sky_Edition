@@ -1,0 +1,13 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "item": "revoextraction:netherite_template_blank"
+    }
+  ],
+  "results": [
+    {
+      "id": "minecraft:netherite_upgrade_smithing_template"
+    }
+  ]
+}

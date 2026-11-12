@@ -80,5 +80,12 @@
   "gui.revoextraction.repair.need_water": "Add at least 100 mB water before repairing.",
   "gui.revoextraction.repair.success": "Drill repaired. Restore the coolant supply before restarting.",
   "block.revoextraction.electric_drill": "Electric Drill",
-  "item.revoextraction.deep_survey_core": "Deep Survey Core"
+  "item.revoextraction.deep_survey_core": "Deep Survey Core",
+  "item.revoextraction.tungsten_survey_core": "Tungsten Survey Core",
+  "item.revoextraction.nuclear_survey_core": "Nuclear Survey Core",
+  "item.revoextraction.logic_press_blank": "Logic Press Blank",
+  "item.revoextraction.calculation_press_blank": "Calculation Press Blank",
+  "item.revoextraction.engineering_press_blank": "Engineering Press Blank",
+  "item.revoextraction.silicon_press_blank": "Silicon Press Blank",
+  "item.revoextraction.netherite_template_blank": "Netherite Template Blank"
 }

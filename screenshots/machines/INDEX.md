@@ -1,0 +1,45 @@
+# Custom machine screenshots
+
+Captured in the isolated gallery save after implementation. All multiblocks passed formation before capture.
+
+- wooden_drill
+- iron_drill
+- steel_drill
+- tree_grower
+- greenhouse
+- mob_harvester
+- steel_tree_grower
+- steel_mob_harvester
+- iron_greenhouse
+- copper_multiblock_furnace
+- iron_multiblock_furnace
+- silver_multiblock_furnace
+- gold_multiblock_furnace
+- diamond_multiblock_furnace
+- emerald_multiblock_furnace
+- obsidian_multiblock_furnace
+- crystal_multiblock_furnace
+- netherite_multiblock_furnace
+- rainbow_multiblock_furnace
+- rain_barrel
+- clay_crucible
+- unfired_crucible
+- composter
+- silkworm_cultivator
+- power_converter
+- advanced_power_converter
+- elite_power_converter
+- vacuum_1
+- vacuum_2
+- vacuum_3
+- electric_drill
+- trading_colony
+- chest_drive
+- crafting_terminal
+- salt_crystal_growth
+- nether_wart_growth
+- chorus_growth
+- poppy_growth
+- ghast_colony
+- shulker_colony
+- wither_skeleton_colony

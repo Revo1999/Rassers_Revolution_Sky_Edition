@@ -6,7 +6,7 @@ The original twelve tasks are implemented. New controlled routes now cover pearl
 
 ## New numbered list for review
 
-All rows below are proposals only, not implemented in this batch. Quantities are initial balancing suggestions.
+Status: all ten rows are now implemented. Salt follows the revised retained-crystal-and-water greenhouse design. See [implementation](CRYSTAL-AND-LATE-RESOURCES.md) and [next audit](RECIPE-AUDIT-4.md). The table below preserves the original proposals.
 
 | # | Remaining gap | Concrete next implementation |
 |---|---|---|

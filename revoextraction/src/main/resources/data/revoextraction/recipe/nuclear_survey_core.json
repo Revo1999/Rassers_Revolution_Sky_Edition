@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "revoextraction:tungsten_survey_core"
+    },
+    {
+      "item": "modern_industrialization:tungsten_ingot"
+    },
+    {
+      "item": "modern_industrialization:lead_plate"
+    },
+    {
+      "item": "minecraft:nether_star"
+    }
+  ],
+  "result": {
+    "id": "revoextraction:nuclear_survey_core",
+    "count": 1
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "item": "revoextraction:silicon_press_blank"
+    }
+  ],
+  "results": [
+    {
+      "id": "ae2:silicon_press"
+    }
+  ]
+}

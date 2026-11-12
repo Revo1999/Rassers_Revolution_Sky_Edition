@@ -1,0 +1,13 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "item": "revoextraction:calculation_press_blank"
+    }
+  ],
+  "results": [
+    {
+      "id": "ae2:calculation_processor_press"
+    }
+  ]
+}

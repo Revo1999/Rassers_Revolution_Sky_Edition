@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "modern_industrialization:steel_plate"
+    },
+    {
+      "item": "minecraft:diamond"
+    },
+    {
+      "item": "minecraft:quartz_block"
+    }
+  ],
+  "result": {
+    "id": "revoextraction:calculation_press_blank",
+    "count": 1
+  }
+}

@@ -37,8 +37,8 @@ public final class ProgressionBridgeTests {
  @GameTest(template="drill_test",timeoutTicks=100)
  public static void filterCyclesAndFullStorageAreSafe(GameTestHelper h){
   for(var kind:new MachineKind[]{MachineKind.HARVESTER,MachineKind.STEEL_HARVESTER}){
-   int last=kind==MachineKind.HARVESTER?4:7;var m=farm(h,kind,last);var at=m.at(0,1,-1);var player=h.makeMockPlayer(net.minecraft.world.level.GameType.CREATIVE);h.getLevel().getBlockState(at).useWithoutItem(h.getLevel(),player,new BlockHitResult(Vec3.atCenterOf(at),Direction.NORTH,at,false));h.assertTrue(h.getLevel().getBlockState(at).getValue(FarmFilter.SPECIES)==0,"Correct tier-specific selector wraps");
-   h.getLevel().setBlockAndUpdate(at,h.getLevel().getBlockState(at).setValue(FarmFilter.SPECIES,last));for(int i=0;i<9;i++)m.outputs.setStackInSlot(i,new ItemStack(Items.COBBLESTONE,64));ticks(m,kind.ticks*2);h.assertTrue(m.state()==5&&m.progress()==0,"Full inventory prevents all products and progress");
+   int last=kind==MachineKind.HARVESTER?4:10;var m=farm(h,kind,last);var at=m.at(0,1,-1);var player=h.makeMockPlayer(net.minecraft.world.level.GameType.CREATIVE);h.getLevel().getBlockState(at).useWithoutItem(h.getLevel(),player,new BlockHitResult(Vec3.atCenterOf(at),Direction.NORTH,at,false));h.assertTrue(h.getLevel().getBlockState(at).getValue(FarmFilter.SPECIES)==0,"Correct tier-specific selector wraps");
+   h.getLevel().setBlockAndUpdate(at,h.getLevel().getBlockState(at).setValue(FarmFilter.SPECIES,last));if(kind==MachineKind.STEEL_HARVESTER)m.inputs.setStackInSlot(0,new ItemStack(Items.NETHERITE_INGOT));for(int i=0;i<9;i++)m.outputs.setStackInSlot(i,new ItemStack(Items.COBBLESTONE,64));ticks(m,kind.ticks*2);h.assertTrue(m.state()==5&&m.progress()==0,"Full inventory prevents all products and progress");
   }h.succeed();
  }
  @GameTest(template="drill_test",timeoutTicks=100)

@@ -73,7 +73,7 @@ if (providers.gradleProperty('revoProgressionTests').isPresent()) {
  dependencies {
   implementation project(':revocultivation'); implementation project(':revogenetics'); implementation project(':revoindustry'); implementation project(':revostorage')
   runtimeOnly 'dev.engine-room.flywheel:flywheel-neoforge-1.21.1:1.0.6'
-  runtimeOnly files(rootProject.file('.local/integration-mods/Modern-Industrialization-2.5.11.jar'),rootProject.file('.local/integration-mods/ironfurnaces-neoforge-1.21.1-4.3.2.jar'),rootProject.file('.local/integration-mods/guideme-21.1.22.jar'),rootProject.file('.local/integration-mods/FluxNetworks-1.21.1-8.0.0.jar'),rootProject.file('.local/integration-mods/ironchest-1.21-neoforge-16.0.7.jar'))
+  runtimeOnly files(rootProject.file('.local/integration-mods/Modern-Industrialization-2.5.11.jar'),rootProject.file('.local/integration-mods/ironfurnaces-neoforge-1.21.1-4.3.2.jar'),rootProject.file('.local/integration-mods/guideme-21.1.22.jar'),rootProject.file('.local/integration-mods/FluxNetworks-1.21.1-8.0.0.jar'),rootProject.file('.local/integration-mods/ironchest-1.21-neoforge-16.0.7.jar'),rootProject.file('.local/integration-mods/appliedenergistics2-19.2.18.jar'))
  }
  neoForge { mods {
   revocultivation { sourceSet project(':revocultivation').sourceSets.main }
@@ -93,3 +93,9 @@ if (providers.gradleProperty('revoExpansionUiQa').isPresent()) {
  sourceSets.main.java.srcDir 'src/expansionuiqa/java'
  dependencies { implementation project(':revocultivation'); implementation project(':revostorage') }
 }
+
+if (providers.gradleProperty('revoGalleryQa').isPresent()) {
+ sourceSets.main.java.srcDir 'src/galleryqa/java'
+ dependencies { implementation project(':revocultivation'); implementation project(':revoindustry'); implementation project(':revostorage'); compileOnly files(rootProject.file('.local/integration-mods/Modern-Industrialization-2.5.11.jar'),rootProject.file('.local/integration-mods/ironfurnaces-neoforge-1.21.1-4.3.2.jar')) }
+}
+tasks.named('jar', Jar) { exclude '**/MachineGalleryQa*' }

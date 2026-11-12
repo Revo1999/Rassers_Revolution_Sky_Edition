@@ -47,6 +47,13 @@ public final class RevoExtraction {
     public static final DeferredItem<Item> SURVEY_CORE=ITEMS.register("deep_survey_core",()->new Item(new Item.Properties().stacksTo(1)));
     public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<ElectricDrillEntity>> ELECTRIC_ENTITY=ENTITIES.register("electric_drill",()->BlockEntityType.Builder.of(ElectricDrillEntity::new,ELECTRIC.get()).build(null));
     public static final DeferredHolder<net.minecraft.world.inventory.MenuType<?>,net.minecraft.world.inventory.MenuType<ElectricDrillMenu>> ELECTRIC_MENU=MENUS.register("electric_drill",()->new net.minecraft.world.inventory.MenuType<>(ElectricDrillMenu::new,net.minecraft.world.flag.FeatureFlags.DEFAULT_FLAGS));
+    public static final DeferredItem<Item> TUNGSTEN_CORE=ITEMS.registerSimpleItem("tungsten_survey_core",new Item.Properties().stacksTo(1));
+    public static final DeferredItem<Item> NUCLEAR_CORE=ITEMS.registerSimpleItem("nuclear_survey_core",new Item.Properties().stacksTo(1));
+    public static final DeferredItem<Item> LOGIC_BLANK=ITEMS.registerSimpleItem("logic_press_blank");
+    public static final DeferredItem<Item> CALCULATION_BLANK=ITEMS.registerSimpleItem("calculation_press_blank");
+    public static final DeferredItem<Item> ENGINEERING_BLANK=ITEMS.registerSimpleItem("engineering_press_blank");
+    public static final DeferredItem<Item> SILICON_BLANK=ITEMS.registerSimpleItem("silicon_press_blank");
+    public static final DeferredItem<Item> TEMPLATE_BLANK=ITEMS.registerSimpleItem("netherite_template_blank");
     public RevoExtraction(IEventBus bus) {
         ITEMS.registerSimpleBlockItem(ELECTRIC);HammerItems.bootstrap();ITEMS.registerSimpleBlockItem(HammerItems.DUST);
         for (var block : new DeferredBlock<?>[]{SUPPORT, CASING, CORE, CONTROLLER, INPUT, HATCH, IRON_SUPPORT, IRON_CASING, IRON_CORE, IRON_CONTROLLER, IRON_INPUT, IRON_HATCH, STEEL_SUPPORT, STEEL_CASING, STEEL_CORE, STEEL_CONTROLLER, STEEL_INPUT, STEEL_HATCH, STEEL_TANK}) ITEMS.registerSimpleBlockItem(block);

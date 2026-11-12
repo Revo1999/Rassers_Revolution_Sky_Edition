@@ -20,10 +20,10 @@ def main():
     assert hashlib.sha512(data).hexdigest()==shader['sha512']
     files.append({'path':'shaderpacks/'+shader['file'],'hashes':{'sha512':shader['sha512'],'sha1':hashlib.sha1(data).hexdigest()},
         'env':{'client':'required','server':'unsupported'},'downloads':[shader['url']],'fileSize':len(data)})
-    index={'formatVersion':1,'game':'minecraft','versionId':'0.1.35-dev-progression-storage',
+    index={'formatVersion':1,'game':'minecraft','versionId':'0.1.36-dev-crystal-growth',
         'name':'Rassers Revolution: Sky Edition','summary':"Skyblock industry with completed biological resource bridges, electric geology, chest-drive crafting terminals and progression quests.",
         'files':files,'dependencies':{'minecraft':'1.21.1','neoforge':'21.1.265'}}
-    output=ROOT.parent/'Rassers-Revolution-Sky-Edition-0.1.35-dev.mrpack'
+    output=ROOT.parent/'Rassers-Revolution-Sky-Edition-0.1.36-dev.mrpack'
     jars=sorted((ROOT/'build/mods').glob('*.jar'))
     assert len(jars)==7
     assert (ROOT/'pack/overrides/config/fancymenu/assets/skyblock_loop.mp4').stat().st_size>1_000_000
@@ -47,6 +47,7 @@ def main():
         z.write(ROOT/'docs/STEEL-DRILL.md','overrides/STEEL-DRILL.md')
         z.write(ROOT/'docs/EARLY-RESOURCE-BRIDGES.md','overrides/EARLY-RESOURCE-BRIDGES.md')
         z.write(ROOT/'docs/PROGRESSION-EXPANSION.md','overrides/PROGRESSION-EXPANSION.md')
+        z.write(ROOT/'docs/CRYSTAL-AND-LATE-RESOURCES.md','overrides/CRYSTAL-AND-LATE-RESOURCES.md')
         z.write(ROOT/'docs/METAL-FARMS.md','overrides/METAL-FARMS.md')
         z.write(ROOT/'docs/REVO-FURNACES.md','overrides/REVO-FURNACES.md')
         z.write(ROOT/'docs/REVO-VACUUMS.md','overrides/REVO-VACUUMS.md')

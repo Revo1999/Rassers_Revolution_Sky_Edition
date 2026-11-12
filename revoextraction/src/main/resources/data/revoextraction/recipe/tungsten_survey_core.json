@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "revoextraction:deep_survey_core"
+    },
+    {
+      "item": "modern_industrialization:titanium_ingot"
+    },
+    {
+      "item": "modern_industrialization:antimony_ingot"
+    },
+    {
+      "item": "modern_industrialization:stainless_steel_ingot"
+    }
+  ],
+  "result": {
+    "id": "revoextraction:tungsten_survey_core",
+    "count": 1
+  }
+}

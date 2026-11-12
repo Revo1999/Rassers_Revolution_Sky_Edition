@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:soul_sand"
+    },
+    {
+      "item": "revocultivation:compost"
+    },
+    {
+      "item": "minecraft:blaze_powder"
+    },
+    {
+      "item": "modern_industrialization:steel_plate"
+    }
+  ],
+  "result": {
+    "id": "minecraft:nether_wart",
+    "count": 1
+  }
+}

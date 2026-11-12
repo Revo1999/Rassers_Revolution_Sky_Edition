@@ -33,8 +33,8 @@ public enum MachineKind {
     public Block controller(){return controller.get();}
     public boolean registered(){return controller!=null;}
     public Component title(){return Component.translatable("machine.revocultivation."+id);}
-    public int inputSlots(){return needsWater()?2:isTree()?1:0;}
-    public int hatchHeight(){return isHarvester()?184:220;}
+    public int inputSlots(){return needsWater()?2:isTree()||this==STEEL_HARVESTER?1:0;}
+    public int hatchHeight(){return isHarvester()&&this!=STEEL_HARVESTER?184:220;}
     public Part part(int x,int y,int z){
         if(Math.abs(x)>radius()||Math.abs(z)>radius()||y<0||y>=height)throw new IllegalArgumentException("Outside machine blueprint");
         if(realTree()){
@@ -73,19 +73,21 @@ public enum MachineKind {
         case SUPPORT->RevoCultivation.SUPPORT.get();case CASING->RevoCultivation.CASING.get();case CONTROLLER->controller();case HATCH->RevoCultivation.HATCH.get();
         case BED->RevoCultivation.BED.get();case GRATE->RevoCultivation.GRATE.get();case GLASS->RevoCultivation.GLASS.get();case BARS->RevoCultivation.BARS.get();case FILTER->RevoCultivation.FILTER.get();case AIR,POWER,LIGHT,TANK,SOIL->Blocks.AIR;
     };}
-    public boolean acceptsStarter(ItemStack stack){return isTree()?stack.is(Items.OAK_SAPLING):isGreenhouse()&&(stack.is(Items.WHEAT_SEEDS)||stack.is(Items.CARROT)||stack.is(Items.POTATO)||stack.is(Items.BEETROOT_SEEDS)||stack.is(Items.SUGAR_CANE)||stack.is(Items.KELP)||stack.is(Items.CACTUS));}
-    public int[] harvesterPrograms(){return this==STEEL_HARVESTER?new int[]{20,21,22,23,24,25,26,27}:new int[]{20,21,22,23,25};}
+    public boolean acceptsStarter(ItemStack stack){return this==STEEL_HARVESTER?stack.is(Items.NETHERITE_INGOT):isTree()?stack.is(Items.OAK_SAPLING):isGreenhouse()&&(stack.is(Items.WHEAT_SEEDS)||stack.is(Items.CARROT)||stack.is(Items.POTATO)||stack.is(Items.BEETROOT_SEEDS)||stack.is(Items.SUGAR_CANE)||stack.is(Items.KELP)||stack.is(Items.CACTUS)||stack.is(Items.POPPY)||stack.is(SmallMachines.SALT_STARTER.get())||electric()&&(stack.is(Items.NETHER_WART)||stack.is(Items.CHORUS_FRUIT)));}
+    public int[] harvesterPrograms(){return this==STEEL_HARVESTER?new int[]{20,21,22,23,24,25,26,27,28,29,30}:new int[]{20,21,22,23,25};}
     public int program(ItemStack starter,int filter){
         if(isTree())return starter.is(Items.OAK_SAPLING)?0:-1;
+        if(isHarvester()&&filter>=9&&!starter.is(Items.NETHERITE_INGOT))return -1;
         if(isHarvester())return filter>=0&&filter<harvesterPrograms().length?harvesterPrograms()[filter]:-1;
-        return starter.is(Items.WHEAT_SEEDS)?10:starter.is(Items.CARROT)?11:starter.is(Items.POTATO)?12:starter.is(Items.BEETROOT_SEEDS)?13:starter.is(Items.SUGAR_CANE)?14:starter.is(Items.KELP)?15:starter.is(Items.CACTUS)?16:-1;
+        return starter.is(Items.WHEAT_SEEDS)?10:starter.is(Items.CARROT)?11:starter.is(Items.POTATO)?12:starter.is(Items.BEETROOT_SEEDS)?13:starter.is(Items.SUGAR_CANE)?14:starter.is(Items.KELP)?15:starter.is(Items.CACTUS)?16:electric()&&starter.is(Items.NETHER_WART)?17:electric()&&starter.is(Items.CHORUS_FRUIT)?18:starter.is(SmallMachines.SALT_STARTER.get())?19:starter.is(Items.POPPY)?31:-1;
     }
-    public static String programName(int program){return switch(program){case 0->"oak";case 10->"wheat";case 11->"carrot";case 12->"potato";case 13->"beetroot";case 14->"sugar_cane";case 15->"kelp";case 16->"cactus";case 25->"slime";case 26->"enderman";case 27->"magma_cube";case 20->"zombie";case 21->"skeleton";case 22->"spider";case 23->"cow";case 24->"blaze";default->"none";};}
+    public static String programName(int program){return switch(program){case 0->"oak";case 10->"wheat";case 11->"carrot";case 12->"potato";case 13->"beetroot";case 14->"sugar_cane";case 15->"kelp";case 16->"cactus";case 17->"nether_wart";case 18->"chorus";case 19->"salt_crystal";case 28->"ghast";case 29->"shulker";case 30->"wither_skeleton";case 31->"poppy";case 25->"slime";case 26->"enderman";case 27->"magma_cube";case 20->"zombie";case 21->"skeleton";case 22->"spider";case 23->"cow";case 24->"blaze";default->"none";};}
     public static List<ItemStack> products(int program){return switch(program){
         case 0->List.of(new ItemStack(Items.OAK_LOG,6),new ItemStack(Items.OAK_LEAVES,2),new ItemStack(Items.STICK,2),new ItemStack(Items.OAK_SAPLING));
         case 10->List.of(new ItemStack(Items.WHEAT,3),new ItemStack(Items.WHEAT_SEEDS));case 11->List.of(new ItemStack(Items.CARROT,3));case 12->List.of(new ItemStack(Items.POTATO,3));case 13->List.of(new ItemStack(Items.BEETROOT,3),new ItemStack(Items.BEETROOT_SEEDS));
-        case 14->List.of(new ItemStack(Items.SUGAR_CANE,3));case 15->List.of(new ItemStack(Items.KELP,3));case 16->List.of(new ItemStack(Items.CACTUS,3));case 25->List.of(new ItemStack(Items.SLIME_BALL));case 26->List.of(new ItemStack(Items.ENDER_PEARL));case 27->List.of(new ItemStack(Items.MAGMA_CREAM));case 20->List.of(new ItemStack(Items.ROTTEN_FLESH,2),new ItemStack(Items.CARROT),new ItemStack(Items.POTATO));
+        case 17->List.of(new ItemStack(Items.NETHER_WART,3));case 18->List.of(new ItemStack(Items.CHORUS_FRUIT,3));case 19->List.of(new ItemStack(net.minecraft.core.registries.BuiltInRegistries.ITEM.get(net.minecraft.resources.ResourceLocation.parse("modern_industrialization:salt_dust"))));case 28->List.of(new ItemStack(Items.GHAST_TEAR));case 29->List.of(new ItemStack(Items.SHULKER_SHELL));case 30->List.of(new ItemStack(Items.BONE,2),new ItemStack(Items.COAL),new ItemStack(Items.WITHER_SKELETON_SKULL));case 31->List.of(new ItemStack(Items.POPPY,3));case 14->List.of(new ItemStack(Items.SUGAR_CANE,3));case 15->List.of(new ItemStack(Items.KELP,3));case 16->List.of(new ItemStack(Items.CACTUS,3));case 25->List.of(new ItemStack(Items.SLIME_BALL));case 26->List.of(new ItemStack(Items.ENDER_PEARL));case 27->List.of(new ItemStack(Items.MAGMA_CREAM));case 20->List.of(new ItemStack(Items.ROTTEN_FLESH,2),new ItemStack(Items.CARROT),new ItemStack(Items.POTATO));
         case 21->List.of(new ItemStack(Items.BONE,2),new ItemStack(Items.ARROW));case 22->List.of(new ItemStack(Items.STRING,2),new ItemStack(Items.SPIDER_EYE));case 23->List.of(new ItemStack(Items.LEATHER),new ItemStack(Items.BEEF,2));case 24->List.of(new ItemStack(Items.BLAZE_ROD));default->List.of();
     };}
-    public static ItemStack starter(int program){return new ItemStack(switch(program){case 0->Items.OAK_SAPLING;case 10->Items.WHEAT_SEEDS;case 11->Items.CARROT;case 12->Items.POTATO;case 13->Items.BEETROOT_SEEDS;case 14->Items.SUGAR_CANE;case 15->Items.KELP;case 16->Items.CACTUS;default->Items.AIR;});}
+    public static List<ItemStack> products(int program,int cycles){return program==30&&Math.floorMod(cycles,64)!=63?List.of(new ItemStack(Items.BONE,2),new ItemStack(Items.COAL)):products(program);}
+    public static ItemStack starter(int program){return new ItemStack(switch(program){case 0->Items.OAK_SAPLING;case 10->Items.WHEAT_SEEDS;case 11->Items.CARROT;case 12->Items.POTATO;case 13->Items.BEETROOT_SEEDS;case 14->Items.SUGAR_CANE;case 15->Items.KELP;case 16->Items.CACTUS;case 17->Items.NETHER_WART;case 18->Items.CHORUS_FRUIT;case 19->SmallMachines.SALT_STARTER.get();case 31->Items.POPPY;default->Items.AIR;});}
 }

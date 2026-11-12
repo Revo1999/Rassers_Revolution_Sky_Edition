@@ -157,5 +157,13 @@
   "program.revocultivation.slime": "Slime",
   "program.revocultivation.enderman": "Enderman",
   "program.revocultivation.magma_cube": "Magma Cube",
-  "block.revocultivation.trading_colony": "Trading Colony"
+  "block.revocultivation.trading_colony": "Trading Colony",
+  "item.revocultivation.salt_crystal_starter": "Salt Crystal Starter",
+  "program.revocultivation.nether_wart": "Nether Wart",
+  "program.revocultivation.chorus": "Chorus",
+  "program.revocultivation.salt_crystal": "Salt Crystal",
+  "program.revocultivation.poppy": "Poppy",
+  "program.revocultivation.ghast": "Ghast",
+  "program.revocultivation.shulker": "Shulker",
+  "program.revocultivation.wither_skeleton": "Wither Skeleton"
 }

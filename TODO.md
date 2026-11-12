@@ -2,7 +2,7 @@
 
 Updated: 12 November 2026. Based on the [follow-up progression audit](docs/EARLY-PROGRESSION-AUDIT-2.md).
 
-The original twelve tasks are implemented. See [the implementation guide](docs/PROGRESSION-EXPANSION.md), [QA report](docs/PROGRESSION-EXPANSION-QA.md), and the new [recipe audit](docs/RECIPE-AUDIT-3.md) for the resulting behavior and remaining follow-up work.
+The original twelve tasks are implemented. See [the implementation guide](docs/PROGRESSION-EXPANSION.md), [QA report](docs/PROGRESSION-EXPANSION-QA.md), and the new [recipe audit](docs/RECIPE-AUDIT-4.md) for the resulting behavior and remaining follow-up work.
 
 ## Completed resource bridges
 
@@ -40,3 +40,9 @@ The original twelve tasks are implemented. See [the implementation guide](docs/P
 ## Original suggested order
 
 Start with **1–4 and 6**, then **5, 7 and 8**. Items **9–11** are larger feature work. Apply **12** alongside each batch, finishing with a fresh-island playthrough through the first powered greenhouse.
+
+## Audit 3 follow-up
+
+- [x] Implemented all ten items, including salt crystal growth with a retained starter and water.
+- [x] Native regression tests pass; current machine gallery is in `screenshots/machines`.
+- [x] Saved the next proposed routes in `docs/RECIPE-AUDIT-4.md`.

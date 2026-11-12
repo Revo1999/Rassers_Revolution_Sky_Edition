@@ -1,0 +1,13 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "item": "revoextraction:logic_press_blank"
+    }
+  ],
+  "results": [
+    {
+      "id": "ae2:logic_processor_press"
+    }
+  ]
+}

@@ -24,11 +24,11 @@ public class FarmEmiPlugin implements EmiPlugin {
         for(var kind:MachineKind.values())if(kind.registered()){
             var category=category(kind);registry.addCategory(category);registry.addWorkstation(category,EmiStack.of(kind.controller()));registry.addRecipe(assembly(kind));
             var production=new EmiRecipeCategory(id(kind.id+"_production"),EmiStack.of(kind.controller()));registry.addCategory(production);registry.addWorkstation(production,EmiStack.of(kind.controller()));
-            int[] programs=kind.isTree()?new int[]{0}:kind.isGreenhouse()?new int[]{10,11,12,13,14,15,16}:kind.harvesterPrograms();
+            int[] programs=kind.isTree()?new int[]{0}:kind.isGreenhouse()?(kind.electric()?new int[]{10,11,12,13,14,15,16,17,18,19,31}:new int[]{10,11,12,13,14,15,16,19,31}):kind.harvesterPrograms();
             for(int program:programs)registry.addRecipe(new Production(production,kind,program));
         }
         registry.addRecipe(new EmiInfoRecipe(List.of(EmiStack.of(MachineKind.HARVESTER.controller()),EmiStack.of(MachineKind.STEEL_HARVESTER.controller())),List.of(
-            Component.literal("Right-click the species filter to select the contained mob. Wooden: Zombie, Skeleton, Spider, Cow, Slime. Steel: Zombie, Skeleton, Spider, Cow, Blaze, Slime, Enderman, Magma Cube."),
+            Component.literal("Right-click the species filter to select the contained mob. Wooden: Zombie, Skeleton, Spider, Cow, Slime. Steel also adds Ghast; Shulker and Wither Skeleton require a retained Netherite ingot. Wither skulls occur every 64 completed harvests."),
             Component.literal("Cow produces 1 leather and 2 raw beef per harvest: 15 seconds in wood, 7.5 seconds in steel. Leather is available before Steel Drill maintenance."),
             Component.literal("Steel Blaze mode produces 1 blaze rod every 7.5 seconds. The contained creature is retained and never becomes a roaming world entity.")),id("info/harvester_species")));
         registry.addRecipe(new EmiInfoRecipe(List.of(EmiStack.of(MachineKind.IRON_GREENHOUSE.controller())),List.of(

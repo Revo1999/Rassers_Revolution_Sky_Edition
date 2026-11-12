@@ -1,0 +1,228 @@
+{
+  "id": "5E60000000000000",
+  "filename": "5e60000000000000",
+  "title": "Crystals and Distant Resources",
+  "order_index": 50,
+  "quests": [
+    {
+      "id": "5E60000000000001",
+      "title": "Certus Quartz",
+      "x": 0.0,
+      "y": 0.0,
+      "description": [
+        "Select Certus Quartz on the Electric Geological Drill: 16 EU/t for 400 powered ticks. Native charging, dust and Fluix chemistry remain unchanged."
+      ],
+      "tasks": [
+        {
+          "id": "5E60000000100001",
+          "type": "item",
+          "item": {
+            "id": "ae2:certus_quartz_crystal",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5E60000000000002",
+      "title": "Inscriber Presses",
+      "x": 3.0,
+      "y": 0.0,
+      "description": [
+        "Craft each press blank from steel plate, diamond and its identifying material (gold block, quartz block, diamond block or silicon), then use a Create Mechanical Press. Existing native press copying remains available."
+      ],
+      "tasks": [
+        {
+          "id": "5E60000000100002",
+          "type": "item",
+          "item": {
+            "id": "ae2:logic_processor_press",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5E60000000000003",
+      "title": "Sky Stone",
+      "x": 6.0,
+      "y": 0.0,
+      "description": [
+        "Heated mixing: four cobblestone, one Ender Pearl and one Certus dust make four Sky Stone."
+      ],
+      "tasks": [
+        {
+          "id": "5E60000000100003",
+          "type": "item",
+          "item": {
+            "id": "ae2:sky_stone_block",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5E60000000000004",
+      "title": "Salt Crystal Growth",
+      "x": 0.0,
+      "y": 3.0,
+      "description": [
+        "Craft one salt crystal starter from quartz, sand, water bucket and compost; the bucket is returned. Put the starter in a wooden greenhouse and supply water. It is retained; each harvest consumes 250 mB and grows one MI salt dust. No salt is required to start."
+      ],
+      "tasks": [
+        {
+          "id": "5E60000000100004",
+          "type": "item",
+          "item": {
+            "id": "revocultivation:salt_crystal_starter",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5E60000000000005",
+      "title": "Advanced Geology",
+      "x": 3.0,
+      "y": 3.0,
+      "description": [
+        "Antimony: LV drill, 16 EU/t. Tungsten: retained Tungsten Survey Core, 128 EU/t, 400 ticks. Core requires titanium, antimony, stainless steel and a Deep Survey Core. Uranium: retained Nuclear Survey Core, 512 EU/t, 1200 ticks. That core requires tungsten, lead shielding and a Nether Star as its nuclear milestone."
+      ],
+      "tasks": [
+        {
+          "id": "5E60000000100005",
+          "type": "item",
+          "item": {
+            "id": "revoextraction:tungsten_survey_core",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5E60000000000006",
+      "title": "Nether Wart and Ghast Tears",
+      "x": 6.0,
+      "y": 3.0,
+      "description": [
+        "Craft the first wart using soul sand, compost, Blaze powder and a steel plate. Grow it in the Iron Greenhouse with soul sand directly beneath the centre bed. Steel Harvester Ghast mode produces tears."
+      ],
+      "tasks": [
+        {
+          "id": "5E60000000100006",
+          "type": "item",
+          "item": {
+            "id": "minecraft:ghast_tear",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5E60000000000007",
+      "title": "End Cultivation",
+      "x": 0.0,
+      "y": 6.0,
+      "description": [
+        "Heated mixing of obsidian, Ender Pearl, quartz and Fluix makes four End Stone. Combine End Stone, Ender Pearl and compost for chorus fruit. Iron Greenhouse chorus needs End Stone beneath the centre bed. Steel Harvester Shulker mode requires a retained Netherite ingot in its hatch starter slot."
+      ],
+      "tasks": [
+        {
+          "id": "5E60000000100007",
+          "type": "item",
+          "item": {
+            "id": "minecraft:shulker_shell",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5E60000000000008",
+      "title": "Wither Route",
+      "x": 3.0,
+      "y": 6.0,
+      "description": [
+        "Steel Harvester Wither Skeleton mode requires a retained Netherite ingot. It produces bones/coal; every 64th completed harvest also yields a skull. Saved cycle count prevents blocked output rerolls. Use three skulls and four soul sand to summon and defeat the vanilla Wither for a Nether Star. Prepare an arena; the machine never spawns the boss."
+      ],
+      "tasks": [
+        {
+          "id": "5E60000000100008",
+          "type": "item",
+          "item": {
+            "id": "minecraft:wither_skeleton_skull",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5E60000000000009",
+      "title": "First Netherite Template",
+      "x": 6.0,
+      "y": 6.0,
+      "description": [
+        "Craft a blank from diamond block, Netherite ingot and steel plate, then mechanically press it. Vanilla duplication remains available."
+      ],
+      "tasks": [
+        {
+          "id": "5E60000000100009",
+          "type": "item",
+          "item": {
+            "id": "minecraft:netherite_upgrade_smithing_template",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5E6000000000000A",
+      "title": "Poppy Starter",
+      "x": 0.0,
+      "y": 9.0,
+      "description": [
+        "Compost + bone meal + wheat seed crafts the first poppy. The wooden greenhouse retains it and grows three per harvest, closing the red dye / beetroot starter loop."
+      ],
+      "tasks": [
+        {
+          "id": "5E6000000010000A",
+          "type": "item",
+          "item": {
+            "id": "minecraft:poppy",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    }
+  ]
+}

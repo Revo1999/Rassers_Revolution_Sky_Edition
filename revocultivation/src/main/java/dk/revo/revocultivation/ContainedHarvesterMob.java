@@ -14,7 +14,7 @@ public final class ContainedHarvesterMob {
     private Mob mob;
 
     public static EntityType<? extends Mob> type(int program){
-        return switch(program){case 20->EntityType.ZOMBIE;case 21->EntityType.SKELETON;case 22->EntityType.SPIDER;case 23->EntityType.COW;case 24->EntityType.BLAZE;case 25->EntityType.SLIME;case 26->EntityType.ENDERMAN;case 27->EntityType.MAGMA_CUBE;default->null;};
+        return switch(program){case 20->EntityType.ZOMBIE;case 21->EntityType.SKELETON;case 22->EntityType.SPIDER;case 23->EntityType.COW;case 24->EntityType.BLAZE;case 25->EntityType.SLIME;case 26->EntityType.ENDERMAN;case 27->EntityType.MAGMA_CUBE;case 28->EntityType.GHAST;case 29->EntityType.SHULKER;case 30->EntityType.WITHER_SKELETON;default->null;};
     }
     public Mob get(Level level,BlockPos bed,int program){
         var type=type(program);if(level==null||type==null)return null;

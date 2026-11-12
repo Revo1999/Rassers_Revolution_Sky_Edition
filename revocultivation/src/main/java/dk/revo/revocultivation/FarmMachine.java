@@ -129,7 +129,8 @@ public class FarmMachine extends BlockEntity implements dk.revo.revolib.energy.I
             if(!realTree.areaClear(level,at(0,0,0))){state=6;return;}
         }
         if(kind().needsDaylight()&&(!level.isDay()||!level.canSeeSky(at(0,kind().realTree()?8:kind().height,0)))){state=4;return;}
-        var products=MachineKind.products(program);
+        if(program==17&&!level.getBlockState(at(0,-1,0)).is(net.minecraft.world.level.block.Blocks.SOUL_SAND)||program==18&&!level.getBlockState(at(0,-1,0)).is(net.minecraft.world.level.block.Blocks.END_STONE)){state=2;return;}
+        var products=MachineKind.products(program,cycles);
         if(kind().electric()||work==0||work+1>=kind().ticks||state==5){if(!canFit(products)){export();if(!canFit(products)){state=5;return;}}}
         if(kind().electric()){
             if(!(level.getBlockEntity(at(kind().radius(),0,kind().radius())) instanceof dk.revo.revolib.energy.DirectConverter converter)||!converter.conversion().feToEu()){state=10;return;}
