@@ -14,7 +14,7 @@ Heated mixing: four cobblestone, one Ender Pearl and one Certus dust make four S
 
 ## Salt Crystal Growth
 
-Craft one salt crystal starter from quartz, sand, water bucket and compost; the bucket is returned. Put the starter in a wooden greenhouse and supply water. It is retained; each harvest consumes 250 mB and grows one MI salt dust. No salt is required to start.
+Craft one salt crystal geode from quartz, sand, water bucket and compost; the bucket is returned. Put the salt crystal geode in an Iron Greenhouse and supply water and 8 EU/t through its integrated converter. It is retained; each harvest consumes 250 mB and grows one MI salt dust. No salt is required to start.
 
 ## Advanced Geology
 

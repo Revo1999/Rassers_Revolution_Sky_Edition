@@ -170,6 +170,8 @@ public class DrillMachine extends BlockEntity {
             var center=m.at(0,0,0);
             server.sendParticles(net.minecraft.core.particles.ParticleTypes.DRIPPING_WATER,center.getX()+.5,center.getY()+1.12,center.getZ()+.5,3,.55,.03,.55,0);
         }
+        dk.revo.revolib.MachineFeedback.work(l,p,m.tier()==DrillTier.WOODEN?dk.revo.revolib.MachineFeedback.Voice.WOOD_DRILL:dk.revo.revolib.MachineFeedback.Voice.METAL_DRILL);
+        dk.revo.revolib.MachineFeedback.particles(l,m.at(0,0,0),new net.minecraft.core.particles.BlockParticleOption(net.minecraft.core.particles.ParticleTypes.BLOCK,net.minecraft.world.level.block.Blocks.STONE.defaultBlockState()),.15);
         m.work+=Math.min(Math.abs(rpm),256);
         if(m.work>=m.tier().workPerItem){m.work-=m.tier().workPerItem;ItemHandlerHelper.insertItemStacked(m.inventory,result,false);m.getPersistentData().putInt("cycle",m.getPersistentData().getInt("cycle")+1);m.ejectOutput();}
         m.setChanged();
@@ -179,4 +181,3 @@ public class DrillMachine extends BlockEntity {
     @Override public CompoundTag getUpdateTag(HolderLookup.Provider p){return saveWithoutMetadata(p);}
     @Override public ClientboundBlockEntityDataPacket getUpdatePacket(){return ClientboundBlockEntityDataPacket.create(this);}
 }
-

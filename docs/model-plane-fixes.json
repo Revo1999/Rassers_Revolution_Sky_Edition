@@ -1,0 +1,362 @@
+[
+  {
+    "file": "revocultivation/src/main/resources/assets/revocultivation/models/block/barred_panel.json",
+    "pairs_before": 12,
+    "remaining": 0
+  },
+  {
+    "file": "revocultivation/src/main/resources/assets/revocultivation/models/block/collection_grate.json",
+    "pairs_before": 12,
+    "remaining": 0
+  },
+  {
+    "file": "revocultivation/src/main/resources/assets/revocultivation/models/block/greenhouse_body.json",
+    "pairs_before": 20,
+    "remaining": 0
+  },
+  {
+    "file": "revocultivation/src/main/resources/assets/revocultivation/models/block/iron_greenhouse_body.json",
+    "pairs_before": 14,
+    "remaining": 0
+  },
+  {
+    "file": "revocultivation/src/main/resources/assets/revocultivation/models/block/iron_grow_light.json",
+    "pairs_before": 1,
+    "remaining": 0
+  },
+  {
+    "file": "revocultivation/src/main/resources/assets/revocultivation/models/block/mob_filter.json",
+    "pairs_before": 12,
+    "remaining": 0
+  },
+  {
+    "file": "revocultivation/src/main/resources/assets/revocultivation/models/block/mob_harvester_body.json",
+    "pairs_before": 39,
+    "remaining": 0
+  },
+  {
+    "file": "revocultivation/src/main/resources/assets/revocultivation/models/block/mob_harvester_spider.json",
+    "pairs_before": 18,
+    "remaining": 0
+  },
+  {
+    "file": "revocultivation/src/main/resources/assets/revocultivation/models/block/steel_mob_harvester_body.json",
+    "pairs_before": 23,
+    "remaining": 0
+  },
+  {
+    "file": "revocultivation/src/main/resources/assets/revocultivation/models/block/steel_tree_grower_body.json",
+    "pairs_before": 72,
+    "remaining": 0
+  },
+  {
+    "file": "revocultivation/src/main/resources/assets/revocultivation/models/block/trading_colony.json",
+    "pairs_before": 3,
+    "remaining": 0
+  },
+  {
+    "file": "revocultivation/src/main/resources/assets/revocultivation/models/block/tree_grower_body.json",
+    "pairs_before": 14,
+    "remaining": 0
+  },
+  {
+    "file": "revocultivation/src/main/resources/assets/revocultivation/models/block/wooden_casing.json",
+    "pairs_before": 2,
+    "remaining": 0
+  },
+  {
+    "file": "revoextraction/src/main/resources/assets/revoextraction/models/block/electric_drill.json",
+    "pairs_before": 10,
+    "remaining": 0
+  },
+  {
+    "file": "revoextraction/src/main/resources/assets/revoextraction/models/block/iron_drill_body.json",
+    "pairs_before": 44,
+    "remaining": 0
+  },
+  {
+    "file": "revoextraction/src/main/resources/assets/revoextraction/models/block/iron_drill_output_hatch.json",
+    "pairs_before": 5,
+    "remaining": 0
+  },
+  {
+    "file": "revoextraction/src/main/resources/assets/revoextraction/models/block/sluice/body_0.json",
+    "pairs_before": 27,
+    "remaining": 0
+  },
+  {
+    "file": "revoextraction/src/main/resources/assets/revoextraction/models/block/sluice/body_1.json",
+    "pairs_before": 2,
+    "remaining": 0
+  },
+  {
+    "file": "revoextraction/src/main/resources/assets/revoextraction/models/block/sluice/body_2.json",
+    "pairs_before": 18,
+    "remaining": 0
+  },
+  {
+    "file": "revoextraction/src/main/resources/assets/revoextraction/models/block/sluice/crank.json",
+    "pairs_before": 12,
+    "remaining": 0
+  },
+  {
+    "file": "revoextraction/src/main/resources/assets/revoextraction/models/block/sluice/feeder.json",
+    "pairs_before": 18,
+    "remaining": 0
+  },
+  {
+    "file": "revoextraction/src/main/resources/assets/revoextraction/models/block/sluice/gate.json",
+    "pairs_before": 10,
+    "remaining": 0
+  },
+  {
+    "file": "revoextraction/src/main/resources/assets/revoextraction/models/block/sluice/rod.json",
+    "pairs_before": 8,
+    "remaining": 0
+  },
+  {
+    "file": "revoextraction/src/main/resources/assets/revoextraction/models/block/sluice/shaker.json",
+    "pairs_before": 226,
+    "remaining": 0
+  },
+  {
+    "file": "revoextraction/src/main/resources/assets/revoextraction/models/block/sluice/trough.json",
+    "pairs_before": 16,
+    "remaining": 0
+  },
+  {
+    "file": "revoextraction/src/main/resources/assets/revoextraction/models/block/steel_drill_body.json",
+    "pairs_before": 16,
+    "remaining": 0
+  },
+  {
+    "file": "revoextraction/src/main/resources/assets/revoextraction/models/block/steel_drill_core.json",
+    "pairs_before": 1,
+    "remaining": 0
+  },
+  {
+    "file": "revoextraction/src/main/resources/assets/revoextraction/models/block/wooden_drill_casing.json",
+    "pairs_before": 4,
+    "remaining": 0
+  },
+  {
+    "file": "revoextraction/src/main/resources/assets/revoextraction/models/block/wooden_drill_input.json",
+    "pairs_before": 1,
+    "remaining": 0
+  },
+  {
+    "file": "revoextraction/src/main/resources/assets/revoextraction/models/block/wooden_drill_output_hatch.json",
+    "pairs_before": 5,
+    "remaining": 0
+  },
+  {
+    "file": "revoextraction/src/main/resources/assets/revoextraction/models/block/wooden_drill_support.json",
+    "pairs_before": 8,
+    "remaining": 0
+  },
+  {
+    "file": "revoextraction/src/main/resources/assets/revoextraction/models/item/mechanical_sluice.json",
+    "pairs_before": 309,
+    "remaining": 0
+  },
+  {
+    "file": "revoindustry/src/main/resources/assets/revoindustry/models/item/advanced_feeding_helmet.json",
+    "pairs_before": 3,
+    "remaining": 0
+  },
+  {
+    "file": "revoindustry/src/main/resources/assets/revoindustry/models/item/elite_feeding_helmet.json",
+    "pairs_before": 4,
+    "remaining": 0
+  },
+  {
+    "file": "revoindustry/src/main/resources/assets/revoindustry/models/item/feeding_helmet.json",
+    "pairs_before": 3,
+    "remaining": 0
+  },
+  {
+    "file": "revostorage/src/main/resources/assets/revostorage/models/block/chest_drive.json",
+    "pairs_before": 3,
+    "remaining": 0
+  },
+  {
+    "file": "art/blockbench/first-tier-machines/barred_panel.bbmodel",
+    "pairs_before": 12,
+    "adjusted_cubes": 4,
+    "remaining": 0
+  },
+  {
+    "file": "art/blockbench/first-tier-machines/collection_grate.bbmodel",
+    "pairs_before": 12,
+    "adjusted_cubes": 4,
+    "remaining": 0
+  },
+  {
+    "file": "art/blockbench/first-tier-machines/greenhouse_assembled.bbmodel",
+    "pairs_before": 20,
+    "adjusted_cubes": 12,
+    "remaining": 0
+  },
+  {
+    "file": "art/blockbench/first-tier-machines/mob_filter.bbmodel",
+    "pairs_before": 12,
+    "adjusted_cubes": 4,
+    "remaining": 0
+  },
+  {
+    "file": "art/blockbench/first-tier-machines/mob_harvester_assembled.bbmodel",
+    "pairs_before": 39,
+    "adjusted_cubes": 23,
+    "remaining": 0
+  },
+  {
+    "file": "art/blockbench/first-tier-machines/mob_harvester_skeleton_assembled.bbmodel",
+    "pairs_before": 38,
+    "adjusted_cubes": 22,
+    "remaining": 0
+  },
+  {
+    "file": "art/blockbench/first-tier-machines/mob_harvester_spider_assembled.bbmodel",
+    "pairs_before": 56,
+    "adjusted_cubes": 30,
+    "remaining": 0
+  },
+  {
+    "file": "art/blockbench/first-tier-machines/tree_grower_assembled.bbmodel",
+    "pairs_before": 14,
+    "adjusted_cubes": 10,
+    "remaining": 0
+  },
+  {
+    "file": "art/blockbench/first-tier-machines/wooden_casing.bbmodel",
+    "pairs_before": 2,
+    "adjusted_cubes": 1,
+    "remaining": 0
+  },
+  {
+    "file": "art/blockbench/metal-farms/iron_greenhouse_assembled.bbmodel",
+    "pairs_before": 18,
+    "adjusted_cubes": 9,
+    "remaining": 0
+  },
+  {
+    "file": "art/blockbench/metal-farms/iron_grow_light.bbmodel",
+    "pairs_before": 1,
+    "adjusted_cubes": 1,
+    "remaining": 0
+  },
+  {
+    "file": "art/blockbench/metal-farms/steel_mob_harvester_assembled.bbmodel",
+    "pairs_before": 23,
+    "adjusted_cubes": 15,
+    "remaining": 0
+  },
+  {
+    "file": "art/blockbench/metal-farms/steel_tree_grower_assembled.bbmodel",
+    "pairs_before": 73,
+    "adjusted_cubes": 48,
+    "remaining": 0
+  },
+  {
+    "file": "art/blockbench/revoextraction/iron_drill_assembled.bbmodel",
+    "pairs_before": 44,
+    "adjusted_cubes": 25,
+    "remaining": 0
+  },
+  {
+    "file": "art/blockbench/revoextraction/iron_drill_output_hatch.bbmodel",
+    "pairs_before": 5,
+    "adjusted_cubes": 4,
+    "remaining": 0
+  },
+  {
+    "file": "art/blockbench/revoextraction/iron_drill_unassembled.bbmodel",
+    "pairs_before": 53,
+    "adjusted_cubes": 21,
+    "remaining": 0
+  },
+  {
+    "file": "art/blockbench/revoextraction/mechanical-sluice/models/mechanical_sluice.bbmodel",
+    "pairs_before": 376,
+    "adjusted_cubes": 98,
+    "remaining": 0
+  },
+  {
+    "file": "art/blockbench/revoextraction/steel/steel_drill_assembled.bbmodel",
+    "pairs_before": 16,
+    "adjusted_cubes": 11,
+    "remaining": 0
+  },
+  {
+    "file": "art/blockbench/revoextraction/steel/steel_drill_core.bbmodel",
+    "pairs_before": 1,
+    "adjusted_cubes": 1,
+    "remaining": 0
+  },
+  {
+    "file": "art/blockbench/revoextraction/steel/steel_drill_unassembled.bbmodel",
+    "pairs_before": 3,
+    "adjusted_cubes": 3,
+    "remaining": 0
+  },
+  {
+    "file": "art/blockbench/revoextraction/wooden_drill_casing.bbmodel",
+    "pairs_before": 4,
+    "adjusted_cubes": 2,
+    "remaining": 0
+  },
+  {
+    "file": "art/blockbench/revoextraction/wooden_drill_input.bbmodel",
+    "pairs_before": 1,
+    "adjusted_cubes": 1,
+    "remaining": 0
+  },
+  {
+    "file": "art/blockbench/revoextraction/wooden_drill_output_hatch.bbmodel",
+    "pairs_before": 5,
+    "adjusted_cubes": 4,
+    "remaining": 0
+  },
+  {
+    "file": "art/blockbench/revoextraction/wooden_drill_support.bbmodel",
+    "pairs_before": 8,
+    "adjusted_cubes": 4,
+    "remaining": 0
+  },
+  {
+    "file": "art/blockbench/revoextraction/wooden_drill_unassembled.bbmodel",
+    "pairs_before": 253,
+    "adjusted_cubes": 74,
+    "remaining": 0
+  },
+  {
+    "file": "art/blockbench/revostorage/chest_drive.bbmodel",
+    "pairs_before": 3,
+    "adjusted_cubes": 3,
+    "remaining": 0
+  },
+  {
+    "file": "art/blockbench/revostorage/electric_drill.bbmodel",
+    "pairs_before": 10,
+    "adjusted_cubes": 5,
+    "remaining": 0
+  },
+  {
+    "file": "art/blockbench/revostorage/trading_colony.bbmodel",
+    "pairs_before": 3,
+    "adjusted_cubes": 1,
+    "remaining": 0
+  },
+  {
+    "file": "revocultivation/src/main/resources/assets/revocultivation/models/block/iron_greenhouse_glass.json",
+    "cross_part_pairs_before": 3,
+    "remaining": 0,
+    "method": "Align opaque/translucent bounds to audited normalized native assembled source"
+  },
+  {
+    "file": "revocultivation/src/main/resources/assets/revocultivation/models/block/steel_tree_grower_glass.json",
+    "cross_part_pairs_before": 3,
+    "remaining": 0,
+    "method": "Align opaque/translucent bounds to audited normalized native assembled source"
+  }
+]

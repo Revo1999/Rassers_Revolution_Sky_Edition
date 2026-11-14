@@ -6,5 +6,5 @@ import net.neoforged.fml.common.Mod;
 @Mod(RevoLib.MOD_ID)
 public final class RevoLib {
     public static final String MOD_ID = "revolib";
-    public RevoLib() { }
+    public RevoLib(net.neoforged.bus.api.IEventBus bus) { MachineFeedback.SOUNDS.register(bus); }
 }

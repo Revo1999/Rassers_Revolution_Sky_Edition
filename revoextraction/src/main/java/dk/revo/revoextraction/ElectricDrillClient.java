@@ -11,6 +11,14 @@ import net.neoforged.neoforge.client.event.RegisterMenuScreensEvent;
 @EventBusSubscriber(modid="revoextraction",bus=EventBusSubscriber.Bus.MOD,value=Dist.CLIENT)
 public class ElectricDrillClient {
  @SubscribeEvent public static void screens(RegisterMenuScreensEvent e){e.register(RevoExtraction.ELECTRIC_MENU.get(),Screen::new);}
+ @SubscribeEvent public static void models(net.neoforged.neoforge.client.event.ModelEvent.RegisterAdditional e){e.register(fan());}
+ @SubscribeEvent public static void renderers(net.neoforged.neoforge.client.event.EntityRenderersEvent.RegisterRenderers e){e.registerBlockEntityRenderer(RevoExtraction.ELECTRIC_ENTITY.get(),c->new net.minecraft.client.renderer.blockentity.BlockEntityRenderer<ElectricDrillEntity>(){
+  public void render(ElectricDrillEntity m,float partial,com.mojang.blaze3d.vertex.PoseStack pose,net.minecraft.client.renderer.MultiBufferSource buffers,int light,int overlay){
+   var mc=net.minecraft.client.Minecraft.getInstance();pose.pushPose();pose.translate(.5,.5,0);pose.mulPose(com.mojang.math.Axis.ZP.rotationDegrees(net.minecraft.util.Mth.lerp(partial,m.previousAngle,m.angle)));pose.translate(-.5,-.5,0);
+   mc.getBlockRenderer().getModelRenderer().renderModel(pose.last(),buffers.getBuffer(net.minecraft.client.renderer.RenderType.cutout()),null,mc.getModelManager().getModel(fan()),1,1,1,light,overlay);pose.popPose();
+  }
+ });}
+ private static net.minecraft.client.resources.model.ModelResourceLocation fan(){return net.minecraft.client.resources.model.ModelResourceLocation.standalone(net.minecraft.resources.ResourceLocation.parse("revoextraction:block/electric_drill_fan"));}
  public static class Screen extends AbstractContainerScreen<ElectricDrillMenu>{
   public Screen(ElectricDrillMenu m,Inventory inv,Component title){super(m,inv,title);imageWidth=176;imageHeight=210;inventoryLabelY=116;}
   protected void init(){super.init();addRenderableWidget(Button.builder(Component.literal("Next geological program"),b->minecraft.gameMode.handleInventoryButtonClick(menu.containerId,(menu.data.get(3)+1)%11)).bounds(leftPos+8,topPos+27,160,20).build());}

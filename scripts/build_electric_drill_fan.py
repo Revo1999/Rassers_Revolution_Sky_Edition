@@ -1,0 +1,10 @@
+"""Native Blockbench Java cooling fan; five cubes, vanilla iron, 16 pixels/block."""
+import sys,pathlib,json,zipfile,base64
+from blockbench_mcp_client import Blockbench,literal,embedded
+R=pathlib.Path(__file__).resolve().parents[1];b=Blockbench();b.call('get_capabilities',{'include_tools':True})
+z=zipfile.ZipFile(pathlib.Path.home()/'.gradle/caches/neoformruntime/artifacts/minecraft_1.21.1_client.jar');texture='data:image/png;base64,'+base64.b64encode(z.read('assets/minecraft/textures/block/iron_block.png')).decode()
+parts=[('fan_left',[4,7.5,-1],[7,8.5,-.75]),('fan_right',[9,7.5,-1],[12,8.5,-.75]),('fan_bottom',[7.5,4,-1],[8.5,7,-.75]),('fan_top',[7.5,9,-1],[8.5,12,-.75]),('fan_hub',[7,7,-1.2],[9,9,-.75])]
+code='''(async()=>{const d=DATA;newProject(Formats.java_block);Project.name="electric_drill_fan";Project.texture_width=Project.texture_height=16;const t=new Texture({name:"iron_block.png",uv_width:16,uv_height:16}).fromDataURL(d.texture).add(false);const made=[];Undo.initEdit({elements:made,outliner:true});for(const p of d.parts){const c=new Cube({name:p[0],from:p[1],to:p[2],autouv:0,box_uv:false}).init();made.push(c);for(const [n,f] of Object.entries(c.faces)){f.texture=t.uuid;const ax=n==="up"||n==="down"?[0,2]:n==="east"||n==="west"?[2,1]:[0,1];f.uv=[0,0,p[2][ax[0]]-p[1][ax[0]],p[2][ax[1]]-p[1][ax[1]]];}}await new Promise(r=>setTimeout(r,80));Canvas.updateAll();Undo.finishEdit("Add electric drill cooling fan");return true;})()'''.replace('DATA',literal({'texture':texture,'parts':parts}))
+b.call('risky_eval',{'code':code});A=R/'art/blockbench/revostorage';(A/'electric_drill_fan.bbmodel').write_text(embedded(b.call('export_model',{'codec_id':'project','result_format':'embedded','max_content_length':2000000})))
+d=json.loads(embedded(b.call('export_model',{'codec_id':'java_block','result_format':'embedded','max_content_length':2000000})));d['textures']={k:'minecraft:block/iron_block' for k in d['textures']};(R/'revoextraction/src/main/resources/assets/revoextraction/models/block/electric_drill_fan.json').write_text(json.dumps(d,indent=2)+'\n')
+print('Native electric cooling fan exported')

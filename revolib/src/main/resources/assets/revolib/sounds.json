@@ -1,0 +1,146 @@
+{
+  "machine.wood_drill": {
+    "subtitle": "subtitles.revolib.machine.wood_drill",
+    "sounds": [
+      {
+        "name": "revolib:machine/wood_drill",
+        "attenuation_distance": 12
+      }
+    ]
+  },
+  "machine.metal_drill": {
+    "subtitle": "subtitles.revolib.machine.metal_drill",
+    "sounds": [
+      {
+        "name": "revolib:machine/metal_drill",
+        "attenuation_distance": 12
+      }
+    ]
+  },
+  "machine.electric_drill": {
+    "subtitle": "subtitles.revolib.machine.electric_drill",
+    "sounds": [
+      {
+        "name": "revolib:machine/electric_drill",
+        "attenuation_distance": 12
+      }
+    ]
+  },
+  "machine.irrigation": {
+    "subtitle": "subtitles.revolib.machine.irrigation",
+    "sounds": [
+      {
+        "name": "revolib:machine/irrigation",
+        "attenuation_distance": 12
+      }
+    ]
+  },
+  "machine.harvester": {
+    "subtitle": "subtitles.revolib.machine.harvester",
+    "sounds": [
+      {
+        "name": "revolib:machine/harvester",
+        "attenuation_distance": 12
+      }
+    ]
+  },
+  "machine.compost": {
+    "subtitle": "subtitles.revolib.machine.compost",
+    "sounds": [
+      {
+        "name": "revolib:machine/compost",
+        "attenuation_distance": 12
+      }
+    ]
+  },
+  "machine.silk": {
+    "subtitle": "subtitles.revolib.machine.silk",
+    "sounds": [
+      {
+        "name": "revolib:machine/silk",
+        "attenuation_distance": 12
+      }
+    ]
+  },
+  "machine.sluice": {
+    "subtitle": "subtitles.revolib.machine.sluice",
+    "sounds": [
+      {
+        "name": "revolib:machine/sluice",
+        "attenuation_distance": 12
+      }
+    ]
+  },
+  "machine.vacuum": {
+    "subtitle": "subtitles.revolib.machine.vacuum",
+    "sounds": [
+      {
+        "name": "revolib:machine/vacuum",
+        "attenuation_distance": 12
+      }
+    ]
+  },
+  "machine.crucible": {
+    "subtitle": "subtitles.revolib.machine.crucible",
+    "sounds": [
+      {
+        "name": "revolib:machine/crucible",
+        "attenuation_distance": 12
+      }
+    ]
+  },
+  "machine.rain": {
+    "subtitle": "subtitles.revolib.machine.rain",
+    "sounds": [
+      {
+        "name": "revolib:machine/rain",
+        "attenuation_distance": 12
+      }
+    ]
+  },
+  "machine.converter": {
+    "subtitle": "subtitles.revolib.machine.converter",
+    "sounds": [
+      {
+        "name": "revolib:machine/converter",
+        "attenuation_distance": 12
+      }
+    ]
+  },
+  "machine.storage": {
+    "subtitle": "subtitles.revolib.machine.storage",
+    "sounds": [
+      {
+        "name": "revolib:machine/storage",
+        "attenuation_distance": 12
+      }
+    ]
+  },
+  "machine.furnace": {
+    "subtitle": "subtitles.revolib.machine.furnace",
+    "sounds": [
+      {
+        "name": "revolib:machine/furnace",
+        "attenuation_distance": 12
+      }
+    ]
+  },
+  "machine.trade": {
+    "subtitle": "subtitles.revolib.machine.trade",
+    "sounds": [
+      {
+        "name": "revolib:machine/trade",
+        "attenuation_distance": 12
+      }
+    ]
+  },
+  "machine.interact": {
+    "subtitle": "subtitles.revolib.machine.interact",
+    "sounds": [
+      {
+        "name": "revolib:machine/interact",
+        "attenuation_distance": 12
+      }
+    ]
+  }
+}

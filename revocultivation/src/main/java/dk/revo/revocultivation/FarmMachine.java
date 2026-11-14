@@ -142,6 +142,9 @@ public class FarmMachine extends BlockEntity implements dk.revo.revolib.energy.I
             if(work>=kind().ticks/2&&!realTree.exists()&&!realTree.grow(level,at(0,0,0))){state=6;return;}
         }
         state=1;work++;
+        dk.revo.revolib.MachineFeedback.work(level,worldPosition,kind().isHarvester()?dk.revo.revolib.MachineFeedback.Voice.HARVESTER:dk.revo.revolib.MachineFeedback.Voice.IRRIGATION);
+        if(program==15||program==19)dk.revo.revolib.MachineFeedback.particles(level,at(0,1,0),net.minecraft.core.particles.ParticleTypes.BUBBLE_POP,.35);
+        else if(kind().isTree())dk.revo.revolib.MachineFeedback.particles(level,at(0,1,0),net.minecraft.core.particles.ParticleTypes.HAPPY_VILLAGER,.3);
         if(work>=kind().ticks){
             if(kind().realTree()){
                 if(!realTree.exists()||!realTree.intact(level)){state=6;return;}

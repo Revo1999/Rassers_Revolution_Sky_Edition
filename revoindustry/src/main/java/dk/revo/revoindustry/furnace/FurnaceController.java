@@ -87,6 +87,7 @@ public final class FurnaceController extends MultiblockMachineBlockEntity implem
    if(j.progress>=j.duration){insert(j.output);experience+=j.experience*j.input.getCount();jobs[lane]=null;}
   }
   status=invalid?"Recipe changed: stored ingredients are safe":blocked?"Output blocked":needsFuel?"More fuel / fuel throughput needed":working?"Smelting":"Waiting for smelting input";
+  if(working)dk.revo.revolib.MachineFeedback.work(level,worldPosition,dk.revo.revolib.MachineFeedback.Voice.FURNACE);
   active.updateActive(working,this);setChanged();
  }
  private Job startJob(){

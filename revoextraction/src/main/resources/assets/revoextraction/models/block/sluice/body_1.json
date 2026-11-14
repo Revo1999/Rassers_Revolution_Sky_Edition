@@ -332,12 +332,12 @@
       "name": "side_copper_vessel",
       "from": [
         18,
-        2,
+        1.996,
         1
       ],
       "to": [
         22,
-        11,
+        11.004,
         7
       ],
       "rotation": {

@@ -76,7 +76,7 @@
       "x": 0.0,
       "y": 3.0,
       "description": [
-        "Craft one salt crystal starter from quartz, sand, water bucket and compost; the bucket is returned. Put the starter in a wooden greenhouse and supply water. It is retained; each harvest consumes 250 mB and grows one MI salt dust. No salt is required to start."
+        "Craft one salt crystal geode from quartz, sand, water bucket and compost; the bucket is returned. Put the salt crystal geode in an Iron Greenhouse and supply water and 8 EU/t through its integrated converter. It is retained; each harvest consumes 250 mB and grows one MI salt dust. No salt is required to start."
       ],
       "tasks": [
         {

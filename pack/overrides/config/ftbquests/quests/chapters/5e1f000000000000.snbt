@@ -75,7 +75,7 @@
       "y": 0.0,
       "description": [
         "The AE2 guide also contains installed guide pages for AdvancedAE, ExtendedAE, Wireless Terminals, AE2 Helpers, MEGA Cells and Applied Create.",
-        "These addons share the AE2 guide instead of shipping separate physical manuals. No unlock guard is applied yet.",
+        "These addons share the AE2 guide. The guide is freely available; AE2 machines and processor assembly require MI Electronic Circuits (MV), including the MI assembler route.",
         "Free quest manuals are knowledge-only: recipes that consume them for crafting or recycling are removed. Normal books must still be obtained through progression."
       ],
       "dependencies": [],

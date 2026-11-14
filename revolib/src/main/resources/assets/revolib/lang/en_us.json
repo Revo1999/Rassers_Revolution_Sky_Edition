@@ -1,0 +1,18 @@
+{
+  "subtitles.revolib.machine.wood_drill": "Wooden drill rattles",
+  "subtitles.revolib.machine.metal_drill": "Drill grinds",
+  "subtitles.revolib.machine.electric_drill": "Electric drill whirs",
+  "subtitles.revolib.machine.irrigation": "Irrigation trickles",
+  "subtitles.revolib.machine.harvester": "Harvester cycles",
+  "subtitles.revolib.machine.compost": "Compost settles",
+  "subtitles.revolib.machine.silk": "Silkworms rustle",
+  "subtitles.revolib.machine.sluice": "Sluice washes",
+  "subtitles.revolib.machine.vacuum": "Vacuum draws items",
+  "subtitles.revolib.machine.crucible": "Crucible bubbles",
+  "subtitles.revolib.machine.rain": "Rain fills barrel",
+  "subtitles.revolib.machine.converter": "Converter hums",
+  "subtitles.revolib.machine.storage": "Storage crank turns",
+  "subtitles.revolib.machine.furnace": "Furnace roars",
+  "subtitles.revolib.machine.trade": "Colony trades",
+  "subtitles.revolib.machine.interact": "Machine latch clicks"
+}

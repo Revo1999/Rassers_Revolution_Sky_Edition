@@ -23,7 +23,7 @@ for tier,name in enumerate(IDS):
     part('brow_brim',[-4.6,6.1,-5.1],[4.6,6.8,-3.5],'steel')
     part('ration_module',[4.8,4.6,.2],[6.8,7.4,3.2],'canvas' if tier==0 else 'steel')
     part('hose_coupling',[4.8,3.6,-1.4],[6,4.6,.9],'brass')
-    part('hose_down',[4.85,1.2,-2.1],[5.75,3.6,-1.2],'rubber')
+    part('hose_down',[4.85,1.4,-2.1],[5.75,3.6,-1.2],'rubber')
     part('hose_to_face',[4.85,.5,-4.9],[5.75,1.4,-1.2],'rubber')
     part('hose_to_mouth',[.8,.5,-5],[4.85,1.4,-4.1],'rubber')
     part('mouthpiece',[-.8,.3,-5.3],[1.2,1.6,-4.4],'steel')
@@ -37,7 +37,7 @@ for tier,name in enumerate(IDS):
     if tier==2:
         part('rear_storage_manifold',[-3.6,3.7,4.8],[3.6,7.5,6.2],'steel')
         for x in [-3.1,-.8,1.5]:part('ration_canister_'+str(x),[x,3.5,6.2],[x+1.6,7.4,7.3],'tank')
-        part('left_temple_plate',[-5.25,5.5,-3.1],[-4.8,7.5,.1],'steel')
+        part('left_temple_plate',[-5.25,5.5,-3.1],[-4.796,7.5,.1],'steel')
         part('right_temple_plate',[4.8,5.5,-3.1],[5.25,7.5,.1],'steel')
         part('status_panel',[-2.2,7.1,-5.4],[2.2,7.9,-5.1],'control')
     x=y=2;row=0

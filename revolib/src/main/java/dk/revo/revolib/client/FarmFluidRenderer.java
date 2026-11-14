@@ -18,14 +18,23 @@ public final class FarmFluidRenderer {
         int tint=BiomeColors.getAverageWaterColor(level,pos);
         float left=low[0]/divisor,right=high[0]/divisor,front=low[2]/divisor,back=high[2]/divisor,bottom=low[1]/divisor;
         float top=(low[1]+(high[1]-low[1])*amount/capacity)/divisor;
-        float height=(top-bottom)*divisor/16,width=(high[0]-low[0])/16,depth=(high[2]-low[2])/16;
-        quad(vertices,pose,sprite,tint,light,overlay,0,1,0,width,depth,new float[][]{{left,top,front},{left,top,back},{right,top,back},{right,top,front}});
+        // Tile every block. UVs outside [0,1] would sample neighboring atlas sprites.
+        float step=16/divisor;
+        for(float x=left;x<right;){float x1=Math.min(right,x+step);
+            for(float z=front;z<back;){float z1=Math.min(back,z+step);
+                quad(vertices,pose,sprite,tint,light,overlay,0,1,0,(x1-x)/step,(z1-z)/step,new float[][]{{x,top,z},{x,top,z1},{x1,top,z1},{x1,top,z}});z=z1;
+            }x=x1;
+        }
         for(float y0=bottom;y0<top;){
-            float y1=Math.min(top,y0+16/divisor),segment=(y1-y0)*divisor/16;
-            quad(vertices,pose,sprite,tint,light,overlay,0,0,-1,width,segment,new float[][]{{right,y0,front},{left,y0,front},{left,y1,front},{right,y1,front}});
-            quad(vertices,pose,sprite,tint,light,overlay,0,0,1,width,segment,new float[][]{{left,y0,back},{right,y0,back},{right,y1,back},{left,y1,back}});
-            quad(vertices,pose,sprite,tint,light,overlay,-1,0,0,depth,segment,new float[][]{{left,y0,front},{left,y0,back},{left,y1,back},{left,y1,front}});
-            quad(vertices,pose,sprite,tint,light,overlay,1,0,0,depth,segment,new float[][]{{right,y0,back},{right,y0,front},{right,y1,front},{right,y1,back}});
+            float y1=Math.min(top,y0+step),segment=(y1-y0)/step;
+            for(float x=left;x<right;){float x1=Math.min(right,x+step),width=(x1-x)/step;
+                quad(vertices,pose,sprite,tint,light,overlay,0,0,-1,width,segment,new float[][]{{x1,y0,front},{x,y0,front},{x,y1,front},{x1,y1,front}});
+                quad(vertices,pose,sprite,tint,light,overlay,0,0,1,width,segment,new float[][]{{x,y0,back},{x1,y0,back},{x1,y1,back},{x,y1,back}});x=x1;
+            }
+            for(float z=front;z<back;){float z1=Math.min(back,z+step),depth=(z1-z)/step;
+                quad(vertices,pose,sprite,tint,light,overlay,-1,0,0,depth,segment,new float[][]{{left,y0,z},{left,y0,z1},{left,y1,z1},{left,y1,z}});
+                quad(vertices,pose,sprite,tint,light,overlay,1,0,0,depth,segment,new float[][]{{right,y0,z1},{right,y0,z},{right,y1,z},{right,y1,z1}});z=z1;
+            }
             y0=y1;
         }
     }

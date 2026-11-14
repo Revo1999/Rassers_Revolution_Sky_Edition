@@ -93,6 +93,8 @@ public final class SluiceEntity extends KineticBlockEntity {
                 }
             }
         }
+        if(flowing)dk.revo.revolib.MachineFeedback.work(level,worldPosition,dk.revo.revolib.MachineFeedback.Voice.SLUICE);
+        if(processing)dk.revo.revolib.MachineFeedback.particles(level,at(1),net.minecraft.core.particles.ParticleTypes.SPLASH,.6);
         if (oldFlow != flowing || oldProcessing != processing || level.getGameTime() % 10 == 0) {
             setChanged(); sendData();
             if (feed != null) feed.sync();

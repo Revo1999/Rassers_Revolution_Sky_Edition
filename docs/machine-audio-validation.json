@@ -1,0 +1,103 @@
+{
+  "original_procedural_foley": true,
+  "source": "scripts/build_machine_sounds.py",
+  "sound_source": "BLOCKS",
+  "voices": [
+    {
+      "voice": "compost",
+      "seconds": 0.92,
+      "rate": 22050,
+      "peak": 0.355
+    },
+    {
+      "voice": "converter",
+      "seconds": 0.92,
+      "rate": 22050,
+      "peak": 0.198
+    },
+    {
+      "voice": "crucible",
+      "seconds": 0.92,
+      "rate": 22050,
+      "peak": 0.336
+    },
+    {
+      "voice": "electric_drill",
+      "seconds": 0.92,
+      "rate": 22050,
+      "peak": 0.342
+    },
+    {
+      "voice": "furnace",
+      "seconds": 0.92,
+      "rate": 22050,
+      "peak": 0.355
+    },
+    {
+      "voice": "harvester",
+      "seconds": 0.92,
+      "rate": 22050,
+      "peak": 0.376
+    },
+    {
+      "voice": "interact",
+      "seconds": 0.2,
+      "rate": 22050,
+      "peak": 0.254
+    },
+    {
+      "voice": "irrigation",
+      "seconds": 0.92,
+      "rate": 22050,
+      "peak": 0.683
+    },
+    {
+      "voice": "metal_drill",
+      "seconds": 0.92,
+      "rate": 22050,
+      "peak": 0.395
+    },
+    {
+      "voice": "rain",
+      "seconds": 0.92,
+      "rate": 22050,
+      "peak": 0.565
+    },
+    {
+      "voice": "silk",
+      "seconds": 0.92,
+      "rate": 22050,
+      "peak": 0.182
+    },
+    {
+      "voice": "sluice",
+      "seconds": 0.92,
+      "rate": 22050,
+      "peak": 0.659
+    },
+    {
+      "voice": "storage",
+      "seconds": 0.92,
+      "rate": 22050,
+      "peak": 0.258
+    },
+    {
+      "voice": "trade",
+      "seconds": 0.92,
+      "rate": 22050,
+      "peak": 0.183
+    },
+    {
+      "voice": "vacuum",
+      "seconds": 0.92,
+      "rate": 22050,
+      "peak": 0.538
+    },
+    {
+      "voice": "wood_drill",
+      "seconds": 0.92,
+      "rate": 22050,
+      "peak": 0.473
+    }
+  ]
+}

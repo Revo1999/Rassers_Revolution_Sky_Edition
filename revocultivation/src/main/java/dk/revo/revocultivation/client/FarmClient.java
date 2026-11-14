@@ -16,7 +16,7 @@ import net.neoforged.neoforge.client.event.*;
 public final class FarmClient {
     private static ModelResourceLocation model(String name){return ModelResourceLocation.standalone(ResourceLocation.fromNamespaceAndPath(RevoCultivation.MOD_ID,"block/"+name));}
     @SubscribeEvent public static void screens(RegisterMenuScreensEvent e){e.register(RevoCultivation.CONTROLLER_MENU.get(),FarmControllerScreen::new);e.register(RevoCultivation.HATCH_MENU.get(),FarmHatchScreen::new);}
-    @SubscribeEvent public static void models(ModelEvent.RegisterAdditional e){for(var kind:MachineKind.values())if(kind.registered())e.register(model(kind.id+"_body"));e.register(model("tree_grower_tree"));e.register(model("iron_greenhouse_lights"));e.register(model("iron_greenhouse_glass"));e.register(model("steel_tree_grower_glass"));}
+    @SubscribeEvent public static void models(ModelEvent.RegisterAdditional e){for(var kind:MachineKind.values())if(kind.registered())e.register(model(kind.id+"_body"));e.register(model("salt_crystal_growth"));e.register(model("tree_grower_tree"));e.register(model("iron_greenhouse_lights"));e.register(model("iron_greenhouse_glass"));e.register(model("steel_tree_grower_glass"));}
     @SubscribeEvent public static void renderers(EntityRenderersEvent.RegisterRenderers e){e.registerBlockEntityRenderer(RevoCultivation.MACHINE.get(),Renderer::new);}
     public static class Renderer implements BlockEntityRenderer<FarmMachine> {
         public Renderer(BlockEntityRendererProvider.Context context){}
@@ -39,10 +39,17 @@ public final class FarmClient {
                 }
                 else if(machine.kind().isTree()){pose.pushPose();pose.translate(.5,14f/48,.5);float scale=.35f+.65f*progress;pose.scale(scale,scale,scale);pose.translate(-.5,-14f/48,-.5);draw("tree_grower_tree",pose,buffers,light,overlay);pose.popPose();}
                 else if(machine.kind().isGreenhouse()){
+                    boolean submerged=machine.program()==15||machine.program()==19;
+                    if(submerged&&machine.water.getFluidAmount()>0){
+                        float size=machine.kind().width()*16;
+                        float[] lo=machine.kind().electric()?new float[]{16.2f,16.1f,16.2f}:new float[]{16.2f,14.1f,16.2f};
+                        float[] hi=machine.kind().electric()?new float[]{63.8f,31.7f,63.8f}:new float[]{31.8f,29.7f,31.8f};
+                        dk.revo.revolib.client.FarmFluidRenderer.water(machine.getLevel(),machine.at(0,1,0),1,1,pose,buffers,light,overlay,lo,hi,size);
+                    }
                     var crop=switch(machine.program()){case 11->Blocks.CARROTS.defaultBlockState().setValue(CarrotBlock.AGE,Math.min(7,(int)(progress*8)));case 12->Blocks.POTATOES.defaultBlockState().setValue(PotatoBlock.AGE,Math.min(7,(int)(progress*8)));case 17->Blocks.NETHER_WART.defaultBlockState().setValue(NetherWartBlock.AGE,Math.min(3,(int)(progress*4)));case 18->Blocks.CHORUS_FLOWER.defaultBlockState();case 19->Blocks.AMETHYST_CLUSTER.defaultBlockState();case 31->Blocks.POPPY.defaultBlockState();case 14->Blocks.SUGAR_CANE.defaultBlockState();case 15->Blocks.KELP.defaultBlockState();case 16->Blocks.CACTUS.defaultBlockState();case 13->Blocks.BEETROOTS.defaultBlockState().setValue(BeetrootBlock.AGE,Math.min(3,(int)(progress*4)));default->Blocks.WHEAT.defaultBlockState().setValue(CropBlock.AGE,Math.min(7,(int)(progress*8)));};
                     if(machine.kind().electric()){
-                        for(float x:new float[]{16,32,48})for(float z:new float[]{16,32,48}){pose.pushPose();pose.translate(x/80,16f/80,z/80);pose.scale(.2f,.2f,.2f);mc.getBlockRenderer().renderSingleBlock(crop,pose,buffers,light,overlay);pose.popPose();}
-                    }else{pose.pushPose();pose.translate(16f/48,14f/48,16f/48);pose.scale(1f/3,1f/3,1f/3);mc.getBlockRenderer().renderSingleBlock(crop,pose,buffers,light,overlay);pose.popPose();}
+                        for(float x:new float[]{16,32,48})for(float z:new float[]{16,32,48}){pose.pushPose();pose.translate(x/80,16f/80,z/80);pose.scale(.2f,.2f,.2f);renderCrop(machine,crop,progress,x+z,partial,pose,buffers,light,overlay);pose.popPose();}
+                    }else{pose.pushPose();pose.translate(16f/48,14f/48,16f/48);pose.scale(1f/3,1f/3,1f/3);renderCrop(machine,crop,progress,0,partial,pose,buffers,light,overlay);pose.popPose();}
                 }else{
                     var mob=machine.containedMob();
                     if(mob!=null){
@@ -58,6 +65,19 @@ public final class FarmClient {
                 }
             }
             pose.popPose();
+        }
+        private void renderCrop(FarmMachine machine,net.minecraft.world.level.block.state.BlockState crop,float progress,float phase,float partial,PoseStack pose,MultiBufferSource buffers,int light,int overlay){
+            if(machine.program()==19){
+                pose.pushPose();pose.translate(.5,0,.5);float scale=.25f+.75f*progress;pose.scale(scale,scale,scale);pose.translate(-.5,0,-.5);
+                draw("salt_crystal_growth",pose,buffers,light,overlay);pose.popPose();return;
+            }
+            if(machine.program()==15){
+                pose.pushPose();pose.translate(.5,0,.5);
+                float current=(float)Math.sin((machine.getLevel().getGameTime()+partial)*.07+phase)*3;
+                pose.mulPose(Axis.ZP.rotationDegrees(current));pose.scale(.85f,.4f+.5f*progress,.85f);pose.translate(-.5,0,-.5);
+                Minecraft.getInstance().getBlockRenderer().renderSingleBlock(crop,pose,buffers,light,overlay);pose.popPose();return;
+            }
+            Minecraft.getInstance().getBlockRenderer().renderSingleBlock(crop,pose,buffers,light,overlay);
         }
         @Override public net.minecraft.world.phys.AABB getRenderBoundingBox(FarmMachine m){return new net.minecraft.world.phys.AABB(m.getBlockPos()).inflate(m.kind().realTree()?7:4);}
         @Override public boolean shouldRenderOffScreen(FarmMachine m){return true;}

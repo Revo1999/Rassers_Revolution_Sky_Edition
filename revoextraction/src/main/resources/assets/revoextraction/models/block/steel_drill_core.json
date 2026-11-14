@@ -151,7 +151,7 @@
       "name": "core_spindle",
       "from": [
         6,
-        1,
+        0.996,
         6
       ],
       "to": [

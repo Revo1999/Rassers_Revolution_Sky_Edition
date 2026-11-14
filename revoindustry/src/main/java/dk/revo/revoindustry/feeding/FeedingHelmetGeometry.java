@@ -17,7 +17,7 @@ public final class FeedingHelmetGeometry {
     head.addOrReplaceChild("brow_brim",CubeListBuilder.create().texOffs(23,17).addBox(-4.6f,-6.8f,-5.1f,9.2f,0.7f,1.6f),PartPose.ZERO);
     head.addOrReplaceChild("ration_module",CubeListBuilder.create().texOffs(48,17).addBox(4.8f,-7.4f,0.2f,2.0f,2.8f,3.0f),PartPose.ZERO);
     head.addOrReplaceChild("hose_coupling",CubeListBuilder.create().texOffs(62,17).addBox(4.8f,-4.6f,-1.4f,1.2f,1.0f,2.3f),PartPose.ZERO);
-    head.addOrReplaceChild("hose_down",CubeListBuilder.create().texOffs(73,17).addBox(4.85f,-3.6f,-2.1f,0.9f,2.4f,0.9f),PartPose.ZERO);
+    head.addOrReplaceChild("hose_down",CubeListBuilder.create().texOffs(73,17).addBox(4.85f,-3.6f,-2.1f,0.9f,2.2f,0.9f),PartPose.ZERO);
     head.addOrReplaceChild("hose_to_face",CubeListBuilder.create().texOffs(80,17).addBox(4.85f,-1.4f,-4.9f,0.9f,0.9f,3.7f),PartPose.ZERO);
     head.addOrReplaceChild("hose_to_mouth",CubeListBuilder.create().texOffs(93,17).addBox(0.8f,-1.4f,-5f,4.05f,0.9f,0.9f),PartPose.ZERO);
     head.addOrReplaceChild("mouthpiece",CubeListBuilder.create().texOffs(106,17).addBox(-0.8f,-1.6f,-5.3f,2.0f,1.3f,0.9f),PartPose.ZERO);
@@ -32,7 +32,7 @@ public final class FeedingHelmetGeometry {
     head.addOrReplaceChild("brow_brim",CubeListBuilder.create().texOffs(23,17).addBox(-4.6f,-6.8f,-5.1f,9.2f,0.7f,1.6f),PartPose.ZERO);
     head.addOrReplaceChild("ration_module",CubeListBuilder.create().texOffs(48,17).addBox(4.8f,-7.4f,0.2f,2.0f,2.8f,3.0f),PartPose.ZERO);
     head.addOrReplaceChild("hose_coupling",CubeListBuilder.create().texOffs(62,17).addBox(4.8f,-4.6f,-1.4f,1.2f,1.0f,2.3f),PartPose.ZERO);
-    head.addOrReplaceChild("hose_down",CubeListBuilder.create().texOffs(73,17).addBox(4.85f,-3.6f,-2.1f,0.9f,2.4f,0.9f),PartPose.ZERO);
+    head.addOrReplaceChild("hose_down",CubeListBuilder.create().texOffs(73,17).addBox(4.85f,-3.6f,-2.1f,0.9f,2.2f,0.9f),PartPose.ZERO);
     head.addOrReplaceChild("hose_to_face",CubeListBuilder.create().texOffs(80,17).addBox(4.85f,-1.4f,-4.9f,0.9f,0.9f,3.7f),PartPose.ZERO);
     head.addOrReplaceChild("hose_to_mouth",CubeListBuilder.create().texOffs(93,17).addBox(0.8f,-1.4f,-5f,4.05f,0.9f,0.9f),PartPose.ZERO);
     head.addOrReplaceChild("mouthpiece",CubeListBuilder.create().texOffs(106,17).addBox(-0.8f,-1.6f,-5.3f,2.0f,1.3f,0.9f),PartPose.ZERO);
@@ -52,7 +52,7 @@ public final class FeedingHelmetGeometry {
     head.addOrReplaceChild("brow_brim",CubeListBuilder.create().texOffs(23,17).addBox(-4.6f,-6.8f,-5.1f,9.2f,0.7f,1.6f),PartPose.ZERO);
     head.addOrReplaceChild("ration_module",CubeListBuilder.create().texOffs(48,17).addBox(4.8f,-7.4f,0.2f,2.0f,2.8f,3.0f),PartPose.ZERO);
     head.addOrReplaceChild("hose_coupling",CubeListBuilder.create().texOffs(62,17).addBox(4.8f,-4.6f,-1.4f,1.2f,1.0f,2.3f),PartPose.ZERO);
-    head.addOrReplaceChild("hose_down",CubeListBuilder.create().texOffs(73,17).addBox(4.85f,-3.6f,-2.1f,0.9f,2.4f,0.9f),PartPose.ZERO);
+    head.addOrReplaceChild("hose_down",CubeListBuilder.create().texOffs(73,17).addBox(4.85f,-3.6f,-2.1f,0.9f,2.2f,0.9f),PartPose.ZERO);
     head.addOrReplaceChild("hose_to_face",CubeListBuilder.create().texOffs(80,17).addBox(4.85f,-1.4f,-4.9f,0.9f,0.9f,3.7f),PartPose.ZERO);
     head.addOrReplaceChild("hose_to_mouth",CubeListBuilder.create().texOffs(93,17).addBox(0.8f,-1.4f,-5f,4.05f,0.9f,0.9f),PartPose.ZERO);
     head.addOrReplaceChild("mouthpiece",CubeListBuilder.create().texOffs(106,17).addBox(-0.8f,-1.6f,-5.3f,2.0f,1.3f,0.9f),PartPose.ZERO);
@@ -66,7 +66,7 @@ public final class FeedingHelmetGeometry {
     head.addOrReplaceChild("ration_canister_-3.1",CubeListBuilder.create().texOffs(79,26).addBox(-3.1f,-7.4f,6.2f,1.6f,3.9f,1.1f),PartPose.ZERO);
     head.addOrReplaceChild("ration_canister_-0.8",CubeListBuilder.create().texOffs(88,26).addBox(-0.8f,-7.4f,6.2f,1.6f,3.9f,1.1f),PartPose.ZERO);
     head.addOrReplaceChild("ration_canister_1.5",CubeListBuilder.create().texOffs(97,26).addBox(1.5f,-7.4f,6.2f,1.6f,3.9f,1.1f),PartPose.ZERO);
-    head.addOrReplaceChild("left_temple_plate",CubeListBuilder.create().texOffs(106,26).addBox(-5.25f,-7.5f,-3.1f,0.45f,2.0f,3.2f),PartPose.ZERO);
+    head.addOrReplaceChild("left_temple_plate",CubeListBuilder.create().texOffs(106,26).addBox(-5.25f,-7.5f,-3.1f,0.454f,2.0f,3.2f),PartPose.ZERO);
     head.addOrReplaceChild("right_temple_plate",CubeListBuilder.create().texOffs(117,26).addBox(4.8f,-7.5f,-3.1f,0.45f,2.0f,3.2f),PartPose.ZERO);
     head.addOrReplaceChild("status_panel",CubeListBuilder.create().texOffs(2,36).addBox(-2.2f,-7.9f,-5.4f,4.4f,0.8f,0.3f),PartPose.ZERO);
    }

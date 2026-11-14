@@ -7,7 +7,6 @@
   "name": "tree_grower_assembled",
   "parent": "",
   "java_block_version": "1.21.1",
-  "credit": "Revo1999; authored in Blockbench through MCP. Vanilla textures copyright Mojang AB.",
   "ambientocclusion": true,
   "front_gui_light": false,
   "visible_box": [
@@ -16,12 +15,11 @@
     0
   ],
   "variable_placeholders": "",
+  "multi_file_ruleset": "",
   "variable_placeholder_buttons": [],
   "unhandled_root_fields": {},
   "ai_used": true,
-  "ai_agents": [
-    "Codex via Blockbench MCP"
-  ],
+  "ai_agents": "Unknown MCP client",
   "resolution": {
     "width": 512,
     "height": 512
@@ -35,15 +33,17 @@
       "locked": false,
       "shade": true,
       "light_emission": 0,
+      "export": true,
+      "scope": 0,
       "allow_mirror_modeling": true,
       "from": [
         0,
-        0,
+        -0.004,
         0
       ],
       "to": [
         4,
-        1.3333333333333333,
+        1.33333,
         4
       ],
       "autouv": 0,
@@ -120,16 +120,18 @@
       "locked": false,
       "shade": true,
       "light_emission": 0,
+      "export": true,
+      "scope": 0,
       "allow_mirror_modeling": true,
       "from": [
-        0.6666666666666666,
-        1.3333333333333333,
-        0.6666666666666666
+        0.66667,
+        1.33333,
+        0.66667
       ],
       "to": [
-        3.3333333333333335,
-        4.333333333333333,
-        3.3333333333333335
+        3.33333,
+        4.33333,
+        3.33333
       ],
       "autouv": 0,
       "color": 7,
@@ -205,6 +207,8 @@
       "locked": false,
       "shade": true,
       "light_emission": 0,
+      "export": true,
+      "scope": 0,
       "allow_mirror_modeling": true,
       "from": [
         0,
@@ -213,7 +217,7 @@
       ],
       "to": [
         4,
-        5.333333333333333,
+        5.33333,
         4
       ],
       "autouv": 0,
@@ -290,15 +294,17 @@
       "locked": false,
       "shade": true,
       "light_emission": 0,
+      "export": true,
+      "scope": 0,
       "allow_mirror_modeling": true,
       "from": [
         0,
-        0,
+        -0.004,
         12
       ],
       "to": [
         4,
-        1.3333333333333333,
+        1.33333,
         16
       ],
       "autouv": 0,
@@ -375,16 +381,18 @@
       "locked": false,
       "shade": true,
       "light_emission": 0,
+      "export": true,
+      "scope": 0,
       "allow_mirror_modeling": true,
       "from": [
-        0.6666666666666666,
-        1.3333333333333333,
-        12.666666666666666
+        0.66667,
+        1.33333,
+        12.66667
       ],
       "to": [
-        3.3333333333333335,
-        4.333333333333333,
-        15.333333333333334
+        3.33333,
+        4.33333,
+        15.33333
       ],
       "autouv": 0,
       "color": 8,
@@ -460,6 +468,8 @@
       "locked": false,
       "shade": true,
       "light_emission": 0,
+      "export": true,
+      "scope": 0,
       "allow_mirror_modeling": true,
       "from": [
         0,
@@ -468,7 +478,7 @@
       ],
       "to": [
         4,
-        5.333333333333333,
+        5.33333,
         16
       ],
       "autouv": 0,
@@ -545,15 +555,17 @@
       "locked": false,
       "shade": true,
       "light_emission": 0,
+      "export": true,
+      "scope": 0,
       "allow_mirror_modeling": true,
       "from": [
         12,
-        0,
+        -0.004,
         0
       ],
       "to": [
         16,
-        1.3333333333333333,
+        1.33333,
         4
       ],
       "autouv": 0,
@@ -630,16 +642,18 @@
       "locked": false,
       "shade": true,
       "light_emission": 0,
+      "export": true,
+      "scope": 0,
       "allow_mirror_modeling": true,
       "from": [
-        12.666666666666666,
-        1.3333333333333333,
-        0.6666666666666666
+        12.66667,
+        1.33333,
+        0.66667
       ],
       "to": [
-        15.333333333333334,
-        4.333333333333333,
-        3.3333333333333335
+        15.33333,
+        4.33333,
+        3.33333
       ],
       "autouv": 0,
       "color": 6,
@@ -715,6 +729,8 @@
       "locked": false,
       "shade": true,
       "light_emission": 0,
+      "export": true,
+      "scope": 0,
       "allow_mirror_modeling": true,
       "from": [
         12,
@@ -723,7 +739,7 @@
       ],
       "to": [
         16,
-        5.333333333333333,
+        5.33333,
         4
       ],
       "autouv": 0,
@@ -800,15 +816,17 @@
       "locked": false,
       "shade": true,
       "light_emission": 0,
+      "export": true,
+      "scope": 0,
       "allow_mirror_modeling": true,
       "from": [
         12,
-        0,
+        -0.004,
         12
       ],
       "to": [
         16,
-        1.3333333333333333,
+        1.33333,
         16
       ],
       "autouv": 0,
@@ -885,16 +903,18 @@
       "locked": false,
       "shade": true,
       "light_emission": 0,
+      "export": true,
+      "scope": 0,
       "allow_mirror_modeling": true,
       "from": [
-        12.666666666666666,
-        1.3333333333333333,
-        12.666666666666666
+        12.66667,
+        1.33333,
+        12.66667
       ],
       "to": [
-        15.333333333333334,
-        4.333333333333333,
-        15.333333333333334
+        15.33333,
+        4.33333,
+        15.33333
       ],
       "autouv": 0,
       "color": 8,
@@ -970,6 +990,8 @@
       "locked": false,
       "shade": true,
       "light_emission": 0,
+      "export": true,
+      "scope": 0,
       "allow_mirror_modeling": true,
       "from": [
         12,
@@ -978,7 +1000,7 @@
       ],
       "to": [
         16,
-        5.333333333333333,
+        5.33333,
         16
       ],
       "autouv": 0,
@@ -1055,16 +1077,18 @@
       "locked": false,
       "shade": true,
       "light_emission": 0,
+      "export": true,
+      "scope": 0,
       "allow_mirror_modeling": true,
       "from": [
-        3.3333333333333335,
-        1.6666666666666667,
+        3.32933,
+        1.66667,
         1
       ],
       "to": [
-        12.666666666666666,
-        3.3333333333333335,
-        2.3333333333333335
+        12.67067,
+        3.33333,
+        2.33333
       ],
       "autouv": 0,
       "color": 6,
@@ -1140,15 +1164,17 @@
       "locked": false,
       "shade": true,
       "light_emission": 0,
+      "export": true,
+      "scope": 0,
       "allow_mirror_modeling": true,
       "from": [
-        3.3333333333333335,
-        1.6666666666666667,
-        13.666666666666666
+        3.32933,
+        1.66667,
+        13.66667
       ],
       "to": [
-        12.666666666666666,
-        3.3333333333333335,
+        12.67067,
+        3.33333,
         15
       ],
       "autouv": 0,
@@ -1225,16 +1251,18 @@
       "locked": false,
       "shade": true,
       "light_emission": 0,
+      "export": true,
+      "scope": 0,
       "allow_mirror_modeling": true,
       "from": [
         1,
-        1.6666666666666667,
-        3.3333333333333335
+        1.66667,
+        3.32933
       ],
       "to": [
-        2.3333333333333335,
-        3.3333333333333335,
-        12.666666666666666
+        2.33333,
+        3.33333,
+        12.67067
       ],
       "autouv": 0,
       "color": 4,
@@ -1310,16 +1338,18 @@
       "locked": false,
       "shade": true,
       "light_emission": 0,
+      "export": true,
+      "scope": 0,
       "allow_mirror_modeling": true,
       "from": [
-        13.666666666666666,
-        1.6666666666666667,
-        3.3333333333333335
+        13.66667,
+        1.66667,
+        3.32933
       ],
       "to": [
         15,
-        3.3333333333333335,
-        12.666666666666666
+        3.33333,
+        12.67067
       ],
       "autouv": 0,
       "color": 9,
@@ -1395,6 +1425,8 @@
       "locked": false,
       "shade": true,
       "light_emission": 0,
+      "export": true,
+      "scope": 0,
       "allow_mirror_modeling": true,
       "from": [
         2,
@@ -1403,7 +1435,7 @@
       ],
       "to": [
         14,
-        0.6666666666666666,
+        0.66667,
         14
       ],
       "autouv": 0,
@@ -1480,16 +1512,18 @@
       "locked": false,
       "shade": true,
       "light_emission": 0,
+      "export": true,
+      "scope": 0,
       "allow_mirror_modeling": true,
       "from": [
-        3.3333333333333335,
+        3.33333,
         1,
-        3.3333333333333335
+        3.33333
       ],
       "to": [
-        12.666666666666666,
-        4.666666666666667,
-        12.666666666666666
+        12.66667,
+        4.66667,
+        12.66667
       ],
       "autouv": 0,
       "color": 1,
@@ -1565,15 +1599,17 @@
       "locked": false,
       "shade": true,
       "light_emission": 0,
+      "export": true,
+      "scope": 0,
       "allow_mirror_modeling": true,
       "from": [
-        3.3333333333333335,
+        3.33333,
         2,
-        1.6666666666666667
+        1.66667
       ],
       "to": [
-        12.666666666666666,
-        4.666666666666667,
+        12.66667,
+        4.66667,
         3
       ],
       "autouv": 0,
@@ -1650,16 +1686,18 @@
       "locked": false,
       "shade": true,
       "light_emission": 0,
+      "export": true,
+      "scope": 0,
       "allow_mirror_modeling": true,
       "from": [
-        3.3333333333333335,
+        3.33333,
         2,
         13
       ],
       "to": [
-        12.666666666666666,
-        4.666666666666667,
-        14.333333333333334
+        12.66667,
+        4.66667,
+        14.33333
       ],
       "autouv": 0,
       "color": 8,
@@ -1735,16 +1773,18 @@
       "locked": false,
       "shade": true,
       "light_emission": 0,
+      "export": true,
+      "scope": 0,
       "allow_mirror_modeling": true,
       "from": [
-        1.6666666666666667,
+        1.66667,
         2,
-        3.3333333333333335
+        3.33333
       ],
       "to": [
         3,
-        4.666666666666667,
-        12.666666666666666
+        4.66667,
+        12.66667
       ],
       "autouv": 0,
       "color": 4,
@@ -1820,16 +1860,18 @@
       "locked": false,
       "shade": true,
       "light_emission": 0,
+      "export": true,
+      "scope": 0,
       "allow_mirror_modeling": true,
       "from": [
         13,
         2,
-        3.3333333333333335
+        3.33333
       ],
       "to": [
-        14.333333333333334,
-        4.666666666666667,
-        12.666666666666666
+        14.33333,
+        4.66667,
+        12.66667
       ],
       "autouv": 0,
       "color": 2,
@@ -1905,10 +1947,12 @@
       "locked": false,
       "shade": true,
       "light_emission": 0,
+      "export": true,
+      "scope": 0,
       "allow_mirror_modeling": true,
       "from": [
         7,
-        4.666666666666667,
+        4.66667,
         7
       ],
       "to": [
@@ -1990,16 +2034,18 @@
       "locked": false,
       "shade": true,
       "light_emission": 0,
+      "export": true,
+      "scope": 0,
       "allow_mirror_modeling": true,
       "from": [
-        2.3333333333333335,
-        10.666666666666666,
-        2.3333333333333335
+        2.33333,
+        10.66667,
+        2.33333
       ],
       "to": [
-        13.666666666666666,
+        13.66667,
         16,
-        13.666666666666666
+        13.66667
       ],
       "autouv": 0,
       "color": 3,
@@ -2075,6 +2121,8 @@
       "locked": false,
       "shade": true,
       "light_emission": 0,
+      "export": true,
+      "scope": 0,
       "allow_mirror_modeling": true,
       "from": [
         4,
@@ -2160,16 +2208,18 @@
       "locked": false,
       "shade": true,
       "light_emission": 0,
+      "export": true,
+      "scope": 0,
       "allow_mirror_modeling": true,
       "from": [
-        5.666666666666667,
-        18.333333333333332,
-        5.666666666666667
+        5.66667,
+        18.33333,
+        5.66667
       ],
       "to": [
-        10.333333333333334,
-        20.666666666666668,
-        10.333333333333334
+        10.33333,
+        20.66667,
+        10.33333
       ],
       "autouv": 0,
       "color": 6,
@@ -2245,11 +2295,13 @@
       "locked": false,
       "shade": true,
       "light_emission": 0,
+      "export": true,
+      "scope": 0,
       "allow_mirror_modeling": true,
       "from": [
-        3.3333333333333335,
-        3.3333333333333335,
-        1.5999999999999999
+        3.32933,
+        3.33333,
+        1.6
       ],
       "to": [
         5,
@@ -2330,14 +2382,16 @@
       "locked": false,
       "shade": true,
       "light_emission": 0,
+      "export": true,
+      "scope": 0,
       "allow_mirror_modeling": true,
       "from": [
         11,
-        3.3333333333333335,
-        1.5999999999999999
+        3.33333,
+        1.6
       ],
       "to": [
-        12.666666666666666,
+        12.67067,
         4,
         1.7
       ],
@@ -2415,15 +2469,17 @@
       "locked": false,
       "shade": true,
       "light_emission": 0,
+      "export": true,
+      "scope": 0,
       "allow_mirror_modeling": true,
       "from": [
-        5.333333333333333,
+        5.33333,
         0,
         0
       ],
       "to": [
-        10.666666666666666,
-        5.333333333333333,
+        10.66667,
+        5.33333,
         1
       ],
       "autouv": 0,
@@ -2500,15 +2556,17 @@
       "locked": false,
       "shade": true,
       "light_emission": 0,
+      "export": true,
+      "scope": 0,
       "allow_mirror_modeling": true,
       "from": [
         6,
-        0.6666666666666666,
-        -0.19999999999999998
+        0.66667,
+        -0.2
       ],
       "to": [
         10,
-        4.666666666666667,
+        4.66667,
         0
       ],
       "autouv": 0,
@@ -2585,16 +2643,18 @@
       "locked": false,
       "shade": true,
       "light_emission": 0,
+      "export": true,
+      "scope": 0,
       "allow_mirror_modeling": true,
       "from": [
-        6.666666666666667,
-        2.3333333333333335,
-        -0.31666666666666665
+        6.66667,
+        2.33333,
+        -0.31667
       ],
       "to": [
-        9.333333333333334,
-        4.333333333333333,
-        -0.19999999999999998
+        9.33333,
+        4.33333,
+        -0.2
       ],
       "autouv": 0,
       "color": 4,
@@ -2670,6 +2730,8 @@
       "locked": false,
       "shade": true,
       "light_emission": 0,
+      "export": true,
+      "scope": 0,
       "allow_mirror_modeling": true,
       "from": [
         8,
@@ -2678,8 +2740,8 @@
       ],
       "to": [
         9,
-        1.6666666666666667,
-        -0.19999999999999998
+        1.66667,
+        -0.2
       ],
       "autouv": 0,
       "color": 6,
@@ -2755,16 +2817,18 @@
       "locked": false,
       "shade": true,
       "light_emission": 0,
+      "export": true,
+      "scope": 0,
       "allow_mirror_modeling": true,
       "from": [
-        6.666666666666667,
+        6.66667,
         1,
-        -0.39999999999999997
+        -0.4
       ],
       "to": [
-        7.333333333333333,
-        1.6666666666666667,
-        -0.19999999999999998
+        7.33333,
+        1.66667,
+        -0.2
       ],
       "autouv": 0,
       "color": 1,
@@ -2840,16 +2904,18 @@
       "locked": false,
       "shade": true,
       "light_emission": 0,
+      "export": true,
+      "scope": 0,
       "allow_mirror_modeling": true,
       "from": [
         15,
         0,
-        5.333333333333333
+        5.33333
       ],
       "to": [
         16,
-        5.333333333333333,
-        10.666666666666666
+        5.33333,
+        10.66667
       ],
       "autouv": 0,
       "color": 2,
@@ -2925,15 +2991,17 @@
       "locked": false,
       "shade": true,
       "light_emission": 0,
+      "export": true,
+      "scope": 0,
       "allow_mirror_modeling": true,
       "from": [
         16,
-        0.6666666666666666,
+        0.66667,
         6
       ],
       "to": [
         16.2,
-        4.666666666666667,
+        4.66667,
         10
       ],
       "autouv": 0,
@@ -2948,7 +3016,7 @@
           "uv": [
             0,
             66,
-            0.6000000000000014,
+            0.6,
             78
           ],
           "texture": 0
@@ -2966,7 +3034,7 @@
           "uv": [
             0,
             66,
-            0.6000000000000014,
+            0.6,
             78
           ],
           "texture": 0
@@ -2984,7 +3052,7 @@
           "uv": [
             0,
             66,
-            0.6000000000000014,
+            0.6,
             78
           ],
           "texture": 0
@@ -2993,7 +3061,7 @@
           "uv": [
             0,
             66,
-            0.6000000000000014,
+            0.6,
             78
           ],
           "texture": 0
@@ -3010,16 +3078,18 @@
       "locked": false,
       "shade": true,
       "light_emission": 0,
+      "export": true,
+      "scope": 0,
       "allow_mirror_modeling": true,
       "from": [
         16.2,
-        1.3333333333333333,
-        6.666666666666667
+        1.33333,
+        6.66667
       ],
       "to": [
         16.3,
         4,
-        9.333333333333334
+        9.33333
       ],
       "autouv": 0,
       "color": 8,
@@ -3033,7 +3103,7 @@
           "uv": [
             64.6,
             68,
-            64.89999999999999,
+            64.9,
             76
           ],
           "texture": 0
@@ -3051,7 +3121,7 @@
           "uv": [
             64.6,
             68,
-            64.89999999999999,
+            64.9,
             76
           ],
           "texture": 0
@@ -3069,7 +3139,7 @@
           "uv": [
             64.6,
             68,
-            64.89999999999999,
+            64.9,
             76
           ],
           "texture": 0
@@ -3078,7 +3148,7 @@
           "uv": [
             64.6,
             68,
-            64.89999999999999,
+            64.9,
             76
           ],
           "texture": 0
@@ -3095,16 +3165,18 @@
       "locked": false,
       "shade": true,
       "light_emission": 0,
+      "export": true,
+      "scope": 0,
       "allow_mirror_modeling": true,
       "from": [
         16.2,
-        0.6666666666666666,
-        6.333333333333333
+        0.66667,
+        6.33333
       ],
       "to": [
-        16.566666666666666,
-        1.3333333333333333,
-        9.666666666666666
+        16.56667,
+        1.33333,
+        9.66667
       ],
       "autouv": 0,
       "color": 0,
@@ -3116,54 +3188,54 @@
       "faces": {
         "north": {
           "uv": [
-            0.6000000000000014,
+            0.6,
             66,
-            1.7000000000000028,
+            1.7,
             68
           ],
           "texture": 0
         },
         "east": {
           "uv": [
-            0.6000000000000014,
+            0.6,
             66,
-            10.600000000000001,
+            10.6,
             68
           ],
           "texture": 0
         },
         "south": {
           "uv": [
-            0.6000000000000014,
+            0.6,
             66,
-            1.7000000000000028,
+            1.7,
             68
           ],
           "texture": 0
         },
         "west": {
           "uv": [
-            0.6000000000000014,
+            0.6,
             66,
-            10.600000000000001,
+            10.6,
             68
           ],
           "texture": 0
         },
         "up": {
           "uv": [
-            0.6000000000000014,
+            0.6,
             66,
-            1.7000000000000028,
+            1.7,
             76
           ],
           "texture": 0
         },
         "down": {
           "uv": [
-            0.6000000000000014,
+            0.6,
             66,
-            1.7000000000000028,
+            1.7,
             76
           ],
           "texture": 0
@@ -3175,9 +3247,17 @@
   ],
   "groups": [
     {
+      "name": "body",
       "uuid": "dda0c2ca-1348-eebd-c02a-c517abac7a55",
       "export": true,
       "locked": false,
+      "scope": 0,
+      "selected": false,
+      "visibility": true,
+      "_static": {
+        "properties": {},
+        "temp_data": {}
+      },
       "origin": [
         0,
         0,
@@ -3189,20 +3269,26 @@
         0
       ],
       "color": 0,
-      "name": "body",
       "children": [],
       "reset": false,
       "shade": true,
       "mirror_uv": false,
-      "selected": false,
-      "visibility": true,
       "autouv": 0,
-      "isOpen": false
+      "isOpen": false,
+      "primary_selected": false
     },
     {
+      "name": "plant",
       "uuid": "45d55451-b2ca-2718-5220-a62ae47c9440",
       "export": true,
       "locked": false,
+      "scope": 0,
+      "selected": false,
+      "visibility": true,
+      "_static": {
+        "properties": {},
+        "temp_data": {}
+      },
       "origin": [
         0,
         0,
@@ -3214,15 +3300,13 @@
         0
       ],
       "color": 0,
-      "name": "plant",
       "children": [],
       "reset": false,
       "shade": true,
       "mirror_uv": false,
-      "selected": false,
-      "visibility": true,
       "autouv": 0,
-      "isOpen": false
+      "isOpen": false,
+      "primary_selected": false
     }
   ],
   "outliner": [
@@ -3284,6 +3368,7 @@
       "namespace": "revocultivation",
       "id": "0",
       "group": "",
+      "scope": 0,
       "width": 512,
       "height": 512,
       "uv_width": 512,
@@ -3292,9 +3377,13 @@
       "use_as_default": false,
       "layers_enabled": false,
       "sync_to_project": "",
+      "file_format": "png",
       "render_mode": "default",
       "render_sides": "auto",
+      "wrap_mode": "limited",
       "pbr_channel": "color",
+      "fps": 7,
+      "force_translucent": false,
       "frame_time": 1,
       "frame_order_type": "loop",
       "frame_order": "",
