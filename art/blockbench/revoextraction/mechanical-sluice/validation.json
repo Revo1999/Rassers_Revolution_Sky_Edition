@@ -1,0 +1,16 @@
+{
+  "result": "PASS",
+  "runtime_models": 12,
+  "machine_cubes": 181,
+  "motion_samples": 1441,
+  "checks": [
+    "vertical-only motion",
+    "stationary water and inlet",
+    "pin clears translating slot",
+    "shaft clears raised bed",
+    "submerged riffles",
+    "spring endpoints",
+    "Java limits and UVs",
+    "textures and all facing variants"
+  ]
+}

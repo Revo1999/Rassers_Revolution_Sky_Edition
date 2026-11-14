@@ -55,6 +55,7 @@ public final class RevoExtraction {
     public static final DeferredItem<Item> SILICON_BLANK=ITEMS.registerSimpleItem("silicon_press_blank");
     public static final DeferredItem<Item> TEMPLATE_BLANK=ITEMS.registerSimpleItem("netherite_template_blank");
     public RevoExtraction(IEventBus bus) {
+        SluiceContent.bootstrap();
         ITEMS.registerSimpleBlockItem(ELECTRIC);HammerItems.bootstrap();ITEMS.registerSimpleBlockItem(HammerItems.DUST);
         for (var block : new DeferredBlock<?>[]{SUPPORT, CASING, CORE, CONTROLLER, INPUT, HATCH, IRON_SUPPORT, IRON_CASING, IRON_CORE, IRON_CONTROLLER, IRON_INPUT, IRON_HATCH, STEEL_SUPPORT, STEEL_CASING, STEEL_CORE, STEEL_CONTROLLER, STEEL_INPUT, STEEL_HATCH, STEEL_TANK}) ITEMS.registerSimpleBlockItem(block);
         BLOCKS.register(bus); ITEMS.register(bus); ENTITIES.register(bus); MENUS.register(bus);
@@ -64,6 +65,7 @@ public final class RevoExtraction {
         });
     }
     private void capabilities(RegisterCapabilitiesEvent event) {
+        SluiceContent.capabilities(event);
         event.registerBlockEntity(Capabilities.ItemHandler.BLOCK,ELECTRIC_ENTITY.get(),(be,side)->side==net.minecraft.core.Direction.UP?new net.neoforged.neoforge.items.wrapper.RangedWrapper(be.items,0,2):be.outputPort());
         dk.revo.revolib.energy.EnergyInterop.registerEuStorage(event,ELECTRIC_ENTITY.get(),(be,side)->be);
         event.registerBlockEntity(Capabilities.FluidHandler.BLOCK,WATER_TANK_ENTITY.get(),(be,side)->be.water);

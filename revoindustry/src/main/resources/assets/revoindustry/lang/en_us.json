@@ -72,5 +72,11 @@
   "tooltip.revoindustry.vacuum.wrench": "Wrench rotates the outlet; no power required.",
   "gui.revoindustry.vacuum.show_area": "Show suction area",
   "gui.revoindustry.vacuum.hide_area": "Hide suction area",
-  "gui.revoindustry.vacuum.area_hint": "Outline this vacuum's pickup range. Close this screen to inspect it."
+  "gui.revoindustry.vacuum.area_hint": "Outline this vacuum's pickup range. Close this screen to inspect it.",
+  "item.revoindustry.feeding_helmet": "Feeding Helmet",
+  "item.revoindustry.advanced_feeding_helmet": "Advanced Feeding Helmet",
+  "item.revoindustry.elite_feeding_helmet": "Elite Feeding Helmet",
+  "tooltip.revoindustry.feeding_capacity": "Ration storage: %s food stacks",
+  "tooltip.revoindustry.feeding_use": "Right-click: rations | Sneak-right-click: equip",
+  "tooltip.revoindustry.feeding_smart": "Feeds while worn, only when the full portion fits."
 }

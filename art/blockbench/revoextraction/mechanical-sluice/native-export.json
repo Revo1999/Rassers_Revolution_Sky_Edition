@@ -1,0 +1,67 @@
+{
+  "blockbench": "5.2.2",
+  "mcp": "1.10.1",
+  "source_sha256": "2d1e5d5836d1df93321b70ac9b92b6559f1593ca4d416516a1e97d0aa7dcfdcf",
+  "parts": [
+    {
+      "part": "trough",
+      "cubes": 40,
+      "codec": "Blockbench java_block"
+    },
+    {
+      "part": "body_0",
+      "cubes": 25,
+      "codec": "Blockbench java_block"
+    },
+    {
+      "part": "body_2",
+      "cubes": 9,
+      "codec": "Blockbench java_block"
+    },
+    {
+      "part": "shaker",
+      "cubes": 44,
+      "codec": "Blockbench java_block"
+    },
+    {
+      "part": "drive",
+      "cubes": 2,
+      "codec": "Blockbench java_block"
+    },
+    {
+      "part": "crank",
+      "cubes": 8,
+      "codec": "Blockbench java_block"
+    },
+    {
+      "part": "feeder",
+      "cubes": 24,
+      "codec": "Blockbench java_block"
+    },
+    {
+      "part": "body_1",
+      "cubes": 11,
+      "codec": "Blockbench java_block"
+    },
+    {
+      "part": "spring_front",
+      "cubes": 2,
+      "codec": "Blockbench java_block"
+    },
+    {
+      "part": "spring_rear",
+      "cubes": 2,
+      "codec": "Blockbench java_block"
+    },
+    {
+      "part": "rod",
+      "cubes": 7,
+      "codec": "Blockbench java_block"
+    },
+    {
+      "part": "item",
+      "cubes": 150,
+      "codec": "Blockbench java_block"
+    }
+  ]
+}

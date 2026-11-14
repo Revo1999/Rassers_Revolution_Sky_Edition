@@ -1,0 +1,4736 @@
+{
+  "name": "Mechanical Sluice",
+  "units_per_block": 16,
+  "axis": "+Z downstream, +Y up, X across",
+  "target": "Minecraft Java 1.21.1 / NeoForge 21.1.265 / Create 6.0.10 / RevoExtraction",
+  "materials": {
+    "casing": {
+      "path": "assets/casing.png",
+      "resource": "create:block/andesite_casing"
+    },
+    "steel": {
+      "path": "assets/steel.png",
+      "resource": "create:block/axis"
+    },
+    "wood": {
+      "path": "assets/wood.png",
+      "resource": "revoextraction:block/sluice/wood"
+    },
+    "brass": {
+      "path": "assets/brass.png",
+      "resource": "create:block/brass_block"
+    },
+    "copper": {
+      "path": "assets/copper.png",
+      "resource": "create:block/copper_casing"
+    },
+    "chute": {
+      "path": "assets/chute.png",
+      "resource": "create:block/basin"
+    },
+    "gravel": {
+      "path": "assets/gravel.png",
+      "resource": "revoextraction:block/sluice/gravel"
+    },
+    "water": {
+      "path": "assets/water.png",
+      "resource": "revoextraction:block/sluice/water"
+    },
+    "gem": {
+      "path": "assets/gem.png",
+      "resource": "revoextraction:block/sluice/gem"
+    },
+    "dark": {
+      "path": "assets/dark.png",
+      "resource": "revoextraction:block/sluice/dark"
+    },
+    "spring": {
+      "path": "assets/spring.png",
+      "resource": "revoextraction:block/sluice/spring"
+    },
+    "panel": {
+      "path": "assets/panel.png",
+      "resource": "create:block/mixer_base_side"
+    },
+    "drive_housing": {
+      "path": "assets/drive_housing.png",
+      "resource": "create:block/gearbox"
+    },
+    "native_brass": {
+      "path": "assets/native_brass.png",
+      "resource": "create:block/brass_casing"
+    },
+    "native_cog": {
+      "path": "assets/native_cog.png",
+      "resource": "create:block/cogwheel"
+    },
+    "native_iron": {
+      "path": "assets/native_iron.png",
+      "resource": "create:block/industrial_iron_block"
+    },
+    "native_axis_top": {
+      "path": "assets/native_axis_top.png",
+      "resource": "create:block/axis_top"
+    }
+  },
+  "parts": [
+    {
+      "name": "bed_0",
+      "from": [
+        -6,
+        11.5,
+        0
+      ],
+      "to": [
+        6,
+        12,
+        16
+      ],
+      "material": "native_iron",
+      "group": "trough",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "rail_cap_0_-1",
+      "from": [
+        -8.2,
+        13,
+        0
+      ],
+      "to": [
+        -5.8,
+        14,
+        16
+      ],
+      "material": "steel",
+      "group": "trough",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "leg_0_-1_1",
+      "from": [
+        -8,
+        1,
+        1
+      ],
+      "to": [
+        -6,
+        5.6,
+        3
+      ],
+      "material": "casing",
+      "group": "body",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "rail_cap_0_1",
+      "from": [
+        5.8,
+        13,
+        0
+      ],
+      "to": [
+        8.2,
+        14,
+        16
+      ],
+      "material": "steel",
+      "group": "trough",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "leg_0_1_1",
+      "from": [
+        6,
+        1,
+        1
+      ],
+      "to": [
+        8,
+        5.6,
+        3
+      ],
+      "material": "casing",
+      "group": "body",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "water_bed_0",
+      "from": [
+        -6,
+        11.45,
+        0
+      ],
+      "to": [
+        6,
+        13,
+        16
+      ],
+      "material": "water",
+      "group": "water",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "water_step_0",
+      "from": [
+        -6,
+        11,
+        15.8
+      ],
+      "to": [
+        6,
+        13,
+        16.2
+      ],
+      "material": "water",
+      "group": "water",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "riffle_0_5",
+      "from": [
+        -6,
+        12,
+        5
+      ],
+      "to": [
+        6,
+        12.35,
+        6
+      ],
+      "material": "native_iron",
+      "group": "trough",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "riffle_0_11",
+      "from": [
+        -6,
+        12,
+        11
+      ],
+      "to": [
+        6,
+        12.35,
+        12
+      ],
+      "material": "native_iron",
+      "group": "trough",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "bed_1",
+      "from": [
+        -6,
+        9.5,
+        16
+      ],
+      "to": [
+        6,
+        10,
+        32
+      ],
+      "material": "native_iron",
+      "group": "trough",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "andesite_rail_1_-1",
+      "from": [
+        -8,
+        5,
+        16
+      ],
+      "to": [
+        -6,
+        11,
+        32
+      ],
+      "material": "panel",
+      "group": "trough",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "rail_cap_1_-1",
+      "from": [
+        -8.2,
+        11,
+        16
+      ],
+      "to": [
+        -5.8,
+        12,
+        32
+      ],
+      "material": "steel",
+      "group": "trough",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "andesite_rail_1_1",
+      "from": [
+        6,
+        5,
+        16
+      ],
+      "to": [
+        8,
+        11,
+        32
+      ],
+      "material": "panel",
+      "group": "trough",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "rail_cap_1_1",
+      "from": [
+        5.8,
+        11,
+        16
+      ],
+      "to": [
+        8.2,
+        12,
+        32
+      ],
+      "material": "steel",
+      "group": "trough",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "water_bed_1",
+      "from": [
+        -6,
+        9.45,
+        16
+      ],
+      "to": [
+        6,
+        11,
+        32
+      ],
+      "material": "water",
+      "group": "water",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "water_step_1",
+      "from": [
+        -6,
+        9,
+        31.8
+      ],
+      "to": [
+        6,
+        11,
+        32.2
+      ],
+      "material": "water",
+      "group": "water",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "riffle_1_5",
+      "from": [
+        -6,
+        10,
+        21
+      ],
+      "to": [
+        6,
+        10.35,
+        22
+      ],
+      "material": "native_iron",
+      "group": "trough",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "riffle_1_11",
+      "from": [
+        -6,
+        10,
+        27
+      ],
+      "to": [
+        6,
+        10.35,
+        28
+      ],
+      "material": "native_iron",
+      "group": "trough",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "bed_2",
+      "from": [
+        -6,
+        7.5,
+        32
+      ],
+      "to": [
+        6,
+        8,
+        48
+      ],
+      "material": "native_iron",
+      "group": "trough",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "andesite_rail_2_-1",
+      "from": [
+        -8,
+        3,
+        32
+      ],
+      "to": [
+        -6,
+        9,
+        48
+      ],
+      "material": "panel",
+      "group": "trough",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "rail_cap_2_-1",
+      "from": [
+        -8.2,
+        9,
+        32
+      ],
+      "to": [
+        -5.8,
+        10,
+        48
+      ],
+      "material": "steel",
+      "group": "trough",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "leg_2_-1_45",
+      "from": [
+        -8,
+        1,
+        45
+      ],
+      "to": [
+        -6,
+        1.6,
+        47
+      ],
+      "material": "casing",
+      "group": "body",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "andesite_rail_2_1",
+      "from": [
+        6,
+        3,
+        32
+      ],
+      "to": [
+        8,
+        9,
+        48
+      ],
+      "material": "panel",
+      "group": "trough",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "rail_cap_2_1",
+      "from": [
+        5.8,
+        9,
+        32
+      ],
+      "to": [
+        8.2,
+        10,
+        48
+      ],
+      "material": "steel",
+      "group": "trough",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "leg_2_1_45",
+      "from": [
+        6,
+        1,
+        45
+      ],
+      "to": [
+        8,
+        1.6,
+        47
+      ],
+      "material": "casing",
+      "group": "body",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "water_bed_2",
+      "from": [
+        -6,
+        7.45,
+        32
+      ],
+      "to": [
+        6,
+        9,
+        48
+      ],
+      "material": "water",
+      "group": "water",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "riffle_2_5",
+      "from": [
+        -6,
+        8,
+        37
+      ],
+      "to": [
+        6,
+        8.35,
+        38
+      ],
+      "material": "native_iron",
+      "group": "trough",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "riffle_2_11",
+      "from": [
+        -6,
+        8,
+        43
+      ],
+      "to": [
+        6,
+        8.35,
+        44
+      ],
+      "material": "native_iron",
+      "group": "trough",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "downstream_waterfall",
+      "from": [
+        -6,
+        0,
+        48
+      ],
+      "to": [
+        6,
+        9,
+        48.4
+      ],
+      "material": "water",
+      "group": "water",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "outlet_lip",
+      "from": [
+        -6,
+        4.5,
+        47
+      ],
+      "to": [
+        6,
+        5.5,
+        49
+      ],
+      "material": "steel",
+      "group": "trough",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "inlet_water",
+      "from": [
+        -2,
+        13,
+        14.1
+      ],
+      "to": [
+        2,
+        18,
+        14.6
+      ],
+      "material": "water",
+      "group": "water_inlet",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "tray_side_-5.8",
+      "from": [
+        -5.8,
+        13.4,
+        5
+      ],
+      "to": [
+        -5,
+        15,
+        18
+      ],
+      "material": "native_iron",
+      "group": "shaker",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "tray_side_5",
+      "from": [
+        5,
+        13.4,
+        5
+      ],
+      "to": [
+        5.8,
+        15,
+        18
+      ],
+      "material": "native_iron",
+      "group": "shaker",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "tray_end_5",
+      "from": [
+        -5.8,
+        13.4,
+        5
+      ],
+      "to": [
+        5.8,
+        15,
+        5.8
+      ],
+      "material": "native_iron",
+      "group": "shaker",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "tray_end_17.2",
+      "from": [
+        -5.8,
+        13.4,
+        17.2
+      ],
+      "to": [
+        5.8,
+        15,
+        18
+      ],
+      "material": "native_iron",
+      "group": "shaker",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "grille_long_-4",
+      "from": [
+        -4,
+        13.8,
+        5.8
+      ],
+      "to": [
+        -3.55,
+        14.35,
+        17.2
+      ],
+      "material": "native_iron",
+      "group": "shaker",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "grille_long_-2",
+      "from": [
+        -2,
+        13.8,
+        5.8
+      ],
+      "to": [
+        -1.55,
+        14.35,
+        17.2
+      ],
+      "material": "native_iron",
+      "group": "shaker",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "grille_long_0",
+      "from": [
+        0,
+        13.8,
+        5.8
+      ],
+      "to": [
+        0.45,
+        14.35,
+        17.2
+      ],
+      "material": "native_iron",
+      "group": "shaker",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "grille_long_2",
+      "from": [
+        2,
+        13.8,
+        5.8
+      ],
+      "to": [
+        2.45,
+        14.35,
+        17.2
+      ],
+      "material": "native_iron",
+      "group": "shaker",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "grille_long_4",
+      "from": [
+        4,
+        13.8,
+        5.8
+      ],
+      "to": [
+        4.45,
+        14.35,
+        17.2
+      ],
+      "material": "native_iron",
+      "group": "shaker",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "grille_cross_7",
+      "from": [
+        -5,
+        13.8,
+        7
+      ],
+      "to": [
+        5,
+        14.35,
+        7.45
+      ],
+      "material": "native_iron",
+      "group": "shaker",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "grille_cross_9",
+      "from": [
+        -5,
+        13.8,
+        9
+      ],
+      "to": [
+        5,
+        14.35,
+        9.45
+      ],
+      "material": "native_iron",
+      "group": "shaker",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "grille_cross_11",
+      "from": [
+        -5,
+        13.8,
+        11
+      ],
+      "to": [
+        5,
+        14.35,
+        11.45
+      ],
+      "material": "native_iron",
+      "group": "shaker",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "grille_cross_13",
+      "from": [
+        -5,
+        13.8,
+        13
+      ],
+      "to": [
+        5,
+        14.35,
+        13.45
+      ],
+      "material": "native_iron",
+      "group": "shaker",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "grille_cross_15",
+      "from": [
+        -5,
+        13.8,
+        15
+      ],
+      "to": [
+        5,
+        14.35,
+        15.45
+      ],
+      "material": "native_iron",
+      "group": "shaker",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "transverse_shaft",
+      "from": [
+        -8,
+        6,
+        6
+      ],
+      "to": [
+        8,
+        10,
+        10
+      ],
+      "material": "steel",
+      "group": "drive",
+      "pivot": [
+        0,
+        8,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "crank_axle",
+      "from": [
+        -11,
+        6.5,
+        6.5
+      ],
+      "to": [
+        -8,
+        9.5,
+        9.5
+      ],
+      "material": "steel",
+      "group": "drive",
+      "pivot": [
+        0,
+        8,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "crank_hub",
+      "from": [
+        -11.3,
+        6.4,
+        6.4
+      ],
+      "to": [
+        -8.8,
+        9.6,
+        9.6
+      ],
+      "material": "steel",
+      "group": "crank",
+      "pivot": [
+        -10,
+        8,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "eccentric_pin",
+      "from": [
+        -12.2,
+        7.75,
+        8.25
+      ],
+      "to": [
+        -10.8,
+        8.25,
+        8.75
+      ],
+      "material": "brass",
+      "group": "crank",
+      "pivot": [
+        -10,
+        8,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "gate_slide_housing",
+      "from": [
+        -9,
+        16.2,
+        7
+      ],
+      "to": [
+        -7,
+        20,
+        11
+      ],
+      "material": "casing",
+      "group": "feeder",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "base_rail_0_-8",
+      "from": [
+        -8,
+        0,
+        0
+      ],
+      "to": [
+        -6,
+        1,
+        16
+      ],
+      "material": "steel",
+      "group": "body",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "base_rail_0_6",
+      "from": [
+        6,
+        0,
+        0
+      ],
+      "to": [
+        8,
+        1,
+        16
+      ],
+      "material": "steel",
+      "group": "body",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "base_rail_1_-8",
+      "from": [
+        -8,
+        0,
+        16
+      ],
+      "to": [
+        -6,
+        1,
+        32
+      ],
+      "material": "steel",
+      "group": "body",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "base_rail_1_6",
+      "from": [
+        6,
+        0,
+        16
+      ],
+      "to": [
+        8,
+        1,
+        32
+      ],
+      "material": "steel",
+      "group": "body",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "base_rail_2_-8",
+      "from": [
+        -8,
+        0,
+        32
+      ],
+      "to": [
+        -6,
+        1,
+        48
+      ],
+      "material": "steel",
+      "group": "body",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "base_rail_2_6",
+      "from": [
+        6,
+        0,
+        32
+      ],
+      "to": [
+        8,
+        1,
+        48
+      ],
+      "material": "steel",
+      "group": "body",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "base_cross_1",
+      "from": [
+        -6,
+        0,
+        1
+      ],
+      "to": [
+        6,
+        1,
+        3
+      ],
+      "material": "steel",
+      "group": "body",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "base_cross_45",
+      "from": [
+        -6,
+        0,
+        45
+      ],
+      "to": [
+        6,
+        1,
+        47
+      ],
+      "material": "steel",
+      "group": "body",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "rubber_spring_front_-1",
+      "from": [
+        -8,
+        5.6,
+        1
+      ],
+      "to": [
+        -6,
+        7,
+        3
+      ],
+      "material": "spring",
+      "group": "spring_front",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "rubber_spring_front_1",
+      "from": [
+        6,
+        5.6,
+        1
+      ],
+      "to": [
+        8,
+        7,
+        3
+      ],
+      "material": "spring",
+      "group": "spring_front",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "rubber_spring_rear_-1",
+      "from": [
+        -8,
+        1.6,
+        45
+      ],
+      "to": [
+        -6,
+        3,
+        47
+      ],
+      "material": "spring",
+      "group": "spring_rear",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "rubber_spring_rear_1",
+      "from": [
+        6,
+        1.6,
+        45
+      ],
+      "to": [
+        8,
+        3,
+        47
+      ],
+      "material": "spring",
+      "group": "spring_rear",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "yoke_lower",
+      "from": [
+        -12.6,
+        7.1,
+        5.8
+      ],
+      "to": [
+        -11.8,
+        7.5,
+        10.2
+      ],
+      "material": "steel",
+      "group": "rod",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "yoke_upper",
+      "from": [
+        -12.6,
+        8.5,
+        5.8
+      ],
+      "to": [
+        -11.8,
+        8.9,
+        10.2
+      ],
+      "material": "steel",
+      "group": "rod",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "yoke_end_a",
+      "from": [
+        -12.6,
+        7.5,
+        5.8
+      ],
+      "to": [
+        -11.8,
+        8.5,
+        6.3
+      ],
+      "material": "steel",
+      "group": "rod",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "yoke_end_b",
+      "from": [
+        -12.6,
+        7.5,
+        9.7
+      ],
+      "to": [
+        -11.8,
+        8.5,
+        10.2
+      ],
+      "material": "steel",
+      "group": "rod",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "yoke_upright",
+      "from": [
+        -12.6,
+        8.9,
+        9.7
+      ],
+      "to": [
+        -11.8,
+        12,
+        10.2
+      ],
+      "material": "steel",
+      "group": "rod",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "yoke_channel_link",
+      "from": [
+        -12.6,
+        11.4,
+        14.5
+      ],
+      "to": [
+        -7.8,
+        12,
+        15.2
+      ],
+      "material": "steel",
+      "group": "rod",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "guide_a",
+      "from": [
+        -12.8,
+        5.5,
+        5
+      ],
+      "to": [
+        -11.6,
+        10,
+        5.6
+      ],
+      "material": "dark",
+      "group": "body",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "guide_b",
+      "from": [
+        -12.8,
+        5.5,
+        10.4
+      ],
+      "to": [
+        -11.6,
+        10,
+        11
+      ],
+      "material": "dark",
+      "group": "body",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "guide_foot",
+      "from": [
+        -12.8,
+        5,
+        5
+      ],
+      "to": [
+        -11.6,
+        5.5,
+        13
+      ],
+      "material": "dark",
+      "group": "body",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "guide_mount",
+      "from": [
+        -12.8,
+        5,
+        12.2
+      ],
+      "to": [
+        -7.8,
+        5.5,
+        13
+      ],
+      "material": "dark",
+      "group": "body",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "bearing_frame_-1_top",
+      "from": [
+        -9.2,
+        11,
+        2
+      ],
+      "to": [
+        -8.35,
+        14,
+        14
+      ],
+      "material": "steel",
+      "group": "body",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "bearing_frame_-1_bottom",
+      "from": [
+        -9.2,
+        2,
+        2
+      ],
+      "to": [
+        -8.35,
+        5,
+        14
+      ],
+      "material": "steel",
+      "group": "body",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "bearing_frame_-1_front",
+      "from": [
+        -9.2,
+        5,
+        2
+      ],
+      "to": [
+        -8.35,
+        11,
+        5
+      ],
+      "material": "steel",
+      "group": "body",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "bearing_frame_-1_back",
+      "from": [
+        -9.2,
+        5,
+        11
+      ],
+      "to": [
+        -8.35,
+        11,
+        14
+      ],
+      "material": "steel",
+      "group": "body",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "bearing_frame_1_top",
+      "from": [
+        8.35,
+        11,
+        2
+      ],
+      "to": [
+        9.2,
+        14,
+        14
+      ],
+      "material": "steel",
+      "group": "body",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "bearing_frame_1_bottom",
+      "from": [
+        8.35,
+        2,
+        2
+      ],
+      "to": [
+        9.2,
+        5,
+        14
+      ],
+      "material": "steel",
+      "group": "body",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "bearing_frame_1_front",
+      "from": [
+        8.35,
+        5,
+        2
+      ],
+      "to": [
+        9.2,
+        11,
+        5
+      ],
+      "material": "steel",
+      "group": "body",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "bearing_frame_1_back",
+      "from": [
+        8.35,
+        5,
+        11
+      ],
+      "to": [
+        9.2,
+        11,
+        14
+      ],
+      "material": "steel",
+      "group": "body",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "housing_foot_-1_2",
+      "from": [
+        -9.2,
+        1,
+        2
+      ],
+      "to": [
+        -6.5,
+        2,
+        3
+      ],
+      "material": "dark",
+      "group": "body",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "housing_foot_-1_12",
+      "from": [
+        -9.2,
+        1,
+        12
+      ],
+      "to": [
+        -6.5,
+        2,
+        13
+      ],
+      "material": "dark",
+      "group": "body",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "housing_foot_1_2",
+      "from": [
+        6.5,
+        1,
+        2
+      ],
+      "to": [
+        9.2,
+        2,
+        3
+      ],
+      "material": "dark",
+      "group": "body",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "housing_foot_1_12",
+      "from": [
+        6.5,
+        1,
+        12
+      ],
+      "to": [
+        9.2,
+        2,
+        13
+      ],
+      "material": "dark",
+      "group": "body",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "yoke_transfer_rail",
+      "from": [
+        -12.6,
+        11.4,
+        9.7
+      ],
+      "to": [
+        -11.8,
+        12,
+        15.2
+      ],
+      "material": "steel",
+      "group": "rod",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "head_panel_-1_front",
+      "from": [
+        -8,
+        7,
+        0
+      ],
+      "to": [
+        -6,
+        13,
+        5
+      ],
+      "material": "panel",
+      "group": "trough",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "head_panel_-1_back",
+      "from": [
+        -8,
+        7,
+        11
+      ],
+      "to": [
+        -6,
+        13,
+        16
+      ],
+      "material": "panel",
+      "group": "trough",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "head_panel_-1_bridge",
+      "from": [
+        -8,
+        11.4,
+        5
+      ],
+      "to": [
+        -6,
+        13,
+        11
+      ],
+      "material": "panel",
+      "group": "trough",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "head_panel_1_front",
+      "from": [
+        6,
+        7,
+        0
+      ],
+      "to": [
+        8,
+        13,
+        5
+      ],
+      "material": "panel",
+      "group": "trough",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "head_panel_1_back",
+      "from": [
+        6,
+        7,
+        11
+      ],
+      "to": [
+        8,
+        13,
+        16
+      ],
+      "material": "panel",
+      "group": "trough",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "head_panel_1_bridge",
+      "from": [
+        6,
+        11.4,
+        5
+      ],
+      "to": [
+        8,
+        13,
+        11
+      ],
+      "material": "panel",
+      "group": "trough",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "native_cog_0",
+      "from": [
+        -10.67,
+        4.58,
+        7.43
+      ],
+      "to": [
+        -9.53,
+        11.42,
+        8.57
+      ],
+      "material": "native_cog",
+      "group": "crank",
+      "pivot": [
+        -10.1,
+        8,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "native_cog_1",
+      "from": [
+        -10.67,
+        4.58,
+        7.43
+      ],
+      "to": [
+        -9.53,
+        11.42,
+        8.57
+      ],
+      "material": "native_cog",
+      "group": "crank",
+      "pivot": [
+        -10.1,
+        8,
+        8
+      ],
+      "rotation": [
+        45,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "native_cog_2",
+      "from": [
+        -10.67,
+        4.58,
+        7.43
+      ],
+      "to": [
+        -9.53,
+        11.42,
+        8.57
+      ],
+      "material": "native_cog",
+      "group": "crank",
+      "pivot": [
+        -10.1,
+        8,
+        8
+      ],
+      "rotation": [
+        -45,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "native_cog_3",
+      "from": [
+        -10.67,
+        7.43,
+        4.58
+      ],
+      "to": [
+        -9.53,
+        8.57,
+        11.42
+      ],
+      "material": "native_cog",
+      "group": "crank",
+      "pivot": [
+        -10.1,
+        8,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "native_cog_4",
+      "from": [
+        -10.651,
+        5.72,
+        5.72
+      ],
+      "to": [
+        -9.549,
+        10.28,
+        10.28
+      ],
+      "material": "native_cog",
+      "group": "crank",
+      "pivot": [
+        -10.1,
+        8,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "native_cog_5",
+      "from": [
+        -10.86,
+        6.48,
+        6.48
+      ],
+      "to": [
+        -9.34,
+        9.52,
+        9.52
+      ],
+      "material": "native_cog",
+      "group": "crank",
+      "pivot": [
+        -10.1,
+        8,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "rear_manifold",
+      "from": [
+        -6,
+        16,
+        0
+      ],
+      "to": [
+        6,
+        29,
+        4
+      ],
+      "material": "casing",
+      "group": "feeder",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "pipe_flange",
+      "from": [
+        -4,
+        20,
+        -1
+      ],
+      "to": [
+        4,
+        28,
+        1
+      ],
+      "material": "copper",
+      "group": "feeder",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "pipe_bore",
+      "from": [
+        -2,
+        22,
+        -1.12
+      ],
+      "to": [
+        2,
+        26,
+        -1.02
+      ],
+      "material": "dark",
+      "group": "feeder",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "inlet_spout",
+      "from": [
+        -3,
+        17,
+        12
+      ],
+      "to": [
+        3,
+        19,
+        15
+      ],
+      "material": "native_iron",
+      "group": "feeder",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "intake_wood_side_-1",
+      "from": [
+        -8,
+        18,
+        4
+      ],
+      "to": [
+        -6,
+        30,
+        15
+      ],
+      "material": "wood",
+      "group": "feeder",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "intake_front_jamb_-1",
+      "from": [
+        -8,
+        18,
+        14
+      ],
+      "to": [
+        -4,
+        29,
+        16
+      ],
+      "material": "wood",
+      "group": "feeder",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "intake_front_brass_-1",
+      "from": [
+        -5,
+        19,
+        15.95
+      ],
+      "to": [
+        -4,
+        29,
+        16.65
+      ],
+      "material": "brass",
+      "group": "feeder",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "intake_corner_-1",
+      "from": [
+        -8.5,
+        28.5,
+        13.5
+      ],
+      "to": [
+        -6.5,
+        31,
+        16.5
+      ],
+      "material": "steel",
+      "group": "feeder",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "intake_post_-1",
+      "from": [
+        -7,
+        15,
+        9
+      ],
+      "to": [
+        -6,
+        18,
+        11
+      ],
+      "material": "steel",
+      "group": "feeder",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "intake_wood_side_1",
+      "from": [
+        6,
+        18,
+        4
+      ],
+      "to": [
+        8,
+        30,
+        15
+      ],
+      "material": "wood",
+      "group": "feeder",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "intake_front_jamb_1",
+      "from": [
+        4,
+        18,
+        14
+      ],
+      "to": [
+        8,
+        29,
+        16
+      ],
+      "material": "wood",
+      "group": "feeder",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "intake_front_brass_1",
+      "from": [
+        4,
+        19,
+        15.95
+      ],
+      "to": [
+        5,
+        29,
+        16.65
+      ],
+      "material": "brass",
+      "group": "feeder",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "intake_corner_1",
+      "from": [
+        6.5,
+        28.5,
+        13.5
+      ],
+      "to": [
+        8.5,
+        31,
+        16.5
+      ],
+      "material": "steel",
+      "group": "feeder",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "intake_post_1",
+      "from": [
+        6,
+        15,
+        9
+      ],
+      "to": [
+        7,
+        18,
+        11
+      ],
+      "material": "steel",
+      "group": "feeder",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "intake_front_lintel",
+      "from": [
+        -8,
+        28,
+        14
+      ],
+      "to": [
+        8,
+        30,
+        16
+      ],
+      "material": "brass",
+      "group": "feeder",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "intake_roof_front",
+      "from": [
+        -8,
+        30,
+        11
+      ],
+      "to": [
+        8,
+        32,
+        16
+      ],
+      "material": "wood",
+      "group": "feeder",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "intake_roof_rear",
+      "from": [
+        -8,
+        30,
+        0
+      ],
+      "to": [
+        8,
+        32,
+        5
+      ],
+      "material": "wood",
+      "group": "feeder",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "intake_roof_left",
+      "from": [
+        -8,
+        30,
+        5
+      ],
+      "to": [
+        -3,
+        32,
+        11
+      ],
+      "material": "wood",
+      "group": "feeder",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "intake_roof_right",
+      "from": [
+        3,
+        30,
+        5
+      ],
+      "to": [
+        8,
+        32,
+        11
+      ],
+      "material": "wood",
+      "group": "feeder",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "intake_roof_strap",
+      "from": [
+        -1,
+        32,
+        1
+      ],
+      "to": [
+        1,
+        32.65,
+        5
+      ],
+      "material": "steel",
+      "group": "feeder",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "intake_hatch_frame",
+      "from": [
+        8,
+        21,
+        6
+      ],
+      "to": [
+        8.45,
+        27,
+        12
+      ],
+      "material": "steel",
+      "group": "feeder",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "intake_hatch_inset",
+      "from": [
+        8.45,
+        22,
+        7
+      ],
+      "to": [
+        8.55,
+        26,
+        11
+      ],
+      "material": "wood",
+      "group": "feeder",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "intake_hatch_hub",
+      "from": [
+        8.55,
+        23.25,
+        8.25
+      ],
+      "to": [
+        9,
+        24.75,
+        9.75
+      ],
+      "material": "brass",
+      "group": "feeder",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "chassis_wood_0_-1",
+      "from": [
+        -8,
+        1,
+        0
+      ],
+      "to": [
+        -6,
+        2.3,
+        16
+      ],
+      "material": "wood",
+      "group": "body",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "chassis_wood_0_1",
+      "from": [
+        6,
+        1,
+        0
+      ],
+      "to": [
+        8,
+        2.3,
+        16
+      ],
+      "material": "wood",
+      "group": "body",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "chassis_wood_1_-1",
+      "from": [
+        -8,
+        1,
+        16
+      ],
+      "to": [
+        -6,
+        2.3,
+        32
+      ],
+      "material": "wood",
+      "group": "body",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "chassis_wood_1_1",
+      "from": [
+        6,
+        1,
+        16
+      ],
+      "to": [
+        8,
+        2.3,
+        32
+      ],
+      "material": "wood",
+      "group": "body",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "chassis_wood_2_-1",
+      "from": [
+        -8,
+        1,
+        32
+      ],
+      "to": [
+        -6,
+        1.6,
+        48
+      ],
+      "material": "wood",
+      "group": "body",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "chassis_wood_2_1",
+      "from": [
+        6,
+        1,
+        32
+      ],
+      "to": [
+        8,
+        1.6,
+        48
+      ],
+      "material": "wood",
+      "group": "body",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "chassis_corner_-1_0",
+      "from": [
+        -8.3,
+        0,
+        0
+      ],
+      "to": [
+        -6.3,
+        2.3,
+        2
+      ],
+      "material": "steel",
+      "group": "body",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "chassis_corner_-1_46",
+      "from": [
+        -8.3,
+        0,
+        46
+      ],
+      "to": [
+        -6.3,
+        1.6,
+        48
+      ],
+      "material": "steel",
+      "group": "body",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "chassis_corner_1_0",
+      "from": [
+        6.3,
+        0,
+        0
+      ],
+      "to": [
+        8.3,
+        2.3,
+        2
+      ],
+      "material": "steel",
+      "group": "body",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "chassis_corner_1_46",
+      "from": [
+        6.3,
+        0,
+        46
+      ],
+      "to": [
+        8.3,
+        1.6,
+        48
+      ],
+      "material": "steel",
+      "group": "body",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "brass_corner_0_-1",
+      "from": [
+        -8.25,
+        12.8,
+        0
+      ],
+      "to": [
+        -5.75,
+        14.45,
+        1.5
+      ],
+      "material": "brass",
+      "group": "trough",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "steel_side_clamp_0_-1",
+      "from": [
+        -8.35,
+        8,
+        12
+      ],
+      "to": [
+        -8,
+        14.2,
+        13
+      ],
+      "material": "steel",
+      "group": "trough",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "brass_corner_0_1",
+      "from": [
+        5.75,
+        12.8,
+        0
+      ],
+      "to": [
+        8.25,
+        14.45,
+        1.5
+      ],
+      "material": "brass",
+      "group": "trough",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "steel_side_clamp_0_1",
+      "from": [
+        8,
+        8,
+        12
+      ],
+      "to": [
+        8.35,
+        14.2,
+        13
+      ],
+      "material": "steel",
+      "group": "trough",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "brass_corner_1_-1",
+      "from": [
+        -8.25,
+        10.8,
+        16
+      ],
+      "to": [
+        -5.75,
+        12.45,
+        17.5
+      ],
+      "material": "brass",
+      "group": "trough",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "steel_side_clamp_1_-1",
+      "from": [
+        -8.35,
+        6,
+        28
+      ],
+      "to": [
+        -8,
+        12.2,
+        29
+      ],
+      "material": "steel",
+      "group": "trough",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "brass_corner_1_1",
+      "from": [
+        5.75,
+        10.8,
+        16
+      ],
+      "to": [
+        8.25,
+        12.45,
+        17.5
+      ],
+      "material": "brass",
+      "group": "trough",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "steel_side_clamp_1_1",
+      "from": [
+        8,
+        6,
+        28
+      ],
+      "to": [
+        8.35,
+        12.2,
+        29
+      ],
+      "material": "steel",
+      "group": "trough",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "brass_corner_2_-1",
+      "from": [
+        -8.25,
+        8.8,
+        32
+      ],
+      "to": [
+        -5.75,
+        10.45,
+        33.5
+      ],
+      "material": "brass",
+      "group": "trough",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "steel_side_clamp_2_-1",
+      "from": [
+        -8.35,
+        4,
+        44
+      ],
+      "to": [
+        -8,
+        10.2,
+        45
+      ],
+      "material": "steel",
+      "group": "trough",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "brass_corner_2_1",
+      "from": [
+        5.75,
+        8.8,
+        32
+      ],
+      "to": [
+        8.25,
+        10.45,
+        33.5
+      ],
+      "material": "brass",
+      "group": "trough",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "steel_side_clamp_2_1",
+      "from": [
+        8,
+        4,
+        44
+      ],
+      "to": [
+        8.35,
+        10.2,
+        45
+      ],
+      "material": "steel",
+      "group": "trough",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "outlet_brass_corner_-1",
+      "from": [
+        -8.25,
+        8.8,
+        46.5
+      ],
+      "to": [
+        -5.75,
+        10.45,
+        48
+      ],
+      "material": "brass",
+      "group": "trough",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "outlet_brass_corner_1",
+      "from": [
+        5.75,
+        8.8,
+        46.5
+      ],
+      "to": [
+        8.25,
+        10.45,
+        48
+      ],
+      "material": "brass",
+      "group": "trough",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "grille_extension_long_1_-4",
+      "from": [
+        -4,
+        11.8,
+        16.7
+      ],
+      "to": [
+        -3.55,
+        12.35,
+        31.3
+      ],
+      "material": "native_iron",
+      "group": "shaker",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "grille_extension_long_1_-2",
+      "from": [
+        -2,
+        11.8,
+        16.7
+      ],
+      "to": [
+        -1.55,
+        12.35,
+        31.3
+      ],
+      "material": "native_iron",
+      "group": "shaker",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "grille_extension_long_1_0",
+      "from": [
+        0,
+        11.8,
+        16.7
+      ],
+      "to": [
+        0.45,
+        12.35,
+        31.3
+      ],
+      "material": "native_iron",
+      "group": "shaker",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "grille_extension_long_1_2",
+      "from": [
+        2,
+        11.8,
+        16.7
+      ],
+      "to": [
+        2.45,
+        12.35,
+        31.3
+      ],
+      "material": "native_iron",
+      "group": "shaker",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "grille_extension_long_1_4",
+      "from": [
+        4,
+        11.8,
+        16.7
+      ],
+      "to": [
+        4.45,
+        12.35,
+        31.3
+      ],
+      "material": "native_iron",
+      "group": "shaker",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "grille_extension_cross_1_1",
+      "from": [
+        -5,
+        11.8,
+        17
+      ],
+      "to": [
+        5,
+        12.35,
+        17.45
+      ],
+      "material": "native_iron",
+      "group": "shaker",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "grille_extension_cross_1_3",
+      "from": [
+        -5,
+        11.8,
+        19
+      ],
+      "to": [
+        5,
+        12.35,
+        19.45
+      ],
+      "material": "native_iron",
+      "group": "shaker",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "grille_extension_cross_1_5",
+      "from": [
+        -5,
+        11.8,
+        21
+      ],
+      "to": [
+        5,
+        12.35,
+        21.45
+      ],
+      "material": "native_iron",
+      "group": "shaker",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "grille_extension_cross_1_7",
+      "from": [
+        -5,
+        11.8,
+        23
+      ],
+      "to": [
+        5,
+        12.35,
+        23.45
+      ],
+      "material": "native_iron",
+      "group": "shaker",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "grille_extension_cross_1_9",
+      "from": [
+        -5,
+        11.8,
+        25
+      ],
+      "to": [
+        5,
+        12.35,
+        25.45
+      ],
+      "material": "native_iron",
+      "group": "shaker",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "grille_extension_cross_1_11",
+      "from": [
+        -5,
+        11.8,
+        27
+      ],
+      "to": [
+        5,
+        12.35,
+        27.45
+      ],
+      "material": "native_iron",
+      "group": "shaker",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "grille_extension_cross_1_13",
+      "from": [
+        -5,
+        11.8,
+        29
+      ],
+      "to": [
+        5,
+        12.35,
+        29.45
+      ],
+      "material": "native_iron",
+      "group": "shaker",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "grille_extension_cross_1_15",
+      "from": [
+        -5,
+        11.8,
+        31
+      ],
+      "to": [
+        5,
+        12.35,
+        31.45
+      ],
+      "material": "native_iron",
+      "group": "shaker",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "grille_extension_frame_1_-1",
+      "from": [
+        -5.8,
+        11.4,
+        16.5
+      ],
+      "to": [
+        -5,
+        13,
+        31.5
+      ],
+      "material": "native_iron",
+      "group": "shaker",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "grille_extension_frame_1_1",
+      "from": [
+        5,
+        11.4,
+        16.5
+      ],
+      "to": [
+        5.8,
+        13,
+        31.5
+      ],
+      "material": "native_iron",
+      "group": "shaker",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "grille_extension_long_2_-4",
+      "from": [
+        -4,
+        9.8,
+        32.7
+      ],
+      "to": [
+        -3.55,
+        10.35,
+        47.3
+      ],
+      "material": "native_iron",
+      "group": "shaker",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "grille_extension_long_2_-2",
+      "from": [
+        -2,
+        9.8,
+        32.7
+      ],
+      "to": [
+        -1.55,
+        10.35,
+        47.3
+      ],
+      "material": "native_iron",
+      "group": "shaker",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "grille_extension_long_2_0",
+      "from": [
+        0,
+        9.8,
+        32.7
+      ],
+      "to": [
+        0.45,
+        10.35,
+        47.3
+      ],
+      "material": "native_iron",
+      "group": "shaker",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "grille_extension_long_2_2",
+      "from": [
+        2,
+        9.8,
+        32.7
+      ],
+      "to": [
+        2.45,
+        10.35,
+        47.3
+      ],
+      "material": "native_iron",
+      "group": "shaker",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "grille_extension_long_2_4",
+      "from": [
+        4,
+        9.8,
+        32.7
+      ],
+      "to": [
+        4.45,
+        10.35,
+        47.3
+      ],
+      "material": "native_iron",
+      "group": "shaker",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "grille_extension_cross_2_1",
+      "from": [
+        -5,
+        9.8,
+        33
+      ],
+      "to": [
+        5,
+        10.35,
+        33.45
+      ],
+      "material": "native_iron",
+      "group": "shaker",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "grille_extension_cross_2_3",
+      "from": [
+        -5,
+        9.8,
+        35
+      ],
+      "to": [
+        5,
+        10.35,
+        35.45
+      ],
+      "material": "native_iron",
+      "group": "shaker",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "grille_extension_cross_2_5",
+      "from": [
+        -5,
+        9.8,
+        37
+      ],
+      "to": [
+        5,
+        10.35,
+        37.45
+      ],
+      "material": "native_iron",
+      "group": "shaker",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "grille_extension_cross_2_7",
+      "from": [
+        -5,
+        9.8,
+        39
+      ],
+      "to": [
+        5,
+        10.35,
+        39.45
+      ],
+      "material": "native_iron",
+      "group": "shaker",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "grille_extension_cross_2_9",
+      "from": [
+        -5,
+        9.8,
+        41
+      ],
+      "to": [
+        5,
+        10.35,
+        41.45
+      ],
+      "material": "native_iron",
+      "group": "shaker",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "grille_extension_cross_2_11",
+      "from": [
+        -5,
+        9.8,
+        43
+      ],
+      "to": [
+        5,
+        10.35,
+        43.45
+      ],
+      "material": "native_iron",
+      "group": "shaker",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "grille_extension_cross_2_13",
+      "from": [
+        -5,
+        9.8,
+        45
+      ],
+      "to": [
+        5,
+        10.35,
+        45.45
+      ],
+      "material": "native_iron",
+      "group": "shaker",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "grille_extension_cross_2_15",
+      "from": [
+        -5,
+        9.8,
+        47
+      ],
+      "to": [
+        5,
+        10.35,
+        47.45
+      ],
+      "material": "native_iron",
+      "group": "shaker",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "grille_extension_frame_2_-1",
+      "from": [
+        -5.8,
+        9.4,
+        32.5
+      ],
+      "to": [
+        -5,
+        11,
+        47.5
+      ],
+      "material": "native_iron",
+      "group": "shaker",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "grille_extension_frame_2_1",
+      "from": [
+        5,
+        9.4,
+        32.5
+      ],
+      "to": [
+        5.8,
+        11,
+        47.5
+      ],
+      "material": "native_iron",
+      "group": "shaker",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "side_copper_vessel",
+      "from": [
+        10,
+        2,
+        17
+      ],
+      "to": [
+        14,
+        11,
+        23
+      ],
+      "material": "copper",
+      "group": "body",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "side_vessel_band_2",
+      "from": [
+        9.7,
+        2,
+        16.7
+      ],
+      "to": [
+        14.3,
+        3,
+        23.3
+      ],
+      "material": "copper",
+      "group": "body",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "side_vessel_band_10",
+      "from": [
+        9.7,
+        10,
+        16.7
+      ],
+      "to": [
+        14.3,
+        11,
+        23.3
+      ],
+      "material": "copper",
+      "group": "body",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "side_vessel_neck",
+      "from": [
+        11,
+        11,
+        18.5
+      ],
+      "to": [
+        13,
+        13,
+        21.5
+      ],
+      "material": "copper",
+      "group": "body",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "side_pipe_vertical",
+      "from": [
+        11.25,
+        13,
+        19.25
+      ],
+      "to": [
+        12.75,
+        16.5,
+        20.75
+      ],
+      "material": "steel",
+      "group": "body",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "side_pipe_elbow",
+      "from": [
+        10,
+        15,
+        19.25
+      ],
+      "to": [
+        11.25,
+        16.5,
+        20.75
+      ],
+      "material": "steel",
+      "group": "body",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "side_pipe_sleeve",
+      "from": [
+        9.3,
+        14.7,
+        19
+      ],
+      "to": [
+        10,
+        16.8,
+        21
+      ],
+      "material": "brass",
+      "group": "body",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "ports": [
+    {
+      "name": "water_in",
+      "position": [
+        0,
+        24,
+        0
+      ],
+      "normal": [
+        0,
+        0,
+        -1
+      ],
+      "kind": "fluid",
+      "note": "Upper rear face; connect Fluid Pipe supplied by Mechanical Pump"
+    },
+    {
+      "name": "shaft_west",
+      "position": [
+        -8,
+        8,
+        8
+      ],
+      "normal": [
+        -1,
+        0,
+        0
+      ],
+      "kind": "kinetic"
+    },
+    {
+      "name": "shaft_east",
+      "position": [
+        8,
+        8,
+        8
+      ],
+      "normal": [
+        1,
+        0,
+        0
+      ],
+      "kind": "kinetic"
+    },
+    {
+      "name": "gravel_in",
+      "position": [
+        0,
+        32,
+        8
+      ],
+      "normal": [
+        0,
+        1,
+        0
+      ],
+      "kind": "item"
+    },
+    {
+      "name": "products",
+      "position": [
+        8,
+        8,
+        40
+      ],
+      "normal": [
+        1,
+        0,
+        0
+      ],
+      "kind": "item",
+      "note": "Final segment extraction capability and automatic export"
+    },
+    {
+      "name": "tail_water",
+      "position": [
+        0,
+        6,
+        48
+      ],
+      "normal": [
+        0,
+        0,
+        1
+      ],
+      "kind": "visual_outlet"
+    }
+  ],
+  "mechanism": {
+    "type": "guided vertical pin-and-slot yoke",
+    "shaft_center": [
+      0,
+      8,
+      8
+    ],
+    "eccentric_radius": 0.5,
+    "lift": ".5*sin(theta)",
+    "translation_z": 0,
+    "slot_y": [
+      7.5,
+      8.5
+    ],
+    "slot_z": [
+      6.3,
+      9.7
+    ],
+    "spring_height": 1.4,
+    "moving_groups": [
+      "trough",
+      "shaker",
+      "rod"
+    ],
+    "fixed_groups": [
+      "body",
+      "feeder",
+      "water",
+      "water_inlet"
+    ],
+    "spring_groups": [
+      "spring_front",
+      "spring_rear"
+    ]
+  },
+  "processing": {
+    "minimum_rpm": 16,
+    "nominal_rpm": 32,
+    "water_mb_per_tick": 5,
+    "ticks_per_gravel_at_32rpm": 100,
+    "input_slots": 1,
+    "output_slots": 4,
+    "water_buffer_mb": 4000,
+    "conditions": "Water flows independently while supplied. Work needs water, rotation, gravel and output space. Consume gravel only on completed work."
+  }
+}

@@ -87,5 +87,17 @@
   "item.revoextraction.calculation_press_blank": "Calculation Press Blank",
   "item.revoextraction.engineering_press_blank": "Engineering Press Blank",
   "item.revoextraction.silicon_press_blank": "Silicon Press Blank",
-  "item.revoextraction.netherite_template_blank": "Netherite Template Blank"
+  "item.revoextraction.netherite_template_blank": "Netherite Template Blank",
+  "block.revoextraction.mechanical_sluice": "Mechanical Sluice",
+  "block.revoextraction.gravel_feeder": "Gravel Feeder",
+  "gui.revoextraction.sluice_control": "Mechanical Sluice",
+  "gui.revoextraction.sluice_output": "Sluice Collection Tray",
+  "gui.revoextraction.sluice_feeder": "Gravel Feeder",
+  "gui.revoextraction.sluice_status_0": "Incomplete channel",
+  "gui.revoextraction.sluice_status_1": "Add aligned gravel feeder",
+  "gui.revoextraction.sluice_status_2": "Needs at least 16 RPM",
+  "gui.revoextraction.sluice_status_3": "Needs pumped water",
+  "gui.revoextraction.sluice_status_4": "Needs gravel",
+  "gui.revoextraction.sluice_status_5": "Collection tray full",
+  "gui.revoextraction.sluice_status_6": "Washing gravel"
 }

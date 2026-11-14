@@ -1,0 +1,8 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"atlas_pixels\":256,\"logical_uv\":256,\"pixels_per_model_unit\":1,\"pixels_per_block\":16,\"faces\":634}"
+    }
+  ]
+}

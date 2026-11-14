@@ -38,6 +38,8 @@ project(':revolib') {
         runs {
             client {
                 client()
+                if (providers.gradleProperty('revoFeedingQa').isPresent()) { programArguments.addAll '--quickPlaySingleplayer', 'Revo Feeding Helmet QA', '--width', '1440', '--height', '1000' }
+                if (providers.gradleProperty('revoSluiceQa').isPresent()) { programArguments.addAll '--quickPlaySingleplayer', 'Revo Sluice QA', '--width', '1440', '--height', '1000' }
                 if (providers.gradleProperty('revoGalleryQa').isPresent()) { programArguments.addAll '--quickPlaySingleplayer', 'Revo Machine Gallery QA', '--width', '1440', '--height', '1000' }
                 if (providers.gradleProperty('revoExpansionUiQa').isPresent()) {
                     programArguments.addAll '--quickPlaySingleplayer', 'Revo Progression Expansion QA', '--width', '1440', '--height', '1000'

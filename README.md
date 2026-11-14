@@ -1,5 +1,14 @@
 # Rassers Revolution: Sky Edition
 
+RevoIndustry now includes three [Feeding Helmet tiers](docs/FEEDING-HELMETS.md)
+with 1, 4 and 25 food slots, visible mouth tubes and portion-aware auto-feeding.
+Browse the [screenshot collection](screenshots/README.md), including the earlier
+41-machine gallery and the new helmet/sluice views.
+
+The new Create-powered [Mechanical Sluice and Gravel Feeder](docs/MECHANICAL-SLUICE.md)
+wash gravel with real pump-fed water. A guided eccentric moves the channel
+vertically beneath steady water, with native Blockbench sources and dithered textures.
+
 Development scaffold for Minecraft 1.21.1 / NeoForge 21.1.265 / Java 21.
 Seven separate mod projects: RevoLib, RevoIndustry, RevoExtraction,
 RevoCultivation, RevoGenetics, RevoStorage and RevoAchievements. RevoExtraction contains the wooden and iron drills; see

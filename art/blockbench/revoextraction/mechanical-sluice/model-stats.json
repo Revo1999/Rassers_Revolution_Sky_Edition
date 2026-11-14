@@ -1,0 +1,9 @@
+{
+  "machine_cubes": 181,
+  "maximum_quads": 1086,
+  "maximum_triangles": 2172,
+  "groups": 12,
+  "textures": 17,
+  "texture_size": "16x16 materials; vanilla water 32x1024 (32 frames)",
+  "runtime_note": "Native Blockbench Java exports, cutout partials and separate vanilla water pass."
+}
