@@ -38,7 +38,7 @@ public final class VacuumEntity extends BlockEntity implements MenuProvider {
    if(distance<.8){var old=entity.getItem();var left=ItemHandlerHelper.insertItemStacked(inventory,old.copy(),false);if(left.getCount()!=old.getCount()){if(left.isEmpty())entity.discard();else entity.setItem(left);} }
    else {entity.setDeltaMovement(delta.normalize().scale(Math.min(.42,.12+distance*.04)));entity.hurtMarked=true;}
    if(distance>.2){var velocity=delta.normalize().scale(.16);server.sendParticles(ParticleTypes.END_ROD,entity.getX(),entity.getY()+.1,entity.getZ(),0,velocity.x,velocity.y,velocity.z,1);}
-   dk.revo.revolib.MachineFeedback.work(level,worldPosition,dk.revo.revolib.MachineFeedback.Voice.VACUUM);
+   dk.revo.revolib.MachineFeedback.work(level,worldPosition,tier()==0?dk.revo.revolib.MachineFeedback.Voice.VACUUM:tier()==1?dk.revo.revolib.MachineFeedback.Voice.VACUUM_2:dk.revo.revolib.MachineFeedback.Voice.VACUUM_3);
    if(++handled>=12)break;
   }
  }

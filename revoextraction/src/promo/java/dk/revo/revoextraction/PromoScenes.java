@@ -185,6 +185,9 @@ public final class PromoScenes {
         for(var entry:furnace.getActiveShape().simpleMembers.entrySet())level.setBlockAndUpdate(ShapeMatcher.toWorldPos(pos,Direction.SOUTH,entry.getKey()),entry.getValue().getPreviewState());
         BlockPos input=ShapeMatcher.toWorldPos(pos,Direction.SOUTH,new BlockPos(-1,0,0)),output=ShapeMatcher.toWorldPos(pos,Direction.SOUTH,new BlockPos(1,0,0)),fuel=ShapeMatcher.toWorldPos(pos,Direction.SOUTH,new BlockPos(0,0,2));
         level.setBlockAndUpdate(input,Furnaces.ITEM_HATCHES.get(0).get().defaultBlockState());level.setBlockAndUpdate(output,Furnaces.ITEM_HATCHES.get(1).get().defaultBlockState());level.setBlockAndUpdate(fuel,Furnaces.FUEL_HATCHES.get(0).get().defaultBlockState());
+        ((FurnaceItemHatch)level.getBlockEntity(input)).orientation.outputDirection=Direction.SOUTH;
+        ((FurnaceItemHatch)level.getBlockEntity(output)).orientation.outputDirection=Direction.DOWN;
+        ((FurnaceFuelHatch)level.getBlockEntity(fuel)).orientation.outputDirection=Direction.NORTH;
         hopper(input.south(),Direction.NORTH);chest(input.south().above(),Items.RAW_IRON,9);hopper(fuel.north(),Direction.SOUTH);chest(fuel.north().above(),Items.COAL,6);
         hopper(output.below(),Direction.SOUTH);chest(output.below().south(),Items.AIR,0);outputs.add(output.below().south());
         furnace.tick();if(!furnace.isShapeValid())throw new IllegalStateException("Promo foundry failed formation");

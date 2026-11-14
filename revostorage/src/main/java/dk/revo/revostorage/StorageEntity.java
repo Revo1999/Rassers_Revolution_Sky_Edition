@@ -25,7 +25,7 @@ public class StorageEntity extends BlockEntity {
  };
  public StorageEntity(BlockPos p,BlockState s){super(RevoStorage.ENTITY.get(),p,s);for(int i=0;i<9;i++)banks[i]=new ItemStackHandler(108){protected void onContentsChanged(int slot){setChanged();}};}
  public boolean terminal(){return getBlockState().is(RevoStorage.TERMINAL.get());}
- public void wind(){if(level!=null&&!level.isClientSide)level.playSound(null,worldPosition,net.minecraft.sounds.SoundEvents.COPPER_BULB_TURN_ON,net.minecraft.sounds.SoundSource.BLOCKS,.3f,.8f);charge=Math.min(4096,charge+256);setChanged();}
+ public void wind(){dk.revo.revolib.MachineFeedback.cue(level,worldPosition,dk.revo.revolib.MachineFeedback.Voice.WIND);charge=Math.min(4096,charge+256);setChanged();}
  public boolean emptyBay(int bay){if(banks[bay]==null)return true;for(int i=0;i<108;i++)if(!banks[bay].getStackInSlot(i).isEmpty())return false;return true;}
  public static int chestCapacity(ItemStack stack){
   if(stack.isEmpty()||!(stack.getItem() instanceof BlockItem item))return 0;

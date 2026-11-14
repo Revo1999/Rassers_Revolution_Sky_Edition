@@ -68,7 +68,6 @@ public final class FurnaceController extends MultiblockMachineBlockEntity implem
    if(active.isActive){
     var vent=ShapeMatcher.toWorldPos(worldPosition,orientation.facingDirection,new BlockPos(0,2,1));
     if(level.random.nextInt(5)==0)level.addParticle(net.minecraft.core.particles.ParticleTypes.SMOKE,vent.getX()+.5,vent.getY()+1.05,vent.getZ()+.5,0,.04,0);
-    if(level.random.nextInt(80)==0)level.playLocalSound(worldPosition.getX()+.5,worldPosition.getY()+.5,worldPosition.getZ()+.5,net.minecraft.sounds.SoundEvents.FURNACE_FIRE_CRACKLE,net.minecraft.sounds.SoundSource.BLOCKS,.35f,.8f+level.random.nextFloat()*.3f,false);
    }return;
   }link();consumedHeat=0;
   if(!isShapeValid()){status="Check casing, centre air, roof vent and hatches";active.updateActive(false,this);return;}
@@ -87,7 +86,7 @@ public final class FurnaceController extends MultiblockMachineBlockEntity implem
    if(j.progress>=j.duration){insert(j.output);experience+=j.experience*j.input.getCount();jobs[lane]=null;}
   }
   status=invalid?"Recipe changed: stored ingredients are safe":blocked?"Output blocked":needsFuel?"More fuel / fuel throughput needed":working?"Smelting":"Waiting for smelting input";
-  if(working)dk.revo.revolib.MachineFeedback.work(level,worldPosition,dk.revo.revolib.MachineFeedback.Voice.FURNACE);
+  if(working)dk.revo.revolib.MachineFeedback.work(level,worldPosition,switch(tier){case COPPER,IRON->dk.revo.revolib.MachineFeedback.Voice.FURNACE;case SILVER,GOLD,DIAMOND,EMERALD->dk.revo.revolib.MachineFeedback.Voice.FURNACE_TURBINE;case OBSIDIAN,NETHERITE->dk.revo.revolib.MachineFeedback.Voice.FURNACE_HEAVY;case CRYSTAL->dk.revo.revolib.MachineFeedback.Voice.FURNACE_CRYSTAL;case RAINBOW->dk.revo.revolib.MachineFeedback.Voice.FURNACE_RAINBOW;});
   active.updateActive(working,this);setChanged();
  }
  private Job startJob(){

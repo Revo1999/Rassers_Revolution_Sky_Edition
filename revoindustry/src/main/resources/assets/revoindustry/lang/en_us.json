@@ -78,5 +78,6 @@
   "item.revoindustry.elite_feeding_helmet": "Elite Feeding Helmet",
   "tooltip.revoindustry.feeding_capacity": "Ration storage: %s food stacks",
   "tooltip.revoindustry.feeding_use": "Right-click: rations | Sneak-right-click: equip",
-  "tooltip.revoindustry.feeding_smart": "Feeds while worn, only when the full portion fits."
+  "tooltip.revoindustry.feeding_smart": "Feeds while worn, only when the full portion fits.",
+  "tooltip.revoindustry.single_port": "Automation connects only to the marked face. Sneak-use an MI wrench to move the port."
 }

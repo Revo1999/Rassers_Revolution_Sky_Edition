@@ -84,7 +84,7 @@ public final class SluiceEntity extends KineticBlockEntity {
                     work += Math.min(Math.abs(getSpeed()), 128);
                     if (work >= WORK_PER_ITEM) {
                         ItemHandlerHelper.insertItemStacked(outputs, nextOutput(), false);
-                        feed.input.extractItem(0, 1, false);
+                        feed.input.extractItem(0, 1, false);dk.revo.revolib.MachineFeedback.cue(level,worldPosition,dk.revo.revolib.MachineFeedback.Voice.GRAVEL_FEED);
                         work -= WORK_PER_ITEM;
                         cycle++;
                         exportOutput();

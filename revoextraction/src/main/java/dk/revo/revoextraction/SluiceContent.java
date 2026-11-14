@@ -20,8 +20,8 @@ public final class SluiceContent {
         RevoExtraction.ITEMS.registerSimpleBlockItem(FEEDER);
     }
     public static void capabilities(RegisterCapabilitiesEvent event) {
-        event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, FEEDER_ENTITY.get(), (be, side) -> side == null || side == Direction.UP ? be.input : null);
-        event.registerBlockEntity(Capabilities.FluidHandler.BLOCK, FEEDER_ENTITY.get(), (be, side) -> side == null || side == be.getBlockState().getValue(SluiceFeeder.FACING).getOpposite() ? be.water : null);
+        event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, FEEDER_ENTITY.get(), (be, side) -> side == null || side == Direction.UP ? dk.revo.revolib.FeedbackHandlers.items(be,be.input) : null);
+        event.registerBlockEntity(Capabilities.FluidHandler.BLOCK, FEEDER_ENTITY.get(), (be, side) -> side == null || side == be.getBlockState().getValue(SluiceFeeder.FACING).getOpposite() ? dk.revo.revolib.FeedbackHandlers.fluids(be,be.water) : null);
         event.registerBlock(Capabilities.ItemHandler.BLOCK, (level, pos, state, be, side) -> {
             if (state.getValue(SluiceBlock.PART) != 2) return null;
             var machine = SluiceBlock.controller(level, pos, state);

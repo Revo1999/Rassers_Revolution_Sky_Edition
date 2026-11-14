@@ -71,7 +71,7 @@ for grade in range(3):
   # MI's own recess and extraction-frame sprites, composited at their original pixel positions.
   overlay=mi_sprite('output' if direction=='input' else 'output_item');overlay.alpha_composite(mi_sprite('item_auto'))
   overlay.save(texturepath/(name+'.png'))
-  block(name,{'loader':'modern_industrialization:machine','casing':['modern_industrialization:bronze','modern_industrialization:steel','modern_industrialization:mv'][grade],'default_overlays':{'side':'revoindustry:block/furnaces/'+name,'output':'modern_industrialization:block/overlays/output_item','item_auto':'modern_industrialization:block/overlays/item_auto'}})
+  block(name,{'loader':'modern_industrialization:machine','casing':['modern_industrialization:bronze','modern_industrialization:steel','modern_industrialization:mv'][grade],'default_overlays':{'front':'revoindustry:block/furnaces/'+name,'output':'modern_industrialization:block/overlays/output_item','item_auto':'modern_industrialization:block/overlays/item_auto'}})
   if grade==0:recipe(name,['PPP','PHP','PPP'],{'P':'#c:plates/copper','H':f'modern_industrialization:bronze_item_{direction}_hatch'},'revoindustry:'+name)
   else:recipe(name,['PPP','PHP','PPP'],{'P':'#c:plates/'+['copper','steel','stainless_steel'][grade],'H':f'revoindustry:furnace_item_{direction}_hatch_{grade}'},'revoindustry:'+name)
   lang['block.revoindustry.'+name]=f'Furnace Item {direction.title()} Hatch {grade+1}'
@@ -81,7 +81,7 @@ for grade in range(3):
   overlay=mi_sprite('output_energy' if kind=='solid' else 'output_fluid');overlay.alpha_composite(mi_sprite('item_auto' if kind=='solid' else 'fluid_auto'))
   overlay.save(texturepath/(name+'.png'))
   default=['modern_industrialization:bronze','modern_industrialization:steel','modern_industrialization:mv'][grade]
-  block(name,{'loader':'modern_industrialization:machine','casing':default,'default_overlays':{'side':'revoindustry:block/furnaces/'+name}})
+  block(name,{'loader':'modern_industrialization:machine','casing':default,'default_overlays':{'front':'revoindustry:block/furnaces/'+name}})
   if grade==0:
    base='modern_industrialization:bronze_item_input_hatch' if kind=='solid' else 'modern_industrialization:bronze_fluid_input_hatch'
    recipe(name,['PPP','PHP','PBP'],{'P':'#c:plates/copper','H':base,'B':{'solid':'minecraft:furnace','liquid':'minecraft:bucket','gas':'minecraft:glass_bottle'}[kind]},'revoindustry:'+name)

@@ -17,6 +17,15 @@
       }
     ]
   },
+  "machine.steel_drill": {
+    "subtitle": "subtitles.revolib.machine.steel_drill",
+    "sounds": [
+      {
+        "name": "revolib:machine/steel_drill",
+        "attenuation_distance": 12
+      }
+    ]
+  },
   "machine.electric_drill": {
     "subtitle": "subtitles.revolib.machine.electric_drill",
     "sounds": [
@@ -35,6 +44,42 @@
       }
     ]
   },
+  "machine.greenhouse": {
+    "subtitle": "subtitles.revolib.machine.greenhouse",
+    "sounds": [
+      {
+        "name": "revolib:machine/greenhouse",
+        "attenuation_distance": 12
+      }
+    ]
+  },
+  "machine.tree_steel": {
+    "subtitle": "subtitles.revolib.machine.tree_steel",
+    "sounds": [
+      {
+        "name": "revolib:machine/tree_steel",
+        "attenuation_distance": 12
+      }
+    ]
+  },
+  "machine.underwater": {
+    "subtitle": "subtitles.revolib.machine.underwater",
+    "sounds": [
+      {
+        "name": "revolib:machine/underwater",
+        "attenuation_distance": 12
+      }
+    ]
+  },
+  "machine.crystal_growth": {
+    "subtitle": "subtitles.revolib.machine.crystal_growth",
+    "sounds": [
+      {
+        "name": "revolib:machine/crystal_growth",
+        "attenuation_distance": 12
+      }
+    ]
+  },
   "machine.harvester": {
     "subtitle": "subtitles.revolib.machine.harvester",
     "sounds": [
@@ -44,20 +89,11 @@
       }
     ]
   },
-  "machine.compost": {
-    "subtitle": "subtitles.revolib.machine.compost",
+  "machine.harvester_steel": {
+    "subtitle": "subtitles.revolib.machine.harvester_steel",
     "sounds": [
       {
-        "name": "revolib:machine/compost",
-        "attenuation_distance": 12
-      }
-    ]
-  },
-  "machine.silk": {
-    "subtitle": "subtitles.revolib.machine.silk",
-    "sounds": [
-      {
-        "name": "revolib:machine/silk",
+        "name": "revolib:machine/harvester_steel",
         "attenuation_distance": 12
       }
     ]
@@ -76,6 +112,24 @@
     "sounds": [
       {
         "name": "revolib:machine/vacuum",
+        "attenuation_distance": 12
+      }
+    ]
+  },
+  "machine.vacuum_2": {
+    "subtitle": "subtitles.revolib.machine.vacuum_2",
+    "sounds": [
+      {
+        "name": "revolib:machine/vacuum_2",
+        "attenuation_distance": 12
+      }
+    ]
+  },
+  "machine.vacuum_3": {
+    "subtitle": "subtitles.revolib.machine.vacuum_3",
+    "sounds": [
+      {
+        "name": "revolib:machine/vacuum_3",
         "attenuation_distance": 12
       }
     ]
@@ -107,6 +161,24 @@
       }
     ]
   },
+  "machine.converter_2": {
+    "subtitle": "subtitles.revolib.machine.converter_2",
+    "sounds": [
+      {
+        "name": "revolib:machine/converter_2",
+        "attenuation_distance": 12
+      }
+    ]
+  },
+  "machine.converter_3": {
+    "subtitle": "subtitles.revolib.machine.converter_3",
+    "sounds": [
+      {
+        "name": "revolib:machine/converter_3",
+        "attenuation_distance": 12
+      }
+    ]
+  },
   "machine.storage": {
     "subtitle": "subtitles.revolib.machine.storage",
     "sounds": [
@@ -125,6 +197,60 @@
       }
     ]
   },
+  "machine.furnace_turbine": {
+    "subtitle": "subtitles.revolib.machine.furnace_turbine",
+    "sounds": [
+      {
+        "name": "revolib:machine/furnace_turbine",
+        "attenuation_distance": 12
+      }
+    ]
+  },
+  "machine.furnace_heavy": {
+    "subtitle": "subtitles.revolib.machine.furnace_heavy",
+    "sounds": [
+      {
+        "name": "revolib:machine/furnace_heavy",
+        "attenuation_distance": 12
+      }
+    ]
+  },
+  "machine.furnace_crystal": {
+    "subtitle": "subtitles.revolib.machine.furnace_crystal",
+    "sounds": [
+      {
+        "name": "revolib:machine/furnace_crystal",
+        "attenuation_distance": 12
+      }
+    ]
+  },
+  "machine.furnace_rainbow": {
+    "subtitle": "subtitles.revolib.machine.furnace_rainbow",
+    "sounds": [
+      {
+        "name": "revolib:machine/furnace_rainbow",
+        "attenuation_distance": 12
+      }
+    ]
+  },
+  "machine.compost": {
+    "subtitle": "subtitles.revolib.machine.compost",
+    "sounds": [
+      {
+        "name": "revolib:machine/compost",
+        "attenuation_distance": 12
+      }
+    ]
+  },
+  "machine.silk": {
+    "subtitle": "subtitles.revolib.machine.silk",
+    "sounds": [
+      {
+        "name": "revolib:machine/silk",
+        "attenuation_distance": 12
+      }
+    ]
+  },
   "machine.trade": {
     "subtitle": "subtitles.revolib.machine.trade",
     "sounds": [
@@ -139,6 +265,141 @@
     "sounds": [
       {
         "name": "revolib:machine/interact",
+        "attenuation_distance": 12
+      }
+    ]
+  },
+  "machine.transfer": {
+    "subtitle": "subtitles.revolib.machine.transfer",
+    "sounds": [
+      {
+        "name": "revolib:machine/transfer",
+        "attenuation_distance": 12
+      }
+    ]
+  },
+  "machine.fuel_feed": {
+    "subtitle": "subtitles.revolib.machine.fuel_feed",
+    "sounds": [
+      {
+        "name": "revolib:machine/fuel_feed",
+        "attenuation_distance": 12
+      }
+    ]
+  },
+  "machine.valve": {
+    "subtitle": "subtitles.revolib.machine.valve",
+    "sounds": [
+      {
+        "name": "revolib:machine/valve",
+        "attenuation_distance": 12
+      }
+    ]
+  },
+  "machine.gravel_feed": {
+    "subtitle": "subtitles.revolib.machine.gravel_feed",
+    "sounds": [
+      {
+        "name": "revolib:machine/gravel_feed",
+        "attenuation_distance": 12
+      }
+    ]
+  },
+  "machine.harvest": {
+    "subtitle": "subtitles.revolib.machine.harvest",
+    "sounds": [
+      {
+        "name": "revolib:machine/harvest",
+        "attenuation_distance": 12
+      }
+    ]
+  },
+  "machine.chop": {
+    "subtitle": "subtitles.revolib.machine.chop",
+    "sounds": [
+      {
+        "name": "revolib:machine/chop",
+        "attenuation_distance": 12
+      }
+    ]
+  },
+  "machine.saw": {
+    "subtitle": "subtitles.revolib.machine.saw",
+    "sounds": [
+      {
+        "name": "revolib:machine/saw",
+        "attenuation_distance": 12
+      }
+    ]
+  },
+  "machine.crystal_pick": {
+    "subtitle": "subtitles.revolib.machine.crystal_pick",
+    "sounds": [
+      {
+        "name": "revolib:machine/crystal_pick",
+        "attenuation_distance": 12
+      }
+    ]
+  },
+  "machine.wind": {
+    "subtitle": "subtitles.revolib.machine.wind",
+    "sounds": [
+      {
+        "name": "revolib:machine/wind",
+        "attenuation_distance": 12
+      }
+    ]
+  },
+  "machine.craft": {
+    "subtitle": "subtitles.revolib.machine.craft",
+    "sounds": [
+      {
+        "name": "revolib:machine/craft",
+        "attenuation_distance": 12
+      }
+    ]
+  },
+  "machine.light_switch": {
+    "subtitle": "subtitles.revolib.machine.light_switch",
+    "sounds": [
+      {
+        "name": "revolib:machine/light_switch",
+        "attenuation_distance": 12
+      }
+    ]
+  },
+  "machine.pour": {
+    "subtitle": "subtitles.revolib.machine.pour",
+    "sounds": [
+      {
+        "name": "revolib:machine/pour",
+        "attenuation_distance": 12
+      }
+    ]
+  },
+  "machine.ignite": {
+    "subtitle": "subtitles.revolib.machine.ignite",
+    "sounds": [
+      {
+        "name": "revolib:machine/ignite",
+        "attenuation_distance": 12
+      }
+    ]
+  },
+  "machine.motor_start": {
+    "subtitle": "subtitles.revolib.machine.motor_start",
+    "sounds": [
+      {
+        "name": "revolib:machine/motor_start",
+        "attenuation_distance": 12
+      }
+    ]
+  },
+  "machine.motor_stop": {
+    "subtitle": "subtitles.revolib.machine.motor_stop",
+    "sounds": [
+      {
+        "name": "revolib:machine/motor_stop",
         "attenuation_distance": 12
       }
     ]

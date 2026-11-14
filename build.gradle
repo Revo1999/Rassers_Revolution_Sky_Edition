@@ -38,6 +38,7 @@ project(':revolib') {
         runs {
             client {
                 client()
+                if (providers.gradleProperty('revoAudioQa').isPresent()) { programArguments.addAll '--quickPlaySingleplayer', 'Revo Audio QA', '--width', '1440', '--height', '1000' }
                 if (providers.gradleProperty('revoPromo').isPresent()) { programArguments.addAll '--quickPlaySingleplayer', 'Revo Promo Skybase', '--width', '2560', '--height', '1440' }
                 if (providers.gradleProperty('revoFeedingQa').isPresent()) { programArguments.addAll '--quickPlaySingleplayer', 'Revo Feeding Helmet QA', '--width', '1440', '--height', '1000' }
                 if (providers.gradleProperty('revoSluiceQa').isPresent()) { programArguments.addAll '--quickPlaySingleplayer', 'Revo Sluice QA', '--width', '1440', '--height', '1000' }

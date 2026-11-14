@@ -96,7 +96,7 @@ public class FarmMachine extends BlockEntity implements dk.revo.revolib.energy.I
         var light=level.getBlockState(at(0,2,0));
         return light.is(FarmMaterials.LIGHT.get())&&light.getValue(FarmGrowLight.LIT);
     }
-    private void setLights(boolean on){if(!kind().electric()||level==null||level.isClientSide)return;var p=at(0,2,0);if(!level.hasChunkAt(p))return;var s=level.getBlockState(p);if(s.is(FarmMaterials.LIGHT.get())&&s.getValue(FarmGrowLight.LIT)!=on)level.setBlock(p,s.setValue(FarmGrowLight.LIT,on),3);}
+    private void setLights(boolean on){if(!kind().electric()||level==null||level.isClientSide)return;var p=at(0,2,0);if(!level.hasChunkAt(p))return;var s=level.getBlockState(p);if(s.is(FarmMaterials.LIGHT.get())&&s.getValue(FarmGrowLight.LIT)!=on){level.setBlock(p,s.setValue(FarmGrowLight.LIT,on),3);dk.revo.revolib.MachineFeedback.cue(level,worldPosition,dk.revo.revolib.MachineFeedback.Voice.LIGHT_SWITCH);}}
     public void dropContents(){for(var inv:List.of(inputs,outputs))for(int i=0;i<inv.getSlots();i++)Containers.dropItemStack(level,worldPosition.getX(),worldPosition.getY(),worldPosition.getZ(),inv.extractItem(i,64,false));}
     public static FarmMachine find(Level level,BlockPos part){
         if(level.getBlockEntity(part) instanceof FarmMachine m)return m;
@@ -142,7 +142,7 @@ public class FarmMachine extends BlockEntity implements dk.revo.revolib.energy.I
             if(work>=kind().ticks/2&&!realTree.exists()&&!realTree.grow(level,at(0,0,0))){state=6;return;}
         }
         state=1;work++;
-        dk.revo.revolib.MachineFeedback.work(level,worldPosition,kind().isHarvester()?dk.revo.revolib.MachineFeedback.Voice.HARVESTER:dk.revo.revolib.MachineFeedback.Voice.IRRIGATION);
+        dk.revo.revolib.MachineFeedback.work(level,worldPosition,kind().isHarvester()?(kind().metal>0?dk.revo.revolib.MachineFeedback.Voice.HARVESTER_STEEL:dk.revo.revolib.MachineFeedback.Voice.HARVESTER):program==15?dk.revo.revolib.MachineFeedback.Voice.UNDERWATER:program==19?dk.revo.revolib.MachineFeedback.Voice.CRYSTAL_GROWTH:kind().realTree()?dk.revo.revolib.MachineFeedback.Voice.TREE_STEEL:kind().electric()?dk.revo.revolib.MachineFeedback.Voice.GREENHOUSE:dk.revo.revolib.MachineFeedback.Voice.IRRIGATION);
         if(program==15||program==19)dk.revo.revolib.MachineFeedback.particles(level,at(0,1,0),net.minecraft.core.particles.ParticleTypes.BUBBLE_POP,.35);
         else if(kind().isTree())dk.revo.revolib.MachineFeedback.particles(level,at(0,1,0),net.minecraft.core.particles.ParticleTypes.HAPPY_VILLAGER,.3);
         if(work>=kind().ticks){
@@ -151,8 +151,9 @@ public class FarmMachine extends BlockEntity implements dk.revo.revolib.energy.I
                 realTree.clear(level);treeWaterPaid=false;
             }else if(kind().needsWater())water.drain(kind().waterPerCycle(),FluidAction.EXECUTE);
             for(var product:products)ItemHandlerHelper.insertItemStacked(outputs,product.copy(),false);
+            dk.revo.revolib.MachineFeedback.cue(level,worldPosition,program==19?dk.revo.revolib.MachineFeedback.Voice.CRYSTAL_PICK:kind().realTree()?dk.revo.revolib.MachineFeedback.Voice.SAW:kind().isTree()?dk.revo.revolib.MachineFeedback.Voice.CHOP:dk.revo.revolib.MachineFeedback.Voice.HARVEST);
             work=0;cycles++;if(program==24)burnerReady=true;export();
-            level.levelEvent(2001,at(0,1,0),net.minecraft.world.level.block.Block.getId(kind().isTree()?net.minecraft.world.level.block.Blocks.OAK_LEAVES.defaultBlockState():kind().isGreenhouse()?net.minecraft.world.level.block.Blocks.WHEAT.defaultBlockState():net.minecraft.world.level.block.Blocks.IRON_BARS.defaultBlockState()));
+            if(level instanceof net.minecraft.server.level.ServerLevel server){var center=at(0,1,0);server.sendParticles(new net.minecraft.core.particles.BlockParticleOption(net.minecraft.core.particles.ParticleTypes.BLOCK,kind().isTree()?net.minecraft.world.level.block.Blocks.OAK_LEAVES.defaultBlockState():kind().isGreenhouse()?net.minecraft.world.level.block.Blocks.WHEAT.defaultBlockState():net.minecraft.world.level.block.Blocks.IRON_BARS.defaultBlockState()),center.getX()+.5,center.getY()+.4,center.getZ()+.5,6,.35,.2,.35,.02);}
         }
     }
     public static void tick(Level level,BlockPos pos,BlockState block,FarmMachine machine){

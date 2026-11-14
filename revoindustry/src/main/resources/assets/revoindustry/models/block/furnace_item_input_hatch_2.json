@@ -2,8 +2,8 @@
   "loader": "modern_industrialization:machine",
   "casing": "modern_industrialization:steel",
   "default_overlays": {
-    "side": "revoindustry:block/furnaces/furnace_item_input_hatch_2",
     "output": "modern_industrialization:block/overlays/output_item",
-    "item_auto": "modern_industrialization:block/overlays/item_auto"
+    "item_auto": "modern_industrialization:block/overlays/item_auto",
+    "front": "revoindustry:block/furnaces/furnace_item_input_hatch_2"
   }
 }

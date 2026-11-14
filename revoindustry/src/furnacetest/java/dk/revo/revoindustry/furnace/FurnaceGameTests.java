@@ -36,6 +36,29 @@ public final class FurnaceGameTests {
  static FurnaceFuelHatch fuel(FurnaceController c){return (FurnaceFuelHatch)c.getLevel().getBlockEntity(at(c,0,0,2));}
  static void insert(MIInventory inventory,int slot,Item item,int count){var s=inventory.getItemStacks().get(slot);s.setKey(ItemVariant.of(item));s.setAmount(count);}
  static int count(MIInventory inventory,Item item){int n=0;for(var s:inventory.getItemStacks())if(s.toStack().is(item))n+=s.getAmount();return n;}
+ @GameTest(template="furnace_test",timeoutTicks=100)
+ public static void allHatchGradesHaveOneWrenchSelectedPortAndPersist(GameTestHelper h){
+  var level=h.getLevel();var pos=h.absolutePos(new BlockPos(4,2,4));var player=net.neoforged.neoforge.common.util.FakePlayerFactory.getMinecraft(level);player.setShiftKeyDown(true);
+  var blocks=new ArrayList<net.neoforged.neoforge.registries.DeferredBlock<MachineBlock>>();blocks.addAll(Furnaces.ITEM_HATCHES);blocks.addAll(Furnaces.FUEL_HATCHES);
+  for(var block:blocks){
+   level.setBlockAndUpdate(pos,block.get().defaultBlockState());var be=(MachineBlockEntity)level.getBlockEntity(pos);
+   for(var face:Direction.values()){
+    h.assertTrue(be.orientation.useWrench(player,net.minecraft.world.InteractionHand.MAIN_HAND,face),"MI shift-wrench selects hatch port");
+    h.assertTrue(be.getMachineModelData().frontDirection==face,"Visible port agrees with connection direction");
+    boolean fluid=be instanceof FurnaceFuelHatch fuel&&fuel.kind!=FurnaceFuelHatch.Kind.SOLID;
+    for(var side:Direction.values()){
+     var items=level.getCapability(net.neoforged.neoforge.capabilities.Capabilities.ItemHandler.BLOCK,pos,side);
+     var fluids=level.getCapability(net.neoforged.neoforge.capabilities.Capabilities.FluidHandler.BLOCK,pos,side);
+     h.assertTrue((items!=null)==(!fluid&&side==face),"Exactly one item port: "+block.getId()+" "+face+" tested "+side);
+     h.assertTrue((fluids!=null)==(fluid&&side==face),"Exactly one fluid port: "+block.getId()+" "+face+" tested "+side);
+    }
+   }
+   if(be instanceof FurnaceItemHatch hatch)hatch.getInventory().itemStorage.itemHandler.insertItem(0,new ItemStack(Items.RAW_IRON),false);
+   else if(be instanceof FurnaceFuelHatch hatch&&hatch.kind==FurnaceFuelHatch.Kind.SOLID)hatch.items().insertItem(0,new ItemStack(Items.COAL),false);
+   var saved=be.saveWithoutMetadata(level.registryAccess());be.loadWithComponents(saved,level.registryAccess());
+   h.assertTrue(be.orientation.outputDirection==Direction.EAST&&be.getMachineModelData().frontDirection==Direction.EAST,"Port survives reload");
+  }player.setShiftKeyDown(false);h.succeed();
+ }
  @GameTest(template="furnace_test",timeoutTicks=200)
  public static void allTenTiersAllRotationsAndFactoryParallelism(GameTestHelper h){
   for(var tier:FurnaceTier.values())for(var facing:Direction.Plane.HORIZONTAL){

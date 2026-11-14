@@ -68,7 +68,7 @@ public final class RevoExtraction {
         SluiceContent.capabilities(event);
         event.registerBlockEntity(Capabilities.ItemHandler.BLOCK,ELECTRIC_ENTITY.get(),(be,side)->side==net.minecraft.core.Direction.UP?new net.neoforged.neoforge.items.wrapper.RangedWrapper(be.items,0,2):be.outputPort());
         dk.revo.revolib.energy.EnergyInterop.registerEuStorage(event,ELECTRIC_ENTITY.get(),(be,side)->be);
-        event.registerBlockEntity(Capabilities.FluidHandler.BLOCK,WATER_TANK_ENTITY.get(),(be,side)->be.water);
-        event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, OUTPUT.get(), (be, side) -> be.output());
+        event.registerBlockEntity(Capabilities.FluidHandler.BLOCK,WATER_TANK_ENTITY.get(),(be,side)->dk.revo.revolib.FeedbackHandlers.fluids(be,be.water));
+        event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, OUTPUT.get(), (be, side) -> dk.revo.revolib.FeedbackHandlers.items(be,be.output()));
     }
 }

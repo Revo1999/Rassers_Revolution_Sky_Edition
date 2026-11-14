@@ -116,3 +116,9 @@ if (providers.gradleProperty('revoPromo').isPresent()) {
  dependencies { implementation project(':revocultivation'); implementation project(':revoindustry'); implementation project(':revostorage'); compileOnly files(rootProject.file('.local/integration-mods/Modern-Industrialization-2.5.11.jar'),rootProject.file('.local/integration-mods/ironfurnaces-neoforge-1.21.1-4.3.2.jar')) }
 }
 tasks.named('jar', Jar) { exclude '**/PromoScenes*' }
+
+if (providers.gradleProperty('revoAudioQa').isPresent()) {
+ sourceSets.main.java.srcDir 'src/audioqa/java'
+ dependencies { implementation project(':revoindustry'); compileOnly files(rootProject.file('.local/integration-mods/Modern-Industrialization-2.5.11.jar'),rootProject.file('.local/integration-mods/ironfurnaces-neoforge-1.21.1-4.3.2.jar')) }
+}
+tasks.named('jar', Jar) { exclude '**/MachineAudioQa*' }

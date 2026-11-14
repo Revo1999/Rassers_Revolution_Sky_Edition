@@ -40,8 +40,8 @@ public final class Furnaces {
  private static FurnaceFuelHatch createFuel(net.minecraft.core.BlockPos p,net.minecraft.world.level.block.state.BlockState s){int i=0;for(var b:FUEL_HATCHES){if(b.get()==s.getBlock())return new FurnaceFuelHatch(new BEP(FUEL_ENTITY.get(),p,s),FurnaceFuelHatch.Kind.values()[i%3],i/3);i++;}throw new IllegalStateException("Unknown furnace fuel hatch");}
  public static void bootstrap(){}
  public static void capabilities(RegisterCapabilitiesEvent e){
-  e.registerBlockEntity(Capabilities.ItemHandler.BLOCK,ITEM_ENTITY.get(),(be,side)->be.getInventory().itemStorage.itemHandler);
-  e.registerBlockEntity(Capabilities.ItemHandler.BLOCK,FUEL_ENTITY.get(),(be,side)->be.items());
-  e.registerBlockEntity(Capabilities.FluidHandler.BLOCK,FUEL_ENTITY.get(),(be,side)->be.fluids());
+  e.registerBlockEntity(Capabilities.ItemHandler.BLOCK,ITEM_ENTITY.get(),(be,side)->side==null||side==be.portFace()?dk.revo.revolib.FeedbackHandlers.items(be,be.getInventory().itemStorage.itemHandler):null);
+  e.registerBlockEntity(Capabilities.ItemHandler.BLOCK,FUEL_ENTITY.get(),(be,side)->side==null||side==be.portFace()?dk.revo.revolib.FeedbackHandlers.items(be,be.items()):null);
+  e.registerBlockEntity(Capabilities.FluidHandler.BLOCK,FUEL_ENTITY.get(),(be,side)->side==null||side==be.portFace()?dk.revo.revolib.FeedbackHandlers.fluids(be,be.fluids()):null);
  }
 }
