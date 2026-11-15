@@ -1,5 +1,13 @@
 # Recipe audit 3 - 12 November 2026
 
+**Later implementation update:** the [Electric Wither Hatchery](WITHER-HATCHERY.md)
+now provides a controlled egg-to-Nether-Star route using the normal Wither ritual
+materials. Row 8's Wither Skeleton skull source remains unfinished. The other
+unimplemented proposals below retain their original audit status.
+
+**Salt-route update:** row 4 is now implemented by the [submerged Salt Geode
+Chamber](SALT-GEODE.md), which outputs salt water for native MI centrifuging.
+
 Run after the progression/storage implementation and passing native/client verification. The local index contains 13,450 recipe definitions from pinned installed jars and current Revo source. This includes compatibility definitions; recipes gated by absent mods are not accepted as working routes. Source inspection, loaded native recipes and implemented machine programs are the evidence. This is not a claim that every late-game branch has been completed in survival.
 
 The original twelve tasks are implemented. New controlled routes now cover pearls, burners, quartz, greenhouse crops, slime, first-power guidance, silver/nickel/lead/bauxite, emeralds, magma, terrain synthesis, ice, Ancient Debris and chest-drive crafting storage.

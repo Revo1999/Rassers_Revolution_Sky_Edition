@@ -97,6 +97,22 @@ and https://github.com/NeoForgeMDKs/MDK-1.21.1-ModDevGradle
 Template license attribution is retained in TEMPLATE_LICENSE.txt.
 Custom code defaults to All Rights Reserved pending your license choice.
 
+## Electric Wither Hatchery
+
+The normal seven-block Wither ritual now drops a Wither Egg. A 5 x 5 x 5 electric
+chamber incubates the visibly animated egg behind dark glass and flashing red lights,
+then hatches and kills a real contained Wither to produce one Nether Star.
+Block placement, hopper collection and hatch item/energy capabilities support automation.
+Initial balance is 8192 EU/t for 75 seconds. See [WITHER-HATCHERY.md](docs/WITHER-HATCHERY.md)
+for the blueprint, energy budget, recipes, five new quests and opt-in native/visual QA.
+
+## Submerged salt geology
+
+The 3 x 3 x 3 Salt Geode Chamber grows and harvests crystal buds under animated
+water and electrical arcs. Water plus 16 EU/t produces salt water, which the native
+MI Centrifuge turns into Salt Dust. See [SALT-GEODE.md](docs/SALT-GEODE.md) for the
+blueprint, progression placement and two added quests. No manual salt bootstrap is needed.
+
 Revo machine asset conventions and exact block-layer heights are recorded in
 [the modeling and texturing workflow](docs/MACHINE-MODELING-WORKFLOW.md). The wooden
 drill controller opens a diagnostics-only interface; its output hatch opens storage.

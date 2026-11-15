@@ -1,0 +1,143 @@
+{
+	"meta": {
+		"format_version": "5.0",
+		"model_format": "java_block",
+		"box_uv": false
+	},
+	"name": "wither_energy_hatch",
+	"model_identifier": "",
+	"visible_box": [
+		1,
+		1,
+		0
+	],
+	"resolution": {
+		"width": 128,
+		"height": 128
+	},
+	"elements": [
+		{
+			"uuid": "a6a72272-a6de-4f31-975c-6a200f553e7f",
+			"name": "energy_terminal",
+			"origin": [
+				8,
+				8,
+				8
+			],
+			"color": 0,
+			"type": "cube",
+			"from": [
+				0,
+				0,
+				0
+			],
+			"to": [
+				16,
+				16,
+				16
+			],
+			"box_uv": false,
+			"faces": {
+				"north": {
+					"uv": [
+						64,
+						0,
+						80,
+						16
+					],
+					"texture": 0
+				},
+				"east": {
+					"uv": [
+						0,
+						0,
+						16,
+						16
+					],
+					"texture": 0
+				},
+				"south": {
+					"uv": [
+						0,
+						0,
+						16,
+						16
+					],
+					"texture": 0
+				},
+				"west": {
+					"uv": [
+						0,
+						0,
+						16,
+						16
+					],
+					"texture": 0
+				},
+				"up": {
+					"uv": [
+						0,
+						0,
+						16,
+						16
+					],
+					"texture": 0
+				},
+				"down": {
+					"uv": [
+						0,
+						0,
+						16,
+						16
+					],
+					"texture": 0
+				}
+			},
+			"rescale": false,
+			"locked": false,
+			"light_emission": 0,
+			"render_order": "default",
+			"allow_mirror_modeling": true,
+			"autouv": 0
+		}
+	],
+	"groups": [],
+	"outliner": [
+		"a6a72272-a6de-4f31-975c-6a200f553e7f"
+	],
+	"textures": [
+		{
+			"uuid": "11fadb93-5298-4a73-a03b-c628a0acaac5",
+			"name": "wither_chamber_atlas.png",
+			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAH1klEQVR4nO2aS4gj1RrH/0mnM51O99DTT9oW9Oqgg8MooqDiYyG4ENyJd6N3ccGFiAtduVBBcXDjQhAVF6ILHwvFjQguXAhuVETEt6N35MK9zoy2/ZhO0knVOXVKvlM56UpMVarTNQ8n/x8Up1Jd/3rk+87/fOekCysXrYSlUglCoVDo2xaLRbvf246NjWFtbQ3Ul/62+pKIr7v2etRqNXtyGIZ2A0IYY2BCgyAIbCuftdZQStljciHqS7npv/zmO2RhZXk+P70ckAf6zy8/Y2JiArOzs5goV6KXgbzIDnKzra0tNJtNVKtVm0HUIze9cN/yJThWq+HK6em+7ef1dXuNJP0nR47gs9UabliY7ts+fOq/XfqSWEGr1bIPPzU1hbFidFHJ1gIKNnMd8jc5R4hbSV7672//AVk4/NFV56X+ZL2Fk/UTA/UXTVf66msNvxNsoV8rCVCpJOtdsIW+7Sl06aPBAyHmZucwXhpHsTjWtjDY4LlxRALa2G5gqjqF8ngZp7dOdzIwL73wxk1vQCkfvu/DVz6Ur6J9uykc3TiK2QOzifpnFh/D/v37EWofgdeE8bftfhhoBK06HtVvpeqfXXoKk5UKVBBA+z6MbEpBy+Z5eBIvYX5uHhubG3/Rn6z/iufeeSU1+I/cc3/i/VfXtjrBPrQ006X78bdNmxxCmt4F++C9V2Pz018wc+Nltv3jeN0mR6/eJoAxIfaVJyLTCk0ngNLasSvWi0VoxzZjbAblq4cN+vvvvWdtTWndGTO10rj51pvtObV6LVG/ubkJXd+ACXwYr4FQezDNBsJAoVqtAOPp+ub2Nn749lsEWkUJoDQCabXGoSuuACaArdpWoj4LafePO0AvzgHS9M4B4sGX9o/jX3ccIK7vOMBO8RLhAueC5f4mPVoKCPnsHiAvvSBfutLdwbeflbYOIKTpbW8vhAiVh1ArGOXZZECgEeoxmwBp+kajgUApmCAAdCAnoxDb7DNqnaiXHj6ItPsnBV9wDpCmdw4QD760Ljl69bYGCExgx+u4dcdxQXQv7igWojEoL73gSQKo7uBL79c2Cfyu6/bTG78JYwIYCb7s+9sIxAkCH+F4CFQG6JVYvQ+YqOeH1gEkIaT1gGq6/s0br/lL4O799Ku+Ae2nz+IAafosDhDXl2wWhYBB1EvlghJAa99mpxX6HctTL1i77wRfQ/u6nQQKSgJTRqpeAi57xvdgvG0YvxG1MhRMlLueo79exn1PsrYd/KgOCLSGkfsP0GchTZ/FAdL0WRwgrrdDgDa6cxMTmC6rdgIJSvwFZHMVf556KfaiJIh6voq1vlKdBEjSB9YBDIwUgZIMNglaUS3gNwff3/PsEFCQa7gi0JNhJLDuMEif1NvjpOmzOECaPosDxPUlqQTjRZsEzfbiWE91gZQgun2XQXnqBan6Iwdob3onCSQ5xILdkNJPLzWAkRrAaGv7UgPYeiCMhgV37yT9eLFg71+IzQIkIeRYK4M+C2n6LA6Qps/iAHG9rQGkx5XLZZRLZTR0oxM8u4LVPtlty0vL8JSH1dVVO+XLU+9mAbfcciuU78HrmQbKviCLLUl66fEbp2u26rc1gBSBfssWgmFhbKBeez4W5+fhNxow+/YhUNEMoFAqodkeAtL0WUjTZ3GANH0WB4jrbQ0gwVpfX8fk5CSqk1U7TYjbt9sWFxbRaDZQr9e7xqC89MLT60e733q8vcWKL5nqJelfXPkk5av/30D98wvvDAxgkv7g0lzf93fJvzC/gGarmXp/F3yZ9yc5QJreOYDM+yXo0f7XXQ4Q19sEEHuT5UlBMslNE1xPdvs60HaaJOeKrliMVpPy0ssK28zMjD2nn35ubs4+fLO5fV7q3fsf+zmy3F4OHDgw8PtLWwZ2DpCmT1sGdg4Q1xcOX3U4dEuK8bm8a10whd45/eX/OIgTp37tLElSH+5Jf+LUGrKwf2pfbnr7a6C7gOzHf1q0x4rRZxkv4sfbK7z2fOqLuegvu3Tl7Ot/39L/2skND7tleqz0usxCI4KhrpGmf/fQ5bj7x+ND6489cCeufPmDROVPx79qfxWjiVtL7PDQE4/PnptHIec8AST4Lzx9dGetMQeWZi+22zBI73/wd29ovfT+297+Zmj9SCXAXoO/l0CfD/pRpf1rIJB3z3fUmpvYbtb/tvoLncLypYfv28sFoiIQmKxM7emLTtLLMCAMKgST9DIMCK4Q/PCG6zp/u+OzL0a+CMwtAc402WYDybjAS9Djxy5569WRToDOEHA+s9fgJ00F74glw6hyVhPAFWm/rf8/0/m99p+md1YvuGD32v9u7z8KlC6EXt/bw3sDT3axEJSFu/59v/t31F1Nx6QiH9T7dqvvDb5oZe4/7P1HjeIwwX//tVei3zp3yW5mCdL73RCQpk/q5XI8Pizs9v6jQinv4J/reTvn/WfIAbL2/PiXP8zqXG/wzrZ+1MicAMPa/l6Q3wFeWox+ux4GqQU+/ueRXJ/pQuOMzgLysHNgaY96QgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYSMOn8C/Adyn6PxXRIAAAAASUVORK5CYII=",
+			"path": "",
+			"width": 128,
+			"height": 128,
+			"uv_width": 128,
+			"uv_height": 128,
+			"folder": "",
+			"namespace": "",
+			"id": "0",
+			"particle": false,
+			"use_as_default": false,
+			"layers_enabled": false,
+			"sync_to_project": "",
+			"render_mode": "default",
+			"render_sides": "auto",
+			"frame_time": 1,
+			"frame_order_type": "loop",
+			"frame_order": "",
+			"frame_interpolate": false,
+			"visible": true,
+			"internal": true,
+			"saved": false,
+			"relative_path": ""
+		}
+	],
+	"variable_placeholders": "",
+	"variable_placeholder_buttons": [],
+	"timeline_setups": [],
+	"unhandled_root_fields": {},
+	"ai_used": true,
+	"ai_agents": "codex-mcp-client"
+}

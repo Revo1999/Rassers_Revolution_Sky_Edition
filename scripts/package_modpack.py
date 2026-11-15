@@ -20,10 +20,10 @@ def main():
     assert hashlib.sha512(data).hexdigest()==shader['sha512']
     files.append({'path':'shaderpacks/'+shader['file'],'hashes':{'sha512':shader['sha512'],'sha1':hashlib.sha1(data).hexdigest()},
         'env':{'client':'required','server':'unsupported'},'downloads':[shader['url']],'fileSize':len(data)})
-    index={'formatVersion':1,'game':'minecraft','versionId':'0.1.35-dev-progression-storage',
-        'name':'Rassers Revolution: Sky Edition','summary':"Skyblock industry with completed biological resource bridges, electric geology, chest-drive crafting terminals and progression quests.",
+    index={'formatVersion':1,'game':'minecraft','versionId':'0.1.37-dev-salt-geode',
+        'name':'Rassers Revolution: Sky Edition','summary':"Submerged salt crystal geology and native MI brine centrifuging, with Wither containment and mechanical crafting storage.",
         'files':files,'dependencies':{'minecraft':'1.21.1','neoforge':'21.1.265'}}
-    output=ROOT.parent/'Rassers-Revolution-Sky-Edition-0.1.35-dev.mrpack'
+    output=ROOT.parent/'Rassers-Revolution-Sky-Edition-0.1.37-dev.mrpack'
     jars=sorted((ROOT/'build/mods').glob('*.jar'))
     assert len(jars)==7
     assert (ROOT/'pack/overrides/config/fancymenu/assets/skyblock_loop.mp4').stat().st_size>1_000_000
@@ -34,7 +34,7 @@ def main():
                 z.write(path,'overrides/'+path.relative_to(ROOT/'pack/overrides').as_posix())
         for path in jars:
             with zipfile.ZipFile(path) as jar:
-                assert not any(any(marker in n for marker in ['ProgressionBridgeTests','ProgressionBridgeUiQa','IndustrialGridUiQa','ChapterOneGameTests','ChapterOneUiQa','CinematicCapture','DrillInterfaceQa','DrillGameTests','drill_test.nbt','FarmUiQa','FarmGameTests','FarmLightingGameTests','FurnaceGameTests','FurnaceUiQa','furnace_test.nbt','SmallGameTests','SmallUiQa','farm_test.nbt','AchievementsUiQa','AchievementsGameTests','achievements_test.nbt']) for n in jar.namelist())
+                assert not any(any(marker in n for marker in ['SalternGameTests','SalternUiQa','saltern_test.nbt','HatcheryGameTests','HatcheryUiQa','hatchery_test.nbt','ProgressionBridgeTests','ProgressionBridgeUiQa','IndustrialGridUiQa','ChapterOneGameTests','ChapterOneUiQa','CinematicCapture','DrillInterfaceQa','DrillGameTests','drill_test.nbt','FarmUiQa','FarmGameTests','FarmLightingGameTests','FurnaceGameTests','FurnaceUiQa','furnace_test.nbt','SmallGameTests','SmallUiQa','farm_test.nbt','AchievementsUiQa','AchievementsGameTests','achievements_test.nbt']) for n in jar.namelist())
             z.write(path,'overrides/mods/'+path.name)
         # A clean new instance needs the bundled font explicitly selected.
         z.writestr('overrides/options.txt','resourcePacks:["vanilla","mod_resources","file/revo-departure-mono","file/revo-industrial-grid"]\nguiScale:0\n')
@@ -51,6 +51,8 @@ def main():
         z.write(ROOT/'docs/REVO-FURNACES.md','overrides/REVO-FURNACES.md')
         z.write(ROOT/'docs/REVO-VACUUMS.md','overrides/REVO-VACUUMS.md')
         z.write(ROOT/'docs/REVO-ACHIEVEMENTS.md','overrides/REVO-ACHIEVEMENTS.md')
+        z.write(ROOT/'docs/WITHER-HATCHERY.md','overrides/WITHER-HATCHERY.md')
+        z.write(ROOT/'docs/SALT-GEODE.md','overrides/SALT-GEODE.md')
         z.write(ROOT/'docs/SINGLE-BLOCK-CULTIVATION.md','overrides/SINGLE-BLOCK-CULTIVATION.md')
     with zipfile.ZipFile(output) as z:
         assert z.testzip() is None

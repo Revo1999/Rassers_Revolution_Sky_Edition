@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SAS",
+    "MCM",
+    "SPS"
+  ],
+  "key": {
+    "S": {
+      "item": "modern_industrialization:steel_plate"
+    },
+    "A": {
+      "item": "modern_industrialization:analog_circuit"
+    },
+    "M": {
+      "item": "modern_industrialization:motor"
+    },
+    "C": {
+      "item": "revoindustry:saline_geode"
+    },
+    "P": {
+      "item": "minecraft:piston"
+    }
+  },
+  "result": {
+    "id": "revoindustry:salt_geode_chamber",
+    "count": 1
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "variants": {
+    "facing=north,lit=false": {
+      "model": "revoindustry:block/wither_chamber_glass",
+      "y": 0,
+      "uvlock": false
+    },
+    "facing=north,lit=true": {
+      "model": "revoindustry:block/wither_chamber_glass",
+      "y": 0,
+      "uvlock": false
+    },
+    "facing=east,lit=false": {
+      "model": "revoindustry:block/wither_chamber_glass",
+      "y": 90,
+      "uvlock": false
+    },
+    "facing=east,lit=true": {
+      "model": "revoindustry:block/wither_chamber_glass",
+      "y": 90,
+      "uvlock": false
+    },
+    "facing=south,lit=false": {
+      "model": "revoindustry:block/wither_chamber_glass",
+      "y": 180,
+      "uvlock": false
+    },
+    "facing=south,lit=true": {
+      "model": "revoindustry:block/wither_chamber_glass",
+      "y": 180,
+      "uvlock": false
+    },
+    "facing=west,lit=false": {
+      "model": "revoindustry:block/wither_chamber_glass",
+      "y": 270,
+      "uvlock": false
+    },
+    "facing=west,lit=true": {
+      "model": "revoindustry:block/wither_chamber_glass",
+      "y": 270,
+      "uvlock": false
+    }
+  }
+}

@@ -1,0 +1,3 @@
+Native steel and fluid/energy port sprites: Modern Industrialization 2.5.11, AztechMC / contributors.
+Geode, salt crystal clusters and electrical detail artwork: Revo project.
+Live water uses the vanilla animated water atlas. Editable geometry authored through Blockbench MCP.

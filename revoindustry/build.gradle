@@ -44,3 +44,43 @@ if (providers.gradleProperty('revoVacuumTests').isPresent()) {
 }
 if (providers.gradleProperty('revoVacuumUiQa').isPresent()) { sourceSets.main.java.srcDir 'src/vacuumuiqa/java' }
 tasks.named('jar', Jar) { exclude '**/VacuumGameTests*','**/VacuumUiQa*','data/revoindustry/structure/vacuum_test.nbt' }
+
+if (providers.gradleProperty('revoHatcheryTests').isPresent()) {
+ sourceSets.main.java.srcDir 'src/hatcherytest/java'
+ sourceSets.main.resources.srcDir 'src/hatcherytest/resources'
+ dependencies { runtimeOnly files(rootProject.file('.local/integration-mods/Modern-Industrialization-2.5.11.jar'),rootProject.file('.local/integration-mods/ironfurnaces-neoforge-1.21.1-4.3.2.jar'),rootProject.file('.local/integration-mods/guideme-21.1.22.jar')) }
+ neoForge {
+  mods { revolib { sourceSet project(':revolib').sourceSets.main } }
+  runs { hatcheryTests { type='gameTestServer'; systemProperty 'neoforge.enabledGameTestNamespaces','revoindustry' } }
+ }
+}
+tasks.named('jar', Jar) { exclude '**/HatcheryGameTests*','data/revoindustry/structure/hatchery_test.nbt' }
+
+if (providers.gradleProperty('revoHatcheryUiQa').isPresent()) {
+ sourceSets.main.java.srcDir 'src/hatcheryuiqa/java'
+ dependencies { runtimeOnly files(rootProject.file('.local/integration-mods/Modern-Industrialization-2.5.11.jar'),rootProject.file('.local/integration-mods/ironfurnaces-neoforge-1.21.1-4.3.2.jar'),rootProject.file('.local/integration-mods/guideme-21.1.22.jar')) }
+ neoForge {
+  mods { revolib { sourceSet project(':revolib').sourceSets.main } }
+  runs { hatcheryUiQa { client(); programArguments.addAll '--width', '1440', '--height', '1000' } }
+ }
+}
+tasks.named('jar', Jar) { exclude '**/HatcheryUiQa*' }
+
+if (providers.gradleProperty('revoSalternTests').isPresent()) {
+ sourceSets.main.java.srcDir 'src/salterntest/java'
+ sourceSets.main.resources.srcDir 'src/salterntest/resources'
+ dependencies { runtimeOnly files(rootProject.file('.local/integration-mods/Modern-Industrialization-2.5.11.jar'),rootProject.file('.local/integration-mods/ironfurnaces-neoforge-1.21.1-4.3.2.jar'),rootProject.file('.local/integration-mods/guideme-21.1.22.jar')) }
+ neoForge { mods { revolib { sourceSet project(':revolib').sourceSets.main } }
+  runs { salternTests { type='gameTestServer'; systemProperty 'neoforge.enabledGameTestNamespaces','revoindustry' } }
+ }
+}
+tasks.named('jar', Jar) { exclude '**/SalternGameTests*','data/revoindustry/structure/saltern_test.nbt' }
+
+if (providers.gradleProperty('revoSalternUiQa').isPresent()) {
+ sourceSets.main.java.srcDir 'src/salternuiqa/java'
+ dependencies { runtimeOnly files(rootProject.file('.local/integration-mods/Modern-Industrialization-2.5.11.jar'),rootProject.file('.local/integration-mods/ironfurnaces-neoforge-1.21.1-4.3.2.jar'),rootProject.file('.local/integration-mods/guideme-21.1.22.jar')) }
+ neoForge { mods { revolib { sourceSet project(':revolib').sourceSets.main } }
+  runs { salternUiQa { client(); programArguments.addAll '--width','1440','--height','1000' } }
+ }
+}
+tasks.named('jar', Jar) { exclude '**/SalternUiQa*' }

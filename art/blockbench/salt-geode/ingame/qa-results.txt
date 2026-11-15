@@ -1,0 +1,1 @@
+PASS: fresh isolated save; 3x3x3 MI-style geode chamber; animated native water, submerged growing crystal buds, electrical arcs and harvesting; brine auto-export to actual MI Centrifuge; two native Salt Dust in the centrifuge; native MI menu and inventory-free chamber diagnostics.

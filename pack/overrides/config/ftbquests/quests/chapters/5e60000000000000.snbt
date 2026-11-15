@@ -1,0 +1,162 @@
+{
+  "id": "5E60000000000000",
+  "filename": "5e60000000000000",
+  "title": "Wither Containment",
+  "icon": {
+    "id": "revoindustry:wither_egg",
+    "count": 1
+  },
+  "order_index": 50,
+  "default_quest_shape": "circle",
+  "quests": [
+    {
+      "id": "5E60000000000001",
+      "title": "The Wither Ritual",
+      "icon": {
+        "id": "minecraft:wither_skeleton_skull",
+        "count": 1
+      },
+      "x": 0,
+      "y": 0,
+      "shape": "circle",
+      "dependencies": [],
+      "description": [
+        "Prepare three Wither Skeleton skulls and four Soul Sand or Soul Soil blocks. Skulls are consumed by every ritual; this chapter does not provide a free skull source.",
+        "Build the normal upright Wither T. The completed structure disappears and drops one Wither Egg instead of releasing a boss. Leave the two spaces beside its bottom block empty."
+      ],
+      "tasks": [
+        {
+          "id": "5E60000000100101",
+          "type": "item",
+          "item": {
+            "id": "minecraft:wither_skeleton_skull",
+            "count": 1
+          },
+          "count": 3,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5E60000000000002",
+      "title": "An Egg, Not an Escape",
+      "icon": {
+        "id": "revoindustry:wither_egg",
+        "count": 1
+      },
+      "x": 3,
+      "y": 0,
+      "shape": "circle",
+      "dependencies": [
+        "5E60000000000001"
+      ],
+      "description": [
+        "Collect the Wither Egg. Put a hopper below the bottom centre to collect it automatically.",
+        "Block placers or dispensers may complete the structure without a player. Either horizontal direction works, and the last placed ingredient may be a skull or a base block."
+      ],
+      "tasks": [
+        {
+          "id": "5E60000000100201",
+          "type": "item",
+          "item": {
+            "id": "revoindustry:wither_egg",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5E60000000000003",
+      "title": "Build the Containment Chamber",
+      "icon": {
+        "id": "revoindustry:wither_hatchery",
+        "count": 1
+      },
+      "x": 3,
+      "y": 3,
+      "shape": "circle",
+      "dependencies": [
+        "5E5000000000000F"
+      ],
+      "description": [
+        "Use the EMI 3D construction guide for the 5 x 5 x 5 chamber: 81 casings, 9 smoked-glass blocks, four red hatching lights, controller and three hatches.",
+        "The 3 x 3 glass facade faces front. Bottom layer: front controller, left egg input, right star output and rear energy hatch. Face ports outward and leave the entire 3 x 3 x 3 interior empty."
+      ],
+      "tasks": [
+        {
+          "id": "5E60000000100301",
+          "type": "item",
+          "item": {
+            "id": "revoindustry:wither_hatchery",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5E60000000000004",
+      "title": "Red Lights: Hatching",
+      "icon": {
+        "id": "revoindustry:wither_chamber_light",
+        "count": 1
+      },
+      "x": 6,
+      "y": 1.5,
+      "shape": "circle",
+      "dependencies": [
+        "5E60000000000002",
+        "5E60000000000003"
+      ],
+      "description": [
+        "Supply 8192 EU/t or equivalent FE at the rear energy hatch, and feed one egg through the item input. At the default ratio this requires 81920 FE/t.",
+        "Watch the egg rock, crack and glow under flashing red lights. After 60 seconds the real contained Wither hatches and grows for five seconds. The chamber then damages it for ten seconds until it dies.",
+        "Power loss, blocked output or a broken structure pauses processing. The full cycle uses 12288000 EU. Connect an output chest or extract through the output hatch."
+      ],
+      "tasks": [
+        {
+          "id": "5E60000000100401",
+          "type": "checkmark"
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5E60000000000005",
+      "title": "A Star Under Glass",
+      "icon": {
+        "id": "minecraft:nether_star",
+        "count": 1
+      },
+      "x": 9,
+      "y": 1.5,
+      "shape": "hexagon",
+      "dependencies": [
+        "5E60000000000004"
+      ],
+      "description": [
+        "Collect the Nether Star from the output hatch. Each consumed egg yields one star only after the chamber kills its contained Wither.",
+        "Automate ritual block placement, egg collection, hatch input and star output for a repeatable industrial line. Breaking the controller returns its in-flight egg; spent power is not refunded."
+      ],
+      "tasks": [
+        {
+          "id": "5E60000000100501",
+          "type": "item",
+          "item": {
+            "id": "minecraft:nether_star",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    }
+  ]
+}

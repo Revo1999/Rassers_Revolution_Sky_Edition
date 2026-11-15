@@ -557,6 +557,70 @@
         }
       ],
       "rewards": []
+    },
+    {
+      "id": "5E50000000000013",
+      "title": "A Geode Under Water",
+      "icon": {
+        "id": "revoindustry:salt_geode_chamber",
+        "count": 1
+      },
+      "x": 12.0,
+      "y": 9.0,
+      "shape": "circle",
+      "dependencies": [
+        "5E5000000000000A"
+      ],
+      "description": [
+        "Build the 3 x 3 x 3 Salt Geode Chamber using the EMI guide. Four smoked-glass panels reveal a saline geode, growing submerged crystal buds and electrical harvesting.",
+        "Supply water on the left and 16 EU/t at the rear. Every 20 powered seconds one bucket of water becomes one bucket of salt water. The right hatch outputs it; full output or missing power pauses growth."
+      ],
+      "tasks": [
+        {
+          "id": "5E50000000100013",
+          "type": "item",
+          "item": {
+            "id": "revoindustry:salt_geode_chamber",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5E50000000000014",
+      "title": "Salt from the Centrifuge",
+      "icon": {
+        "id": "modern_industrialization:salt_dust",
+        "count": 1
+      },
+      "x": 15.0,
+      "y": 9.0,
+      "shape": "circle",
+      "dependencies": [
+        "5E50000000000013",
+        "5E5000000000000B"
+      ],
+      "description": [
+        "Pipe 1000 mB salt water into an existing MI Centrifuge. Its native 8 EU/t recipe takes 200 ticks and produces two MI Salt Dust.",
+        "Build the Centrifuge through its native electronic-circuit, large-motor and pump recipes. Electric geology supplies silver and bauxite for the required industrial components.",
+        "Salt feeds the native electric Electrolyzer for sodium and chlorine. Neither the first turbine nor this chamber needs salt to be built, so no manual salt grind is required."
+      ],
+      "tasks": [
+        {
+          "id": "5E50000000100014",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:salt_dust",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
     }
   ]
 }
