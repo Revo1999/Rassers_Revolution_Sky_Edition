@@ -19,7 +19,8 @@ import net.neoforged.neoforge.client.extensions.common.RegisterClientExtensionsE
 @EventBusSubscriber(modid=RevoIndustry.MOD_ID,bus=EventBusSubscriber.Bus.MOD,value=Dist.CLIENT)
 public final class SalternClient implements BlockEntityRenderer<SalternController> {
     public SalternClient(BlockEntityRendererProvider.Context c){}
-    public static ModelResourceLocation model(String name){return ModelResourceLocation.standalone(Saltern.id("block/"+name));}
+    private static final java.util.Map<String,ModelResourceLocation> MODEL_IDS=new java.util.concurrent.ConcurrentHashMap<>();
+    public static ModelResourceLocation model(String name){return MODEL_IDS.computeIfAbsent(name,n->ModelResourceLocation.standalone(Saltern.id("block/"+n)));}
     @SubscribeEvent public static void models(ModelEvent.RegisterAdditional e){for(var n:new String[]{"geode_rock_bed","geode_crystals","geode_electrodes","geode_water_volume"})e.register(model(n));}
     @SubscribeEvent public static void renderers(EntityRenderersEvent.RegisterRenderers e){e.registerBlockEntityRenderer(Saltern.ENTITY.get(),SalternClient::new);}
     @SubscribeEvent public static void screens(RegisterMenuScreensEvent e){e.register(Saltern.MENU.get(),SalternScreen::new);}
@@ -40,7 +41,7 @@ public final class SalternClient implements BlockEntityRenderer<SalternControlle
             if(c.status()==4&&c.progress()%12<5){
                 var v=buffers.getBuffer(RenderType.lightning());var matrix=pose.last().pose();
                 float wobble=(float)Math.sin(Math.floor(clock/3)*2.4)*.07f;
-                for(float x:new float[]{.08f,.92f}){
+                for(int electrode=0;electrode<2;electrode++){float x=electrode==0?.08f:.92f;
                     float middle=(x+.5f)/2+wobble;
                     ribbon(v,matrix,x,.8f,.35f,middle,.55f,.49f);ribbon(v,matrix,middle,.55f,.49f,.5f,.2f+growth*.5f,.53f);
                 }

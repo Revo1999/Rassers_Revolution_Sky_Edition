@@ -22,7 +22,7 @@
     24
   ],
   "uvDensityPixelsPerPhysicalUnit": 1,
-  "questCount": 113,
+  "questCount": 145,
   "newQuests": 10,
   "runtimeWater": "minecraft:block/water_still",
   "jarMatchesSourceAssets": true

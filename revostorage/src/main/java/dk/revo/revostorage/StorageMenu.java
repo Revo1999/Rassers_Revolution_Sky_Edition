@@ -19,6 +19,7 @@ public class StorageMenu extends AbstractContainerMenu {
  public String search="";
  public int page;public boolean sortCount;
  private boolean updating;
+ private final NonNullList<ItemStack> savedCraft=NonNullList.withSize(9,ItemStack.EMPTY);
  public StorageMenu(int id,Inventory inv){this(id,inv,null);}
  public StorageMenu(int id,Inventory inv,StorageEntity entity){
   super(RevoStorage.MENU.get(),id);this.entity=entity;player=inv.player;
@@ -34,10 +35,29 @@ public class StorageMenu extends AbstractContainerMenu {
   slotsChanged(craft);
  }
  public boolean terminal(){return data.get(0)==1;}
- public List<ItemStack> entries(){if(entity==null)return List.of();var list=new ArrayList<ItemStack>();var h=entity.networkItems();for(int i=0;i<h.getSlots();i++){var s=h.getStackInSlot(i);if(s.isEmpty())continue;var key=net.minecraft.core.registries.BuiltInRegistries.ITEM.getKey(s.getItem());if(!search.isBlank()&&!(search.startsWith("@")?key.getNamespace().contains(search.substring(1)):s.getHoverName().getString().toLowerCase(Locale.ROOT).contains(search)||key.toString().contains(search)))continue;var found=list.stream().filter(k->ItemStack.isSameItemSameComponents(k,s)).findFirst();if(found.isPresent())found.get().grow(s.getCount());else list.add(s.copy());}list.sort(sortCount?Comparator.comparingInt(ItemStack::getCount).reversed().thenComparing(s->s.getHoverName().getString()):Comparator.comparing(s->s.getHoverName().getString()));return list;}
+ private record StackKey(ItemStack stack){
+  @Override public int hashCode(){return ItemStack.hashItemAndComponents(stack);}
+  @Override public boolean equals(Object other){return other instanceof StackKey key&&ItemStack.isSameItemSameComponents(stack,key.stack);}
+ }
+ private List<ItemStack> cachedEntries=List.of();
+ private long entriesTick=Long.MIN_VALUE,entriesVersion=-1,entriesTopology=-1;
+ private String entriesSearch;private boolean entriesSort;
+ public List<ItemStack> entries(){
+  if(entity==null)return List.of();long tick=entity.getLevel()==null?0:entity.getLevel().getGameTime();
+  long version=StorageEntity.contentVersion(),topology=StorageEntity.topologyVersion();
+  if(entriesTick==tick&&entriesVersion==version&&entriesTopology==topology&&Objects.equals(entriesSearch,search)&&entriesSort==sortCount)return cachedEntries;
+  var merged=new HashMap<StackKey,ItemStack>();var h=entity.networkItems();int slots=h.getSlots();
+  for(int i=0;i<slots;i++){
+   var stack=h.getStackInSlot(i);if(stack.isEmpty())continue;
+   if(!search.isBlank()){var id=net.minecraft.core.registries.BuiltInRegistries.ITEM.getKey(stack.getItem());if(!(search.startsWith("@")?id.getNamespace().contains(search.substring(1)):stack.getHoverName().getString().toLowerCase(Locale.ROOT).contains(search)||id.toString().contains(search)))continue;}
+   var key=new StackKey(stack);var existing=merged.get(key);if(existing==null)merged.put(key,stack.copy());else existing.grow(stack.getCount());
+  }
+  var list=new ArrayList<>(merged.values());list.sort(sortCount?Comparator.comparingInt(ItemStack::getCount).reversed().thenComparing(stack->stack.getHoverName().getString()):Comparator.comparing(stack->stack.getHoverName().getString()));
+  entriesTick=tick;entriesVersion=version;entriesTopology=topology;entriesSearch=search;entriesSort=sortCount;return cachedEntries=list;
+ }
  private void refresh(){if(entity==null)return;var entries=entries();page=Math.clamp(page,0,Math.max(0,(entries.size()-1)/54));for(int i=0;i<54;i++)view.setItem(i,page*54+i<entries.size()?entries.get(page*54+i):ItemStack.EMPTY);}
  public void broadcastChanges(){if(entity!=null){refresh();slotsChanged(craft);}super.broadcastChanges();}
- public void slotsChanged(Container c){if(updating||entity==null||!entity.terminal())return;var level=entity.getLevel();if(level==null||level.isClientSide)return;var recipe=level.getRecipeManager().getRecipeFor(RecipeType.CRAFTING,craft.asCraftInput(),level);ItemStack out=ItemStack.EMPTY;if(recipe.isPresent()&&result.setRecipeUsed(level,(net.minecraft.server.level.ServerPlayer)player,recipe.get()))out=recipe.get().value().assemble(craft.asCraftInput(),level.registryAccess());result.setItem(0,out);entity.setChanged();}
+ public void slotsChanged(Container c){if(updating||entity==null||!entity.terminal())return;var level=entity.getLevel();if(level==null||level.isClientSide)return;var recipe=level.getRecipeManager().getRecipeFor(RecipeType.CRAFTING,craft.asCraftInput(),level);ItemStack out=ItemStack.EMPTY;if(recipe.isPresent()&&result.setRecipeUsed(level,(net.minecraft.server.level.ServerPlayer)player,recipe.get()))out=recipe.get().value().assemble(craft.asCraftInput(),level.registryAccess());result.setItem(0,out);boolean changed=false;for(int i=0;i<9;i++)if(!ItemStack.matches(savedCraft.get(i),craft.getItem(i))){savedCraft.set(i,craft.getItem(i).copy());changed=true;}if(changed)entity.setChanged();}
  public void clicked(int index,int button,ClickType type,Player p){
   if(index>=46&&index<100){if(entity==null||!entity.terminal())return;refresh();var key=view.getItem(index-46);var carried=getCarried();if(!carried.isEmpty()){if(type==ClickType.PICKUP){int n=button==1?1:carried.getCount();var rest=entity.insert(carried.copyWithCount(n),false);carried.shrink(n-rest.getCount());setCarried(carried);}}else if(!key.isEmpty()&&(type==ClickType.PICKUP||type==ClickType.QUICK_MOVE)){int n=button==1?(Math.min(key.getCount(),key.getMaxStackSize())+1)/2:key.getMaxStackSize();if(type==ClickType.QUICK_MOVE){var extracted=entity.take(key,n,false);if(!p.getInventory().add(extracted)){var rest=entity.insert(extracted,false);if(!rest.isEmpty())p.drop(rest,false);}}else setCarried(entity.take(key,n,false));}broadcastChanges();return;}
   if(index==0&&entity!=null){slotsChanged(craft);if(!entity.terminal()||entity.charge<=0)return;}

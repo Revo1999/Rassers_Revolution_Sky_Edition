@@ -80,5 +80,8 @@
   "gui.revoextraction.repair.need_water": "Add at least 100 mB water before repairing.",
   "gui.revoextraction.repair.success": "Drill repaired. Restore the coolant supply before restarting.",
   "block.revoextraction.electric_drill": "Electric Drill",
-  "item.revoextraction.deep_survey_core": "Deep Survey Core"
+  "item.revoextraction.deep_survey_core": "Deep Survey Core",
+  "item.revoextraction.mineral_sludge": "Mineral Sludge",
+  "item.revoextraction.gem_sludge": "Gem Sludge",
+  "item.revoextraction.crystalline_sludge": "Crystalline Sludge"
 }

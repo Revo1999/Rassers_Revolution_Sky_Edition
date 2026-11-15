@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "nativeGameTests": 7,
+  "unitTests": 10,
+  "productionBuild": "passed",
+  "quests": 145,
+  "expansionQuests": 24,
+  "questIDsPreserved": true,
+  "questPositionsUnique": true,
+  "generatorIdempotent": true,
+  "packagedResourcesMatchSource": true,
+  "qaFixturesExcluded": true,
+  "package": "Rassers-Revolution-Sky-Edition-0.1.38-dev.mrpack",
+  "packageIntegrity": "passed",
+  "survivalPlaythrough": false
+}

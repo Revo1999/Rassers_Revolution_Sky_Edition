@@ -1,0 +1,205 @@
+{
+  "lithium": [
+    {
+      "id": "DDUrRVCA",
+      "version": "mc1.21.1-0.15.4-neoforge",
+      "published": "2026-06-27T17:11:51.285886Z",
+      "type": "release",
+      "file": "lithium-neoforge-0.15.4+mc1.21.1.jar",
+      "dependencies": [],
+      "url": "https://modrinth.com/mod/lithium/version/DDUrRVCA"
+    },
+    {
+      "id": "RXHf27Wv",
+      "version": "mc1.21.1-0.15.3-neoforge",
+      "published": "2026-03-10T22:02:18.624455Z",
+      "type": "release",
+      "file": "lithium-neoforge-0.15.3+mc1.21.1.jar",
+      "dependencies": [],
+      "url": "https://modrinth.com/mod/lithium/version/RXHf27Wv"
+    },
+    {
+      "id": "OLpCvF3o",
+      "version": "mc1.21.1-0.15.2-neoforge",
+      "published": "2026-02-05T21:34:09.734768Z",
+      "type": "release",
+      "file": "lithium-neoforge-0.15.2+mc1.21.1.jar",
+      "dependencies": [],
+      "url": "https://modrinth.com/mod/lithium/version/OLpCvF3o"
+    }
+  ],
+  "fastsuite": [
+    {
+      "id": "OQZRQcDM",
+      "version": "1.21.1-6.0.7",
+      "published": "2026-06-19T01:19:32.689889Z",
+      "type": "release",
+      "file": "FastSuite-1.21.1-6.0.7.jar",
+      "dependencies": [
+        {
+          "version_id": null,
+          "project_id": "tCkE8p2N",
+          "file_name": null,
+          "dependency_type": "required"
+        }
+      ],
+      "url": "https://modrinth.com/mod/fastsuite/version/OQZRQcDM"
+    }
+  ],
+  "badoptimizations": [
+    {
+      "id": "S2qthD5S",
+      "version": "2.4.1",
+      "published": "2025-12-15T23:15:19.530081Z",
+      "type": "release",
+      "file": "BadOptimizations-2.4.1-1.21.1.jar",
+      "dependencies": [],
+      "url": "https://modrinth.com/mod/badoptimizations/version/S2qthD5S"
+    },
+    {
+      "id": "PX1KGjg4",
+      "version": "2.4.0",
+      "published": "2025-11-27T22:03:32.768067Z",
+      "type": "release",
+      "file": "BadOptimizations-2.4.0-1.21.1.jar",
+      "dependencies": [],
+      "url": "https://modrinth.com/mod/badoptimizations/version/PX1KGjg4"
+    },
+    {
+      "id": "XVLS5Akn",
+      "version": "2.3.1",
+      "published": "2025-10-01T23:39:06.471256Z",
+      "type": "release",
+      "file": "BadOptimizations-2.3.1-1.21.1.jar",
+      "dependencies": [],
+      "url": "https://modrinth.com/mod/badoptimizations/version/XVLS5Akn"
+    }
+  ],
+  "moreculling": [
+    {
+      "id": "ucyxnpWe",
+      "version": "1.0.11",
+      "published": "2026-11-01T19:40:33.651370Z",
+      "type": "release",
+      "file": "moreculling-neoforge-1.21.1-1.0.11.jar",
+      "dependencies": [
+        {
+          "version_id": null,
+          "project_id": "9s6osm5g",
+          "file_name": null,
+          "dependency_type": "required"
+        }
+      ],
+      "url": "https://modrinth.com/mod/moreculling/version/ucyxnpWe"
+    },
+    {
+      "id": "5M4T2FfG",
+      "version": "1.0.10",
+      "published": "2026-09-07T21:18:54.160512Z",
+      "type": "release",
+      "file": "moreculling-neoforge-1.21.1-1.0.10.jar",
+      "dependencies": [
+        {
+          "version_id": null,
+          "project_id": "9s6osm5g",
+          "file_name": null,
+          "dependency_type": "required"
+        }
+      ],
+      "url": "https://modrinth.com/mod/moreculling/version/5M4T2FfG"
+    },
+    {
+      "id": "cJQs4xht",
+      "version": "1.0.9",
+      "published": "2026-08-02T18:14:16.071442Z",
+      "type": "release",
+      "file": "moreculling-neoforge-1.21.1-1.0.9.jar",
+      "dependencies": [
+        {
+          "version_id": null,
+          "project_id": "9s6osm5g",
+          "file_name": null,
+          "dependency_type": "required"
+        }
+      ],
+      "url": "https://modrinth.com/mod/moreculling/version/cJQs4xht"
+    }
+  ],
+  "threadtweak": [],
+  "modernfix": [
+    {
+      "id": "ZDZENbHH",
+      "version": "5.27.27+mc1.21.1",
+      "published": "2026-10-24T13:23:07.902627Z",
+      "type": "release",
+      "file": "modernfix-neoforge-5.27.27+mc1.21.1.jar",
+      "dependencies": [],
+      "url": "https://modrinth.com/mod/modernfix/version/ZDZENbHH"
+    },
+    {
+      "id": "7Jy58lnT",
+      "version": "5.27.26+mc1.21.1",
+      "published": "2026-10-08T20:28:04.556303Z",
+      "type": "release",
+      "file": "modernfix-neoforge-5.27.26+mc1.21.1.jar",
+      "dependencies": [],
+      "url": "https://modrinth.com/mod/modernfix/version/7Jy58lnT"
+    },
+    {
+      "id": "Y0rvGOWm",
+      "version": "5.27.25+mc1.21.1",
+      "published": "2026-10-08T20:02:43.047373Z",
+      "type": "release",
+      "file": "modernfix-neoforge-5.27.25+mc1.21.1.jar",
+      "dependencies": [],
+      "url": "https://modrinth.com/mod/modernfix/version/Y0rvGOWm"
+    }
+  ],
+  "fastworkbench": [
+    {
+      "id": "IwciHwPN",
+      "version": "1.21.1-9.1.3",
+      "published": "2026-06-19T01:18:19.159561Z",
+      "type": "release",
+      "file": "FastWorkbench-1.21.1-9.1.3.jar",
+      "dependencies": [
+        {
+          "version_id": null,
+          "project_id": "tCkE8p2N",
+          "file_name": null,
+          "dependency_type": "required"
+        }
+      ],
+      "url": "https://modrinth.com/mod/fastworkbench/version/IwciHwPN"
+    }
+  ],
+  "fastfurnace": [
+    {
+      "id": "pqj92Yco",
+      "version": "1.21.1-9.0.1",
+      "published": "2026-06-19T01:21:06.620281Z",
+      "type": "beta",
+      "file": "FastFurnace-1.21.1-9.0.1.jar",
+      "dependencies": [
+        {
+          "version_id": null,
+          "project_id": "tCkE8p2N",
+          "file_name": null,
+          "dependency_type": "required"
+        }
+      ],
+      "url": "https://modrinth.com/mod/fastfurnace/version/pqj92Yco"
+    }
+  ],
+  "noisium": [
+    {
+      "id": "nJBE6tif",
+      "version": "2.3.0+mc1.21-1.21.1",
+      "published": "2024-08-21T17:24:16.092924Z",
+      "type": "release",
+      "file": "noisium-neoforge-2.3.0+mc1.21-1.21.1.jar",
+      "dependencies": [],
+      "url": "https://modrinth.com/mod/noisium/version/nJBE6tif"
+    }
+  ]
+}

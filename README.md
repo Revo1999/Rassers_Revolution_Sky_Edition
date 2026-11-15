@@ -144,3 +144,11 @@ Early resource bridges now provide Create coke milling, Cow leather, Steel Blaze
 ## Progression and chest-drive storage update
 
 The twelve-task progression batch is implemented, including controlled crop/mob starters, quartz and burners, first-electricity quests, electric geology, trading, glacial/deep resources and local mechanical storage. RevoStorage adds nine-chest drives with native Iron Chests capacity plus an AE-style crafting terminal with search, shift-click crafting and EMI recipe transfer. See [implementation details](docs/PROGRESSION-EXPANSION.md), [verification](docs/PROGRESSION-EXPANSION-QA.md) and the [next recipe audit](docs/RECIPE-AUDIT-3.md).
+
+### Drill minerals and sludge
+
+Mechanical Steel Drills supply lead and antimony before LV batteries. Drill sludge supplies washed gems and advanced Certus recovery; electric geology adds selectable antimony. Native MI quarry controller recipes are disabled. See [the resource ladder](docs/DRILL-MINERALS-AND-SLUDGE.md).
+
+### Performance
+
+Machine/storage/port and rendering optimizations are documented in [the block performance audit](docs/PERFORMANCE-AUDIT.md). See [startup performance](docs/STARTUP-PERFORMANCE.md) for the existing optimization stack and verified candidate versions; additional mods and experimental model-loading options are recommendations, not installed changes.

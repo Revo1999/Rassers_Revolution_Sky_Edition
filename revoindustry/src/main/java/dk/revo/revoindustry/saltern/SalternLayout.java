@@ -8,7 +8,9 @@ import net.minecraft.world.level.block.state.BlockState;
 
 public final class SalternLayout {
     public record Cell(BlockPos offset,Block block,Direction face,String role){}
-    public static List<Cell> cells(){
+    private static volatile List<Cell> cachedCells;
+    public static List<Cell> cells(){if(cachedCells==null)cachedCells=buildCells();return cachedCells;}
+    private static List<Cell> buildCells(){
         var cells=new ArrayList<Cell>();
         for(int y=0;y<3;y++)for(int z=0;z<3;z++)for(int x=-1;x<=1;x++){
             Block block=Hatchery.CASING.get();Direction face=Direction.NORTH;String role="casing";

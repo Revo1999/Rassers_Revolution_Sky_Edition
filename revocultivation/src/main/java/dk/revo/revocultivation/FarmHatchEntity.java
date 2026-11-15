@@ -10,7 +10,13 @@ import net.neoforged.neoforge.fluids.capability.IFluidHandler;
 public class FarmHatchEntity extends BlockEntity {
     private boolean exporting;
     public FarmHatchEntity(BlockPos p,BlockState s){super(RevoCultivation.HATCH_ENTITY.get(),p,s);}
-    public FarmMachine machine(){if(level==null||!getBlockState().getValue(FarmPart.FORMED))return null;var m=FarmMachine.find(level,worldPosition);return m!=null&&m.formed()&&m.at(m.kind().radius(),0,m.kind().hatchZ()).equals(worldPosition)?m:null;}
+    private FarmMachine cachedController;
+    public FarmMachine machine(){
+        if(level==null||isRemoved()||!getBlockState().getValue(FarmPart.FORMED))return null;
+        var m=cachedController;
+        if(m==null||m.isRemoved()||!level.hasChunkAt(m.getBlockPos())||level.getBlockEntity(m.getBlockPos())!=m||!m.formed()||!m.at(m.kind().radius(),0,m.kind().hatchZ()).equals(worldPosition))m=FarmMachine.find(level,worldPosition);
+        return cachedController=m!=null&&m.formed()&&m.at(m.kind().radius(),0,m.kind().hatchZ()).equals(worldPosition)?m:null;
+    }
     public void eject(){
         if(level==null||level.isClientSide||exporting)return;var m=machine();if(m==null)return;
         var dir=getBlockState().getValue(FarmHatch.FACING);var targetPos=worldPosition.relative(dir);if(!level.hasChunkAt(targetPos))return;

@@ -84,3 +84,16 @@ if (providers.gradleProperty('revoSalternUiQa').isPresent()) {
  }
 }
 tasks.named('jar', Jar) { exclude '**/SalternUiQa*' }
+
+// Combined regression run without adding the shared RevoLib source set repeatedly.
+if (providers.gradleProperty('revoIndustryPerformanceTests').isPresent()) {
+ ['furnacetest','vacuumtest','hatcherytest','salterntest'].each { name ->
+  sourceSets.main.java.srcDir "src/${name}/java"
+  sourceSets.main.resources.srcDir "src/${name}/resources"
+ }
+ dependencies { runtimeOnly files(rootProject.file('.local/integration-mods/Modern-Industrialization-2.5.11.jar'),rootProject.file('.local/integration-mods/ironfurnaces-neoforge-1.21.1-4.3.2.jar'),rootProject.file('.local/integration-mods/guideme-21.1.22.jar')) }
+ neoForge {
+  mods { revolib { sourceSet project(':revolib').sourceSets.main } }
+  runs { industryPerformanceTests { type='gameTestServer'; systemProperty 'neoforge.enabledGameTestNamespaces','revoindustry' } }
+ }
+}

@@ -14,11 +14,13 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.client.event.*;
 @EventBusSubscriber(modid=RevoCultivation.MOD_ID,bus=EventBusSubscriber.Bus.MOD,value=Dist.CLIENT)
 public final class FarmClient {
-    private static ModelResourceLocation model(String name){return ModelResourceLocation.standalone(ResourceLocation.fromNamespaceAndPath(RevoCultivation.MOD_ID,"block/"+name));}
+    private static final java.util.Map<String,ModelResourceLocation> MODEL_IDS=new java.util.concurrent.ConcurrentHashMap<>();
+    private static ModelResourceLocation model(String name){return MODEL_IDS.computeIfAbsent(name,n->ModelResourceLocation.standalone(ResourceLocation.fromNamespaceAndPath(RevoCultivation.MOD_ID,"block/"+n)));}
     @SubscribeEvent public static void screens(RegisterMenuScreensEvent e){e.register(RevoCultivation.CONTROLLER_MENU.get(),FarmControllerScreen::new);e.register(RevoCultivation.HATCH_MENU.get(),FarmHatchScreen::new);}
     @SubscribeEvent public static void models(ModelEvent.RegisterAdditional e){for(var kind:MachineKind.values())if(kind.registered())e.register(model(kind.id+"_body"));e.register(model("tree_grower_tree"));e.register(model("iron_greenhouse_lights"));e.register(model("iron_greenhouse_glass"));e.register(model("steel_tree_grower_glass"));}
     @SubscribeEvent public static void renderers(EntityRenderersEvent.RegisterRenderers e){e.registerBlockEntityRenderer(RevoCultivation.MACHINE.get(),Renderer::new);}
     public static class Renderer implements BlockEntityRenderer<FarmMachine> {
+        private static final float[] WATER_LOW={2.2f,3,35.2f},TREE_WATER_HIGH={12.8f,23,44.8f},GREENHOUSE_WATER_HIGH={10.8f,22,44.8f},CROP_GRID={16,32,48};
         public Renderer(BlockEntityRendererProvider.Context context){}
         private void draw(String name,PoseStack pose,MultiBufferSource buffers,int light,int overlay){var mc=Minecraft.getInstance();mc.getBlockRenderer().getModelRenderer().renderModel(pose.last(),buffers.getBuffer(name.endsWith("_glass")?RenderType.entityTranslucentCull(net.minecraft.client.renderer.texture.TextureAtlas.LOCATION_BLOCKS):RenderType.cutout()),null,mc.getModelManager().getModel(model(name)),1,1,1,light,overlay);}
         @Override public void render(FarmMachine machine,float partial,PoseStack pose,MultiBufferSource buffers,int light,int overlay){
@@ -26,8 +28,8 @@ public final class FarmClient {
             if(machine.kind().attachedTank())draw(machine.kind().id+"_glass",pose,buffers,light,overlay);
             if(machine.growLightsOn())draw("iron_greenhouse_lights",pose,buffers,LightTexture.FULL_BRIGHT,overlay);
             if(machine.kind().attachedTank()){
-                float[] low=machine.kind().realTree()?new float[]{2.2f,3,35.2f}:new float[]{2.2f,3,35.2f};
-                float[] high=machine.kind().realTree()?new float[]{12.8f,23,44.8f}:new float[]{10.8f,22,44.8f};
+                float[] low=WATER_LOW;
+                float[] high=machine.kind().realTree()?TREE_WATER_HIGH:GREENHOUSE_WATER_HIGH;
                 dk.revo.revolib.client.FarmFluidRenderer.water(machine.getLevel(),machine.at(-machine.kind().radius(),0,0),machine.water.getFluidAmount(),machine.kind().waterCapacity(),pose,buffers,light,overlay,low,high,machine.kind().width()*16);
             }
             if(machine.program()>=0){
@@ -41,7 +43,7 @@ public final class FarmClient {
                 else if(machine.kind().isGreenhouse()){
                     var crop=switch(machine.program()){case 11->Blocks.CARROTS.defaultBlockState().setValue(CarrotBlock.AGE,Math.min(7,(int)(progress*8)));case 12->Blocks.POTATOES.defaultBlockState().setValue(PotatoBlock.AGE,Math.min(7,(int)(progress*8)));case 14->Blocks.SUGAR_CANE.defaultBlockState();case 15->Blocks.KELP.defaultBlockState();case 16->Blocks.CACTUS.defaultBlockState();case 13->Blocks.BEETROOTS.defaultBlockState().setValue(BeetrootBlock.AGE,Math.min(3,(int)(progress*4)));default->Blocks.WHEAT.defaultBlockState().setValue(CropBlock.AGE,Math.min(7,(int)(progress*8)));};
                     if(machine.kind().electric()){
-                        for(float x:new float[]{16,32,48})for(float z:new float[]{16,32,48}){pose.pushPose();pose.translate(x/80,16f/80,z/80);pose.scale(.2f,.2f,.2f);mc.getBlockRenderer().renderSingleBlock(crop,pose,buffers,light,overlay);pose.popPose();}
+                        for(float x:CROP_GRID)for(float z:CROP_GRID){pose.pushPose();pose.translate(x/80,16f/80,z/80);pose.scale(.2f,.2f,.2f);mc.getBlockRenderer().renderSingleBlock(crop,pose,buffers,light,overlay);pose.popPose();}
                     }else{pose.pushPose();pose.translate(16f/48,14f/48,16f/48);pose.scale(1f/3,1f/3,1f/3);mc.getBlockRenderer().renderSingleBlock(crop,pose,buffers,light,overlay);pose.popPose();}
                 }else{
                     var mob=machine.containedMob();

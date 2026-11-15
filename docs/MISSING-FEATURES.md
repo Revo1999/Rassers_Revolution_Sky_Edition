@@ -1,5 +1,7 @@
 # Missing features and progression gaps
 
+For the current priority order through MV, see the [15 November MV progression audit](PROGRESSION-GAPS-THROUGH-MV.md). The pre-LV lead/antimony bootstrap and sludge processing identified there are now implemented; the remaining MV work focuses on guidance and end-to-end validation.
+
 Based on checkout `a80e627`, the pinned mod artifacts, current quest files, the latest recipe audit and the original design. This is a development backlog, not a claim that every possible vanilla or exploration fallback is unavailable.
 
 ## Ender Chests and tesseracts
@@ -17,16 +19,18 @@ Based on checkout `a80e627`, the pinned mod artifacts, current quest files, the 
 
 These are the remaining gaps identified in [Recipe Audit 3](RECIPE-AUDIT-3.md). Suggested recipes in that audit are proposals, not implemented routes.
 
-1. **Starter Certus Quartz** for AE2.
+1. **Resolved:** starter Certus Quartz now comes from core-gated electric Crystalline Sludge and MI centrifuging.
 2. **The first four inscriber presses**; duplication needs an existing press.
 3. **Starter Sky Stone**, without depending on meteorites or an existing input.
 4. **Resolved:** [Salt Geode Chamber](SALT-GEODE.md) plus native MI centrifuging now provides renewable salt feedstock.
-5. **Antimony, tungsten and uranium deposits**, unlocked at suitable industrial stages.
+5. **Later Revo drill mineral coverage:** tungsten and uranium need deposits at their later stages. Pre-electric lead/antimony and electric antimony are implemented; native quarry controller recipes are disabled.
 6. **Nether Wart and Ghast Tears** through controlled cultivation/mob production.
 7. **Starter End Stone, chorus and shulker shells** for End-related recipes.
 8. **Controlled Wither Skeleton skull production**. The new [Wither Hatchery](WITHER-HATCHERY.md) now turns the standard ritual materials into eggs, then uses a powered chamber and real contained Wither death to produce Nether Stars. The skull feedstock route remains unfinished.
 9. **The first Netherite Upgrade smithing template**. Ancient Debris already exists; equipment upgrading still needs a starter template.
 10. **A controlled red-dye/flower starter**. This is a convenience improvement: vanilla flowers can provide a fallback.
+
+**Confirmed resource split:** drills supply mineral/ore feedstocks; sludge processing supplies gems. Iron/Steel Mineral Sludge, Steel Gem Sludge and advanced electric Crystalline Sludge are implemented. Direct Steel Drill diamond/lapis outputs have been replaced.
 
 ## 2. Progression systems not finished
 
@@ -58,7 +62,7 @@ These are optional additions, rather than requirements already committed in the 
 
 ## Suggested development order
 
-1. Close the AE2 starter-material gaps and salt route.
+1. Complete the first Inscriber Press/Sky Stone routes and the remaining MV quest guidance.
 2. Define AE2 storage/autocrafting gates and resolve its addon integration issue.
 3. Complete later metals, biological resources and advanced MI quest coverage.
 4. Decide whether remote item/fluid transport should use Ender Storage, tesseracts or AE2-based logistics.

@@ -79,8 +79,8 @@
       "shape": "circle",
       "dependencies": [],
       "description": [
-        "Mill one raw gold from the Iron Drill into one crushed raw gold (400 processing time), then wash it with a Create fan and water. Native washing returns nine gold nuggets and a 50% quartz chance.",
-        "Quartz enables electron tubes and mechanical crafters before crushing wheels."
+        "The Iron Drill produces Mineral Sludge alongside ores. Wash it with an Encased Fan blowing through water to recover one Quartz per sludge. No diamonds or advanced machinery are required.",
+        "Minerals come from drills; recover gems and crystals by processing their sludge."
       ],
       "tasks": [
         {
@@ -292,7 +292,8 @@
       "dependencies": [
         "5E50000000000007",
         "5E50000000000008",
-        "5E50000000000009"
+        "5E50000000000009",
+        "5E50000000000016"
       ],
       "description": [
         "Hand-craft the LV Steam Turbine from a basic hull, circuit, two motors, two tin rotors, pipes and a tin cable. Feed steam from your existing steam infrastructure.",
@@ -326,7 +327,7 @@
         "5E5000000000000A"
       ],
       "description": [
-        "The compact LV Electric Drill consumes 16 EU/t and produces one resource every 200 powered ticks. Mixed mode cycles silver, nickel, lead and bauxite dust; select individual deposits with the menu.",
+        "The LV Electric Drill uses 16 EU/t for 200 powered ticks per resource. Mixed cycles silver, nickel, lead, bauxite and antimony; select individual deposits in its menu. Mechanical steel extraction supplies the first battery minerals.",
         "Build it from steel plates, motor, circuits, basic hull and a diamond pickaxe. No exclusive electric-drill metal is required. Hopper insert from the top for upgrades/water; extract resources from other faces."
       ],
       "tasks": [
@@ -617,6 +618,163 @@
             "count": 1
           },
           "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5E50000000000015",
+      "title": "Battery Minerals Before Electricity",
+      "icon": {
+        "id": "modern_industrialization:raw_antimony",
+        "count": 1
+      },
+      "x": -6.0,
+      "y": 3.0,
+      "shape": "circle",
+      "dependencies": [
+        "5E40000000000009"
+      ],
+      "description": [
+        "The mechanical Steel Drill now supplies raw lead and raw antimony before electricity. Process them with native steam maceration and metallurgy. The drill itself needs neither mineral to build.",
+        "Mix equal Lead Dust and Antimony Dust for Battery Alloy. Do not wait for the electric drill: its hull already needs batteries."
+      ],
+      "tasks": [
+        {
+          "id": "5E50000000100150",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:raw_lead",
+            "count": 1
+          },
+          "count": 2,
+          "consume_items": false
+        },
+        {
+          "id": "5E50000000100151",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:raw_antimony",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5E50000000000016",
+      "title": "The First Battery Hull",
+      "icon": {
+        "id": "modern_industrialization:redstone_battery",
+        "count": 1
+      },
+      "x": -3.0,
+      "y": 3.0,
+      "shape": "circle",
+      "dependencies": [
+        "5E50000000000015",
+        "5E50000000000008"
+      ],
+      "description": [
+        "Use native battery-alloy plates and curved plates, tin cable and redstone to craft two Redstone Batteries. A Basic Machine Hull consumes two batteries.",
+        "Keep the Steel Drill producing antimony. The Electric Geological Drill later offers a selectable Antimony program."
+      ],
+      "tasks": [
+        {
+          "id": "5E50000000100160",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:redstone_battery",
+            "count": 1
+          },
+          "count": 2,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5E50000000000017",
+      "title": "Wash the Gem Sludge",
+      "icon": {
+        "id": "revoextraction:gem_sludge",
+        "count": 1
+      },
+      "x": -3.0,
+      "y": 0.0,
+      "shape": "circle",
+      "dependencies": [
+        "5E40000000000009"
+      ],
+      "description": [
+        "The Steel Drill produces Gem Sludge instead of loose diamonds and lapis. Wash each sludge with a water-backed Create Encased Fan: one Diamond and two Lapis are guaranteed; an Emerald has a 25% chance.",
+        "Automate extraction and washing with the existing item hatch, belts and funnels. Full drill outputs retain the saved next result."
+      ],
+      "tasks": [
+        {
+          "id": "5E50000000100170",
+          "type": "item",
+          "item": {
+            "id": "revoextraction:gem_sludge",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "5E50000000100171",
+          "type": "item",
+          "item": {
+            "id": "minecraft:diamond",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5E50000000000018",
+      "title": "Crystals from Deep Sludge",
+      "icon": {
+        "id": "ae2:certus_quartz_crystal",
+        "count": 1
+      },
+      "x": 12.0,
+      "y": 12.0,
+      "shape": "circle",
+      "dependencies": [
+        "5E5000000000000F",
+        "5E50000000000014"
+      ],
+      "description": [
+        "Select Crystalline Sludge on the Electric Geological Drill. Retain a Deep Survey Core in its upper slot; supply 128 EU/t for 1200 powered ticks per sludge.",
+        "A native MI Centrifuge processes one Crystalline Sludge at 32 EU/t for 400 ticks into two Certus Quartz Crystals and two Quartz. Certus is recovered from sludge, never dropped directly by the drill.",
+        "This establishes starter Certus only. Inscriber Presses, starter Sky Stone and the full AE2 unlock still need their own progression."
+      ],
+      "tasks": [
+        {
+          "id": "5E50000000100180",
+          "type": "item",
+          "item": {
+            "id": "revoextraction:crystalline_sludge",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "5E50000000100181",
+          "type": "item",
+          "item": {
+            "id": "ae2:certus_quartz_crystal",
+            "count": 1
+          },
+          "count": 2,
           "consume_items": false
         }
       ],

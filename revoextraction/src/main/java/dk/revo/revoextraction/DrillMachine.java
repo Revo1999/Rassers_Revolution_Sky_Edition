@@ -24,8 +24,8 @@ public class DrillMachine extends BlockEntity {
     public final ItemStackHandler inventory = new ItemStackHandler(9) { @Override protected void onContentsChanged(int slot) { setChanged(); } };
     public DrillMachine(BlockPos p,BlockState s){super(RevoExtraction.MACHINE.get(),p,s);}
     public Direction facing(){return getBlockState().getValue(DrillController.FACING);}
-    public BlockPos at(int x,int y,int z){return worldPosition.relative(facing().getClockWise(),x).relative(facing(),z-1).offset(0,y-1,0);}
-    private BlockPos at(Direction front,int x,int y,int z){return worldPosition.relative(front.getClockWise(),x).relative(front,z-1).offset(0,y-1,0);}
+    public BlockPos at(int x,int y,int z){return at(facing(),x,y,z);}
+    private BlockPos at(Direction front,int x,int y,int z){var right=front.getClockWise();return worldPosition.offset(right.getStepX()*x+front.getStepX()*(z-1),y-1,right.getStepZ()*x+front.getStepZ()*(z-1));}
     public FacingIssue facingIssue(){return facingIssue;}
     public boolean formed(){return getBlockState().getValue(DrillPart.FORMED);}
     public float speed(){return workingSpeed;}

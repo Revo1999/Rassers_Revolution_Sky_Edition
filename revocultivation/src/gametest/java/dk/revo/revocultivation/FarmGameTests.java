@@ -28,7 +28,7 @@ public class FarmGameTests {
     static int count(IItemHandler inv,Item item){int n=0;for(int i=0;i<inv.getSlots();i++)if(inv.getStackInSlot(i).is(item))n+=inv.getStackInSlot(i).getCount();return n;}
     @GameTest(template="farm_test",timeoutTicks=100)
     public static void allThreeKindsAllRotationsAndFacingErrors(GameTestHelper h){
-        for(var kind:MachineKind.values())for(var facing:Direction.Plane.HORIZONTAL){
+        for(var kind:new MachineKind[]{MachineKind.TREE,MachineKind.GREENHOUSE,MachineKind.HARVESTER})for(var facing:Direction.Plane.HORIZONTAL){
             var m=build(h,kind,facing);var hatch=m.at(1,0,0);var old=h.getLevel().getBlockState(hatch);
             h.getLevel().setBlockAndUpdate(hatch,old.setValue(FarmHatch.FACING,facing.getCounterClockWise()));
             h.assertTrue(!m.checkStructure()&&m.state()==7&&m.issue().part()==MachineKind.Part.HATCH,"Reversed hatch must report its facing error");
@@ -41,7 +41,7 @@ public class FarmGameTests {
     }
     @GameTest(template="farm_test",timeoutTicks=100)
     public static void guidesMatchRealPlacementBlocks(GameTestHelper h){
-        for(var kind:MachineKind.values()){
+        for(var kind:new MachineKind[]{MachineKind.TREE,MachineKind.GREENHOUSE,MachineKind.HARVESTER}){
             var m=build(h,kind,Direction.NORTH);var guide=FarmGuideDefinition.create(kind);h.assertTrue(guide.blocks()==(kind==MachineKind.TREE?9:26),"Guide must count all required blocks including controller");
             for(var p:guide.parts()){var actual=h.getLevel().getBlockState(m.getBlockPos().offset(p.offset()));if(actual.hasProperty(FarmPart.FORMED))actual=actual.setValue(FarmPart.FORMED,false);h.assertTrue(actual.equals(p.state()),"Guide mismatch at "+p.offset()+" for "+kind);}
         }h.succeed();
@@ -118,7 +118,7 @@ public class FarmGameTests {
     }
     @GameTest(template="farm_test",timeoutTicks=100)
     public static void menusAndCapabilitiesKeepRealStorageSafe(GameTestHelper h){
-        for(var kind:MachineKind.values()){
+        for(var kind:new MachineKind[]{MachineKind.TREE,MachineKind.GREENHOUSE,MachineKind.HARVESTER}){
             var m=build(h,kind,Direction.NORTH);var player=net.neoforged.neoforge.common.util.FakePlayerFactory.getMinecraft(h.getLevel());player.setPos(m.getBlockPos().getX(),m.getBlockPos().getY(),m.getBlockPos().getZ());for(int i=0;i<36;i++)player.getInventory().setItem(i,ItemStack.EMPTY);
             var controller=new FarmControllerMenu(1,player.getInventory(),m);var hatch=(FarmHatchEntity)h.getLevel().getBlockEntity(m.at(1,0,0));var menu=new FarmHatchMenu(2,player.getInventory(),hatch,m);
             h.assertTrue(controller.slots.isEmpty()&&menu.slots.size()==kind.inputSlots()+45,"Only hatch exposes inventories");int outputs=kind.inputSlots();int playerStart=outputs+9;

@@ -31,11 +31,15 @@ public class HatchEntity extends BlockEntity {
             }
         } finally {exporting=false;}
     }
+    private DrillMachine cachedController;
     public DrillMachine machine() {
-        if(level==null || !getBlockState().getValue(DrillPart.FORMED)) return null;
+        if(level==null || isRemoved() || !getBlockState().getValue(DrillPart.FORMED)) return null;
+        var cached=cachedController;
+        if(cached!=null&&!cached.isRemoved()&&level.hasChunkAt(cached.getBlockPos())&&level.getBlockEntity(cached.getBlockPos())==cached&&cached.formed()&&cached.at(-1,0,0).equals(worldPosition))return cached;
+        cachedController=null;
         for(int x=-2;x<=2;x++)for(int z=-2;z<=2;z++) {
             BlockPos candidate=worldPosition.offset(x,1,z);
-            if(level.hasChunkAt(candidate) && level.getBlockEntity(candidate) instanceof DrillMachine m && m.formed() && m.at(-1,0,0).equals(worldPosition)) return m;
+            if(level.hasChunkAt(candidate) && level.getBlockEntity(candidate) instanceof DrillMachine m && m.formed() && m.at(-1,0,0).equals(worldPosition)) return cachedController=m;
         }
         return null;
     }

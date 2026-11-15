@@ -290,12 +290,14 @@ The precise placement of MI materials such as nickel, aluminum, titanium and tun
 
 ### What it produces
 
+**User-confirmed resource split (15 November 2026):** Revo drills supply mineral and ore feedstocks at the required technology tiers. Gems come from sludge processing, not direct drill gem outputs. This includes the future Certus starter route. Native MI quarries are excluded at every tier. Implemented drill outputs now use Mineral Sludge, Gem Sludge and advanced Crystalline Sludge; see [the current resource ladder](../DRILL-MINERALS-AND-SLUDGE.md). Direct Steel Drill diamond/lapis drops are replaced. Existing native processing byproducts remain a separate balance review.
+
 - Stone, gravel, sand and other simple geological feedstock.
 - Raw ore-bearing materials for Create crushing and washing.
 - MI metals and special minerals according to technology tier.
 - Nether-origin geological materials: Netherrack, soul-related mineral feedstock, quartz, glowstone materials, ancient debris when justified by late progression.
 - End-origin geological materials: End Stone, exotic crystalline feedstock, and other geological equivalents needed for recipes.
-- Certus Quartz and Sky Stone or valid crafted equivalents for AE2 progression.
+- Sky Stone or valid geological/crafted equivalents for AE2 progression. Starter Certus Quartz belongs to the sludge-processing gem route.
 
 **Processing matters:** Early extraction should generally output mineral chunks or raw feedstock rather than fully refined ingots. Create crushing, washing and smelting are the first meaningful processing route; MI later offers stronger industrial metallurgy and refinement, which can recover additional materials or offer better efficiency.
 
@@ -562,7 +564,8 @@ Every required item must fit into a reachable and intentional production route. 
 | Clay | Extraction and/or compost/water processing | Obtainable before clay-dependent recipes |
 | Common ores/metals | RevoExtraction → Create/MI | Iron, copper, coal, tin, zinc as progression allows |
 | Precious/rare metals | Higher extraction tiers → MI | Gold, rare MI metals and special materials |
-| Redstone, quartz, gems | Appropriate mining programs | Rates and availability reflect progression |
+| Redstone and mineral feedstocks | Appropriate drill programs | Rates and availability reflect progression |
+| Gems, including starter Certus | Sludge processing | Unlock timing must preserve progression-critical first uses |
 | Nether geological blocks | RevoExtraction | Netherrack, quartz, glowstone feedstock, soul materials, ancient debris |
 | End geological blocks | RevoExtraction | End Stone and other special required materials |
 | Wood and leaves | RevoCultivation Tree Farm | Supports building, fuel, compost, sericulture |

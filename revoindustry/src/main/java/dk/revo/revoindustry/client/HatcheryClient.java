@@ -21,8 +21,11 @@ import net.neoforged.neoforge.client.event.*;
 @EventBusSubscriber(modid=RevoIndustry.MOD_ID,bus=EventBusSubscriber.Bus.MOD,value=Dist.CLIENT)
 public final class HatcheryClient implements BlockEntityRenderer<HatcheryController> {
     public HatcheryClient(BlockEntityRendererProvider.Context context){}
-    public static ModelResourceLocation egg(int stage){return ModelResourceLocation.standalone(Hatchery.id("block/"+(stage==0?"wither_egg":"wither_egg_cracked_"+stage)));}
-    public static ModelResourceLocation roof(boolean lit){return ModelResourceLocation.standalone(Hatchery.id("block/wither_roof_lamp"+(lit?"_lit":"")));}
+    private static final ModelResourceLocation[] EGGS={model("wither_egg"),model("wither_egg_cracked_1"),model("wither_egg_cracked_2")};
+    private static final ModelResourceLocation ROOF=model("wither_roof_lamp"),LIT_ROOF=model("wither_roof_lamp_lit");
+    private static ModelResourceLocation model(String name){return ModelResourceLocation.standalone(Hatchery.id("block/"+name));}
+    public static ModelResourceLocation egg(int stage){return EGGS[stage];}
+    public static ModelResourceLocation roof(boolean lit){return lit?LIT_ROOF:ROOF;}
     @SubscribeEvent public static void models(ModelEvent.RegisterAdditional e){for(int i=0;i<3;i++)e.register(egg(i));e.register(roof(false));e.register(roof(true));}
     @SubscribeEvent public static void renderers(EntityRenderersEvent.RegisterRenderers e){e.registerBlockEntityRenderer(Hatchery.CONTROLLER_ENTITY.get(),HatcheryClient::new);e.registerEntityRenderer(Hatchery.WITHER.get(),ContainedRenderer::new);}
     @SubscribeEvent public static void screens(RegisterMenuScreensEvent e){e.register(Hatchery.MENU.get(),HatcheryScreen::new);}

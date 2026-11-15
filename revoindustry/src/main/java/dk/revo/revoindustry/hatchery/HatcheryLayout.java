@@ -25,7 +25,7 @@ public final class HatcheryLayout {
         SHELL=List.copyOf(cells);
     }
     public static Block block(Hatchery.Part part){return switch(part){case CASING->Hatchery.CASING.get();case GLASS->Hatchery.GLASS.get();case LIGHT->Hatchery.LIGHT.get();case CONTROLLER->Hatchery.CONTROLLER.get();case INPUT->Hatchery.INPUT.get();case OUTPUT->Hatchery.OUTPUT.get();case ENERGY->Hatchery.ENERGY.get();};}
-    public static BlockPos at(BlockPos origin,Direction front,int x,int y,int z){return origin.relative(front.getClockWise(),x).above(y).relative(front.getOpposite(),z);}
+    public static BlockPos at(BlockPos origin,Direction front,int x,int y,int z){var right=front.getClockWise();return origin.offset(right.getStepX()*x-front.getStepX()*z,y,right.getStepZ()*x-front.getStepZ()*z);}
     public static BlockPos at(BlockPos origin,Direction front,BlockPos p){return at(origin,front,p.getX(),p.getY(),p.getZ());}
     public static Direction rotate(Direction canonical,Direction front){return switch(canonical){case NORTH->front;case SOUTH->front.getOpposite();case EAST->front.getClockWise();case WEST->front.getCounterClockWise();default->canonical;};}
     public static BlockState state(Cell c,Direction front){return block(c.part).defaultBlockState().setValue(HatcheryBlock.FACING,rotate(c.facing,front));}

@@ -1,0 +1,14 @@
+{
+  "type": "create:splashing",
+  "ingredients": [
+    {
+      "item": "revoextraction:mineral_sludge"
+    }
+  ],
+  "results": [
+    {
+      "id": "minecraft:quartz",
+      "count": 1
+    }
+  ]
+}

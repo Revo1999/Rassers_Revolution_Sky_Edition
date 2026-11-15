@@ -41,7 +41,7 @@ public final class HatcheryGameTests {
         for(int x=-1;x<=1;x++)level.setBlockAndUpdate(foot.relative(axis,x).above(2),Blocks.WITHER_SKELETON_SKULL.defaultBlockState());
         if(lastBase)level.setBlockAndUpdate(foot,Blocks.SOUL_SAND.defaultBlockState());
     }
-    @GameTest(template="hatchery_test",timeoutTicks=120)
+    @GameTest(batch="hatcheries",template="hatchery_test",timeoutTicks=120)
     public static void automatedRitualBothAxesLastBaseAndHopper(GameTestHelper h){
         var level=h.getLevel();var a=h.absolutePos(new BlockPos(3,3,3));var b=h.absolutePos(new BlockPos(9,3,9));
         ritual(h,a,Direction.EAST,false);ritual(h,b,Direction.SOUTH,true);
@@ -59,14 +59,14 @@ public final class HatcheryGameTests {
         }
         h.assertTrue(total==2,"Ordinary hoppers collect both dropped eggs");h.succeed();
     }
-    @GameTest(template="hatchery_test",timeoutTicks=100)
+    @GameTest(batch="hatcheries",template="hatchery_test",timeoutTicks=100)
     public static void incompleteRitualDoesNotConsumeIngredients(GameTestHelper h){
         var foot=h.absolutePos(new BlockPos(4,3,4));h.getLevel().setBlockAndUpdate(foot,Blocks.SOUL_SAND.defaultBlockState());
         for(int x=-1;x<=1;x++)h.getLevel().setBlockAndUpdate(foot.offset(x,1,0),Blocks.SOUL_SAND.defaultBlockState());
         for(int x=-1;x<=0;x++)h.getLevel().setBlockAndUpdate(foot.offset(x,2,0),Blocks.WITHER_SKELETON_SKULL.defaultBlockState());
         h.assertTrue(!WitherEggRitual.convert(h.getLevel(),foot)&&h.getLevel().getBlockState(foot).is(Blocks.SOUL_SAND),"Two skulls cannot consume the base");h.succeed();
     }
-    @GameTest(template="hatchery_test",timeoutTicks=200)
+    @GameTest(batch="hatcheries",template="hatchery_test",timeoutTicks=200)
     public static void allRotationsStructureAndCachedCapabilityGuards(GameTestHelper h){
         for(var facing:Direction.Plane.HORIZONTAL){
             var c=build(h,facing);h.assertTrue(c.validate(),"5x5x5 must form facing "+facing+": "+c.problem());
@@ -79,7 +79,7 @@ public final class HatcheryGameTests {
             var out=c.output();h.getLevel().setBlockAndUpdate(out.getBlockPos(),out.getBlockState().setValue(HatcheryBlock.FACING,out.facing().getOpposite()));h.assertTrue(!c.validate()&&c.problem().startsWith("Wrong facing"),"Wrong-facing hatch reports orientation");
         }h.succeed();
     }
-    @GameTest(template="hatchery_test",timeoutTicks=150)
+    @GameTest(batch="hatcheries",template="hatchery_test",timeoutTicks=150)
     public static void energySimulationRateLimitAndNoPowerEscrow(GameTestHelper h){
         var c=build(h,Direction.NORTH);egg(c,2);step(c,10,false);h.assertTrue(c.stage()==0&&c.input().inventory.getStackInSlot(0).getCount()==2,"No power leaves eggs untouched");
         var port=(HatcheryPort)h.getLevel().getBlockEntity(c.at(0,0,4));var fe=port.fe(Direction.SOUTH);
@@ -90,7 +90,7 @@ public final class HatcheryGameTests {
         step(c,1,false);h.assertTrue(c.stage()==1&&c.input().inventory.getStackInSlot(0).getCount()==1,"Exactly one egg enters escrow");
         h.assertTrue(c.output().items(null).insertItem(0,new ItemStack(Items.NETHER_STAR),false).is(Items.NETHER_STAR),"Output rejects external insertion");h.succeed();
     }
-    @GameTest(template="hatchery_test",timeoutTicks=300)
+    @GameTest(batch="hatcheries",template="hatchery_test",timeoutTicks=300)
     public static void actualWitherHatchesTakesDamageAndProducesOneStar(GameTestHelper h){
         var c=build(h,Direction.NORTH);egg(c,1);step(c,Hatchery.INCUBATION_TICKS,true);
         var wither=actor(c);h.assertTrue(c.stage()==2&&wither!=null&&wither instanceof WitherBoss&&wither.isAlive(),"A real live Wither exists in the world after egg incubation");
@@ -104,7 +104,7 @@ public final class HatcheryGameTests {
         step(c,50,false);h.assertTrue(stars(c)==1,"No second result without another egg");
         var loose=h.getLevel().getEntitiesOfClass(ItemEntity.class,new AABB(c.at(0,2,2)).inflate(4),e->e.getItem().is(Items.NETHER_STAR));h.assertTrue(loose.isEmpty(),"Suppressed world loot cannot duplicate the hatch output");h.succeed();
     }
-    @GameTest(template="hatchery_test",timeoutTicks=300)
+    @GameTest(batch="hatcheries",template="hatchery_test",timeoutTicks=300)
     public static void powerStructureAndOutputPauseTheLivingWither(GameTestHelper h){
         var c=build(h,Direction.EAST);egg(c,1);step(c,Hatchery.INCUBATION_TICKS+Hatchery.HATCH_TICKS+20,true);
         var wither=actor(c);float health=wither.getHealth();int progress=c.progress();
@@ -119,7 +119,7 @@ public final class HatcheryGameTests {
         int energy=c.energy();step(c,30,false);h.assertTrue(c.progress()==progress&&c.energy()==energy&&wither.getHealth()==health,"Full output spends no power and deals no damage");
         c.output().inventory.setStackInSlot(0,ItemStack.EMPTY);step(c,Hatchery.KILL_TICKS-progress,true);h.assertTrue(stars(c)==1,"Restoring output completes the same job exactly once");h.succeed();
     }
-    @GameTest(template="hatchery_test",timeoutTicks=300)
+    @GameTest(batch="hatcheries",template="hatchery_test",timeoutTicks=300)
     public static void reloadKeepsOwnedActorAndBreakReturnsEggOnce(GameTestHelper h){
         var c=build(h,Direction.WEST);egg(c,1);step(c,Hatchery.INCUBATION_TICKS+Hatchery.HATCH_TICKS+20,true);
         var actor=actor(c);var id=actor.getUUID();var tag=c.saveWithFullMetadata(h.getLevel().registryAccess());var pos=c.getBlockPos();var state=c.getBlockState();
@@ -129,7 +129,7 @@ public final class HatcheryGameTests {
         restored.breakMachine();restored.breakMachine();h.assertTrue(actor.isRemoved()&&stars(restored)==0,"Dismantling removes the owned actor without producing a star");
         var eggs=h.getLevel().getEntitiesOfClass(ItemEntity.class,new AABB(pos).inflate(2),e->e.getItem().is(Hatchery.EGG.get()));h.assertTrue(eggs.stream().mapToInt(e->e.getItem().getCount()).sum()==1,"Escrowed egg can be returned only once");h.succeed();
     }
-    @GameTest(template="hatchery_test",timeoutTicks=100)
+    @GameTest(batch="hatcheries",template="hatchery_test",timeoutTicks=100)
     public static void recipesAndAutomaticOutputUseRealNativeInventories(GameTestHelper h){
         var c=build(h,Direction.NORTH);var output=c.output();var dest=output.getBlockPos().relative(output.facing());h.getLevel().setBlockAndUpdate(dest,Blocks.CHEST.defaultBlockState());
         output.commitStar();c.export();var chest=(ChestBlockEntity)h.getLevel().getBlockEntity(dest);h.assertTrue(chest.getItem(0).is(Items.NETHER_STAR)&&stars(c)==0,"Output hatch automatically exports into a real chest");

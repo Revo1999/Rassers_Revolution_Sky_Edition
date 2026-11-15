@@ -34,15 +34,18 @@ public enum DrillTier {
         return item==Items.AIR?Items.RAW_IRON:item;
     }
     public static final int FLUX_INTERVAL=128;
+    private volatile Item[] cachedOutputs;
     public Item output(int cycle){
         if(this!=WOODEN&&Math.floorMod(cycle,FLUX_INTERVAL)==FLUX_INTERVAL-1){var flux=BuiltInRegistries.ITEM.get(ResourceLocation.parse("fluxnetworks:flux_dust"));if(flux!=Items.AIR)return flux;}
         // Fixed sequence is saved by the controller: blocked outputs cannot be rerolled.
-        Item[] pool=this==STEEL?new Item[]{Items.RAW_IRON,Items.RAW_COPPER,optional("modern_industrialization:raw_tin"),Items.COAL,
-            Items.REDSTONE,Items.RAW_IRON,optional("create:raw_zinc"),Items.RAW_GOLD,Items.LAPIS_LAZULI,Items.RAW_IRON,Items.DIAMOND,Items.COAL}:this==WOODEN
+        Item[] pool=cachedOutputs;
+        if(pool==null)cachedOutputs=pool=this==STEEL?new Item[]{Items.RAW_IRON,Items.RAW_COPPER,optional("modern_industrialization:raw_tin"),Items.COAL,
+            Items.REDSTONE,Items.RAW_IRON,optional("create:raw_zinc"),Items.RAW_GOLD,RevoExtraction.GEM_SLUDGE.get(),Items.RAW_IRON,RevoExtraction.GEM_SLUDGE.get(),Items.COAL,
+            optional("modern_industrialization:raw_lead"),optional("modern_industrialization:raw_antimony"),RevoExtraction.MINERAL_SLUDGE.get(),optional("modern_industrialization:raw_lead")}:this==WOODEN
             ?new Item[]{Items.COBBLESTONE,Items.COBBLESTONE,Items.GRAVEL,Items.SAND,Items.RAW_IRON}
             :new Item[]{Items.RAW_IRON,Items.RAW_COPPER,optional("modern_industrialization:raw_tin"),Items.COAL,
                 Items.RAW_IRON,Items.RAW_COPPER,Items.COAL,optional("modern_industrialization:raw_tin"),
-                Items.RAW_IRON,optional("create:raw_zinc"),Items.RAW_GOLD,Items.REDSTONE};
+                Items.RAW_IRON,optional("create:raw_zinc"),Items.RAW_GOLD,Items.REDSTONE,RevoExtraction.MINERAL_SLUDGE.get()};
         return pool[Math.floorMod(cycle,pool.length)];
     }
     public DrillLayout.Part part(int x,int y,int z){return this==STEEL&&x==-1&&y==1&&z==0?DrillLayout.Part.TANK:DrillLayout.part(x,y,z);}

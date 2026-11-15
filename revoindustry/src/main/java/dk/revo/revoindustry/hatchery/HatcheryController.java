@@ -115,9 +115,10 @@ public final class HatcheryController extends BlockEntity implements MenuProvide
         if(exporting||level==null)return;var out=output();if(out==null)return;
         exporting=true;try{out.export();}finally{exporting=false;}
     }
+    private static final List<HatcheryLayout.Cell> LIGHT_CELLS=HatcheryLayout.SHELL.stream().filter(c->c.part()==Hatchery.Part.LIGHT||c.part()==Hatchery.Part.CONTROLLER||c.part()==Hatchery.Part.CASING&&c.offset().getY()==4&&c.offset().getZ()==2&&Math.abs(c.offset().getX())<=1).toList();
     private void lights(boolean on){
         if(level==null)return;
-        for(var c:HatcheryLayout.SHELL){
+        for(var c:LIGHT_CELLS){
             boolean roof=c.part()==Hatchery.Part.CASING&&c.offset().getY()==4&&c.offset().getZ()==2&&Math.abs(c.offset().getX())<=1;
             if(c.part()!=Hatchery.Part.LIGHT&&c.part()!=Hatchery.Part.CONTROLLER&&!roof)continue;
             var p=HatcheryLayout.at(worldPosition,facing(),c.offset());if(!level.hasChunkAt(p))continue;

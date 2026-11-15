@@ -8,7 +8,7 @@ Raw gold can be milled before crushing wheels, then washed using native Create q
 
 ## Electric geology and later materials
 
-A compact Electric Geological Drill uses 16 EU/t for 200 powered ticks per normal resource. Mixed cycles silver, nickel, lead and bauxite dust, with individual programs available. Glacial mode uses a water bucket per ice and returns the bucket. Deep Survey needs a core made from silver, nickel, lead, aluminum and diamond, plus 128 EU/t for 1200 ticks. The saved deep cycle returns Ancient Debris every 64 outputs; terrain materials and glowstone fill the rest. This is deliberately a larger power step than LV extraction. Heated mixing supplies netherrack and soul sand earlier. The steel Trading Colony exchanges 16 wheat or paper for one emerald every 200 ticks.
+A compact Electric Geological Drill uses 16 EU/t for 200 powered ticks per normal resource. Mixed cycles silver, nickel, lead, bauxite dust and antimony, with individual programs available. Glacial mode uses a water bucket per ice and returns the bucket. Deep Survey needs a core made from silver, nickel, lead, aluminum and diamond, plus 128 EU/t for 1200 ticks. The saved deep cycle returns Ancient Debris every 64 outputs; terrain materials and glowstone fill the rest. This is deliberately a larger power step than LV extraction. Heated mixing supplies netherrack and soul sand earlier. The steel Trading Colony exchanges 16 wheat or paper for one emerald every 200 ticks.
 
 ## RevoStorage
 
@@ -20,4 +20,8 @@ Crafting consumes one spring charge per operation (4096 maximum). Wind adds 256;
 
 ## Quests and verification
 
-The new stable-ID progression chapter has 18 quests. All existing quest IDs are preserved. Compile checks precede a combined native world test and isolated client UI run after implementation. See the QA report for actual results and limits.
+The stable-ID progression chapter now has 24 quests, including salt geology, mechanical battery minerals and sludge recovery. All existing quest IDs are preserved. Compile checks precede a combined native world test and isolated client UI run after implementation. See the QA report for actual results and limits.
+
+## Drill mineral update
+
+Mechanical Steel Drills now supply lead and antimony before electricity. Iron/Steel Mineral Sludge washes into quartz; Steel Gem Sludge washes into diamonds/lapis with emerald byproducts. Core-gated electric Crystalline Sludge centrifuges into starter Certus. Native quarry controller recipes are disabled. See [the full resource ladder](DRILL-MINERALS-AND-SLUDGE.md).

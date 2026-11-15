@@ -21,7 +21,8 @@ public final class PowerConverterEntity extends BlockEntity implements MenuProvi
   public boolean canReceive(){return power.feToEu();}public boolean canExtract(){return !power.feToEu();}
  };
  public PowerConverterEntity(BlockPos p,BlockState s){super(PrimitiveMachines.CONVERTER_ENTITY.get(),p,s);}
- public int tier(){return ((PowerConverterBlock)getBlockState().getBlock()).tier;}public int rateEu(){return new int[]{32,128,512}[tier()];}
+ private BlockEntity integratedHost;
+ public int tier(){return ((PowerConverterBlock)getBlockState().getBlock()).tier;}public int rateEu(){return 32<<(tier()*2);}
  public Direction feFace(){return getBlockState().getValue(PowerConverterBlock.FACING);}public Direction euFace(){return feFace().getOpposite();}
  public IEnergyStorage fePort(Direction side){return side==feFace()?fe:CLOSED;}public DirectPowerConversion euPort(Direction side){return side==euFace()?power:null;}
  private IEnergyStorage neighborFe(){if(level==null)return null;var p=worldPosition.relative(feFace());return level.hasChunkAt(p)?level.getCapability(Capabilities.EnergyStorage.BLOCK,p,feFace().getOpposite()):null;}
@@ -29,10 +30,12 @@ public final class PowerConverterEntity extends BlockEntity implements MenuProvi
  private long moveEu(long n,boolean sim,boolean extract){return level==null?0:EnergyInterop.moveEu(level,worldPosition,euFace(),n,sim,extract);}
  public void tick(){if(level==null||level.isClientSide)return;
   if(getBlockState().getValue(ConverterAssemblyState.INTEGRATED)){
-   boolean host=false,unloaded=false;
-   for(int x=-4;x<=4;x++)for(int z=-4;z<=4;z++){
-    var p=worldPosition.offset(x,0,z);if(!level.hasChunkAt(p)){unloaded=true;continue;}
-    if(level.getBlockEntity(p) instanceof IntegratedPowerHost h&&h.hasIntegratedConverter(worldPosition))host=true;
+   boolean host=integratedHost!=null&&!integratedHost.isRemoved()&&level.hasChunkAt(integratedHost.getBlockPos())&&level.getBlockEntity(integratedHost.getBlockPos())==integratedHost&&integratedHost instanceof IntegratedPowerHost h&&h.hasIntegratedConverter(worldPosition),unloaded=false;
+   if(!host){integratedHost=null;
+    search:for(int x=-4;x<=4;x++)for(int z=-4;z<=4;z++){
+     var p=worldPosition.offset(x,0,z);if(!level.hasChunkAt(p)){unloaded=true;continue;}
+     var candidate=level.getBlockEntity(p);if(candidate instanceof IntegratedPowerHost h&&h.hasIntegratedConverter(worldPosition)){integratedHost=candidate;host=true;break search;}
+    }
    }
    if(!host&&!unloaded)level.setBlockAndUpdate(worldPosition,getBlockState().setValue(ConverterAssemblyState.INTEGRATED,false));
   }

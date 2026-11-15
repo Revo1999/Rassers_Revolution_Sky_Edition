@@ -1,6 +1,6 @@
 # Rassers Revolution: Sky Edition — Progression Overview
 
-*Baseline checkout: `a80e627` plus local Wither Hatchery and salt geode implementations · Pack version: `0.1.37-dev-salt-geode`*
+*Baseline checkout: `a80e627` plus local Wither Hatchery, salt geode and drill-mineral implementations · Pack version: `0.1.39-dev-performance`*
 
 From a small skyblock island, build renewable resources, automate them with Create, establish Modern Industrialization (MI) steam processing, then move into electricity and more specialized production. Biological production and storage develop alongside the main industrial route.
 
@@ -107,7 +107,7 @@ Upgrade to the **Steel Drill**:
 
 - Requires at least **64 RPM**, with **1,024 SU** of demand at that speed.
 - Consumes cooling water and can seize after five seconds of dry running.
-- Adds renewable **lapis and diamonds** to the resource pool.
+- Adds **Gem Sludge** for washed lapis/diamonds, plus lead and antimony for pre-LV battery alloy.
 - Retains the rare Flux Dust output cadence.
 
 Diamonds unlock the Bronze Macerator and further processing. Keep the drill supplied with water and prepare repair kits using steel plates, copper and leather.
@@ -148,7 +148,7 @@ The compact **Electric Geological Drill** introduces selectable deposits:
 
 | Program | Requirement | Main output |
 |---|---|---|
-| Mixed / individual metal deposits | 16 EU/t, 200 powered ticks per output | Silver, nickel, lead and bauxite dust. |
+| Mixed / individual metal deposits | 16 EU/t, 200 powered ticks per output | Silver, nickel, lead, bauxite dust and antimony. |
 | Glacial Ice | Standard electric cycle plus a water bucket | Ice; returns the bucket. Ice can become packed and blue ice. |
 | Deep Survey | Survey core, 128 EU/t, 1,200 powered ticks per output | Terrain materials and glowstone, with Ancient Debris every 64th output. |
 
@@ -184,7 +184,7 @@ These are available systems, but their existence does not establish a fully fini
 
 ## 9. Quest structure and rewards
 
-The current quest files contain **141 quests**:
+The current quest files contain **145 quests**:
 
 | Chapter | Quests |
 |---|---:|
@@ -207,8 +207,8 @@ The planned finish is to **craft the Genesis Core once**, combining advanced ext
 
 The latest recipe audit identifies unfinished controlled routes for:
 
-- Starter Certus Quartz, the first AE2 inscriber presses and starter Sky Stone.
-- Later deposits such as antimony, tungsten and uranium. Renewable salt is now supplied by the [Salt Geode Chamber](SALT-GEODE.md) and native MI centrifuging.
+- The first AE2 inscriber presses and starter Sky Stone. Starter Certus now comes from electric Crystalline Sludge centrifuging.
+- Later drill deposits such as tungsten and uranium. Pre-LV lead/antimony and selectable electric antimony are implemented. Renewable salt is now supplied by the [Salt Geode Chamber](SALT-GEODE.md) and native MI centrifuging.
 - Nether Wart, Ghast Tears, End resources, chorus and shulker shells.
 - Controlled Wither Skeleton skull production and the first Netherite Upgrade template. The [Wither Hatchery](WITHER-HATCHERY.md) now supplies a powered Nether Star route from the normal Wither ritual materials.
 - A more reliable red-dye/flower starter.
@@ -225,3 +225,7 @@ This overview uses the current [quest definitions](../pack/overrides/config/ftbq
 - [Original design and planned Genesis endgame](design/Rassers_Revolution_Sky_Edition_v2.md).
 
 Older audits and machine notes describe earlier versions; the current quest files, source and progression expansion take precedence where they differ.
+
+## Drill minerals and sludge
+
+The [drill mineral update](DRILL-MINERALS-AND-SLUDGE.md) closes the lead/antimony first-battery bootstrap. Mechanical drills supply mineral feedstocks and sludge; gems are recovered by washing. Deep Survey Core-gated electric Crystalline Sludge supplies Certus through MI centrifuging. Native quarry controller recipes are disabled.
