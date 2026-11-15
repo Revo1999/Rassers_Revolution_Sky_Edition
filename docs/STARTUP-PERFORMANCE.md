@@ -1,6 +1,6 @@
 # Startup performance and missing optimization mods
 
-Audited 15 November 2026 for Minecraft **1.21.1 / NeoForge 21.1.265**, using the pinned 86-mod lock, local artifacts, pack overrides and current official mod/version documentation. This is an inventory/configuration audit, **not an A/B launch-time benchmark**. No seconds-saved or percentage claim is established, and no new optimization mod or experimental setting was enabled in the production pack.
+Initial audit: 15 November 2026 for Minecraft **1.21.1 / NeoForge 21.1.265**, using the original pinned 86-mod lock, local artifacts, pack overrides and official mod/version documentation. The inventory below is historical; the subsequent [full-pack benchmark](PERFORMANCE-BENCHMARK.md) records measured results and the current configuration decision. Lithium is the tested gameplay addition; ModernFix was already installed, and optional dynamic resources remain disabled. The original audit alone did not establish seconds saved.
 
 ## What the pack already has
 
@@ -32,13 +32,13 @@ The local asset inventory makes model loading a sensible hypothesis: the 86 thir
 
 These are candidates for profiling, not a recommendation to remove the building palette. Revo's editable Blockbench sources and raw QA frame sequences are already excluded from runtime resources, so deleting those development assets would not speed up a packaged game launch.
 
-## Optimization mods absent from this pack
+## Optimization candidates from the original inventory
 
 Exact matching builds were checked against official Modrinth metadata filtered to **NeoForge + 1.21.1**. Compatibility declarations establish candidates, not successful integration tests with this pack.
 
 | Priority | Candidate / verified build | Expected scope | Recommendation |
 |---|---|---|---|
-| High for factory gameplay | [Lithium 0.15.4](https://modrinth.com/mod/lithium/version/DDUrRVCA) | Game logic, entities and block ticking, rather than a primary launch-time improvement. | Strong first gameplay candidate. Test Create contraptions, hoppers, Revo storage and capability invalidation before pinning it. [Official description](https://modrinth.com/mod/lithium). |
+| Tested gameplay addition | [Lithium 0.15.4](https://modrinth.com/mod/lithium/version/DDUrRVCA) | Game logic, entities and block ticking, rather than a primary launch-time improvement. | See the [benchmark and native regressions](PERFORMANCE-BENCHMARK.md) for the adoption decision and coverage limits. [Official description](https://modrinth.com/mod/lithium). |
 | Medium | [FastSuite 6.0.7](https://modrinth.com/mod/fastsuite/version/OQZRQcDM) + Placebo | Recipe matching. The 1.21.1 release is **6.x**, which uses the concurrent-matching approach; the current website's newer 7.x indexing claims must not be applied to this build. | Worth profiling with this recipe-heavy pack; not evidence of faster title-screen startup. Adds Placebo, which is not currently pinned. [Author's explanation](https://modrinth.com/mod/fastsuite). |
 | Medium/low | [BadOptimizations 2.4.1](https://modrinth.com/mod/badoptimizations/version/S2qthD5S) | Client micro-optimizations such as avoiding unnecessary lightmap work. | Test after the main bottlenecks; do not promise startup savings. [Official project](https://modrinth.com/mod/badoptimizations). |
 | Optional visual test | [More Culling 1.0.11](https://modrinth.com/mod/moreculling/version/ucyxnpWe) | Additional rendering culling. Cloth Config is already present. | Potential FPS improvement, not a launch-time mod. Check compatibility with the pinned Sodium/Iris versions and all custom glass/multiblock views. [Official project](https://modrinth.com/mod/moreculling). |
@@ -71,6 +71,6 @@ Measure these separately:
 
 Warm up each configuration once, then perform at least three alternating baseline/candidate runs and compare medians. Test one change at a time: baseline, ModernFix dynamic resources, then any additional mod. Check a resource reload as well as initial launch. Only adopt a change after both timings and compatibility checks pass.
 
-**Current recommendation:** prioritize a controlled ModernFix dynamic-resources experiment for launch time, and Lithium for subsequent in-world optimization. Keep FastSuite as a separately measured recipe-system candidate. No reliable pack-specific seconds saved are available from this audit.
+**Follow-up decision:** the [full-pack comparison](PERFORMANCE-BENCHMARK.md) found lower server tick cost with Lithium, but no reliable launch-time saving. Retain normal ModernFix and leave optional dynamic resources disabled. FastSuite remains a separately measured future candidate.
 
 The local artifact inventory and exact matching version records are saved in [startup audit evidence](../art/startup/).

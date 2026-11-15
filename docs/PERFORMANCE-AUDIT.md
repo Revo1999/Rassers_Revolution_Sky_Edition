@@ -1,5 +1,7 @@
 # Revo block performance audit
 
+Follow-up: [the full-pack benchmark](PERFORMANCE-BENCHMARK.md) now records client timings, a downloadable factory save and 85 native regressions with Lithium. Its measured comparison concerns adding Lithium/dynamic resources to the already optimized blocks; it does not retroactively measure the block changes below.
+
 15 November 2026. Reviewed the block entities, ports and custom renderers across all seven Revo modules after the drill/sludge update. Changes target repeated work and allocation; recipes, production rates, energy costs and structure-break checks retain their existing behavior.
 
 ## Implemented improvements

@@ -1,0 +1,55 @@
+{
+  "titleReadyMs": 64143,
+  "java": "21.0.13",
+  "dynamicResourcesEffective": false,
+  "probeSha256": "b50ab8e25f851567e464895a9dd751d0acf72a38bb134ab35e4a436a89af8de8",
+  "maxHeapBytes": 10737418240,
+  "lithium": true,
+  "loadedModCount": 113,
+  "worldEntryMs": 16556,
+  "resetLooseItems": 0,
+  "fixture": {
+    "harvesters": 12,
+    "treeGrowers": 4,
+    "cows": 64,
+    "storageSlots": 7776,
+    "hoppers": 128,
+    "saltChambers": 2,
+    "witherHatcheries": 1,
+    "electricDrills": 32,
+    "greenhouses": 8
+  },
+  "workProof": {
+    "netherStars": 1,
+    "harvesterCycles": 12,
+    "saltCycles": 4,
+    "looseItemsAtEnd": 0
+  },
+  "modelChecks": 10,
+  "tickMs": {
+    "median": 4.0367,
+    "p95": 5.6814,
+    "mean": 4.216804166666667,
+    "max": 28.8913
+  },
+  "warmFrameMs": {
+    "median": 18.7149,
+    "p95": 30.5924,
+    "mean": 19.803973824561403,
+    "max": 115.1008
+  },
+  "frameMs": {
+    "median": 12.6731,
+    "p95": 21.3333,
+    "mean": 13.468433348314607,
+    "max": 64.2638
+  },
+  "sampleTicks": 1200,
+  "sampleFrames": 4450,
+  "achievedTps": 20.000533692306046,
+  "meanFps": 74.24768524582234,
+  "usedHeapBytes": 1655887936,
+  "resourceReloadMs": 11319,
+  "recipeReloadReady": true,
+  "success": true
+}

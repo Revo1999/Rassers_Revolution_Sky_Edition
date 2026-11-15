@@ -24,6 +24,9 @@ subprojects {
     if (project.name != 'revolib') {
         dependencies { implementation project(':revolib') }
     }
+    if (providers.gradleProperty('revoLithiumTest').isPresent()) {
+        dependencies { runtimeOnly files(rootProject.file('.local/candidates/lithium-neoforge-0.15.4+mc1.21.1.jar')) }
+    }
 }
 project(':revolib') {
     if (providers.gradleProperty('revoCapture').isPresent()) {
@@ -72,6 +75,16 @@ project(':revolib') {
                 }
             }
             server { server(); programArgument '--nogui' }
+            if (providers.gradleProperty('revoPerformanceBenchmark').isPresent()) {
+                performanceBenchmark {
+                    client()
+                    gameDirectory = rootProject.file('.local/performance-benchmark/instance')
+                    jvmArguments.addAll '-Xms2G', '-Xmx10G'
+                    programArguments.addAll '--width', '1280', '--height', '720'
+                    systemProperty 'revo.benchmark.output', rootProject.file('.local/performance-benchmark/results/' + providers.gradleProperty('revoPerformanceBenchmark').get()).absolutePath
+                    systemProperty 'revo.benchmark.titleOnly', providers.gradleProperty('revoBenchmarkTitleOnly').isPresent().toString()
+                }
+            }
         }
         mods {
             rootProject.subprojects.findAll { it.name != 'revolib' }.each { p ->

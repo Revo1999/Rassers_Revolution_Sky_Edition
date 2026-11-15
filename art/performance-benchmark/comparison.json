@@ -1,0 +1,401 @@
+{
+  "aggregation": "Median of two run-level values per configuration; maximum warm-up frame across the two runs. Indicative, not statistically conclusive.",
+  "probeShutdownNote": "Timed runs used the same probe hash. A subsequent validation adds only a post-measurement wait for EMI to finish its asynchronous rebuild before closing the client.",
+  "summary": [
+    {
+      "configuration": "Original optimization stack",
+      "runs": [
+        "baseline-awake-1",
+        "baseline-awake-2"
+      ],
+      "titleSeconds": 48.751,
+      "meanTickMs": 4.772919083333333,
+      "p95TickMs": 6.60455,
+      "meanFps": 93.36504084704991,
+      "resourceReloadSeconds": 10.858,
+      "maxWarmupFrameMs": 81.1889
+    },
+    {
+      "configuration": "+ Lithium 0.15.4",
+      "runs": [
+        "lithium-awake-1",
+        "lithium-awake-2"
+      ],
+      "titleSeconds": 54.7195,
+      "meanTickMs": 4.320668416666667,
+      "p95TickMs": 5.917350000000001,
+      "meanFps": 96.32105758247353,
+      "resourceReloadSeconds": 10.7655,
+      "maxWarmupFrameMs": 551.6773
+    },
+    {
+      "configuration": "+ Lithium + dynamic resources",
+      "runs": [
+        "both-awake-1",
+        "both-awake-2"
+      ],
+      "titleSeconds": 47.8625,
+      "meanTickMs": 4.635273083333333,
+      "p95TickMs": 6.27675,
+      "meanFps": 104.66372386865018,
+      "resourceReloadSeconds": 4.8355,
+      "maxWarmupFrameMs": 1527.6004
+    }
+  ],
+  "runs": [
+    {
+      "titleReadyMs": 45867,
+      "java": "21.0.13",
+      "dynamicResourcesEffective": false,
+      "probeSha256": "f0b563e0bfb7538adaefb4678c43f735d0532f009638401a633f022e490d04c8",
+      "maxHeapBytes": 10737418240,
+      "lithium": false,
+      "loadedModCount": 112,
+      "worldEntryMs": 12177,
+      "resetLooseItems": 0,
+      "fixture": {
+        "treeGrowers": 4,
+        "cows": 64,
+        "storageSlots": 7776,
+        "hoppers": 128,
+        "saltChambers": 2,
+        "witherHatcheries": 1,
+        "electricDrills": 32,
+        "greenhouses": 8,
+        "harvesters": 12
+      },
+      "workProof": {
+        "netherStars": 1,
+        "harvesterCycles": 12,
+        "saltCycles": 4,
+        "looseItemsAtEnd": 0
+      },
+      "modelChecks": 10,
+      "tickMs": {
+        "median": 4.4533,
+        "p95": 6.2683,
+        "mean": 4.651305416666666,
+        "max": 26.7058
+      },
+      "warmFrameMs": {
+        "median": 10.8884,
+        "p95": 26.5878,
+        "mean": 12.677554233608337,
+        "max": 55.9388
+      },
+      "frameMs": {
+        "median": 11.3358,
+        "p95": 16.4073,
+        "mean": 11.653377790742901,
+        "max": 41.4238
+      },
+      "sampleTicks": 1200,
+      "sampleFrames": 5142,
+      "achievedTps": 20.00181237439531,
+      "meanFps": 85.81202960693254,
+      "usedHeapBytes": 2133962016,
+      "resourceReloadMs": 11247,
+      "success": true,
+      "label": "baseline-awake-1",
+      "dynamicResources": false,
+      "processExit": 0,
+      "taskWallSeconds": 233.15831610001624,
+      "excludedWarmup": false
+    },
+    {
+      "titleReadyMs": 59763,
+      "java": "21.0.13",
+      "dynamicResourcesEffective": false,
+      "probeSha256": "f0b563e0bfb7538adaefb4678c43f735d0532f009638401a633f022e490d04c8",
+      "maxHeapBytes": 10737418240,
+      "lithium": true,
+      "loadedModCount": 113,
+      "worldEntryMs": 14896,
+      "resetLooseItems": 0,
+      "fixture": {
+        "storageSlots": 7776,
+        "cows": 64,
+        "treeGrowers": 4,
+        "harvesters": 12,
+        "greenhouses": 8,
+        "electricDrills": 32,
+        "witherHatcheries": 1,
+        "saltChambers": 2,
+        "hoppers": 128
+      },
+      "workProof": {
+        "looseItemsAtEnd": 0,
+        "saltCycles": 4,
+        "harvesterCycles": 12,
+        "netherStars": 1
+      },
+      "modelChecks": 10,
+      "tickMs": {
+        "max": 24.3104,
+        "mean": 4.200662166666667,
+        "p95": 5.8451,
+        "median": 3.9796
+      },
+      "warmFrameMs": {
+        "max": 95.3219,
+        "mean": 16.44836736111111,
+        "p95": 27.9111,
+        "median": 15.0345
+      },
+      "frameMs": {
+        "max": 47.0741,
+        "mean": 11.288100885122411,
+        "p95": 19.7217,
+        "median": 10.4676
+      },
+      "sampleTicks": 1200,
+      "sampleFrames": 5310,
+      "achievedTps": 20.00185004601343,
+      "meanFps": 88.58886097642772,
+      "usedHeapBytes": 1362460648,
+      "resourceReloadMs": 11434,
+      "success": true,
+      "label": "lithium-awake-1",
+      "dynamicResources": false,
+      "processExit": 0,
+      "taskWallSeconds": 208.1776160999434,
+      "excludedWarmup": false
+    },
+    {
+      "titleReadyMs": 49156,
+      "java": "21.0.13",
+      "dynamicResourcesEffective": true,
+      "probeSha256": "f0b563e0bfb7538adaefb4678c43f735d0532f009638401a633f022e490d04c8",
+      "maxHeapBytes": 10737418240,
+      "lithium": true,
+      "loadedModCount": 113,
+      "worldEntryMs": 15270,
+      "resetLooseItems": 0,
+      "fixture": {
+        "witherHatcheries": 1,
+        "saltChambers": 2,
+        "hoppers": 128,
+        "storageSlots": 7776,
+        "cows": 64,
+        "treeGrowers": 4,
+        "harvesters": 12,
+        "greenhouses": 8,
+        "electricDrills": 32
+      },
+      "workProof": {
+        "harvesterCycles": 12,
+        "netherStars": 1,
+        "looseItemsAtEnd": 0,
+        "saltCycles": 4
+      },
+      "modelChecks": 10,
+      "tickMs": {
+        "median": 4.4055,
+        "max": 34.49,
+        "mean": 4.6617805,
+        "p95": 6.315
+      },
+      "warmFrameMs": {
+        "median": 10.6853,
+        "max": 1527.6004,
+        "mean": 13.10946244879381,
+        "p95": 25.8239
+      },
+      "frameMs": {
+        "median": 9.4442,
+        "max": 48.1439,
+        "mean": 9.579061093350385,
+        "p95": 12.5659
+      },
+      "sampleTicks": 1200,
+      "sampleFrames": 6256,
+      "achievedTps": 20.001661922908596,
+      "meanFps": 104.39436498574817,
+      "usedHeapBytes": 1547446504,
+      "resourceReloadMs": 4463,
+      "success": true,
+      "label": "both-awake-1",
+      "dynamicResources": true,
+      "processExit": 0,
+      "taskWallSeconds": 190.96506009995937,
+      "excludedWarmup": false
+    },
+    {
+      "titleReadyMs": 51635,
+      "java": "21.0.13",
+      "dynamicResourcesEffective": false,
+      "probeSha256": "f0b563e0bfb7538adaefb4678c43f735d0532f009638401a633f022e490d04c8",
+      "maxHeapBytes": 10737418240,
+      "lithium": false,
+      "loadedModCount": 112,
+      "worldEntryMs": 14585,
+      "resetLooseItems": 0,
+      "fixture": {
+        "electricDrills": 32,
+        "witherHatcheries": 1,
+        "saltChambers": 2,
+        "hoppers": 128,
+        "storageSlots": 7776,
+        "cows": 64,
+        "treeGrowers": 4,
+        "harvesters": 12,
+        "greenhouses": 8
+      },
+      "workProof": {
+        "saltCycles": 4,
+        "harvesterCycles": 12,
+        "netherStars": 1,
+        "looseItemsAtEnd": 0
+      },
+      "modelChecks": 10,
+      "tickMs": {
+        "p95": 6.9408,
+        "median": 4.5288,
+        "max": 29.8703,
+        "mean": 4.89453275
+      },
+      "warmFrameMs": {
+        "p95": 26.5703,
+        "median": 11.1972,
+        "max": 81.1889,
+        "mean": 13.493549790405217
+      },
+      "frameMs": {
+        "p95": 14.3708,
+        "median": 9.353,
+        "max": 37.2005,
+        "mean": 9.909029943783068
+      },
+      "sampleTicks": 1200,
+      "sampleFrames": 6048,
+      "achievedTps": 20.001500663049747,
+      "meanFps": 100.91805208716728,
+      "usedHeapBytes": 1364115320,
+      "resourceReloadMs": 10469,
+      "success": true,
+      "label": "baseline-awake-2",
+      "dynamicResources": false,
+      "processExit": 0,
+      "taskWallSeconds": 199.40638340008445,
+      "excludedWarmup": false
+    },
+    {
+      "titleReadyMs": 46569,
+      "java": "21.0.13",
+      "dynamicResourcesEffective": true,
+      "probeSha256": "f0b563e0bfb7538adaefb4678c43f735d0532f009638401a633f022e490d04c8",
+      "maxHeapBytes": 10737418240,
+      "lithium": true,
+      "loadedModCount": 113,
+      "worldEntryMs": 14754,
+      "resetLooseItems": 0,
+      "fixture": {
+        "saltChambers": 2,
+        "hoppers": 128,
+        "storageSlots": 7776,
+        "cows": 64,
+        "treeGrowers": 4,
+        "harvesters": 12,
+        "greenhouses": 8,
+        "electricDrills": 32,
+        "witherHatcheries": 1
+      },
+      "workProof": {
+        "netherStars": 1,
+        "looseItemsAtEnd": 0,
+        "saltCycles": 4,
+        "harvesterCycles": 12
+      },
+      "modelChecks": 10,
+      "tickMs": {
+        "max": 30.3224,
+        "mean": 4.608765666666667,
+        "p95": 6.2385,
+        "median": 4.3355
+      },
+      "warmFrameMs": {
+        "max": 123.3515,
+        "mean": 12.86081134341637,
+        "p95": 26.8761,
+        "median": 10.1695
+      },
+      "frameMs": {
+        "max": 43.2108,
+        "mean": 9.529882986166323,
+        "p95": 13.0475,
+        "median": 9.1016
+      },
+      "sampleTicks": 1200,
+      "sampleFrames": 6289,
+      "achievedTps": 20.00169001769167,
+      "meanFps": 104.93308275155219,
+      "usedHeapBytes": 2088007264,
+      "resourceReloadMs": 5208,
+      "success": true,
+      "label": "both-awake-2",
+      "dynamicResources": true,
+      "processExit": 0,
+      "taskWallSeconds": 187.97919819992967,
+      "excludedWarmup": false
+    },
+    {
+      "titleReadyMs": 49676,
+      "java": "21.0.13",
+      "dynamicResourcesEffective": false,
+      "probeSha256": "f0b563e0bfb7538adaefb4678c43f735d0532f009638401a633f022e490d04c8",
+      "maxHeapBytes": 10737418240,
+      "lithium": true,
+      "loadedModCount": 113,
+      "worldEntryMs": 13820,
+      "resetLooseItems": 0,
+      "fixture": {
+        "cows": 64,
+        "treeGrowers": 4,
+        "harvesters": 12,
+        "greenhouses": 8,
+        "electricDrills": 32,
+        "witherHatcheries": 1,
+        "saltChambers": 2,
+        "hoppers": 128,
+        "storageSlots": 7776
+      },
+      "workProof": {
+        "looseItemsAtEnd": 0,
+        "saltCycles": 4,
+        "harvesterCycles": 12,
+        "netherStars": 1
+      },
+      "modelChecks": 10,
+      "tickMs": {
+        "max": 33.6532,
+        "mean": 4.440674666666666,
+        "p95": 5.9896,
+        "median": 4.108
+      },
+      "warmFrameMs": {
+        "max": 551.6773,
+        "mean": 14.722980253164556,
+        "p95": 28.4755,
+        "median": 11.6749
+      },
+      "frameMs": {
+        "max": 44.8214,
+        "mean": 9.610463486209108,
+        "p95": 14.0225,
+        "median": 9.1932
+      },
+      "sampleTicks": 1200,
+      "sampleFrames": 6236,
+      "achievedTps": 20.002894463872973,
+      "meanFps": 104.05325418851933,
+      "usedHeapBytes": 1482211136,
+      "resourceReloadMs": 10097,
+      "success": true,
+      "label": "lithium-awake-2",
+      "dynamicResources": false,
+      "processExit": 0,
+      "taskWallSeconds": 195.1975365000544,
+      "excludedWarmup": false
+    }
+  ]
+}

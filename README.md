@@ -42,6 +42,12 @@ From a terminal in this directory:
 The client and server run all seven projects together. Built jars are collected
 in build/mods. Files from pack/overrides are copied into the run directory on launch.
 Minecraft development assets download on the first setup.
+
+The repeatable full-pack client benchmark uses a fixed 10 GiB game heap and a
+dedicated factory save. See [the benchmark guide](docs/PERFORMANCE-BENCHMARK.md)
+for results and reproduction, and download the
+[benchmark world](art/performance-benchmark/Revo-Performance-Benchmark.zip)
+to open it in a matching pack instance.
 The dedicated server requires you to review and accept Mojang's EULA in
 revolib/run/eula.txt before it will start. Setup does not accept it for you.
 

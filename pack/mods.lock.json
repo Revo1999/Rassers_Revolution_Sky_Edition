@@ -955,6 +955,17 @@
       "client": "required",
       "server": "required",
       "sha512": "24c3ecae0e49a4e8fa9ca9cf3f99af36d185f95970249f414c8feb2f18fc2e5b3ad2700e17714c1bc5ebadf440de5dbc98fd4113a85fb9364aa2c5922a8366bf"
+    },
+    {
+      "project": "lithium",
+      "projectId": "gvQqBUqZ",
+      "version": "mc1.21.1-0.15.4-neoforge",
+      "versionId": "DDUrRVCA",
+      "file": "lithium-neoforge-0.15.4+mc1.21.1.jar",
+      "url": "https://cdn.modrinth.com/data/gvQqBUqZ/versions/DDUrRVCA/lithium-neoforge-0.15.4%2Bmc1.21.1.jar",
+      "sha512": "2735da2088b88a8bdcd4ad02a2b6fffbfd3925557cefd4fa54b5477dfb9e582ea7f521300c060f57dff1325dd21bff276b7333363ad3371ed6893e3de9eca9cd",
+      "client": "optional",
+      "server": "optional"
     }
   ]
 }
