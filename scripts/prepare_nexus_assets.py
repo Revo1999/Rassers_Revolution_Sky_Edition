@@ -186,7 +186,7 @@ def main():
         cell['connections']=connections
     counts=dict(sorted(Counter(c['part'] for c in cells.values()).items()))
     bounds={axis:[min(p[i] for p in cells),max(p[i] for p in cells)+1] for i,axis in enumerate('xyz')}
-    blueprint={'status':'ART_AND_DESIGN_ONLY_NOT_REGISTERED','units':'Minecraft blocks; Blockbench 16 model units per block','origin':'Centre axis X=0.5; front is -Z; floor Y=0','bounds':bounds,'dimensions':{a:b[1]-b[0] for a,b in bounds.items()},'blockCount':len(cells),'counts':counts,'blockModelParts':BLOCK_PARTS,'cells':sorted(cells.values(),key=lambda c:(c['position'][1],c['position'][2],c['position'][0])),'portalVisual':{'centre':[.5,10.5,4.15],'diameter':11,'render':'special surface only; no frame/base transformation'},'colliderDesign':{'footprint':[21,21],'height':5,'shape':'stepped conical annulus; individual placed blocks'}}
+    blueprint={'status':'ART_AND_DESIGN_ONLY_NOT_REGISTERED','units':'Minecraft blocks; Blockbench 16 model units per block','origin':'Centre axis X=0.5; front is -Z; floor Y=0','bounds':bounds,'dimensions':{a:b[1]-b[0] for a,b in bounds.items()},'blockCount':len(cells),'counts':counts,'blockModelParts':BLOCK_PARTS,'cells':sorted(cells.values(),key=lambda c:(c['position'][1],c['position'][2],c['position'][0])),'portalVisual':{'centre':[.5,10.5,4.15],'diameter':11,'render':'special surface only; no frame/base transformation'},'colliderDesign':{'footprint':[21,21],'height':5,'shape':'hollow toroidal accelerator; open centre; individual placed blocks'}}
     write(ART/'portal-blueprint.json',blueprint)
     sections=['foundation','stairs','ring','towers','ports','rails','beacons','core']
     ops=[{'op':'add_group','name':name,'origin':[8,0,0]} for name in sections]

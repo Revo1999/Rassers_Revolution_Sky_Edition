@@ -17,7 +17,7 @@ Railings connect to their actual north/east/south/west neighbours and solid towe
 
 Texture variety follows structure: grated deck lanes, reinforced tower columns, ribbed panels, inset service access panels, lighter ceramic inner-ring blocks and chiseled foundation piers. These are substitutions at existing blueprint positions; the placed-block count remains 814.
 
-The three production machines, recipes, hatches, Core logic and builder are specified in [NEXUS-ENDGAME.md](../../../docs/NEXUS-ENDGAME.md). They still need runtime implementation. The collider is specified as a **21 x 21 footprint, five-block-high stepped cone**; its geometry is not part of the portal model.
+The three production machines, recipes, hatches, Core logic and builder are specified in [NEXUS-ENDGAME.md](../../../docs/NEXUS-ENDGAME.md). They still need runtime implementation. The [machine art package](../nexus-machines/README.md) now includes the **21 x 21 footprint, five-block-high donut collider** and the two 9 x 9 machines; their geometry is separate from this portal model.
 
 ## Reproduce the art inputs
 

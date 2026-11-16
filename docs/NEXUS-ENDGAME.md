@@ -4,7 +4,7 @@
 
 This is the implementation specification for the Pressure Casting Plant, Electroplating Line, Particle Collider, Nexus Core and the inexpensive Nexus Builder. It supersedes the earlier Alloy Foundry / Astral Condenser / Lattice Assembler proposal. There are **three new processing multiblocks**, with additional processing performed in existing MI machines.
 
-This pass delivers the specification, a block-position portal blueprint, editable Blockbench portal/core/part assets and a vortex animation study. **Controllers, recipes, quests, builder placement and in-game portal rendering are not implemented by these art files.** The three production machines below remain to be added. Nothing here changes the existing playable pack or its recipes.
+This pass delivers the specification, the portal/core art, and **three editable machine assemblies with individual-block blueprints and animation studies**. See [the machine art package](../art/blockbench/nexus-machines/README.md). **Controllers, recipes, quests, builder placement and in-game rendering/processing are not implemented by these art files.** Nothing here changes the existing playable pack or its recipes.
 
 User constraints:
 
@@ -12,7 +12,7 @@ User constraints:
 - The builder places those blocks one at a time from a blueprint and a retained program.
 - Only the beacon-like details, contained Nexus Core effects and portal surface/animation may use special visuals. Their surrounding structure stays built from blocks.
 - Use existing MI-based hatch behavior and appearance, including native locking, configuration and auto-transfer.
-- The Particle Collider is a **21 x 21 footprint, five blocks high**, forming a low stepped cone around the central containment chamber.
+- The Particle Collider is a **21 x 21 footprint, five blocks high**, shaped as a hollow donut with an open centre. The caster and plating line each have a **9 x 9 footprint and five-block height**.
 
 ## Cost baseline: approximately 1.5 times the expensive proposal
 
@@ -33,11 +33,21 @@ These targets deliberately require parallel production. At the current 75-second
 
 | Machine | Dimensions, W x H x D | Function | Automation challenge | Initial power target, subject to balancing |
 |---|---|---|---|---:|
-| **Pressure Casting Plant** | 7 x 5 x 5 | Casts Nexus casing panels, ring blanks, lattice carrier frames, anchor bodies and the Nexus Core housing. | Circulate reusable moulds; supply alloy, pressure gas and coolant; drain warm coolant; cool a casting before ejecting it. | 32,768 EU/t |
-| **Electroplating Line** | 11 x 4 x 5 | Makes superconducting contacts and layered portal substrates. | Three separate bath stages: clean, plate and rinse. Each has dedicated fluids; spent electrolyte must leave before the next batch. | 65,536 EU/t |
+| **Pressure Casting Plant** | **9 x 5 x 9** | Casts Nexus casing panels, ring blanks, lattice carrier frames, anchor bodies and the Nexus Core housing. | Circulate reusable moulds; supply alloy, pressure gas and coolant; drain warm coolant; cool a casting before ejecting it. | 32,768 EU/t |
+| **Electroplating Line** | **9 x 5 x 9** | Makes superconducting contacts and layered portal substrates. | Three separate bath stages: clean, plate and rinse. Each has dedicated fluids; spent electrolyte must leave before the next batch. | 65,536 EU/t |
 | **Particle Collider** | **21 x 5 x 21** | Produces Stabilized Exotic Matter, used with plated substrates to assemble Phase Lattices. | Prepare and feed two different beam targets; latch both injections, sustain power and cryogenic cooling, and collect the output in containment cells. | 262,144 EU/t |
 
-The collider is a horizontal machine with five stepped annular levels, tapering from a 21-block base toward a raised central containment chamber. It is not a 21-block-tall cone and not one conical mesh. Two opposed injector sections are made from blocks. Beam arcs and the small contained reaction are effects inside the existing structure. Exact accelerator cells and clear-air volumes need their own blueprint before runtime coding.
+The collider is a horizontal, **donut-shaped accelerator** with a hollow beam channel inside its tube and a clear vertical opening through its centre. Its discrete-block torus uses an eight-block major radius and 2.5-block outer tube radius; the complete bounds are 21 x 5 x 21. The earlier cone proposal is superseded. Two opposed injector stations are made from blocks. Beam paths and two slow counter-moving pulses are contained effects inside the existing structure. Its [blueprint](../art/blockbench/nexus-machines/blueprints/particle_collider.json) records every structural block, hatch role and reserved beam-channel air cell.
+
+### Delivered machine art
+
+| Assembly | Placed blocks | Outward hatches/controller | Preview animation |
+|---|---:|---:|---|
+| Pressure Casting Plant | 161 | 9 | Eight-second press stroke, hold and release; platen reaches the casting surface. |
+| Electroplating Line | 199 | 10 | Eighteen-second three-bath cycle; the rack lifts clear of dividers and its hoist extends during immersion. |
+| Particle Collider | 784 | 9 | Twelve-second opposed-pulse circuit; the toroidal structure stays static. |
+
+The machine package also contains 27 individually editable block-sized models and Java 1.21.1-compatible art exports. The native MI-style ports are previews for the existing integration approach, not newly implemented inventory/fluid/energy logic. Validation covers dimensions, structural connectivity and symmetry, hatch directions, reserved air, loop endpoints, press contact, rack travel clearance and the open collider centre. See [asset-validation.json](../art/blockbench/nexus-machines/asset-validation.json) and [MCP checks](../art/blockbench/nexus-machines/mcp-validation.json).
 
 ### Starting controller crafts
 
@@ -146,7 +156,7 @@ The 51 fence blocks connect according to their cardinal neighbours, including co
 
 1. Resolve high-tier drill feedstocks (especially tungsten, iridium and nuclear materials), faster debris extraction, reliable Wither Skeleton/Ghast programs, AE2 unlocks and any missing gem-sludge routes. Quarries remain excluded.
 2. Turn the budget into a complete recipe ledger, including batch rounding, native component costs and construction of all three new machines. Check every ingredient has an obtainable upstream route.
-3. Create and validate individual-block blueprints and models for the caster, plating line and stepped-cone collider.
+3. Integrate the delivered caster, plating-line and donut-collider blueprints/models into server-side structure validation and runtime resource registration.
 4. Register blocks/items/fluids, native MI-based controllers/hatches, recipes, EMI guides, Jade diagnostics and progression milestones.
 5. Implement builder preview, obstruction checking and incremental placement. Reserve/consume each real block once, preserve unrelated world blocks, persist the placement cursor, and pause on missing power/materials.
 6. Implement the Core and portal-only visual effects, then test rotation, save/reload, structure breaks, blocked outputs, input simulation, native auto-transfer and power limits.

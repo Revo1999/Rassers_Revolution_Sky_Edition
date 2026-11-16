@@ -1,0 +1,76 @@
+{
+  "scope": "models and blueprints; gameplay not registered",
+  "machines": [
+    {
+      "machine": "pressure_casting_plant",
+      "dimensions": {
+        "width": 9,
+        "height": 5,
+        "depth": 9
+      },
+      "placedBlocks": 161,
+      "outwardHatches": 9,
+      "connectedStructure": true,
+      "symmetricStructureFootprint": true,
+      "reservedAirClear": true,
+      "animationSeconds": 8,
+      "animatedGroups": [
+        "press_platen"
+      ],
+      "loopEndpointsMatch": true,
+      "sha256": "308e7a314d14a9cc5cdb0ed0bc7589a807e2a08231fda9b7eb5f6308a5a3afec",
+      "pressContactsCastingWithoutPassingThrough": true
+    },
+    {
+      "machine": "electroplating_line",
+      "dimensions": {
+        "width": 9,
+        "height": 5,
+        "depth": 9
+      },
+      "placedBlocks": 199,
+      "outwardHatches": 10,
+      "connectedStructure": true,
+      "symmetricStructureFootprint": true,
+      "reservedAirClear": true,
+      "animationSeconds": 18,
+      "animatedGroups": [
+        "plating_rack",
+        "gantry_carriage",
+        "hoist_cables"
+      ],
+      "loopEndpointsMatch": true,
+      "sha256": "a2c4db13c8c22a2bef4b4c8376d8e54cf69bc2f9c5f44d7dfe202f2e7ef450d3",
+      "threeSeparateBaths": true,
+      "rackClearsDividersDuringTravel": true,
+      "hoistTracksImmersion": true
+    },
+    {
+      "machine": "particle_collider",
+      "dimensions": {
+        "width": 21,
+        "height": 5,
+        "depth": 21
+      },
+      "placedBlocks": 784,
+      "outwardHatches": 9,
+      "connectedStructure": true,
+      "symmetricStructureFootprint": true,
+      "reservedAirClear": true,
+      "animationSeconds": 12,
+      "animatedGroups": [
+        "beam_packet_a",
+        "beam_packet_b"
+      ],
+      "loopEndpointsMatch": true,
+      "sha256": "20845c2895ad61100ef323da67d7eaf319782a66cf8224af0f384e45c51dc790",
+      "donutShape": true,
+      "centreOpenAtEveryHeight": true,
+      "hollowBeamTunnel": true
+    }
+  ],
+  "individualPartModels": 27,
+  "nativeJavaBlockExports": 27,
+  "allPartBoundsWithinOneBlock": true,
+  "structuralBlocksAnimated": false
+}

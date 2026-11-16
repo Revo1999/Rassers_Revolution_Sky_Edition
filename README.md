@@ -59,6 +59,8 @@ revolib/run/eula.txt before it will start. Setup does not accept it for you.
 - The [Nexus endgame specification](docs/NEXUS-ENDGAME.md) and
   [first portal art pass](art/blockbench/nexus-portal/README.md) describe the next
   three processing multiblocks and the final portal. These are design/art assets.
+  The [three machine models](art/blockbench/nexus-machines/README.md) include a
+  21x21x5 donut collider and 9x9 casting/plating plants with animated mechanisms.
 - pack/overrides: pack configuration, menu film, KubeJS and resource packs.
 - docs/design: original user-supplied planning references.
 

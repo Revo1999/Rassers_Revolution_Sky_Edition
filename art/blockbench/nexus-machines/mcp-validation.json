@@ -1,0 +1,577 @@
+{
+  "parts": [
+    {
+      "part": "accelerator_glass",
+      "summary": {
+        "errors": 0,
+        "warnings": 0,
+        "passed": true
+      }
+    },
+    {
+      "part": "bath_wall",
+      "summary": {
+        "errors": 0,
+        "warnings": 0,
+        "passed": true
+      }
+    },
+    {
+      "part": "casing",
+      "summary": {
+        "errors": 0,
+        "warnings": 0,
+        "passed": true
+      }
+    },
+    {
+      "part": "ceramic_panel",
+      "summary": {
+        "errors": 0,
+        "warnings": 0,
+        "passed": true
+      }
+    },
+    {
+      "part": "control_casting",
+      "summary": {
+        "errors": 0,
+        "warnings": 0,
+        "passed": true
+      }
+    },
+    {
+      "part": "control_collider",
+      "summary": {
+        "errors": 0,
+        "warnings": 0,
+        "passed": true
+      }
+    },
+    {
+      "part": "control_plating",
+      "summary": {
+        "errors": 0,
+        "warnings": 0,
+        "passed": true
+      }
+    },
+    {
+      "part": "deck_grate",
+      "summary": {
+        "errors": 0,
+        "warnings": 0,
+        "passed": true
+      }
+    },
+    {
+      "part": "energy",
+      "summary": {
+        "errors": 0,
+        "warnings": 0,
+        "passed": true
+      }
+    },
+    {
+      "part": "fluid_in",
+      "summary": {
+        "errors": 0,
+        "warnings": 0,
+        "passed": true
+      }
+    },
+    {
+      "part": "fluid_out",
+      "summary": {
+        "errors": 0,
+        "warnings": 0,
+        "passed": true
+      }
+    },
+    {
+      "part": "gantry_rail",
+      "summary": {
+        "errors": 0,
+        "warnings": 0,
+        "passed": true
+      }
+    },
+    {
+      "part": "hazard",
+      "summary": {
+        "errors": 0,
+        "warnings": 0,
+        "passed": true
+      }
+    },
+    {
+      "part": "hydraulic_cylinder",
+      "summary": {
+        "errors": 0,
+        "warnings": 0,
+        "passed": true
+      }
+    },
+    {
+      "part": "injector_housing",
+      "summary": {
+        "errors": 0,
+        "warnings": 0,
+        "passed": true
+      }
+    },
+    {
+      "part": "input",
+      "summary": {
+        "errors": 0,
+        "warnings": 0,
+        "passed": true
+      }
+    },
+    {
+      "part": "light_amber",
+      "summary": {
+        "errors": 0,
+        "warnings": 0,
+        "passed": true
+      }
+    },
+    {
+      "part": "light_blue",
+      "summary": {
+        "errors": 0,
+        "warnings": 0,
+        "passed": true
+      }
+    },
+    {
+      "part": "magnet_coil",
+      "summary": {
+        "errors": 0,
+        "warnings": 0,
+        "passed": true
+      }
+    },
+    {
+      "part": "mould_bed",
+      "summary": {
+        "errors": 0,
+        "warnings": 0,
+        "passed": true
+      }
+    },
+    {
+      "part": "output",
+      "summary": {
+        "errors": 0,
+        "warnings": 0,
+        "passed": true
+      }
+    },
+    {
+      "part": "pressure_plate",
+      "summary": {
+        "errors": 0,
+        "warnings": 0,
+        "passed": true
+      }
+    },
+    {
+      "part": "pressure_tank",
+      "summary": {
+        "errors": 0,
+        "warnings": 0,
+        "passed": true
+      }
+    },
+    {
+      "part": "reinforced_column",
+      "summary": {
+        "errors": 0,
+        "warnings": 0,
+        "passed": true
+      }
+    },
+    {
+      "part": "ribbed_panel",
+      "summary": {
+        "errors": 0,
+        "warnings": 0,
+        "passed": true
+      }
+    },
+    {
+      "part": "service_panel",
+      "summary": {
+        "errors": 0,
+        "warnings": 0,
+        "passed": true
+      }
+    },
+    {
+      "part": "vent",
+      "summary": {
+        "errors": 0,
+        "warnings": 0,
+        "passed": true
+      }
+    }
+  ],
+  "pressure_casting_plant": {
+    "name": "pressure_casting_plant",
+    "geometry": {
+      "revision": "62a941c57318434e",
+      "format": "free",
+      "summary": {
+        "errors": 0,
+        "warnings": 0,
+        "passed": true
+      },
+      "gates": [
+        {
+          "id": "outliner",
+          "label": "Outliner references resolve and UUIDs are unique",
+          "severity": "error",
+          "ran": true,
+          "violations": []
+        },
+        {
+          "id": "unlisted_nodes",
+          "label": "Every group and element is placed in the outliner",
+          "severity": "warning",
+          "ran": true,
+          "violations": []
+        },
+        {
+          "id": "degenerate",
+          "label": "No sliver or inverted cubes",
+          "severity": "warning",
+          "ran": true,
+          "violations": []
+        },
+        {
+          "id": "mirror",
+          "label": "Left/right parts mirror each other",
+          "severity": "warning",
+          "ran": false,
+          "skipped_reason": "No node names carry a left/right token (l, r, left, right).",
+          "violations": []
+        }
+      ],
+      "self_test": [
+        {
+          "gate": "outliner",
+          "discriminates": true,
+          "clean_violations": 0,
+          "injected_violations": 1,
+          "injected": "(outliner): added a reference to a node that does not exist"
+        },
+        {
+          "gate": "unlisted_nodes",
+          "discriminates": true,
+          "clean_violations": 0,
+          "injected_violations": 1,
+          "injected": "hazard @ 0,0,0: removed it from the outliner"
+        },
+        {
+          "gate": "degenerate",
+          "discriminates": true,
+          "clean_violations": 0,
+          "injected_violations": 1,
+          "injected": "hazard @ 0,0,0: made it 0.05 units thick"
+        },
+        {
+          "gate": "mirror",
+          "discriminates": null,
+          "clean_violations": 0,
+          "injected_violations": 0,
+          "impossible": "No placed cube has a left/right name or sits under a left/right group."
+        }
+      ],
+      "notes": []
+    },
+    "animation": {
+      "revision": "daf0271d0333d28b",
+      "checked": [
+        "pressure_casting_cycle"
+      ],
+      "summary": {
+        "errors": 0,
+        "warnings": 0,
+        "passed": true
+      },
+      "gates": [
+        {
+          "id": "animated_bones_exist",
+          "label": "Animators target groups that exist",
+          "severity": "error",
+          "ran": true,
+          "violations": []
+        },
+        {
+          "id": "keyframe_timing",
+          "label": "Keyframes lie inside the clip and do not collide",
+          "severity": "warning",
+          "ran": true,
+          "violations": []
+        },
+        {
+          "id": "ground_sink",
+          "label": "No part sinks below the ground during a clip",
+          "severity": "warning",
+          "ran": true,
+          "violations": []
+        },
+        {
+          "id": "detachment",
+          "label": "Attached groups stay attached to their parent during a clip",
+          "severity": "warning",
+          "ran": false,
+          "skipped_reason": "No group touches geometry of its parent group at rest.",
+          "violations": []
+        }
+      ],
+      "skipped_channels": [],
+      "approximated_bezier": [],
+      "capped_clips": []
+    }
+  },
+  "electroplating_line": {
+    "name": "electroplating_line",
+    "geometry": {
+      "revision": "8959d416460db7c0",
+      "format": "free",
+      "summary": {
+        "errors": 0,
+        "warnings": 0,
+        "passed": true
+      },
+      "gates": [
+        {
+          "id": "outliner",
+          "label": "Outliner references resolve and UUIDs are unique",
+          "severity": "error",
+          "ran": true,
+          "violations": []
+        },
+        {
+          "id": "unlisted_nodes",
+          "label": "Every group and element is placed in the outliner",
+          "severity": "warning",
+          "ran": true,
+          "violations": []
+        },
+        {
+          "id": "degenerate",
+          "label": "No sliver or inverted cubes",
+          "severity": "warning",
+          "ran": true,
+          "violations": []
+        },
+        {
+          "id": "mirror",
+          "label": "Left/right parts mirror each other",
+          "severity": "warning",
+          "ran": false,
+          "skipped_reason": "No node names carry a left/right token (l, r, left, right).",
+          "violations": []
+        }
+      ],
+      "self_test": [
+        {
+          "gate": "outliner",
+          "discriminates": true,
+          "clean_violations": 0,
+          "injected_violations": 1,
+          "injected": "(outliner): added a reference to a node that does not exist"
+        },
+        {
+          "gate": "unlisted_nodes",
+          "discriminates": true,
+          "clean_violations": 0,
+          "injected_violations": 1,
+          "injected": "hazard @ 0,0,0: removed it from the outliner"
+        },
+        {
+          "gate": "degenerate",
+          "discriminates": true,
+          "clean_violations": 0,
+          "injected_violations": 1,
+          "injected": "hazard @ 0,0,0: made it 0.05 units thick"
+        },
+        {
+          "gate": "mirror",
+          "discriminates": null,
+          "clean_violations": 0,
+          "injected_violations": 0,
+          "impossible": "No placed cube has a left/right name or sits under a left/right group."
+        }
+      ],
+      "notes": []
+    },
+    "animation": {
+      "revision": "8959d416460db7c0",
+      "checked": [
+        "three_bath_plating_cycle"
+      ],
+      "summary": {
+        "errors": 0,
+        "warnings": 0,
+        "passed": true
+      },
+      "gates": [
+        {
+          "id": "animated_bones_exist",
+          "label": "Animators target groups that exist",
+          "severity": "error",
+          "ran": true,
+          "violations": []
+        },
+        {
+          "id": "keyframe_timing",
+          "label": "Keyframes lie inside the clip and do not collide",
+          "severity": "warning",
+          "ran": true,
+          "violations": []
+        },
+        {
+          "id": "ground_sink",
+          "label": "No part sinks below the ground during a clip",
+          "severity": "warning",
+          "ran": true,
+          "violations": []
+        },
+        {
+          "id": "detachment",
+          "label": "Attached groups stay attached to their parent during a clip",
+          "severity": "warning",
+          "ran": false,
+          "skipped_reason": "No group touches geometry of its parent group at rest.",
+          "violations": []
+        }
+      ],
+      "skipped_channels": [],
+      "approximated_bezier": [],
+      "capped_clips": []
+    }
+  },
+  "particle_collider": {
+    "name": "particle_collider",
+    "geometry": {
+      "revision": "5615b52d2d3a3948",
+      "format": "free",
+      "summary": {
+        "errors": 0,
+        "warnings": 0,
+        "passed": true
+      },
+      "gates": [
+        {
+          "id": "outliner",
+          "label": "Outliner references resolve and UUIDs are unique",
+          "severity": "error",
+          "ran": true,
+          "violations": []
+        },
+        {
+          "id": "unlisted_nodes",
+          "label": "Every group and element is placed in the outliner",
+          "severity": "warning",
+          "ran": true,
+          "violations": []
+        },
+        {
+          "id": "degenerate",
+          "label": "No sliver or inverted cubes",
+          "severity": "warning",
+          "ran": true,
+          "violations": []
+        },
+        {
+          "id": "mirror",
+          "label": "Left/right parts mirror each other",
+          "severity": "warning",
+          "ran": false,
+          "skipped_reason": "No node names carry a left/right token (l, r, left, right).",
+          "violations": []
+        }
+      ],
+      "self_test": [
+        {
+          "gate": "outliner",
+          "discriminates": true,
+          "clean_violations": 0,
+          "injected_violations": 1,
+          "injected": "(outliner): added a reference to a node that does not exist"
+        },
+        {
+          "gate": "unlisted_nodes",
+          "discriminates": true,
+          "clean_violations": 0,
+          "injected_violations": 1,
+          "injected": "reinforced_column @ 7,0,1: removed it from the outliner"
+        },
+        {
+          "gate": "degenerate",
+          "discriminates": true,
+          "clean_violations": 0,
+          "injected_violations": 1,
+          "injected": "reinforced_column @ 7,0,1: made it 0.05 units thick"
+        },
+        {
+          "gate": "mirror",
+          "discriminates": null,
+          "clean_violations": 0,
+          "injected_violations": 0,
+          "impossible": "No placed cube has a left/right name or sits under a left/right group."
+        }
+      ],
+      "notes": []
+    },
+    "animation": {
+      "revision": "5615b52d2d3a3948",
+      "checked": [
+        "opposed_beam_cycle"
+      ],
+      "summary": {
+        "errors": 0,
+        "warnings": 0,
+        "passed": true
+      },
+      "gates": [
+        {
+          "id": "animated_bones_exist",
+          "label": "Animators target groups that exist",
+          "severity": "error",
+          "ran": true,
+          "violations": []
+        },
+        {
+          "id": "keyframe_timing",
+          "label": "Keyframes lie inside the clip and do not collide",
+          "severity": "warning",
+          "ran": true,
+          "violations": []
+        },
+        {
+          "id": "ground_sink",
+          "label": "No part sinks below the ground during a clip",
+          "severity": "warning",
+          "ran": true,
+          "violations": []
+        },
+        {
+          "id": "detachment",
+          "label": "Attached groups stay attached to their parent during a clip",
+          "severity": "warning",
+          "ran": false,
+          "skipped_reason": "No group touches geometry of its parent group at rest.",
+          "violations": []
+        }
+      ],
+      "skipped_channels": [],
+      "approximated_bezier": [],
+      "capped_clips": []
+    }
+  }
+}
