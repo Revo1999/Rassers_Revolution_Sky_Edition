@@ -1,0 +1,343 @@
+{
+  "parts": [
+    {
+      "part": "casing",
+      "summary": {
+        "errors": 0,
+        "warnings": 0,
+        "passed": true
+      }
+    },
+    {
+      "part": "ring",
+      "summary": {
+        "errors": 0,
+        "warnings": 0,
+        "passed": true
+      }
+    },
+    {
+      "part": "foundation",
+      "summary": {
+        "errors": 0,
+        "warnings": 0,
+        "passed": true
+      }
+    },
+    {
+      "part": "hazard",
+      "summary": {
+        "errors": 0,
+        "warnings": 0,
+        "passed": true
+      }
+    },
+    {
+      "part": "trim",
+      "summary": {
+        "errors": 0,
+        "warnings": 0,
+        "passed": true
+      }
+    },
+    {
+      "part": "vent",
+      "summary": {
+        "errors": 0,
+        "warnings": 0,
+        "passed": true
+      }
+    },
+    {
+      "part": "light_blue",
+      "summary": {
+        "errors": 0,
+        "warnings": 0,
+        "passed": true
+      }
+    },
+    {
+      "part": "light_amber",
+      "summary": {
+        "errors": 0,
+        "warnings": 0,
+        "passed": true
+      }
+    },
+    {
+      "part": "light_violet",
+      "summary": {
+        "errors": 0,
+        "warnings": 0,
+        "passed": true
+      }
+    },
+    {
+      "part": "controller",
+      "summary": {
+        "errors": 0,
+        "warnings": 0,
+        "passed": true
+      }
+    },
+    {
+      "part": "input",
+      "summary": {
+        "errors": 0,
+        "warnings": 0,
+        "passed": true
+      }
+    },
+    {
+      "part": "output",
+      "summary": {
+        "errors": 0,
+        "warnings": 0,
+        "passed": true
+      }
+    },
+    {
+      "part": "fluid_in",
+      "summary": {
+        "errors": 0,
+        "warnings": 0,
+        "passed": true
+      }
+    },
+    {
+      "part": "fluid_out",
+      "summary": {
+        "errors": 0,
+        "warnings": 0,
+        "passed": true
+      }
+    },
+    {
+      "part": "energy",
+      "summary": {
+        "errors": 0,
+        "warnings": 0,
+        "passed": true
+      }
+    },
+    {
+      "part": "rail",
+      "summary": {
+        "errors": 0,
+        "warnings": 0,
+        "passed": true
+      }
+    },
+    {
+      "part": "beacon",
+      "summary": {
+        "errors": 0,
+        "warnings": 0,
+        "passed": true
+      }
+    },
+    {
+      "part": "core",
+      "summary": {
+        "errors": 0,
+        "warnings": 0,
+        "passed": true
+      }
+    },
+    {
+      "part": "deck_grate",
+      "summary": {
+        "errors": 0,
+        "warnings": 0,
+        "passed": true
+      }
+    },
+    {
+      "part": "ribbed_panel",
+      "summary": {
+        "errors": 0,
+        "warnings": 0,
+        "passed": true
+      }
+    },
+    {
+      "part": "reinforced_column",
+      "summary": {
+        "errors": 0,
+        "warnings": 0,
+        "passed": true
+      }
+    },
+    {
+      "part": "ceramic_panel",
+      "summary": {
+        "errors": 0,
+        "warnings": 0,
+        "passed": true
+      }
+    },
+    {
+      "part": "service_panel",
+      "summary": {
+        "errors": 0,
+        "warnings": 0,
+        "passed": true
+      }
+    },
+    {
+      "part": "foundation_chiseled",
+      "summary": {
+        "errors": 0,
+        "warnings": 0,
+        "passed": true
+      }
+    },
+    {
+      "part": "rail_north",
+      "summary": {
+        "errors": 0,
+        "warnings": 0,
+        "passed": true
+      }
+    },
+    {
+      "part": "rail_east",
+      "summary": {
+        "errors": 0,
+        "warnings": 0,
+        "passed": true
+      }
+    },
+    {
+      "part": "rail_south",
+      "summary": {
+        "errors": 0,
+        "warnings": 0,
+        "passed": true
+      }
+    },
+    {
+      "part": "rail_west",
+      "summary": {
+        "errors": 0,
+        "warnings": 0,
+        "passed": true
+      }
+    }
+  ],
+  "assembly": {
+    "revision": "e4fe5f5ecbfc254e",
+    "format": "free",
+    "summary": {
+      "errors": 0,
+      "warnings": 0,
+      "passed": true
+    },
+    "gates": [
+      {
+        "id": "outliner",
+        "label": "Outliner references resolve and UUIDs are unique",
+        "severity": "error",
+        "ran": true,
+        "violations": []
+      },
+      {
+        "id": "unlisted_nodes",
+        "label": "Every group and element is placed in the outliner",
+        "severity": "warning",
+        "ran": true,
+        "violations": []
+      },
+      {
+        "id": "degenerate",
+        "label": "No sliver or inverted cubes",
+        "severity": "warning",
+        "ran": true,
+        "violations": []
+      },
+      {
+        "id": "mirror",
+        "label": "Left/right parts mirror each other",
+        "severity": "warning",
+        "ran": true,
+        "violations": []
+      }
+    ],
+    "self_test": [
+      {
+        "gate": "outliner",
+        "discriminates": true,
+        "clean_violations": 0,
+        "injected_violations": 1,
+        "injected": "(outliner): added a reference to a node that does not exist"
+      },
+      {
+        "gate": "unlisted_nodes",
+        "discriminates": true,
+        "clean_violations": 0,
+        "injected_violations": 1,
+        "injected": "trim @ -2,0,-2: removed it from the outliner"
+      },
+      {
+        "gate": "degenerate",
+        "discriminates": true,
+        "clean_violations": 0,
+        "injected_violations": 1,
+        "injected": "trim @ -2,0,-2: made it 0.05 units thick"
+      },
+      {
+        "gate": "mirror",
+        "discriminates": true,
+        "clean_violations": 0,
+        "injected_violations": 1,
+        "injected": "core @ 0,2,4 left: shifted it 2 units on x (its mirror is core @ 0,2,4 right)"
+      }
+    ],
+    "notes": []
+  },
+  "animation": {
+    "revision": "e4fe5f5ecbfc254e",
+    "checked": [
+      "portal_swirl_preview"
+    ],
+    "summary": {
+      "errors": 0,
+      "warnings": 0,
+      "passed": true
+    },
+    "gates": [
+      {
+        "id": "animated_bones_exist",
+        "label": "Animators target groups that exist",
+        "severity": "error",
+        "ran": true,
+        "violations": []
+      },
+      {
+        "id": "keyframe_timing",
+        "label": "Keyframes lie inside the clip and do not collide",
+        "severity": "warning",
+        "ran": true,
+        "violations": []
+      },
+      {
+        "id": "ground_sink",
+        "label": "No part sinks below the ground during a clip",
+        "severity": "warning",
+        "ran": true,
+        "violations": []
+      },
+      {
+        "id": "detachment",
+        "label": "Attached groups stay attached to their parent during a clip",
+        "severity": "warning",
+        "ran": false,
+        "skipped_reason": "No group touches geometry of its parent group at rest.",
+        "violations": []
+      }
+    ],
+    "skipped_channels": [],
+    "approximated_bezier": [],
+    "capped_clips": []
+  }
+}

@@ -1,0 +1,264 @@
+{
+  "format_version": "1.9.0",
+  "credit": "Made with Blockbench",
+  "texture_size": [
+    256,
+    256
+  ],
+  "textures": {
+    "0": "revoindustry:block/nexus_atlas"
+  },
+  "elements": [
+    {
+      "name": "beacon base",
+      "from": [
+        2,
+        0,
+        2
+      ],
+      "to": [
+        14,
+        3,
+        14
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          8,
+          1.5,
+          8
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            1,
+            1,
+            2,
+            2
+          ],
+          "texture": "#0"
+        },
+        "east": {
+          "uv": [
+            1,
+            1,
+            2,
+            2
+          ],
+          "texture": "#0"
+        },
+        "south": {
+          "uv": [
+            1,
+            1,
+            2,
+            2
+          ],
+          "texture": "#0"
+        },
+        "west": {
+          "uv": [
+            1,
+            1,
+            2,
+            2
+          ],
+          "texture": "#0"
+        },
+        "up": {
+          "uv": [
+            1,
+            1,
+            2,
+            2
+          ],
+          "texture": "#0"
+        },
+        "down": {
+          "uv": [
+            1,
+            1,
+            2,
+            2
+          ],
+          "texture": "#0"
+        }
+      }
+    },
+    {
+      "name": "beacon stem",
+      "from": [
+        5,
+        3,
+        5
+      ],
+      "to": [
+        11,
+        14,
+        11
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          8,
+          8.5,
+          8
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            6,
+            0,
+            7,
+            1
+          ],
+          "texture": "#0"
+        },
+        "east": {
+          "uv": [
+            6,
+            0,
+            7,
+            1
+          ],
+          "texture": "#0"
+        },
+        "south": {
+          "uv": [
+            6,
+            0,
+            7,
+            1
+          ],
+          "texture": "#0"
+        },
+        "west": {
+          "uv": [
+            6,
+            0,
+            7,
+            1
+          ],
+          "texture": "#0"
+        },
+        "up": {
+          "uv": [
+            6,
+            0,
+            7,
+            1
+          ],
+          "texture": "#0"
+        },
+        "down": {
+          "uv": [
+            6,
+            0,
+            7,
+            1
+          ],
+          "texture": "#0"
+        }
+      }
+    },
+    {
+      "name": "beacon cap",
+      "from": [
+        3,
+        14,
+        3
+      ],
+      "to": [
+        13,
+        16,
+        13
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          8,
+          15,
+          8
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            4,
+            0,
+            5,
+            1
+          ],
+          "texture": "#0"
+        },
+        "east": {
+          "uv": [
+            4,
+            0,
+            5,
+            1
+          ],
+          "texture": "#0"
+        },
+        "south": {
+          "uv": [
+            4,
+            0,
+            5,
+            1
+          ],
+          "texture": "#0"
+        },
+        "west": {
+          "uv": [
+            4,
+            0,
+            5,
+            1
+          ],
+          "texture": "#0"
+        },
+        "up": {
+          "uv": [
+            4,
+            0,
+            5,
+            1
+          ],
+          "texture": "#0"
+        },
+        "down": {
+          "uv": [
+            4,
+            0,
+            5,
+            1
+          ],
+          "texture": "#0"
+        }
+      }
+    }
+  ],
+  "groups": [
+    {
+      "name": "beacon",
+      "origin": [
+        8,
+        8,
+        8
+      ],
+      "scope": 0,
+      "color": 0,
+      "children": [
+        0,
+        1,
+        2
+      ]
+    }
+  ]
+}

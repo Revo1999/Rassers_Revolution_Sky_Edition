@@ -1,0 +1,4 @@
+Reference image: supplied by the pack owner.
+Native steel casing and hatch sprites: Modern Industrialization 2.5.11, AztechMC / contributors; copied from the pinned mod artifact.
+Dark Nexus panels, hazard markings, pixel lamps and vortex: authored Revo project artwork.
+Editable geometry: Blockbench MCP. One assembly cube per placed block, except explicitly named block-model details and the animated portal surface.

@@ -56,6 +56,9 @@ revolib/run/eula.txt before it will start. Setup does not accept it for you.
 - Each revo*/src/main/java: Java implementation.
 - Each revo*/src/main/resources/assets/<modid>: exported Minecraft assets.
 - art/blockbench: editable model sources; see docs/BLOCKBENCH.md.
+- The [Nexus endgame specification](docs/NEXUS-ENDGAME.md) and
+  [first portal art pass](art/blockbench/nexus-portal/README.md) describe the next
+  three processing multiblocks and the final portal. These are design/art assets.
 - pack/overrides: pack configuration, menu film, KubeJS and resource packs.
 - docs/design: original user-supplied planning references.
 
