@@ -23,7 +23,7 @@
   "guide.revocultivation.top": "Cap the corners and beams. Greenhouse: glass centre. Harvester: casing centre.",
   "recipe.revocultivation.time": "%s seconds per cycle",
   "recipe.revocultivation.retained": "Starter retained; daylight required.",
-  "recipe.revocultivation.filter": "Select species on the mob filter.",
+  "recipe.revocultivation.filter": "Insert a crafted mob-specific spawner into the controller.",
   "config.jade.plugin_revocultivation.first_tier_status": "Revo farm status",
   "state.revocultivation.0": "Incomplete multiblock",
   "hint.revocultivation.0": "Follow the interactive EMI build guide.",

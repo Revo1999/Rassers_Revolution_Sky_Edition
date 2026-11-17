@@ -1,0 +1,424 @@
+{
+  "format_version": "1.9.0",
+  "credit": "Made with Blockbench",
+  "texture_size": [
+    256,
+    256
+  ],
+  "textures": {
+    "0": "revoindustry:block/nexus_machine_atlas",
+    "particle": "#0"
+  },
+  "elements": [
+    {
+      "name": "mould_bed bed",
+      "from": [
+        0,
+        0,
+        0
+      ],
+      "to": [
+        16,
+        5,
+        16
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          8,
+          2.5,
+          8
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            12,
+            1,
+            13,
+            2
+          ],
+          "texture": "#0"
+        },
+        "east": {
+          "uv": [
+            12,
+            1,
+            13,
+            2
+          ],
+          "texture": "#0"
+        },
+        "south": {
+          "uv": [
+            12,
+            1,
+            13,
+            2
+          ],
+          "texture": "#0"
+        },
+        "west": {
+          "uv": [
+            12,
+            1,
+            13,
+            2
+          ],
+          "texture": "#0"
+        },
+        "up": {
+          "uv": [
+            12,
+            1,
+            13,
+            2
+          ],
+          "texture": "#0"
+        },
+        "down": {
+          "uv": [
+            12,
+            1,
+            13,
+            2
+          ],
+          "texture": "#0"
+        }
+      }
+    },
+    {
+      "name": "mould_bed rim_0",
+      "from": [
+        0,
+        5,
+        0
+      ],
+      "to": [
+        3,
+        10,
+        16
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          1.5,
+          7.5,
+          8
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            12,
+            1,
+            13,
+            2
+          ],
+          "texture": "#0"
+        },
+        "east": {
+          "uv": [
+            12,
+            1,
+            13,
+            2
+          ],
+          "texture": "#0"
+        },
+        "south": {
+          "uv": [
+            12,
+            1,
+            13,
+            2
+          ],
+          "texture": "#0"
+        },
+        "west": {
+          "uv": [
+            12,
+            1,
+            13,
+            2
+          ],
+          "texture": "#0"
+        },
+        "up": {
+          "uv": [
+            12,
+            1,
+            13,
+            2
+          ],
+          "texture": "#0"
+        },
+        "down": {
+          "uv": [
+            12,
+            1,
+            13,
+            2
+          ],
+          "texture": "#0"
+        }
+      }
+    },
+    {
+      "name": "mould_bed rim_1",
+      "from": [
+        13,
+        5,
+        0
+      ],
+      "to": [
+        16,
+        10,
+        16
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          14.5,
+          7.5,
+          8
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            12,
+            1,
+            13,
+            2
+          ],
+          "texture": "#0"
+        },
+        "east": {
+          "uv": [
+            12,
+            1,
+            13,
+            2
+          ],
+          "texture": "#0"
+        },
+        "south": {
+          "uv": [
+            12,
+            1,
+            13,
+            2
+          ],
+          "texture": "#0"
+        },
+        "west": {
+          "uv": [
+            12,
+            1,
+            13,
+            2
+          ],
+          "texture": "#0"
+        },
+        "up": {
+          "uv": [
+            12,
+            1,
+            13,
+            2
+          ],
+          "texture": "#0"
+        },
+        "down": {
+          "uv": [
+            12,
+            1,
+            13,
+            2
+          ],
+          "texture": "#0"
+        }
+      }
+    },
+    {
+      "name": "mould_bed front",
+      "from": [
+        3,
+        5,
+        0
+      ],
+      "to": [
+        13,
+        10,
+        3
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          8,
+          7.5,
+          1.5
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            12,
+            1,
+            13,
+            2
+          ],
+          "texture": "#0"
+        },
+        "east": {
+          "uv": [
+            12,
+            1,
+            13,
+            2
+          ],
+          "texture": "#0"
+        },
+        "south": {
+          "uv": [
+            12,
+            1,
+            13,
+            2
+          ],
+          "texture": "#0"
+        },
+        "west": {
+          "uv": [
+            12,
+            1,
+            13,
+            2
+          ],
+          "texture": "#0"
+        },
+        "up": {
+          "uv": [
+            12,
+            1,
+            13,
+            2
+          ],
+          "texture": "#0"
+        },
+        "down": {
+          "uv": [
+            12,
+            1,
+            13,
+            2
+          ],
+          "texture": "#0"
+        }
+      }
+    },
+    {
+      "name": "mould_bed back",
+      "from": [
+        3,
+        5,
+        13
+      ],
+      "to": [
+        13,
+        10,
+        16
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          8,
+          7.5,
+          14.5
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            12,
+            1,
+            13,
+            2
+          ],
+          "texture": "#0"
+        },
+        "east": {
+          "uv": [
+            12,
+            1,
+            13,
+            2
+          ],
+          "texture": "#0"
+        },
+        "south": {
+          "uv": [
+            12,
+            1,
+            13,
+            2
+          ],
+          "texture": "#0"
+        },
+        "west": {
+          "uv": [
+            12,
+            1,
+            13,
+            2
+          ],
+          "texture": "#0"
+        },
+        "up": {
+          "uv": [
+            12,
+            1,
+            13,
+            2
+          ],
+          "texture": "#0"
+        },
+        "down": {
+          "uv": [
+            12,
+            1,
+            13,
+            2
+          ],
+          "texture": "#0"
+        }
+      }
+    }
+  ],
+  "groups": [
+    {
+      "name": "mould_bed",
+      "origin": [
+        8,
+        8,
+        8
+      ],
+      "scope": 0,
+      "color": 0,
+      "children": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  ],
+  "parent": "minecraft:block/block"
+}

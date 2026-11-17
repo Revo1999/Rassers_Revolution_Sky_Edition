@@ -5,6 +5,7 @@
   "compatibilityLevel": "JAVA_21",
   "mixins": [
     "DisableSpawnerTickMixin",
+    "InertSpawnEggMixin",
     "DisableFactoryAugmentMixin",
     "WitherEggRitualMixin",
     "WitherRitualPlacementMixin"

@@ -3,6 +3,25 @@ repositories {
  maven { url = 'https://maven.terraformersmc.com/releases' }
  maven { url = 'https://api.modrinth.com/maven' }
 }
+
+if (providers.gradleProperty('revoNexusTests').isPresent()) {
+ sourceSets.main.java.srcDir 'src/nexustest/java'
+ sourceSets.main.resources.srcDir 'src/nexustest/resources'
+ dependencies { runtimeOnly files(rootProject.file('.local/integration-mods/Modern-Industrialization-2.5.11.jar'),rootProject.file('.local/integration-mods/ironfurnaces-neoforge-1.21.1-4.3.2.jar'),rootProject.file('.local/integration-mods/guideme-21.1.22.jar'),rootProject.file('revolib/run/mods/create-1.21.1-6.0.10.jar'),rootProject.file('revolib/run/mods/appliedenergistics2-19.2.18.jar')) }
+ neoForge {
+  mods {
+   revolib { sourceSet project(':revolib').sourceSets.main }
+   revocultivation { sourceSet project(':revocultivation').sourceSets.main }
+   revogenetics { sourceSet project(':revogenetics').sourceSets.main }
+   revoextraction { sourceSet project(':revoextraction').sourceSets.main }
+   revostorage { sourceSet project(':revostorage').sourceSets.main }
+  }
+  runs { nexusTests { type='gameTestServer';systemProperty 'neoforge.enabledGameTestNamespaces','revoindustry' } }
+ }
+}
+tasks.named('jar', Jar) { exclude '**/NexusGameTests*','data/revoindustry/structure/nexus_test.nbt','data/revoindustry/recipe/nexus_test/**' }
+if (providers.gradleProperty('revoNexusQa').isPresent()) { sourceSets.main.java.srcDir 'src/nexusqa/java' }
+tasks.named('jar', Jar) { exclude '**/NexusVisualQa*' }
 dependencies {
  compileOnly('dev.ftb.mods:ftb-quests-neoforge:2101.1.37') { transitive = false }
  compileOnly('dev.ftb.mods:ftb-library-neoforge:2101.1.39') { transitive = false }

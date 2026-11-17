@@ -1,0 +1,143 @@
+{
+	"meta": {
+		"format_version": "5.0",
+		"model_format": "java_block",
+		"box_uv": false
+	},
+	"name": "",
+	"model_identifier": "",
+	"visible_box": [
+		1,
+		1,
+		0
+	],
+	"resolution": {
+		"width": 16,
+		"height": 16
+	},
+	"elements": [
+		{
+			"uuid": "d74f8fd4-0664-4f26-abd6-7f1fdfaaeecd",
+			"name": "Separated front and back portal faces",
+			"origin": [
+				8,
+				8,
+				8
+			],
+			"color": 0,
+			"type": "cube",
+			"from": [
+				0,
+				0,
+				7.984375
+			],
+			"to": [
+				16,
+				16,
+				8.015625
+			],
+			"box_uv": false,
+			"faces": {
+				"north": {
+					"uv": [
+						0,
+						0,
+						11,
+						11
+					],
+					"texture": 0
+				},
+				"east": {
+					"uv": [
+						0,
+						0,
+						0.03125,
+						16
+					],
+					"texture": null
+				},
+				"south": {
+					"uv": [
+						11,
+						0,
+						0,
+						11
+					],
+					"texture": 0
+				},
+				"west": {
+					"uv": [
+						0,
+						0,
+						0.03125,
+						16
+					],
+					"texture": null
+				},
+				"up": {
+					"uv": [
+						0,
+						0,
+						16,
+						0.03125
+					],
+					"texture": null
+				},
+				"down": {
+					"uv": [
+						0,
+						0,
+						16,
+						0.03125
+					],
+					"texture": null
+				}
+			},
+			"rescale": false,
+			"locked": false,
+			"light_emission": 0,
+			"render_order": "default",
+			"allow_mirror_modeling": true,
+			"autouv": 0
+		}
+	],
+	"groups": [],
+	"outliner": [
+		"d74f8fd4-0664-4f26-abd6-7f1fdfaaeecd"
+	],
+	"textures": [
+		{
+			"uuid": "d56fa127-73cc-467e-af31-d28cc13d48b5",
+			"name": "nexus_vortex",
+			"source": "data:image/png;base64,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",
+			"path": "",
+			"width": 256,
+			"height": 256,
+			"uv_width": 16,
+			"uv_height": 16,
+			"folder": "",
+			"namespace": "",
+			"id": "0",
+			"particle": false,
+			"use_as_default": false,
+			"layers_enabled": false,
+			"sync_to_project": "",
+			"render_mode": "default",
+			"render_sides": "auto",
+			"frame_time": 1,
+			"frame_order_type": "loop",
+			"frame_order": "",
+			"frame_interpolate": false,
+			"visible": true,
+			"internal": true,
+			"saved": false,
+			"relative_path": ""
+		}
+	],
+	"variable_placeholders": "",
+	"variable_placeholder_buttons": [],
+	"timeline_setups": [],
+	"unhandled_root_fields": {},
+	"ai_used": true,
+	"ai_agents": "codex-mcp-client"
+}

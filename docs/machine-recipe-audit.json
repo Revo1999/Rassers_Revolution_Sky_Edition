@@ -1,0 +1,3035 @@
+{
+  "scope": "All runtime-registered Revo blocks; native recipe manager supplemented by packaged recipes for optional integration conditions. Loot tables are not crafting routes.",
+  "registeredBlocks": 155,
+  "missingNexusBlockRecipes": 42,
+  "blocks": [
+    {
+      "id": "revocultivation:barred_panel",
+      "hasItem": true,
+      "item": "revocultivation:barred_panel",
+      "routes": [
+        {
+          "id": "revocultivation:barred_panel",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revocultivation:barred_panel",
+          "type": "minecraft:crafting_shaped",
+          "source": "revocultivation/src/main/resources/data/revocultivation/recipe/barred_panel.json",
+          "conditions": []
+        }
+      ],
+      "machines": {},
+      "status": "recipe present"
+    },
+    {
+      "id": "revocultivation:collection_grate",
+      "hasItem": true,
+      "item": "revocultivation:collection_grate",
+      "routes": [
+        {
+          "id": "revocultivation:collection_grate",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revocultivation:collection_grate",
+          "type": "minecraft:crafting_shaped",
+          "source": "revocultivation/src/main/resources/data/revocultivation/recipe/collection_grate.json",
+          "conditions": []
+        }
+      ],
+      "machines": {},
+      "status": "recipe present"
+    },
+    {
+      "id": "revocultivation:composter",
+      "hasItem": true,
+      "item": "revocultivation:composter",
+      "routes": [
+        {
+          "id": "revocultivation:composter",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revocultivation:composter",
+          "type": "minecraft:crafting_shaped",
+          "source": "revocultivation/src/main/resources/data/revocultivation/recipe/composter.json",
+          "conditions": []
+        }
+      ],
+      "machines": {},
+      "status": "recipe present"
+    },
+    {
+      "id": "revocultivation:cotton_crop",
+      "hasItem": true,
+      "item": "revocultivation:cotton_seeds",
+      "routes": [
+        {
+          "id": "revocultivation:running_shoes/cotton_seeds",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revocultivation:running_shoes/cotton_seeds",
+          "type": "minecraft:crafting_shapeless",
+          "source": "revocultivation/src/main/resources/data/revocultivation/recipe/running_shoes/cotton_seeds.json",
+          "conditions": []
+        }
+      ],
+      "machines": {},
+      "status": "recipe present"
+    },
+    {
+      "id": "revocultivation:glass_panel",
+      "hasItem": true,
+      "item": "revocultivation:glass_panel",
+      "routes": [
+        {
+          "id": "revocultivation:glass_panel",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revocultivation:glass_panel",
+          "type": "minecraft:crafting_shaped",
+          "source": "revocultivation/src/main/resources/data/revocultivation/recipe/glass_panel.json",
+          "conditions": []
+        }
+      ],
+      "machines": {},
+      "status": "recipe present"
+    },
+    {
+      "id": "revocultivation:greenhouse",
+      "hasItem": true,
+      "item": "revocultivation:greenhouse",
+      "routes": [
+        {
+          "id": "revocultivation:greenhouse",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revocultivation:greenhouse",
+          "type": "minecraft:crafting_shaped",
+          "source": "revocultivation/src/main/resources/data/revocultivation/recipe/greenhouse.json",
+          "conditions": []
+        }
+      ],
+      "machines": {},
+      "status": "recipe present"
+    },
+    {
+      "id": "revocultivation:iron_casing",
+      "hasItem": true,
+      "item": "revocultivation:iron_casing",
+      "routes": [
+        {
+          "id": "revocultivation:iron_casing",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revocultivation:iron_casing",
+          "type": "minecraft:crafting_shapeless",
+          "source": "revocultivation/src/main/resources/data/revocultivation/recipe/iron_casing.json",
+          "conditions": []
+        }
+      ],
+      "machines": {},
+      "status": "recipe present"
+    },
+    {
+      "id": "revocultivation:iron_glass_panel",
+      "hasItem": true,
+      "item": "revocultivation:iron_glass_panel",
+      "routes": [
+        {
+          "id": "revocultivation:iron_glass_panel",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revocultivation:iron_glass_panel",
+          "type": "minecraft:crafting_shapeless",
+          "source": "revocultivation/src/main/resources/data/revocultivation/recipe/iron_glass_panel.json",
+          "conditions": []
+        }
+      ],
+      "machines": {},
+      "status": "recipe present"
+    },
+    {
+      "id": "revocultivation:iron_greenhouse",
+      "hasItem": true,
+      "item": "revocultivation:iron_greenhouse",
+      "routes": [
+        {
+          "id": "revocultivation:iron_greenhouse",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revocultivation:iron_greenhouse",
+          "type": "minecraft:crafting_shaped",
+          "source": "revocultivation/src/main/resources/data/revocultivation/recipe/iron_greenhouse.json",
+          "conditions": []
+        }
+      ],
+      "machines": {},
+      "status": "recipe present"
+    },
+    {
+      "id": "revocultivation:iron_grow_light",
+      "hasItem": true,
+      "item": "revocultivation:iron_grow_light",
+      "routes": [
+        {
+          "id": "revocultivation:iron_grow_light",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revocultivation:iron_grow_light",
+          "type": "minecraft:crafting_shaped",
+          "source": "revocultivation/src/main/resources/data/revocultivation/recipe/iron_grow_light.json",
+          "conditions": []
+        }
+      ],
+      "machines": {},
+      "status": "recipe present"
+    },
+    {
+      "id": "revocultivation:iron_item_hatch",
+      "hasItem": true,
+      "item": "revocultivation:iron_item_hatch",
+      "routes": [
+        {
+          "id": "revocultivation:iron_item_hatch",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revocultivation:iron_item_hatch",
+          "type": "minecraft:crafting_shapeless",
+          "source": "revocultivation/src/main/resources/data/revocultivation/recipe/iron_item_hatch.json",
+          "conditions": []
+        }
+      ],
+      "machines": {},
+      "status": "recipe present"
+    },
+    {
+      "id": "revocultivation:iron_soil_bed",
+      "hasItem": true,
+      "item": "revocultivation:iron_soil_bed",
+      "routes": [
+        {
+          "id": "revocultivation:iron_soil_bed",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revocultivation:iron_soil_bed",
+          "type": "minecraft:crafting_shapeless",
+          "source": "revocultivation/src/main/resources/data/revocultivation/recipe/iron_soil_bed.json",
+          "conditions": []
+        }
+      ],
+      "machines": {},
+      "status": "recipe present"
+    },
+    {
+      "id": "revocultivation:iron_support",
+      "hasItem": true,
+      "item": "revocultivation:iron_support",
+      "routes": [
+        {
+          "id": "revocultivation:iron_support",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revocultivation:iron_support",
+          "type": "minecraft:crafting_shapeless",
+          "source": "revocultivation/src/main/resources/data/revocultivation/recipe/iron_support.json",
+          "conditions": []
+        }
+      ],
+      "machines": {},
+      "status": "recipe present"
+    },
+    {
+      "id": "revocultivation:iron_water_tank",
+      "hasItem": true,
+      "item": "revocultivation:iron_water_tank",
+      "routes": [
+        {
+          "id": "revocultivation:iron_water_tank",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revocultivation:iron_water_tank",
+          "type": "minecraft:crafting_shaped",
+          "source": "revocultivation/src/main/resources/data/revocultivation/recipe/iron_water_tank.json",
+          "conditions": []
+        }
+      ],
+      "machines": {},
+      "status": "recipe present"
+    },
+    {
+      "id": "revocultivation:item_hatch",
+      "hasItem": true,
+      "item": "revocultivation:item_hatch",
+      "routes": [
+        {
+          "id": "revocultivation:item_hatch",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revocultivation:item_hatch",
+          "type": "minecraft:crafting_shaped",
+          "source": "revocultivation/src/main/resources/data/revocultivation/recipe/item_hatch.json",
+          "conditions": []
+        }
+      ],
+      "machines": {},
+      "status": "recipe present"
+    },
+    {
+      "id": "revocultivation:mob_filter",
+      "hasItem": true,
+      "item": "revocultivation:mob_filter",
+      "routes": [
+        {
+          "id": "revocultivation:mob_filter",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revocultivation:mob_filter",
+          "type": "minecraft:crafting_shaped",
+          "source": "revocultivation/src/main/resources/data/revocultivation/recipe/mob_filter.json",
+          "conditions": []
+        }
+      ],
+      "machines": {},
+      "status": "recipe present"
+    },
+    {
+      "id": "revocultivation:silkworm_cultivator",
+      "hasItem": true,
+      "item": "revocultivation:silkworm_cultivator",
+      "routes": [
+        {
+          "id": "revocultivation:silkworm_cultivator",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revocultivation:silkworm_cultivator",
+          "type": "minecraft:crafting_shaped",
+          "source": "revocultivation/src/main/resources/data/revocultivation/recipe/silkworm_cultivator.json",
+          "conditions": []
+        }
+      ],
+      "machines": {},
+      "status": "recipe present"
+    },
+    {
+      "id": "revocultivation:soil_bed",
+      "hasItem": true,
+      "item": "revocultivation:soil_bed",
+      "routes": [
+        {
+          "id": "revocultivation:soil_bed",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revocultivation:soil_bed",
+          "type": "minecraft:crafting_shaped",
+          "source": "revocultivation/src/main/resources/data/revocultivation/recipe/soil_bed.json",
+          "conditions": []
+        }
+      ],
+      "machines": {},
+      "status": "recipe present"
+    },
+    {
+      "id": "revocultivation:steel_barred_panel",
+      "hasItem": true,
+      "item": "revocultivation:steel_barred_panel",
+      "routes": [
+        {
+          "id": "revocultivation:steel_barred_panel",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revocultivation:steel_barred_panel",
+          "type": "minecraft:crafting_shapeless",
+          "source": "revocultivation/src/main/resources/data/revocultivation/recipe/steel_barred_panel.json",
+          "conditions": []
+        }
+      ],
+      "machines": {},
+      "status": "recipe present"
+    },
+    {
+      "id": "revocultivation:steel_casing",
+      "hasItem": true,
+      "item": "revocultivation:steel_casing",
+      "routes": [
+        {
+          "id": "revocultivation:steel_casing",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revocultivation:steel_casing",
+          "type": "minecraft:crafting_shapeless",
+          "source": "revocultivation/src/main/resources/data/revocultivation/recipe/steel_casing.json",
+          "conditions": []
+        }
+      ],
+      "machines": {},
+      "status": "recipe present"
+    },
+    {
+      "id": "revocultivation:steel_collection_grate",
+      "hasItem": true,
+      "item": "revocultivation:steel_collection_grate",
+      "routes": [
+        {
+          "id": "revocultivation:steel_collection_grate",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revocultivation:steel_collection_grate",
+          "type": "minecraft:crafting_shapeless",
+          "source": "revocultivation/src/main/resources/data/revocultivation/recipe/steel_collection_grate.json",
+          "conditions": []
+        }
+      ],
+      "machines": {},
+      "status": "recipe present"
+    },
+    {
+      "id": "revocultivation:steel_item_hatch",
+      "hasItem": true,
+      "item": "revocultivation:steel_item_hatch",
+      "routes": [
+        {
+          "id": "revocultivation:steel_item_hatch",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revocultivation:steel_item_hatch",
+          "type": "minecraft:crafting_shapeless",
+          "source": "revocultivation/src/main/resources/data/revocultivation/recipe/steel_item_hatch.json",
+          "conditions": []
+        }
+      ],
+      "machines": {},
+      "status": "recipe present"
+    },
+    {
+      "id": "revocultivation:steel_mob_filter",
+      "hasItem": true,
+      "item": "revocultivation:steel_mob_filter",
+      "routes": [
+        {
+          "id": "revocultivation:steel_mob_filter",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revocultivation:steel_mob_filter",
+          "type": "minecraft:crafting_shapeless",
+          "source": "revocultivation/src/main/resources/data/revocultivation/recipe/steel_mob_filter.json",
+          "conditions": []
+        }
+      ],
+      "machines": {},
+      "status": "recipe present"
+    },
+    {
+      "id": "revocultivation:steel_soil_bed",
+      "hasItem": true,
+      "item": "revocultivation:steel_soil_bed",
+      "routes": [
+        {
+          "id": "revocultivation:steel_soil_bed",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revocultivation:steel_soil_bed",
+          "type": "minecraft:crafting_shapeless",
+          "source": "revocultivation/src/main/resources/data/revocultivation/recipe/steel_soil_bed.json",
+          "conditions": []
+        }
+      ],
+      "machines": {},
+      "status": "recipe present"
+    },
+    {
+      "id": "revocultivation:steel_support",
+      "hasItem": true,
+      "item": "revocultivation:steel_support",
+      "routes": [
+        {
+          "id": "revocultivation:steel_support",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revocultivation:steel_support",
+          "type": "minecraft:crafting_shapeless",
+          "source": "revocultivation/src/main/resources/data/revocultivation/recipe/steel_support.json",
+          "conditions": []
+        }
+      ],
+      "machines": {},
+      "status": "recipe present"
+    },
+    {
+      "id": "revocultivation:steel_tree_grower",
+      "hasItem": true,
+      "item": "revocultivation:steel_tree_grower",
+      "routes": [
+        {
+          "id": "revocultivation:steel_tree_grower",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revocultivation:steel_tree_grower",
+          "type": "minecraft:crafting_shaped",
+          "source": "revocultivation/src/main/resources/data/revocultivation/recipe/steel_tree_grower.json",
+          "conditions": []
+        }
+      ],
+      "machines": {},
+      "status": "recipe present"
+    },
+    {
+      "id": "revocultivation:steel_water_tank",
+      "hasItem": true,
+      "item": "revocultivation:steel_water_tank",
+      "routes": [
+        {
+          "id": "revocultivation:steel_water_tank",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revocultivation:steel_water_tank",
+          "type": "minecraft:crafting_shaped",
+          "source": "revocultivation/src/main/resources/data/revocultivation/recipe/steel_water_tank.json",
+          "conditions": []
+        }
+      ],
+      "machines": {},
+      "status": "recipe present"
+    },
+    {
+      "id": "revocultivation:timber_support",
+      "hasItem": true,
+      "item": "revocultivation:timber_support",
+      "routes": [
+        {
+          "id": "revocultivation:timber_support",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revocultivation:timber_support",
+          "type": "minecraft:crafting_shaped",
+          "source": "revocultivation/src/main/resources/data/revocultivation/recipe/timber_support.json",
+          "conditions": []
+        }
+      ],
+      "machines": {},
+      "status": "recipe present"
+    },
+    {
+      "id": "revocultivation:trading_colony",
+      "hasItem": true,
+      "item": "revocultivation:trading_colony",
+      "routes": [
+        {
+          "id": "revocultivation:trading_colony",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revocultivation:trading_colony",
+          "type": "minecraft:crafting_shaped",
+          "source": "revocultivation/src/main/resources/data/revocultivation/recipe/trading_colony.json",
+          "conditions": []
+        }
+      ],
+      "machines": {},
+      "status": "recipe present"
+    },
+    {
+      "id": "revocultivation:tree_grower",
+      "hasItem": true,
+      "item": "revocultivation:tree_grower",
+      "routes": [
+        {
+          "id": "revocultivation:tree_grower",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revocultivation:tree_grower",
+          "type": "minecraft:crafting_shaped",
+          "source": "revocultivation/src/main/resources/data/revocultivation/recipe/tree_grower.json",
+          "conditions": []
+        }
+      ],
+      "machines": {},
+      "status": "recipe present"
+    },
+    {
+      "id": "revocultivation:wooden_casing",
+      "hasItem": true,
+      "item": "revocultivation:wooden_casing",
+      "routes": [
+        {
+          "id": "revocultivation:wooden_casing",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revocultivation:wooden_casing",
+          "type": "minecraft:crafting_shaped",
+          "source": "revocultivation/src/main/resources/data/revocultivation/recipe/wooden_casing.json",
+          "conditions": []
+        }
+      ],
+      "machines": {},
+      "status": "recipe present"
+    },
+    {
+      "id": "revoextraction:dust",
+      "hasItem": true,
+      "item": "revoextraction:dust",
+      "routes": [
+        {
+          "id": "sand_to_dust",
+          "type": "revoextraction:manual_hammering",
+          "source": "revoextraction/src/main/java/dk/revo/revoextraction/HammerItem.java"
+        }
+      ],
+      "machines": {},
+      "status": "recipe present"
+    },
+    {
+      "id": "revoextraction:electric_drill",
+      "hasItem": true,
+      "item": "revoextraction:electric_drill",
+      "routes": [
+        {
+          "id": "revoextraction:electric_drill",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revoextraction:electric_drill",
+          "type": "minecraft:crafting_shaped",
+          "source": "revoextraction/src/main/resources/data/revoextraction/recipe/electric_drill.json",
+          "conditions": []
+        }
+      ],
+      "machines": {},
+      "status": "recipe present"
+    },
+    {
+      "id": "revoextraction:gravel_feeder",
+      "hasItem": true,
+      "item": "revoextraction:gravel_feeder",
+      "routes": [
+        {
+          "id": "revoextraction:gravel_feeder",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revoextraction:gravel_feeder",
+          "type": "minecraft:crafting_shaped",
+          "source": "revoextraction/src/main/resources/data/revoextraction/recipe/gravel_feeder.json",
+          "conditions": []
+        }
+      ],
+      "machines": {},
+      "status": "recipe present"
+    },
+    {
+      "id": "revoextraction:iron_drill_casing",
+      "hasItem": true,
+      "item": "revoextraction:iron_drill_casing",
+      "routes": [
+        {
+          "id": "revoextraction:iron_drill_casing",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revoextraction:iron_drill_casing",
+          "type": "minecraft:crafting_shapeless",
+          "source": "revoextraction/src/main/resources/data/revoextraction/recipe/iron_drill_casing.json",
+          "conditions": []
+        }
+      ],
+      "machines": {},
+      "status": "recipe present"
+    },
+    {
+      "id": "revoextraction:iron_drill_controller",
+      "hasItem": true,
+      "item": "revoextraction:iron_drill_controller",
+      "routes": [
+        {
+          "id": "revoextraction:iron_drill_controller",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revoextraction:iron_drill_controller",
+          "type": "minecraft:crafting_shaped",
+          "source": "revoextraction/src/main/resources/data/revoextraction/recipe/iron_drill_controller.json",
+          "conditions": []
+        }
+      ],
+      "machines": {},
+      "status": "recipe present"
+    },
+    {
+      "id": "revoextraction:iron_drill_core",
+      "hasItem": true,
+      "item": "revoextraction:iron_drill_core",
+      "routes": [
+        {
+          "id": "revoextraction:iron_drill_core",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revoextraction:iron_drill_core",
+          "type": "minecraft:crafting_shaped",
+          "source": "revoextraction/src/main/resources/data/revoextraction/recipe/iron_drill_core.json",
+          "conditions": []
+        }
+      ],
+      "machines": {},
+      "status": "recipe present"
+    },
+    {
+      "id": "revoextraction:iron_drill_input",
+      "hasItem": true,
+      "item": "revoextraction:iron_drill_input",
+      "routes": [
+        {
+          "id": "revoextraction:iron_drill_input",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revoextraction:iron_drill_input",
+          "type": "minecraft:crafting_shapeless",
+          "source": "revoextraction/src/main/resources/data/revoextraction/recipe/iron_drill_input.json",
+          "conditions": []
+        }
+      ],
+      "machines": {},
+      "status": "recipe present"
+    },
+    {
+      "id": "revoextraction:iron_drill_output_hatch",
+      "hasItem": true,
+      "item": "revoextraction:iron_drill_output_hatch",
+      "routes": [
+        {
+          "id": "revoextraction:iron_drill_output_hatch",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revoextraction:iron_drill_output_hatch",
+          "type": "minecraft:crafting_shapeless",
+          "source": "revoextraction/src/main/resources/data/revoextraction/recipe/iron_drill_output_hatch.json",
+          "conditions": []
+        }
+      ],
+      "machines": {},
+      "status": "recipe present"
+    },
+    {
+      "id": "revoextraction:iron_drill_support",
+      "hasItem": true,
+      "item": "revoextraction:iron_drill_support",
+      "routes": [
+        {
+          "id": "revoextraction:iron_drill_support",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revoextraction:iron_drill_support",
+          "type": "minecraft:crafting_shapeless",
+          "source": "revoextraction/src/main/resources/data/revoextraction/recipe/iron_drill_support.json",
+          "conditions": []
+        }
+      ],
+      "machines": {},
+      "status": "recipe present"
+    },
+    {
+      "id": "revoextraction:mechanical_sluice",
+      "hasItem": true,
+      "item": "revoextraction:mechanical_sluice",
+      "routes": [
+        {
+          "id": "revoextraction:mechanical_sluice",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revoextraction:mechanical_sluice",
+          "type": "minecraft:crafting_shaped",
+          "source": "revoextraction/src/main/resources/data/revoextraction/recipe/mechanical_sluice.json",
+          "conditions": []
+        }
+      ],
+      "machines": {},
+      "status": "recipe present"
+    },
+    {
+      "id": "revoextraction:steel_drill_casing",
+      "hasItem": true,
+      "item": "revoextraction:steel_drill_casing",
+      "routes": [
+        {
+          "id": "revoextraction:steel_drill_casing",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revoextraction:steel_drill_casing",
+          "type": "minecraft:crafting_shapeless",
+          "source": "revoextraction/src/main/resources/data/revoextraction/recipe/steel_drill_casing.json",
+          "conditions": []
+        }
+      ],
+      "machines": {},
+      "status": "recipe present"
+    },
+    {
+      "id": "revoextraction:steel_drill_controller",
+      "hasItem": true,
+      "item": "revoextraction:steel_drill_controller",
+      "routes": [
+        {
+          "id": "revoextraction:steel_drill_controller",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revoextraction:steel_drill_controller",
+          "type": "minecraft:crafting_shaped",
+          "source": "revoextraction/src/main/resources/data/revoextraction/recipe/steel_drill_controller.json",
+          "conditions": []
+        }
+      ],
+      "machines": {},
+      "status": "recipe present"
+    },
+    {
+      "id": "revoextraction:steel_drill_core",
+      "hasItem": true,
+      "item": "revoextraction:steel_drill_core",
+      "routes": [
+        {
+          "id": "revoextraction:steel_drill_core",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revoextraction:steel_drill_core",
+          "type": "minecraft:crafting_shaped",
+          "source": "revoextraction/src/main/resources/data/revoextraction/recipe/steel_drill_core.json",
+          "conditions": []
+        }
+      ],
+      "machines": {},
+      "status": "recipe present"
+    },
+    {
+      "id": "revoextraction:steel_drill_input",
+      "hasItem": true,
+      "item": "revoextraction:steel_drill_input",
+      "routes": [
+        {
+          "id": "revoextraction:steel_drill_input",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revoextraction:steel_drill_input",
+          "type": "minecraft:crafting_shapeless",
+          "source": "revoextraction/src/main/resources/data/revoextraction/recipe/steel_drill_input.json",
+          "conditions": []
+        }
+      ],
+      "machines": {},
+      "status": "recipe present"
+    },
+    {
+      "id": "revoextraction:steel_drill_output_hatch",
+      "hasItem": true,
+      "item": "revoextraction:steel_drill_output_hatch",
+      "routes": [
+        {
+          "id": "revoextraction:steel_drill_output_hatch",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revoextraction:steel_drill_output_hatch",
+          "type": "minecraft:crafting_shapeless",
+          "source": "revoextraction/src/main/resources/data/revoextraction/recipe/steel_drill_output_hatch.json",
+          "conditions": []
+        }
+      ],
+      "machines": {},
+      "status": "recipe present"
+    },
+    {
+      "id": "revoextraction:steel_drill_support",
+      "hasItem": true,
+      "item": "revoextraction:steel_drill_support",
+      "routes": [
+        {
+          "id": "revoextraction:steel_drill_support",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revoextraction:steel_drill_support",
+          "type": "minecraft:crafting_shapeless",
+          "source": "revoextraction/src/main/resources/data/revoextraction/recipe/steel_drill_support.json",
+          "conditions": []
+        }
+      ],
+      "machines": {},
+      "status": "recipe present"
+    },
+    {
+      "id": "revoextraction:steel_drill_water_tank",
+      "hasItem": true,
+      "item": "revoextraction:steel_drill_water_tank",
+      "routes": [
+        {
+          "id": "revoextraction:steel_drill_water_tank",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revoextraction:steel_drill_water_tank",
+          "type": "minecraft:crafting_shaped",
+          "source": "revoextraction/src/main/resources/data/revoextraction/recipe/steel_drill_water_tank.json",
+          "conditions": []
+        }
+      ],
+      "machines": {},
+      "status": "recipe present"
+    },
+    {
+      "id": "revoextraction:wooden_drill_casing",
+      "hasItem": true,
+      "item": "revoextraction:wooden_drill_casing",
+      "routes": [
+        {
+          "id": "revoextraction:wooden_drill_casing",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revoextraction:wooden_drill_casing",
+          "type": "minecraft:crafting_shaped",
+          "source": "revoextraction/src/main/resources/data/revoextraction/recipe/wooden_drill_casing.json",
+          "conditions": []
+        }
+      ],
+      "machines": {},
+      "status": "recipe present"
+    },
+    {
+      "id": "revoextraction:wooden_drill_controller",
+      "hasItem": true,
+      "item": "revoextraction:wooden_drill_controller",
+      "routes": [
+        {
+          "id": "revoextraction:wooden_drill_controller",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revoextraction:wooden_drill_controller",
+          "type": "minecraft:crafting_shaped",
+          "source": "revoextraction/src/main/resources/data/revoextraction/recipe/wooden_drill_controller.json",
+          "conditions": []
+        }
+      ],
+      "machines": {},
+      "status": "recipe present"
+    },
+    {
+      "id": "revoextraction:wooden_drill_core",
+      "hasItem": true,
+      "item": "revoextraction:wooden_drill_core",
+      "routes": [
+        {
+          "id": "revoextraction:wooden_drill_core",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revoextraction:wooden_drill_core",
+          "type": "minecraft:crafting_shaped",
+          "source": "revoextraction/src/main/resources/data/revoextraction/recipe/wooden_drill_core.json",
+          "conditions": []
+        }
+      ],
+      "machines": {},
+      "status": "recipe present"
+    },
+    {
+      "id": "revoextraction:wooden_drill_input",
+      "hasItem": true,
+      "item": "revoextraction:wooden_drill_input",
+      "routes": [
+        {
+          "id": "revoextraction:wooden_drill_input",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revoextraction:wooden_drill_input",
+          "type": "minecraft:crafting_shaped",
+          "source": "revoextraction/src/main/resources/data/revoextraction/recipe/wooden_drill_input.json",
+          "conditions": []
+        }
+      ],
+      "machines": {},
+      "status": "recipe present"
+    },
+    {
+      "id": "revoextraction:wooden_drill_output_hatch",
+      "hasItem": true,
+      "item": "revoextraction:wooden_drill_output_hatch",
+      "routes": [
+        {
+          "id": "revoextraction:wooden_drill_output_hatch",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revoextraction:wooden_drill_output_hatch",
+          "type": "minecraft:crafting_shaped",
+          "source": "revoextraction/src/main/resources/data/revoextraction/recipe/wooden_drill_output_hatch.json",
+          "conditions": []
+        }
+      ],
+      "machines": {},
+      "status": "recipe present"
+    },
+    {
+      "id": "revoextraction:wooden_drill_support",
+      "hasItem": true,
+      "item": "revoextraction:wooden_drill_support",
+      "routes": [
+        {
+          "id": "revoextraction:wooden_drill_support",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revoextraction:wooden_drill_support",
+          "type": "minecraft:crafting_shaped",
+          "source": "revoextraction/src/main/resources/data/revoextraction/recipe/wooden_drill_support.json",
+          "conditions": []
+        }
+      ],
+      "machines": {},
+      "status": "recipe present"
+    },
+    {
+      "id": "revogenetics:mob_harvester",
+      "hasItem": true,
+      "item": "revogenetics:mob_harvester",
+      "routes": [
+        {
+          "id": "revogenetics:mob_harvester",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revogenetics:mob_harvester",
+          "type": "minecraft:crafting_shaped",
+          "source": "revogenetics/src/main/resources/data/revogenetics/recipe/mob_harvester.json",
+          "conditions": []
+        }
+      ],
+      "machines": {},
+      "status": "recipe present"
+    },
+    {
+      "id": "revogenetics:steel_mob_harvester",
+      "hasItem": true,
+      "item": "revogenetics:steel_mob_harvester",
+      "routes": [
+        {
+          "id": "revogenetics:steel_mob_harvester",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revogenetics:steel_mob_harvester",
+          "type": "minecraft:crafting_shaped",
+          "source": "revogenetics/src/main/resources/data/revogenetics/recipe/steel_mob_harvester.json",
+          "conditions": []
+        }
+      ],
+      "machines": {},
+      "status": "recipe present"
+    },
+    {
+      "id": "revoindustry:advanced_power_converter",
+      "hasItem": true,
+      "item": "revoindustry:advanced_power_converter",
+      "routes": [
+        {
+          "id": "revoindustry:advanced_power_converter",
+          "type": "minecraft:crafting_shaped",
+          "source": "revoindustry/src/main/resources/data/revoindustry/recipe/advanced_power_converter.json",
+          "conditions": [
+            {
+              "type": "neoforge:mod_loaded",
+              "modid": "fluxnetworks"
+            },
+            {
+              "type": "neoforge:mod_loaded",
+              "modid": "modern_industrialization"
+            }
+          ]
+        }
+      ],
+      "machines": {},
+      "status": "recipe present"
+    },
+    {
+      "id": "revoindustry:clay_crucible",
+      "hasItem": true,
+      "item": "revoindustry:clay_crucible",
+      "routes": [
+        {
+          "id": "revoindustry:fire_crucible",
+          "type": "minecraft:smelting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revoindustry:fire_crucible",
+          "type": "minecraft:smelting",
+          "source": "revoindustry/src/main/resources/data/revoindustry/recipe/fire_crucible.json",
+          "conditions": []
+        }
+      ],
+      "machines": {},
+      "status": "recipe present"
+    },
+    {
+      "id": "revoindustry:copper_multiblock_furnace",
+      "hasItem": true,
+      "item": "revoindustry:copper_multiblock_furnace",
+      "routes": [
+        {
+          "id": "revoindustry:copper_multiblock_furnace",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revoindustry:copper_multiblock_furnace",
+          "type": "minecraft:crafting_shaped",
+          "source": "revoindustry/src/main/resources/data/revoindustry/recipe/copper_multiblock_furnace.json",
+          "conditions": []
+        }
+      ],
+      "machines": {},
+      "status": "recipe present"
+    },
+    {
+      "id": "revoindustry:crystal_furnace_casing",
+      "hasItem": true,
+      "item": "revoindustry:crystal_furnace_casing",
+      "routes": [
+        {
+          "id": "revoindustry:crystal_furnace_casing",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revoindustry:crystal_furnace_casing",
+          "type": "minecraft:crafting_shaped",
+          "source": "revoindustry/src/main/resources/data/revoindustry/recipe/crystal_furnace_casing.json",
+          "conditions": []
+        }
+      ],
+      "machines": {},
+      "status": "recipe present"
+    },
+    {
+      "id": "revoindustry:crystal_multiblock_furnace",
+      "hasItem": true,
+      "item": "revoindustry:crystal_multiblock_furnace",
+      "routes": [
+        {
+          "id": "revoindustry:crystal_multiblock_furnace",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revoindustry:crystal_multiblock_furnace",
+          "type": "minecraft:crafting_shaped",
+          "source": "revoindustry/src/main/resources/data/revoindustry/recipe/crystal_multiblock_furnace.json",
+          "conditions": []
+        }
+      ],
+      "machines": {},
+      "status": "recipe present"
+    },
+    {
+      "id": "revoindustry:diamond_furnace_casing",
+      "hasItem": true,
+      "item": "revoindustry:diamond_furnace_casing",
+      "routes": [
+        {
+          "id": "revoindustry:diamond_furnace_casing",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revoindustry:diamond_furnace_casing",
+          "type": "minecraft:crafting_shaped",
+          "source": "revoindustry/src/main/resources/data/revoindustry/recipe/diamond_furnace_casing.json",
+          "conditions": []
+        }
+      ],
+      "machines": {},
+      "status": "recipe present"
+    },
+    {
+      "id": "revoindustry:diamond_multiblock_furnace",
+      "hasItem": true,
+      "item": "revoindustry:diamond_multiblock_furnace",
+      "routes": [
+        {
+          "id": "revoindustry:diamond_multiblock_furnace",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revoindustry:diamond_multiblock_furnace",
+          "type": "minecraft:crafting_shaped",
+          "source": "revoindustry/src/main/resources/data/revoindustry/recipe/diamond_multiblock_furnace.json",
+          "conditions": []
+        }
+      ],
+      "machines": {},
+      "status": "recipe present"
+    },
+    {
+      "id": "revoindustry:electroplating_line",
+      "hasItem": true,
+      "item": "revoindustry:electroplating_line",
+      "routes": [],
+      "machines": {
+        "electroplating_line": 1
+      },
+      "status": "no recipe"
+    },
+    {
+      "id": "revoindustry:elite_power_converter",
+      "hasItem": true,
+      "item": "revoindustry:elite_power_converter",
+      "routes": [
+        {
+          "id": "revoindustry:elite_power_converter",
+          "type": "minecraft:crafting_shaped",
+          "source": "revoindustry/src/main/resources/data/revoindustry/recipe/elite_power_converter.json",
+          "conditions": [
+            {
+              "type": "neoforge:mod_loaded",
+              "modid": "fluxnetworks"
+            },
+            {
+              "type": "neoforge:mod_loaded",
+              "modid": "modern_industrialization"
+            }
+          ]
+        }
+      ],
+      "machines": {},
+      "status": "recipe present"
+    },
+    {
+      "id": "revoindustry:emerald_furnace_casing",
+      "hasItem": true,
+      "item": "revoindustry:emerald_furnace_casing",
+      "routes": [
+        {
+          "id": "revoindustry:emerald_furnace_casing",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revoindustry:emerald_furnace_casing",
+          "type": "minecraft:crafting_shaped",
+          "source": "revoindustry/src/main/resources/data/revoindustry/recipe/emerald_furnace_casing.json",
+          "conditions": []
+        }
+      ],
+      "machines": {},
+      "status": "recipe present"
+    },
+    {
+      "id": "revoindustry:emerald_multiblock_furnace",
+      "hasItem": true,
+      "item": "revoindustry:emerald_multiblock_furnace",
+      "routes": [
+        {
+          "id": "revoindustry:emerald_multiblock_furnace",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revoindustry:emerald_multiblock_furnace",
+          "type": "minecraft:crafting_shaped",
+          "source": "revoindustry/src/main/resources/data/revoindustry/recipe/emerald_multiblock_furnace.json",
+          "conditions": []
+        }
+      ],
+      "machines": {},
+      "status": "recipe present"
+    },
+    {
+      "id": "revoindustry:furnace_item_input_hatch_1",
+      "hasItem": true,
+      "item": "revoindustry:furnace_item_input_hatch_1",
+      "routes": [
+        {
+          "id": "revoindustry:furnace_item_input_hatch_1",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revoindustry:furnace_item_input_hatch_1",
+          "type": "minecraft:crafting_shaped",
+          "source": "revoindustry/src/main/resources/data/revoindustry/recipe/furnace_item_input_hatch_1.json",
+          "conditions": []
+        }
+      ],
+      "machines": {},
+      "status": "recipe present"
+    },
+    {
+      "id": "revoindustry:furnace_item_input_hatch_2",
+      "hasItem": true,
+      "item": "revoindustry:furnace_item_input_hatch_2",
+      "routes": [
+        {
+          "id": "revoindustry:furnace_item_input_hatch_2",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revoindustry:furnace_item_input_hatch_2",
+          "type": "minecraft:crafting_shaped",
+          "source": "revoindustry/src/main/resources/data/revoindustry/recipe/furnace_item_input_hatch_2.json",
+          "conditions": []
+        }
+      ],
+      "machines": {},
+      "status": "recipe present"
+    },
+    {
+      "id": "revoindustry:furnace_item_input_hatch_3",
+      "hasItem": true,
+      "item": "revoindustry:furnace_item_input_hatch_3",
+      "routes": [
+        {
+          "id": "revoindustry:furnace_item_input_hatch_3",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revoindustry:furnace_item_input_hatch_3",
+          "type": "minecraft:crafting_shaped",
+          "source": "revoindustry/src/main/resources/data/revoindustry/recipe/furnace_item_input_hatch_3.json",
+          "conditions": []
+        }
+      ],
+      "machines": {},
+      "status": "recipe present"
+    },
+    {
+      "id": "revoindustry:furnace_item_output_hatch_1",
+      "hasItem": true,
+      "item": "revoindustry:furnace_item_output_hatch_1",
+      "routes": [
+        {
+          "id": "revoindustry:furnace_item_output_hatch_1",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revoindustry:furnace_item_output_hatch_1",
+          "type": "minecraft:crafting_shaped",
+          "source": "revoindustry/src/main/resources/data/revoindustry/recipe/furnace_item_output_hatch_1.json",
+          "conditions": []
+        }
+      ],
+      "machines": {},
+      "status": "recipe present"
+    },
+    {
+      "id": "revoindustry:furnace_item_output_hatch_2",
+      "hasItem": true,
+      "item": "revoindustry:furnace_item_output_hatch_2",
+      "routes": [
+        {
+          "id": "revoindustry:furnace_item_output_hatch_2",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revoindustry:furnace_item_output_hatch_2",
+          "type": "minecraft:crafting_shaped",
+          "source": "revoindustry/src/main/resources/data/revoindustry/recipe/furnace_item_output_hatch_2.json",
+          "conditions": []
+        }
+      ],
+      "machines": {},
+      "status": "recipe present"
+    },
+    {
+      "id": "revoindustry:furnace_item_output_hatch_3",
+      "hasItem": true,
+      "item": "revoindustry:furnace_item_output_hatch_3",
+      "routes": [
+        {
+          "id": "revoindustry:furnace_item_output_hatch_3",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revoindustry:furnace_item_output_hatch_3",
+          "type": "minecraft:crafting_shaped",
+          "source": "revoindustry/src/main/resources/data/revoindustry/recipe/furnace_item_output_hatch_3.json",
+          "conditions": []
+        }
+      ],
+      "machines": {},
+      "status": "recipe present"
+    },
+    {
+      "id": "revoindustry:furnace_vent",
+      "hasItem": true,
+      "item": "revoindustry:furnace_vent",
+      "routes": [
+        {
+          "id": "revoindustry:furnace_vent",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revoindustry:furnace_vent",
+          "type": "minecraft:crafting_shaped",
+          "source": "revoindustry/src/main/resources/data/revoindustry/recipe/furnace_vent.json",
+          "conditions": []
+        }
+      ],
+      "machines": {},
+      "status": "recipe present"
+    },
+    {
+      "id": "revoindustry:gas_fuel_hatch_1",
+      "hasItem": true,
+      "item": "revoindustry:gas_fuel_hatch_1",
+      "routes": [
+        {
+          "id": "revoindustry:gas_fuel_hatch_1",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revoindustry:gas_fuel_hatch_1",
+          "type": "minecraft:crafting_shaped",
+          "source": "revoindustry/src/main/resources/data/revoindustry/recipe/gas_fuel_hatch_1.json",
+          "conditions": []
+        }
+      ],
+      "machines": {},
+      "status": "recipe present"
+    },
+    {
+      "id": "revoindustry:gas_fuel_hatch_2",
+      "hasItem": true,
+      "item": "revoindustry:gas_fuel_hatch_2",
+      "routes": [
+        {
+          "id": "revoindustry:gas_fuel_hatch_2",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revoindustry:gas_fuel_hatch_2",
+          "type": "minecraft:crafting_shaped",
+          "source": "revoindustry/src/main/resources/data/revoindustry/recipe/gas_fuel_hatch_2.json",
+          "conditions": []
+        }
+      ],
+      "machines": {},
+      "status": "recipe present"
+    },
+    {
+      "id": "revoindustry:gas_fuel_hatch_3",
+      "hasItem": true,
+      "item": "revoindustry:gas_fuel_hatch_3",
+      "routes": [
+        {
+          "id": "revoindustry:gas_fuel_hatch_3",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revoindustry:gas_fuel_hatch_3",
+          "type": "minecraft:crafting_shaped",
+          "source": "revoindustry/src/main/resources/data/revoindustry/recipe/gas_fuel_hatch_3.json",
+          "conditions": []
+        }
+      ],
+      "machines": {},
+      "status": "recipe present"
+    },
+    {
+      "id": "revoindustry:geode_brine_output",
+      "hasItem": true,
+      "item": "revoindustry:geode_brine_output",
+      "routes": [
+        {
+          "id": "revoindustry:geode_brine_output",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revoindustry:geode_brine_output",
+          "type": "minecraft:crafting_shaped",
+          "source": "revoindustry/src/main/resources/data/revoindustry/recipe/geode_brine_output.json",
+          "conditions": []
+        }
+      ],
+      "machines": {},
+      "status": "recipe present"
+    },
+    {
+      "id": "revoindustry:geode_energy_hatch",
+      "hasItem": true,
+      "item": "revoindustry:geode_energy_hatch",
+      "routes": [
+        {
+          "id": "revoindustry:geode_energy_hatch",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revoindustry:geode_energy_hatch",
+          "type": "minecraft:crafting_shaped",
+          "source": "revoindustry/src/main/resources/data/revoindustry/recipe/geode_energy_hatch.json",
+          "conditions": []
+        }
+      ],
+      "machines": {},
+      "status": "recipe present"
+    },
+    {
+      "id": "revoindustry:geode_water_input",
+      "hasItem": true,
+      "item": "revoindustry:geode_water_input",
+      "routes": [
+        {
+          "id": "revoindustry:geode_water_input",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revoindustry:geode_water_input",
+          "type": "minecraft:crafting_shaped",
+          "source": "revoindustry/src/main/resources/data/revoindustry/recipe/geode_water_input.json",
+          "conditions": []
+        }
+      ],
+      "machines": {},
+      "status": "recipe present"
+    },
+    {
+      "id": "revoindustry:gold_furnace_casing",
+      "hasItem": true,
+      "item": "revoindustry:gold_furnace_casing",
+      "routes": [
+        {
+          "id": "revoindustry:gold_furnace_casing",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revoindustry:gold_furnace_casing",
+          "type": "minecraft:crafting_shaped",
+          "source": "revoindustry/src/main/resources/data/revoindustry/recipe/gold_furnace_casing.json",
+          "conditions": []
+        }
+      ],
+      "machines": {},
+      "status": "recipe present"
+    },
+    {
+      "id": "revoindustry:gold_multiblock_furnace",
+      "hasItem": true,
+      "item": "revoindustry:gold_multiblock_furnace",
+      "routes": [
+        {
+          "id": "revoindustry:gold_multiblock_furnace",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revoindustry:gold_multiblock_furnace",
+          "type": "minecraft:crafting_shaped",
+          "source": "revoindustry/src/main/resources/data/revoindustry/recipe/gold_multiblock_furnace.json",
+          "conditions": []
+        }
+      ],
+      "machines": {},
+      "status": "recipe present"
+    },
+    {
+      "id": "revoindustry:iron_multiblock_furnace",
+      "hasItem": true,
+      "item": "revoindustry:iron_multiblock_furnace",
+      "routes": [
+        {
+          "id": "revoindustry:iron_multiblock_furnace",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revoindustry:iron_multiblock_furnace",
+          "type": "minecraft:crafting_shaped",
+          "source": "revoindustry/src/main/resources/data/revoindustry/recipe/iron_multiblock_furnace.json",
+          "conditions": []
+        }
+      ],
+      "machines": {},
+      "status": "recipe present"
+    },
+    {
+      "id": "revoindustry:liquid_fuel_hatch_1",
+      "hasItem": true,
+      "item": "revoindustry:liquid_fuel_hatch_1",
+      "routes": [
+        {
+          "id": "revoindustry:liquid_fuel_hatch_1",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revoindustry:liquid_fuel_hatch_1",
+          "type": "minecraft:crafting_shaped",
+          "source": "revoindustry/src/main/resources/data/revoindustry/recipe/liquid_fuel_hatch_1.json",
+          "conditions": []
+        }
+      ],
+      "machines": {},
+      "status": "recipe present"
+    },
+    {
+      "id": "revoindustry:liquid_fuel_hatch_2",
+      "hasItem": true,
+      "item": "revoindustry:liquid_fuel_hatch_2",
+      "routes": [
+        {
+          "id": "revoindustry:liquid_fuel_hatch_2",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revoindustry:liquid_fuel_hatch_2",
+          "type": "minecraft:crafting_shaped",
+          "source": "revoindustry/src/main/resources/data/revoindustry/recipe/liquid_fuel_hatch_2.json",
+          "conditions": []
+        }
+      ],
+      "machines": {},
+      "status": "recipe present"
+    },
+    {
+      "id": "revoindustry:liquid_fuel_hatch_3",
+      "hasItem": true,
+      "item": "revoindustry:liquid_fuel_hatch_3",
+      "routes": [
+        {
+          "id": "revoindustry:liquid_fuel_hatch_3",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revoindustry:liquid_fuel_hatch_3",
+          "type": "minecraft:crafting_shaped",
+          "source": "revoindustry/src/main/resources/data/revoindustry/recipe/liquid_fuel_hatch_3.json",
+          "conditions": []
+        }
+      ],
+      "machines": {},
+      "status": "recipe present"
+    },
+    {
+      "id": "revoindustry:netherite_multiblock_furnace",
+      "hasItem": true,
+      "item": "revoindustry:netherite_multiblock_furnace",
+      "routes": [
+        {
+          "id": "revoindustry:netherite_multiblock_furnace",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revoindustry:netherite_multiblock_furnace",
+          "type": "minecraft:crafting_shaped",
+          "source": "revoindustry/src/main/resources/data/revoindustry/recipe/netherite_multiblock_furnace.json",
+          "conditions": []
+        }
+      ],
+      "machines": {},
+      "status": "recipe present"
+    },
+    {
+      "id": "revoindustry:nexus_beacon",
+      "hasItem": true,
+      "item": "revoindustry:nexus_beacon",
+      "routes": [],
+      "machines": {
+        "nexus_portal": 5
+      },
+      "status": "no recipe"
+    },
+    {
+      "id": "revoindustry:nexus_builder",
+      "hasItem": true,
+      "item": "revoindustry:nexus_builder",
+      "routes": [],
+      "machines": {
+        "nexus_builder": 1
+      },
+      "status": "no recipe"
+    },
+    {
+      "id": "revoindustry:nexus_casing",
+      "hasItem": true,
+      "item": "revoindustry:nexus_casing",
+      "routes": [],
+      "machines": {
+        "nexus_portal": 281
+      },
+      "status": "no recipe"
+    },
+    {
+      "id": "revoindustry:nexus_ceramic_panel",
+      "hasItem": true,
+      "item": "revoindustry:nexus_ceramic_panel",
+      "routes": [],
+      "machines": {
+        "nexus_portal": 44
+      },
+      "status": "no recipe"
+    },
+    {
+      "id": "revoindustry:nexus_controller",
+      "hasItem": true,
+      "item": "revoindustry:nexus_controller",
+      "routes": [],
+      "machines": {
+        "nexus_portal": 1
+      },
+      "status": "no recipe"
+    },
+    {
+      "id": "revoindustry:nexus_core",
+      "hasItem": true,
+      "item": "revoindustry:nexus_core",
+      "routes": [],
+      "machines": {
+        "nexus_portal": 1
+      },
+      "status": "no recipe"
+    },
+    {
+      "id": "revoindustry:nexus_deck_grate",
+      "hasItem": true,
+      "item": "revoindustry:nexus_deck_grate",
+      "routes": [],
+      "machines": {
+        "nexus_portal": 48
+      },
+      "status": "no recipe"
+    },
+    {
+      "id": "revoindustry:nexus_foundation",
+      "hasItem": true,
+      "item": "revoindustry:nexus_foundation",
+      "routes": [],
+      "machines": {
+        "nexus_portal": 178
+      },
+      "status": "no recipe"
+    },
+    {
+      "id": "revoindustry:nexus_foundation_chiseled",
+      "hasItem": true,
+      "item": "revoindustry:nexus_foundation_chiseled",
+      "routes": [],
+      "machines": {
+        "nexus_portal": 11
+      },
+      "status": "no recipe"
+    },
+    {
+      "id": "revoindustry:nexus_hazard",
+      "hasItem": true,
+      "item": "revoindustry:nexus_hazard",
+      "routes": [],
+      "machines": {
+        "nexus_portal": 48
+      },
+      "status": "no recipe"
+    },
+    {
+      "id": "revoindustry:nexus_light_amber",
+      "hasItem": true,
+      "item": "revoindustry:nexus_light_amber",
+      "routes": [],
+      "machines": {
+        "nexus_portal": 2
+      },
+      "status": "no recipe"
+    },
+    {
+      "id": "revoindustry:nexus_light_blue",
+      "hasItem": true,
+      "item": "revoindustry:nexus_light_blue",
+      "routes": [],
+      "machines": {
+        "nexus_portal": 10
+      },
+      "status": "no recipe"
+    },
+    {
+      "id": "revoindustry:nexus_light_violet",
+      "hasItem": true,
+      "item": "revoindustry:nexus_light_violet",
+      "routes": [],
+      "machines": {
+        "nexus_portal": 4
+      },
+      "status": "no recipe"
+    },
+    {
+      "id": "revoindustry:nexus_machine_accelerator_glass",
+      "hasItem": true,
+      "item": "revoindustry:nexus_machine_accelerator_glass",
+      "routes": [],
+      "machines": {
+        "particle_collider": 200
+      },
+      "status": "no recipe"
+    },
+    {
+      "id": "revoindustry:nexus_machine_bath_wall",
+      "hasItem": true,
+      "item": "revoindustry:nexus_machine_bath_wall",
+      "routes": [],
+      "machines": {
+        "electroplating_line": 26
+      },
+      "status": "no recipe"
+    },
+    {
+      "id": "revoindustry:nexus_machine_casing",
+      "hasItem": true,
+      "item": "revoindustry:nexus_machine_casing",
+      "routes": [],
+      "machines": {
+        "pressure_casting_plant": 53,
+        "electroplating_line": 45,
+        "particle_collider": 336
+      },
+      "status": "no recipe"
+    },
+    {
+      "id": "revoindustry:nexus_machine_ceramic_panel",
+      "hasItem": true,
+      "item": "revoindustry:nexus_machine_ceramic_panel",
+      "routes": [],
+      "machines": {
+        "particle_collider": 20
+      },
+      "status": "no recipe"
+    },
+    {
+      "id": "revoindustry:nexus_machine_deck_grate",
+      "hasItem": true,
+      "item": "revoindustry:nexus_machine_deck_grate",
+      "routes": [],
+      "machines": {
+        "pressure_casting_plant": 32,
+        "electroplating_line": 32
+      },
+      "status": "no recipe"
+    },
+    {
+      "id": "revoindustry:nexus_machine_gantry_rail",
+      "hasItem": true,
+      "item": "revoindustry:nexus_machine_gantry_rail",
+      "routes": [],
+      "machines": {
+        "electroplating_line": 14
+      },
+      "status": "no recipe"
+    },
+    {
+      "id": "revoindustry:nexus_machine_hazard",
+      "hasItem": true,
+      "item": "revoindustry:nexus_machine_hazard",
+      "routes": [],
+      "machines": {
+        "pressure_casting_plant": 4,
+        "electroplating_line": 4
+      },
+      "status": "no recipe"
+    },
+    {
+      "id": "revoindustry:nexus_machine_hydraulic_cylinder",
+      "hasItem": true,
+      "item": "revoindustry:nexus_machine_hydraulic_cylinder",
+      "routes": [],
+      "machines": {
+        "pressure_casting_plant": 2
+      },
+      "status": "no recipe"
+    },
+    {
+      "id": "revoindustry:nexus_machine_injector_housing",
+      "hasItem": true,
+      "item": "revoindustry:nexus_machine_injector_housing",
+      "routes": [],
+      "machines": {
+        "particle_collider": 2
+      },
+      "status": "no recipe"
+    },
+    {
+      "id": "revoindustry:nexus_machine_light_amber",
+      "hasItem": true,
+      "item": "revoindustry:nexus_machine_light_amber",
+      "routes": [],
+      "machines": {
+        "pressure_casting_plant": 2
+      },
+      "status": "no recipe"
+    },
+    {
+      "id": "revoindustry:nexus_machine_light_blue",
+      "hasItem": true,
+      "item": "revoindustry:nexus_machine_light_blue",
+      "routes": [],
+      "machines": {
+        "electroplating_line": 1
+      },
+      "status": "no recipe"
+    },
+    {
+      "id": "revoindustry:nexus_machine_magnet_coil",
+      "hasItem": true,
+      "item": "revoindustry:nexus_machine_magnet_coil",
+      "routes": [],
+      "machines": {
+        "particle_collider": 61
+      },
+      "status": "no recipe"
+    },
+    {
+      "id": "revoindustry:nexus_machine_mould_bed",
+      "hasItem": true,
+      "item": "revoindustry:nexus_machine_mould_bed",
+      "routes": [],
+      "machines": {
+        "pressure_casting_plant": 9
+      },
+      "status": "no recipe"
+    },
+    {
+      "id": "revoindustry:nexus_machine_pressure_plate",
+      "hasItem": true,
+      "item": "revoindustry:nexus_machine_pressure_plate",
+      "routes": [],
+      "machines": {
+        "pressure_casting_plant": 21,
+        "electroplating_line": 35
+      },
+      "status": "no recipe"
+    },
+    {
+      "id": "revoindustry:nexus_machine_pressure_tank",
+      "hasItem": true,
+      "item": "revoindustry:nexus_machine_pressure_tank",
+      "routes": [],
+      "machines": {
+        "pressure_casting_plant": 6
+      },
+      "status": "no recipe"
+    },
+    {
+      "id": "revoindustry:nexus_machine_reinforced_column",
+      "hasItem": true,
+      "item": "revoindustry:nexus_machine_reinforced_column",
+      "routes": [],
+      "machines": {
+        "pressure_casting_plant": 10,
+        "electroplating_line": 12,
+        "particle_collider": 156
+      },
+      "status": "no recipe"
+    },
+    {
+      "id": "revoindustry:nexus_machine_ribbed_panel",
+      "hasItem": true,
+      "item": "revoindustry:nexus_machine_ribbed_panel",
+      "routes": [],
+      "machines": {
+        "pressure_casting_plant": 10,
+        "electroplating_line": 10
+      },
+      "status": "no recipe"
+    },
+    {
+      "id": "revoindustry:nexus_machine_service_panel",
+      "hasItem": true,
+      "item": "revoindustry:nexus_machine_service_panel",
+      "routes": [],
+      "machines": {
+        "pressure_casting_plant": 3,
+        "electroplating_line": 6
+      },
+      "status": "no recipe"
+    },
+    {
+      "id": "revoindustry:nexus_machine_vent",
+      "hasItem": true,
+      "item": "revoindustry:nexus_machine_vent",
+      "routes": [],
+      "machines": {
+        "electroplating_line": 4
+      },
+      "status": "no recipe"
+    },
+    {
+      "id": "revoindustry:nexus_rail",
+      "hasItem": true,
+      "item": "revoindustry:nexus_rail",
+      "routes": [],
+      "machines": {
+        "nexus_portal": 51
+      },
+      "status": "no recipe"
+    },
+    {
+      "id": "revoindustry:nexus_reinforced_column",
+      "hasItem": true,
+      "item": "revoindustry:nexus_reinforced_column",
+      "routes": [],
+      "machines": {
+        "nexus_portal": 20
+      },
+      "status": "no recipe"
+    },
+    {
+      "id": "revoindustry:nexus_ribbed_panel",
+      "hasItem": true,
+      "item": "revoindustry:nexus_ribbed_panel",
+      "routes": [],
+      "machines": {
+        "nexus_portal": 20
+      },
+      "status": "no recipe"
+    },
+    {
+      "id": "revoindustry:nexus_ring",
+      "hasItem": true,
+      "item": "revoindustry:nexus_ring",
+      "routes": [],
+      "machines": {
+        "nexus_portal": 48
+      },
+      "status": "no recipe"
+    },
+    {
+      "id": "revoindustry:nexus_service_panel",
+      "hasItem": true,
+      "item": "revoindustry:nexus_service_panel",
+      "routes": [],
+      "machines": {
+        "nexus_portal": 4
+      },
+      "status": "no recipe"
+    },
+    {
+      "id": "revoindustry:nexus_trim",
+      "hasItem": true,
+      "item": "revoindustry:nexus_trim",
+      "routes": [],
+      "machines": {
+        "nexus_portal": 27
+      },
+      "status": "no recipe"
+    },
+    {
+      "id": "revoindustry:nexus_vent",
+      "hasItem": true,
+      "item": "revoindustry:nexus_vent",
+      "routes": [],
+      "machines": {
+        "nexus_portal": 6
+      },
+      "status": "no recipe"
+    },
+    {
+      "id": "revoindustry:obsidian_furnace_casing",
+      "hasItem": true,
+      "item": "revoindustry:obsidian_furnace_casing",
+      "routes": [
+        {
+          "id": "revoindustry:obsidian_furnace_casing",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revoindustry:obsidian_furnace_casing",
+          "type": "minecraft:crafting_shaped",
+          "source": "revoindustry/src/main/resources/data/revoindustry/recipe/obsidian_furnace_casing.json",
+          "conditions": []
+        }
+      ],
+      "machines": {},
+      "status": "recipe present"
+    },
+    {
+      "id": "revoindustry:obsidian_multiblock_furnace",
+      "hasItem": true,
+      "item": "revoindustry:obsidian_multiblock_furnace",
+      "routes": [
+        {
+          "id": "revoindustry:obsidian_multiblock_furnace",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revoindustry:obsidian_multiblock_furnace",
+          "type": "minecraft:crafting_shaped",
+          "source": "revoindustry/src/main/resources/data/revoindustry/recipe/obsidian_multiblock_furnace.json",
+          "conditions": []
+        }
+      ],
+      "machines": {},
+      "status": "recipe present"
+    },
+    {
+      "id": "revoindustry:particle_collider",
+      "hasItem": true,
+      "item": "revoindustry:particle_collider",
+      "routes": [],
+      "machines": {
+        "particle_collider": 1
+      },
+      "status": "no recipe"
+    },
+    {
+      "id": "revoindustry:power_converter",
+      "hasItem": true,
+      "item": "revoindustry:power_converter",
+      "routes": [
+        {
+          "id": "revoindustry:power_converter",
+          "type": "minecraft:crafting_shaped",
+          "source": "revoindustry/src/main/resources/data/revoindustry/recipe/power_converter.json",
+          "conditions": [
+            {
+              "type": "neoforge:mod_loaded",
+              "modid": "fluxnetworks"
+            },
+            {
+              "type": "neoforge:mod_loaded",
+              "modid": "modern_industrialization"
+            }
+          ]
+        }
+      ],
+      "machines": {},
+      "status": "recipe present"
+    },
+    {
+      "id": "revoindustry:pressure_casting_plant",
+      "hasItem": true,
+      "item": "revoindustry:pressure_casting_plant",
+      "routes": [],
+      "machines": {
+        "pressure_casting_plant": 1
+      },
+      "status": "no recipe"
+    },
+    {
+      "id": "revoindustry:rain_barrel",
+      "hasItem": true,
+      "item": "revoindustry:rain_barrel",
+      "routes": [
+        {
+          "id": "revoindustry:rain_barrel",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revoindustry:rain_barrel",
+          "type": "minecraft:crafting_shaped",
+          "source": "revoindustry/src/main/resources/data/revoindustry/recipe/rain_barrel.json",
+          "conditions": []
+        }
+      ],
+      "machines": {},
+      "status": "recipe present"
+    },
+    {
+      "id": "revoindustry:rainbow_furnace_casing",
+      "hasItem": true,
+      "item": "revoindustry:rainbow_furnace_casing",
+      "routes": [
+        {
+          "id": "revoindustry:rainbow_furnace_casing",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revoindustry:rainbow_furnace_casing",
+          "type": "minecraft:crafting_shaped",
+          "source": "revoindustry/src/main/resources/data/revoindustry/recipe/rainbow_furnace_casing.json",
+          "conditions": []
+        }
+      ],
+      "machines": {},
+      "status": "recipe present"
+    },
+    {
+      "id": "revoindustry:rainbow_multiblock_furnace",
+      "hasItem": true,
+      "item": "revoindustry:rainbow_multiblock_furnace",
+      "routes": [
+        {
+          "id": "revoindustry:rainbow_multiblock_furnace",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revoindustry:rainbow_multiblock_furnace",
+          "type": "minecraft:crafting_shaped",
+          "source": "revoindustry/src/main/resources/data/revoindustry/recipe/rainbow_multiblock_furnace.json",
+          "conditions": []
+        }
+      ],
+      "machines": {},
+      "status": "recipe present"
+    },
+    {
+      "id": "revoindustry:saline_geode",
+      "hasItem": true,
+      "item": "revoindustry:saline_geode",
+      "routes": [
+        {
+          "id": "revoindustry:saline_geode",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revoindustry:saline_geode",
+          "type": "minecraft:crafting_shaped",
+          "source": "revoindustry/src/main/resources/data/revoindustry/recipe/saline_geode.json",
+          "conditions": []
+        }
+      ],
+      "machines": {},
+      "status": "recipe present"
+    },
+    {
+      "id": "revoindustry:salt_geode_chamber",
+      "hasItem": true,
+      "item": "revoindustry:salt_geode_chamber",
+      "routes": [
+        {
+          "id": "revoindustry:salt_geode_chamber",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revoindustry:salt_geode_chamber",
+          "type": "minecraft:crafting_shaped",
+          "source": "revoindustry/src/main/resources/data/revoindustry/recipe/salt_geode_chamber.json",
+          "conditions": []
+        }
+      ],
+      "machines": {},
+      "status": "recipe present"
+    },
+    {
+      "id": "revoindustry:salt_water",
+      "hasItem": false,
+      "item": "minecraft:air",
+      "routes": [],
+      "machines": {},
+      "status": "no item by design"
+    },
+    {
+      "id": "revoindustry:silver_furnace_casing",
+      "hasItem": true,
+      "item": "revoindustry:silver_furnace_casing",
+      "routes": [
+        {
+          "id": "revoindustry:silver_furnace_casing",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revoindustry:silver_furnace_casing",
+          "type": "minecraft:crafting_shaped",
+          "source": "revoindustry/src/main/resources/data/revoindustry/recipe/silver_furnace_casing.json",
+          "conditions": []
+        }
+      ],
+      "machines": {},
+      "status": "recipe present"
+    },
+    {
+      "id": "revoindustry:silver_multiblock_furnace",
+      "hasItem": true,
+      "item": "revoindustry:silver_multiblock_furnace",
+      "routes": [
+        {
+          "id": "revoindustry:silver_multiblock_furnace",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revoindustry:silver_multiblock_furnace",
+          "type": "minecraft:crafting_shaped",
+          "source": "revoindustry/src/main/resources/data/revoindustry/recipe/silver_multiblock_furnace.json",
+          "conditions": []
+        }
+      ],
+      "machines": {},
+      "status": "recipe present"
+    },
+    {
+      "id": "revoindustry:solid_fuel_hatch_1",
+      "hasItem": true,
+      "item": "revoindustry:solid_fuel_hatch_1",
+      "routes": [
+        {
+          "id": "revoindustry:solid_fuel_hatch_1",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revoindustry:solid_fuel_hatch_1",
+          "type": "minecraft:crafting_shaped",
+          "source": "revoindustry/src/main/resources/data/revoindustry/recipe/solid_fuel_hatch_1.json",
+          "conditions": []
+        }
+      ],
+      "machines": {},
+      "status": "recipe present"
+    },
+    {
+      "id": "revoindustry:solid_fuel_hatch_2",
+      "hasItem": true,
+      "item": "revoindustry:solid_fuel_hatch_2",
+      "routes": [
+        {
+          "id": "revoindustry:solid_fuel_hatch_2",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revoindustry:solid_fuel_hatch_2",
+          "type": "minecraft:crafting_shaped",
+          "source": "revoindustry/src/main/resources/data/revoindustry/recipe/solid_fuel_hatch_2.json",
+          "conditions": []
+        }
+      ],
+      "machines": {},
+      "status": "recipe present"
+    },
+    {
+      "id": "revoindustry:solid_fuel_hatch_3",
+      "hasItem": true,
+      "item": "revoindustry:solid_fuel_hatch_3",
+      "routes": [
+        {
+          "id": "revoindustry:solid_fuel_hatch_3",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revoindustry:solid_fuel_hatch_3",
+          "type": "minecraft:crafting_shaped",
+          "source": "revoindustry/src/main/resources/data/revoindustry/recipe/solid_fuel_hatch_3.json",
+          "conditions": []
+        }
+      ],
+      "machines": {},
+      "status": "recipe present"
+    },
+    {
+      "id": "revoindustry:unfired_crucible",
+      "hasItem": true,
+      "item": "revoindustry:unfired_crucible",
+      "routes": [
+        {
+          "id": "revoindustry:unfired_crucible",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revoindustry:unfired_crucible",
+          "type": "minecraft:crafting_shaped",
+          "source": "revoindustry/src/main/resources/data/revoindustry/recipe/unfired_crucible.json",
+          "conditions": []
+        }
+      ],
+      "machines": {},
+      "status": "recipe present"
+    },
+    {
+      "id": "revoindustry:vacuum_1",
+      "hasItem": true,
+      "item": "revoindustry:vacuum_1",
+      "routes": [
+        {
+          "id": "revoindustry:vacuum_1",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revoindustry:vacuum_1",
+          "type": "minecraft:crafting_shaped",
+          "source": "revoindustry/src/main/resources/data/revoindustry/recipe/vacuum_1.json",
+          "conditions": []
+        }
+      ],
+      "machines": {},
+      "status": "recipe present"
+    },
+    {
+      "id": "revoindustry:vacuum_2",
+      "hasItem": true,
+      "item": "revoindustry:vacuum_2",
+      "routes": [
+        {
+          "id": "revoindustry:vacuum_2",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revoindustry:vacuum_2",
+          "type": "minecraft:crafting_shaped",
+          "source": "revoindustry/src/main/resources/data/revoindustry/recipe/vacuum_2.json",
+          "conditions": []
+        }
+      ],
+      "machines": {},
+      "status": "recipe present"
+    },
+    {
+      "id": "revoindustry:vacuum_3",
+      "hasItem": true,
+      "item": "revoindustry:vacuum_3",
+      "routes": [
+        {
+          "id": "revoindustry:vacuum_3",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revoindustry:vacuum_3",
+          "type": "minecraft:crafting_shaped",
+          "source": "revoindustry/src/main/resources/data/revoindustry/recipe/vacuum_3.json",
+          "conditions": []
+        }
+      ],
+      "machines": {},
+      "status": "recipe present"
+    },
+    {
+      "id": "revoindustry:wither_chamber_casing",
+      "hasItem": true,
+      "item": "revoindustry:wither_chamber_casing",
+      "routes": [
+        {
+          "id": "revoindustry:wither_chamber_casing",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revoindustry:wither_chamber_casing",
+          "type": "minecraft:crafting_shaped",
+          "source": "revoindustry/src/main/resources/data/revoindustry/recipe/wither_chamber_casing.json",
+          "conditions": []
+        }
+      ],
+      "machines": {},
+      "status": "recipe present"
+    },
+    {
+      "id": "revoindustry:wither_chamber_glass",
+      "hasItem": true,
+      "item": "revoindustry:wither_chamber_glass",
+      "routes": [
+        {
+          "id": "revoindustry:wither_chamber_glass",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revoindustry:wither_chamber_glass",
+          "type": "minecraft:crafting_shaped",
+          "source": "revoindustry/src/main/resources/data/revoindustry/recipe/wither_chamber_glass.json",
+          "conditions": []
+        }
+      ],
+      "machines": {},
+      "status": "recipe present"
+    },
+    {
+      "id": "revoindustry:wither_chamber_light",
+      "hasItem": true,
+      "item": "revoindustry:wither_chamber_light",
+      "routes": [
+        {
+          "id": "revoindustry:wither_chamber_light",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revoindustry:wither_chamber_light",
+          "type": "minecraft:crafting_shaped",
+          "source": "revoindustry/src/main/resources/data/revoindustry/recipe/wither_chamber_light.json",
+          "conditions": []
+        }
+      ],
+      "machines": {},
+      "status": "recipe present"
+    },
+    {
+      "id": "revoindustry:wither_egg_input_hatch",
+      "hasItem": true,
+      "item": "revoindustry:wither_egg_input_hatch",
+      "routes": [
+        {
+          "id": "revoindustry:wither_egg_input_hatch",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revoindustry:wither_egg_input_hatch",
+          "type": "minecraft:crafting_shaped",
+          "source": "revoindustry/src/main/resources/data/revoindustry/recipe/wither_egg_input_hatch.json",
+          "conditions": []
+        }
+      ],
+      "machines": {},
+      "status": "recipe present"
+    },
+    {
+      "id": "revoindustry:wither_energy_hatch",
+      "hasItem": true,
+      "item": "revoindustry:wither_energy_hatch",
+      "routes": [
+        {
+          "id": "revoindustry:wither_energy_hatch",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revoindustry:wither_energy_hatch",
+          "type": "minecraft:crafting_shaped",
+          "source": "revoindustry/src/main/resources/data/revoindustry/recipe/wither_energy_hatch.json",
+          "conditions": []
+        }
+      ],
+      "machines": {},
+      "status": "recipe present"
+    },
+    {
+      "id": "revoindustry:wither_hatchery",
+      "hasItem": true,
+      "item": "revoindustry:wither_hatchery",
+      "routes": [
+        {
+          "id": "revoindustry:wither_hatchery",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revoindustry:wither_hatchery",
+          "type": "minecraft:crafting_shaped",
+          "source": "revoindustry/src/main/resources/data/revoindustry/recipe/wither_hatchery.json",
+          "conditions": []
+        }
+      ],
+      "machines": {},
+      "status": "recipe present"
+    },
+    {
+      "id": "revoindustry:wither_star_output_hatch",
+      "hasItem": true,
+      "item": "revoindustry:wither_star_output_hatch",
+      "routes": [
+        {
+          "id": "revoindustry:wither_star_output_hatch",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revoindustry:wither_star_output_hatch",
+          "type": "minecraft:crafting_shaped",
+          "source": "revoindustry/src/main/resources/data/revoindustry/recipe/wither_star_output_hatch.json",
+          "conditions": []
+        }
+      ],
+      "machines": {},
+      "status": "recipe present"
+    },
+    {
+      "id": "revostorage:chest_drive",
+      "hasItem": true,
+      "item": "revostorage:chest_drive",
+      "routes": [
+        {
+          "id": "revostorage:chest_drive",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revostorage:chest_drive",
+          "type": "minecraft:crafting_shaped",
+          "source": "revostorage/src/main/resources/data/revostorage/recipe/chest_drive.json",
+          "conditions": []
+        }
+      ],
+      "machines": {},
+      "status": "recipe present"
+    },
+    {
+      "id": "revostorage:crafting_terminal",
+      "hasItem": true,
+      "item": "revostorage:crafting_terminal",
+      "routes": [
+        {
+          "id": "revostorage:crafting_terminal",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revostorage:crafting_terminal",
+          "type": "minecraft:crafting_shaped",
+          "source": "revostorage/src/main/resources/data/revostorage/recipe/crafting_terminal.json",
+          "conditions": []
+        }
+      ],
+      "machines": {},
+      "status": "recipe present"
+    }
+  ],
+  "nativeNexusHatches": [
+    {
+      "id": "modern_industrialization:advanced_item_input_hatch",
+      "machines": {
+        "nexus_builder": 1
+      },
+      "recipes": [
+        {
+          "id": "modern_industrialization:hatches/advanced/item_input_from_output",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "modern_industrialization:hatches/advanced/assembler/item_input_hatch",
+          "type": "modern_industrialization:assembler",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "modern_industrialization:hatches/advanced/item_input_hatch",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "modern_industrialization:hatches/advanced/item_input_from_output",
+          "type": "minecraft:crafting_shaped",
+          "source": "Modern-Industrialization-2.5.11.jar",
+          "conditions": []
+        },
+        {
+          "id": "modern_industrialization:hatches/advanced/item_input_hatch",
+          "type": "minecraft:crafting_shaped",
+          "source": "Modern-Industrialization-2.5.11.jar",
+          "conditions": []
+        },
+        {
+          "id": "modern_industrialization:hatches/advanced/assembler/item_input_hatch",
+          "type": "modern_industrialization:assembler",
+          "source": "Modern-Industrialization-2.5.11.jar",
+          "conditions": []
+        }
+      ]
+    },
+    {
+      "id": "modern_industrialization:advanced_item_output_hatch",
+      "machines": {
+        "nexus_builder": 1
+      },
+      "recipes": [
+        {
+          "id": "modern_industrialization:hatches/advanced/assembler/item_output_hatch",
+          "type": "modern_industrialization:assembler",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "modern_industrialization:hatches/advanced/item_output_hatch",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "modern_industrialization:hatches/advanced/item_output_from_input",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "modern_industrialization:hatches/advanced/item_output_from_input",
+          "type": "minecraft:crafting_shaped",
+          "source": "Modern-Industrialization-2.5.11.jar",
+          "conditions": []
+        },
+        {
+          "id": "modern_industrialization:hatches/advanced/item_output_hatch",
+          "type": "minecraft:crafting_shaped",
+          "source": "Modern-Industrialization-2.5.11.jar",
+          "conditions": []
+        },
+        {
+          "id": "modern_industrialization:hatches/advanced/assembler/item_output_hatch",
+          "type": "modern_industrialization:assembler",
+          "source": "Modern-Industrialization-2.5.11.jar",
+          "conditions": []
+        }
+      ]
+    },
+    {
+      "id": "modern_industrialization:highly_advanced_fluid_input_hatch",
+      "machines": {
+        "pressure_casting_plant": 2,
+        "electroplating_line": 3,
+        "particle_collider": 2,
+        "nexus_portal": 1
+      },
+      "recipes": [
+        {
+          "id": "modern_industrialization:hatches/highly_advanced/assembler/fluid_input_hatch",
+          "type": "modern_industrialization:assembler",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "modern_industrialization:hatches/highly_advanced/fluid_input_from_output",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "modern_industrialization:hatches/highly_advanced/fluid_input_hatch",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "modern_industrialization:hatches/highly_advanced/fluid_input_from_output",
+          "type": "minecraft:crafting_shaped",
+          "source": "Modern-Industrialization-2.5.11.jar",
+          "conditions": []
+        },
+        {
+          "id": "modern_industrialization:hatches/highly_advanced/fluid_input_hatch",
+          "type": "minecraft:crafting_shaped",
+          "source": "Modern-Industrialization-2.5.11.jar",
+          "conditions": []
+        },
+        {
+          "id": "modern_industrialization:hatches/highly_advanced/assembler/fluid_input_hatch",
+          "type": "modern_industrialization:assembler",
+          "source": "Modern-Industrialization-2.5.11.jar",
+          "conditions": []
+        }
+      ]
+    },
+    {
+      "id": "modern_industrialization:highly_advanced_fluid_output_hatch",
+      "machines": {
+        "pressure_casting_plant": 1,
+        "electroplating_line": 3,
+        "particle_collider": 1,
+        "nexus_portal": 1
+      },
+      "recipes": [
+        {
+          "id": "modern_industrialization:hatches/highly_advanced/assembler/fluid_output_hatch",
+          "type": "modern_industrialization:assembler",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "modern_industrialization:hatches/highly_advanced/fluid_output_hatch",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "modern_industrialization:hatches/highly_advanced/fluid_output_from_input",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "modern_industrialization:hatches/highly_advanced/fluid_output_from_input",
+          "type": "minecraft:crafting_shaped",
+          "source": "Modern-Industrialization-2.5.11.jar",
+          "conditions": []
+        },
+        {
+          "id": "modern_industrialization:hatches/highly_advanced/fluid_output_hatch",
+          "type": "minecraft:crafting_shaped",
+          "source": "Modern-Industrialization-2.5.11.jar",
+          "conditions": []
+        },
+        {
+          "id": "modern_industrialization:hatches/highly_advanced/assembler/fluid_output_hatch",
+          "type": "modern_industrialization:assembler",
+          "source": "Modern-Industrialization-2.5.11.jar",
+          "conditions": []
+        }
+      ]
+    },
+    {
+      "id": "modern_industrialization:highly_advanced_item_input_hatch",
+      "machines": {
+        "pressure_casting_plant": 2,
+        "electroplating_line": 1,
+        "particle_collider": 3,
+        "nexus_portal": 1
+      },
+      "recipes": [
+        {
+          "id": "modern_industrialization:hatches/highly_advanced/assembler/item_input_hatch",
+          "type": "modern_industrialization:assembler",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "modern_industrialization:hatches/highly_advanced/item_input_hatch",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "modern_industrialization:hatches/highly_advanced/item_input_from_output",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "modern_industrialization:hatches/highly_advanced/item_input_from_output",
+          "type": "minecraft:crafting_shaped",
+          "source": "Modern-Industrialization-2.5.11.jar",
+          "conditions": []
+        },
+        {
+          "id": "modern_industrialization:hatches/highly_advanced/item_input_hatch",
+          "type": "minecraft:crafting_shaped",
+          "source": "Modern-Industrialization-2.5.11.jar",
+          "conditions": []
+        },
+        {
+          "id": "modern_industrialization:hatches/highly_advanced/assembler/item_input_hatch",
+          "type": "modern_industrialization:assembler",
+          "source": "Modern-Industrialization-2.5.11.jar",
+          "conditions": []
+        }
+      ]
+    },
+    {
+      "id": "modern_industrialization:highly_advanced_item_output_hatch",
+      "machines": {
+        "pressure_casting_plant": 2,
+        "electroplating_line": 1,
+        "particle_collider": 1,
+        "nexus_portal": 1
+      },
+      "recipes": [
+        {
+          "id": "modern_industrialization:hatches/highly_advanced/item_output_from_input",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "modern_industrialization:hatches/highly_advanced/assembler/item_output_hatch",
+          "type": "modern_industrialization:assembler",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "modern_industrialization:hatches/highly_advanced/item_output_hatch",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "modern_industrialization:hatches/highly_advanced/item_output_from_input",
+          "type": "minecraft:crafting_shaped",
+          "source": "Modern-Industrialization-2.5.11.jar",
+          "conditions": []
+        },
+        {
+          "id": "modern_industrialization:hatches/highly_advanced/item_output_hatch",
+          "type": "minecraft:crafting_shaped",
+          "source": "Modern-Industrialization-2.5.11.jar",
+          "conditions": []
+        },
+        {
+          "id": "modern_industrialization:hatches/highly_advanced/assembler/item_output_hatch",
+          "type": "modern_industrialization:assembler",
+          "source": "Modern-Industrialization-2.5.11.jar",
+          "conditions": []
+        }
+      ]
+    },
+    {
+      "id": "modern_industrialization:mv_energy_input_hatch",
+      "machines": {
+        "nexus_builder": 1
+      },
+      "recipes": [
+        {
+          "id": "modern_industrialization:hatches/advanced/assembler/energy_input_hatch",
+          "type": "modern_industrialization:assembler",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "modern_industrialization:hatches/advanced/energy_input_from_output",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "modern_industrialization:hatches/advanced/energy_input_hatch",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "modern_industrialization:hatches/advanced/energy_input_from_output",
+          "type": "minecraft:crafting_shaped",
+          "source": "Modern-Industrialization-2.5.11.jar",
+          "conditions": []
+        },
+        {
+          "id": "modern_industrialization:hatches/advanced/energy_input_hatch",
+          "type": "minecraft:crafting_shaped",
+          "source": "Modern-Industrialization-2.5.11.jar",
+          "conditions": []
+        },
+        {
+          "id": "modern_industrialization:hatches/advanced/assembler/energy_input_hatch",
+          "type": "modern_industrialization:assembler",
+          "source": "Modern-Industrialization-2.5.11.jar",
+          "conditions": []
+        }
+      ]
+    },
+    {
+      "id": "modern_industrialization:superconductor_energy_input_hatch",
+      "machines": {
+        "pressure_casting_plant": 1,
+        "electroplating_line": 1,
+        "particle_collider": 1,
+        "nexus_portal": 1
+      },
+      "recipes": [
+        {
+          "id": "modern_industrialization:hatches/quantum/energy_input_from_output",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "modern_industrialization:hatches/quantum/assembler/energy_input_hatch",
+          "type": "modern_industrialization:assembler",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "modern_industrialization:hatches/quantum/energy_input_hatch",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "modern_industrialization:hatches/quantum/energy_input_from_output",
+          "type": "minecraft:crafting_shaped",
+          "source": "Modern-Industrialization-2.5.11.jar",
+          "conditions": []
+        },
+        {
+          "id": "modern_industrialization:hatches/quantum/energy_input_hatch",
+          "type": "minecraft:crafting_shaped",
+          "source": "Modern-Industrialization-2.5.11.jar",
+          "conditions": []
+        },
+        {
+          "id": "modern_industrialization:hatches/quantum/assembler/energy_input_hatch",
+          "type": "modern_industrialization:assembler",
+          "source": "Modern-Industrialization-2.5.11.jar",
+          "conditions": []
+        }
+      ]
+    }
+  ]
+}

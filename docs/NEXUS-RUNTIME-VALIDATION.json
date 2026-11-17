@@ -1,0 +1,36 @@
+{
+  "blockRegistration": 42,
+  "runtimeRevoBlocksAudited": 155,
+  "pendingNexusBlockRecipes": 42,
+  "nativeGameTests": {
+    "cultivation": 24,
+    "nexus": 5,
+    "nexusCoverage": [
+      "All five structures in four rotations",
+      "Native MI hatch links and break invalidation",
+      "814 actual builder-placed portal blocks",
+      "Retained program and exact material/EU use",
+      "Obstructions and saved builder cursor",
+      "Native item/fluid processing with blocked-output recovery",
+      "Exactly one collider completion flash",
+      "Portal power simulation and power-loss pause",
+      "Minecraft block-event forwarding to client completion effect"
+    ]
+  },
+  "modelPlanes": {
+    "runtimeModels": 452,
+    "runtimeOverlaps": 0,
+    "currentNativeSources": 204,
+    "currentNativeOverlaps": 0,
+    "historicalSources": "Reported separately, never loaded as runtime assets"
+  },
+  "visualQa": {
+    "client": "Full installed modpack with Iris/Sodium and shaders",
+    "save": "Fresh isolated Revo Nexus QA saves",
+    "screenshots": "art/blockbench/nexus-runtime/ingame",
+    "portalUv": "MCP crop to the authored 176x176 active region of each 256x256 animation frame",
+    "result": "All five structures render; portal fills frame; connected fence arms; native MI hatch casings",
+    "portalLoopSeconds": 16
+  },
+  "recipes": "No missing block recipes added; proposed Nexus production ledger and program unlock remain pending in missingrecipies.md."
+}

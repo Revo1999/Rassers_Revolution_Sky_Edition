@@ -86,7 +86,7 @@ It cannot escape, attack, pick up items, burn or generate extra drops. Changing 
 spawner deliberately replaces it with the newly selected species. An incomplete
 machine hides the contained mob and retains its data for repair; removing the
 controller removes its contained mob with it. The Harvester does not kill nearby
-mobs. The wooden tree grower renders a normal oak built from miniature vanilla log and leaf blocks, with full-resolution vanilla textures and biome leaf tint. It does not place world blocks. The steel grower still grows and harvests a real tree.
+mobs. The wooden tree grower renders a normal oak built from miniature vanilla log and leaf blocks, with full-resolution vanilla textures and the normal vanilla leaf tint. It does not place world blocks. The steel grower still grows and harvests a real tree.
 
 | Program | Output per completed cycle |
 | --- | --- |

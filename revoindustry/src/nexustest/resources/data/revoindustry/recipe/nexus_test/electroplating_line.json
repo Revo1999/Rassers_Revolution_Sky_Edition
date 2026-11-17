@@ -1,0 +1,25 @@
+{
+  "type": "revoindustry:electroplating_line",
+  "eu": 65536,
+  "duration": 20,
+  "item_inputs": {
+    "item": "minecraft:stone",
+    "amount": 1
+  },
+  "fluid_inputs": {
+    "fluid": "minecraft:water",
+    "amount": 1000
+  },
+  "item_outputs": [
+    {
+      "item": "minecraft:cobblestone",
+      "amount": 1
+    }
+  ],
+  "fluid_outputs": [
+    {
+      "fluid": "minecraft:water",
+      "amount": 500
+    }
+  ]
+}

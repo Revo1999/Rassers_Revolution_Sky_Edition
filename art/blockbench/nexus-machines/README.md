@@ -1,6 +1,6 @@
 # Nexus production machines
 
-Three editable Blockbench assemblies, each built from individually placed blocks. These are **models, animation studies and construction blueprints**. Gameplay controllers, recipes, inventory/fluid/energy behavior, progression checks and builder placement still need implementation using the existing MI integration.
+Three editable Blockbench assemblies, each built from individually placed blocks. These are **models, animation studies and construction blueprints**. The individual blocks and native MI controllers/hatches are now installed in RevoIndustry, with executable structure definitions and EMI assembly guides. Survival crafting and the proposed material-processing ledger remain pending in `missingrecipies.md`. The press/rack clips are animation studies; the collider has runtime orbiting-light and completion-flash effects.
 
 Dimensions below are width x depth x height.
 

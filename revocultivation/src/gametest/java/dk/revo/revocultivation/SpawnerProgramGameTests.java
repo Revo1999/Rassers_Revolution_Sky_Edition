@@ -68,4 +68,17 @@ public final class SpawnerProgramGameTests {
         player.setPos(0,200,0);player.discard();
         h.assertTrue(before.equals(after),"Actual vanilla spawner tick is fully disabled, including delay and spawn state");h.succeed();
     }
+    @GameTest(template="farm_test",timeoutTicks=100)
+    public static void eggsAreInertEvenWhenNativeItemMethodsAreCalledDirectly(GameTestHelper h){
+        var player=net.neoforged.neoforge.common.util.FakePlayerFactory.getMinecraft(h.getLevel());
+        var stack=new ItemStack(Items.ZOMBIE_SPAWN_EGG);player.setItemInHand(net.minecraft.world.InteractionHand.MAIN_HAND,stack);
+        var pos=h.absolutePos(new BlockPos(3,2,3));h.getLevel().setBlockAndUpdate(pos,Blocks.STONE.defaultBlockState());
+        var hit=new net.minecraft.world.phys.BlockHitResult(net.minecraft.world.phys.Vec3.atCenterOf(pos),Direction.UP,pos,false);
+        var context=new net.minecraft.world.item.context.UseOnContext(h.getLevel(),player,net.minecraft.world.InteractionHand.MAIN_HAND,stack,hit);
+        h.assertTrue(stack.getItem().useOn(context)==net.minecraft.world.InteractionResult.FAIL,"Direct vanilla egg block-use cannot spawn or edit spawners");
+        h.assertTrue(stack.getItem().use(h.getLevel(),player,net.minecraft.world.InteractionHand.MAIN_HAND).getResult()==net.minecraft.world.InteractionResult.FAIL,"Direct vanilla egg fluid-use is disabled");
+        var cow=net.minecraft.world.entity.EntityType.COW.create(h.getLevel());
+        h.assertTrue(((SpawnEggItem)Items.COW_SPAWN_EGG).spawnOffspringFromSpawnEgg(player,cow,net.minecraft.world.entity.EntityType.COW,h.getLevel(),net.minecraft.world.phys.Vec3.atCenterOf(pos),new ItemStack(Items.COW_SPAWN_EGG)).isEmpty(),"Native offspring operation cannot create baby mobs");
+        h.assertTrue(stack.getCount()==1,"Inert egg is not consumed by failed use");h.succeed();
+    }
 }

@@ -1,0 +1,20 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "revoindustry:block/machine_light_blue",
+      "y": 0
+    },
+    "facing=east": {
+      "model": "revoindustry:block/machine_light_blue",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "revoindustry:block/machine_light_blue",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "revoindustry:block/machine_light_blue",
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "loader": "modern_industrialization:machine",
+  "casing": "revoindustry:nexus_machine",
+  "default_overlays": {
+    "front": "revoindustry:block/nexus_controller_front",
+    "front_active": "revoindustry:block/nexus_controller_front"
+  }
+}

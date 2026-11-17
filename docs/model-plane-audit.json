@@ -1046,6 +1046,11 @@
       "overlaps": []
     },
     {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/block/electroplating_line.json",
+      "elements": 0,
+      "overlaps": []
+    },
+    {
       "file": "revoindustry/src/main/resources/assets/revoindustry/models/block/elite_power_converter.json",
       "elements": 3,
       "overlaps": []
@@ -1181,8 +1186,293 @@
       "overlaps": []
     },
     {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/block/machine_accelerator_glass.json",
+      "elements": 1,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/block/machine_bath_wall.json",
+      "elements": 2,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/block/machine_casing.json",
+      "elements": 1,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/block/machine_ceramic_panel.json",
+      "elements": 1,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/block/machine_control_casting.json",
+      "elements": 1,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/block/machine_control_collider.json",
+      "elements": 1,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/block/machine_control_plating.json",
+      "elements": 1,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/block/machine_deck_grate.json",
+      "elements": 1,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/block/machine_energy.json",
+      "elements": 1,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/block/machine_fluid_in.json",
+      "elements": 1,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/block/machine_fluid_out.json",
+      "elements": 1,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/block/machine_gantry_rail.json",
+      "elements": 1,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/block/machine_hazard.json",
+      "elements": 1,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/block/machine_hydraulic_cylinder.json",
+      "elements": 3,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/block/machine_injector_housing.json",
+      "elements": 1,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/block/machine_input.json",
+      "elements": 1,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/block/machine_light_amber.json",
+      "elements": 1,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/block/machine_light_blue.json",
+      "elements": 1,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/block/machine_magnet_coil.json",
+      "elements": 1,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/block/machine_mould_bed.json",
+      "elements": 5,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/block/machine_output.json",
+      "elements": 1,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/block/machine_pressure_plate.json",
+      "elements": 1,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/block/machine_pressure_tank.json",
+      "elements": 1,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/block/machine_reinforced_column.json",
+      "elements": 1,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/block/machine_ribbed_panel.json",
+      "elements": 1,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/block/machine_service_panel.json",
+      "elements": 1,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/block/machine_vent.json",
+      "elements": 1,
+      "overlaps": []
+    },
+    {
       "file": "revoindustry/src/main/resources/assets/revoindustry/models/block/netherite_multiblock_furnace.json",
       "elements": 0,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/block/nexus_beacon.json",
+      "elements": 3,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/block/nexus_builder.json",
+      "elements": 0,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/block/nexus_casing.json",
+      "elements": 1,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/block/nexus_ceramic_panel.json",
+      "elements": 1,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/block/nexus_controller.json",
+      "elements": 0,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/block/nexus_core.json",
+      "elements": 5,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/block/nexus_deck_grate.json",
+      "elements": 1,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/block/nexus_energy.json",
+      "elements": 1,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/block/nexus_fluid_in.json",
+      "elements": 1,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/block/nexus_fluid_out.json",
+      "elements": 1,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/block/nexus_foundation.json",
+      "elements": 1,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/block/nexus_foundation_chiseled.json",
+      "elements": 1,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/block/nexus_hazard.json",
+      "elements": 1,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/block/nexus_input.json",
+      "elements": 1,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/block/nexus_light_amber.json",
+      "elements": 1,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/block/nexus_light_blue.json",
+      "elements": 1,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/block/nexus_light_violet.json",
+      "elements": 1,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/block/nexus_output.json",
+      "elements": 1,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/block/nexus_portal_surface.json",
+      "elements": 1,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/block/nexus_rail.json",
+      "elements": 1,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/block/nexus_rail_east.json",
+      "elements": 2,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/block/nexus_rail_north.json",
+      "elements": 2,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/block/nexus_rail_south.json",
+      "elements": 2,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/block/nexus_rail_west.json",
+      "elements": 2,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/block/nexus_reinforced_column.json",
+      "elements": 1,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/block/nexus_ribbed_panel.json",
+      "elements": 1,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/block/nexus_ring.json",
+      "elements": 1,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/block/nexus_service_panel.json",
+      "elements": 1,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/block/nexus_trim.json",
+      "elements": 1,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/block/nexus_vent.json",
+      "elements": 1,
       "overlaps": []
     },
     {
@@ -1196,8 +1486,18 @@
       "overlaps": []
     },
     {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/block/particle_collider.json",
+      "elements": 0,
+      "overlaps": []
+    },
+    {
       "file": "revoindustry/src/main/resources/assets/revoindustry/models/block/power_converter.json",
       "elements": 3,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/block/pressure_casting_plant.json",
+      "elements": 0,
       "overlaps": []
     },
     {
@@ -1406,6 +1706,11 @@
       "overlaps": []
     },
     {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/item/electroplating_line.json",
+      "elements": 0,
+      "overlaps": []
+    },
+    {
       "file": "revoindustry/src/main/resources/assets/revoindustry/models/item/elite_feeding_helmet.json",
       "elements": 25,
       "overlaps": []
@@ -1531,6 +1836,206 @@
       "overlaps": []
     },
     {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/item/nexus_beacon.json",
+      "elements": 0,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/item/nexus_builder.json",
+      "elements": 0,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/item/nexus_casing.json",
+      "elements": 0,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/item/nexus_ceramic_panel.json",
+      "elements": 0,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/item/nexus_construction_program.json",
+      "elements": 0,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/item/nexus_controller.json",
+      "elements": 0,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/item/nexus_core.json",
+      "elements": 0,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/item/nexus_deck_grate.json",
+      "elements": 0,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/item/nexus_foundation.json",
+      "elements": 0,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/item/nexus_foundation_chiseled.json",
+      "elements": 0,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/item/nexus_hazard.json",
+      "elements": 0,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/item/nexus_light_amber.json",
+      "elements": 0,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/item/nexus_light_blue.json",
+      "elements": 0,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/item/nexus_light_violet.json",
+      "elements": 0,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/item/nexus_machine_accelerator_glass.json",
+      "elements": 0,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/item/nexus_machine_bath_wall.json",
+      "elements": 0,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/item/nexus_machine_casing.json",
+      "elements": 0,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/item/nexus_machine_ceramic_panel.json",
+      "elements": 0,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/item/nexus_machine_deck_grate.json",
+      "elements": 0,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/item/nexus_machine_gantry_rail.json",
+      "elements": 0,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/item/nexus_machine_hazard.json",
+      "elements": 0,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/item/nexus_machine_hydraulic_cylinder.json",
+      "elements": 0,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/item/nexus_machine_injector_housing.json",
+      "elements": 0,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/item/nexus_machine_light_amber.json",
+      "elements": 0,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/item/nexus_machine_light_blue.json",
+      "elements": 0,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/item/nexus_machine_magnet_coil.json",
+      "elements": 0,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/item/nexus_machine_mould_bed.json",
+      "elements": 0,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/item/nexus_machine_pressure_plate.json",
+      "elements": 0,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/item/nexus_machine_pressure_tank.json",
+      "elements": 0,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/item/nexus_machine_reinforced_column.json",
+      "elements": 0,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/item/nexus_machine_ribbed_panel.json",
+      "elements": 0,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/item/nexus_machine_service_panel.json",
+      "elements": 0,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/item/nexus_machine_vent.json",
+      "elements": 0,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/item/nexus_rail.json",
+      "elements": 0,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/item/nexus_reinforced_column.json",
+      "elements": 0,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/item/nexus_ribbed_panel.json",
+      "elements": 0,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/item/nexus_ring.json",
+      "elements": 0,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/item/nexus_service_panel.json",
+      "elements": 0,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/item/nexus_trim.json",
+      "elements": 0,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/item/nexus_vent.json",
+      "elements": 0,
+      "overlaps": []
+    },
+    {
       "file": "revoindustry/src/main/resources/assets/revoindustry/models/item/obsidian_furnace_casing.json",
       "elements": 0,
       "overlaps": []
@@ -1541,7 +2046,17 @@
       "overlaps": []
     },
     {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/item/particle_collider.json",
+      "elements": 0,
+      "overlaps": []
+    },
+    {
       "file": "revoindustry/src/main/resources/assets/revoindustry/models/item/power_converter.json",
+      "elements": 0,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/item/pressure_casting_plant.json",
       "elements": 0,
       "overlaps": []
     },
@@ -1702,6 +2217,11 @@
     },
     {
       "file": "revoindustry/src/main/resources/assets/revoindustry/models/machine_casing/netherite_furnace.json",
+      "elements": 0,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/machine_casing/nexus_machine.json",
       "elements": 0,
       "overlaps": []
     },
@@ -2160,6 +2680,11 @@
     {
       "file": "art/blockbench/nexus-portal/nexus_portal_assembly.bbmodel",
       "elements": 1041,
+      "overlaps": []
+    },
+    {
+      "file": "art/blockbench/nexus-portal/nexus_portal_surface.bbmodel",
+      "elements": 1,
       "overlaps": []
     },
     {

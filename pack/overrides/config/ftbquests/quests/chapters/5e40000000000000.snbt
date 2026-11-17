@@ -426,7 +426,7 @@
       ],
       "description": [
         "Build the 3 x 3 x 3 steel cage from twelve supports, seven casings, three barred panels, a collection grate, species filter, item hatch and steel controller. See EMI for layers and directions.",
-        "The selected Zombie, Skeleton, Spider, Cow, Blaze, Slime, Enderman or Magma Cube remains an actual persistent machine-owned mob. It cannot despawn or escape. Right-click the front filter to change species.",
+        "The selected Zombie, Skeleton, Spider, Cow, Blaze, Slime, Enderman or Magma Cube remains an actual persistent machine-owned mob. It cannot despawn or escape. Insert a crafted mob-specific spawner into the controller to change species. Eggs and placed spawners cannot spawn mobs.",
         "The steel harvester produces the existing species drops every 7.5 seconds. This is passive production. All drops must fit before a cycle completes; the hatch auto-ejects."
       ],
       "tasks": [

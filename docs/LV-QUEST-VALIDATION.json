@@ -5,7 +5,7 @@
   "new_bridge_lessons": 1,
   "total_chapters": 14,
   "total_quests": 287,
-  "existing_quest_ids_preserved": 204,
+  "existing_quest_ids_preserved": 287,
   "unique_progress_ids": 663,
   "acyclic_dependencies": true,
   "non_consuming_tasks": true,
