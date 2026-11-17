@@ -70,7 +70,7 @@ public class FarmGameTests {
     public static void vanillaHarvesterSpawnerProgramsAndNoRoamingEntities(GameTestHelper h){
         var m=build(h,MachineKind.HARVESTER,Direction.NORTH);h.getLevel().setDayTime(18000);h.getLevel().updateSkyBrightness();
         for(int species=0;species<3;species++){
-            m.programSpawner.setStackInSlot(0,SpawnerProgramGameTests.spawner(new String[]{"zombie","skeleton","spider"}[species]));ticks(m,300);
+            m.programSpawner.setStackInSlot(0,SpawnerProgramGameTests.spawner(new String[]{"zombie","skeleton","spider"}[species]));ticks(m,4800);
             h.assertTrue(m.program()==20+species&&m.data(11)==species+1,"Spawner must select the actual passive recipe");
             h.assertTrue(m.containedMob().getType()==ContainedHarvesterMob.type(20+species),"Contained mob must be the selected vanilla species");
             for(var product:MachineKind.products(20+species))h.assertTrue(count(m.outputs,product.getItem())>=product.getCount(),"Selected mob-drop recipe produced");

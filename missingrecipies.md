@@ -2,7 +2,7 @@
 
 Audit of all 155 registered Revo blocks, using the native recipe manager and packaged recipe JSON. Block drops and loot tables do not count as recipes. Optional-integration recipes are checked in the source even when their dependency is absent from the test server. The complete inventory is in [machine-recipe-audit.json](docs/machine-recipe-audit.json).
 
-**No missing block recipes were added.** The explicitly requested eleven mob-egg recipes and eleven typed vanilla-spawner recipes are the exception. Eggs and placed spawners cannot spawn mobs.
+**No missing block recipes were added.** The explicitly requested eleven mob-egg recipes and eleven typed vanilla-spawner recipes, plus the two mob-preserving spawner-tier upgrades, are the exception. Eggs and placed spawners cannot spawn mobs.
 
 ## Nexus recipes to define
 

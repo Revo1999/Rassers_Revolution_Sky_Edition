@@ -4,7 +4,7 @@ This document records the wooden first tiers and their balanced Minecraft/Create
 
 - Tree Grower: 3x3x1 base, oak sapling retained as starter, daylight and 3x3x3 air above; 40 s cycle, logs/leaves/sticks/saplings. Growing tree is a visual, not placed world blocks.
 - Greenhouse: 3x3x3 oak/stone/glass frame, retained crop starter (wheat/carrot/potato/beetroot), daylight, water tank/bucket input, 20 s cycle with 250 mB water per harvest.
-- Mob Harvester: 3x3x3 oak/stone/barred cage, passive production with the actual selected vanilla Zombie/Skeleton/Spider inside, 15 s cycle. The machine owns and saves its contained mob, without spawning a roaming entity.
+- Mob Harvester: 3x3x3 oak/stone/barred cage, passive production with the actual selected vanilla Zombie/Skeleton/Spider inside, 240 s cycle with a Standard Spawner. The machine owns and saves its contained mob, without spawning a roaming entity.
 - Controllers: diagnostics only, small R bottom-right. Separate I/O hatch inventories use vanilla player slot layout and no R/footer. Auto-output uses outward face, retains rejected items, retries when blocked.
 - Detailed facing errors stay in controller; Jade remains compact. All machines get interactive 3D EMI construction and production information.
 - Cultivation owns shared machine engine, Tree/Greenhouse controllers and parts; Genetics owns the Mob Harvester controller and depends on Cultivation.
@@ -235,3 +235,13 @@ resource reload, item models and visibility of the selected vanilla mobs.
 The texture revision passed asset validation, the live client scenario with all
 three native mobs, and the normal production build. Updated runtime assets are in
 the 0.1.12 development pack. Test tooling remains excluded from normal launches.
+
+## Spawner production tiers
+
+| Tier | Cycle | Compatible harvesters | Upgrade |
+|---|---|---|---|
+| Standard, vanilla spawner | 240 seconds / 4 minutes | Wooden and Steel | Existing egg + eight iron bars |
+| Reinforced | 60 seconds / 1 minute | Steel | Standard in centre; seven MI Steel Plates; Electronic Circuit below centre |
+| Advanced | 20 seconds | Future electric harvester; not usable in current machines | Reinforced in centre; circuits left/right; top/bottom rows of Stainless Steel Plates |
+
+Advanced uses two MI Analog Circuits. Upgrades use the crafting table and preserve the selected mob and block-entity data. All tiers reuse the vanilla spawner item/model; upgraded tiers carry a saved tier component and explicit names/tooltips. Standard stays slow in a faster machine. Spawners are retained, and placing any tier never spawns mobs. Changing mob or tier resets unfinished work without resetting completed-cycle counters or Wither skull cadence. Existing species/Netherite gates still apply. The 20-second tier is deliberately reserved for the future electric machine; none was added by this change.

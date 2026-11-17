@@ -52,7 +52,7 @@ def main():
  names={'pressure_casting_plant':'Casting Plant','electroplating_line':'Plating Line','particle_collider':'Collider','nexus_portal':'Portal','nexus_builder':'Builder'}
  lines=['# Missing machine-block recipes','',
   'Audit of all '+str(len(rows))+' registered Revo blocks, using the native recipe manager and packaged recipe JSON. Block drops and loot tables do not count as recipes. Optional-integration recipes are checked in the source even when their dependency is absent from the test server. The complete inventory is in [machine-recipe-audit.json](docs/machine-recipe-audit.json).','',
-  '**No missing block recipes were added.** The explicitly requested eleven mob-egg recipes and eleven typed vanilla-spawner recipes are the exception. Eggs and placed spawners cannot spawn mobs.','',
+  '**No missing block recipes were added.** The explicitly requested eleven mob-egg recipes and eleven typed vanilla-spawner recipes, plus the two mob-preserving spawner-tier upgrades, are the exception. Eggs and placed spawners cannot spawn mobs.','',
   '## Nexus recipes to define','',
   'These blocks are now registered with items, models, loot, mining tags and executable structure definitions. Their survival crafting recipes are deliberately pending. Counts below are physical blocks per blueprint, not additional recipe ingredients.','',
   '| Missing output | Used by (quantity) | Status |','|---|---|---|']

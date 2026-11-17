@@ -16,6 +16,45 @@ import net.neoforged.neoforge.gametest.*;
 @GameTestHolder(RevoCultivation.MOD_ID)
 @PrefixGameTestTemplate(false)
 public final class SpawnerProgramGameTests {
+    @GameTest(template="farm_test",timeoutTicks=100)
+    public static void allSpawnerUpgradesPreserveMobAndEnforceCrafts(GameTestHelper h){
+        for(var entry:MobSpawnerPrograms.PROGRAMS.entrySet()){
+            var stack=spawner(entry.getKey().substring(10));
+            for(int tier=2;tier<=3;tier++){
+                var grid=new java.util.ArrayList<ItemStack>();
+                for(int i=0;i<9;i++){
+                    String material=(tier==2?i==7:i==3||i==5)?(tier==2?"electronic_circuit":"analog_circuit"):(tier==2?"steel_plate":"stainless_steel_plate");
+                    grid.add(i==4?stack:new ItemStack(BuiltInRegistries.ITEM.get(ResourceLocation.parse("modern_industrialization:"+material))));
+                }
+                var input=CraftingInput.of(3,3,grid);var recipe=h.getLevel().getRecipeManager().getRecipeFor(RecipeType.CRAFTING,input,h.getLevel());
+                h.assertTrue(recipe.isPresent(),"Native upgrade recipe exists for "+entry.getKey()+" tier "+tier);
+                var next=recipe.get().value().assemble(input,h.getLevel().registryAccess());
+                h.assertTrue(MobSpawnerPrograms.tier(next)==tier&&MobSpawnerPrograms.program(next)==entry.getValue(),"Upgrade preserves mob identity and increments exactly one tier");
+                h.assertTrue(next.get(DataComponents.BLOCK_ENTITY_DATA).equals(stack.get(DataComponents.BLOCK_ENTITY_DATA)),"Vanilla mob data copied intact");
+                grid.set(0,ItemStack.EMPTY);h.assertTrue(!recipe.get().value().matches(CraftingInput.of(3,3,grid),h.getLevel()),"Missing material cannot upgrade");stack=next;
+            }
+            h.assertTrue(!MobSpawnerPrograms.accepts(MachineKind.HARVESTER,stack)&&!MobSpawnerPrograms.accepts(MachineKind.STEEL_HARVESTER,stack),"Advanced is reserved for a future machine");
+        }
+        h.assertTrue(MobSpawnerPrograms.cycleTicks(3)==400,"Advanced cycle is exactly 20 seconds");h.succeed();
+    }
+    @GameTest(template="farm_test",timeoutTicks=100)
+    public static void standardAndReinforcedDurationsSaveAndTierSwitching(GameTestHelper h){
+        var wooden=FarmGameTests.build(h,MachineKind.HARVESTER,Direction.NORTH);var standard=spawner("zombie");var reinforced=MobSpawnerPrograms.upgrade(standard,2);
+        h.assertTrue(!MobSpawnerPrograms.accepts(MachineKind.HARVESTER,reinforced),"Wooden machine rejects Reinforced");
+        wooden.programSpawner.setStackInSlot(0,standard);FarmGameTests.ticks(wooden,4799);
+        h.assertTrue(wooden.data(11)==0&&wooden.progress()==4799&&wooden.data(3)==4800,"Standard waits four full minutes; UI agrees");
+        var saved=wooden.saveWithFullMetadata(h.getLevel().registryAccess());wooden.loadWithComponents(saved,h.getLevel().registryAccess());
+        h.assertTrue(wooden.progress()==4799,"Long-cycle progress survives reload without old duration clamping");
+        FarmGameTests.ticks(wooden,1);h.assertTrue(wooden.data(11)==1,"Standard produces at exactly 4800 ticks");
+        var steel=FarmGameTests.build(h,MachineKind.STEEL_HARVESTER,Direction.NORTH);steel.programSpawner.setStackInSlot(0,standard);
+        FarmGameTests.ticks(steel,4799);h.assertTrue(steel.data(11)==0,"Steel cannot accelerate a Standard spawner");
+        steel.programSpawner.setStackInSlot(0,reinforced);FarmGameTests.ticks(steel,1);
+        h.assertTrue(steel.progress()==1&&steel.data(11)==0&&steel.data(3)==1200,"Switching tiers resets unfinished work and duration");
+        FarmGameTests.ticks(steel,1198);h.assertTrue(steel.data(11)==0,"Reinforced waits a full minute");
+        saved=steel.saveWithFullMetadata(h.getLevel().registryAccess());steel.loadWithComponents(saved,h.getLevel().registryAccess());
+        FarmGameTests.ticks(steel,1);h.assertTrue(steel.data(11)==1&&MobSpawnerPrograms.tier(steel.programSpawner.getStackInSlot(0))==2,"Reinforced is retained and completes once after reload");
+        steel.programSpawner.setStackInSlot(0,standard);FarmGameTests.ticks(steel,1);h.assertTrue(steel.data(11)==1&&steel.progress()==1,"Downgrade retains completed-cycle/rare-drop counter");h.succeed();
+    }
     static ItemStack spawner(String mob){
         var tag=new CompoundTag();tag.putString("id","minecraft:mob_spawner");
         var entity=new CompoundTag();entity.putString("id","minecraft:"+mob);
@@ -46,7 +85,7 @@ public final class SpawnerProgramGameTests {
         h.assertTrue(port!=null&&port.insertItem(0,spawner("blaze"),false).getCount()==1,"Wooden rejects steel-tier programs through automation");
         h.assertTrue(port.insertItem(0,new ItemStack(Items.ZOMBIE_SPAWN_EGG),false).getCount()==1,"Controller rejects eggs");
         h.assertTrue(port.insertItem(0,spawner("zombie"),false).isEmpty(),"Hopper-compatible controller program insertion");
-        FarmGameTests.ticks(m,300);h.assertTrue(m.program()==20&&m.data(11)==1&&MobSpawnerPrograms.program(port.getStackInSlot(0))==20,"Spawner retained across production");
+        FarmGameTests.ticks(m,4800);h.assertTrue(m.program()==20&&m.data(11)==1&&MobSpawnerPrograms.program(port.getStackInSlot(0))==20,"Spawner retained across production");
         var saved=m.saveWithFullMetadata(h.getLevel().registryAccess());
         var restored=(FarmMachine)net.minecraft.world.level.block.entity.BlockEntity.loadStatic(m.getBlockPos(),m.getBlockState(),saved,h.getLevel().registryAccess());
         h.assertTrue(MobSpawnerPrograms.program(restored.programSpawner.getStackInSlot(0))==20,"Program item survives save/reload");

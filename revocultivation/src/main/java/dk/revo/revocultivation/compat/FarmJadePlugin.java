@@ -13,7 +13,7 @@ public class FarmJadePlugin implements IWailaPlugin {
     public enum Provider implements IServerDataProvider<BlockAccessor>,IBlockComponentProvider {
         INSTANCE;
         public ResourceLocation getUid(){return ResourceLocation.fromNamespaceAndPath(RevoCultivation.MOD_ID,"first_tier_status");}
-        public void appendServerData(CompoundTag tag,BlockAccessor a){var m=FarmMachine.find(a.getLevel(),a.getPosition());if(m!=null)tag.putIntArray("RevoFarm",new int[]{m.state()==7?0:m.state(),m.progress(),m.kind().ticks,m.water.getFluidAmount(),m.buffered(),m.kind().ordinal(),m.energy(),m.energyCapacity()});}
+        public void appendServerData(CompoundTag tag,BlockAccessor a){var m=FarmMachine.find(a.getLevel(),a.getPosition());if(m!=null)tag.putIntArray("RevoFarm",new int[]{m.state()==7?0:m.state(),m.progress(),m.cycleTicks(),m.water.getFluidAmount(),m.buffered(),m.kind().ordinal(),m.energy(),m.energyCapacity()});}
         public void appendTooltip(ITooltip tip,BlockAccessor a,IPluginConfig config){
             var d=a.getServerData().getIntArray("RevoFarm");if(d.length!=8)return;var kind=MachineKind.values()[Math.clamp(d[5],0,MachineKind.values().length-1)];
             tip.add(Component.translatable("state.revocultivation."+d[0]).withStyle(d[0]==1?ChatFormatting.GREEN:ChatFormatting.YELLOW));

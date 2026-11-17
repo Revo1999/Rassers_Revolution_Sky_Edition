@@ -17,6 +17,9 @@ public final class RevoCultivation {
     public static final String MOD_ID = "revocultivation";
     public static final DeferredRegister.Blocks BLOCKS=DeferredRegister.createBlocks(MOD_ID);
     public static final DeferredRegister.Items ITEMS=DeferredRegister.createItems(MOD_ID);
+    public static final DeferredRegister<net.minecraft.world.item.crafting.RecipeSerializer<?>> RECIPE_SERIALIZERS=DeferredRegister.create(Registries.RECIPE_SERIALIZER,MOD_ID);
+    public static final DeferredHolder<net.minecraft.world.item.crafting.RecipeSerializer<?>,net.minecraft.world.item.crafting.SimpleCraftingRecipeSerializer<SpawnerUpgradeRecipe>> REINFORCED_SPAWNER_RECIPE=RECIPE_SERIALIZERS.register("reinforced_spawner",()->new net.minecraft.world.item.crafting.SimpleCraftingRecipeSerializer<>(category->new SpawnerUpgradeRecipe(category,2)));
+    public static final DeferredHolder<net.minecraft.world.item.crafting.RecipeSerializer<?>,net.minecraft.world.item.crafting.SimpleCraftingRecipeSerializer<SpawnerUpgradeRecipe>> ADVANCED_SPAWNER_RECIPE=RECIPE_SERIALIZERS.register("advanced_spawner",()->new net.minecraft.world.item.crafting.SimpleCraftingRecipeSerializer<>(category->new SpawnerUpgradeRecipe(category,3)));
     public static final DeferredItem<CrookItem> CROOK=ITEMS.register("crook",CrookItem::new);
     public static final DeferredRegister<BlockEntityType<?>> ENTITIES=DeferredRegister.create(Registries.BLOCK_ENTITY_TYPE,MOD_ID);
     public static final DeferredRegister<MenuType<?>> MENUS=DeferredRegister.create(Registries.MENU,MOD_ID);
@@ -46,7 +49,7 @@ public final class RevoCultivation {
         MachineKind.STEEL_TREE.bind(STEEL_TREE);MachineKind.IRON_GREENHOUSE.bind(IRON_GREENHOUSE);
         RunningShoes.bootstrap(bus);
         for(var block:BLOCKS.getEntries())if(block!=RunningShoes.CROP)ITEMS.registerSimpleBlockItem(block);
-        BLOCKS.register(bus);ITEMS.register(bus);ENTITIES.register(bus);MENUS.register(bus);
+        BLOCKS.register(bus);ITEMS.register(bus);ENTITIES.register(bus);MENUS.register(bus);RECIPE_SERIALIZERS.register(bus);
         bus.addListener(this::capabilities);
         bus.addListener((net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent e)->{if(e.getTabKey()==CreativeModeTabs.FUNCTIONAL_BLOCKS)ITEMS.getEntries().forEach(i->e.accept(i.get()));});
     }

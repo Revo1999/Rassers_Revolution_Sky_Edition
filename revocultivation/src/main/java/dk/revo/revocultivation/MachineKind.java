@@ -9,8 +9,8 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 
 public enum MachineKind {
-    TREE("tree_grower",1,800,0,0), GREENHOUSE("greenhouse",3,400,1,0), HARVESTER("mob_harvester",3,300,2,0),
-    STEEL_TREE("steel_tree_grower",1,400,0,2), STEEL_HARVESTER("steel_mob_harvester",3,150,2,2), IRON_GREENHOUSE("iron_greenhouse",3,200,1,1);
+    TREE("tree_grower",1,800,0,0), GREENHOUSE("greenhouse",3,400,1,0), HARVESTER("mob_harvester",3,4800,2,0),
+    STEEL_TREE("steel_tree_grower",1,400,0,2), STEEL_HARVESTER("steel_mob_harvester",3,4800,2,2), IRON_GREENHOUSE("iron_greenhouse",3,200,1,1);
     public enum Part { SUPPORT, CASING, CONTROLLER, HATCH, BED, GRATE, GLASS, BARS, FILTER, AIR, POWER, LIGHT, TANK, SOIL }
     public final String id;public final int height,ticks,metal,family;
     private Supplier<? extends Block> controller;

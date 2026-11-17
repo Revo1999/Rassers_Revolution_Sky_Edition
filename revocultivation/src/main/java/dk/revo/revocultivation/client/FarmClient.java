@@ -33,7 +33,7 @@ public final class FarmClient {
                 dk.revo.revolib.client.FarmFluidRenderer.water(machine.getLevel(),machine.at(-machine.kind().radius(),0,0),machine.water.getFluidAmount(),machine.kind().waterCapacity(),pose,buffers,light,overlay,low,high,machine.kind().width()*16);
             }
             if(machine.program()>=0){
-                float progress=Math.clamp((machine.progress()+(machine.state()==1?partial:0))/machine.kind().ticks,0,1);
+                float progress=Math.clamp((machine.progress()+(machine.state()==1?partial:0))/machine.cycleTicks(),0,1);
                 if(machine.kind().realTree()){
                     if(!machine.getLevel().getBlockState(machine.at(0,1,0)).is(Blocks.OAK_LOG)){
                         pose.pushPose();pose.translate(32f/80,16f/80,32f/80);pose.scale(1f/5,1f/5,1f/5);mc.getBlockRenderer().renderSingleBlock(Blocks.OAK_SAPLING.defaultBlockState(),pose,buffers,light,overlay);pose.popPose();

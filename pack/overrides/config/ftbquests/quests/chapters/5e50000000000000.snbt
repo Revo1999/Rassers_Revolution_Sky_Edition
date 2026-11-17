@@ -51,7 +51,8 @@
       "dependencies": [],
       "description": [
         "Craft a vanilla mob egg with its recipe, then surround that egg with eight Iron Bars to craft a mob-specific vanilla Spawner. Insert the Spawner into the controller slot; it is retained, not consumed. The decorative filter no longer cycles species.",
-        "Wooden harvesters accept Zombie, Skeleton, Spider, Cow and Slime programs. Steel adds Blaze, Enderman, Magma Cube, Ghast, Shulker and Wither Skeleton. Shulker and Wither Skeleton still need a retained Netherite Ingot in the hatch. Eggs are recipe ingredients and cannot directly spawn mobs or change a spawner. Placed spawners are disabled and never spawn mobs."
+        "Wooden harvesters accept Zombie, Skeleton, Spider, Cow and Slime programs. Steel adds Blaze, Enderman, Magma Cube, Ghast, Shulker and Wither Skeleton. Shulker and Wither Skeleton still need a retained Netherite Ingot in the hatch. Eggs are recipe ingredients and cannot directly spawn mobs or change a spawner. Placed spawners are disabled and never spawn mobs.",
+        "Standard Spawners take 240 seconds per cycle in every compatible machine. Upgrade one with seven MI Steel Plates and one Electronic Circuit to a Reinforced Spawner: 60 seconds per cycle, Steel Harvester required. Advanced Spawners upgrade Reinforced with six Stainless Steel Plates and two Analog Circuits: 20 seconds per cycle, reserved for a future electric harvester. The chosen mob is preserved. Older tiers remain usable at their own speed; upgrading does not unlock extra species."
       ],
       "tasks": [
         {

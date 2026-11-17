@@ -1,0 +1,32 @@
+{
+  "cyclesTicks": {
+    "standard": 4800,
+    "reinforced": 1200,
+    "advanced": 400
+  },
+  "machineTiers": {
+    "wooden": [
+      1
+    ],
+    "steel": [
+      1,
+      2
+    ],
+    "advanced": "Reserved for future electric harvester"
+  },
+  "upgradeRecipes": "Native dynamic crafting recipes preserve mob block-entity data; seven steel plates + electronic circuit, then six stainless steel plates + two analog circuits.",
+  "nativeGameTests": 26,
+  "validated": [
+    "All eleven supported mobs upgraded through both recipes",
+    "Missing-material rejection",
+    "Mob data preserved exactly",
+    "Standard waits 4800 ticks in wood and steel",
+    "Reinforced waits 1200 ticks in steel",
+    "Higher-tier rejection by controller automation",
+    "Partial-cycle save/reload without truncation",
+    "Tier switch resets unfinished work and preserves completed counters",
+    "Existing inert eggs and placed spawners remain tested"
+  ],
+  "questValidation": "287 quests; identifiers and dependencies preserved",
+  "models": "Existing vanilla spawner model reused; no geometry edits"
+}

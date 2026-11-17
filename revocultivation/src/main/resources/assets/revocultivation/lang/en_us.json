@@ -190,5 +190,12 @@
   "gui.revocultivation.mob_spawner": "Mob spawner",
   "message.revocultivation.spawner_in_controller": "Insert a mob-specific spawner into the controller to choose a program.",
   "tooltip.revocultivation.egg_ingredient": "Crafting ingredient for a mob spawner. Cannot spawn mobs.",
-  "tooltip.revocultivation.spawner_program": "Harvester program: %s (cannot spawn mobs)"
+  "tooltip.revocultivation.spawner_program": "Harvester program: %s (cannot spawn mobs)",
+  "spawner.revocultivation.tier.1": "Standard Spawner",
+  "spawner.revocultivation.tier.2": "Reinforced Spawner",
+  "spawner.revocultivation.tier.3": "Advanced Spawner",
+  "tooltip.revocultivation.spawner_tier": "%s \u2014 %s seconds per cycle",
+  "tooltip.revocultivation.spawner_machine.1": "Wooden and later harvesters",
+  "tooltip.revocultivation.spawner_machine.2": "Steel and later harvesters",
+  "tooltip.revocultivation.spawner_machine.3": "Reserved for a future electric harvester (not available yet)"
 }
