@@ -1,5 +1,7 @@
 {
+  "format_version": "1.9.0",
   "credit": "Made with Blockbench",
+  "render_type": "minecraft:cutout",
   "texture_size": [
     512,
     512
@@ -385,15 +387,6 @@
           ],
           "texture": "#0"
         },
-        "south": {
-          "uv": [
-            1.875,
-            2.71875,
-            2.0625,
-            2.90625
-          ],
-          "texture": "#0"
-        },
         "west": {
           "uv": [
             2.1875,
@@ -491,30 +484,140 @@
           "texture": "#0"
         }
       }
-    }
-  ],
-  "groups": [
+    },
     {
-      "name": "body",
-      "origin": [
-        0,
-        0,
-        0
-      ],
-      "scope": 0,
-      "color": 0,
-      "children": [
-        0,
-        1,
-        2,
-        3,
-        4,
+      "name": "bearing__visible_south_0",
+      "from": [
         5,
-        6
-      ]
+        5,
+        0.96875
+      ],
+      "to": [
+        6,
+        11,
+        1
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          5.5,
+          8,
+          0.984375
+        ]
+      },
+      "faces": {
+        "south": {
+          "uv": [
+            1.875,
+            2.71875,
+            1.90625,
+            2.90625
+          ],
+          "texture": "#0"
+        }
+      }
+    },
+    {
+      "name": "bearing__visible_south_1",
+      "from": [
+        10,
+        5,
+        0.96875
+      ],
+      "to": [
+        11,
+        11,
+        1
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          10.5,
+          8,
+          0.984375
+        ]
+      },
+      "faces": {
+        "south": {
+          "uv": [
+            2.03125,
+            2.71875,
+            2.0625,
+            2.90625
+          ],
+          "texture": "#0"
+        }
+      }
+    },
+    {
+      "name": "bearing__visible_south_2",
+      "from": [
+        6,
+        5,
+        0.96875
+      ],
+      "to": [
+        10,
+        6,
+        1
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          8,
+          5.5,
+          0.984375
+        ]
+      },
+      "faces": {
+        "south": {
+          "uv": [
+            1.90625,
+            2.875,
+            2.03125,
+            2.90625
+          ],
+          "texture": "#0"
+        }
+      }
+    },
+    {
+      "name": "bearing__visible_south_3",
+      "from": [
+        6,
+        10,
+        0.96875
+      ],
+      "to": [
+        10,
+        11,
+        1
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          8,
+          10.5,
+          0.984375
+        ]
+      },
+      "faces": {
+        "south": {
+          "uv": [
+            1.90625,
+            2.71875,
+            2.03125,
+            2.75
+          ],
+          "texture": "#0"
+        }
+      }
     }
   ],
-  "render_type": "minecraft:cutout",
   "display": {
     "gui": {
       "rotation": [
@@ -581,5 +684,30 @@
         0.4
       ]
     }
-  }
+  },
+  "groups": [
+    {
+      "name": "body",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "scope": 0,
+      "color": 0,
+      "children": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    7,
+    8,
+    9,
+    10
+  ]
 }

@@ -1,5 +1,7 @@
 {
+  "format_version": "1.9.0",
   "credit": "Made with Blockbench",
+  "parent": "minecraft:block/block",
   "texture_size": [
     512,
     512
@@ -331,15 +333,6 @@
             0.65625,
             10.09375,
             0.75
-          ],
-          "texture": "#0"
-        },
-        "up": {
-          "uv": [
-            10.1875,
-            0.65625,
-            10.5,
-            1
           ],
           "texture": "#0"
         },
@@ -747,19 +740,100 @@
             0.71875
           ],
           "texture": "#0"
-        },
+        }
+      }
+    },
+    {
+      "name": "bottom_wall__visible_up_0",
+      "from": [
+        3,
+        2.96875,
+        3
+      ],
+      "to": [
+        13,
+        3,
+        12
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          8,
+          2.984375,
+          7.5
+        ]
+      },
+      "faces": {
+        "up": {
+          "uv": [
+            10.1875,
+            0.71875,
+            10.5,
+            1
+          ],
+          "texture": "#0"
+        }
+      }
+    },
+    {
+      "name": "output_lip__visible_up_0",
+      "from": [
+        2,
+        2.97275,
+        -1
+      ],
+      "to": [
+        3,
+        3.004,
+        3
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          2.5,
+          2.988375,
+          1
+        ]
+      },
+      "faces": {
         "up": {
           "uv": [
             13.125,
             0.65625,
-            13.5,
+            13.15625,
             0.78125
           ],
           "texture": "#0"
-        },
-        "down": {
+        }
+      }
+    },
+    {
+      "name": "output_lip__visible_up_1",
+      "from": [
+        13,
+        2.97275,
+        -1
+      ],
+      "to": [
+        14,
+        3.004,
+        3
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          13.5,
+          2.988375,
+          1
+        ]
+      },
+      "faces": {
+        "up": {
           "uv": [
-            13.125,
+            13.46875,
             0.65625,
             13.5,
             0.78125
@@ -767,7 +841,138 @@
           "texture": "#0"
         }
       }
+    },
+    {
+      "name": "output_lip__visible_up_2",
+      "from": [
+        3,
+        2.97275,
+        -1
+      ],
+      "to": [
+        13,
+        3.004,
+        0
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          8,
+          2.988375,
+          -0.5
+        ]
+      },
+      "faces": {
+        "up": {
+          "uv": [
+            13.15625,
+            0.65625,
+            13.46875,
+            0.6875
+          ],
+          "texture": "#0"
+        }
+      }
+    },
+    {
+      "name": "output_lip__visible_up_3",
+      "from": [
+        3,
+        2.97275,
+        1
+      ],
+      "to": [
+        13,
+        3.004,
+        3
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          8,
+          2.988375,
+          2
+        ]
+      },
+      "faces": {
+        "up": {
+          "uv": [
+            13.15625,
+            0.71875,
+            13.46875,
+            0.78125
+          ],
+          "texture": "#0"
+        }
+      }
+    },
+    {
+      "name": "output_lip__visible_down_0",
+      "from": [
+        2,
+        1,
+        -1
+      ],
+      "to": [
+        14,
+        1.03125,
+        0
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          8,
+          1.015625,
+          -0.5
+        ]
+      },
+      "faces": {
+        "down": {
+          "uv": [
+            13.125,
+            0.75,
+            13.5,
+            0.78125
+          ],
+          "texture": "#0"
+        }
+      }
+    },
+    {
+      "name": "output_lip__visible_down_1",
+      "from": [
+        2,
+        1,
+        1
+      ],
+      "to": [
+        14,
+        1.03125,
+        3
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          8,
+          1.015625,
+          2
+        ]
+      },
+      "faces": {
+        "down": {
+          "uv": [
+            13.125,
+            0.65625,
+            13.5,
+            0.71875
+          ],
+          "texture": "#0"
+        }
+      }
     }
-  ],
-  "parent": "minecraft:block/block"
+  ]
 }

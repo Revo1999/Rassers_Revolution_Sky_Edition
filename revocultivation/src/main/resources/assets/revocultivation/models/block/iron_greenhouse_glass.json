@@ -1,5 +1,8 @@
 {
+  "format_version": "1.9.0",
   "credit": "Made with Blockbench",
+  "parent": "minecraft:block/block",
+  "render_type": "minecraft:translucent",
   "texture_size": [
     512,
     512
@@ -247,15 +250,6 @@
           ],
           "texture": "#1"
         },
-        "south": {
-          "uv": [
-            2.09375,
-            2.90625,
-            2.1,
-            3.71875
-          ],
-          "texture": "#1"
-        },
         "west": {
           "uv": [
             4.375,
@@ -298,15 +292,6 @@
         14.2
       ],
       "faces": {
-        "north": {
-          "uv": [
-            2.09375,
-            2.90625,
-            2.1,
-            3.71875
-          ],
-          "texture": "#1"
-        },
         "east": {
           "uv": [
             4.375,
@@ -357,39 +342,21 @@
     {
       "name": "left_glazing_above_tank",
       "from": [
-        1.176,
+        1.18,
         4.992,
-        6.596
+        6.6
       ],
       "to": [
-        1.224,
-        8.404,
-        9.404
+        1.22,
+        8.4,
+        9.4
       ],
       "faces": {
-        "north": {
-          "uv": [
-            5.34375,
-            2.90625,
-            5.35,
-            3.4375
-          ],
-          "texture": "#1"
-        },
         "east": {
           "uv": [
             5.46875,
             2.90625,
             5.90625,
-            3.4375
-          ],
-          "texture": "#1"
-        },
-        "south": {
-          "uv": [
-            5.34375,
-            2.90625,
-            5.35,
             3.4375
           ],
           "texture": "#1"
@@ -768,7 +735,5 @@
         }
       }
     }
-  ],
-  "parent": "minecraft:block/block",
-  "render_type": "minecraft:translucent"
+  ]
 }

@@ -1,5 +1,7 @@
 {
+  "format_version": "1.9.0",
   "credit": "Made with Blockbench",
+  "parent": "minecraft:block/block",
   "texture_size": [
     512,
     512
@@ -441,7 +443,7 @@
       ],
       "to": [
         9.5345,
-        4.079,
+        4.125,
         9.5345
       ],
       "rotation": {
@@ -900,6 +902,5 @@
         }
       }
     }
-  ],
-  "parent": "minecraft:block/block"
+  ]
 }

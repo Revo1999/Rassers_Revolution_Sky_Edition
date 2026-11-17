@@ -1,0 +1,33 @@
+{
+	"format_version": "1.9.0",
+	"credit": "Made with Blockbench",
+	"textures": {
+		"0": "lava_preview"
+	},
+	"elements": [
+		{
+			"name": "liquid_surface",
+			"from": [
+				3,
+				0,
+				3
+			],
+			"to": [
+				13,
+				0.125,
+				13
+			],
+			"faces": {
+				"up": {
+					"uv": [
+						3,
+						3,
+						13,
+						13
+					],
+					"texture": "#0"
+				}
+			}
+		}
+	]
+}

@@ -60,6 +60,7 @@ def main():
         z.write(ROOT/'docs/STARTUP-PERFORMANCE.md','overrides/STARTUP-PERFORMANCE.md')
         z.write(ROOT/'docs/PERFORMANCE-BENCHMARK.md','overrides/PERFORMANCE-BENCHMARK.md')
         z.write(ROOT/'docs/SINGLE-BLOCK-CULTIVATION.md','overrides/SINGLE-BLOCK-CULTIVATION.md')
+        z.write(ROOT/'docs/ALL-MACHINE-MODEL-AUDIT.md','overrides/ALL-MACHINE-MODEL-AUDIT.md')
     with zipfile.ZipFile(output) as z:
         assert z.testzip() is None
         assert len(json.loads(z.read('modrinth.index.json'))['files'])==len(lock['mods'])+1

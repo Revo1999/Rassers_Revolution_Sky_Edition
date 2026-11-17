@@ -5,7 +5,7 @@ intersect. Fluid preview volumes are excluded. Rotated boxes use all 15 OBB
 separating axes, rather than axis-aligned bounds alone.
 """
 from pathlib import Path
-import json,math
+import json,math,sys,copy
 import numpy as np
 R=Path(__file__).resolve().parents[1]
 A=R/'art/blockbench/revoextraction/mechanical-sluice'
@@ -16,6 +16,22 @@ def walk(nodes,parent=None):
         if isinstance(n,str):owner[n]=parent
         else:walk(n.get('children',[]),groups.get(n['uuid'],n).get('name',parent))
 walk(d['outliner'])
+
+if '--runtime' in sys.argv:
+    # Check the actual current exports after their renderer's scale and block
+    # offsets, rather than relying on an older full-assembly editor preview.
+    base=R/'revoextraction/src/main/resources/assets/revoextraction/models/block/sluice'
+    elements=[];owner={}
+    for group in ['body_0','body_1','body_2','feeder','drive','crank','rod','shaker','trough','spring_front','spring_rear']:
+        scale=1 if group.startswith('body_') or group=='feeder' else 3
+        offset=np.array([-8,16 if group=='feeder' else 0,int(group[-1])*16 if group.startswith('body_') else 0])
+        for original in json.loads((base/(group+'.json')).read_text())['elements']:
+            if '__visible_' in original['name']:continue # One-face surface partitions have no solid volume.
+            e=copy.deepcopy(original);e['uuid']=group+'/'+e['name'];owner[e['uuid']]=group
+            for key in ['from','to']:e[key]=(np.array(e[key])*scale+offset).tolist()
+            rot=e.get('rotation',{});e['origin']=(np.array(rot.get('origin',[0,0,0]))*scale+offset).tolist();e['rotation']=[0,0,0];e['rotation']['xyz'.index(rot.get('axis','x'))]=rot.get('angle',0)
+            elements.append(e)
+    d={'elements':elements}
 def rx(a):
     c,s=math.cos(a),math.sin(a)
     return np.array([[1,0,0],[0,c,-s],[0,s,c]],float)
@@ -71,6 +87,6 @@ for step in range(129):
 report={'result':'PASS' if not conflicts else 'FAIL','samples':129,'solid_elements':len(elements),
         'scope':'Separate moving assemblies; full oriented-box SAT. Touches under 0.025 units excluded. Rigid internal joints and fluid volumes excluded.',
         'conflicts':[{'parts':list(names),**info} for names,info in sorted(conflicts.items())]}
-(A/'clearance-report.json').write_text(json.dumps(report,indent=2)+'\n')
+(R/'docs/sluice-runtime-clearance.json' if '--runtime' in sys.argv else A/'clearance-report.json').write_text(json.dumps(report,indent=2)+'\n')
 print(json.dumps(report,indent=2))
 raise SystemExit(bool(conflicts))

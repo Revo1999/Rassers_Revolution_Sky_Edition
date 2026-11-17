@@ -31,7 +31,7 @@ public final class SalternClient implements BlockEntityRenderer<SalternControlle
     public void render(SalternController c,float partial,PoseStack pose,MultiBufferSource buffers,int light,int overlay){
         if(c.status()==0)return;var p=c.at(0,1,1);pose.pushPose();pose.translate(p.getX()-c.getBlockPos().getX(),1,p.getZ()-c.getBlockPos().getZ());
         int innerLight=LightTexture.FULL_BRIGHT;
-        var opaque=RenderType.entityCutoutNoCull(net.minecraft.client.renderer.texture.TextureAtlas.LOCATION_BLOCKS);
+        var opaque=RenderType.entityCutout(net.minecraft.client.renderer.texture.TextureAtlas.LOCATION_BLOCKS);
         draw("geode_rock_bed",pose,buffers,opaque,light,overlay,1,1,1);
         draw("geode_electrodes",pose,buffers,opaque,light,overlay,1,1,1);
         if(c.activeBatch()){

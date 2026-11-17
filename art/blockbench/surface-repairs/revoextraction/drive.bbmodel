@@ -1,0 +1,284 @@
+{
+	"meta": {
+		"format_version": "5.0",
+		"model_format": "java_block",
+		"box_uv": false
+	},
+	"name": "drive",
+	"model_identifier": "",
+	"visible_box": [
+		1,
+		1,
+		0
+	],
+	"resolution": {
+		"width": 16,
+		"height": 16
+	},
+	"elements": [
+		{
+			"uuid": "ad803e54-b538-4c2e-a6b2-e49a8bdba06b",
+			"name": "transverse_shaft",
+			"origin": [
+				2.66667,
+				2.66667,
+				2.66667
+			],
+			"color": 0,
+			"type": "cube",
+			"from": [
+				0,
+				2,
+				2
+			],
+			"to": [
+				5.33333,
+				3.33333,
+				3.33333
+			],
+			"box_uv": false,
+			"faces": {
+				"north": {
+					"uv": [
+						6,
+						0,
+						10,
+						16
+					],
+					"texture": 0
+				},
+				"east": {
+					"uv": [
+						6,
+						6,
+						10,
+						10
+					],
+					"texture": 1
+				},
+				"south": {
+					"uv": [
+						6,
+						0,
+						10,
+						16
+					],
+					"texture": 0
+				},
+				"west": {
+					"uv": [
+						6,
+						6,
+						10,
+						10
+					],
+					"texture": 1
+				},
+				"up": {
+					"uv": [
+						6,
+						0,
+						10,
+						16
+					],
+					"texture": 0
+				},
+				"down": {
+					"uv": [
+						6,
+						0,
+						10,
+						16
+					],
+					"texture": 0
+				}
+			},
+			"rescale": false,
+			"locked": false,
+			"render_order": "default",
+			"allow_mirror_modeling": true,
+			"autouv": 0,
+			"rotation_axis": "y"
+		},
+		{
+			"uuid": "e3789d83-7006-4999-a7c8-a8395a2cb796",
+			"name": "crank_axle",
+			"origin": [
+				2.66667,
+				2.66667,
+				2.66667
+			],
+			"color": 1,
+			"type": "cube",
+			"from": [
+				-1,
+				2.16667,
+				2.16667
+			],
+			"to": [
+				0,
+				3.16667,
+				3.16667
+			],
+			"box_uv": false,
+			"faces": {
+				"north": {
+					"uv": [
+						6,
+						0,
+						10,
+						3
+					],
+					"texture": 0
+				},
+				"east": {
+					"uv": [
+						6,
+						6,
+						10,
+						10
+					],
+					"texture": 1
+				},
+				"south": {
+					"uv": [
+						6,
+						0,
+						10,
+						3
+					],
+					"texture": 0
+				},
+				"west": {
+					"uv": [
+						0,
+						0,
+						0,
+						0
+					],
+					"texture": null
+				},
+				"up": {
+					"uv": [
+						6,
+						0,
+						10,
+						3
+					],
+					"texture": 0
+				},
+				"down": {
+					"uv": [
+						6,
+						0,
+						10,
+						3
+					],
+					"texture": 0
+				}
+			},
+			"rescale": false,
+			"locked": false,
+			"render_order": "default",
+			"allow_mirror_modeling": true,
+			"autouv": 0,
+			"rotation_axis": "y"
+		}
+	],
+	"groups": [],
+	"outliner": [
+		"ad803e54-b538-4c2e-a6b2-e49a8bdba06b",
+		"e3789d83-7006-4999-a7c8-a8395a2cb796"
+	],
+	"textures": [
+		{
+			"uuid": "6905d005-f9bd-4b29-aa28-af5c70e30638",
+			"name": "axis.png",
+			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAm0lEQVR4nKVTywoCMQycLQtp8CNkf2vBrxP222Tvkua0kkovaiLGuaSQB5OZdIKD9bIe52WByB37bcd23aZPdcUbULn2ZuZTf3sobgaAqoKZoxK4A6hSjyKCJi3HgIg6g2iF2Uto0zc26RUilIiBrfANxUsM4dIuGOwGXvX46ZAG0jYOpC6R/nXh2Wx/ISniEC7NwIQzF4xFJOID41Q9Nz8D7FkAAAAASUVORK5CYII=",
+			"path": "C:/Users/victo/Desktop/AssetForge/models/revo-geometry-audit/input/assets/create/textures/block/axis.png",
+			"width": 16,
+			"height": 16,
+			"uv_width": 16,
+			"uv_height": 16,
+			"folder": "block",
+			"namespace": "create",
+			"id": "1",
+			"particle": false,
+			"use_as_default": false,
+			"layers_enabled": false,
+			"sync_to_project": "",
+			"render_mode": "default",
+			"render_sides": "auto",
+			"frame_time": 1,
+			"frame_order_type": "loop",
+			"frame_order": "",
+			"frame_interpolate": false,
+			"visible": true,
+			"internal": true,
+			"saved": true
+		},
+		{
+			"uuid": "12ea86e9-475b-4853-86b5-14f03e5a4846",
+			"name": "axis_top.png",
+			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAVElEQVR4nGNgGAUDDxhxSSSlJf0Xl5Bk+P79K8Onj58Y5s2ah1UtCy4DQJrFJMQYPn/8zMDJyY3TBUy4JEA2gzR///4dzCbZgE8fP8E1g9ijYDADAIZkJH6KGLW9AAAAAElFTkSuQmCC",
+			"path": "C:/Users/victo/Desktop/AssetForge/models/revo-geometry-audit/input/assets/create/textures/block/axis_top.png",
+			"width": 16,
+			"height": 16,
+			"uv_width": 16,
+			"uv_height": 16,
+			"folder": "block",
+			"namespace": "create",
+			"id": "16",
+			"particle": false,
+			"use_as_default": false,
+			"layers_enabled": false,
+			"sync_to_project": "",
+			"render_mode": "default",
+			"render_sides": "auto",
+			"frame_time": 1,
+			"frame_order_type": "loop",
+			"frame_order": "",
+			"frame_interpolate": false,
+			"visible": true,
+			"internal": true,
+			"saved": true
+		},
+		{
+			"uuid": "dae1e318-5b5e-459a-9411-9bc62e23b782",
+			"name": "andesite_casing.png",
+			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABiElEQVR4nHVS3U7CMBQ+kEG7OVYkxkCIN0YvfQJvTAyXJhKfwRfxIXwZX8RLo6KECLLixgommK/jlE7jl2znp+c7Pf3a2vXNcNNuJ8SQYUjFcumsnwf83NPzKwUgH5+cUveoR4lKSKeaMv1Fe0ls4/eXN1qkC0tADdYA5OZzTQEvPNzfuc6NqEFCRC42Jqd1vqbHqGFj+P3zofXr+GEnIN5X1O8q6ytBzh4mkW0Ky407nYNdA51qW4DijortDpFsloUqth/7jJZqlQ1kGLpz/QZPwWM3g42LoYGUgupQFYIBvKuPwqwqxJ5q2mlnsw8qClPVgAlAXlQtSKvvmqtzGsgwtFeFEf1ifyKfyDWMun8EH0xmiw14Ovg4gpuAkRoiKUoCW+zIGnAOE+IITsRsewtQ3RcMBDT14ccQMfizOM3KEdPd1Y6nWan8Nod1hm3Abx1PdvRZLk507l4dfJAmlDsia2AbIDi7uq2Mihxfle/7ZKB2MbjctJPyHRhjSAjv+f2TY4zGY/oB6krKUYIFjHgAAAAASUVORK5CYII=",
+			"path": "C:/Users/victo/Desktop/AssetForge/models/revo-geometry-audit/input/assets/create/textures/block/andesite_casing.png",
+			"width": 16,
+			"height": 16,
+			"uv_width": 16,
+			"uv_height": 16,
+			"folder": "block",
+			"namespace": "create",
+			"id": "particle",
+			"particle": true,
+			"use_as_default": false,
+			"layers_enabled": false,
+			"sync_to_project": "",
+			"render_mode": "default",
+			"render_sides": "auto",
+			"frame_time": 1,
+			"frame_order_type": "loop",
+			"frame_order": "",
+			"frame_interpolate": false,
+			"visible": true,
+			"internal": true,
+			"saved": true
+		}
+	],
+	"parent": "minecraft:block/block",
+	"java_block_version": "26.3",
+	"credit": "Made with Blockbench",
+	"variable_placeholders": "",
+	"variable_placeholder_buttons": [],
+	"timeline_setups": [],
+	"unhandled_root_fields": {
+		"render_type": "minecraft:cutout"
+	},
+	"ai_used": true,
+	"ai_agents": "codex-mcp-client"
+}

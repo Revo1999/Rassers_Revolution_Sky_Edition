@@ -1,0 +1,214 @@
+{
+  "scope": "All shipped Revo model JSON, plus explicitly transformed renderer/blueprint assemblies. No graphical Minecraft session or shader verification is claimed.",
+  "models": {
+    "revoachievements": {
+      "files": 2,
+      "geometryFiles": 0,
+      "renderedFaces": 0
+    },
+    "revocultivation": {
+      "files": 116,
+      "geometryFiles": 66,
+      "renderedFaces": 4465
+    },
+    "revoextraction": {
+      "files": 82,
+      "geometryFiles": 43,
+      "renderedFaces": 5242
+    },
+    "revogenetics": {
+      "files": 2,
+      "geometryFiles": 0,
+      "renderedFaces": 0
+    },
+    "revoindustry": {
+      "files": 246,
+      "geometryFiles": 92,
+      "renderedFaces": 1766
+    },
+    "revostorage": {
+      "files": 4,
+      "geometryFiles": 2,
+      "renderedFaces": 174
+    }
+  },
+  "assemblies": [
+    {
+      "name": "wooden drill",
+      "samples": 36,
+      "exactCrossPartPairs": 0
+    },
+    {
+      "name": "iron drill",
+      "samples": 36,
+      "exactCrossPartPairs": 0
+    },
+    {
+      "name": "steel drill",
+      "samples": 36,
+      "exactCrossPartPairs": 0
+    },
+    {
+      "name": "electric drill fan",
+      "samples": 36,
+      "exactCrossPartPairs": 0
+    },
+    {
+      "name": "greenhouse",
+      "samples": 1,
+      "exactCrossPartPairs": 0
+    },
+    {
+      "name": "tree_grower",
+      "samples": 1,
+      "exactCrossPartPairs": 0
+    },
+    {
+      "name": "mob_harvester",
+      "samples": 1,
+      "exactCrossPartPairs": 0
+    },
+    {
+      "name": "iron_greenhouse",
+      "samples": 1,
+      "exactCrossPartPairs": 0
+    },
+    {
+      "name": "steel_tree_grower",
+      "samples": 1,
+      "exactCrossPartPairs": 0
+    },
+    {
+      "name": "steel_mob_harvester",
+      "samples": 1,
+      "exactCrossPartPairs": 0
+    },
+    {
+      "name": "mechanical sluice: feeder, three bodies and seven moving parts",
+      "samples": 36,
+      "exactCrossPartPairs": 0
+    },
+    {
+      "name": "saline geode: bed + electrodes + growing crystals",
+      "samples": 5,
+      "exactCrossPartPairs": 0
+    },
+    {
+      "name": "wither hatchery: rocking egg + three roof lamps",
+      "samples": 240,
+      "exactCrossPartPairs": 0,
+      "floorClearance": 0.4497,
+      "ceilingClearance": 29.952
+    },
+    {
+      "name": "primitive water/lava vessels",
+      "samples": 2,
+      "exactCrossPartPairs": 0,
+      "exposedFacesPerFluid": 1
+    },
+    {
+      "name": "composter body + contents",
+      "samples": 16,
+      "exactCrossPartPairs": 0
+    },
+    {
+      "name": "silkworm_cultivator body + contents",
+      "samples": 16,
+      "exactCrossPartPairs": 0
+    },
+    {
+      "name": "pressure_casting_plant blueprint",
+      "samples": 1,
+      "exactCrossPartPairs": 0,
+      "placedCells": 161,
+      "externalMiCells": 8
+    },
+    {
+      "name": "electroplating_line blueprint",
+      "samples": 1,
+      "exactCrossPartPairs": 0,
+      "placedCells": 199,
+      "externalMiCells": 9
+    },
+    {
+      "name": "particle_collider blueprint",
+      "samples": 1,
+      "exactCrossPartPairs": 0,
+      "placedCells": 784,
+      "externalMiCells": 8
+    },
+    {
+      "name": "nexus_portal blueprint",
+      "samples": 1,
+      "exactCrossPartPairs": 0,
+      "placedCells": 814,
+      "externalMiCells": 5
+    },
+    {
+      "name": "nexus_builder blueprint",
+      "samples": 1,
+      "exactCrossPartPairs": 0,
+      "placedCells": 4,
+      "externalMiCells": 3
+    }
+  ],
+  "failures": [],
+  "reviewedNearPlanes": [
+    {
+      "model": "revoextraction/src/main/resources/assets/revoextraction/models/block/steel_drill_body.json",
+      "a": [
+        59,
+        "coolant_external_port",
+        "east"
+      ],
+      "b": [
+        53,
+        "reservoir_outer_glass",
+        "east"
+      ],
+      "gap": 0.05,
+      "area": 1.777778,
+      "a_area": 1.777778,
+      "b_area": 15.0
+    },
+    {
+      "model": "revoextraction/src/main/resources/assets/revoextraction/models/block/steel_drill_body.json",
+      "a": [
+        63,
+        "spray_nozzle_13",
+        "west"
+      ],
+      "b": [
+        54,
+        "reservoir_inner_glass",
+        "west"
+      ],
+      "gap": 0.05,
+      "area": 0.666667,
+      "a_area": 0.666667,
+      "b_area": 15.0
+    }
+  ],
+  "outOfScopeFindings": [
+    {
+      "model": "revoindustry/src/main/resources/assets/revoindustry/models/item/elite_feeding_helmet.json",
+      "a": [
+        13,
+        "left_storage_pod",
+        "east"
+      ],
+      "b": [
+        22,
+        "left_temple_plate",
+        "east"
+      ],
+      "gap": 0.004,
+      "area": 0.88,
+      "a_area": 11.88,
+      "b_area": 6.4,
+      "reason": "Wearable equipment item, not a machine; retained for follow-up."
+    }
+  ],
+  "nativeMcpRepairs": 48,
+  "result": "PASS"
+}

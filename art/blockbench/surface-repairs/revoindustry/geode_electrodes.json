@@ -1,0 +1,373 @@
+{
+	"format_version": "1.9.0",
+	"credit": "Made with Blockbench",
+	"texture_size": [
+		128,
+		128
+	],
+	"textures": {
+		"0": "revoindustry:block/saltern_atlas"
+	},
+	"elements": [
+		{
+			"name": "left_electrode",
+			"from": [
+				0,
+				3,
+				2
+			],
+			"to": [
+				2,
+				13,
+				5
+			],
+			"rotation": {
+				"angle": 0,
+				"axis": "y",
+				"origin": [
+					1,
+					8,
+					3.5
+				]
+			},
+			"faces": {
+				"north": {
+					"uv": [
+						14,
+						0,
+						14.25,
+						1.25
+					],
+					"texture": "#0"
+				},
+				"east": {
+					"uv": [
+						14,
+						0,
+						14.375,
+						1.25
+					],
+					"texture": "#0"
+				},
+				"south": {
+					"uv": [
+						14,
+						0,
+						14.25,
+						1.25
+					],
+					"texture": "#0"
+				},
+				"up": {
+					"uv": [
+						14,
+						0,
+						14.25,
+						0.375
+					],
+					"texture": "#0"
+				},
+				"down": {
+					"uv": [
+						14,
+						0,
+						14.25,
+						0.375
+					],
+					"texture": "#0"
+				}
+			}
+		},
+		{
+			"name": "right_electrode",
+			"from": [
+				14,
+				3,
+				2
+			],
+			"to": [
+				16,
+				13,
+				5
+			],
+			"rotation": {
+				"angle": 0,
+				"axis": "y",
+				"origin": [
+					15,
+					8,
+					3.5
+				]
+			},
+			"faces": {
+				"north": {
+					"uv": [
+						14,
+						0,
+						14.25,
+						1.25
+					],
+					"texture": "#0"
+				},
+				"south": {
+					"uv": [
+						14,
+						0,
+						14.25,
+						1.25
+					],
+					"texture": "#0"
+				},
+				"west": {
+					"uv": [
+						14,
+						0,
+						14.375,
+						1.25
+					],
+					"texture": "#0"
+				},
+				"up": {
+					"uv": [
+						14,
+						0,
+						14.25,
+						0.375
+					],
+					"texture": "#0"
+				},
+				"down": {
+					"uv": [
+						14,
+						0,
+						14.25,
+						0.375
+					],
+					"texture": "#0"
+				}
+			}
+		},
+		{
+			"name": "left_socket",
+			"from": [
+				-0.004,
+				2,
+				1
+			],
+			"to": [
+				3,
+				4,
+				6
+			],
+			"rotation": {
+				"angle": 0,
+				"axis": "y",
+				"origin": [
+					1.5,
+					3,
+					3.5
+				]
+			},
+			"faces": {
+				"north": {
+					"uv": [
+						0,
+						0,
+						0.375,
+						0.25
+					],
+					"texture": "#0"
+				},
+				"east": {
+					"uv": [
+						0,
+						0,
+						0.625,
+						0.25
+					],
+					"texture": "#0"
+				},
+				"south": {
+					"uv": [
+						0,
+						0,
+						0.375,
+						0.25
+					],
+					"texture": "#0"
+				},
+				"west": {
+					"uv": [
+						0,
+						0,
+						0.625,
+						0.25
+					],
+					"texture": "#0"
+				},
+				"up": {
+					"uv": [
+						0,
+						0,
+						0.375,
+						0.625
+					],
+					"texture": "#0"
+				},
+				"down": {
+					"uv": [
+						0,
+						0,
+						0.375,
+						0.625
+					],
+					"texture": "#0"
+				}
+			}
+		},
+		{
+			"name": "right_socket",
+			"from": [
+				13,
+				2,
+				1
+			],
+			"to": [
+				16.004,
+				4,
+				6
+			],
+			"rotation": {
+				"angle": 0,
+				"axis": "y",
+				"origin": [
+					14.5,
+					3,
+					3.5
+				]
+			},
+			"faces": {
+				"north": {
+					"uv": [
+						0,
+						0,
+						0.375,
+						0.25
+					],
+					"texture": "#0"
+				},
+				"east": {
+					"uv": [
+						0,
+						0,
+						0.625,
+						0.25
+					],
+					"texture": "#0"
+				},
+				"south": {
+					"uv": [
+						0,
+						0,
+						0.375,
+						0.25
+					],
+					"texture": "#0"
+				},
+				"west": {
+					"uv": [
+						0,
+						0,
+						0.625,
+						0.25
+					],
+					"texture": "#0"
+				},
+				"up": {
+					"uv": [
+						0,
+						0,
+						0.375,
+						0.625
+					],
+					"texture": "#0"
+				},
+				"down": {
+					"uv": [
+						0,
+						0,
+						0.375,
+						0.625
+					],
+					"texture": "#0"
+				}
+			}
+		},
+		{
+			"name": "left_electrode__visible_west_0",
+			"from": [
+				0,
+				4,
+				2
+			],
+			"to": [
+				0.03125,
+				13,
+				5
+			],
+			"rotation": {
+				"angle": 0,
+				"axis": "y",
+				"origin": [
+					0.015625,
+					8.5,
+					3.5
+				]
+			},
+			"faces": {
+				"west": {
+					"uv": [
+						14,
+						0,
+						14.375,
+						1.125
+					],
+					"texture": "#0"
+				}
+			}
+		},
+		{
+			"name": "right_electrode__visible_east_0",
+			"from": [
+				15.96875,
+				4,
+				2
+			],
+			"to": [
+				16,
+				13,
+				5
+			],
+			"rotation": {
+				"angle": 0,
+				"axis": "y",
+				"origin": [
+					15.984375,
+					8.5,
+					3.5
+				]
+			},
+			"faces": {
+				"east": {
+					"uv": [
+						14,
+						0,
+						14.375,
+						1.125
+					],
+					"texture": "#0"
+				}
+			}
+		}
+	]
+}

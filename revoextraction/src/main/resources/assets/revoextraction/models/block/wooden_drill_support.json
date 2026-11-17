@@ -1,5 +1,7 @@
 {
+  "format_version": "1.9.0",
   "credit": "Made with Blockbench",
+  "render_type": "minecraft:cutout",
   "texture_size": [
     512,
     512
@@ -31,25 +33,7 @@
           ],
           "texture": "#0"
         },
-        "east": {
-          "uv": [
-            7.4375,
-            2.71875,
-            7.9375,
-            3.21875
-          ],
-          "texture": "#0"
-        },
         "south": {
-          "uv": [
-            7.4375,
-            2.71875,
-            7.9375,
-            3.21875
-          ],
-          "texture": "#0"
-        },
-        "west": {
           "uv": [
             7.4375,
             2.71875,
@@ -629,32 +613,338 @@
           "texture": "#0"
         }
       }
-    }
-  ],
-  "groups": [
+    },
     {
-      "name": "body",
-      "origin": [
+      "name": "upright_oak_post__visible_east_0",
+      "from": [
+        15.96875,
+        0,
+        0
+      ],
+      "to": [
+        16,
+        1,
+        16
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          15.984375,
+          0.5,
+          8
+        ]
+      },
+      "faces": {
+        "east": {
+          "uv": [
+            7.4375,
+            3.1875,
+            7.9375,
+            3.21875
+          ],
+          "texture": "#0"
+        }
+      }
+    },
+    {
+      "name": "upright_oak_post__visible_east_1",
+      "from": [
+        15.96875,
+        3,
+        0
+      ],
+      "to": [
+        16,
+        13,
+        16
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          15.984375,
+          8,
+          8
+        ]
+      },
+      "faces": {
+        "east": {
+          "uv": [
+            7.4375,
+            2.8125,
+            7.9375,
+            3.125
+          ],
+          "texture": "#0"
+        }
+      }
+    },
+    {
+      "name": "upright_oak_post__visible_east_2",
+      "from": [
+        15.96875,
+        15,
+        0
+      ],
+      "to": [
+        16,
+        16,
+        16
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          15.984375,
+          15.5,
+          8
+        ]
+      },
+      "faces": {
+        "east": {
+          "uv": [
+            7.4375,
+            2.71875,
+            7.9375,
+            2.75
+          ],
+          "texture": "#0"
+        }
+      }
+    },
+    {
+      "name": "upright_oak_post__visible_east_3",
+      "from": [
+        15.96875,
+        13,
+        0.6
+      ],
+      "to": [
+        16,
+        15,
+        15.4
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          15.984375,
+          14,
+          8
+        ]
+      },
+      "faces": {
+        "east": {
+          "uv": [
+            7.45625,
+            2.75,
+            7.91875,
+            2.8125
+          ],
+          "texture": "#0"
+        }
+      }
+    },
+    {
+      "name": "upright_oak_post__visible_east_4",
+      "from": [
+        15.96875,
+        1,
+        0.6
+      ],
+      "to": [
+        16,
+        3,
+        15.4
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          15.984375,
+          2,
+          8
+        ]
+      },
+      "faces": {
+        "east": {
+          "uv": [
+            7.45625,
+            3.125,
+            7.91875,
+            3.1875
+          ],
+          "texture": "#0"
+        }
+      }
+    },
+    {
+      "name": "upright_oak_post__visible_west_0",
+      "from": [
         0,
         0,
         0
       ],
-      "scope": 0,
-      "color": 0,
-      "children": [
+      "to": [
+        0.03125,
+        1,
+        16
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          0.015625,
+          0.5,
+          8
+        ]
+      },
+      "faces": {
+        "west": {
+          "uv": [
+            7.4375,
+            3.1875,
+            7.9375,
+            3.21875
+          ],
+          "texture": "#0"
+        }
+      }
+    },
+    {
+      "name": "upright_oak_post__visible_west_1",
+      "from": [
+        0,
+        3,
+        0
+      ],
+      "to": [
+        0.03125,
+        13,
+        16
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          0.015625,
+          8,
+          8
+        ]
+      },
+      "faces": {
+        "west": {
+          "uv": [
+            7.4375,
+            2.8125,
+            7.9375,
+            3.125
+          ],
+          "texture": "#0"
+        }
+      }
+    },
+    {
+      "name": "upright_oak_post__visible_west_2",
+      "from": [
+        0,
+        15,
+        0
+      ],
+      "to": [
+        0.03125,
+        16,
+        16
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          0.015625,
+          15.5,
+          8
+        ]
+      },
+      "faces": {
+        "west": {
+          "uv": [
+            7.4375,
+            2.71875,
+            7.9375,
+            2.75
+          ],
+          "texture": "#0"
+        }
+      }
+    },
+    {
+      "name": "upright_oak_post__visible_west_3",
+      "from": [
+        0,
+        13,
+        0.6
+      ],
+      "to": [
+        0.03125,
+        15,
+        15.4
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          0.015625,
+          14,
+          8
+        ]
+      },
+      "faces": {
+        "west": {
+          "uv": [
+            7.45625,
+            2.75,
+            7.91875,
+            2.8125
+          ],
+          "texture": "#0"
+        }
+      }
+    },
+    {
+      "name": "upright_oak_post__visible_west_4",
+      "from": [
         0,
         1,
-        2,
+        0.6
+      ],
+      "to": [
+        0.03125,
         3,
-        4,
-        5,
-        6,
-        7,
-        8
-      ]
+        15.4
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          0.015625,
+          2,
+          8
+        ]
+      },
+      "faces": {
+        "west": {
+          "uv": [
+            7.45625,
+            3.125,
+            7.91875,
+            3.1875
+          ],
+          "texture": "#0"
+        }
+      }
     }
   ],
-  "render_type": "minecraft:cutout",
   "display": {
     "gui": {
       "rotation": [
@@ -721,5 +1011,38 @@
         0.4
       ]
     }
-  }
+  },
+  "groups": [
+    {
+      "name": "body",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "scope": 0,
+      "color": 0,
+      "children": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18
+  ]
 }

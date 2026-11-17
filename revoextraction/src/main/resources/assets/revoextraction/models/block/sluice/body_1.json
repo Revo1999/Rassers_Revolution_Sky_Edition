@@ -1,5 +1,8 @@
 {
+  "format_version": "1.9.0",
   "credit": "Made with Blockbench",
+  "parent": "minecraft:block/block",
+  "render_type": "minecraft:cutout",
   "textures": {
     "1": "create:block/axis",
     "2": "revoextraction:block/sluice/wood",
@@ -472,15 +475,6 @@
             6.6
           ],
           "texture": "#4"
-        },
-        "down": {
-          "uv": [
-            0,
-            0,
-            4.6,
-            6.6
-          ],
-          "texture": "#4"
         }
       }
     },
@@ -539,15 +533,6 @@
             0,
             6.6,
             1
-          ],
-          "texture": "#4"
-        },
-        "up": {
-          "uv": [
-            0,
-            0,
-            4.6,
-            6.6
           ],
           "texture": "#4"
         },
@@ -873,8 +858,270 @@
           "texture": "#3"
         }
       }
+    },
+    {
+      "name": "side_vessel_band_2__visible_down_0",
+      "from": [
+        17.7,
+        2,
+        0.7
+      ],
+      "to": [
+        18,
+        2.03125,
+        7.3
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          17.85,
+          2.015625,
+          4
+        ]
+      },
+      "faces": {
+        "down": {
+          "uv": [
+            0,
+            0,
+            0.3000000000000006,
+            6.6
+          ],
+          "texture": "#4"
+        }
+      }
+    },
+    {
+      "name": "side_vessel_band_2__visible_down_1",
+      "from": [
+        22,
+        2,
+        0.7
+      ],
+      "to": [
+        22.3,
+        2.03125,
+        7.3
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          22.15,
+          2.015625,
+          4
+        ]
+      },
+      "faces": {
+        "down": {
+          "uv": [
+            4.299999999999999,
+            0,
+            4.6,
+            6.6
+          ],
+          "texture": "#4"
+        }
+      }
+    },
+    {
+      "name": "side_vessel_band_2__visible_down_2",
+      "from": [
+        18,
+        2,
+        0.7
+      ],
+      "to": [
+        22,
+        2.03125,
+        1
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          20,
+          2.015625,
+          0.85
+        ]
+      },
+      "faces": {
+        "down": {
+          "uv": [
+            0.3000000000000006,
+            6.3,
+            4.299999999999999,
+            6.6
+          ],
+          "texture": "#4"
+        }
+      }
+    },
+    {
+      "name": "side_vessel_band_2__visible_down_3",
+      "from": [
+        18,
+        2,
+        7
+      ],
+      "to": [
+        22,
+        2.03125,
+        7.3
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          20,
+          2.015625,
+          7.15
+        ]
+      },
+      "faces": {
+        "down": {
+          "uv": [
+            0.3000000000000006,
+            0,
+            4.299999999999999,
+            0.2999999999999997
+          ],
+          "texture": "#4"
+        }
+      }
+    },
+    {
+      "name": "side_vessel_band_10__visible_up_0",
+      "from": [
+        17.7,
+        10.96875,
+        0.7
+      ],
+      "to": [
+        18,
+        11,
+        7.3
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          17.85,
+          10.984375,
+          4
+        ]
+      },
+      "faces": {
+        "up": {
+          "uv": [
+            0,
+            0,
+            0.3000000000000006,
+            6.6
+          ],
+          "texture": "#4"
+        }
+      }
+    },
+    {
+      "name": "side_vessel_band_10__visible_up_1",
+      "from": [
+        22,
+        10.96875,
+        0.7
+      ],
+      "to": [
+        22.3,
+        11,
+        7.3
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          22.15,
+          10.984375,
+          4
+        ]
+      },
+      "faces": {
+        "up": {
+          "uv": [
+            4.299999999999999,
+            0,
+            4.6,
+            6.6
+          ],
+          "texture": "#4"
+        }
+      }
+    },
+    {
+      "name": "side_vessel_band_10__visible_up_2",
+      "from": [
+        18,
+        10.96875,
+        0.7
+      ],
+      "to": [
+        22,
+        11,
+        1
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          20,
+          10.984375,
+          0.85
+        ]
+      },
+      "faces": {
+        "up": {
+          "uv": [
+            0.3000000000000006,
+            0,
+            4.299999999999999,
+            0.30000000000000004
+          ],
+          "texture": "#4"
+        }
+      }
+    },
+    {
+      "name": "side_vessel_band_10__visible_up_3",
+      "from": [
+        18,
+        10.96875,
+        7
+      ],
+      "to": [
+        22,
+        11,
+        7.3
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          20,
+          10.984375,
+          7.15
+        ]
+      },
+      "faces": {
+        "up": {
+          "uv": [
+            0.3000000000000006,
+            6.3,
+            4.299999999999999,
+            6.6
+          ],
+          "texture": "#4"
+        }
+      }
     }
-  ],
-  "parent": "minecraft:block/block",
-  "render_type": "minecraft:cutout"
+  ]
 }

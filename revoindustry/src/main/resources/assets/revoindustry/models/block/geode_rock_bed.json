@@ -1,6 +1,7 @@
 {
   "format_version": "1.9.0",
   "credit": "Made with Blockbench",
+  "render_type": "minecraft:cutout",
   "texture_size": [
     128,
     128
@@ -91,15 +92,6 @@
         15
       ],
       "faces": {
-        "north": {
-          "uv": [
-            10,
-            0,
-            10.375,
-            0.25
-          ],
-          "texture": "#0"
-        },
         "east": {
           "uv": [
             10,
@@ -124,24 +116,6 @@
             0,
             11.75,
             0.25
-          ],
-          "texture": "#0"
-        },
-        "up": {
-          "uv": [
-            10,
-            0,
-            10.375,
-            1.75
-          ],
-          "texture": "#0"
-        },
-        "down": {
-          "uv": [
-            10,
-            0,
-            10.375,
-            1.75
           ],
           "texture": "#0"
         }
@@ -160,15 +134,6 @@
         15
       ],
       "faces": {
-        "north": {
-          "uv": [
-            10,
-            0,
-            10.375,
-            0.25
-          ],
-          "texture": "#0"
-        },
         "east": {
           "uv": [
             10,
@@ -193,24 +158,6 @@
             0,
             11.75,
             0.25
-          ],
-          "texture": "#0"
-        },
-        "up": {
-          "uv": [
-            10,
-            0,
-            10.375,
-            1.75
-          ],
-          "texture": "#0"
-        },
-        "down": {
-          "uv": [
-            10,
-            0,
-            10.375,
-            1.75
           ],
           "texture": "#0"
         }
@@ -353,7 +300,336 @@
           "texture": "#0"
         }
       }
+    },
+    {
+      "name": "left_rock_rim__visible_north_0__assembly",
+      "from": [
+        3,
+        2,
+        1
+      ],
+      "to": [
+        4,
+        4,
+        1.03125
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          3.5,
+          3,
+          1.015625
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            10,
+            0,
+            10.125,
+            0.25
+          ],
+          "texture": "#0"
+        }
+      }
+    },
+    {
+      "name": "left_rock_rim__visible_up_0__assembly",
+      "from": [
+        3,
+        3.96875,
+        1
+      ],
+      "to": [
+        4,
+        4,
+        15
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          3.5,
+          3.984375,
+          8
+        ]
+      },
+      "faces": {
+        "up": {
+          "uv": [
+            10.25,
+            0,
+            10.375,
+            1.75
+          ],
+          "texture": "#0"
+        }
+      }
+    },
+    {
+      "name": "left_rock_rim__visible_up_1__assembly",
+      "from": [
+        1,
+        3.96875,
+        6
+      ],
+      "to": [
+        3,
+        4,
+        15
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          2,
+          3.984375,
+          10.5
+        ]
+      },
+      "faces": {
+        "up": {
+          "uv": [
+            10,
+            0.625,
+            10.25,
+            1.75
+          ],
+          "texture": "#0"
+        }
+      }
+    },
+    {
+      "name": "left_rock_rim__visible_down_0__assembly",
+      "from": [
+        3,
+        2,
+        1
+      ],
+      "to": [
+        4,
+        2.03125,
+        15
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          3.5,
+          2.015625,
+          8
+        ]
+      },
+      "faces": {
+        "down": {
+          "uv": [
+            10.25,
+            0,
+            10.375,
+            1.75
+          ],
+          "texture": "#0"
+        }
+      }
+    },
+    {
+      "name": "left_rock_rim__visible_down_1__assembly",
+      "from": [
+        1,
+        2,
+        6
+      ],
+      "to": [
+        3,
+        2.03125,
+        15
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          2,
+          2.015625,
+          10.5
+        ]
+      },
+      "faces": {
+        "down": {
+          "uv": [
+            10,
+            0,
+            10.25,
+            1.125
+          ],
+          "texture": "#0"
+        }
+      }
+    },
+    {
+      "name": "right_rock_rim__visible_north_0__assembly",
+      "from": [
+        12,
+        2,
+        1
+      ],
+      "to": [
+        13,
+        4,
+        1.03125
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          12.5,
+          3,
+          1.015625
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            10.25,
+            0,
+            10.375,
+            0.25
+          ],
+          "texture": "#0"
+        }
+      }
+    },
+    {
+      "name": "right_rock_rim__visible_up_0__assembly",
+      "from": [
+        12,
+        3.96875,
+        1
+      ],
+      "to": [
+        13,
+        4,
+        15
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          12.5,
+          3.984375,
+          8
+        ]
+      },
+      "faces": {
+        "up": {
+          "uv": [
+            10,
+            0,
+            10.125,
+            1.75
+          ],
+          "texture": "#0"
+        }
+      }
+    },
+    {
+      "name": "right_rock_rim__visible_up_1__assembly",
+      "from": [
+        13,
+        3.96875,
+        6
+      ],
+      "to": [
+        15,
+        4,
+        15
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          14,
+          3.984375,
+          10.5
+        ]
+      },
+      "faces": {
+        "up": {
+          "uv": [
+            10.125,
+            0.625,
+            10.375,
+            1.75
+          ],
+          "texture": "#0"
+        }
+      }
+    },
+    {
+      "name": "right_rock_rim__visible_down_0__assembly",
+      "from": [
+        12,
+        2,
+        1
+      ],
+      "to": [
+        13,
+        2.03125,
+        15
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          12.5,
+          2.015625,
+          8
+        ]
+      },
+      "faces": {
+        "down": {
+          "uv": [
+            10,
+            0,
+            10.125,
+            1.75
+          ],
+          "texture": "#0"
+        }
+      }
+    },
+    {
+      "name": "right_rock_rim__visible_down_1__assembly",
+      "from": [
+        13,
+        2,
+        6
+      ],
+      "to": [
+        15,
+        2.03125,
+        15
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          14,
+          2.015625,
+          10.5
+        ]
+      },
+      "faces": {
+        "down": {
+          "uv": [
+            10.125,
+            0,
+            10.375,
+            1.125
+          ],
+          "texture": "#0"
+        }
+      }
     }
-  ],
-  "render_type": "minecraft:cutout"
+  ]
 }

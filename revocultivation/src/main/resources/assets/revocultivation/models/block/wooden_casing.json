@@ -1,5 +1,8 @@
 {
+  "format_version": "1.9.0",
   "credit": "Revo1999; authored in Blockbench through MCP. Vanilla textures copyright Mojang AB.",
+  "parent": "minecraft:block/block",
+  "render_type": "minecraft:cutout",
   "texture_size": [
     512,
     512
@@ -22,34 +25,7 @@
         16
       ],
       "faces": {
-        "north": {
-          "uv": [
-            0,
-            0,
-            0.5,
-            0.5
-          ],
-          "texture": "#0"
-        },
-        "east": {
-          "uv": [
-            0,
-            0,
-            0.5,
-            0.5
-          ],
-          "texture": "#0"
-        },
         "south": {
-          "uv": [
-            0,
-            0,
-            0.5,
-            0.5
-          ],
-          "texture": "#0"
-        },
-        "west": {
           "uv": [
             0,
             0,
@@ -146,8 +122,270 @@
           "texture": "#0"
         }
       }
+    },
+    {
+      "name": "plank_casing__visible_north_0",
+      "from": [
+        0,
+        0,
+        0
+      ],
+      "to": [
+        16,
+        12,
+        0.03125
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          8,
+          6,
+          0.015625
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0.125,
+            0.5,
+            0.5
+          ],
+          "texture": "#0"
+        }
+      }
+    },
+    {
+      "name": "plank_casing__visible_north_1",
+      "from": [
+        0,
+        14,
+        0
+      ],
+      "to": [
+        16,
+        16,
+        0.03125
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          8,
+          15,
+          0.015625
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            0.5,
+            0.0625
+          ],
+          "texture": "#0"
+        }
+      }
+    },
+    {
+      "name": "plank_casing__visible_east_0",
+      "from": [
+        15.96875,
+        0,
+        0
+      ],
+      "to": [
+        16,
+        12,
+        16
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          15.984375,
+          6,
+          8
+        ]
+      },
+      "faces": {
+        "east": {
+          "uv": [
+            0,
+            0.125,
+            0.5,
+            0.5
+          ],
+          "texture": "#0"
+        }
+      }
+    },
+    {
+      "name": "plank_casing__visible_east_1",
+      "from": [
+        15.96875,
+        14,
+        0
+      ],
+      "to": [
+        16,
+        16,
+        16
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          15.984375,
+          15,
+          8
+        ]
+      },
+      "faces": {
+        "east": {
+          "uv": [
+            0,
+            0,
+            0.5,
+            0.0625
+          ],
+          "texture": "#0"
+        }
+      }
+    },
+    {
+      "name": "plank_casing__visible_east_2",
+      "from": [
+        15.96875,
+        12,
+        0.2
+      ],
+      "to": [
+        16,
+        14,
+        16
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          15.984375,
+          13,
+          8.1
+        ]
+      },
+      "faces": {
+        "east": {
+          "uv": [
+            0,
+            0.0625,
+            0.49375,
+            0.125
+          ],
+          "texture": "#0"
+        }
+      }
+    },
+    {
+      "name": "plank_casing__visible_west_0",
+      "from": [
+        0,
+        0,
+        0
+      ],
+      "to": [
+        0.03125,
+        12,
+        16
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          0.015625,
+          6,
+          8
+        ]
+      },
+      "faces": {
+        "west": {
+          "uv": [
+            0,
+            0.125,
+            0.5,
+            0.5
+          ],
+          "texture": "#0"
+        }
+      }
+    },
+    {
+      "name": "plank_casing__visible_west_1",
+      "from": [
+        0,
+        14,
+        0
+      ],
+      "to": [
+        0.03125,
+        16,
+        16
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          0.015625,
+          15,
+          8
+        ]
+      },
+      "faces": {
+        "west": {
+          "uv": [
+            0,
+            0,
+            0.5,
+            0.0625
+          ],
+          "texture": "#0"
+        }
+      }
+    },
+    {
+      "name": "plank_casing__visible_west_2",
+      "from": [
+        0,
+        12,
+        0.2
+      ],
+      "to": [
+        0.03125,
+        14,
+        16
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          0.015625,
+          13,
+          8.1
+        ]
+      },
+      "faces": {
+        "west": {
+          "uv": [
+            0.00625,
+            0.0625,
+            0.5,
+            0.125
+          ],
+          "texture": "#0"
+        }
+      }
     }
-  ],
-  "parent": "minecraft:block/block",
-  "render_type": "minecraft:cutout"
+  ]
 }

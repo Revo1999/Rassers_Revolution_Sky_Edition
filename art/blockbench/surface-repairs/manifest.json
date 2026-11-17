@@ -1,0 +1,248 @@
+[
+  {
+    "model": "revocultivation/src/main/resources/assets/revocultivation/models/block/barred_panel.json",
+    "source": "art/blockbench/surface-repairs/revocultivation/barred_panel.bbmodel",
+    "textureBindings": {}
+  },
+  {
+    "model": "revocultivation/src/main/resources/assets/revocultivation/models/block/collection_grate.json",
+    "source": "art/blockbench/surface-repairs/revocultivation/collection_grate.bbmodel",
+    "textureBindings": {}
+  },
+  {
+    "model": "revocultivation/src/main/resources/assets/revocultivation/models/block/greenhouse_body.json",
+    "source": "art/blockbench/surface-repairs/revocultivation/greenhouse_body.bbmodel",
+    "textureBindings": {}
+  },
+  {
+    "model": "revocultivation/src/main/resources/assets/revocultivation/models/block/iron_greenhouse_body.json",
+    "source": "art/blockbench/surface-repairs/revocultivation/iron_greenhouse_body.bbmodel",
+    "textureBindings": {}
+  },
+  {
+    "model": "revocultivation/src/main/resources/assets/revocultivation/models/block/iron_grow_light.json",
+    "source": "art/blockbench/surface-repairs/revocultivation/iron_grow_light.bbmodel",
+    "textureBindings": {}
+  },
+  {
+    "model": "revocultivation/src/main/resources/assets/revocultivation/models/block/mob_filter.json",
+    "source": "art/blockbench/surface-repairs/revocultivation/mob_filter.bbmodel",
+    "textureBindings": {}
+  },
+  {
+    "model": "revocultivation/src/main/resources/assets/revocultivation/models/block/mob_harvester_body.json",
+    "source": "art/blockbench/surface-repairs/revocultivation/mob_harvester_body.bbmodel",
+    "textureBindings": {}
+  },
+  {
+    "model": "revocultivation/src/main/resources/assets/revocultivation/models/block/mob_harvester_spider.json",
+    "source": "art/blockbench/surface-repairs/revocultivation/mob_harvester_spider.bbmodel",
+    "textureBindings": {}
+  },
+  {
+    "model": "revocultivation/src/main/resources/assets/revocultivation/models/block/steel_mob_harvester_body.json",
+    "source": "art/blockbench/surface-repairs/revocultivation/steel_mob_harvester_body.bbmodel",
+    "textureBindings": {}
+  },
+  {
+    "model": "revocultivation/src/main/resources/assets/revocultivation/models/block/steel_tree_grower_body.json",
+    "source": "art/blockbench/surface-repairs/revocultivation/steel_tree_grower_body.bbmodel",
+    "textureBindings": {}
+  },
+  {
+    "model": "revocultivation/src/main/resources/assets/revocultivation/models/block/trading_colony.json",
+    "source": "art/blockbench/surface-repairs/revocultivation/trading_colony.bbmodel",
+    "textureBindings": {}
+  },
+  {
+    "model": "revocultivation/src/main/resources/assets/revocultivation/models/block/tree_grower_body.json",
+    "source": "art/blockbench/surface-repairs/revocultivation/tree_grower_body.bbmodel",
+    "textureBindings": {}
+  },
+  {
+    "model": "revocultivation/src/main/resources/assets/revocultivation/models/block/wooden_casing.json",
+    "source": "art/blockbench/surface-repairs/revocultivation/wooden_casing.bbmodel",
+    "textureBindings": {}
+  },
+  {
+    "model": "revoextraction/src/main/resources/assets/revoextraction/models/block/electric_drill.json",
+    "source": "art/blockbench/surface-repairs/revoextraction/electric_drill.bbmodel",
+    "textureBindings": {}
+  },
+  {
+    "model": "revoextraction/src/main/resources/assets/revoextraction/models/block/iron_drill_body.json",
+    "source": "art/blockbench/surface-repairs/revoextraction/iron_drill_body.bbmodel",
+    "textureBindings": {}
+  },
+  {
+    "model": "revoextraction/src/main/resources/assets/revoextraction/models/block/iron_drill_drill_bit.json",
+    "source": "art/blockbench/surface-repairs/revoextraction/iron_drill_drill_bit.bbmodel",
+    "textureBindings": {}
+  },
+  {
+    "model": "revoextraction/src/main/resources/assets/revoextraction/models/block/iron_drill_output_hatch.json",
+    "source": "art/blockbench/surface-repairs/revoextraction/iron_drill_output_hatch.bbmodel",
+    "textureBindings": {}
+  },
+  {
+    "model": "revoextraction/src/main/resources/assets/revoextraction/models/block/sluice/body_0.json",
+    "source": "art/blockbench/surface-repairs/revoextraction/body_0.bbmodel",
+    "textureBindings": {}
+  },
+  {
+    "model": "revoextraction/src/main/resources/assets/revoextraction/models/block/sluice/body_1.json",
+    "source": "art/blockbench/surface-repairs/revoextraction/body_1.bbmodel",
+    "textureBindings": {}
+  },
+  {
+    "model": "revoextraction/src/main/resources/assets/revoextraction/models/block/sluice/body_2.json",
+    "source": "art/blockbench/surface-repairs/revoextraction/body_2.bbmodel",
+    "textureBindings": {}
+  },
+  {
+    "model": "revoextraction/src/main/resources/assets/revoextraction/models/block/sluice/crank.json",
+    "source": "art/blockbench/surface-repairs/revoextraction/crank.bbmodel",
+    "textureBindings": {}
+  },
+  {
+    "model": "revoextraction/src/main/resources/assets/revoextraction/models/block/sluice/feeder.json",
+    "source": "art/blockbench/surface-repairs/revoextraction/feeder.bbmodel",
+    "textureBindings": {}
+  },
+  {
+    "model": "revoextraction/src/main/resources/assets/revoextraction/models/block/sluice/gate.json",
+    "source": "art/blockbench/surface-repairs/revoextraction/gate.bbmodel",
+    "textureBindings": {}
+  },
+  {
+    "model": "revoextraction/src/main/resources/assets/revoextraction/models/block/sluice/rod.json",
+    "source": "art/blockbench/surface-repairs/revoextraction/rod.bbmodel",
+    "textureBindings": {}
+  },
+  {
+    "model": "revoextraction/src/main/resources/assets/revoextraction/models/block/sluice/shaker.json",
+    "source": "art/blockbench/surface-repairs/revoextraction/shaker.bbmodel",
+    "textureBindings": {}
+  },
+  {
+    "model": "revoextraction/src/main/resources/assets/revoextraction/models/block/sluice/trough.json",
+    "source": "art/blockbench/surface-repairs/revoextraction/trough.bbmodel",
+    "textureBindings": {}
+  },
+  {
+    "model": "revoextraction/src/main/resources/assets/revoextraction/models/block/steel_drill_body.json",
+    "source": "art/blockbench/surface-repairs/revoextraction/steel_drill_body.bbmodel",
+    "textureBindings": {}
+  },
+  {
+    "model": "revoextraction/src/main/resources/assets/revoextraction/models/block/steel_drill_core.json",
+    "source": "art/blockbench/surface-repairs/revoextraction/steel_drill_core.bbmodel",
+    "textureBindings": {}
+  },
+  {
+    "model": "revoextraction/src/main/resources/assets/revoextraction/models/block/steel_drill_drill_bit.json",
+    "source": "art/blockbench/surface-repairs/revoextraction/steel_drill_drill_bit.bbmodel",
+    "textureBindings": {}
+  },
+  {
+    "model": "revoextraction/src/main/resources/assets/revoextraction/models/block/wooden_drill_body.json",
+    "source": "art/blockbench/surface-repairs/revoextraction/wooden_drill_body.bbmodel",
+    "textureBindings": {}
+  },
+  {
+    "model": "revoextraction/src/main/resources/assets/revoextraction/models/block/wooden_drill_casing.json",
+    "source": "art/blockbench/surface-repairs/revoextraction/wooden_drill_casing.bbmodel",
+    "textureBindings": {}
+  },
+  {
+    "model": "revoextraction/src/main/resources/assets/revoextraction/models/block/wooden_drill_drill_bit.json",
+    "source": "art/blockbench/surface-repairs/revoextraction/wooden_drill_drill_bit.bbmodel",
+    "textureBindings": {}
+  },
+  {
+    "model": "revoextraction/src/main/resources/assets/revoextraction/models/block/wooden_drill_input.json",
+    "source": "art/blockbench/surface-repairs/revoextraction/wooden_drill_input.bbmodel",
+    "textureBindings": {}
+  },
+  {
+    "model": "revoextraction/src/main/resources/assets/revoextraction/models/block/wooden_drill_output_hatch.json",
+    "source": "art/blockbench/surface-repairs/revoextraction/wooden_drill_output_hatch.bbmodel",
+    "textureBindings": {}
+  },
+  {
+    "model": "revoextraction/src/main/resources/assets/revoextraction/models/block/wooden_drill_support.json",
+    "source": "art/blockbench/surface-repairs/revoextraction/wooden_drill_support.bbmodel",
+    "textureBindings": {}
+  },
+  {
+    "model": "revoextraction/src/main/resources/assets/revoextraction/models/item/mechanical_sluice.json",
+    "source": "art/blockbench/surface-repairs/revoextraction/mechanical_sluice.bbmodel",
+    "textureBindings": {}
+  },
+  {
+    "model": "revoindustry/src/main/resources/assets/revoindustry/models/block/geode_electrodes.json",
+    "source": "art/blockbench/surface-repairs/revoindustry/geode_electrodes.bbmodel",
+    "textureBindings": {}
+  },
+  {
+    "model": "revostorage/src/main/resources/assets/revostorage/models/block/chest_drive.json",
+    "source": "art/blockbench/surface-repairs/revostorage/chest_drive.bbmodel",
+    "textureBindings": {}
+  },
+  {
+    "model": "revoindustry/src/main/resources/assets/revoindustry/models/block/vacuum_1.json",
+    "source": "art/blockbench/surface-repairs/revoindustry/vacuum_1.bbmodel",
+    "textureBindings": {}
+  },
+  {
+    "model": "revoindustry/src/main/resources/assets/revoindustry/models/block/vacuum_2.json",
+    "source": "art/blockbench/surface-repairs/revoindustry/vacuum_2.bbmodel",
+    "textureBindings": {}
+  },
+  {
+    "model": "revoindustry/src/main/resources/assets/revoindustry/models/block/vacuum_3.json",
+    "source": "art/blockbench/surface-repairs/revoindustry/vacuum_3.bbmodel",
+    "textureBindings": {}
+  },
+  {
+    "model": "revoindustry/src/main/resources/assets/revoindustry/models/block/geode_water_volume.json",
+    "source": "art/blockbench/surface-repairs/revoindustry/geode_water_volume.bbmodel",
+    "textureBindings": {
+      "0": "minecraft:block/water_still"
+    }
+  },
+  {
+    "model": "revoindustry/src/main/resources/assets/revoindustry/models/block/primitive_water_surface.json",
+    "source": "art/blockbench/surface-repairs/revoindustry/primitive_water_surface.bbmodel",
+    "textureBindings": {
+      "0": "minecraft:block/water_still"
+    }
+  },
+  {
+    "model": "revoindustry/src/main/resources/assets/revoindustry/models/block/primitive_lava_surface.json",
+    "source": "art/blockbench/surface-repairs/revoindustry/primitive_lava_surface.bbmodel",
+    "textureBindings": {
+      "0": "minecraft:block/lava_still"
+    }
+  },
+  {
+    "model": "revocultivation/src/main/resources/assets/revocultivation/models/block/iron_greenhouse_glass.json",
+    "source": "art/blockbench/surface-repairs/revocultivation/iron_greenhouse_glass.bbmodel",
+    "textureBindings": {}
+  },
+  {
+    "model": "revoextraction/src/main/resources/assets/revoextraction/models/block/iron_drill_core.json",
+    "source": "art/blockbench/surface-repairs/revoextraction/iron_drill_core.bbmodel",
+    "textureBindings": {}
+  },
+  {
+    "model": "revoindustry/src/main/resources/assets/revoindustry/models/block/geode_rock_bed.json",
+    "source": "art/blockbench/surface-repairs/revoindustry/geode_rock_bed.bbmodel",
+    "textureBindings": {}
+  },
+  {
+    "model": "revoextraction/src/main/resources/assets/revoextraction/models/block/sluice/drive.json",
+    "source": "art/blockbench/surface-repairs/revoextraction/drive.bbmodel",
+    "textureBindings": {}
+  }
+]
