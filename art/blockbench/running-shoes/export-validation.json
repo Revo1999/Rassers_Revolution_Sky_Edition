@@ -1,0 +1,66 @@
+{
+  "authoring": "Blockbench MCP",
+  "wearableCubes": 4,
+  "items": [
+    {
+      "color": "white",
+      "cubes": 4,
+      "runtimeSha256": "f612b053366f0a422c8d4581c71cc555f11d278f48d314a7289c5062989e90d0"
+    },
+    {
+      "color": "black",
+      "cubes": 4,
+      "runtimeSha256": "27e6687e17c5df02dde558d09aacab115dac15b01b0ee09cc6835bed56a635bb"
+    },
+    {
+      "color": "brown",
+      "cubes": 4,
+      "runtimeSha256": "561fb453954b91490d30b9e3deda9aa621221cef3d268500fea583a4dba627df"
+    },
+    {
+      "color": "red",
+      "cubes": 4,
+      "runtimeSha256": "da1903bf10127eaec27285941b2e4081eb37354fbb8779bc06748a4e44809012"
+    },
+    {
+      "color": "orange",
+      "cubes": 4,
+      "runtimeSha256": "3ff1d4e051114306b43f66cfdfbc930d65d52fbbcfd70a97382f2845a4a59577"
+    },
+    {
+      "color": "yellow",
+      "cubes": 4,
+      "runtimeSha256": "b5e6ac63da313826e6a04b006109937ae15d77cd6bf96cf9df9a53fef5cf61ff"
+    },
+    {
+      "color": "green",
+      "cubes": 4,
+      "runtimeSha256": "5231460d971463e02c50bb5238aa212622860947415ff3661e992b4c3d48b1f1"
+    },
+    {
+      "color": "cyan",
+      "cubes": 4,
+      "runtimeSha256": "9a279f0cbfd139bffbf71eb59fbd2b9549ced5c4c8b5fb98ab1eae1356570e41"
+    },
+    {
+      "color": "blue",
+      "cubes": 4,
+      "runtimeSha256": "98e7e33a025208303813b64e31fdb05682a53b7b498ef40c3f67eb25d8569e11"
+    },
+    {
+      "color": "purple",
+      "cubes": 4,
+      "runtimeSha256": "07c64bd58243617d625a22f74a23a5b9237befdb1e2ef80317a48a083afc33d3"
+    },
+    {
+      "color": "magenta",
+      "cubes": 4,
+      "runtimeSha256": "9add99510f993bbaeafb62713456ff4ae482c17495ff7d4ffb3cdf48101174a9"
+    },
+    {
+      "color": "pink",
+      "cubes": 4,
+      "runtimeSha256": "7eed87b0e0005ccfc0fea616d213ef5479608802d66f1a3bafffe8d049c1de83"
+    }
+  ]
+}

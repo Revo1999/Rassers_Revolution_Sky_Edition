@@ -28,6 +28,7 @@ public final class FurnaceController extends MultiblockMachineBlockEntity implem
  private final List<FurnaceFuelHatch> fuels=new ArrayList<>();
  private final Job[] jobs=new Job[6];
  private final IsActiveComponent active=new IsActiveComponent();
+ private final RecipeManager.CachedCheck<SingleRecipeInput,SmeltingRecipe> smelting=RecipeManager.createCheck(RecipeType.SMELTING);
  private ShapeTemplate shape;private float experience;private String status="Incomplete structure";private long consumedHeat;
  public FurnaceController(BEP bep,FurnaceTier tier){
   super(bep,new MachineGuiParameters.Builder(Furnaces.id(tier.id+"_multiblock_furnace"),false).backgroundHeight(240).build(),new OrientationComponent.Params(false,false,false));this.tier=tier;
@@ -92,7 +93,7 @@ public final class FurnaceController extends MultiblockMachineBlockEntity implem
  private Job startJob(){
   for(var slot:inventory.getItemInputs()){
    var stack=slot.toStack();if(stack.isEmpty())continue;
-   var recipe=level.getRecipeManager().getRecipeFor(RecipeType.SMELTING,new SingleRecipeInput(stack),level);if(recipe.isEmpty())continue;
+   var recipe=smelting.getRecipeFor(new SingleRecipeInput(stack),level);if(recipe.isEmpty())continue;
    var value=recipe.get().value();var result=value.assemble(new SingleRecipeInput(stack),level.registryAccess());if(result.isEmpty())continue;
    int amount=(int)Math.min(Math.min(tier.batch(),slot.getAmount()),result.getMaxStackSize()/result.getCount());
    while(amount>0&&!canFit(result.copyWithCount(result.getCount()*amount)))amount--;
@@ -100,13 +101,14 @@ public final class FurnaceController extends MultiblockMachineBlockEntity implem
    var job=new Job();job.input=stack.copyWithCount(amount);job.output=result.copyWithCount(result.getCount()*amount);job.recipe=recipe.get().id();job.duration=tier.duration(value.getCookingTime());job.totalHeat=(long)value.getCookingTime()*amount;job.experience=value.getExperience();slot.decrement(amount);return job;
   }return null;
  }
- private boolean valid(Job j){var holder=level.getRecipeManager().byKey(j.recipe);if(holder.isEmpty()||!(holder.get().value() instanceof SmeltingRecipe r)||!r.matches(new SingleRecipeInput(j.input),level))return false;var output=r.assemble(new SingleRecipeInput(j.input),level.registryAccess());return !output.isEmpty()&&ItemStack.isSameItemSameComponents(output,j.output)&&output.getCount()*j.input.getCount()==j.output.getCount();}
+ private boolean valid(Job j){var holder=level.getRecipeManager().byKey(j.recipe);if(holder.isEmpty())return false;if(holder.get()==j.validatedRecipe)return true;if(!(holder.get().value() instanceof SmeltingRecipe r)||!r.matches(new SingleRecipeInput(j.input),level))return false;var output=r.assemble(new SingleRecipeInput(j.input),level.registryAccess());boolean valid=!output.isEmpty()&&ItemStack.isSameItemSameComponents(output,j.output)&&output.getCount()*j.input.getCount()==j.output.getCount();if(valid)j.validatedRecipe=holder.get();return valid;}
  private boolean canFit(ItemStack stack){var key=ItemVariant.of(stack);long left=stack.getCount();for(var slot:inventory.getItemOutputs())if(slot.isResourceAllowedByLock(key)&&(slot.isEmpty()||slot.getResource().equals(key))){left-=Math.max(0,slot.getRemainingCapacityFor(key));if(left<=0)return true;}return false;}
  private void insert(ItemStack stack){var key=ItemVariant.of(stack);long left=stack.getCount();for(var slot:inventory.getItemOutputs())if(slot.isResourceAllowedByLock(key)&&(slot.isEmpty()||slot.getResource().equals(key))){long amount=Math.min(left,Math.max(0,slot.getRemainingCapacityFor(key)));if(amount>0){slot.setKey(key);slot.increment(amount);left-=amount;}if(left==0)return;}throw new IllegalStateException("Output reservation invalidated during atomic furnace completion");}
  private void claimExperience(){if(level instanceof ServerLevel server&&experience>0){int amount=(int)experience;if(level.random.nextFloat()<experience-amount)amount++;experience=0;ExperienceOrb.award(server,worldPosition.getCenter(),amount);setChanged();}}
  @Override public void openMenu(ServerPlayer player){claimExperience();super.openMenu(player);}
  @Override public List<ItemStack> dropExtra(){var drops=new ArrayList<>(super.dropExtra());for(int i=0;i<jobs.length;i++)if(jobs[i]!=null){drops.add(jobs[i].input.copy());jobs[i]=null;}claimExperience();return drops;}
  private static final class Job{
+  RecipeHolder<?> validatedRecipe;
   ItemStack input=ItemStack.EMPTY,output=ItemStack.EMPTY;ResourceLocation recipe;int progress,duration;long totalHeat,paid;float experience;
   CompoundTag save(HolderLookup.Provider r){var n=new CompoundTag();n.put("Input",input.save(r));n.put("Output",output.save(r));n.putString("Recipe",recipe.toString());n.putInt("Progress",progress);n.putInt("Duration",duration);n.putLong("TotalHeat",totalHeat);n.putLong("PaidHeat",paid);n.putFloat("Experience",experience);return n;}
   static Job load(CompoundTag n,HolderLookup.Provider r){var j=new Job();j.input=ItemStack.parseOptional(r,n.getCompound("Input"));j.output=ItemStack.parseOptional(r,n.getCompound("Output"));j.recipe=ResourceLocation.tryParse(n.getString("Recipe"));j.duration=Math.max(1,n.getInt("Duration"));j.progress=Math.clamp(n.getInt("Progress"),0,j.duration-1);j.totalHeat=Math.max(1,n.getLong("TotalHeat"));j.paid=Math.clamp(n.getLong("PaidHeat"),0,j.totalHeat);j.experience=Math.max(0,n.getFloat("Experience"));return j.recipe==null||j.input.isEmpty()||j.output.isEmpty()?null:j;}

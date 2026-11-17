@@ -1,0 +1,31 @@
+{
+  "status": "art-and-design-only; no gameplay registration",
+  "placedBlocks": 814,
+  "dimensions": {
+    "x": 21,
+    "y": 19,
+    "z": 11
+  },
+  "individualBlockModels": 28,
+  "java1211CompatibleExports": 28,
+  "uniquePositions": true,
+  "individualBlockBounds": [
+    0,
+    16
+  ],
+  "connectedRailBlocks": 51,
+  "directionalRailArms": 106,
+  "railCornerEndAndTowerChecks": true,
+  "decorativeBlockTypes": 6,
+  "animatedGroups": [
+    "portal_vortex"
+  ],
+  "previewLoopSeconds": 16,
+  "previewDegreesPerSecond": 22.5,
+  "previewLoopSeamContinuous": true,
+  "portalFaceSeparationBlocks": 0.015625,
+  "textureLoopSeconds": 9.6,
+  "textureInterpolation": true,
+  "wholeStructureTransformation": false,
+  "portalModelSha256": "2ec07f7341ae6e121b8f367cc39df77d98a4ef5c7867ee997c0e91fd07fe27d4"
+}

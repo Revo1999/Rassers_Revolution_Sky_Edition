@@ -1,0 +1,534 @@
+{
+  "meta": {
+    "format_version": "5.0",
+    "model_format": "java_block",
+    "box_uv": false
+  },
+  "name": "pink_running_shoes",
+  "model_identifier": "",
+  "visible_box": [
+    1,
+    1,
+    0
+  ],
+  "resolution": {
+    "width": 64,
+    "height": 64
+  },
+  "elements": [
+    {
+      "uuid": "25866a91-d78e-4e7a-b144-e5d539a38767",
+      "name": "right_shoe_sole",
+      "origin": [
+        3.85,
+        0.5,
+        6
+      ],
+      "color": 0,
+      "type": "cube",
+      "from": [
+        1.6,
+        0,
+        2.5
+      ],
+      "to": [
+        6.1,
+        1,
+        9.5
+      ],
+      "box_uv": true,
+      "uv_offset": [
+        0,
+        12
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            7,
+            19,
+            11,
+            20
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            0,
+            19,
+            7,
+            20
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            18,
+            19,
+            22,
+            20
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            11,
+            19,
+            18,
+            20
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            11,
+            19,
+            7,
+            12
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            15,
+            12,
+            11,
+            19
+          ],
+          "texture": 0
+        }
+      },
+      "rescale": false,
+      "locked": false,
+      "light_emission": 0,
+      "render_order": "default",
+      "allow_mirror_modeling": true,
+      "autouv": 0
+    },
+    {
+      "uuid": "8907ffd9-8ddd-47f2-a853-ce28968611c7",
+      "name": "right_shoe_upper",
+      "origin": [
+        3.85,
+        2,
+        6
+      ],
+      "color": 0,
+      "type": "cube",
+      "from": [
+        1.85,
+        1,
+        3
+      ],
+      "to": [
+        5.85,
+        3,
+        9
+      ],
+      "box_uv": true,
+      "uv_offset": [
+        0,
+        24
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            6,
+            30,
+            10,
+            32
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            0,
+            30,
+            6,
+            32
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            16,
+            30,
+            20,
+            32
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            10,
+            30,
+            16,
+            32
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            10,
+            30,
+            6,
+            24
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            14,
+            24,
+            10,
+            30
+          ],
+          "texture": 0
+        }
+      },
+      "rescale": false,
+      "locked": false,
+      "light_emission": 0,
+      "render_order": "default",
+      "allow_mirror_modeling": true,
+      "autouv": 0
+    },
+    {
+      "uuid": "f125cc8e-23ce-45b2-8515-4bab92741e2a",
+      "name": "left_shoe_sole",
+      "origin": [
+        11.35,
+        0.5,
+        6
+      ],
+      "color": 0,
+      "type": "cube",
+      "from": [
+        9.1,
+        0,
+        2.5
+      ],
+      "to": [
+        13.6,
+        1,
+        9.5
+      ],
+      "box_uv": true,
+      "uv_offset": [
+        0,
+        12
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            7,
+            19,
+            11,
+            20
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            0,
+            19,
+            7,
+            20
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            18,
+            19,
+            22,
+            20
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            11,
+            19,
+            18,
+            20
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            11,
+            19,
+            7,
+            12
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            15,
+            12,
+            11,
+            19
+          ],
+          "texture": 0
+        }
+      },
+      "rescale": false,
+      "locked": false,
+      "light_emission": 0,
+      "render_order": "default",
+      "allow_mirror_modeling": true,
+      "autouv": 0
+    },
+    {
+      "uuid": "ee06f4ce-099d-4e6c-9a68-681040118443",
+      "name": "left_shoe_upper",
+      "origin": [
+        11.35,
+        2,
+        6
+      ],
+      "color": 0,
+      "type": "cube",
+      "from": [
+        9.35,
+        1,
+        3
+      ],
+      "to": [
+        13.35,
+        3,
+        9
+      ],
+      "box_uv": true,
+      "uv_offset": [
+        0,
+        24
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            6,
+            30,
+            10,
+            32
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            0,
+            30,
+            6,
+            32
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            16,
+            30,
+            20,
+            32
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            10,
+            30,
+            16,
+            32
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            10,
+            30,
+            6,
+            24
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            14,
+            24,
+            10,
+            30
+          ],
+          "texture": 0
+        }
+      },
+      "rescale": false,
+      "locked": false,
+      "light_emission": 0,
+      "render_order": "default",
+      "allow_mirror_modeling": true,
+      "autouv": 0
+    }
+  ],
+  "groups": [
+    {
+      "uuid": "8389eb04-e6e6-4f26-a42f-b899813c08ba",
+      "name": "right_shoe",
+      "origin": [
+        3.85,
+        0,
+        7
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true,
+      "visibility": true,
+      "mirror_uv": false,
+      "reset": false,
+      "color": 0,
+      "autouv": 0,
+      "shade": true,
+      "locked": false
+    },
+    {
+      "uuid": "1e41ee7e-9e8f-4378-9102-96d0d11ec5d7",
+      "name": "left_shoe",
+      "origin": [
+        11.35,
+        0,
+        7
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true,
+      "visibility": true,
+      "mirror_uv": false,
+      "reset": false,
+      "color": 0,
+      "autouv": 0,
+      "shade": true,
+      "locked": false
+    }
+  ],
+  "outliner": [
+    {
+      "uuid": "8389eb04-e6e6-4f26-a42f-b899813c08ba",
+      "isOpen": false,
+      "children": [
+        "25866a91-d78e-4e7a-b144-e5d539a38767",
+        "8907ffd9-8ddd-47f2-a853-ce28968611c7"
+      ]
+    },
+    {
+      "uuid": "1e41ee7e-9e8f-4378-9102-96d0d11ec5d7",
+      "isOpen": false,
+      "children": [
+        "f125cc8e-23ce-45b2-8515-4bab92741e2a",
+        "ee06f4ce-099d-4e6c-9a68-681040118443"
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "uuid": "65c79131-ddb1-4035-9cc3-f158c189ce8c",
+      "name": "pink_layer_1.png",
+      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABTElEQVR4nO3Xv0rEQBAG8C/DVleKh4ixUbnmEME/lYhcYy1213pPcJytj2Bzve/gG4iglVqIeIWohQQsFMtrT7Joo0eI8WR2me8HmyHJws7AZJMkyxvbIyi5vTxLoExgnMA4yQ+zc/N+fPnv85AIjBMYJzBOYJzAuIQfQmRb8vhwo/YI5BaXVlQfA7eQTqst/pS9QZsLIQlNAuMExgmMExgnMM5dXN2pLb653oQ2F0ISmkQ7AVKWXB/2R+lUHdn7K77Hwcuzn7TTXBt7v0yc6bbVf3mLuKLkG71dP+n+6KRS8XkMnStKfnDQ/3MHhM5Z7wApSn51a8+PqsXH0AFSJvmqxUe1B9Q6LTQ+L6bHpz758/3ej6LGzYt+D6h1WhiWKKbsvOj2gGHJon5bfPR7QDaBGPVbIJ1ADJ1Y7wAiIiIiIiIiIiIiIiIiggkfDgm+aTCWiGkAAAAASUVORK5CYII=",
+      "path": "C:\\Users\\victo\\Desktop\\Modpack\\art\\blockbench\\running-shoes\\textures\\pink.png",
+      "width": 64,
+      "height": 64,
+      "uv_width": 64,
+      "uv_height": 64,
+      "folder": "models/armor/running_shoes",
+      "namespace": "revocultivation",
+      "id": "0",
+      "particle": true,
+      "use_as_default": false,
+      "layers_enabled": false,
+      "sync_to_project": "",
+      "render_mode": "default",
+      "render_sides": "auto",
+      "frame_time": 1,
+      "frame_order_type": "loop",
+      "frame_order": "",
+      "frame_interpolate": false,
+      "visible": true,
+      "internal": true,
+      "saved": false,
+      "relative_path": "textures/pink.png"
+    }
+  ],
+  "java_block_version": "1.9.0",
+  "variable_placeholders": "",
+  "variable_placeholder_buttons": [],
+  "timeline_setups": [],
+  "unhandled_root_fields": {},
+  "display": {
+    "thirdperson_righthand": {
+      "rotation": [
+        75,
+        0,
+        0
+      ],
+      "translation": [
+        0,
+        2,
+        0
+      ],
+      "scale": [
+        0.6,
+        0.6,
+        0.6
+      ]
+    },
+    "firstperson_righthand": {
+      "rotation": [
+        0,
+        -45,
+        0
+      ],
+      "translation": [
+        0,
+        2,
+        0
+      ]
+    },
+    "ground": {
+      "translation": [
+        0,
+        3,
+        0
+      ],
+      "scale": [
+        0.7,
+        0.7,
+        0.7
+      ]
+    },
+    "gui": {
+      "rotation": [
+        25,
+        -35,
+        0
+      ],
+      "translation": [
+        0,
+        3,
+        0
+      ]
+    },
+    "fixed": {
+      "rotation": [
+        0,
+        -180,
+        0
+      ]
+    }
+  },
+  "ai_used": true,
+  "ai_agents": "codex-mcp-client"
+}

@@ -25,21 +25,25 @@ public class FarmMachine extends BlockEntity implements dk.revo.revolib.energy.I
     private FacingIssue issue;
     private final ContainedHarvesterMob containedMob=new ContainedHarvesterMob();
     private final ManagedOakTree realTree=new ManagedOakTree();
-    private boolean treeWaterPaid;
+    private boolean treeWaterPaid,formationNeeded,clientDirty=true;
+    private long outputRevision,fitRevision=-1;
+    private int productsProgram=Integer.MIN_VALUE,fitProgram=Integer.MIN_VALUE;
+    private List<ItemStack> cachedProducts=List.of();
+    private boolean cachedFit;
     public final ItemStackHandler inputs=new ItemStackHandler(2){
         @Override public int getSlotLimit(int slot){return 1;}
         @Override public boolean isItemValid(int slot,ItemStack stack){return slot==0?kind().acceptsStarter(stack):kind().needsWater()&&stack.is(Items.WATER_BUCKET);}
-        @Override protected void onContentsChanged(int slot){setChanged();}
+        @Override protected void onContentsChanged(int slot){clientDirty=true;setChanged();}
     };
-    public final ItemStackHandler outputs=new ItemStackHandler(9){@Override protected void onContentsChanged(int slot){setChanged();}};
-    public final FluidTank water=new FluidTank(kind().waterCapacity(),s->s.is(Fluids.WATER)){@Override protected void onContentsChanged(){setChanged();}};
+    public final ItemStackHandler outputs=new ItemStackHandler(9){@Override protected void onContentsChanged(int slot){outputRevision++;clientDirty=true;setChanged();}};
+    public final FluidTank water=new FluidTank(kind().waterCapacity(),s->s.is(Fluids.WATER)){@Override protected void onContentsChanged(){clientDirty=true;setChanged();}};
     public FarmMachine(BlockPos p,BlockState s){super(RevoCultivation.MACHINE.get(),p,s);}
     public MachineKind kind(){return ((FarmController)getBlockState().getBlock()).kind;}
     public Direction facing(){return getBlockState().getValue(FarmController.FACING);}
     public boolean formed(){return getBlockState().getValue(FarmPart.FORMED);}
     public boolean hasIntegratedConverter(BlockPos converter){return kind().electric()&&formed()&&at(kind().radius(),0,kind().radius()).equals(converter);}
     public BlockPos at(int x,int y,int z){return at(facing(),x,y,z);}
-    private BlockPos at(Direction front,int x,int y,int z){return worldPosition.relative(front.getClockWise(),x).relative(front,-z-kind().radius()).above(y);}
+    private BlockPos at(Direction front,int x,int y,int z){var right=front.getClockWise();int depth=-z-kind().radius();return worldPosition.offset(right.getStepX()*x+front.getStepX()*depth,y,right.getStepZ()*x+front.getStepZ()*depth);}
     public int progress(){return work;}
     public int program(){return program;}
     public int state(){return state;}
@@ -54,10 +58,13 @@ public class FarmMachine extends BlockEntity implements dk.revo.revolib.energy.I
         return switch(i){case 0->kind().ordinal();case 1->state;case 2->work;case 3->kind().ticks;case 4->water.getFluidAmount();case 5->program;case 6->issue==null?0:issue.part().ordinal()+1;case 7->offset.getX();case 8->offset.getY();case 9->offset.getZ();case 10->issue==null?0:issue.expected().get3DDataValue();case 11->cycles;case 12->buffered();case 13->energy;case 14->energyCapacity();case 15->kind().energyPerTick();default->0;};
     }
     private boolean blocksMatch(Direction front){
+        formationNeeded=false;
         for(int x=-kind().radius();x<=kind().radius();x++)for(int y=0;y<kind().height;y++)for(int z=-kind().radius();z<=kind().radius();z++){
             var p=at(front,x,y,z);if(!level.hasChunkAt(p))return false;
             var expected=kind().part(x,y,z);var actual=level.getBlockState(p);
             if(expected==MachineKind.Part.AIR?!actual.isAir():!actual.is(kind().block(expected)))return false;
+            if(actual.hasProperty(FarmPart.FORMED)&&!actual.getValue(FarmPart.FORMED))formationNeeded=true;
+            if(expected==MachineKind.Part.POWER&&actual.hasProperty(dk.revo.revolib.energy.ConverterAssemblyState.INTEGRATED)&&!actual.getValue(dk.revo.revolib.energy.ConverterAssemblyState.INTEGRATED))formationNeeded=true;
         }
         return true;
     }
@@ -74,7 +81,7 @@ public class FarmMachine extends BlockEntity implements dk.revo.revolib.energy.I
         if(kind().isHarvester()){var filter=at(0,1,-1);if(level.getBlockState(filter).getValue(FarmFilter.FACING)!=facing())issue=new FacingIssue(MachineKind.Part.FILTER,filter,facing());}
         if(kind().electric()){var converter=at(kind().radius(),0,kind().radius());if(level.getBlockState(converter).getValue(net.minecraft.world.level.block.state.properties.BlockStateProperties.FACING)!=facing().getOpposite())issue=new FacingIssue(MachineKind.Part.POWER,converter,facing().getOpposite());}
         if(issue!=null){dismantle();state=7;return false;}
-        formation(facing(),true);return true;
+        if(formationNeeded)formation(facing(),true);return true;
     }
     private void formation(Direction front,boolean formed){
         for(int x=-kind().radius();x<=kind().radius();x++)for(int y=0;y<kind().height;y++)for(int z=-kind().radius();z<=kind().radius();z++){
@@ -108,9 +115,12 @@ public class FarmMachine extends BlockEntity implements dk.revo.revolib.energy.I
         }
         return null;
     }
+    private List<ItemStack> products(){if(productsProgram!=program||program==30){productsProgram=program;cachedProducts=MachineKind.products(program,cycles);}return cachedProducts;}
     private boolean canFit(List<ItemStack> products){
+        if(program!=30&&fitRevision==outputRevision&&fitProgram==program)return cachedFit;
+        fitRevision=outputRevision;fitProgram=program;cachedFit=false;
         var copy=new ItemStackHandler(9);for(int i=0;i<9;i++)copy.setStackInSlot(i,outputs.getStackInSlot(i).copy());
-        for(var product:products)if(!ItemHandlerHelper.insertItemStacked(copy,product.copy(),false).isEmpty())return false;return true;
+        for(var product:products)if(!ItemHandlerHelper.insertItemStacked(copy,product.copy(),false).isEmpty())return false;return cachedFit=true;
     }
     private void export(){if(level.getBlockEntity(at(kind().radius(),0,kind().hatchZ())) instanceof FarmHatchEntity hatch)hatch.eject();}
     private void step(){
@@ -130,7 +140,7 @@ public class FarmMachine extends BlockEntity implements dk.revo.revolib.energy.I
         }
         if(kind().needsDaylight()&&(!level.isDay()||!level.canSeeSky(at(0,kind().realTree()?8:kind().height,0)))){state=4;return;}
         if(program==17&&!level.getBlockState(at(0,-1,0)).is(net.minecraft.world.level.block.Blocks.SOUL_SAND)||program==18&&!level.getBlockState(at(0,-1,0)).is(net.minecraft.world.level.block.Blocks.END_STONE)){state=2;return;}
-        var products=MachineKind.products(program,cycles);
+        var products=products();
         if(kind().electric()||work==0||work+1>=kind().ticks||state==5){if(!canFit(products)){export();if(!canFit(products)){state=5;return;}}}
         if(kind().electric()){
             if(!(level.getBlockEntity(at(kind().radius(),0,kind().radius())) instanceof dk.revo.revolib.energy.DirectConverter converter)||!converter.conversion().feToEu()){state=10;return;}
@@ -158,19 +168,20 @@ public class FarmMachine extends BlockEntity implements dk.revo.revolib.energy.I
     }
     public static void tick(Level level,BlockPos pos,BlockState block,FarmMachine machine){
         if(level.isClientSide){if(machine.state==1)machine.work=Math.min(machine.kind().ticks-1,machine.work+1);if(machine.kind().isHarvester())machine.containedMob.animate(level.getGameTime(),machine.state==1);return;}
-        int oldState=machine.state,oldProgram=machine.program,oldCycles=machine.cycles;machine.step();
+        int oldState=machine.state,oldProgram=machine.program,oldCycles=machine.cycles,oldWork=machine.work,oldEnergy=machine.energy;machine.step();
         boolean illuminate=machine.formed()&&machine.needsGrowLights()&&(machine.state==1||machine.energy>0);
         // Night/rain lighting: productive ticks include lighting in the existing 8 EU/t; idle LEDs use 1 EU/t.
         if(illuminate&&machine.state!=1)machine.energy--;
         machine.setLights(illuminate);
-        if(oldState!=machine.state||oldProgram!=machine.program||oldCycles!=machine.cycles||level.getGameTime()%20==0)level.sendBlockUpdated(pos,machine.getBlockState(),machine.getBlockState(),3);
-        machine.setChanged();
+        if(oldState!=machine.state||oldProgram!=machine.program||oldCycles!=machine.cycles||machine.clientDirty||machine.state==1&&level.getGameTime()%20==0){level.sendBlockUpdated(pos,machine.getBlockState(),machine.getBlockState(),3);machine.clientDirty=false;}
+        if(oldState!=machine.state||oldProgram!=machine.program||oldCycles!=machine.cycles||oldWork!=machine.work||oldEnergy!=machine.energy)machine.setChanged();
     }
     @Override protected void saveAdditional(CompoundTag tag,HolderLookup.Provider registries){
         super.saveAdditional(tag,registries);tag.put("Inputs",inputs.serializeNBT(registries));tag.put("Outputs",outputs.serializeNBT(registries));tag.put("Water",water.writeToNBT(registries,new CompoundTag()));tag.putBoolean("BurnerReady",burnerReady);tag.putInt("Work",work);tag.putInt("Cycles",cycles);tag.putInt("Program",program);tag.putInt("State",state);tag.putInt("EnergyEu",energy);tag.putBoolean("TreeWaterPaid",treeWaterPaid);if(kind().realTree())realTree.save(tag);
         if(kind().isHarvester())tag.put("ContainedMob",containedMob.save());
     }
     @Override protected void loadAdditional(CompoundTag tag,HolderLookup.Provider registries){
+        fitRevision=-1;outputRevision++;productsProgram=Integer.MIN_VALUE;clientDirty=true;
         super.loadAdditional(tag,registries);inputs.deserializeNBT(registries,tag.getCompound("Inputs"));outputs.deserializeNBT(registries,tag.getCompound("Outputs"));water.readFromNBT(registries,tag.getCompound("Water"));burnerReady=tag.getBoolean("BurnerReady");work=Math.clamp(tag.getInt("Work"),0,kind().ticks-1);cycles=tag.getInt("Cycles");program=tag.getInt("Program");state=tag.getInt("State");energy=Math.clamp(tag.getInt("EnergyEu"),0,energyCapacity());treeWaterPaid=tag.getBoolean("TreeWaterPaid");if(kind().realTree())realTree.load(tag,at(0,0,0));
         containedMob.load(tag.getCompound("ContainedMob"));
     }

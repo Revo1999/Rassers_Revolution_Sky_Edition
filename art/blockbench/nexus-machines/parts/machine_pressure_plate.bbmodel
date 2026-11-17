@@ -1,0 +1,172 @@
+{
+  "meta": {
+    "format_version": "5.0",
+    "model_format": "java_block",
+    "box_uv": false
+  },
+  "name": "Nexus machine pressure_plate",
+  "model_identifier": "",
+  "visible_box": [
+    1,
+    1,
+    0
+  ],
+  "resolution": {
+    "width": 256,
+    "height": 256
+  },
+  "elements": [
+    {
+      "name": "pressure_plate",
+      "box_uv": false,
+      "rescale": false,
+      "locked": false,
+      "light_emission": 0,
+      "render_order": "default",
+      "allow_mirror_modeling": true,
+      "from": [
+        0,
+        0,
+        0
+      ],
+      "to": [
+        16,
+        16,
+        16
+      ],
+      "autouv": 0,
+      "color": 0,
+      "origin": [
+        8,
+        8,
+        8
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            144,
+            16,
+            160,
+            32
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            144,
+            16,
+            160,
+            32
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            144,
+            16,
+            160,
+            32
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            144,
+            16,
+            160,
+            32
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            144,
+            16,
+            160,
+            32
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            144,
+            16,
+            160,
+            32
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "a707303b-c45d-41c2-aee3-25909b9ebb8a"
+    }
+  ],
+  "groups": [
+    {
+      "name": "pressure_plate",
+      "uuid": "f255e39e-f4c2-4981-b652-9cce01bcf638",
+      "origin": [
+        8,
+        8,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true,
+      "visibility": true,
+      "mirror_uv": false,
+      "reset": false,
+      "color": 0,
+      "autouv": 0,
+      "shade": true,
+      "locked": false
+    }
+  ],
+  "outliner": [
+    {
+      "uuid": "f255e39e-f4c2-4981-b652-9cce01bcf638",
+      "isOpen": false,
+      "children": [
+        "a707303b-c45d-41c2-aee3-25909b9ebb8a"
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "uuid": "786b6dc6-5487-457a-9dc8-01605aa246d9",
+      "name": "nexus_machine_atlas",
+      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQAAAAEACAYAAABccqhmAAASQ0lEQVR4nO3dCZwU1Z3A8X8PwwzMDKBcrvFARVCIxsiVGHSzH6+g8UhiyIcoyS6a9SOumvWI5rOJZxJXs9FkNdGsG8Ou8VqJMd4K6C4BYlSEeAQiiIjgOeLADHN019H7ea+mZqp7qqqru6qne5jf9/PpT1VX139edVPv1Xuv3itSnz5ydlZiaP7gLamtrdXrqVTKd1lTU6PX85dDhgyRffY/NPBvr1m7WqYdOSM0/ffefSfO4SOmj3a2fz1O/NhRjfdV8vzbvn37oI7XkdOmTSvpx1+zZo1OfPqRM6StrU1vy2az+iWSFdu2xc7aYlmWXqr3pmmKYRh6mzqQjRs3hKZR6POmxkZ57pf7lXT8R523VeJ+f+Ljq+T5VzvY41XQ669vkM/MmimLH/yt7L/fhII/vLvvmNFj9Hv1B994c6MMGzZMRo8eLcPqhjsHI7mVC3Wwra2t0tnZKY2NjboEErEkrjc3vCinXzNMHr6mK3Af9bmXs+/fiPv9L7/kgqLSvODi7/R8/7i/30CP9/redTdP+tFVl2yUIlT2/JOqiF964tPF/GRy2G8OTyR9p+4gon/QqLz7qqpEV1eXTrypqUmG1DgHpUqblKR0yeNSn6l93DhVAiVRACjFZH4/K/74QuS01q59uc+2Un+/3SW+1MzvWnTPvXq5bmPhcLVP07C6RM6/lCd+3bHrIx3rJ/93qm98nPSVmb+dJcOHDZehtXVi206+sGyr50o+tHaodHZ1ygtnPJ9Y+j0FQJSS17vvO+841WdHVpfG6gBraoZ0V0FEJ+62Q9QBtXe0S1Njk9QNrZOdrTu7SzBDyskv84cVFlEN0YVX7m/yxuZN8spfXgmNa2holIMPnJj3+4m0Z5zfYf2mNyKlP3JYfVXFx8n8rl889VKk/f5pzvS837/3/Dv7H88Rw8hIJpORjJERI2M46/plyKoVK/POv9545frx35ORI0dK1syIle4UO9Oh17OWKVbXLrnCvFdG7znaN16lf9inDtfxhmlLxrDEMm0xMpaYpi1dXaZs2/qab/pKU0NTpHiXX/onHfd30jB8uBiWJWYmI7Z6GYaY6pVOy/LX1smw+mHSsqMltwbgqqt3SlYlk85IFLadlfo6ldFU+8PuKQDUUrc9PKWQ+uK6RLPt7hrAwMv8hTJ4qb58/s8j7ffQbf7NlcXf7IgUP/euBt/tf3/QTyLF//ebl/XZFjfzx+E9/1Smf+yRR3S12DDNnjavaZgy+5jZvuef3RMvsmPHDjF3tYhtZcROt0vWTIvd2S5Zy5DGxuEiQ0XadrUFxGd1fGtrl/48nbYkk7EknVbHYcvIEaMC01fU+yjxTox/+p0dHbL+tdfEMg2nADBMsdTSNOXQyZN1vM6X3fF9CoComT6X0/HgZnx9UN0Z3/2y7meqRqA6INT7chYAlcj86soe14lnzAn9fMmDT4V+fuwJ4cfw7NJNoZ+f+skvhX7+6F9+L+Wiruyl6T3/1ElvmLmZX783TF0D8D//sr0XLXW1T2Ula6QlaxpiG2ldGIhlStYcoguAoHj1UlfuobW2GIbqcHNe6ipuWWo9G5i+ovJJlHgdEZB+e3u7WIYhtmWJmJY6WEl5X6mU/k3c+D4FQLH0F7It3d7wVv293EJA/YN4C4maVM1uk/kV1QTo6GiP1AQIc/xB/tuXvRnxQGZe5L/9xVsihR95of/2tbdKWd14yt19tl3x2Pyizr+0KgCM3Myvrv6mLgQyOvN5z7+UJ16xM526/W2rzK/WMx1iqZqAlZHs0KyI07/mG6/SV1dsFa8yrnP1tiSTVu8tqa+zAtNX4sS76evqvrqI286VP6trAKpAUMt0n/jYBYAuhbIitjhXeXVAqgBwqxnu0v2C+dvadrWG/v1Cn6vbgNWQ+ZNoAhSd0YNEzOhByp3Ri/XEteNz3p989YeB55+u7vdkflPMjNldCBhipDN9zr8aT7yiMrxaszNpsdMdYmfanaVqCnR3PAbFq+3qaq0zsNFdhe+uxpu6Pe906PnF67TVLbsI8XrfgPR1mz+TVjt0Z36nH8AyTbF9vn/sAkAxbbNn3bacP+xWddwfTP2juNzqiuqVHNE0Mieze98Xq9KZP4kmgLr6uwVA0HrBq79bAAStF7j6uwVA0Hq5BF3tvRm+0PmnOvucQsC58hueZcYw+px/+fGWrgHYYqtOQFUY6EKgy+kLyHQWjFdV92zW6bzLpM2eNrzqyDMydmi8KgCixLt/wy/9TDqtmwAp9R3cTsC0asZYunaQn36kAiCsY1D1JHo7/VSm17UAT0njFgSqEHDX3RIoKZXO/Ek1AS7/t942/hLPdu96mGev/3bvm6UB6yGuO6+3jf/oeeK7Xk3yzz/V6+/UALpfZm8h4BYO3vNviCde/w0zI7bqA7BNXe1XfQC6PyDrNAvcWL9450Knznu3ze5kaN2Lr95bdmj6TjO59Hi1HFqT0t8/5bkLoAoEta1LN4Ny42ujZPiwjkG3U6Gurk7qauuk3Wzvyfx6BFL3j+W+9t5rb0kbaWlubta3DMul0LiAchUOcZoAQb37UQX17kfl17tf7fLPP3UX4OijjxEjk5Z03m1AtZ5//qU88Yq64rfsbNO9/roPQHUCZrp0R2A25ZyvarCNX7xKX92q6+zodK7g6uqtmiCGOvezUl9fF5i+Uj+0PlL8X7u/u1/6qv0/fuxYybS3i11fL5bh3AFI1dZKZzrTJ33fAqCYOwGqDaIy+8cffywNDQ3S2NCob5N4q//ua/y48dLe2S67du1KvAaQ5KCgSjQBpkw8uKj988cRVDo+rqmTJpWUfv75t2L5ij7nn3vxGTd2nB5I4z3/ajzxyi/2eS4kVSdNdavOL945/22x7DaxspYMGSoyvDYr9d3pjxqVkvZO//SVtva2SPFKUPqvvG8Hf//a+j7fv6cAKH4o5paeA1DVCzW8UFElkXubw60JuOumZerbFGpfFVdT4/S8DsTMb+UVYKX+frtLfFyVOv9qPPFqhN8ee+yh9/GLHzNmjM78nZ0dvvFx0ldWz32xqN8sifRTajZgY2OTvL3V+UGj/AO4+6rRR0Z6R8+QRO9YAHfpHoySPyZg4oEHy+ZtH8bqBFR3Ae655H0pxVk3O3MB4nz/wR6fxGzASp5/777/zqCO1wVAyf96KiFrV88BqMkG3qmJeluN895t77vbnfEMqUQKAAze6cBxz78PP/pgUMenWlcdF6sA+NsL4nWmTdoZPvKtkLXDH44VP26vfWLFt37c3LN+1dVXyv+teC501tshh0yWPzy7rGfb+L0/ESv9lvffixU/63NHxYr/86vrJGkXX+IMZDp86mS9fHWdMyX8pzfHG99QDndOcLvkSnPOltznYSxa2Cqfv6Klz3633H6rXLTwQjnogNwaUuuBpU2Fd9U+/vu1sf6AyJSKzye/9prvy8rno00kcR39mely9TU/1Oufnh7+0JEgf35ptSThCyccW1Lc00uf1csPdzpzwYs1ftQIWbFipcQxYo/RcvxJJ5UUu+zJJ/Uyanz+fvnxe4wdJzs+6i2Q/Xj3WVZk+vnc+Lhy0/+fyPsmkX4iA4GSmE8+68CjI6X1xXkz5PH7V8sLm3tPXJX5l8b8MYrNzN5C44BJh8q5C86UOxY5U1qDDG9okLe3bpPrr79O7/vWxt6rx8nHzS4q/SeeWZXz/rTTc8fwT52S26u/bn3uLL9HHk52TP/Jxx0jl1z2L5H2vfkn18sZc78uEyYc2LPt5fWb+q7/Lnjew+rlT+fEq8zw1W98s2CmcPfZsmVzn/hi5MfH5aZ/1sJo+yWVfiIFQBLzyd2MXUjYPkd+9ihZ9vijMmbM2ILr+b50+ilSjLe25XY8Fsr8hfZVGXryxAMixS9b/ifZf1+nAzMoU0+dclngZ/mFhat5+3a9nDFjlmzZvKngey+V+b/6lVMjHX/UgqK/bdz4eqT9Jk06pM+2CZ8f7bvviON7z6u2ZY/p5Zblzi3HJM05J/e3f+rOvud4WQuAeM8T6M3YR8yeKod8bk/fuNf/2CIvr0q+zan8x3/eWdT+Xzjpiz3r7pW8lD6Acrnhhr5Te5dcO04vf55MyytRzW9tSKwPYMvWbb7bJ+y3r5TTCJ/M3l+iZviyFQBxnifgl9Gnzc2dALJmcfh48K+dOU8vJ13YO5oubL2lxZlX7dpr/F6yO9h3Yt+rU6/krzx+/rrpbd/th07cX/rLrxbn3lz41tzoNyseOdv/AnTar/t2zhXS3wVBxQuAUjO91777FT+k9YF77y+qCTBv/jcSbQJUi22bgquxJ17tLE87XQaVkf8eMD06xD8/7Ayscf3sdM884AGS2aM0CxIvAJKwbWuHjP+s8+yy/hKnCTBQ3HT3/Xq5fLGzxO4tSrOgKguAShgcTYDBR139W799i8jKWOOVdlsDpgBQzQJVMyiXwdAEuHT+vNC7ALuTnDZ/BTL/iAp2CFZdAZBEx2ChzB+3E3AwNAEQ3c8itPl3B2UpAIp5nkCQsF5/NWbghX9dmWgnYLU0AT7Ynlswee01ZlSsJkBY7SBJ/dnbX47bfaeV0Nufz++q79YKDjte5LUr75Jq6BAsSwFQ6lU+icFAA70JECWTh+mvTJ60cQc49/yVu90RgHkjAb37qJFw1WREFVT5w3r9gzoEEysAkphPHjdjr/3Tc/oqH3U9qSZAEkOBlQ2b3pI44rbtx41xhma7o/wKvc8f3lvsUOBqM8lnhF8pAkf6Lb+r6gYD1S5Z0/tAwUoOBfaO7S+WmthTSox3/kDcNn3cocDFKDQMuBKeeGZF5Ek1at98R0zpfZrS4VMm+Y4EfHV97/89snp5brybdpRjUPvc+cvbfOOjyo+PW6XvTT/aZKD89EuVuu87o2NNB75x2ZRYB8B04MpOB36vOXyEZSETDiruUV5RMB24pd+mA6fuWPCpWAXAr+yYVbnNuVeDB66aIc8//ofA3W96Kd6DL/PNWXhR+H+VU8BTt98S/1ngA5hxwbWx4ucvivdg2EufnJb8c+UGkaoYB5Bb/Wouej503Pnc9y9adH4p8fMWLND1sP6aD1+t8Ri4qqIA8J5M586cUdJ86AdXFfdAxR2vvhg4n/rHt9964uULL4z6KH7t3nuLG17b2fpxovPRKx2PAV4AzDllVs4HTz32QlF/6Gvn5zYFHrit9Ee9LVvvfy/8+Cnht8i+fHbuvf0gD/36N4GflZL5k7DhzeLuANQPqa545dzZ0foD7ljl/x8Jn/gPUyPFL/mv8kwJH9QFQLEZPl+cDF9sRg9y/403RNqvftw+Zcv8F373ytDPb73hB4Gf3fPM0khpnHXcCVUZj4GnapoASZh3xXdLrgEkfeV/d0Lu030+sSXePX6g3wuAamoWBLni+06mnz79CLn0ymg90jf9QE2M/5Zef3m7M8egEtX+pK+slY73OnV8bi3u0Q+Dhzj72fMr9TnvW36XTuS4UEQBUKlmQal9AFFrAP3h0hm5o8rui1gD2PRTJ27ixa8HrodZsPjHerlo7uWB62HuPt8ZTTb/tlMD17H7qMomQLn7AGbqGkB53bQ6N6PGG+4DDKICoFTVVAMABoIBXwDc+MMb9EAWNQ4g3fxOpJiHxu3TMw5gzsLinxdXTt4qftB6GG8VP2g9jLeKH7QeRbFt/ny0+ausAOjPDsFy9wGEjQNICr3+GHAFQFgmj5LhwzJ5MR2ClRoHkISw+/xhJh8U7T8FCZoPX+l47AYFQDUNBipFOTM2Sh/hFxUj/AZxH0DvhJTmkuZDnzF7ZlHp3flqcXMHCjmz+5mEkdNPeD56peMxMDEdmOnAsTAdGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAE+H9mIY+IRqTluwAAAABJRU5ErkJggg==",
+      "path": "C:\\Users\\victo\\Desktop\\Modpack\\art\\blockbench\\nexus-machines\\textures\\nexus_machine_atlas.png",
+      "width": 256,
+      "height": 256,
+      "uv_width": 256,
+      "uv_height": 256,
+      "folder": "",
+      "namespace": "",
+      "id": "0",
+      "particle": false,
+      "use_as_default": false,
+      "layers_enabled": false,
+      "sync_to_project": "",
+      "render_mode": "default",
+      "render_sides": "auto",
+      "frame_time": 1,
+      "frame_order_type": "loop",
+      "frame_order": "",
+      "frame_interpolate": false,
+      "visible": true,
+      "internal": true,
+      "saved": false,
+      "relative_path": "../textures/nexus_machine_atlas.png"
+    }
+  ],
+  "variable_placeholders": "",
+  "variable_placeholder_buttons": [],
+  "timeline_setups": [],
+  "unhandled_root_fields": {},
+  "ai_used": true,
+  "ai_agents": "codex-mcp-client"
+}

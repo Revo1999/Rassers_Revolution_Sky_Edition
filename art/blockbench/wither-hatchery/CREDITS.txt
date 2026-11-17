@@ -1,0 +1,4 @@
+Steel casing and item/energy hatch sprites: Modern Industrialization 2.5.11, AztechMC / MI contributors.
+Source: pinned Modern-Industrialization-2.5.11.jar.
+Hatch compositing matches the existing RevoIndustry furnace multiblocks at original native pixel positions.
+Glass, egg, controller and dithered red lamps: Revo project artwork. Geometry authored through Blockbench MCP.

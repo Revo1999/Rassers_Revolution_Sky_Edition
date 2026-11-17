@@ -122,3 +122,41 @@ if (providers.gradleProperty('revoAudioQa').isPresent()) {
  dependencies { implementation project(':revoindustry'); compileOnly files(rootProject.file('.local/integration-mods/Modern-Industrialization-2.5.11.jar'),rootProject.file('.local/integration-mods/ironfurnaces-neoforge-1.21.1-4.3.2.jar')) }
 }
 tasks.named('jar', Jar) { exclude '**/MachineAudioQa*' }
+
+if (providers.gradleProperty('revoMineralTests').isPresent()) {
+ sourceSets.main.java.srcDir 'src/mineraltest/java'
+ sourceSets.main.resources.srcDir 'src/gametest/resources'
+ dependencies {
+  implementation project(':revocultivation'); implementation project(':revogenetics'); implementation project(':revoindustry'); implementation project(':revostorage')
+  implementation files(rootProject.file('.local/integration-mods/Modern-Industrialization-2.5.11.jar'))
+  runtimeOnly files(rootProject.file('.local/integration-mods/appliedenergistics2-19.2.18.jar'), rootProject.file('.local/integration-mods/guideme-21.1.22.jar'), rootProject.file('.local/integration-mods/FluxNetworks-1.21.1-8.0.0.jar'))
+  runtimeOnly 'dev.engine-room.flywheel:flywheel-neoforge-1.21.1:1.0.6'
+  runtimeOnly files(rootProject.file('.local/integration-mods/ironfurnaces-neoforge-1.21.1-4.3.2.jar'), rootProject.file('.local/integration-mods/ironchest-1.21-neoforge-16.0.7.jar'))
+ }
+ neoForge {
+  mods {
+   revolib { sourceSet project(':revolib').sourceSets.main }
+   revocultivation { sourceSet project(':revocultivation').sourceSets.main }
+   revogenetics { sourceSet project(':revogenetics').sourceSets.main }
+   revoindustry { sourceSet project(':revoindustry').sourceSets.main }
+   revostorage { sourceSet project(':revostorage').sourceSets.main }
+  }
+  runs { mineralTests { type='gameTestServer'; systemProperty 'neoforge.enabledGameTestNamespaces','revoextraction' } }
+ }
+}
+tasks.named('jar', Jar) { exclude '**/MineralGameTests*' }
+
+if (providers.gradleProperty('revoOptimizationTests').isPresent()) {
+ sourceSets.main.java.srcDir 'src/optimizationtest/java'
+ sourceSets.main.java.srcDir 'src/chaptertest/java'
+}
+tasks.named('jar', Jar) { exclude '**/OptimizationGameTests*' }
+
+if (providers.gradleProperty('revoPerformanceBenchmark').isPresent()) {
+ sourceSets.main.java.srcDir 'src/benchmark/java'
+ dependencies {
+  implementation project(':revocultivation'); implementation project(':revostorage'); implementation project(':revoindustry')
+  compileOnly files(rootProject.file('.local/integration-mods/Modern-Industrialization-2.5.11.jar'))
+ }
+}
+tasks.named('jar', Jar) { exclude '**/benchmark/**' }

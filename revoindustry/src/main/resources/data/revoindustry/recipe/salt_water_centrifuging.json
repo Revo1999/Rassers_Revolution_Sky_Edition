@@ -1,0 +1,17 @@
+{
+  "type": "modern_industrialization:centrifuge",
+  "eu": 8,
+  "duration": 200,
+  "fluid_inputs": [
+    {
+      "fluid": "revoindustry:salt_water",
+      "amount": 1000
+    }
+  ],
+  "item_outputs": [
+    {
+      "item": "modern_industrialization:salt_dust",
+      "amount": 2
+    }
+  ]
+}

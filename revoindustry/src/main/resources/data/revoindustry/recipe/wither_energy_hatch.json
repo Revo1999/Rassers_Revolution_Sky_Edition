@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "WTW",
+    "TCT",
+    "WTW"
+  ],
+  "key": {
+    "W": {
+      "item": "modern_industrialization:tin_cable"
+    },
+    "T": {
+      "item": "modern_industrialization:analog_circuit"
+    },
+    "C": {
+      "item": "revoindustry:wither_chamber_casing"
+    }
+  },
+  "result": {
+    "id": "revoindustry:wither_energy_hatch",
+    "count": 1
+  }
+}

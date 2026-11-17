@@ -1,0 +1,69 @@
+{
+  "status": "art and design; gameplay implementation pending",
+  "machines": [
+    {
+      "machine": "pressure_casting_plant",
+      "dimensions": {
+        "width": 9,
+        "height": 5,
+        "depth": 9
+      },
+      "blocks": 161,
+      "hatches": 9,
+      "operations": 220
+    },
+    {
+      "machine": "electroplating_line",
+      "dimensions": {
+        "width": 9,
+        "height": 5,
+        "depth": 9
+      },
+      "blocks": 199,
+      "hatches": 10,
+      "operations": 305
+    },
+    {
+      "machine": "particle_collider",
+      "dimensions": {
+        "width": 21,
+        "height": 5,
+        "depth": 21
+      },
+      "blocks": 784,
+      "hatches": 9,
+      "operations": 1191
+    }
+  ],
+  "parts": [
+    "accelerator_glass",
+    "bath_wall",
+    "casing",
+    "ceramic_panel",
+    "control_casting",
+    "control_collider",
+    "control_plating",
+    "deck_grate",
+    "energy",
+    "fluid_in",
+    "fluid_out",
+    "gantry_rail",
+    "hazard",
+    "hydraulic_cylinder",
+    "injector_housing",
+    "input",
+    "light_amber",
+    "light_blue",
+    "magnet_coil",
+    "mould_bed",
+    "output",
+    "pressure_plate",
+    "pressure_tank",
+    "reinforced_column",
+    "ribbed_panel",
+    "service_panel",
+    "vent"
+  ],
+  "atlas": "textures/nexus_machine_atlas.png",
+  "colliderShape": "donut / hollow torus; earlier cone proposal superseded"
+}

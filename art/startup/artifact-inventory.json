@@ -1,0 +1,690 @@
+[
+  {
+    "file": "AdvancedAE-1.6.12-1.21.1.jar",
+    "jarBytes": 4791255,
+    "models": 110,
+    "recipes": 104,
+    "textureBytes": 81401,
+    "nestedJarBytes": 274804
+  },
+  {
+    "file": "ae2helpers-1.0.1.jar",
+    "jarBytes": 61121,
+    "models": 1,
+    "recipes": 1,
+    "textureBytes": 6165,
+    "nestedJarBytes": 0
+  },
+  {
+    "file": "ae2wtlib-19.5.1.jar",
+    "jarBytes": 252091,
+    "models": 5,
+    "recipes": 21,
+    "textureBytes": 2427,
+    "nestedJarBytes": 81626
+  },
+  {
+    "file": "appleskin-neoforge-mc1.21-3.0.9.jar",
+    "jarBytes": 75804,
+    "models": 0,
+    "recipes": 0,
+    "textureBytes": 586,
+    "nestedJarBytes": 0
+  },
+  {
+    "file": "appliedcreate-1.21.1-1.1.8.jar",
+    "jarBytes": 442774,
+    "models": 49,
+    "recipes": 43,
+    "textureBytes": 52289,
+    "nestedJarBytes": 0
+  },
+  {
+    "file": "appliedenergistics2-19.2.18.jar",
+    "jarBytes": 8236552,
+    "models": 685,
+    "recipes": 556,
+    "textureBytes": 371359,
+    "nestedJarBytes": 0
+  },
+  {
+    "file": "architectury-13.0.11-neoforge.jar",
+    "jarBytes": 584734,
+    "models": 0,
+    "recipes": 0,
+    "textureBytes": 0,
+    "nestedJarBytes": 0
+  },
+  {
+    "file": "athena-neoforge-1.21.1-4.0.6.jar",
+    "jarBytes": 99944,
+    "models": 0,
+    "recipes": 0,
+    "textureBytes": 0,
+    "nestedJarBytes": 0
+  },
+  {
+    "file": "balm-neoforge-1.21.1-21.0.66.jar",
+    "jarBytes": 783793,
+    "models": 0,
+    "recipes": 0,
+    "textureBytes": 0,
+    "nestedJarBytes": 32710
+  },
+  {
+    "file": "better-advanced-tooltips-2101.1.0-build.5.jar",
+    "jarBytes": 37653,
+    "models": 0,
+    "recipes": 0,
+    "textureBytes": 8484,
+    "nestedJarBytes": 0
+  },
+  {
+    "file": "betterblockz-0.2.10-1.21.1-neoforge.jar",
+    "jarBytes": 7388885,
+    "models": 3528,
+    "recipes": 2862,
+    "textureBytes": 1676789,
+    "nestedJarBytes": 0
+  },
+  {
+    "file": "BuildingWands-neoforge-MC1.21-2.14.jar",
+    "jarBytes": 413807,
+    "models": 10,
+    "recipes": 10,
+    "textureBytes": 69158,
+    "nestedJarBytes": 0
+  },
+  {
+    "file": "cloth-config-15.0.140-neoforge.jar",
+    "jarBytes": 1163890,
+    "models": 0,
+    "recipes": 0,
+    "textureBytes": 270826,
+    "nestedJarBytes": 0
+  },
+  {
+    "file": "Clumps-neoforge-1.21.1-19.0.0.1.jar",
+    "jarBytes": 18382,
+    "models": 0,
+    "recipes": 0,
+    "textureBytes": 0,
+    "nestedJarBytes": 0
+  },
+  {
+    "file": "Controlling-neoforge-1.21.1-19.0.5.jar",
+    "jarBytes": 77555,
+    "models": 0,
+    "recipes": 0,
+    "textureBytes": 0,
+    "nestedJarBytes": 0
+  },
+  {
+    "file": "craftingstationjei-1.21.1-NeoForge-2.2.1.jar",
+    "jarBytes": 85201,
+    "models": 6,
+    "recipes": 2,
+    "textureBytes": 4770,
+    "nestedJarBytes": 0
+  },
+  {
+    "file": "craftingtweaks-neoforge-1.21.1-21.1.11.jar",
+    "jarBytes": 256086,
+    "models": 0,
+    "recipes": 0,
+    "textureBytes": 0,
+    "nestedJarBytes": 0
+  },
+  {
+    "file": "create-1.21.1-6.0.10.jar",
+    "jarBytes": 19123767,
+    "models": 2684,
+    "recipes": 1884,
+    "textureBytes": 2738396,
+    "nestedJarBytes": 1875127
+  },
+  {
+    "file": "create-new-age-1.2.0+neoforge-mc1.21.1.jar",
+    "jarBytes": 1644485,
+    "models": 132,
+    "recipes": 88,
+    "textureBytes": 61415,
+    "nestedJarBytes": 758759
+  },
+  {
+    "file": "createaddition-1.6.0.jar",
+    "jarBytes": 1661802,
+    "models": 137,
+    "recipes": 152,
+    "textureBytes": 547371,
+    "nestedJarBytes": 35444
+  },
+  {
+    "file": "createdeco-2.1.3.jar",
+    "jarBytes": 3328498,
+    "models": 1359,
+    "recipes": 1719,
+    "textureBytes": 463980,
+    "nestedJarBytes": 0
+  },
+  {
+    "file": "create_jetpack-forge-5.2.1.jar",
+    "jarBytes": 495109,
+    "models": 9,
+    "recipes": 4,
+    "textureBytes": 31655,
+    "nestedJarBytes": 156825
+  },
+  {
+    "file": "Cucumber-1.21.1-8.0.16.jar",
+    "jarBytes": 275588,
+    "models": 0,
+    "recipes": 0,
+    "textureBytes": 6403,
+    "nestedJarBytes": 0
+  },
+  {
+    "file": "DefaultWorldType-1.21-5.0.4.jar",
+    "jarBytes": 14563,
+    "models": 0,
+    "recipes": 0,
+    "textureBytes": 0,
+    "nestedJarBytes": 0
+  },
+  {
+    "file": "emi-1.1.24+1.21.1+neoforge.jar",
+    "jarBytes": 1111538,
+    "models": 47,
+    "recipes": 1,
+    "textureBytes": 22679,
+    "nestedJarBytes": 0
+  },
+  {
+    "file": "emotecraft-for-MC1.21.1-2.4.12-neoforge.jar",
+    "jarBytes": 861829,
+    "models": 0,
+    "recipes": 0,
+    "textureBytes": 59407,
+    "nestedJarBytes": 242245
+  },
+  {
+    "file": "entityculling-neoforge-1.11.3-mc1.21.1.jar",
+    "jarBytes": 1510075,
+    "models": 0,
+    "recipes": 0,
+    "textureBytes": 0,
+    "nestedJarBytes": 1590180
+  },
+  {
+    "file": "ExtendedAE-1.21-2.2.35-neoforge.jar",
+    "jarBytes": 5578031,
+    "models": 183,
+    "recipes": 117,
+    "textureBytes": 132081,
+    "nestedJarBytes": 75183
+  },
+  {
+    "file": "fancymenu_neoforge_3.9.14_MC_1.21.1.jar",
+    "jarBytes": 25922080,
+    "models": 0,
+    "recipes": 0,
+    "textureBytes": 2882225,
+    "nestedJarBytes": 89054
+  },
+  {
+    "file": "ferritecore-7.0.3-neoforge.jar",
+    "jarBytes": 121559,
+    "models": 0,
+    "recipes": 0,
+    "textureBytes": 0,
+    "nestedJarBytes": 0
+  },
+  {
+    "file": "FluxNetworks-1.21.1-8.0.0.jar",
+    "jarBytes": 535938,
+    "models": 21,
+    "recipes": 15,
+    "textureBytes": 61717,
+    "nestedJarBytes": 0
+  },
+  {
+    "file": "ftb-chunks-neoforge-2101.1.23.jar",
+    "jarBytes": 671413,
+    "models": 0,
+    "recipes": 0,
+    "textureBytes": 73112,
+    "nestedJarBytes": 0
+  },
+  {
+    "file": "ftb-library-neoforge-2101.1.39.jar",
+    "jarBytes": 1477833,
+    "models": 2,
+    "recipes": 0,
+    "textureBytes": 831180,
+    "nestedJarBytes": 0
+  },
+  {
+    "file": "ftb-quests-neoforge-2101.1.37.jar",
+    "jarBytes": 1635351,
+    "models": 20,
+    "recipes": 7,
+    "textureBytes": 274797,
+    "nestedJarBytes": 0
+  },
+  {
+    "file": "ftb-teams-neoforge-2101.1.11.jar",
+    "jarBytes": 308236,
+    "models": 0,
+    "recipes": 0,
+    "textureBytes": 10936,
+    "nestedJarBytes": 0
+  },
+  {
+    "file": "ftb-ultimine-neoforge-2101.1.15.jar",
+    "jarBytes": 177109,
+    "models": 1,
+    "recipes": 0,
+    "textureBytes": 2445,
+    "nestedJarBytes": 0
+  },
+  {
+    "file": "geckolib-neoforge-1.21.1-4.9.3.jar",
+    "jarBytes": 634531,
+    "models": 0,
+    "recipes": 0,
+    "textureBytes": 0,
+    "nestedJarBytes": 0
+  },
+  {
+    "file": "Glodium-1.21-2.2-neoforge.jar",
+    "jarBytes": 61377,
+    "models": 0,
+    "recipes": 0,
+    "textureBytes": 0,
+    "nestedJarBytes": 0
+  },
+  {
+    "file": "guideme-21.1.22.jar",
+    "jarBytes": 9332340,
+    "models": 2,
+    "recipes": 0,
+    "textureBytes": 5724,
+    "nestedJarBytes": 0
+  },
+  {
+    "file": "ImmediatelyFast-NeoForge-1.6.15+1.21.1.jar",
+    "jarBytes": 368896,
+    "models": 0,
+    "recipes": 0,
+    "textureBytes": 0,
+    "nestedJarBytes": 222732
+  },
+  {
+    "file": "iris-neoforge-1.8.12+mc1.21.1.jar",
+    "jarBytes": 2438548,
+    "models": 0,
+    "recipes": 0,
+    "textureBytes": 6880,
+    "nestedJarBytes": 921620
+  },
+  {
+    "file": "ironchest-1.21-neoforge-16.0.7.jar",
+    "jarBytes": 305975,
+    "models": 28,
+    "recipes": 22,
+    "textureBytes": 137606,
+    "nestedJarBytes": 0
+  },
+  {
+    "file": "ironfurnaces-neoforge-1.21.1-4.3.2.jar",
+    "jarBytes": 576866,
+    "models": 135,
+    "recipes": 58,
+    "textureBytes": 114028,
+    "nestedJarBytes": 0
+  },
+  {
+    "file": "IronJetpacks-1.21.1-8.0.11.jar",
+    "jarBytes": 154859,
+    "models": 9,
+    "recipes": 5,
+    "textureBytes": 15550,
+    "nestedJarBytes": 0
+  },
+  {
+    "file": "Jade-1.21.1-NeoForge-15.10.6.jar",
+    "jarBytes": 726853,
+    "models": 0,
+    "recipes": 0,
+    "textureBytes": 796,
+    "nestedJarBytes": 0
+  },
+  {
+    "file": "JadeAddons-1.21.1-NeoForge-6.1.2.jar",
+    "jarBytes": 82315,
+    "models": 0,
+    "recipes": 0,
+    "textureBytes": 0,
+    "nestedJarBytes": 0
+  },
+  {
+    "file": "jei-1.21.1-neoforge-19.64.0.455.jar",
+    "jarBytes": 2375741,
+    "models": 0,
+    "recipes": 0,
+    "textureBytes": 24841,
+    "nestedJarBytes": 346662
+  },
+  {
+    "file": "konkrete_neoforge_1.9.9_MC_1.21.jar",
+    "jarBytes": 618842,
+    "models": 0,
+    "recipes": 0,
+    "textureBytes": 0,
+    "nestedJarBytes": 0
+  },
+  {
+    "file": "kotlinforforge-5.12.0-all.jar",
+    "jarBytes": 7279264,
+    "models": 0,
+    "recipes": 0,
+    "textureBytes": 0,
+    "nestedJarBytes": 8069272
+  },
+  {
+    "file": "kubejs-neoforge-2101.7.2-build.377.jar",
+    "jarBytes": 2294111,
+    "models": 3,
+    "recipes": 0,
+    "textureBytes": 47873,
+    "nestedJarBytes": 165601
+  },
+  {
+    "file": "LibX-1.21.1-6.0.9.jar",
+    "jarBytes": 1259776,
+    "models": 1,
+    "recipes": 0,
+    "textureBytes": 1870,
+    "nestedJarBytes": 0
+  },
+  {
+    "file": "mcw-doors-1.1.5-mc1.21.1neoforge.jar",
+    "jarBytes": 1190404,
+    "models": 1394,
+    "recipes": 257,
+    "textureBytes": 142423,
+    "nestedJarBytes": 0
+  },
+  {
+    "file": "mcw-mcwfences-1.2.1-mc1.21.1neoforge.jar",
+    "jarBytes": 673871,
+    "models": 854,
+    "recipes": 222,
+    "textureBytes": 12764,
+    "nestedJarBytes": 0
+  },
+  {
+    "file": "mcw-mcwstairs-1.0.2-mc1.21.1neoforge.jar",
+    "jarBytes": 529082,
+    "models": 663,
+    "recipes": 224,
+    "textureBytes": 0,
+    "nestedJarBytes": 0
+  },
+  {
+    "file": "mcw-mcwwindows-2.4.2-mc1.21.1neoforge.jar",
+    "jarBytes": 1261268,
+    "models": 1887,
+    "recipes": 317,
+    "textureBytes": 33600,
+    "nestedJarBytes": 0
+  },
+  {
+    "file": "mcw-roofs-2.3.2-mc1.21.1neoforge.jar",
+    "jarBytes": 1784829,
+    "models": 2683,
+    "recipes": 607,
+    "textureBytes": 16834,
+    "nestedJarBytes": 0
+  },
+  {
+    "file": "megacells-4.11.0.jar",
+    "jarBytes": 1137276,
+    "models": 210,
+    "recipes": 209,
+    "textureBytes": 33707,
+    "nestedJarBytes": 0
+  },
+  {
+    "file": "melody_neoforge_1.0.10_MC_1.21.jar",
+    "jarBytes": 36096,
+    "models": 0,
+    "recipes": 0,
+    "textureBytes": 0,
+    "nestedJarBytes": 0
+  },
+  {
+    "file": "mezz_config-1.21.1-neoforge-0.6.10-standalone.jar",
+    "jarBytes": 346260,
+    "models": 0,
+    "recipes": 0,
+    "textureBytes": 0,
+    "nestedJarBytes": 383941
+  },
+  {
+    "file": "mi-tweaks-1.9.6-1.21.1.jar",
+    "jarBytes": 553277,
+    "models": 6,
+    "recipes": 3,
+    "textureBytes": 995,
+    "nestedJarBytes": 0
+  },
+  {
+    "file": "Modern-Industrialization-2.5.11.jar",
+    "jarBytes": 7308900,
+    "models": 1108,
+    "recipes": 3193,
+    "textureBytes": 1650701,
+    "nestedJarBytes": 211944
+  },
+  {
+    "file": "modernfix-neoforge-5.27.27+mc1.21.1.jar",
+    "jarBytes": 614138,
+    "models": 0,
+    "recipes": 0,
+    "textureBytes": 11190,
+    "nestedJarBytes": 0
+  },
+  {
+    "file": "MouseTweaks-neoforge-mc1.21-2.26.1.jar",
+    "jarBytes": 73938,
+    "models": 0,
+    "recipes": 0,
+    "textureBytes": 0,
+    "nestedJarBytes": 0
+  },
+  {
+    "file": "noticeboard-1.21.1-1.1.0.jar",
+    "jarBytes": 205584,
+    "models": 2,
+    "recipes": 1,
+    "textureBytes": 793,
+    "nestedJarBytes": 0
+  },
+  {
+    "file": "owo-lib-neoforge-0.12.15.6-beta.1+1.21.jar",
+    "jarBytes": 1223197,
+    "models": 0,
+    "recipes": 0,
+    "textureBytes": 9260,
+    "nestedJarBytes": 318222
+  },
+  {
+    "file": "playernamestyler-2.0.3-mc1.21.1.jar",
+    "jarBytes": 113800,
+    "models": 0,
+    "recipes": 0,
+    "textureBytes": 0,
+    "nestedJarBytes": 0
+  },
+  {
+    "file": "polymorph-neoforge-1.1.0+1.21.1.jar",
+    "jarBytes": 174972,
+    "models": 0,
+    "recipes": 0,
+    "textureBytes": 1148,
+    "nestedJarBytes": 0
+  },
+  {
+    "file": "rhino-2101.2.7-build.85.jar",
+    "jarBytes": 882075,
+    "models": 0,
+    "recipes": 0,
+    "textureBytes": 0,
+    "nestedJarBytes": 0
+  },
+  {
+    "file": "Searchables-neoforge-1.21.1-1.0.2.jar",
+    "jarBytes": 77326,
+    "models": 0,
+    "recipes": 0,
+    "textureBytes": 0,
+    "nestedJarBytes": 0
+  },
+  {
+    "file": "signboards-neoforge-1.21.1.jar",
+    "jarBytes": 912314,
+    "models": 5,
+    "recipes": 8,
+    "textureBytes": 793829,
+    "nestedJarBytes": 0
+  },
+  {
+    "file": "simplehats-neoforge-1.21.1-0.4.1.jar",
+    "jarBytes": 1407624,
+    "models": 351,
+    "recipes": 13,
+    "textureBytes": 877128,
+    "nestedJarBytes": 0
+  },
+  {
+    "file": "simplygraves-1.1.4+mc1.21-b23.jar",
+    "jarBytes": 75907,
+    "models": 13,
+    "recipes": 0,
+    "textureBytes": 604,
+    "nestedJarBytes": 0
+  },
+  {
+    "file": "simplylight-1.5.3+1.21.1-b4.jar",
+    "jarBytes": 1103352,
+    "models": 370,
+    "recipes": 234,
+    "textureBytes": 315523,
+    "nestedJarBytes": 0
+  },
+  {
+    "file": "SkyblockBuilder-21.1.37.jar",
+    "jarBytes": 614104,
+    "models": 5,
+    "recipes": 0,
+    "textureBytes": 9509,
+    "nestedJarBytes": 8116
+  },
+  {
+    "file": "sodium-neoforge-0.6.13+mc1.21.1.jar",
+    "jarBytes": 1162994,
+    "models": 33,
+    "recipes": 0,
+    "textureBytes": 42482,
+    "nestedJarBytes": 235732
+  },
+  {
+    "file": "sophisticatedbackpacks-1.21.1-3.26.18.2235.jar",
+    "jarBytes": 1258043,
+    "models": 97,
+    "recipes": 85,
+    "textureBytes": 79347,
+    "nestedJarBytes": 0
+  },
+  {
+    "file": "sophisticatedcore-1.21.1-1.5.21.2439.jar",
+    "jarBytes": 1825693,
+    "models": 3,
+    "recipes": 4,
+    "textureBytes": 73475,
+    "nestedJarBytes": 0
+  },
+  {
+    "file": "spark-1.10.124-neoforge.jar",
+    "jarBytes": 3642581,
+    "models": 0,
+    "recipes": 0,
+    "textureBytes": 0,
+    "nestedJarBytes": 0
+  },
+  {
+    "file": "StorageDrawers-neoforge-1.21.1-13.11.4.jar",
+    "jarBytes": 1131420,
+    "models": 427,
+    "recipes": 126,
+    "textureBytes": 113163,
+    "nestedJarBytes": 0
+  },
+  {
+    "file": "supermartijn642configlib-1.1.8-neoforge-mc1.21.jar",
+    "jarBytes": 207514,
+    "models": 0,
+    "recipes": 0,
+    "textureBytes": 0,
+    "nestedJarBytes": 0
+  },
+  {
+    "file": "supermartijn642corelib-1.1.26-neoforge-mc1.21.jar",
+    "jarBytes": 591925,
+    "models": 0,
+    "recipes": 0,
+    "textureBytes": 1481,
+    "nestedJarBytes": 0
+  },
+  {
+    "file": "tesseract-api-neoforge-1.12.19-1.21.1.jar",
+    "jarBytes": 764237,
+    "models": 0,
+    "recipes": 0,
+    "textureBytes": 683,
+    "nestedJarBytes": 36481
+  },
+  {
+    "file": "trashcans-1.1.2-neoforge-mc1.21.jar",
+    "jarBytes": 169363,
+    "models": 9,
+    "recipes": 4,
+    "textureBytes": 12670,
+    "nestedJarBytes": 0
+  },
+  {
+    "file": "trashslot-neoforge-1.21.1-21.1.11.jar",
+    "jarBytes": 77535,
+    "models": 0,
+    "recipes": 0,
+    "textureBytes": 1587,
+    "nestedJarBytes": 0
+  },
+  {
+    "file": "watermedia-3.0.0.23.jar",
+    "jarBytes": 3625444,
+    "models": 0,
+    "recipes": 0,
+    "textureBytes": 0,
+    "nestedJarBytes": 0
+  },
+  {
+    "file": "watermedia_binaries-3.0.0.6.jar",
+    "jarBytes": 143725808,
+    "models": 0,
+    "recipes": 0,
+    "textureBytes": 0,
+    "nestedJarBytes": 0
+  }
+]

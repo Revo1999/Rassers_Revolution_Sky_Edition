@@ -1,0 +1,113 @@
+{
+  "scope": "models and blueprints; gameplay not registered",
+  "machines": [
+    {
+      "machine": "pressure_casting_plant",
+      "dimensions": {
+        "width": 9,
+        "height": 5,
+        "depth": 9
+      },
+      "placedBlocks": 161,
+      "outwardHatches": 9,
+      "connectedStructure": true,
+      "symmetricStructureFootprint": true,
+      "reservedAirClear": true,
+      "animationSeconds": 8,
+      "animatedGroups": [
+        "press_platen"
+      ],
+      "loopEndpointsMatch": true,
+      "sha256": "308e7a314d14a9cc5cdb0ed0bc7589a807e2a08231fda9b7eb5f6308a5a3afec",
+      "pressContactsCastingWithoutPassingThrough": true
+    },
+    {
+      "machine": "electroplating_line",
+      "dimensions": {
+        "width": 9,
+        "height": 5,
+        "depth": 9
+      },
+      "placedBlocks": 199,
+      "outwardHatches": 10,
+      "connectedStructure": true,
+      "symmetricStructureFootprint": true,
+      "reservedAirClear": true,
+      "animationSeconds": 18,
+      "animatedGroups": [
+        "plating_rack",
+        "gantry_carriage",
+        "hoist_cables"
+      ],
+      "loopEndpointsMatch": true,
+      "sha256": "a2c4db13c8c22a2bef4b4c8376d8e54cf69bc2f9c5f44d7dfe202f2e7ef450d3",
+      "threeSeparateBaths": true,
+      "rackClearsDividersDuringTravel": true,
+      "hoistTracksImmersion": true
+    },
+    {
+      "machine": "particle_collider",
+      "dimensions": {
+        "width": 21,
+        "height": 5,
+        "depth": 21
+      },
+      "placedBlocks": 784,
+      "outwardHatches": 9,
+      "connectedStructure": true,
+      "symmetricStructureFootprint": true,
+      "reservedAirClear": true,
+      "animationSeconds": 12,
+      "animatedGroups": [
+        "beam_packet_a",
+        "beam_packet_b",
+        "completion_flash_0",
+        "completion_flash_1",
+        "completion_flash_2",
+        "completion_flash_3",
+        "completion_flash_4",
+        "completion_flash_5",
+        "completion_flash_6",
+        "completion_flash_7",
+        "completion_flash_8",
+        "completion_flash_9",
+        "completion_flash_10",
+        "completion_flash_11",
+        "completion_flash_12",
+        "completion_flash_13",
+        "completion_flash_14",
+        "completion_flash_15",
+        "completion_flash_16",
+        "completion_flash_17",
+        "completion_flash_18",
+        "completion_flash_19",
+        "completion_flash_20",
+        "completion_flash_21",
+        "completion_flash_22",
+        "completion_flash_23",
+        "completion_flash_24",
+        "completion_flash_25",
+        "completion_flash_26",
+        "completion_flash_27",
+        "completion_flash_28",
+        "completion_flash_29",
+        "completion_flash_30",
+        "completion_flash_31"
+      ],
+      "loopEndpointsMatch": true,
+      "sha256": "6abbd34a46903db6b92b4081f94b4534545e373cbbb188dce7f2fed224d640e8",
+      "donutShape": true,
+      "centreOpenAtEveryHeight": true,
+      "hollowBeamTunnel": true,
+      "orbitingLightTrails": true,
+      "completionFlashSeconds": 1.2,
+      "completionFlashLenses": 32,
+      "completionFlashOneShot": true,
+      "flashHiddenDuringOperation": true
+    }
+  ],
+  "individualPartModels": 27,
+  "nativeJavaBlockExports": 27,
+  "allPartBoundsWithinOneBlock": true,
+  "structuralBlocksAnimated": false
+}

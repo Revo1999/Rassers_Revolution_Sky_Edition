@@ -1,0 +1,19 @@
+{
+  "result": "PASS",
+  "chapter": "Chapter 5: The LV Factory",
+  "new_lv_quests": 48,
+  "new_bridge_lessons": 1,
+  "total_chapters": 10,
+  "total_quests": 204,
+  "existing_quest_ids_preserved": 145,
+  "unique_progress_ids": 473,
+  "acyclic_dependencies": true,
+  "non_consuming_tasks": true,
+  "recipe_references_verified": 44,
+  "distinct_task_and_icon_items": 44,
+  "battery_bootstrap": "copper/zinc crafting before electric lead/antimony",
+  "first_aluminum": "32 EU/t direct bauxite -> nuggets",
+  "advanced_machine_bootstrap_cycle": false,
+  "diamond_machine_branch_optional": true,
+  "wire_node_collisions": 0
+}

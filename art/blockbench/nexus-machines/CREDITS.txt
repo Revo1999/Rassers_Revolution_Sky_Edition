@@ -1,0 +1,3 @@
+Base Nexus artwork: Revo project. Native steel and hatch overlays: Modern Industrialization 2.5.11, AztechMC / contributors, inherited from the approved Nexus atlas.
+Machine-specific hydraulic, bath, magnet, control and beam tiles: authored Revo pixel artwork.
+Geometry authored using Blockbench MCP; each structural cube belongs to an individual blueprint block. Moving details and contained fluids/beams are separately identified preview visuals.

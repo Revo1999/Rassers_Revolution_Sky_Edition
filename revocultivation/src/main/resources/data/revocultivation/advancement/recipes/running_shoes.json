@@ -1,0 +1,32 @@
+{
+  "criteria": {
+    "cotton": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "revocultivation:cotton"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "recipes": [
+      "revocultivation:running_shoes/white",
+      "revocultivation:running_shoes/black",
+      "revocultivation:running_shoes/brown",
+      "revocultivation:running_shoes/red",
+      "revocultivation:running_shoes/orange",
+      "revocultivation:running_shoes/yellow",
+      "revocultivation:running_shoes/green",
+      "revocultivation:running_shoes/cyan",
+      "revocultivation:running_shoes/blue",
+      "revocultivation:running_shoes/purple",
+      "revocultivation:running_shoes/magenta",
+      "revocultivation:running_shoes/pink"
+    ]
+  }
+}

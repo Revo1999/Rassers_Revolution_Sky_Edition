@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "OAO",
+    "DCD",
+    "OMO"
+  ],
+  "key": {
+    "O": {
+      "item": "minecraft:obsidian"
+    },
+    "A": {
+      "item": "modern_industrialization:analog_circuit"
+    },
+    "D": {
+      "item": "minecraft:diamond"
+    },
+    "C": {
+      "item": "revoindustry:wither_chamber_casing"
+    },
+    "M": {
+      "item": "modern_industrialization:motor"
+    }
+  },
+  "result": {
+    "id": "revoindustry:wither_hatchery",
+    "count": 1
+  }
+}

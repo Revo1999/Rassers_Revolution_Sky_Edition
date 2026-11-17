@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SBS",
+    "PCP",
+    "SBS"
+  ],
+  "key": {
+    "S": {
+      "item": "modern_industrialization:steel_plate"
+    },
+    "P": {
+      "item": "modern_industrialization:fluid_pipe"
+    },
+    "B": {
+      "item": "minecraft:bucket"
+    },
+    "C": {
+      "item": "revoindustry:wither_chamber_casing"
+    }
+  },
+  "result": {
+    "id": "revoindustry:geode_brine_output",
+    "count": 1
+  }
+}

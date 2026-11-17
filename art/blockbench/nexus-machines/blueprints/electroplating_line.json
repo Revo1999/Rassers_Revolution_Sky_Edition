@@ -1,0 +1,2203 @@
+{
+  "status": "ART_AND_DESIGN_ONLY_NOT_REGISTERED",
+  "name": "Electroplating Line",
+  "dimensions": {
+    "width": 9,
+    "height": 5,
+    "depth": 9
+  },
+  "placedBlocks": 199,
+  "shape": "individual-block industrial frame",
+  "counts": {
+    "bath_wall": 26,
+    "casing": 45,
+    "control_plating": 1,
+    "deck_grate": 32,
+    "energy": 1,
+    "fluid_in": 3,
+    "fluid_out": 3,
+    "gantry_rail": 14,
+    "hazard": 4,
+    "input": 1,
+    "light_blue": 1,
+    "output": 1,
+    "pressure_plate": 35,
+    "reinforced_column": 12,
+    "ribbed_panel": 10,
+    "service_panel": 6,
+    "vent": 4
+  },
+  "cells": [
+    {
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "part": "hazard",
+      "section": "base",
+      "facing": "north"
+    },
+    {
+      "position": [
+        1,
+        0,
+        0
+      ],
+      "part": "deck_grate",
+      "section": "base",
+      "facing": "north"
+    },
+    {
+      "position": [
+        2,
+        0,
+        0
+      ],
+      "part": "casing",
+      "section": "base",
+      "facing": "north"
+    },
+    {
+      "position": [
+        3,
+        0,
+        0
+      ],
+      "part": "casing",
+      "section": "base",
+      "facing": "north"
+    },
+    {
+      "position": [
+        4,
+        0,
+        0
+      ],
+      "part": "casing",
+      "section": "base",
+      "facing": "north"
+    },
+    {
+      "position": [
+        5,
+        0,
+        0
+      ],
+      "part": "casing",
+      "section": "base",
+      "facing": "north"
+    },
+    {
+      "position": [
+        6,
+        0,
+        0
+      ],
+      "part": "casing",
+      "section": "base",
+      "facing": "north"
+    },
+    {
+      "position": [
+        7,
+        0,
+        0
+      ],
+      "part": "deck_grate",
+      "section": "base",
+      "facing": "north"
+    },
+    {
+      "position": [
+        8,
+        0,
+        0
+      ],
+      "part": "hazard",
+      "section": "base",
+      "facing": "north"
+    },
+    {
+      "position": [
+        0,
+        0,
+        1
+      ],
+      "part": "deck_grate",
+      "section": "base",
+      "facing": "north"
+    },
+    {
+      "position": [
+        1,
+        0,
+        1
+      ],
+      "part": "deck_grate",
+      "section": "base",
+      "facing": "north"
+    },
+    {
+      "position": [
+        2,
+        0,
+        1
+      ],
+      "part": "deck_grate",
+      "section": "base",
+      "facing": "north"
+    },
+    {
+      "position": [
+        3,
+        0,
+        1
+      ],
+      "part": "deck_grate",
+      "section": "base",
+      "facing": "north"
+    },
+    {
+      "position": [
+        4,
+        0,
+        1
+      ],
+      "part": "deck_grate",
+      "section": "base",
+      "facing": "north"
+    },
+    {
+      "position": [
+        5,
+        0,
+        1
+      ],
+      "part": "deck_grate",
+      "section": "base",
+      "facing": "north"
+    },
+    {
+      "position": [
+        6,
+        0,
+        1
+      ],
+      "part": "deck_grate",
+      "section": "base",
+      "facing": "north"
+    },
+    {
+      "position": [
+        7,
+        0,
+        1
+      ],
+      "part": "deck_grate",
+      "section": "base",
+      "facing": "north"
+    },
+    {
+      "position": [
+        8,
+        0,
+        1
+      ],
+      "part": "deck_grate",
+      "section": "base",
+      "facing": "north"
+    },
+    {
+      "position": [
+        0,
+        0,
+        2
+      ],
+      "part": "casing",
+      "section": "base",
+      "facing": "north"
+    },
+    {
+      "position": [
+        1,
+        0,
+        2
+      ],
+      "part": "deck_grate",
+      "section": "base",
+      "facing": "north"
+    },
+    {
+      "position": [
+        2,
+        0,
+        2
+      ],
+      "part": "casing",
+      "section": "base",
+      "facing": "north"
+    },
+    {
+      "position": [
+        3,
+        0,
+        2
+      ],
+      "part": "casing",
+      "section": "base",
+      "facing": "north"
+    },
+    {
+      "position": [
+        4,
+        0,
+        2
+      ],
+      "part": "casing",
+      "section": "base",
+      "facing": "north"
+    },
+    {
+      "position": [
+        5,
+        0,
+        2
+      ],
+      "part": "casing",
+      "section": "base",
+      "facing": "north"
+    },
+    {
+      "position": [
+        6,
+        0,
+        2
+      ],
+      "part": "casing",
+      "section": "base",
+      "facing": "north"
+    },
+    {
+      "position": [
+        7,
+        0,
+        2
+      ],
+      "part": "deck_grate",
+      "section": "base",
+      "facing": "north"
+    },
+    {
+      "position": [
+        8,
+        0,
+        2
+      ],
+      "part": "casing",
+      "section": "base",
+      "facing": "north"
+    },
+    {
+      "position": [
+        0,
+        0,
+        3
+      ],
+      "part": "casing",
+      "section": "base",
+      "facing": "north"
+    },
+    {
+      "position": [
+        1,
+        0,
+        3
+      ],
+      "part": "deck_grate",
+      "section": "base",
+      "facing": "north"
+    },
+    {
+      "position": [
+        2,
+        0,
+        3
+      ],
+      "part": "casing",
+      "section": "base",
+      "facing": "north"
+    },
+    {
+      "position": [
+        3,
+        0,
+        3
+      ],
+      "part": "casing",
+      "section": "base",
+      "facing": "north"
+    },
+    {
+      "position": [
+        4,
+        0,
+        3
+      ],
+      "part": "casing",
+      "section": "base",
+      "facing": "north"
+    },
+    {
+      "position": [
+        5,
+        0,
+        3
+      ],
+      "part": "casing",
+      "section": "base",
+      "facing": "north"
+    },
+    {
+      "position": [
+        6,
+        0,
+        3
+      ],
+      "part": "casing",
+      "section": "base",
+      "facing": "north"
+    },
+    {
+      "position": [
+        7,
+        0,
+        3
+      ],
+      "part": "deck_grate",
+      "section": "base",
+      "facing": "north"
+    },
+    {
+      "position": [
+        8,
+        0,
+        3
+      ],
+      "part": "casing",
+      "section": "base",
+      "facing": "north"
+    },
+    {
+      "position": [
+        0,
+        0,
+        4
+      ],
+      "part": "casing",
+      "section": "base",
+      "facing": "north"
+    },
+    {
+      "position": [
+        1,
+        0,
+        4
+      ],
+      "part": "deck_grate",
+      "section": "base",
+      "facing": "north"
+    },
+    {
+      "position": [
+        2,
+        0,
+        4
+      ],
+      "part": "casing",
+      "section": "base",
+      "facing": "north"
+    },
+    {
+      "position": [
+        3,
+        0,
+        4
+      ],
+      "part": "casing",
+      "section": "base",
+      "facing": "north"
+    },
+    {
+      "position": [
+        4,
+        0,
+        4
+      ],
+      "part": "casing",
+      "section": "base",
+      "facing": "north"
+    },
+    {
+      "position": [
+        5,
+        0,
+        4
+      ],
+      "part": "casing",
+      "section": "base",
+      "facing": "north"
+    },
+    {
+      "position": [
+        6,
+        0,
+        4
+      ],
+      "part": "casing",
+      "section": "base",
+      "facing": "north"
+    },
+    {
+      "position": [
+        7,
+        0,
+        4
+      ],
+      "part": "deck_grate",
+      "section": "base",
+      "facing": "north"
+    },
+    {
+      "position": [
+        8,
+        0,
+        4
+      ],
+      "part": "casing",
+      "section": "base",
+      "facing": "north"
+    },
+    {
+      "position": [
+        0,
+        0,
+        5
+      ],
+      "part": "casing",
+      "section": "base",
+      "facing": "north"
+    },
+    {
+      "position": [
+        1,
+        0,
+        5
+      ],
+      "part": "deck_grate",
+      "section": "base",
+      "facing": "north"
+    },
+    {
+      "position": [
+        2,
+        0,
+        5
+      ],
+      "part": "casing",
+      "section": "base",
+      "facing": "north"
+    },
+    {
+      "position": [
+        3,
+        0,
+        5
+      ],
+      "part": "casing",
+      "section": "base",
+      "facing": "north"
+    },
+    {
+      "position": [
+        4,
+        0,
+        5
+      ],
+      "part": "casing",
+      "section": "base",
+      "facing": "north"
+    },
+    {
+      "position": [
+        5,
+        0,
+        5
+      ],
+      "part": "casing",
+      "section": "base",
+      "facing": "north"
+    },
+    {
+      "position": [
+        6,
+        0,
+        5
+      ],
+      "part": "casing",
+      "section": "base",
+      "facing": "north"
+    },
+    {
+      "position": [
+        7,
+        0,
+        5
+      ],
+      "part": "deck_grate",
+      "section": "base",
+      "facing": "north"
+    },
+    {
+      "position": [
+        8,
+        0,
+        5
+      ],
+      "part": "casing",
+      "section": "base",
+      "facing": "north"
+    },
+    {
+      "position": [
+        0,
+        0,
+        6
+      ],
+      "part": "casing",
+      "section": "base",
+      "facing": "north"
+    },
+    {
+      "position": [
+        1,
+        0,
+        6
+      ],
+      "part": "deck_grate",
+      "section": "base",
+      "facing": "north"
+    },
+    {
+      "position": [
+        2,
+        0,
+        6
+      ],
+      "part": "casing",
+      "section": "base",
+      "facing": "north"
+    },
+    {
+      "position": [
+        3,
+        0,
+        6
+      ],
+      "part": "casing",
+      "section": "base",
+      "facing": "north"
+    },
+    {
+      "position": [
+        4,
+        0,
+        6
+      ],
+      "part": "casing",
+      "section": "base",
+      "facing": "north"
+    },
+    {
+      "position": [
+        5,
+        0,
+        6
+      ],
+      "part": "casing",
+      "section": "base",
+      "facing": "north"
+    },
+    {
+      "position": [
+        6,
+        0,
+        6
+      ],
+      "part": "casing",
+      "section": "base",
+      "facing": "north"
+    },
+    {
+      "position": [
+        7,
+        0,
+        6
+      ],
+      "part": "deck_grate",
+      "section": "base",
+      "facing": "north"
+    },
+    {
+      "position": [
+        8,
+        0,
+        6
+      ],
+      "part": "casing",
+      "section": "base",
+      "facing": "north"
+    },
+    {
+      "position": [
+        0,
+        0,
+        7
+      ],
+      "part": "deck_grate",
+      "section": "base",
+      "facing": "north"
+    },
+    {
+      "position": [
+        1,
+        0,
+        7
+      ],
+      "part": "deck_grate",
+      "section": "base",
+      "facing": "north"
+    },
+    {
+      "position": [
+        2,
+        0,
+        7
+      ],
+      "part": "deck_grate",
+      "section": "base",
+      "facing": "north"
+    },
+    {
+      "position": [
+        3,
+        0,
+        7
+      ],
+      "part": "deck_grate",
+      "section": "base",
+      "facing": "north"
+    },
+    {
+      "position": [
+        4,
+        0,
+        7
+      ],
+      "part": "deck_grate",
+      "section": "base",
+      "facing": "north"
+    },
+    {
+      "position": [
+        5,
+        0,
+        7
+      ],
+      "part": "deck_grate",
+      "section": "base",
+      "facing": "north"
+    },
+    {
+      "position": [
+        6,
+        0,
+        7
+      ],
+      "part": "deck_grate",
+      "section": "base",
+      "facing": "north"
+    },
+    {
+      "position": [
+        7,
+        0,
+        7
+      ],
+      "part": "deck_grate",
+      "section": "base",
+      "facing": "north"
+    },
+    {
+      "position": [
+        8,
+        0,
+        7
+      ],
+      "part": "deck_grate",
+      "section": "base",
+      "facing": "north"
+    },
+    {
+      "position": [
+        0,
+        0,
+        8
+      ],
+      "part": "hazard",
+      "section": "base",
+      "facing": "north"
+    },
+    {
+      "position": [
+        1,
+        0,
+        8
+      ],
+      "part": "deck_grate",
+      "section": "base",
+      "facing": "north"
+    },
+    {
+      "position": [
+        2,
+        0,
+        8
+      ],
+      "part": "casing",
+      "section": "base",
+      "facing": "north"
+    },
+    {
+      "position": [
+        3,
+        0,
+        8
+      ],
+      "part": "casing",
+      "section": "base",
+      "facing": "north"
+    },
+    {
+      "position": [
+        4,
+        0,
+        8
+      ],
+      "part": "casing",
+      "section": "base",
+      "facing": "north"
+    },
+    {
+      "position": [
+        5,
+        0,
+        8
+      ],
+      "part": "casing",
+      "section": "base",
+      "facing": "north"
+    },
+    {
+      "position": [
+        6,
+        0,
+        8
+      ],
+      "part": "casing",
+      "section": "base",
+      "facing": "north"
+    },
+    {
+      "position": [
+        7,
+        0,
+        8
+      ],
+      "part": "deck_grate",
+      "section": "base",
+      "facing": "north"
+    },
+    {
+      "position": [
+        8,
+        0,
+        8
+      ],
+      "part": "hazard",
+      "section": "base",
+      "facing": "north"
+    },
+    {
+      "position": [
+        2,
+        1,
+        0
+      ],
+      "part": "input",
+      "section": "hatches",
+      "facing": "north",
+      "role": "substrate_input"
+    },
+    {
+      "position": [
+        4,
+        1,
+        0
+      ],
+      "part": "control_plating",
+      "section": "hatches",
+      "facing": "north",
+      "role": "controller"
+    },
+    {
+      "position": [
+        6,
+        1,
+        0
+      ],
+      "part": "output",
+      "section": "hatches",
+      "facing": "north",
+      "role": "plated_output"
+    },
+    {
+      "position": [
+        1,
+        1,
+        1
+      ],
+      "part": "reinforced_column",
+      "section": "gantry_frame",
+      "facing": "north"
+    },
+    {
+      "position": [
+        2,
+        1,
+        1
+      ],
+      "part": "pressure_plate",
+      "section": "bath_bases",
+      "facing": "north"
+    },
+    {
+      "position": [
+        3,
+        1,
+        1
+      ],
+      "part": "pressure_plate",
+      "section": "bath_bases",
+      "facing": "north"
+    },
+    {
+      "position": [
+        4,
+        1,
+        1
+      ],
+      "part": "pressure_plate",
+      "section": "bath_bases",
+      "facing": "north"
+    },
+    {
+      "position": [
+        5,
+        1,
+        1
+      ],
+      "part": "pressure_plate",
+      "section": "bath_bases",
+      "facing": "north"
+    },
+    {
+      "position": [
+        6,
+        1,
+        1
+      ],
+      "part": "pressure_plate",
+      "section": "bath_bases",
+      "facing": "north"
+    },
+    {
+      "position": [
+        7,
+        1,
+        1
+      ],
+      "part": "reinforced_column",
+      "section": "gantry_frame",
+      "facing": "north"
+    },
+    {
+      "position": [
+        0,
+        1,
+        2
+      ],
+      "part": "fluid_in",
+      "section": "hatches",
+      "facing": "west",
+      "role": "cleaning_input"
+    },
+    {
+      "position": [
+        1,
+        1,
+        2
+      ],
+      "part": "service_panel",
+      "section": "bath_manifold",
+      "facing": "north"
+    },
+    {
+      "position": [
+        2,
+        1,
+        2
+      ],
+      "part": "pressure_plate",
+      "section": "bath_bases",
+      "facing": "north"
+    },
+    {
+      "position": [
+        3,
+        1,
+        2
+      ],
+      "part": "pressure_plate",
+      "section": "bath_bases",
+      "facing": "north"
+    },
+    {
+      "position": [
+        4,
+        1,
+        2
+      ],
+      "part": "pressure_plate",
+      "section": "bath_bases",
+      "facing": "north"
+    },
+    {
+      "position": [
+        5,
+        1,
+        2
+      ],
+      "part": "pressure_plate",
+      "section": "bath_bases",
+      "facing": "north"
+    },
+    {
+      "position": [
+        6,
+        1,
+        2
+      ],
+      "part": "pressure_plate",
+      "section": "bath_bases",
+      "facing": "north"
+    },
+    {
+      "position": [
+        7,
+        1,
+        2
+      ],
+      "part": "service_panel",
+      "section": "bath_manifold",
+      "facing": "north"
+    },
+    {
+      "position": [
+        8,
+        1,
+        2
+      ],
+      "part": "fluid_out",
+      "section": "hatches",
+      "facing": "east",
+      "role": "cleaning_waste_output"
+    },
+    {
+      "position": [
+        2,
+        1,
+        3
+      ],
+      "part": "pressure_plate",
+      "section": "bath_bases",
+      "facing": "north"
+    },
+    {
+      "position": [
+        3,
+        1,
+        3
+      ],
+      "part": "pressure_plate",
+      "section": "bath_bases",
+      "facing": "north"
+    },
+    {
+      "position": [
+        4,
+        1,
+        3
+      ],
+      "part": "pressure_plate",
+      "section": "bath_bases",
+      "facing": "north"
+    },
+    {
+      "position": [
+        5,
+        1,
+        3
+      ],
+      "part": "pressure_plate",
+      "section": "bath_bases",
+      "facing": "north"
+    },
+    {
+      "position": [
+        6,
+        1,
+        3
+      ],
+      "part": "pressure_plate",
+      "section": "bath_bases",
+      "facing": "north"
+    },
+    {
+      "position": [
+        0,
+        1,
+        4
+      ],
+      "part": "fluid_in",
+      "section": "hatches",
+      "facing": "west",
+      "role": "plating_input"
+    },
+    {
+      "position": [
+        1,
+        1,
+        4
+      ],
+      "part": "service_panel",
+      "section": "bath_manifold",
+      "facing": "north"
+    },
+    {
+      "position": [
+        2,
+        1,
+        4
+      ],
+      "part": "pressure_plate",
+      "section": "bath_bases",
+      "facing": "north"
+    },
+    {
+      "position": [
+        3,
+        1,
+        4
+      ],
+      "part": "pressure_plate",
+      "section": "bath_bases",
+      "facing": "north"
+    },
+    {
+      "position": [
+        4,
+        1,
+        4
+      ],
+      "part": "pressure_plate",
+      "section": "bath_bases",
+      "facing": "north"
+    },
+    {
+      "position": [
+        5,
+        1,
+        4
+      ],
+      "part": "pressure_plate",
+      "section": "bath_bases",
+      "facing": "north"
+    },
+    {
+      "position": [
+        6,
+        1,
+        4
+      ],
+      "part": "pressure_plate",
+      "section": "bath_bases",
+      "facing": "north"
+    },
+    {
+      "position": [
+        7,
+        1,
+        4
+      ],
+      "part": "service_panel",
+      "section": "bath_manifold",
+      "facing": "north"
+    },
+    {
+      "position": [
+        8,
+        1,
+        4
+      ],
+      "part": "fluid_out",
+      "section": "hatches",
+      "facing": "east",
+      "role": "plating_waste_output"
+    },
+    {
+      "position": [
+        2,
+        1,
+        5
+      ],
+      "part": "pressure_plate",
+      "section": "bath_bases",
+      "facing": "north"
+    },
+    {
+      "position": [
+        3,
+        1,
+        5
+      ],
+      "part": "pressure_plate",
+      "section": "bath_bases",
+      "facing": "north"
+    },
+    {
+      "position": [
+        4,
+        1,
+        5
+      ],
+      "part": "pressure_plate",
+      "section": "bath_bases",
+      "facing": "north"
+    },
+    {
+      "position": [
+        5,
+        1,
+        5
+      ],
+      "part": "pressure_plate",
+      "section": "bath_bases",
+      "facing": "north"
+    },
+    {
+      "position": [
+        6,
+        1,
+        5
+      ],
+      "part": "pressure_plate",
+      "section": "bath_bases",
+      "facing": "north"
+    },
+    {
+      "position": [
+        0,
+        1,
+        6
+      ],
+      "part": "fluid_in",
+      "section": "hatches",
+      "facing": "west",
+      "role": "rinse_input"
+    },
+    {
+      "position": [
+        1,
+        1,
+        6
+      ],
+      "part": "service_panel",
+      "section": "bath_manifold",
+      "facing": "north"
+    },
+    {
+      "position": [
+        2,
+        1,
+        6
+      ],
+      "part": "pressure_plate",
+      "section": "bath_bases",
+      "facing": "north"
+    },
+    {
+      "position": [
+        3,
+        1,
+        6
+      ],
+      "part": "pressure_plate",
+      "section": "bath_bases",
+      "facing": "north"
+    },
+    {
+      "position": [
+        4,
+        1,
+        6
+      ],
+      "part": "pressure_plate",
+      "section": "bath_bases",
+      "facing": "north"
+    },
+    {
+      "position": [
+        5,
+        1,
+        6
+      ],
+      "part": "pressure_plate",
+      "section": "bath_bases",
+      "facing": "north"
+    },
+    {
+      "position": [
+        6,
+        1,
+        6
+      ],
+      "part": "pressure_plate",
+      "section": "bath_bases",
+      "facing": "north"
+    },
+    {
+      "position": [
+        7,
+        1,
+        6
+      ],
+      "part": "service_panel",
+      "section": "bath_manifold",
+      "facing": "north"
+    },
+    {
+      "position": [
+        8,
+        1,
+        6
+      ],
+      "part": "fluid_out",
+      "section": "hatches",
+      "facing": "east",
+      "role": "rinse_waste_output"
+    },
+    {
+      "position": [
+        1,
+        1,
+        7
+      ],
+      "part": "reinforced_column",
+      "section": "gantry_frame",
+      "facing": "north"
+    },
+    {
+      "position": [
+        2,
+        1,
+        7
+      ],
+      "part": "pressure_plate",
+      "section": "bath_bases",
+      "facing": "north"
+    },
+    {
+      "position": [
+        3,
+        1,
+        7
+      ],
+      "part": "pressure_plate",
+      "section": "bath_bases",
+      "facing": "north"
+    },
+    {
+      "position": [
+        4,
+        1,
+        7
+      ],
+      "part": "pressure_plate",
+      "section": "bath_bases",
+      "facing": "north"
+    },
+    {
+      "position": [
+        5,
+        1,
+        7
+      ],
+      "part": "pressure_plate",
+      "section": "bath_bases",
+      "facing": "north"
+    },
+    {
+      "position": [
+        6,
+        1,
+        7
+      ],
+      "part": "pressure_plate",
+      "section": "bath_bases",
+      "facing": "north"
+    },
+    {
+      "position": [
+        7,
+        1,
+        7
+      ],
+      "part": "reinforced_column",
+      "section": "gantry_frame",
+      "facing": "north"
+    },
+    {
+      "position": [
+        2,
+        1,
+        8
+      ],
+      "part": "vent",
+      "section": "service_cabinet",
+      "facing": "north"
+    },
+    {
+      "position": [
+        3,
+        1,
+        8
+      ],
+      "part": "vent",
+      "section": "service_cabinet",
+      "facing": "north"
+    },
+    {
+      "position": [
+        4,
+        1,
+        8
+      ],
+      "part": "energy",
+      "section": "hatches",
+      "facing": "south",
+      "role": "energy_input"
+    },
+    {
+      "position": [
+        5,
+        1,
+        8
+      ],
+      "part": "vent",
+      "section": "service_cabinet",
+      "facing": "north"
+    },
+    {
+      "position": [
+        6,
+        1,
+        8
+      ],
+      "part": "vent",
+      "section": "service_cabinet",
+      "facing": "north"
+    },
+    {
+      "position": [
+        1,
+        2,
+        1
+      ],
+      "part": "reinforced_column",
+      "section": "gantry_frame",
+      "facing": "north"
+    },
+    {
+      "position": [
+        2,
+        2,
+        1
+      ],
+      "part": "bath_wall",
+      "section": "bath_walls",
+      "facing": "north"
+    },
+    {
+      "position": [
+        3,
+        2,
+        1
+      ],
+      "part": "bath_wall",
+      "section": "bath_walls",
+      "facing": "north"
+    },
+    {
+      "position": [
+        4,
+        2,
+        1
+      ],
+      "part": "bath_wall",
+      "section": "bath_walls",
+      "facing": "north"
+    },
+    {
+      "position": [
+        5,
+        2,
+        1
+      ],
+      "part": "bath_wall",
+      "section": "bath_walls",
+      "facing": "north"
+    },
+    {
+      "position": [
+        6,
+        2,
+        1
+      ],
+      "part": "bath_wall",
+      "section": "bath_walls",
+      "facing": "north"
+    },
+    {
+      "position": [
+        7,
+        2,
+        1
+      ],
+      "part": "reinforced_column",
+      "section": "gantry_frame",
+      "facing": "north"
+    },
+    {
+      "position": [
+        2,
+        2,
+        2
+      ],
+      "part": "bath_wall",
+      "section": "bath_walls",
+      "facing": "north"
+    },
+    {
+      "position": [
+        6,
+        2,
+        2
+      ],
+      "part": "bath_wall",
+      "section": "bath_walls",
+      "facing": "north"
+    },
+    {
+      "position": [
+        2,
+        2,
+        3
+      ],
+      "part": "bath_wall",
+      "section": "bath_walls",
+      "facing": "north"
+    },
+    {
+      "position": [
+        3,
+        2,
+        3
+      ],
+      "part": "bath_wall",
+      "section": "bath_walls",
+      "facing": "north"
+    },
+    {
+      "position": [
+        4,
+        2,
+        3
+      ],
+      "part": "bath_wall",
+      "section": "bath_walls",
+      "facing": "north"
+    },
+    {
+      "position": [
+        5,
+        2,
+        3
+      ],
+      "part": "bath_wall",
+      "section": "bath_walls",
+      "facing": "north"
+    },
+    {
+      "position": [
+        6,
+        2,
+        3
+      ],
+      "part": "bath_wall",
+      "section": "bath_walls",
+      "facing": "north"
+    },
+    {
+      "position": [
+        2,
+        2,
+        4
+      ],
+      "part": "bath_wall",
+      "section": "bath_walls",
+      "facing": "north"
+    },
+    {
+      "position": [
+        6,
+        2,
+        4
+      ],
+      "part": "bath_wall",
+      "section": "bath_walls",
+      "facing": "north"
+    },
+    {
+      "position": [
+        2,
+        2,
+        5
+      ],
+      "part": "bath_wall",
+      "section": "bath_walls",
+      "facing": "north"
+    },
+    {
+      "position": [
+        3,
+        2,
+        5
+      ],
+      "part": "bath_wall",
+      "section": "bath_walls",
+      "facing": "north"
+    },
+    {
+      "position": [
+        4,
+        2,
+        5
+      ],
+      "part": "bath_wall",
+      "section": "bath_walls",
+      "facing": "north"
+    },
+    {
+      "position": [
+        5,
+        2,
+        5
+      ],
+      "part": "bath_wall",
+      "section": "bath_walls",
+      "facing": "north"
+    },
+    {
+      "position": [
+        6,
+        2,
+        5
+      ],
+      "part": "bath_wall",
+      "section": "bath_walls",
+      "facing": "north"
+    },
+    {
+      "position": [
+        2,
+        2,
+        6
+      ],
+      "part": "bath_wall",
+      "section": "bath_walls",
+      "facing": "north"
+    },
+    {
+      "position": [
+        6,
+        2,
+        6
+      ],
+      "part": "bath_wall",
+      "section": "bath_walls",
+      "facing": "north"
+    },
+    {
+      "position": [
+        1,
+        2,
+        7
+      ],
+      "part": "reinforced_column",
+      "section": "gantry_frame",
+      "facing": "north"
+    },
+    {
+      "position": [
+        2,
+        2,
+        7
+      ],
+      "part": "bath_wall",
+      "section": "bath_walls",
+      "facing": "north"
+    },
+    {
+      "position": [
+        3,
+        2,
+        7
+      ],
+      "part": "bath_wall",
+      "section": "bath_walls",
+      "facing": "north"
+    },
+    {
+      "position": [
+        4,
+        2,
+        7
+      ],
+      "part": "bath_wall",
+      "section": "bath_walls",
+      "facing": "north"
+    },
+    {
+      "position": [
+        5,
+        2,
+        7
+      ],
+      "part": "bath_wall",
+      "section": "bath_walls",
+      "facing": "north"
+    },
+    {
+      "position": [
+        6,
+        2,
+        7
+      ],
+      "part": "bath_wall",
+      "section": "bath_walls",
+      "facing": "north"
+    },
+    {
+      "position": [
+        7,
+        2,
+        7
+      ],
+      "part": "reinforced_column",
+      "section": "gantry_frame",
+      "facing": "north"
+    },
+    {
+      "position": [
+        1,
+        3,
+        1
+      ],
+      "part": "reinforced_column",
+      "section": "gantry_frame",
+      "facing": "north"
+    },
+    {
+      "position": [
+        7,
+        3,
+        1
+      ],
+      "part": "reinforced_column",
+      "section": "gantry_frame",
+      "facing": "north"
+    },
+    {
+      "position": [
+        1,
+        3,
+        7
+      ],
+      "part": "reinforced_column",
+      "section": "gantry_frame",
+      "facing": "north"
+    },
+    {
+      "position": [
+        4,
+        3,
+        7
+      ],
+      "part": "light_blue",
+      "section": "gantry_frame",
+      "facing": "north"
+    },
+    {
+      "position": [
+        7,
+        3,
+        7
+      ],
+      "part": "reinforced_column",
+      "section": "gantry_frame",
+      "facing": "north"
+    },
+    {
+      "position": [
+        1,
+        4,
+        1
+      ],
+      "part": "gantry_rail",
+      "section": "gantry_frame",
+      "facing": "north"
+    },
+    {
+      "position": [
+        2,
+        4,
+        1
+      ],
+      "part": "ribbed_panel",
+      "section": "gantry_frame",
+      "facing": "north"
+    },
+    {
+      "position": [
+        3,
+        4,
+        1
+      ],
+      "part": "ribbed_panel",
+      "section": "gantry_frame",
+      "facing": "north"
+    },
+    {
+      "position": [
+        4,
+        4,
+        1
+      ],
+      "part": "ribbed_panel",
+      "section": "gantry_frame",
+      "facing": "north"
+    },
+    {
+      "position": [
+        5,
+        4,
+        1
+      ],
+      "part": "ribbed_panel",
+      "section": "gantry_frame",
+      "facing": "north"
+    },
+    {
+      "position": [
+        6,
+        4,
+        1
+      ],
+      "part": "ribbed_panel",
+      "section": "gantry_frame",
+      "facing": "north"
+    },
+    {
+      "position": [
+        7,
+        4,
+        1
+      ],
+      "part": "gantry_rail",
+      "section": "gantry_frame",
+      "facing": "north"
+    },
+    {
+      "position": [
+        1,
+        4,
+        2
+      ],
+      "part": "gantry_rail",
+      "section": "gantry_frame",
+      "facing": "north"
+    },
+    {
+      "position": [
+        7,
+        4,
+        2
+      ],
+      "part": "gantry_rail",
+      "section": "gantry_frame",
+      "facing": "north"
+    },
+    {
+      "position": [
+        1,
+        4,
+        3
+      ],
+      "part": "gantry_rail",
+      "section": "gantry_frame",
+      "facing": "north"
+    },
+    {
+      "position": [
+        7,
+        4,
+        3
+      ],
+      "part": "gantry_rail",
+      "section": "gantry_frame",
+      "facing": "north"
+    },
+    {
+      "position": [
+        1,
+        4,
+        4
+      ],
+      "part": "gantry_rail",
+      "section": "gantry_frame",
+      "facing": "north"
+    },
+    {
+      "position": [
+        7,
+        4,
+        4
+      ],
+      "part": "gantry_rail",
+      "section": "gantry_frame",
+      "facing": "north"
+    },
+    {
+      "position": [
+        1,
+        4,
+        5
+      ],
+      "part": "gantry_rail",
+      "section": "gantry_frame",
+      "facing": "north"
+    },
+    {
+      "position": [
+        7,
+        4,
+        5
+      ],
+      "part": "gantry_rail",
+      "section": "gantry_frame",
+      "facing": "north"
+    },
+    {
+      "position": [
+        1,
+        4,
+        6
+      ],
+      "part": "gantry_rail",
+      "section": "gantry_frame",
+      "facing": "north"
+    },
+    {
+      "position": [
+        7,
+        4,
+        6
+      ],
+      "part": "gantry_rail",
+      "section": "gantry_frame",
+      "facing": "north"
+    },
+    {
+      "position": [
+        1,
+        4,
+        7
+      ],
+      "part": "gantry_rail",
+      "section": "gantry_frame",
+      "facing": "north"
+    },
+    {
+      "position": [
+        2,
+        4,
+        7
+      ],
+      "part": "ribbed_panel",
+      "section": "gantry_frame",
+      "facing": "north"
+    },
+    {
+      "position": [
+        3,
+        4,
+        7
+      ],
+      "part": "ribbed_panel",
+      "section": "gantry_frame",
+      "facing": "north"
+    },
+    {
+      "position": [
+        4,
+        4,
+        7
+      ],
+      "part": "ribbed_panel",
+      "section": "gantry_frame",
+      "facing": "north"
+    },
+    {
+      "position": [
+        5,
+        4,
+        7
+      ],
+      "part": "ribbed_panel",
+      "section": "gantry_frame",
+      "facing": "north"
+    },
+    {
+      "position": [
+        6,
+        4,
+        7
+      ],
+      "part": "ribbed_panel",
+      "section": "gantry_frame",
+      "facing": "north"
+    },
+    {
+      "position": [
+        7,
+        4,
+        7
+      ],
+      "part": "gantry_rail",
+      "section": "gantry_frame",
+      "facing": "north"
+    }
+  ],
+  "requiredAir": [
+    [
+      3,
+      2,
+      2
+    ],
+    [
+      4,
+      2,
+      2
+    ],
+    [
+      5,
+      2,
+      2
+    ],
+    [
+      3,
+      2,
+      4
+    ],
+    [
+      4,
+      2,
+      4
+    ],
+    [
+      5,
+      2,
+      4
+    ],
+    [
+      3,
+      2,
+      6
+    ],
+    [
+      4,
+      2,
+      6
+    ],
+    [
+      5,
+      2,
+      6
+    ]
+  ],
+  "hatches": [
+    {
+      "position": [
+        4,
+        1,
+        8
+      ],
+      "part": "energy",
+      "section": "hatches",
+      "facing": "south",
+      "role": "energy_input"
+    },
+    {
+      "position": [
+        2,
+        1,
+        0
+      ],
+      "part": "input",
+      "section": "hatches",
+      "facing": "north",
+      "role": "substrate_input"
+    },
+    {
+      "position": [
+        4,
+        1,
+        0
+      ],
+      "part": "control_plating",
+      "section": "hatches",
+      "facing": "north",
+      "role": "controller"
+    },
+    {
+      "position": [
+        6,
+        1,
+        0
+      ],
+      "part": "output",
+      "section": "hatches",
+      "facing": "north",
+      "role": "plated_output"
+    },
+    {
+      "position": [
+        0,
+        1,
+        2
+      ],
+      "part": "fluid_in",
+      "section": "hatches",
+      "facing": "west",
+      "role": "cleaning_input"
+    },
+    {
+      "position": [
+        8,
+        1,
+        2
+      ],
+      "part": "fluid_out",
+      "section": "hatches",
+      "facing": "east",
+      "role": "cleaning_waste_output"
+    },
+    {
+      "position": [
+        0,
+        1,
+        4
+      ],
+      "part": "fluid_in",
+      "section": "hatches",
+      "facing": "west",
+      "role": "plating_input"
+    },
+    {
+      "position": [
+        8,
+        1,
+        4
+      ],
+      "part": "fluid_out",
+      "section": "hatches",
+      "facing": "east",
+      "role": "plating_waste_output"
+    },
+    {
+      "position": [
+        0,
+        1,
+        6
+      ],
+      "part": "fluid_in",
+      "section": "hatches",
+      "facing": "west",
+      "role": "rinse_input"
+    },
+    {
+      "position": [
+        8,
+        1,
+        6
+      ],
+      "part": "fluid_out",
+      "section": "hatches",
+      "facing": "east",
+      "role": "rinse_waste_output"
+    }
+  ],
+  "visualGroups": [
+    "bath_clean",
+    "bath_plate",
+    "bath_rinse",
+    "gantry_carriage",
+    "hoist_cables",
+    "plating_rack"
+  ],
+  "animations": [
+    "three_bath_plating_cycle"
+  ],
+  "runtimeHatches": "Use existing native MI ItemHatch / fluid / energy implementations and matched casing behavior; preview overlays are not new hatch logic."
+}

@@ -327,8 +327,8 @@
         "5E40000000000009"
       ],
       "description": [
-        "Collect a diamond from the Steel Drill. Its fixed 12-item sequence yields 3 iron, 1 copper, 1 tin, 2 coal, 1 zinc, 1 gold, 1 redstone, 1 lapis and 1 diamond.",
-        "Use the diamond supply for the native MI Bronze Macerator and further processing. Keep the water line and output chest supplied."
+        "Steel extraction now adds raw lead and antimony for the first LV batteries, Mineral Sludge for quartz, and Gem Sludge for diamonds/lapis/emeralds.",
+        "Process sludge with water-backed Create Encased Fans. The drill no longer drops loose diamonds or lapis. Keep existing steam ore processing running."
       ],
       "tasks": [
         {

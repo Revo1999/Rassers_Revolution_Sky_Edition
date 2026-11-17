@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "nativeGameTests": 8,
+  "existingUnitTests": 10,
+  "visualQa": "real client hatch, Wither damage/death, output star and both menus passed",
+  "blockbenchModels": 15,
+  "shell": [
+    5,
+    5,
+    5
+  ],
+  "window": [
+    3,
+    3
+  ],
+  "glassUnchanged": true,
+  "miNativeSteelAndFurnaceHatchPixelsVerified": true,
+  "roofDownlights": 3,
+  "euPerTick": 8192,
+  "ticksPerStar": 1500,
+  "euPerStar": 12288000,
+  "questsAdded": 5,
+  "pack": "C:\\Users\\victo\\Desktop\\Rassers-Revolution-Sky-Edition-0.1.36-dev.mrpack",
+  "packSha512": "ca97ba1a8c9cd757e9d139f46109561cab0922d6ca2b4f2d891acfa7fb3a0cb5175937abf7551ef43b5e036cbeb692741e893001d84a0ebaec724d19fd432b44",
+  "qaExcludedFromProduction": true,
+  "sourceJarPackBytesVerified": true
+}

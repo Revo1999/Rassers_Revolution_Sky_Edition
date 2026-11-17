@@ -36,7 +36,7 @@ public final class FurnaceGameTests {
  static FurnaceFuelHatch fuel(FurnaceController c){return (FurnaceFuelHatch)c.getLevel().getBlockEntity(at(c,0,0,2));}
  static void insert(MIInventory inventory,int slot,Item item,int count){var s=inventory.getItemStacks().get(slot);s.setKey(ItemVariant.of(item));s.setAmount(count);}
  static int count(MIInventory inventory,Item item){int n=0;for(var s:inventory.getItemStacks())if(s.toStack().is(item))n+=s.getAmount();return n;}
- @GameTest(template="furnace_test",timeoutTicks=100)
+ @GameTest(batch="furnaces",template="furnace_test",timeoutTicks=100)
  public static void allHatchGradesHaveOneWrenchSelectedPortAndPersist(GameTestHelper h){
   var level=h.getLevel();var pos=h.absolutePos(new BlockPos(4,2,4));var player=net.neoforged.neoforge.common.util.FakePlayerFactory.getMinecraft(level);player.setShiftKeyDown(true);
   var blocks=new ArrayList<net.neoforged.neoforge.registries.DeferredBlock<MachineBlock>>();blocks.addAll(Furnaces.ITEM_HATCHES);blocks.addAll(Furnaces.FUEL_HATCHES);
@@ -59,7 +59,7 @@ public final class FurnaceGameTests {
    h.assertTrue(be.orientation.outputDirection==Direction.EAST&&be.getMachineModelData().frontDirection==Direction.EAST,"Port survives reload");
   }player.setShiftKeyDown(false);h.succeed();
  }
- @GameTest(template="furnace_test",timeoutTicks=200)
+ @GameTest(batch="furnaces",template="furnace_test",timeoutTicks=200)
  public static void allTenTiersAllRotationsAndFactoryParallelism(GameTestHelper h){
   for(var tier:FurnaceTier.values())for(var facing:Direction.Plane.HORIZONTAL){
    var c=build(h,tier,facing,tier.factoryTier,FurnaceFuelHatch.Kind.SOLID,2);
@@ -72,7 +72,7 @@ public final class FurnaceGameTests {
    var vent=(FurnaceVent)c.getLevel().getBlockEntity(at(c,0,2,1));h.assertTrue(vent.isMatched(),"Vent must acquire the native casing link");
   }h.succeed();
  }
- @GameTest(template="furnace_test",timeoutTicks=100)
+ @GameTest(batch="furnaces",template="furnace_test",timeoutTicks=100)
  public static void shapeRequiresEveryPortCentreAirAndTier(GameTestHelper h){
   var c=build(h,FurnaceTier.IRON,Direction.NORTH,0,FurnaceFuelHatch.Kind.SOLID,0);h.assertTrue(c.isShapeValid(),"Valid iron furnace forms");
   var level=h.getLevel();var vent=at(c,0,2,1);level.setBlockAndUpdate(vent,FurnaceTier.IRON.casingBlock().defaultBlockState());step(c,1);h.assertTrue(!c.isShapeValid()&&!fuel(c).isMatched(),"Missing vent must stop and unlink fuel hatches");
@@ -84,7 +84,7 @@ public final class FurnaceGameTests {
   c=build(h,FurnaceTier.IRON,Direction.NORTH,0,FurnaceFuelHatch.Kind.SOLID,0);level.setBlockAndUpdate(at(c,1,0,0),FurnaceTier.IRON.casingBlock().defaultBlockState());step(c,1);h.assertTrue(!c.isShapeValid(),"Item output is required");
   c=build(h,FurnaceTier.IRON,Direction.NORTH,0,FurnaceFuelHatch.Kind.SOLID,0);level.setBlockAndUpdate(at(c,0,0,2),FurnaceTier.IRON.casingBlock().defaultBlockState());step(c,1);h.assertTrue(!c.isShapeValid(),"Fuel input is required");h.succeed();
  }
- @GameTest(template="furnace_test",timeoutTicks=100)
+ @GameTest(batch="furnaces",template="furnace_test",timeoutTicks=100)
  public static void solidLiquidGasFiltersAndThroughputGrades(GameTestHelper h){
   for(int grade=0;grade<3;grade++)for(var kind:FurnaceFuelHatch.Kind.values()){
    var c=build(h,FurnaceTier.IRON,Direction.NORTH,0,kind,grade);var fuel=fuel(c);h.assertTrue(c.isShapeValid(),"Fuel type/grade forms");
@@ -101,7 +101,7 @@ public final class FurnaceGameTests {
    h.assertTrue(fuel.takeHeat(10000)==0,"Repeated calls cannot exceed one tick's fuel rate");
   }h.succeed();
  }
- @GameTest(template="furnace_test",timeoutTicks=100)
+ @GameTest(batch="furnaces",template="furnace_test",timeoutTicks=100)
  public static void savedJobsOutputBackpressureAndBreakSafety(GameTestHelper h){
   var c=build(h,FurnaceTier.IRON,Direction.NORTH,1,FurnaceFuelHatch.Kind.SOLID,2);fuel(c).items().insertItem(0,new ItemStack(Items.COAL,64),false);insert(items(c,true),0,Items.RAW_IRON,2);step(c,10);h.assertTrue(c.runningJobs()==2,"Both items must be held in progress");
   var tag=c.saveWithFullMetadata(h.getLevel().registryAccess());var pos=c.getBlockPos();var state=c.getBlockState();c.setRemoved();h.getLevel().removeBlockEntity(pos);
@@ -110,20 +110,20 @@ public final class FurnaceGameTests {
   for(var slot:items(restored,false).getItemStacks())slot.empty();step(restored,FurnaceTier.IRON.duration(200)+3);h.assertTrue(count(items(restored,false),Items.IRON_INGOT)==2,"Reloaded jobs complete exactly once");
   insert(items(restored,true),0,Items.RAW_GOLD,2);step(restored,1);var drops=restored.dropExtra();h.assertTrue(drops.stream().mapToInt(s->s.is(Items.RAW_GOLD)?s.getCount():0).sum()==2,"Breaking returns escrowed ingredients");h.assertTrue(restored.dropExtra().isEmpty(),"Escrow cannot be dropped twice");h.succeed();
  }
- @GameTest(template="furnace_test",timeoutTicks=100)
+ @GameTest(batch="furnaces",template="furnace_test",timeoutTicks=100)
  public static void differentRecipesSmeltConcurrently(GameTestHelper h){
   var c=build(h,FurnaceTier.IRON,Direction.NORTH,1,FurnaceFuelHatch.Kind.SOLID,2);fuel(c).items().insertItem(0,new ItemStack(Items.COAL,64),false);
   insert(items(c,true),0,Items.RAW_IRON,1);insert(items(c,true),1,Items.RAW_GOLD,1);step(c,1);h.assertTrue(c.runningJobs()==2,"Different recipes must run in parallel");
   step(c,FurnaceTier.IRON.duration(200)+1);h.assertTrue(count(items(c,false),Items.IRON_INGOT)==1&&count(items(c,false),Items.GOLD_INGOT)==1,"Concurrent recipes retain their own results");h.succeed();
  }
- @GameTest(template="furnace_test",timeoutTicks=100)
+ @GameTest(batch="furnaces",template="furnace_test",timeoutTicks=100)
  public static void underpoweredFactorySharesFuelAcrossLanes(GameTestHelper h){
   var c=build(h,FurnaceTier.RAINBOW,Direction.NORTH,2,FurnaceFuelHatch.Kind.SOLID,0);fuel(c).items().insertItem(0,new ItemStack(Items.COAL,64),false);
   for(int i=0;i<4;i++)insert(items(c,true),i,Items.RAW_IRON,64);step(c,100);
   var jobs=c.saveWithFullMetadata(h.getLevel().registryAccess()).getList("FurnaceJobs",10);h.assertTrue(jobs.size()==4,"Four batch jobs must remain in progress");
   for(int i=0;i<jobs.size();i++)h.assertTrue(jobs.getCompound(i).getInt("Progress")>0,"Round-robin heat sharing must prevent lane starvation");h.succeed();
  }
- @GameTest(template="furnace_test",timeoutTicks=100)
+ @GameTest(batch="furnaces",template="furnace_test",timeoutTicks=100)
  public static void factoryAugmentDisabledForExistingFurnacesAndRecipes(GameTestHelper h){
   var pos=h.absolutePos(new BlockPos(4,2,4));h.getLevel().setBlockAndUpdate(pos,block("ironfurnaces:iron_furnace").defaultBlockState());
   var furnace=(ironfurnaces.tileentity.furnaces.BlockIronFurnaceTileBase)h.getLevel().getBlockEntity(pos);furnace.currentAugment[2]=1;

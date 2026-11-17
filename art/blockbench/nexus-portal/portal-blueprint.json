@@ -1,0 +1,8546 @@
+{
+  "status": "ART_AND_DESIGN_ONLY_NOT_REGISTERED",
+  "units": "Minecraft blocks; Blockbench 16 model units per block",
+  "origin": "Centre axis X=0.5; front is -Z; floor Y=0",
+  "bounds": {
+    "x": [
+      -10,
+      11
+    ],
+    "y": [
+      0,
+      19
+    ],
+    "z": [
+      -2,
+      9
+    ]
+  },
+  "dimensions": {
+    "x": 21,
+    "y": 19,
+    "z": 11
+  },
+  "blockCount": 814,
+  "counts": {
+    "beacon": 5,
+    "casing": 281,
+    "ceramic_panel": 44,
+    "controller": 1,
+    "core": 1,
+    "deck_grate": 48,
+    "energy": 1,
+    "fluid_in": 1,
+    "fluid_out": 1,
+    "foundation": 178,
+    "foundation_chiseled": 11,
+    "hazard": 48,
+    "input": 1,
+    "light_amber": 2,
+    "light_blue": 10,
+    "light_violet": 4,
+    "output": 1,
+    "rail": 51,
+    "reinforced_column": 20,
+    "ribbed_panel": 20,
+    "ring": 48,
+    "service_panel": 4,
+    "trim": 27,
+    "vent": 6
+  },
+  "blockModelParts": [
+    "casing",
+    "ring",
+    "foundation",
+    "hazard",
+    "trim",
+    "vent",
+    "light_blue",
+    "light_amber",
+    "light_violet",
+    "controller",
+    "input",
+    "output",
+    "fluid_in",
+    "fluid_out",
+    "energy",
+    "rail",
+    "beacon",
+    "core",
+    "deck_grate",
+    "ribbed_panel",
+    "reinforced_column",
+    "ceramic_panel",
+    "service_panel",
+    "foundation_chiseled",
+    "rail_north",
+    "rail_east",
+    "rail_south",
+    "rail_west"
+  ],
+  "cells": [
+    {
+      "position": [
+        -2,
+        0,
+        -2
+      ],
+      "part": "trim",
+      "section": "stairs",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -1,
+        0,
+        -2
+      ],
+      "part": "trim",
+      "section": "stairs",
+      "facing": "north"
+    },
+    {
+      "position": [
+        0,
+        0,
+        -2
+      ],
+      "part": "trim",
+      "section": "stairs",
+      "facing": "north"
+    },
+    {
+      "position": [
+        1,
+        0,
+        -2
+      ],
+      "part": "trim",
+      "section": "stairs",
+      "facing": "north"
+    },
+    {
+      "position": [
+        2,
+        0,
+        -2
+      ],
+      "part": "trim",
+      "section": "stairs",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -2,
+        0,
+        -1
+      ],
+      "part": "trim",
+      "section": "stairs",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -1,
+        0,
+        -1
+      ],
+      "part": "trim",
+      "section": "stairs",
+      "facing": "north"
+    },
+    {
+      "position": [
+        0,
+        0,
+        -1
+      ],
+      "part": "trim",
+      "section": "stairs",
+      "facing": "north"
+    },
+    {
+      "position": [
+        1,
+        0,
+        -1
+      ],
+      "part": "trim",
+      "section": "stairs",
+      "facing": "north"
+    },
+    {
+      "position": [
+        2,
+        0,
+        -1
+      ],
+      "part": "trim",
+      "section": "stairs",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -10,
+        0,
+        0
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -9,
+        0,
+        0
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -8,
+        0,
+        0
+      ],
+      "part": "foundation_chiseled",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -7,
+        0,
+        0
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -6,
+        0,
+        0
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -5,
+        0,
+        0
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -4,
+        0,
+        0
+      ],
+      "part": "foundation_chiseled",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -3,
+        0,
+        0
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -2,
+        0,
+        0
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -1,
+        0,
+        0
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "part": "foundation_chiseled",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        1,
+        0,
+        0
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        2,
+        0,
+        0
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        3,
+        0,
+        0
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        4,
+        0,
+        0
+      ],
+      "part": "foundation_chiseled",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        5,
+        0,
+        0
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        6,
+        0,
+        0
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        7,
+        0,
+        0
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        8,
+        0,
+        0
+      ],
+      "part": "foundation_chiseled",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        9,
+        0,
+        0
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        10,
+        0,
+        0
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -10,
+        0,
+        1
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -9,
+        0,
+        1
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -8,
+        0,
+        1
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -7,
+        0,
+        1
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -6,
+        0,
+        1
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -5,
+        0,
+        1
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -4,
+        0,
+        1
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -3,
+        0,
+        1
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -2,
+        0,
+        1
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -1,
+        0,
+        1
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        0,
+        0,
+        1
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        1,
+        0,
+        1
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        2,
+        0,
+        1
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        3,
+        0,
+        1
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        4,
+        0,
+        1
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        5,
+        0,
+        1
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        6,
+        0,
+        1
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        7,
+        0,
+        1
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        8,
+        0,
+        1
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        9,
+        0,
+        1
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        10,
+        0,
+        1
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -10,
+        0,
+        2
+      ],
+      "part": "foundation_chiseled",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -9,
+        0,
+        2
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -8,
+        0,
+        2
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -7,
+        0,
+        2
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -6,
+        0,
+        2
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -5,
+        0,
+        2
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -4,
+        0,
+        2
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -3,
+        0,
+        2
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -2,
+        0,
+        2
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -1,
+        0,
+        2
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        0,
+        0,
+        2
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        1,
+        0,
+        2
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        2,
+        0,
+        2
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        3,
+        0,
+        2
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        4,
+        0,
+        2
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        5,
+        0,
+        2
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        6,
+        0,
+        2
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        7,
+        0,
+        2
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        8,
+        0,
+        2
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        9,
+        0,
+        2
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        10,
+        0,
+        2
+      ],
+      "part": "foundation_chiseled",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -10,
+        0,
+        3
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -9,
+        0,
+        3
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -8,
+        0,
+        3
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -7,
+        0,
+        3
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -6,
+        0,
+        3
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -5,
+        0,
+        3
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -4,
+        0,
+        3
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -3,
+        0,
+        3
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -2,
+        0,
+        3
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -1,
+        0,
+        3
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        0,
+        0,
+        3
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        1,
+        0,
+        3
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        2,
+        0,
+        3
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        3,
+        0,
+        3
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        4,
+        0,
+        3
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        5,
+        0,
+        3
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        6,
+        0,
+        3
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        7,
+        0,
+        3
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        8,
+        0,
+        3
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        9,
+        0,
+        3
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        10,
+        0,
+        3
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -10,
+        0,
+        4
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -9,
+        0,
+        4
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -8,
+        0,
+        4
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -7,
+        0,
+        4
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -6,
+        0,
+        4
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -5,
+        0,
+        4
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -4,
+        0,
+        4
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -3,
+        0,
+        4
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -2,
+        0,
+        4
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -1,
+        0,
+        4
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        0,
+        0,
+        4
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        1,
+        0,
+        4
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        2,
+        0,
+        4
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        3,
+        0,
+        4
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        4,
+        0,
+        4
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        5,
+        0,
+        4
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        6,
+        0,
+        4
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        7,
+        0,
+        4
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        8,
+        0,
+        4
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        9,
+        0,
+        4
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        10,
+        0,
+        4
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -10,
+        0,
+        5
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -9,
+        0,
+        5
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -8,
+        0,
+        5
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -7,
+        0,
+        5
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -6,
+        0,
+        5
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -5,
+        0,
+        5
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -4,
+        0,
+        5
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -3,
+        0,
+        5
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -2,
+        0,
+        5
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -1,
+        0,
+        5
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        0,
+        0,
+        5
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        1,
+        0,
+        5
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        2,
+        0,
+        5
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        3,
+        0,
+        5
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        4,
+        0,
+        5
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        5,
+        0,
+        5
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        6,
+        0,
+        5
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        7,
+        0,
+        5
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        8,
+        0,
+        5
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        9,
+        0,
+        5
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        10,
+        0,
+        5
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -10,
+        0,
+        6
+      ],
+      "part": "foundation_chiseled",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -9,
+        0,
+        6
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -8,
+        0,
+        6
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -7,
+        0,
+        6
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -6,
+        0,
+        6
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -5,
+        0,
+        6
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -4,
+        0,
+        6
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -3,
+        0,
+        6
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -2,
+        0,
+        6
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -1,
+        0,
+        6
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        0,
+        0,
+        6
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        1,
+        0,
+        6
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        2,
+        0,
+        6
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        3,
+        0,
+        6
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        4,
+        0,
+        6
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        5,
+        0,
+        6
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        6,
+        0,
+        6
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        7,
+        0,
+        6
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        8,
+        0,
+        6
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        9,
+        0,
+        6
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        10,
+        0,
+        6
+      ],
+      "part": "foundation_chiseled",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -10,
+        0,
+        7
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -9,
+        0,
+        7
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -8,
+        0,
+        7
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -7,
+        0,
+        7
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -6,
+        0,
+        7
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -5,
+        0,
+        7
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -4,
+        0,
+        7
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -3,
+        0,
+        7
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -2,
+        0,
+        7
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -1,
+        0,
+        7
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        0,
+        0,
+        7
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        1,
+        0,
+        7
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        2,
+        0,
+        7
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        3,
+        0,
+        7
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        4,
+        0,
+        7
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        5,
+        0,
+        7
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        6,
+        0,
+        7
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        7,
+        0,
+        7
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        8,
+        0,
+        7
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        9,
+        0,
+        7
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        10,
+        0,
+        7
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -10,
+        0,
+        8
+      ],
+      "part": "foundation_chiseled",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -9,
+        0,
+        8
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -8,
+        0,
+        8
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -7,
+        0,
+        8
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -6,
+        0,
+        8
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -5,
+        0,
+        8
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -4,
+        0,
+        8
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -3,
+        0,
+        8
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -2,
+        0,
+        8
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -1,
+        0,
+        8
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        0,
+        0,
+        8
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        1,
+        0,
+        8
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        2,
+        0,
+        8
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        3,
+        0,
+        8
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        4,
+        0,
+        8
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        5,
+        0,
+        8
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        6,
+        0,
+        8
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        7,
+        0,
+        8
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        8,
+        0,
+        8
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        9,
+        0,
+        8
+      ],
+      "part": "foundation",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        10,
+        0,
+        8
+      ],
+      "part": "foundation_chiseled",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -2,
+        1,
+        -1
+      ],
+      "part": "trim",
+      "section": "stairs",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -1,
+        1,
+        -1
+      ],
+      "part": "trim",
+      "section": "stairs",
+      "facing": "north"
+    },
+    {
+      "position": [
+        0,
+        1,
+        -1
+      ],
+      "part": "trim",
+      "section": "stairs",
+      "facing": "north"
+    },
+    {
+      "position": [
+        1,
+        1,
+        -1
+      ],
+      "part": "trim",
+      "section": "stairs",
+      "facing": "north"
+    },
+    {
+      "position": [
+        2,
+        1,
+        -1
+      ],
+      "part": "trim",
+      "section": "stairs",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -10,
+        1,
+        0
+      ],
+      "part": "hazard",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -9,
+        1,
+        0
+      ],
+      "part": "vent",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -8,
+        1,
+        0
+      ],
+      "part": "light_blue",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -7,
+        1,
+        0
+      ],
+      "part": "vent",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -6,
+        1,
+        0
+      ],
+      "part": "input",
+      "section": "ports",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -5,
+        1,
+        0
+      ],
+      "part": "output",
+      "section": "ports",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -4,
+        1,
+        0
+      ],
+      "part": "light_blue",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -3,
+        1,
+        0
+      ],
+      "part": "vent",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -2,
+        1,
+        0
+      ],
+      "part": "casing",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -1,
+        1,
+        0
+      ],
+      "part": "casing",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        0,
+        1,
+        0
+      ],
+      "part": "controller",
+      "section": "ports",
+      "facing": "north"
+    },
+    {
+      "position": [
+        1,
+        1,
+        0
+      ],
+      "part": "casing",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        2,
+        1,
+        0
+      ],
+      "part": "casing",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        3,
+        1,
+        0
+      ],
+      "part": "vent",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        4,
+        1,
+        0
+      ],
+      "part": "light_blue",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        5,
+        1,
+        0
+      ],
+      "part": "fluid_in",
+      "section": "ports",
+      "facing": "north"
+    },
+    {
+      "position": [
+        6,
+        1,
+        0
+      ],
+      "part": "fluid_out",
+      "section": "ports",
+      "facing": "north"
+    },
+    {
+      "position": [
+        7,
+        1,
+        0
+      ],
+      "part": "vent",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        8,
+        1,
+        0
+      ],
+      "part": "light_blue",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        9,
+        1,
+        0
+      ],
+      "part": "vent",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        10,
+        1,
+        0
+      ],
+      "part": "hazard",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -10,
+        1,
+        1
+      ],
+      "part": "hazard",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -9,
+        1,
+        1
+      ],
+      "part": "casing",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -8,
+        1,
+        1
+      ],
+      "part": "casing",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -7,
+        1,
+        1
+      ],
+      "part": "casing",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -6,
+        1,
+        1
+      ],
+      "part": "casing",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -5,
+        1,
+        1
+      ],
+      "part": "deck_grate",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -4,
+        1,
+        1
+      ],
+      "part": "casing",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -3,
+        1,
+        1
+      ],
+      "part": "casing",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -2,
+        1,
+        1
+      ],
+      "part": "casing",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -1,
+        1,
+        1
+      ],
+      "part": "casing",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        0,
+        1,
+        1
+      ],
+      "part": "casing",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        1,
+        1,
+        1
+      ],
+      "part": "casing",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        2,
+        1,
+        1
+      ],
+      "part": "casing",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        3,
+        1,
+        1
+      ],
+      "part": "casing",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        4,
+        1,
+        1
+      ],
+      "part": "casing",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        5,
+        1,
+        1
+      ],
+      "part": "deck_grate",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        6,
+        1,
+        1
+      ],
+      "part": "casing",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        7,
+        1,
+        1
+      ],
+      "part": "casing",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        8,
+        1,
+        1
+      ],
+      "part": "casing",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        9,
+        1,
+        1
+      ],
+      "part": "casing",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        10,
+        1,
+        1
+      ],
+      "part": "hazard",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -10,
+        1,
+        2
+      ],
+      "part": "hazard",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -9,
+        1,
+        2
+      ],
+      "part": "deck_grate",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -8,
+        1,
+        2
+      ],
+      "part": "deck_grate",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -7,
+        1,
+        2
+      ],
+      "part": "deck_grate",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -6,
+        1,
+        2
+      ],
+      "part": "deck_grate",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -5,
+        1,
+        2
+      ],
+      "part": "deck_grate",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -4,
+        1,
+        2
+      ],
+      "part": "deck_grate",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -3,
+        1,
+        2
+      ],
+      "part": "deck_grate",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -2,
+        1,
+        2
+      ],
+      "part": "deck_grate",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -1,
+        1,
+        2
+      ],
+      "part": "deck_grate",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        0,
+        1,
+        2
+      ],
+      "part": "deck_grate",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        1,
+        1,
+        2
+      ],
+      "part": "deck_grate",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        2,
+        1,
+        2
+      ],
+      "part": "deck_grate",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        3,
+        1,
+        2
+      ],
+      "part": "deck_grate",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        4,
+        1,
+        2
+      ],
+      "part": "deck_grate",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        5,
+        1,
+        2
+      ],
+      "part": "deck_grate",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        6,
+        1,
+        2
+      ],
+      "part": "deck_grate",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        7,
+        1,
+        2
+      ],
+      "part": "deck_grate",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        8,
+        1,
+        2
+      ],
+      "part": "deck_grate",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        9,
+        1,
+        2
+      ],
+      "part": "deck_grate",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        10,
+        1,
+        2
+      ],
+      "part": "hazard",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -10,
+        1,
+        3
+      ],
+      "part": "hazard",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -9,
+        1,
+        3
+      ],
+      "part": "casing",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -8,
+        1,
+        3
+      ],
+      "part": "casing",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -7,
+        1,
+        3
+      ],
+      "part": "casing",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -6,
+        1,
+        3
+      ],
+      "part": "casing",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -5,
+        1,
+        3
+      ],
+      "part": "deck_grate",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -4,
+        1,
+        3
+      ],
+      "part": "casing",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -3,
+        1,
+        3
+      ],
+      "part": "casing",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -2,
+        1,
+        3
+      ],
+      "part": "casing",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -1,
+        1,
+        3
+      ],
+      "part": "casing",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        0,
+        1,
+        3
+      ],
+      "part": "casing",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        1,
+        1,
+        3
+      ],
+      "part": "casing",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        2,
+        1,
+        3
+      ],
+      "part": "casing",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        3,
+        1,
+        3
+      ],
+      "part": "casing",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        4,
+        1,
+        3
+      ],
+      "part": "casing",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        5,
+        1,
+        3
+      ],
+      "part": "deck_grate",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        6,
+        1,
+        3
+      ],
+      "part": "casing",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        7,
+        1,
+        3
+      ],
+      "part": "casing",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        8,
+        1,
+        3
+      ],
+      "part": "casing",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        9,
+        1,
+        3
+      ],
+      "part": "casing",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        10,
+        1,
+        3
+      ],
+      "part": "hazard",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -10,
+        1,
+        4
+      ],
+      "part": "hazard",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -9,
+        1,
+        4
+      ],
+      "part": "casing",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -8,
+        1,
+        4
+      ],
+      "part": "casing",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -7,
+        1,
+        4
+      ],
+      "part": "casing",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -6,
+        1,
+        4
+      ],
+      "part": "casing",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -5,
+        1,
+        4
+      ],
+      "part": "deck_grate",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -4,
+        1,
+        4
+      ],
+      "part": "casing",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -3,
+        1,
+        4
+      ],
+      "part": "casing",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -2,
+        1,
+        4
+      ],
+      "part": "casing",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -1,
+        1,
+        4
+      ],
+      "part": "casing",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        0,
+        1,
+        4
+      ],
+      "part": "casing",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        1,
+        1,
+        4
+      ],
+      "part": "casing",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        2,
+        1,
+        4
+      ],
+      "part": "casing",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        3,
+        1,
+        4
+      ],
+      "part": "casing",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        4,
+        1,
+        4
+      ],
+      "part": "casing",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        5,
+        1,
+        4
+      ],
+      "part": "deck_grate",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        6,
+        1,
+        4
+      ],
+      "part": "casing",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        7,
+        1,
+        4
+      ],
+      "part": "casing",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        8,
+        1,
+        4
+      ],
+      "part": "casing",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        9,
+        1,
+        4
+      ],
+      "part": "casing",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        10,
+        1,
+        4
+      ],
+      "part": "hazard",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -10,
+        1,
+        5
+      ],
+      "part": "hazard",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -9,
+        1,
+        5
+      ],
+      "part": "casing",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -8,
+        1,
+        5
+      ],
+      "part": "casing",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -7,
+        1,
+        5
+      ],
+      "part": "casing",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -6,
+        1,
+        5
+      ],
+      "part": "casing",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -5,
+        1,
+        5
+      ],
+      "part": "deck_grate",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -4,
+        1,
+        5
+      ],
+      "part": "casing",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -3,
+        1,
+        5
+      ],
+      "part": "casing",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -2,
+        1,
+        5
+      ],
+      "part": "casing",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -1,
+        1,
+        5
+      ],
+      "part": "casing",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        0,
+        1,
+        5
+      ],
+      "part": "casing",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        1,
+        1,
+        5
+      ],
+      "part": "casing",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        2,
+        1,
+        5
+      ],
+      "part": "casing",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        3,
+        1,
+        5
+      ],
+      "part": "casing",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        4,
+        1,
+        5
+      ],
+      "part": "casing",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        5,
+        1,
+        5
+      ],
+      "part": "deck_grate",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        6,
+        1,
+        5
+      ],
+      "part": "casing",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        7,
+        1,
+        5
+      ],
+      "part": "casing",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        8,
+        1,
+        5
+      ],
+      "part": "casing",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        9,
+        1,
+        5
+      ],
+      "part": "casing",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        10,
+        1,
+        5
+      ],
+      "part": "hazard",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -10,
+        1,
+        6
+      ],
+      "part": "hazard",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -9,
+        1,
+        6
+      ],
+      "part": "deck_grate",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -8,
+        1,
+        6
+      ],
+      "part": "deck_grate",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -7,
+        1,
+        6
+      ],
+      "part": "deck_grate",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -6,
+        1,
+        6
+      ],
+      "part": "deck_grate",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -5,
+        1,
+        6
+      ],
+      "part": "deck_grate",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -4,
+        1,
+        6
+      ],
+      "part": "deck_grate",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -3,
+        1,
+        6
+      ],
+      "part": "deck_grate",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -2,
+        1,
+        6
+      ],
+      "part": "deck_grate",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -1,
+        1,
+        6
+      ],
+      "part": "deck_grate",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        0,
+        1,
+        6
+      ],
+      "part": "deck_grate",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        1,
+        1,
+        6
+      ],
+      "part": "deck_grate",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        2,
+        1,
+        6
+      ],
+      "part": "deck_grate",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        3,
+        1,
+        6
+      ],
+      "part": "deck_grate",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        4,
+        1,
+        6
+      ],
+      "part": "deck_grate",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        5,
+        1,
+        6
+      ],
+      "part": "deck_grate",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        6,
+        1,
+        6
+      ],
+      "part": "deck_grate",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        7,
+        1,
+        6
+      ],
+      "part": "deck_grate",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        8,
+        1,
+        6
+      ],
+      "part": "deck_grate",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        9,
+        1,
+        6
+      ],
+      "part": "deck_grate",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        10,
+        1,
+        6
+      ],
+      "part": "hazard",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -10,
+        1,
+        7
+      ],
+      "part": "hazard",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -9,
+        1,
+        7
+      ],
+      "part": "casing",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -8,
+        1,
+        7
+      ],
+      "part": "casing",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -7,
+        1,
+        7
+      ],
+      "part": "casing",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -6,
+        1,
+        7
+      ],
+      "part": "casing",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -5,
+        1,
+        7
+      ],
+      "part": "deck_grate",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -4,
+        1,
+        7
+      ],
+      "part": "casing",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -3,
+        1,
+        7
+      ],
+      "part": "casing",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -2,
+        1,
+        7
+      ],
+      "part": "casing",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -1,
+        1,
+        7
+      ],
+      "part": "casing",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        0,
+        1,
+        7
+      ],
+      "part": "casing",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        1,
+        1,
+        7
+      ],
+      "part": "casing",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        2,
+        1,
+        7
+      ],
+      "part": "casing",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        3,
+        1,
+        7
+      ],
+      "part": "casing",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        4,
+        1,
+        7
+      ],
+      "part": "casing",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        5,
+        1,
+        7
+      ],
+      "part": "deck_grate",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        6,
+        1,
+        7
+      ],
+      "part": "casing",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        7,
+        1,
+        7
+      ],
+      "part": "casing",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        8,
+        1,
+        7
+      ],
+      "part": "casing",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        9,
+        1,
+        7
+      ],
+      "part": "casing",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        10,
+        1,
+        7
+      ],
+      "part": "hazard",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -10,
+        1,
+        8
+      ],
+      "part": "hazard",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -9,
+        1,
+        8
+      ],
+      "part": "hazard",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -8,
+        1,
+        8
+      ],
+      "part": "hazard",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -7,
+        1,
+        8
+      ],
+      "part": "hazard",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -6,
+        1,
+        8
+      ],
+      "part": "hazard",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -5,
+        1,
+        8
+      ],
+      "part": "hazard",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -4,
+        1,
+        8
+      ],
+      "part": "hazard",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -3,
+        1,
+        8
+      ],
+      "part": "hazard",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -2,
+        1,
+        8
+      ],
+      "part": "hazard",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -1,
+        1,
+        8
+      ],
+      "part": "hazard",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        0,
+        1,
+        8
+      ],
+      "part": "energy",
+      "section": "ports",
+      "facing": "north"
+    },
+    {
+      "position": [
+        1,
+        1,
+        8
+      ],
+      "part": "hazard",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        2,
+        1,
+        8
+      ],
+      "part": "hazard",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        3,
+        1,
+        8
+      ],
+      "part": "hazard",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        4,
+        1,
+        8
+      ],
+      "part": "hazard",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        5,
+        1,
+        8
+      ],
+      "part": "hazard",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        6,
+        1,
+        8
+      ],
+      "part": "hazard",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        7,
+        1,
+        8
+      ],
+      "part": "hazard",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        8,
+        1,
+        8
+      ],
+      "part": "hazard",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        9,
+        1,
+        8
+      ],
+      "part": "hazard",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        10,
+        1,
+        8
+      ],
+      "part": "hazard",
+      "section": "foundation",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -10,
+        2,
+        0
+      ],
+      "part": "rail",
+      "section": "rails",
+      "facing": "north",
+      "connections": {
+        "north": false,
+        "east": true,
+        "south": true,
+        "west": false
+      }
+    },
+    {
+      "position": [
+        -9,
+        2,
+        0
+      ],
+      "part": "rail",
+      "section": "rails",
+      "facing": "north",
+      "connections": {
+        "north": false,
+        "east": true,
+        "south": false,
+        "west": true
+      }
+    },
+    {
+      "position": [
+        -8,
+        2,
+        0
+      ],
+      "part": "rail",
+      "section": "rails",
+      "facing": "north",
+      "connections": {
+        "north": false,
+        "east": true,
+        "south": false,
+        "west": true
+      }
+    },
+    {
+      "position": [
+        -7,
+        2,
+        0
+      ],
+      "part": "rail",
+      "section": "rails",
+      "facing": "north",
+      "connections": {
+        "north": false,
+        "east": true,
+        "south": false,
+        "west": true
+      }
+    },
+    {
+      "position": [
+        -6,
+        2,
+        0
+      ],
+      "part": "rail",
+      "section": "rails",
+      "facing": "north",
+      "connections": {
+        "north": false,
+        "east": true,
+        "south": false,
+        "west": true
+      }
+    },
+    {
+      "position": [
+        -5,
+        2,
+        0
+      ],
+      "part": "rail",
+      "section": "rails",
+      "facing": "north",
+      "connections": {
+        "north": false,
+        "east": true,
+        "south": false,
+        "west": true
+      }
+    },
+    {
+      "position": [
+        -4,
+        2,
+        0
+      ],
+      "part": "rail",
+      "section": "rails",
+      "facing": "north",
+      "connections": {
+        "north": false,
+        "east": true,
+        "south": false,
+        "west": true
+      }
+    },
+    {
+      "position": [
+        -3,
+        2,
+        0
+      ],
+      "part": "rail",
+      "section": "rails",
+      "facing": "north",
+      "connections": {
+        "north": false,
+        "east": false,
+        "south": false,
+        "west": true
+      }
+    },
+    {
+      "position": [
+        3,
+        2,
+        0
+      ],
+      "part": "rail",
+      "section": "rails",
+      "facing": "north",
+      "connections": {
+        "north": false,
+        "east": true,
+        "south": false,
+        "west": false
+      }
+    },
+    {
+      "position": [
+        4,
+        2,
+        0
+      ],
+      "part": "rail",
+      "section": "rails",
+      "facing": "north",
+      "connections": {
+        "north": false,
+        "east": true,
+        "south": false,
+        "west": true
+      }
+    },
+    {
+      "position": [
+        5,
+        2,
+        0
+      ],
+      "part": "rail",
+      "section": "rails",
+      "facing": "north",
+      "connections": {
+        "north": false,
+        "east": true,
+        "south": false,
+        "west": true
+      }
+    },
+    {
+      "position": [
+        6,
+        2,
+        0
+      ],
+      "part": "rail",
+      "section": "rails",
+      "facing": "north",
+      "connections": {
+        "north": false,
+        "east": true,
+        "south": false,
+        "west": true
+      }
+    },
+    {
+      "position": [
+        7,
+        2,
+        0
+      ],
+      "part": "rail",
+      "section": "rails",
+      "facing": "north",
+      "connections": {
+        "north": false,
+        "east": true,
+        "south": false,
+        "west": true
+      }
+    },
+    {
+      "position": [
+        8,
+        2,
+        0
+      ],
+      "part": "rail",
+      "section": "rails",
+      "facing": "north",
+      "connections": {
+        "north": false,
+        "east": true,
+        "south": false,
+        "west": true
+      }
+    },
+    {
+      "position": [
+        9,
+        2,
+        0
+      ],
+      "part": "rail",
+      "section": "rails",
+      "facing": "north",
+      "connections": {
+        "north": false,
+        "east": true,
+        "south": false,
+        "west": true
+      }
+    },
+    {
+      "position": [
+        10,
+        2,
+        0
+      ],
+      "part": "rail",
+      "section": "rails",
+      "facing": "north",
+      "connections": {
+        "north": false,
+        "east": false,
+        "south": true,
+        "west": true
+      }
+    },
+    {
+      "position": [
+        -10,
+        2,
+        1
+      ],
+      "part": "rail",
+      "section": "rails",
+      "facing": "north",
+      "connections": {
+        "north": true,
+        "east": false,
+        "south": true,
+        "west": false
+      }
+    },
+    {
+      "position": [
+        10,
+        2,
+        1
+      ],
+      "part": "rail",
+      "section": "rails",
+      "facing": "north",
+      "connections": {
+        "north": true,
+        "east": false,
+        "south": true,
+        "west": false
+      }
+    },
+    {
+      "position": [
+        -10,
+        2,
+        2
+      ],
+      "part": "rail",
+      "section": "rails",
+      "facing": "north",
+      "connections": {
+        "north": true,
+        "east": false,
+        "south": true,
+        "west": false
+      }
+    },
+    {
+      "position": [
+        10,
+        2,
+        2
+      ],
+      "part": "rail",
+      "section": "rails",
+      "facing": "north",
+      "connections": {
+        "north": true,
+        "east": false,
+        "south": true,
+        "west": false
+      }
+    },
+    {
+      "position": [
+        -10,
+        2,
+        3
+      ],
+      "part": "rail",
+      "section": "rails",
+      "facing": "north",
+      "connections": {
+        "north": true,
+        "east": true,
+        "south": true,
+        "west": false
+      }
+    },
+    {
+      "position": [
+        -9,
+        2,
+        3
+      ],
+      "part": "casing",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -8,
+        2,
+        3
+      ],
+      "part": "reinforced_column",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        8,
+        2,
+        3
+      ],
+      "part": "reinforced_column",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        9,
+        2,
+        3
+      ],
+      "part": "casing",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        10,
+        2,
+        3
+      ],
+      "part": "rail",
+      "section": "rails",
+      "facing": "north",
+      "connections": {
+        "north": true,
+        "east": false,
+        "south": true,
+        "west": true
+      }
+    },
+    {
+      "position": [
+        -10,
+        2,
+        4
+      ],
+      "part": "rail",
+      "section": "rails",
+      "facing": "north",
+      "connections": {
+        "north": true,
+        "east": true,
+        "south": true,
+        "west": false
+      }
+    },
+    {
+      "position": [
+        -9,
+        2,
+        4
+      ],
+      "part": "casing",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -8,
+        2,
+        4
+      ],
+      "part": "casing",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        0,
+        2,
+        4
+      ],
+      "part": "core",
+      "section": "core",
+      "facing": "north"
+    },
+    {
+      "position": [
+        8,
+        2,
+        4
+      ],
+      "part": "casing",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        9,
+        2,
+        4
+      ],
+      "part": "casing",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        10,
+        2,
+        4
+      ],
+      "part": "rail",
+      "section": "rails",
+      "facing": "north",
+      "connections": {
+        "north": true,
+        "east": false,
+        "south": true,
+        "west": true
+      }
+    },
+    {
+      "position": [
+        -10,
+        2,
+        5
+      ],
+      "part": "rail",
+      "section": "rails",
+      "facing": "north",
+      "connections": {
+        "north": true,
+        "east": true,
+        "south": true,
+        "west": false
+      }
+    },
+    {
+      "position": [
+        -9,
+        2,
+        5
+      ],
+      "part": "casing",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -8,
+        2,
+        5
+      ],
+      "part": "casing",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        8,
+        2,
+        5
+      ],
+      "part": "casing",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        9,
+        2,
+        5
+      ],
+      "part": "casing",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        10,
+        2,
+        5
+      ],
+      "part": "rail",
+      "section": "rails",
+      "facing": "north",
+      "connections": {
+        "north": true,
+        "east": false,
+        "south": true,
+        "west": true
+      }
+    },
+    {
+      "position": [
+        -10,
+        2,
+        6
+      ],
+      "part": "rail",
+      "section": "rails",
+      "facing": "north",
+      "connections": {
+        "north": true,
+        "east": false,
+        "south": true,
+        "west": false
+      }
+    },
+    {
+      "position": [
+        10,
+        2,
+        6
+      ],
+      "part": "rail",
+      "section": "rails",
+      "facing": "north",
+      "connections": {
+        "north": true,
+        "east": false,
+        "south": true,
+        "west": false
+      }
+    },
+    {
+      "position": [
+        -10,
+        2,
+        7
+      ],
+      "part": "rail",
+      "section": "rails",
+      "facing": "north",
+      "connections": {
+        "north": true,
+        "east": false,
+        "south": true,
+        "west": false
+      }
+    },
+    {
+      "position": [
+        10,
+        2,
+        7
+      ],
+      "part": "rail",
+      "section": "rails",
+      "facing": "north",
+      "connections": {
+        "north": true,
+        "east": false,
+        "south": true,
+        "west": false
+      }
+    },
+    {
+      "position": [
+        -10,
+        2,
+        8
+      ],
+      "part": "rail",
+      "section": "rails",
+      "facing": "north",
+      "connections": {
+        "north": true,
+        "east": true,
+        "south": false,
+        "west": false
+      }
+    },
+    {
+      "position": [
+        -9,
+        2,
+        8
+      ],
+      "part": "rail",
+      "section": "rails",
+      "facing": "north",
+      "connections": {
+        "north": false,
+        "east": true,
+        "south": false,
+        "west": true
+      }
+    },
+    {
+      "position": [
+        -8,
+        2,
+        8
+      ],
+      "part": "rail",
+      "section": "rails",
+      "facing": "north",
+      "connections": {
+        "north": false,
+        "east": true,
+        "south": false,
+        "west": true
+      }
+    },
+    {
+      "position": [
+        -7,
+        2,
+        8
+      ],
+      "part": "rail",
+      "section": "rails",
+      "facing": "north",
+      "connections": {
+        "north": false,
+        "east": true,
+        "south": false,
+        "west": true
+      }
+    },
+    {
+      "position": [
+        -6,
+        2,
+        8
+      ],
+      "part": "rail",
+      "section": "rails",
+      "facing": "north",
+      "connections": {
+        "north": false,
+        "east": true,
+        "south": false,
+        "west": true
+      }
+    },
+    {
+      "position": [
+        -5,
+        2,
+        8
+      ],
+      "part": "rail",
+      "section": "rails",
+      "facing": "north",
+      "connections": {
+        "north": false,
+        "east": true,
+        "south": false,
+        "west": true
+      }
+    },
+    {
+      "position": [
+        -4,
+        2,
+        8
+      ],
+      "part": "rail",
+      "section": "rails",
+      "facing": "north",
+      "connections": {
+        "north": false,
+        "east": true,
+        "south": false,
+        "west": true
+      }
+    },
+    {
+      "position": [
+        -3,
+        2,
+        8
+      ],
+      "part": "rail",
+      "section": "rails",
+      "facing": "north",
+      "connections": {
+        "north": false,
+        "east": true,
+        "south": false,
+        "west": true
+      }
+    },
+    {
+      "position": [
+        -2,
+        2,
+        8
+      ],
+      "part": "rail",
+      "section": "rails",
+      "facing": "north",
+      "connections": {
+        "north": false,
+        "east": true,
+        "south": false,
+        "west": true
+      }
+    },
+    {
+      "position": [
+        -1,
+        2,
+        8
+      ],
+      "part": "rail",
+      "section": "rails",
+      "facing": "north",
+      "connections": {
+        "north": false,
+        "east": true,
+        "south": false,
+        "west": true
+      }
+    },
+    {
+      "position": [
+        0,
+        2,
+        8
+      ],
+      "part": "rail",
+      "section": "rails",
+      "facing": "north",
+      "connections": {
+        "north": false,
+        "east": true,
+        "south": false,
+        "west": true
+      }
+    },
+    {
+      "position": [
+        1,
+        2,
+        8
+      ],
+      "part": "rail",
+      "section": "rails",
+      "facing": "north",
+      "connections": {
+        "north": false,
+        "east": true,
+        "south": false,
+        "west": true
+      }
+    },
+    {
+      "position": [
+        2,
+        2,
+        8
+      ],
+      "part": "rail",
+      "section": "rails",
+      "facing": "north",
+      "connections": {
+        "north": false,
+        "east": true,
+        "south": false,
+        "west": true
+      }
+    },
+    {
+      "position": [
+        3,
+        2,
+        8
+      ],
+      "part": "rail",
+      "section": "rails",
+      "facing": "north",
+      "connections": {
+        "north": false,
+        "east": true,
+        "south": false,
+        "west": true
+      }
+    },
+    {
+      "position": [
+        4,
+        2,
+        8
+      ],
+      "part": "rail",
+      "section": "rails",
+      "facing": "north",
+      "connections": {
+        "north": false,
+        "east": true,
+        "south": false,
+        "west": true
+      }
+    },
+    {
+      "position": [
+        5,
+        2,
+        8
+      ],
+      "part": "rail",
+      "section": "rails",
+      "facing": "north",
+      "connections": {
+        "north": false,
+        "east": true,
+        "south": false,
+        "west": true
+      }
+    },
+    {
+      "position": [
+        6,
+        2,
+        8
+      ],
+      "part": "rail",
+      "section": "rails",
+      "facing": "north",
+      "connections": {
+        "north": false,
+        "east": true,
+        "south": false,
+        "west": true
+      }
+    },
+    {
+      "position": [
+        7,
+        2,
+        8
+      ],
+      "part": "rail",
+      "section": "rails",
+      "facing": "north",
+      "connections": {
+        "north": false,
+        "east": true,
+        "south": false,
+        "west": true
+      }
+    },
+    {
+      "position": [
+        8,
+        2,
+        8
+      ],
+      "part": "rail",
+      "section": "rails",
+      "facing": "north",
+      "connections": {
+        "north": false,
+        "east": true,
+        "south": false,
+        "west": true
+      }
+    },
+    {
+      "position": [
+        9,
+        2,
+        8
+      ],
+      "part": "rail",
+      "section": "rails",
+      "facing": "north",
+      "connections": {
+        "north": false,
+        "east": true,
+        "south": false,
+        "west": true
+      }
+    },
+    {
+      "position": [
+        10,
+        2,
+        8
+      ],
+      "part": "rail",
+      "section": "rails",
+      "facing": "north",
+      "connections": {
+        "north": true,
+        "east": false,
+        "south": false,
+        "west": true
+      }
+    },
+    {
+      "position": [
+        -9,
+        3,
+        2
+      ],
+      "part": "light_amber",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        9,
+        3,
+        2
+      ],
+      "part": "light_amber",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -9,
+        3,
+        3
+      ],
+      "part": "casing",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -8,
+        3,
+        3
+      ],
+      "part": "reinforced_column",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        0,
+        3,
+        3
+      ],
+      "part": "light_violet",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        8,
+        3,
+        3
+      ],
+      "part": "reinforced_column",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        9,
+        3,
+        3
+      ],
+      "part": "casing",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -9,
+        3,
+        4
+      ],
+      "part": "casing",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -8,
+        3,
+        4
+      ],
+      "part": "casing",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -3,
+        3,
+        4
+      ],
+      "part": "ring",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -2,
+        3,
+        4
+      ],
+      "part": "ring",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -1,
+        3,
+        4
+      ],
+      "part": "ring",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        0,
+        3,
+        4
+      ],
+      "part": "ring",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        1,
+        3,
+        4
+      ],
+      "part": "ring",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        2,
+        3,
+        4
+      ],
+      "part": "ring",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        3,
+        3,
+        4
+      ],
+      "part": "ring",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        8,
+        3,
+        4
+      ],
+      "part": "casing",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        9,
+        3,
+        4
+      ],
+      "part": "casing",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -9,
+        3,
+        5
+      ],
+      "part": "casing",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -8,
+        3,
+        5
+      ],
+      "part": "casing",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -3,
+        3,
+        5
+      ],
+      "part": "casing",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -2,
+        3,
+        5
+      ],
+      "part": "casing",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -1,
+        3,
+        5
+      ],
+      "part": "casing",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        0,
+        3,
+        5
+      ],
+      "part": "casing",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        1,
+        3,
+        5
+      ],
+      "part": "casing",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        2,
+        3,
+        5
+      ],
+      "part": "casing",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        3,
+        3,
+        5
+      ],
+      "part": "casing",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        8,
+        3,
+        5
+      ],
+      "part": "casing",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        9,
+        3,
+        5
+      ],
+      "part": "casing",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -9,
+        4,
+        2
+      ],
+      "part": "hazard",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        9,
+        4,
+        2
+      ],
+      "part": "hazard",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -9,
+        4,
+        3
+      ],
+      "part": "casing",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -8,
+        4,
+        3
+      ],
+      "part": "reinforced_column",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        8,
+        4,
+        3
+      ],
+      "part": "reinforced_column",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        9,
+        4,
+        3
+      ],
+      "part": "casing",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -9,
+        4,
+        4
+      ],
+      "part": "casing",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -8,
+        4,
+        4
+      ],
+      "part": "casing",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -5,
+        4,
+        4
+      ],
+      "part": "ring",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -4,
+        4,
+        4
+      ],
+      "part": "ring",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -3,
+        4,
+        4
+      ],
+      "part": "ceramic_panel",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -2,
+        4,
+        4
+      ],
+      "part": "ceramic_panel",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -1,
+        4,
+        4
+      ],
+      "part": "ceramic_panel",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        0,
+        4,
+        4
+      ],
+      "part": "ceramic_panel",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        1,
+        4,
+        4
+      ],
+      "part": "ceramic_panel",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        2,
+        4,
+        4
+      ],
+      "part": "ceramic_panel",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        3,
+        4,
+        4
+      ],
+      "part": "ceramic_panel",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        4,
+        4,
+        4
+      ],
+      "part": "ring",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        5,
+        4,
+        4
+      ],
+      "part": "ring",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        8,
+        4,
+        4
+      ],
+      "part": "casing",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        9,
+        4,
+        4
+      ],
+      "part": "casing",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -9,
+        4,
+        5
+      ],
+      "part": "ribbed_panel",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -8,
+        4,
+        5
+      ],
+      "part": "ribbed_panel",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -5,
+        4,
+        5
+      ],
+      "part": "casing",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -4,
+        4,
+        5
+      ],
+      "part": "casing",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -3,
+        4,
+        5
+      ],
+      "part": "casing",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -2,
+        4,
+        5
+      ],
+      "part": "casing",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -1,
+        4,
+        5
+      ],
+      "part": "casing",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        0,
+        4,
+        5
+      ],
+      "part": "casing",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        1,
+        4,
+        5
+      ],
+      "part": "casing",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        2,
+        4,
+        5
+      ],
+      "part": "casing",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        3,
+        4,
+        5
+      ],
+      "part": "casing",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        4,
+        4,
+        5
+      ],
+      "part": "casing",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        5,
+        4,
+        5
+      ],
+      "part": "casing",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        8,
+        4,
+        5
+      ],
+      "part": "ribbed_panel",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        9,
+        4,
+        5
+      ],
+      "part": "ribbed_panel",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -9,
+        5,
+        2
+      ],
+      "part": "hazard",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        9,
+        5,
+        2
+      ],
+      "part": "hazard",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -9,
+        5,
+        3
+      ],
+      "part": "casing",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -8,
+        5,
+        3
+      ],
+      "part": "service_panel",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        8,
+        5,
+        3
+      ],
+      "part": "service_panel",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        9,
+        5,
+        3
+      ],
+      "part": "casing",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -9,
+        5,
+        4
+      ],
+      "part": "casing",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -8,
+        5,
+        4
+      ],
+      "part": "casing",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -6,
+        5,
+        4
+      ],
+      "part": "ring",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -5,
+        5,
+        4
+      ],
+      "part": "ring",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -4,
+        5,
+        4
+      ],
+      "part": "ceramic_panel",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -3,
+        5,
+        4
+      ],
+      "part": "ceramic_panel",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        3,
+        5,
+        4
+      ],
+      "part": "ceramic_panel",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        4,
+        5,
+        4
+      ],
+      "part": "ceramic_panel",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        5,
+        5,
+        4
+      ],
+      "part": "ring",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        6,
+        5,
+        4
+      ],
+      "part": "ring",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        8,
+        5,
+        4
+      ],
+      "part": "casing",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        9,
+        5,
+        4
+      ],
+      "part": "casing",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -9,
+        5,
+        5
+      ],
+      "part": "casing",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -8,
+        5,
+        5
+      ],
+      "part": "casing",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -6,
+        5,
+        5
+      ],
+      "part": "casing",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -5,
+        5,
+        5
+      ],
+      "part": "ribbed_panel",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -4,
+        5,
+        5
+      ],
+      "part": "casing",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -3,
+        5,
+        5
+      ],
+      "part": "casing",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        3,
+        5,
+        5
+      ],
+      "part": "casing",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        4,
+        5,
+        5
+      ],
+      "part": "casing",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        5,
+        5,
+        5
+      ],
+      "part": "ribbed_panel",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        6,
+        5,
+        5
+      ],
+      "part": "casing",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        8,
+        5,
+        5
+      ],
+      "part": "casing",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        9,
+        5,
+        5
+      ],
+      "part": "casing",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -9,
+        6,
+        2
+      ],
+      "part": "hazard",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        9,
+        6,
+        2
+      ],
+      "part": "hazard",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -9,
+        6,
+        3
+      ],
+      "part": "casing",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -8,
+        6,
+        3
+      ],
+      "part": "reinforced_column",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        8,
+        6,
+        3
+      ],
+      "part": "reinforced_column",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        9,
+        6,
+        3
+      ],
+      "part": "casing",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -9,
+        6,
+        4
+      ],
+      "part": "casing",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -8,
+        6,
+        4
+      ],
+      "part": "casing",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -6,
+        6,
+        4
+      ],
+      "part": "ring",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -5,
+        6,
+        4
+      ],
+      "part": "ceramic_panel",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        5,
+        6,
+        4
+      ],
+      "part": "ceramic_panel",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        6,
+        6,
+        4
+      ],
+      "part": "ring",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        8,
+        6,
+        4
+      ],
+      "part": "casing",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        9,
+        6,
+        4
+      ],
+      "part": "casing",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -9,
+        6,
+        5
+      ],
+      "part": "casing",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -8,
+        6,
+        5
+      ],
+      "part": "casing",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -6,
+        6,
+        5
+      ],
+      "part": "casing",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -5,
+        6,
+        5
+      ],
+      "part": "casing",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        5,
+        6,
+        5
+      ],
+      "part": "casing",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        6,
+        6,
+        5
+      ],
+      "part": "casing",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        8,
+        6,
+        5
+      ],
+      "part": "casing",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        9,
+        6,
+        5
+      ],
+      "part": "casing",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -9,
+        7,
+        2
+      ],
+      "part": "hazard",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        9,
+        7,
+        2
+      ],
+      "part": "hazard",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -9,
+        7,
+        3
+      ],
+      "part": "casing",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -8,
+        7,
+        3
+      ],
+      "part": "reinforced_column",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        8,
+        7,
+        3
+      ],
+      "part": "reinforced_column",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        9,
+        7,
+        3
+      ],
+      "part": "casing",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -9,
+        7,
+        4
+      ],
+      "part": "casing",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -8,
+        7,
+        4
+      ],
+      "part": "casing",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -7,
+        7,
+        4
+      ],
+      "part": "ring",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -6,
+        7,
+        4
+      ],
+      "part": "ceramic_panel",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -5,
+        7,
+        4
+      ],
+      "part": "ceramic_panel",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        5,
+        7,
+        4
+      ],
+      "part": "ceramic_panel",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        6,
+        7,
+        4
+      ],
+      "part": "ceramic_panel",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        7,
+        7,
+        4
+      ],
+      "part": "ring",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        8,
+        7,
+        4
+      ],
+      "part": "casing",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        9,
+        7,
+        4
+      ],
+      "part": "casing",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -9,
+        7,
+        5
+      ],
+      "part": "ribbed_panel",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -8,
+        7,
+        5
+      ],
+      "part": "ribbed_panel",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -7,
+        7,
+        5
+      ],
+      "part": "casing",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -6,
+        7,
+        5
+      ],
+      "part": "casing",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -5,
+        7,
+        5
+      ],
+      "part": "casing",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        5,
+        7,
+        5
+      ],
+      "part": "casing",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        6,
+        7,
+        5
+      ],
+      "part": "casing",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        7,
+        7,
+        5
+      ],
+      "part": "casing",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        8,
+        7,
+        5
+      ],
+      "part": "ribbed_panel",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        9,
+        7,
+        5
+      ],
+      "part": "ribbed_panel",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -9,
+        8,
+        2
+      ],
+      "part": "hazard",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        9,
+        8,
+        2
+      ],
+      "part": "hazard",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -9,
+        8,
+        3
+      ],
+      "part": "casing",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -8,
+        8,
+        3
+      ],
+      "part": "reinforced_column",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        8,
+        8,
+        3
+      ],
+      "part": "reinforced_column",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        9,
+        8,
+        3
+      ],
+      "part": "casing",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -9,
+        8,
+        4
+      ],
+      "part": "casing",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -8,
+        8,
+        4
+      ],
+      "part": "casing",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -7,
+        8,
+        4
+      ],
+      "part": "ring",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -6,
+        8,
+        4
+      ],
+      "part": "ceramic_panel",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        6,
+        8,
+        4
+      ],
+      "part": "ceramic_panel",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        7,
+        8,
+        4
+      ],
+      "part": "ring",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        8,
+        8,
+        4
+      ],
+      "part": "casing",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        9,
+        8,
+        4
+      ],
+      "part": "casing",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -9,
+        8,
+        5
+      ],
+      "part": "casing",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -8,
+        8,
+        5
+      ],
+      "part": "casing",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -7,
+        8,
+        5
+      ],
+      "part": "casing",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -6,
+        8,
+        5
+      ],
+      "part": "casing",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        6,
+        8,
+        5
+      ],
+      "part": "casing",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        7,
+        8,
+        5
+      ],
+      "part": "casing",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        8,
+        8,
+        5
+      ],
+      "part": "casing",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        9,
+        8,
+        5
+      ],
+      "part": "casing",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -9,
+        9,
+        2
+      ],
+      "part": "hazard",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        9,
+        9,
+        2
+      ],
+      "part": "hazard",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -9,
+        9,
+        3
+      ],
+      "part": "casing",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -8,
+        9,
+        3
+      ],
+      "part": "reinforced_column",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        8,
+        9,
+        3
+      ],
+      "part": "reinforced_column",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        9,
+        9,
+        3
+      ],
+      "part": "casing",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -9,
+        9,
+        4
+      ],
+      "part": "casing",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -8,
+        9,
+        4
+      ],
+      "part": "casing",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -7,
+        9,
+        4
+      ],
+      "part": "ring",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -6,
+        9,
+        4
+      ],
+      "part": "ceramic_panel",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        6,
+        9,
+        4
+      ],
+      "part": "ceramic_panel",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        7,
+        9,
+        4
+      ],
+      "part": "ring",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        8,
+        9,
+        4
+      ],
+      "part": "casing",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        9,
+        9,
+        4
+      ],
+      "part": "casing",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -9,
+        9,
+        5
+      ],
+      "part": "casing",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -8,
+        9,
+        5
+      ],
+      "part": "casing",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -7,
+        9,
+        5
+      ],
+      "part": "casing",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -6,
+        9,
+        5
+      ],
+      "part": "casing",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        6,
+        9,
+        5
+      ],
+      "part": "casing",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        7,
+        9,
+        5
+      ],
+      "part": "casing",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        8,
+        9,
+        5
+      ],
+      "part": "casing",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        9,
+        9,
+        5
+      ],
+      "part": "casing",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -9,
+        10,
+        2
+      ],
+      "part": "light_blue",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        9,
+        10,
+        2
+      ],
+      "part": "light_blue",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -9,
+        10,
+        3
+      ],
+      "part": "casing",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -8,
+        10,
+        3
+      ],
+      "part": "reinforced_column",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -7,
+        10,
+        3
+      ],
+      "part": "light_blue",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -6,
+        10,
+        3
+      ],
+      "part": "light_violet",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        6,
+        10,
+        3
+      ],
+      "part": "light_violet",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        7,
+        10,
+        3
+      ],
+      "part": "light_blue",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        8,
+        10,
+        3
+      ],
+      "part": "reinforced_column",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        9,
+        10,
+        3
+      ],
+      "part": "casing",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -9,
+        10,
+        4
+      ],
+      "part": "casing",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -8,
+        10,
+        4
+      ],
+      "part": "casing",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -7,
+        10,
+        4
+      ],
+      "part": "ring",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -6,
+        10,
+        4
+      ],
+      "part": "ceramic_panel",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        6,
+        10,
+        4
+      ],
+      "part": "ceramic_panel",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        7,
+        10,
+        4
+      ],
+      "part": "ring",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        8,
+        10,
+        4
+      ],
+      "part": "casing",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        9,
+        10,
+        4
+      ],
+      "part": "casing",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -9,
+        10,
+        5
+      ],
+      "part": "ribbed_panel",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -8,
+        10,
+        5
+      ],
+      "part": "ribbed_panel",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -7,
+        10,
+        5
+      ],
+      "part": "casing",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -6,
+        10,
+        5
+      ],
+      "part": "casing",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        6,
+        10,
+        5
+      ],
+      "part": "casing",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        7,
+        10,
+        5
+      ],
+      "part": "casing",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        8,
+        10,
+        5
+      ],
+      "part": "ribbed_panel",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        9,
+        10,
+        5
+      ],
+      "part": "ribbed_panel",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -9,
+        11,
+        3
+      ],
+      "part": "casing",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -8,
+        11,
+        3
+      ],
+      "part": "service_panel",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        8,
+        11,
+        3
+      ],
+      "part": "service_panel",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        9,
+        11,
+        3
+      ],
+      "part": "casing",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -9,
+        11,
+        4
+      ],
+      "part": "casing",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -8,
+        11,
+        4
+      ],
+      "part": "casing",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -7,
+        11,
+        4
+      ],
+      "part": "ring",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -6,
+        11,
+        4
+      ],
+      "part": "ceramic_panel",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        6,
+        11,
+        4
+      ],
+      "part": "ceramic_panel",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        7,
+        11,
+        4
+      ],
+      "part": "ring",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        8,
+        11,
+        4
+      ],
+      "part": "casing",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        9,
+        11,
+        4
+      ],
+      "part": "casing",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -9,
+        11,
+        5
+      ],
+      "part": "casing",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -8,
+        11,
+        5
+      ],
+      "part": "casing",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -7,
+        11,
+        5
+      ],
+      "part": "casing",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -6,
+        11,
+        5
+      ],
+      "part": "casing",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        6,
+        11,
+        5
+      ],
+      "part": "casing",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        7,
+        11,
+        5
+      ],
+      "part": "casing",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        8,
+        11,
+        5
+      ],
+      "part": "casing",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        9,
+        11,
+        5
+      ],
+      "part": "casing",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -9,
+        12,
+        2
+      ],
+      "part": "light_blue",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        9,
+        12,
+        2
+      ],
+      "part": "light_blue",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -9,
+        12,
+        3
+      ],
+      "part": "casing",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -8,
+        12,
+        3
+      ],
+      "part": "reinforced_column",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        8,
+        12,
+        3
+      ],
+      "part": "reinforced_column",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        9,
+        12,
+        3
+      ],
+      "part": "casing",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -9,
+        12,
+        4
+      ],
+      "part": "casing",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -8,
+        12,
+        4
+      ],
+      "part": "casing",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -7,
+        12,
+        4
+      ],
+      "part": "ring",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -6,
+        12,
+        4
+      ],
+      "part": "ceramic_panel",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        6,
+        12,
+        4
+      ],
+      "part": "ceramic_panel",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        7,
+        12,
+        4
+      ],
+      "part": "ring",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        8,
+        12,
+        4
+      ],
+      "part": "casing",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        9,
+        12,
+        4
+      ],
+      "part": "casing",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -9,
+        12,
+        5
+      ],
+      "part": "casing",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -8,
+        12,
+        5
+      ],
+      "part": "casing",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -7,
+        12,
+        5
+      ],
+      "part": "casing",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -6,
+        12,
+        5
+      ],
+      "part": "casing",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        6,
+        12,
+        5
+      ],
+      "part": "casing",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        7,
+        12,
+        5
+      ],
+      "part": "casing",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        8,
+        12,
+        5
+      ],
+      "part": "casing",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        9,
+        12,
+        5
+      ],
+      "part": "casing",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -9,
+        13,
+        3
+      ],
+      "part": "casing",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -8,
+        13,
+        3
+      ],
+      "part": "reinforced_column",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        8,
+        13,
+        3
+      ],
+      "part": "reinforced_column",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        9,
+        13,
+        3
+      ],
+      "part": "casing",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -9,
+        13,
+        4
+      ],
+      "part": "casing",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -8,
+        13,
+        4
+      ],
+      "part": "casing",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -7,
+        13,
+        4
+      ],
+      "part": "ring",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -6,
+        13,
+        4
+      ],
+      "part": "ceramic_panel",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -5,
+        13,
+        4
+      ],
+      "part": "ceramic_panel",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        5,
+        13,
+        4
+      ],
+      "part": "ceramic_panel",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        6,
+        13,
+        4
+      ],
+      "part": "ceramic_panel",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        7,
+        13,
+        4
+      ],
+      "part": "ring",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        8,
+        13,
+        4
+      ],
+      "part": "casing",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        9,
+        13,
+        4
+      ],
+      "part": "casing",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -9,
+        13,
+        5
+      ],
+      "part": "ribbed_panel",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -8,
+        13,
+        5
+      ],
+      "part": "ribbed_panel",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -7,
+        13,
+        5
+      ],
+      "part": "casing",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -6,
+        13,
+        5
+      ],
+      "part": "casing",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -5,
+        13,
+        5
+      ],
+      "part": "casing",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        5,
+        13,
+        5
+      ],
+      "part": "casing",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        6,
+        13,
+        5
+      ],
+      "part": "casing",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        7,
+        13,
+        5
+      ],
+      "part": "casing",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        8,
+        13,
+        5
+      ],
+      "part": "ribbed_panel",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        9,
+        13,
+        5
+      ],
+      "part": "ribbed_panel",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -9,
+        14,
+        3
+      ],
+      "part": "trim",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -8,
+        14,
+        3
+      ],
+      "part": "trim",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        8,
+        14,
+        3
+      ],
+      "part": "trim",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        9,
+        14,
+        3
+      ],
+      "part": "trim",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -9,
+        14,
+        4
+      ],
+      "part": "trim",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -8,
+        14,
+        4
+      ],
+      "part": "trim",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -6,
+        14,
+        4
+      ],
+      "part": "ring",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -5,
+        14,
+        4
+      ],
+      "part": "ceramic_panel",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        5,
+        14,
+        4
+      ],
+      "part": "ceramic_panel",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        6,
+        14,
+        4
+      ],
+      "part": "ring",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        8,
+        14,
+        4
+      ],
+      "part": "trim",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        9,
+        14,
+        4
+      ],
+      "part": "trim",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -9,
+        14,
+        5
+      ],
+      "part": "trim",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -8,
+        14,
+        5
+      ],
+      "part": "trim",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -6,
+        14,
+        5
+      ],
+      "part": "casing",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -5,
+        14,
+        5
+      ],
+      "part": "casing",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        5,
+        14,
+        5
+      ],
+      "part": "casing",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        6,
+        14,
+        5
+      ],
+      "part": "casing",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        8,
+        14,
+        5
+      ],
+      "part": "trim",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        9,
+        14,
+        5
+      ],
+      "part": "trim",
+      "section": "towers",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -9,
+        15,
+        4
+      ],
+      "part": "beacon",
+      "section": "beacons",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -6,
+        15,
+        4
+      ],
+      "part": "ring",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -5,
+        15,
+        4
+      ],
+      "part": "ring",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -4,
+        15,
+        4
+      ],
+      "part": "ceramic_panel",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -3,
+        15,
+        4
+      ],
+      "part": "ceramic_panel",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        3,
+        15,
+        4
+      ],
+      "part": "ceramic_panel",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        4,
+        15,
+        4
+      ],
+      "part": "ceramic_panel",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        5,
+        15,
+        4
+      ],
+      "part": "ring",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        6,
+        15,
+        4
+      ],
+      "part": "ring",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        9,
+        15,
+        4
+      ],
+      "part": "beacon",
+      "section": "beacons",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -6,
+        15,
+        5
+      ],
+      "part": "casing",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -5,
+        15,
+        5
+      ],
+      "part": "ribbed_panel",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -4,
+        15,
+        5
+      ],
+      "part": "casing",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -3,
+        15,
+        5
+      ],
+      "part": "casing",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        3,
+        15,
+        5
+      ],
+      "part": "casing",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        4,
+        15,
+        5
+      ],
+      "part": "casing",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        5,
+        15,
+        5
+      ],
+      "part": "ribbed_panel",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        6,
+        15,
+        5
+      ],
+      "part": "casing",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -9,
+        16,
+        4
+      ],
+      "part": "beacon",
+      "section": "beacons",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -5,
+        16,
+        4
+      ],
+      "part": "ring",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -4,
+        16,
+        4
+      ],
+      "part": "ring",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -3,
+        16,
+        4
+      ],
+      "part": "ceramic_panel",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -2,
+        16,
+        4
+      ],
+      "part": "ceramic_panel",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -1,
+        16,
+        4
+      ],
+      "part": "ceramic_panel",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        0,
+        16,
+        4
+      ],
+      "part": "ceramic_panel",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        1,
+        16,
+        4
+      ],
+      "part": "ceramic_panel",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        2,
+        16,
+        4
+      ],
+      "part": "ceramic_panel",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        3,
+        16,
+        4
+      ],
+      "part": "ceramic_panel",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        4,
+        16,
+        4
+      ],
+      "part": "ring",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        5,
+        16,
+        4
+      ],
+      "part": "ring",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        9,
+        16,
+        4
+      ],
+      "part": "beacon",
+      "section": "beacons",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -5,
+        16,
+        5
+      ],
+      "part": "casing",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -4,
+        16,
+        5
+      ],
+      "part": "casing",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -3,
+        16,
+        5
+      ],
+      "part": "casing",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -2,
+        16,
+        5
+      ],
+      "part": "casing",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -1,
+        16,
+        5
+      ],
+      "part": "casing",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        0,
+        16,
+        5
+      ],
+      "part": "casing",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        1,
+        16,
+        5
+      ],
+      "part": "casing",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        2,
+        16,
+        5
+      ],
+      "part": "casing",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        3,
+        16,
+        5
+      ],
+      "part": "casing",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        4,
+        16,
+        5
+      ],
+      "part": "casing",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        5,
+        16,
+        5
+      ],
+      "part": "casing",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        0,
+        17,
+        3
+      ],
+      "part": "light_violet",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -3,
+        17,
+        4
+      ],
+      "part": "ring",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -2,
+        17,
+        4
+      ],
+      "part": "ring",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -1,
+        17,
+        4
+      ],
+      "part": "ring",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        0,
+        17,
+        4
+      ],
+      "part": "ring",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        1,
+        17,
+        4
+      ],
+      "part": "ring",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        2,
+        17,
+        4
+      ],
+      "part": "ring",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        3,
+        17,
+        4
+      ],
+      "part": "ring",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -3,
+        17,
+        5
+      ],
+      "part": "casing",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -2,
+        17,
+        5
+      ],
+      "part": "casing",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        -1,
+        17,
+        5
+      ],
+      "part": "casing",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        0,
+        17,
+        5
+      ],
+      "part": "casing",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        1,
+        17,
+        5
+      ],
+      "part": "casing",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        2,
+        17,
+        5
+      ],
+      "part": "casing",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        3,
+        17,
+        5
+      ],
+      "part": "casing",
+      "section": "ring",
+      "facing": "north"
+    },
+    {
+      "position": [
+        0,
+        18,
+        4
+      ],
+      "part": "beacon",
+      "section": "beacons",
+      "facing": "north"
+    }
+  ],
+  "portalVisual": {
+    "centre": [
+      0.5,
+      10.5,
+      4.15
+    ],
+    "diameter": 11,
+    "render": "special surface only; no frame/base transformation"
+  },
+  "colliderDesign": {
+    "footprint": [
+      21,
+      21
+    ],
+    "height": 5,
+    "shape": "hollow toroidal accelerator; open centre; individual placed blocks"
+  }
+}

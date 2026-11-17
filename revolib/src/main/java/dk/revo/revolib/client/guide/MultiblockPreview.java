@@ -31,10 +31,10 @@ public final class MultiblockPreview {
     public void zoom(double delta){zoom=(float)Math.clamp(zoom*Math.pow(1.12,delta),.55,1.8);}
     public void reset(){yaw=35;pitch=25;zoom=1;dragging=false;}
     public void rotate(float delta){yaw+=delta;}
-    public void cycleHighlight(){highlight=(highlight+1)%(guide.parts().stream().anyMatch(p->(p.role()==MultiblockGuide.Role.POWER||p.role()==MultiblockGuide.Role.ELECTRIC_INPUT||p.role()==MultiblockGuide.Role.FUEL_INPUT))?5:4);}
+    public void cycleHighlight(){highlight=(highlight+1)%(guide.parts().stream().anyMatch(p->(p.role()==MultiblockGuide.Role.POWER||p.role()==MultiblockGuide.Role.ELECTRIC_INPUT||p.role()==MultiblockGuide.Role.ENERGY_INPUT||p.role()==MultiblockGuide.Role.FUEL_INPUT))?5:4);}
     public String highlightLabel(){return switch(highlight){case 1->"All ports";case 2->"Controller";case 3->"Item output";case 4->"Power input";default->"Ports: off";};}
     public void click(double mouseX,double mouseY,int button){if(button==1)reset();else if(button==0){dragging=true;lastX=mouseX;lastY=mouseY;}}
-    private boolean selected(MultiblockGuide.Part part){return switch(highlight){case 1->part.role()!=MultiblockGuide.Role.BLOCK;case 2->part.role()==MultiblockGuide.Role.CONTROLLER;case 3->part.role()==MultiblockGuide.Role.OUTPUT||part.role()==MultiblockGuide.Role.INPUT_OUTPUT;case 4->part.role()==MultiblockGuide.Role.POWER||part.role()==MultiblockGuide.Role.ELECTRIC_INPUT||part.role()==MultiblockGuide.Role.FUEL_INPUT;default->false;};}
+    private boolean selected(MultiblockGuide.Part part){return switch(highlight){case 1->part.role()!=MultiblockGuide.Role.BLOCK;case 2->part.role()==MultiblockGuide.Role.CONTROLLER;case 3->part.role()==MultiblockGuide.Role.OUTPUT||part.role()==MultiblockGuide.Role.INPUT_OUTPUT;case 4->part.role()==MultiblockGuide.Role.POWER||part.role()==MultiblockGuide.Role.ELECTRIC_INPUT||part.role()==MultiblockGuide.Role.ENERGY_INPUT||part.role()==MultiblockGuide.Role.FUEL_INPUT;default->false;};}
     public List<Component> tooltip(){
         if(hovered==null)return List.of();
         var p=hovered.offset();

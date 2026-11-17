@@ -43,7 +43,8 @@ public final class RevoCultivation {
         bus.addListener((RegisterCapabilitiesEvent e)->e.registerBlockEntity(Capabilities.ItemHandler.BLOCK,TRADE_ENTITY.get(),(be,side)->be.items));SmallMachines.bootstrap();FarmMaterials.bootstrap();
         MachineKind.TREE.bind(TREE);MachineKind.GREENHOUSE.bind(GREENHOUSE);
         MachineKind.STEEL_TREE.bind(STEEL_TREE);MachineKind.IRON_GREENHOUSE.bind(IRON_GREENHOUSE);
-        for(var block:BLOCKS.getEntries())ITEMS.registerSimpleBlockItem(block);
+        RunningShoes.bootstrap(bus);
+        for(var block:BLOCKS.getEntries())if(block!=RunningShoes.CROP)ITEMS.registerSimpleBlockItem(block);
         BLOCKS.register(bus);ITEMS.register(bus);ENTITIES.register(bus);MENUS.register(bus);
         bus.addListener(this::capabilities);
         bus.addListener((net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent e)->{if(e.getTabKey()==CreativeModeTabs.FUNCTIONAL_BLOCKS)ITEMS.getEntries().forEach(i->e.accept(i.get()));});

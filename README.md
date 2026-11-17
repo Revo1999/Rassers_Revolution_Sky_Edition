@@ -1,5 +1,8 @@
 # Rassers Revolution: Sky Edition
 
+For missing showroom machines, sludge processing, merged branch work and
+unfinished Nexus runtime features, see [machine availability and branch status](docs/MISSING-MACHINES-AND-BRANCH-STATUS.md).
+
 RevoIndustry now includes three [Feeding Helmet tiers](docs/FEEDING-HELMETS.md)
 with 1, 4 and 25 food slots, visible mouth tubes and portion-aware auto-feeding.
 Browse the [screenshot collection](screenshots/README.md), including the earlier
@@ -51,6 +54,12 @@ From a terminal in this directory:
 The client and server run all seven projects together. Built jars are collected
 in build/mods. Files from pack/overrides are copied into the run directory on launch.
 Minecraft development assets download on the first setup.
+
+The repeatable full-pack client benchmark uses a fixed 10 GiB game heap and a
+dedicated factory save. See [the benchmark guide](docs/PERFORMANCE-BENCHMARK.md)
+for results and reproduction, and download the
+[benchmark world](art/performance-benchmark/Revo-Performance-Benchmark.zip)
+to open it in a matching pack instance.
 The dedicated server requires you to review and accept Mojang's EULA in
 revolib/run/eula.txt before it will start. Setup does not accept it for you.
 
@@ -59,7 +68,16 @@ revolib/run/eula.txt before it will start. Setup does not accept it for you.
 - Each revo*/src/main/java: Java implementation.
 - Each revo*/src/main/resources/assets/<modid>: exported Minecraft assets.
 - art/blockbench: editable model sources; see docs/BLOCKBENCH.md.
+- The [Nexus endgame specification](docs/NEXUS-ENDGAME.md) and
+  [first portal art pass](art/blockbench/nexus-portal/README.md) describe the next
+  three processing multiblocks and the final portal. These are design/art assets.
+  The [three machine models](art/blockbench/nexus-machines/README.md) include a
+  21x21x5 donut collider and 9x9 casting/plating plants with animated mechanisms.
 - pack/overrides: pack configuration, menu film, KubeJS and resource packs.
+- [Revo's Creationalization](docs/REVO-CREATIONALIZATION.md): editable KubeJS
+  compatibility recipes and proposals that preserve the Create/MI progression.
+- [Running shoes](docs/RUNNING-SHOES.md): twelve early rubber/cotton colourways,
+  with 25% movement speed and fall protection while worn.
 - docs/design: original user-supplied planning references.
 
 The Departure Mono font pack is in pack/overrides/resourcepacks/revo-departure-mono.
@@ -106,6 +124,22 @@ and https://github.com/NeoForgeMDKs/MDK-1.21.1-ModDevGradle
 Template license attribution is retained in TEMPLATE_LICENSE.txt.
 Custom code defaults to All Rights Reserved pending your license choice.
 
+## Electric Wither Hatchery
+
+The normal seven-block Wither ritual now drops a Wither Egg. A 5 x 5 x 5 electric
+chamber incubates the visibly animated egg behind dark glass and flashing red lights,
+then hatches and kills a real contained Wither to produce one Nether Star.
+Block placement, hopper collection and hatch item/energy capabilities support automation.
+Initial balance is 8192 EU/t for 75 seconds. See [WITHER-HATCHERY.md](docs/WITHER-HATCHERY.md)
+for the blueprint, energy budget, recipes, five new quests and opt-in native/visual QA.
+
+## Submerged salt geology
+
+The 3 x 3 x 3 Salt Geode Chamber grows and harvests crystal buds under animated
+water and electrical arcs. Water plus 16 EU/t produces salt water, which the native
+MI Centrifuge turns into Salt Dust. See [SALT-GEODE.md](docs/SALT-GEODE.md) for the
+blueprint, progression placement and two added quests. No manual salt bootstrap is needed.
+
 Revo machine asset conventions and exact block-layer heights are recorded in
 [the modeling and texturing workflow](docs/MACHINE-MODELING-WORKFLOW.md). The wooden
 drill controller opens a diagnostics-only interface; its output hatch opens storage.
@@ -139,3 +173,11 @@ Early resource bridges now provide Create coke milling, Cow leather, Steel Blaze
 The twelve-task progression batch is implemented, including controlled crop/mob starters, quartz and burners, first-electricity quests, electric geology, trading, glacial/deep resources and local mechanical storage. RevoStorage adds nine-chest drives with native Iron Chests capacity plus an AE-style crafting terminal with search, shift-click crafting and EMI recipe transfer. See [implementation details](docs/PROGRESSION-EXPANSION.md), [verification](docs/PROGRESSION-EXPANSION-QA.md) and the [next recipe audit](docs/RECIPE-AUDIT-3.md).
 
 The crystal/late-resource update implements the next ten audit items. See [routes and gates](docs/CRYSTAL-AND-LATE-RESOURCES.md), the [machine screenshot gallery](screenshots/machines/INDEX.md) and [audit 4](docs/RECIPE-AUDIT-4.md).
+
+### Drill minerals and sludge
+
+Mechanical Steel Drills supply lead and antimony before LV batteries. Drill sludge supplies washed gems and advanced Certus recovery; electric geology adds selectable antimony. Native MI quarry controller recipes are disabled. See [the resource ladder](docs/DRILL-MINERALS-AND-SLUDGE.md).
+
+### Performance
+
+Machine/storage/port and rendering optimizations are documented in [the block performance audit](docs/PERFORMANCE-AUDIT.md). See [startup performance](docs/STARTUP-PERFORMANCE.md) for the existing optimization stack and verified candidate versions; additional mods and experimental model-loading options are recommendations, not installed changes.

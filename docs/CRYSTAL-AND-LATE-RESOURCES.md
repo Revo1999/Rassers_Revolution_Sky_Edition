@@ -2,7 +2,7 @@
 
 ## Certus Quartz
 
-Select Certus Quartz on the Electric Geological Drill: 16 EU/t for 400 powered ticks. Native charging, dust and Fluix chemistry remain unchanged.
+Select Crystalline Sludge on the Electric Geological Drill with a retained Deep Survey Core: 128 EU/t for 1200 powered ticks. Centrifuge one sludge at 32 EU/t for 400 ticks into two Certus Quartz and two Quartz. Native charging, dust and Fluix chemistry remain unchanged.
 
 ## Inscriber Presses
 
@@ -30,7 +30,7 @@ Heated mixing of obsidian, Ender Pearl, quartz and Fluix makes four End Stone. C
 
 ## Wither Route
 
-Steel Harvester Wither Skeleton mode requires a retained Netherite ingot. It produces bones/coal; every 64th completed harvest also yields a skull. Saved cycle count prevents blocked output rerolls. Use three skulls and four soul sand to summon and defeat the vanilla Wither for a Nether Star. Prepare an arena; the machine never spawns the boss.
+Steel Harvester Wither Skeleton mode requires a retained Netherite ingot. It produces bones/coal; every 64th completed harvest also yields a skull. Saved cycle count prevents blocked output rerolls. Complete the ordinary three-skull/four-soul-sand ritual to obtain a Wither Egg, then process it in the Electric Wither Hatchery. The harvester supplies skulls and never spawns a roaming boss.
 
 ## First Netherite Template
 

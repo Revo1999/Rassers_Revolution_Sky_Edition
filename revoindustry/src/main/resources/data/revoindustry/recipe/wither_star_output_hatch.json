@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " H ",
+    "SCS",
+    " H "
+  ],
+  "key": {
+    "S": {
+      "item": "modern_industrialization:steel_plate"
+    },
+    "H": {
+      "item": "minecraft:hopper"
+    },
+    "C": {
+      "item": "revoindustry:wither_chamber_casing"
+    }
+  },
+  "result": {
+    "id": "revoindustry:wither_star_output_hatch",
+    "count": 1
+  }
+}

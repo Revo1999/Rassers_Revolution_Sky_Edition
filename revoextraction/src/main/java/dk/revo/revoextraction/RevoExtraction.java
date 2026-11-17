@@ -15,6 +15,9 @@ public final class RevoExtraction {
     public static final String MOD_ID = "revoextraction";
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(MOD_ID);
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(MOD_ID);
+    public static final DeferredItem<Item> MINERAL_SLUDGE = ITEMS.registerSimpleItem("mineral_sludge");
+    public static final DeferredItem<Item> GEM_SLUDGE = ITEMS.registerSimpleItem("gem_sludge");
+    public static final DeferredItem<Item> CRYSTALLINE_SLUDGE = ITEMS.registerSimpleItem("crystalline_sludge");
     public static final DeferredRegister<net.minecraft.world.inventory.MenuType<?>> MENUS = DeferredRegister.create(Registries.MENU, MOD_ID);
     public static final DeferredHolder<net.minecraft.world.inventory.MenuType<?>, net.minecraft.world.inventory.MenuType<DrillMenu>> DRILL_MENU = MENUS.register("wooden_drill", () -> new net.minecraft.world.inventory.MenuType<>(DrillMenu::new, net.minecraft.world.flag.FeatureFlags.DEFAULT_FLAGS));
     public static final DeferredHolder<net.minecraft.world.inventory.MenuType<?>, net.minecraft.world.inventory.MenuType<DrillHatchMenu>> HATCH_MENU = MENUS.register("wooden_drill_output", () -> new net.minecraft.world.inventory.MenuType<>(DrillHatchMenu::new, net.minecraft.world.flag.FeatureFlags.DEFAULT_FLAGS));

@@ -13,7 +13,7 @@ public final class VacuumGameTests {
  static void step(VacuumEntity v,int ticks){var l=(net.minecraft.server.level.ServerLevel)v.getLevel();long original=l.getGameTime();try{for(int i=0;i<ticks;i++){l.getServer().getWorldData().overworldData().setGameTime(original+i+1);v.tick();}}finally{l.getServer().getWorldData().overworldData().setGameTime(original);}}
 
  static ItemEntity item(GameTestHelper h,Vec3 pos,Item item,int count){var e=new ItemEntity(h.getLevel(),pos.x,pos.y,pos.z,new ItemStack(item,count));e.setNoGravity(true);e.setDeltaMovement(Vec3.ZERO);h.getLevel().addFreshEntity(e);return e;}
- @GameTest(template="vacuum_test",timeoutTicks=100)
+ @GameTest(batch="vacuums",template="vacuum_test",timeoutTicks=100)
  public static void tiersSlotsAndSixDirectionalChestTransfer(GameTestHelper h){
   for(int tier=0;tier<3;tier++)for(var face:Direction.values()){
    var v=make(h,tier,face);h.assertTrue(v.intake().subtract(Vec3.atCenterOf(v.getBlockPos())).normalize().dot(Vec3.atLowerCornerOf(face.getNormal()))<-.999,"Intake must be opposite the rear output plate");var target=v.getBlockPos().relative(face);h.getLevel().setBlockAndUpdate(target,Blocks.CHEST.defaultBlockState());var chest=(ChestBlockEntity)h.getLevel().getBlockEntity(target);
@@ -23,7 +23,7 @@ public final class VacuumGameTests {
    chest.clearContent();h.getLevel().setBlockAndUpdate(target,Blocks.AIR.defaultBlockState());
   }h.succeed();
  }
- @GameTest(template="vacuum_test",timeoutTicks=100)
+ @GameTest(batch="vacuums",template="vacuum_test",timeoutTicks=100)
  public static void fullDestinationsPartialStacksAndPersistence(GameTestHelper h){
   var v=make(h,0,Direction.DOWN);var p=v.getBlockPos().below();h.getLevel().setBlockAndUpdate(p,Blocks.CHEST.defaultBlockState());var chest=(ChestBlockEntity)h.getLevel().getBlockEntity(p);
   for(int i=0;i<27;i++)chest.setItem(i,new ItemStack(Items.STONE,64));v.inventory.insertItem(0,new ItemStack(Items.DIAMOND,12),false);step(v,24);h.assertTrue(v.inventory.getStackInSlot(0).getCount()==12,"Full chest must preserve buffer");
@@ -31,7 +31,7 @@ public final class VacuumGameTests {
   v.inventory.setStackInSlot(0,new ItemStack(Items.DIAMOND,63));var entity=item(h,Vec3.atCenterOf(v.getBlockPos()).relative(v.outlet().getOpposite(),.65),Items.DIAMOND,5);step(v,4);h.assertTrue(v.inventory.getStackInSlot(0).getCount()==64&&entity.getItem().getCount()==4&&entity.isAlive(),"Partial pickup preserves all remainder");
   h.assertTrue(!v.accepts(new ItemStack(Items.DIAMOND)),"Full buffer refuses attraction");entity.discard();h.succeed();
  }
- @GameTest(template="vacuum_test",timeoutTicks=100)
+ @GameTest(batch="vacuums",template="vacuum_test",timeoutTicks=100)
  public static void pickupCubeBoundariesCornersAndActualCollection(GameTestHelper h){
   for(int tier=0;tier<3;tier++){
    var v=make(h,tier,Direction.SOUTH);var centre=Vacuums.area(v.getBlockPos(),tier,v.outlet()).getCenter();var inside=item(h,centre.add(Vacuums.size(tier)/2.0-.2,0,0),Items.IRON_INGOT,1);var outside=item(h,centre.add(Vacuums.size(tier)/2.0+.2,0,0),Items.GOLD_INGOT,1);
@@ -41,18 +41,18 @@ public final class VacuumGameTests {
    inside.setPos(Vec3.atCenterOf(v.getBlockPos()).relative(v.outlet().getOpposite(),.65));step(v,4);h.assertTrue(!inside.isAlive()&&v.inventory.getStackInSlot(0).is(Items.IRON_INGOT),"Nearby item enters buffer");outside.discard();
   }h.succeed();
  }
- @GameTest(template="vacuum_test",timeoutTicks=100)
+ @GameTest(batch="vacuums",template="vacuum_test",timeoutTicks=100)
  public static void fullBufferDoesNotMoveItemsAndBreakingDropsOnce(GameTestHelper h){
   var v=make(h,2,Direction.UP);for(int i=0;i<9;i++)v.inventory.setStackInSlot(i,new ItemStack(Items.STONE,64));var e=item(h,Vec3.atCenterOf(v.getBlockPos()).relative(v.outlet().getOpposite(),2),Items.DIAMOND,4);step(v,4);h.assertTrue(e.getDeltaMovement().lengthSqr()==0&&e.getItem().getCount()==4,"Full buffer leaves items untouched");
   var box=new net.minecraft.world.phys.AABB(v.getBlockPos()).inflate(1);h.getLevel().setBlockAndUpdate(v.getBlockPos(),Blocks.AIR.defaultBlockState());int count=h.getLevel().getEntitiesOfClass(ItemEntity.class,box).stream().filter(x->x.getItem().is(Items.STONE)).mapToInt(x->x.getItem().getCount()).sum();h.assertTrue(count==576,"Breaking drops every buffered item once");e.discard();h.succeed();
  }
- @GameTest(template="vacuum_test",timeoutTicks=120)
+ @GameTest(batch="vacuums",template="vacuum_test",timeoutTicks=120)
  public static void worldTicksActuallyPullAndCollectItems(GameTestHelper h){
   var v=make(h,2,Direction.DOWN);var e=item(h,Vec3.atCenterOf(v.getBlockPos()).relative(v.outlet().getOpposite(),2.5),Items.EMERALD,7);
   h.runAtTickTime(80,()->{h.assertTrue(!e.isAlive(),"Real entity motion must reach nozzle");h.assertTrue(v.inventory.getStackInSlot(0).is(Items.EMERALD)&&v.inventory.getStackInSlot(0).getCount()==7,"Collected all seven without manual teleport");h.succeed();});
  }
 
- @GameTest(template="vacuum_test",timeoutTicks=100)
+ @GameTest(batch="vacuums",template="vacuum_test",timeoutTicks=100)
  public static void forwardCubeAllTiersAndSixOrientations(GameTestHelper h){
   for(int tier=0;tier<3;tier++)for(var outlet:Direction.values()){
    var v=make(h,tier,outlet);var area=Vacuums.area(v.getBlockPos(),tier,outlet);var centre=Vec3.atCenterOf(v.getBlockPos());var front=outlet.getOpposite();int size=Vacuums.size(tier);
@@ -65,7 +65,7 @@ public final class VacuumGameTests {
   }h.succeed();
  }
 
- @GameTest(template="vacuum_test",timeoutTicks=100)
+ @GameTest(batch="vacuums",template="vacuum_test",timeoutTicks=100)
  public static void floorPlacementUprightAndInventoryMounting(GameTestHelper h){
   var player=h.makeMockPlayer(net.minecraft.world.level.GameType.CREATIVE);var base=h.absolutePos(new BlockPos(4,1,4));
   for(int tier=0;tier<3;tier++)for(var facing:Direction.Plane.HORIZONTAL){
@@ -78,7 +78,7 @@ public final class VacuumGameTests {
   }h.succeed();
  }
 
- @GameTest(template="vacuum_test",timeoutTicks=100)
+ @GameTest(batch="vacuums",template="vacuum_test",timeoutTicks=100)
  public static void collectionStartsAtAuthoredNozzlePlane(GameTestHelper h) throws Exception {
   for(int tier=0;tier<3;tier++){
    String path="assets/revoindustry/models/block/vacuum_"+(tier+1)+".json";

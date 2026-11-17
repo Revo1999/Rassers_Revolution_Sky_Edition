@@ -21,20 +21,21 @@ public final class VacuumEntity extends BlockEntity implements MenuProvider {
  public int tier(){return ((VacuumBlock)getBlockState().getBlock()).tier;}
  public Direction outlet(){return getBlockState().getValue(VacuumBlock.OUTLET);}
  public Vec3 intake(){return Vacuums.mouth(worldPosition,outlet()); }
- public boolean accepts(ItemStack stack){return ItemHandlerHelper.insertItemStacked(inventory,stack.copy(),true).getCount()<stack.getCount();}
+ public boolean accepts(ItemStack stack){return ItemHandlerHelper.insertItemStacked(inventory,stack,true).getCount()<stack.getCount();}
  public void tick(){
   if(!(level instanceof ServerLevel server))return;
-  if(cooldown>0){cooldown--;setChanged();}
+  if(cooldown>0)cooldown--;
   if(cooldown==0){transfer();cooldown=Vacuums.interval(tier());setChanged();}
   if(level.getGameTime()%4!=0)return;
   var centre=Vec3.atCenterOf(worldPosition);var area=Vacuums.area(worldPosition,tier(),outlet());
   var found=level.getEntitiesOfClass(ItemEntity.class,area,e->e.isAlive()&&!e.getItem().isEmpty()&&area.contains(e.position()));
   found.sort(java.util.Comparator.comparingDouble(e->e.position().distanceToSqr(centre)));
+  var target=intake();
   int handled=0;
   for(var entity:found){
    if(!accepts(entity.getItem()))continue;
    // Items stay in-world while being pulled; capacity is rechecked on every scan.
-   var target=intake();var delta=target.subtract(entity.position());double distance=delta.length();
+   var delta=target.subtract(entity.position());double distance=delta.length();
    if(distance<.8){var old=entity.getItem();var left=ItemHandlerHelper.insertItemStacked(inventory,old.copy(),false);if(left.getCount()!=old.getCount()){if(left.isEmpty())entity.discard();else entity.setItem(left);} }
    else {entity.setDeltaMovement(delta.normalize().scale(Math.min(.42,.12+distance*.04)));entity.hurtMarked=true;}
    if(distance>.2){var velocity=delta.normalize().scale(.16);server.sendParticles(ParticleTypes.END_ROD,entity.getX(),entity.getY()+.1,entity.getZ(),0,velocity.x,velocity.y,velocity.z,1);}

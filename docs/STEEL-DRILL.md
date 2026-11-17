@@ -23,11 +23,16 @@ cycle completion. Controller interfaces have no inventory and retain the small
 black R in the lower right; output hatches have no R/footer. Jade shows compact
 status, RPM, progress and water, with orientation corrections only in the controller.
 
-The fixed saved 12-item sequence yields 3 raw iron, 1 raw copper, 1 raw tin,
-2 coal, 1 raw zinc, 1 raw gold, 1 redstone, 1 lapis and 1 diamond. Optional-mod ores
-fall back to raw iron if their item is unavailable. Blocked output cannot reroll
-the sequence. The water-cooled drill makes the first renewable diamonds for MI
-maceration without changing the Iron Drill's earlier output pool.
+The fixed saved 16-item sequence yields 3 raw iron, 1 raw copper, 1 raw tin,
+2 coal, 1 raw zinc, 1 raw gold, 1 redstone, 2 raw lead, 1 raw antimony,
+1 Mineral Sludge and 2 Gem Sludge. Optional-mod ores fall back to raw iron if
+unavailable. Blocked output cannot reroll the sequence. Every 128th output
+remains Flux Dust instead of the scheduled item.
+
+Wash Gem Sludge with a water-backed Create Encased Fan for one Diamond and two
+Lapis, plus a 25% Emerald chance. Mineral Sludge washes into Quartz. Lead and
+antimony establish native battery alloy before the first LV hull. See
+[drill minerals and sludge](DRILL-MINERALS-AND-SLUDGE.md).
 
 ## Cooling and repair
 

@@ -38,9 +38,11 @@ public final class SluiceGameTests {
             check(h,e.getBlockState().getPistonPushReaction()==net.minecraft.world.level.material.PushReaction.BLOCK,"Pistons cannot split the occupied machine footprint");
             check(h,e.getBlockState().is(net.minecraft.tags.TagKey.create(net.minecraft.core.registries.Registries.BLOCK,net.minecraft.resources.ResourceLocation.parse("create:non_movable"))),"Create contraptions cannot split the channel");
             for(var side:Direction.values())check(h,SluiceContent.SLUICE.get().hasShaftTowards(l,pos,e.getBlockState(),side)==(side.getAxis()==facing.getClockWise().getAxis()),"Only transverse shaft faces");
-            check(h,l.getCapability(Capabilities.FluidHandler.BLOCK,pos.above(),facing.getOpposite())==e.feeder().water,"Rear water port");
+            var waterPort=l.getCapability(Capabilities.FluidHandler.BLOCK,pos.above(),facing.getOpposite());
+            check(h,waterPort!=null&&waterPort.fill(new FluidStack(Fluids.WATER,1000),FluidAction.EXECUTE)==1000&&e.feeder().water.getFluidAmount()==1000,"Rear water port fills the feeder tank");
             check(h,l.getCapability(Capabilities.FluidHandler.BLOCK,pos.above(),Direction.UP)==null,"Top is not a fluid port");
-            check(h,l.getCapability(Capabilities.ItemHandler.BLOCK,pos.above(),Direction.UP)==e.feeder().input,"Top gravel port");
+            var gravelPort=l.getCapability(Capabilities.ItemHandler.BLOCK,pos.above(),Direction.UP);
+            check(h,gravelPort!=null&&gravelPort.extractItem(0,1,false).is(Items.GRAVEL)&&e.feeder().input.getStackInSlot(0).getCount()==63,"Top gravel port accesses the feeder inventory");
             check(h,e.feeder().water.fill(new FluidStack(Fluids.LAVA,1000),FluidAction.EXECUTE)==0,"Water only");
             check(h,e.feeder().input.insertItem(0,new ItemStack(Items.DIRT),false).is(Items.DIRT),"Gravel only");
             var output=l.getCapability(Capabilities.ItemHandler.BLOCK,e.at(2),facing);

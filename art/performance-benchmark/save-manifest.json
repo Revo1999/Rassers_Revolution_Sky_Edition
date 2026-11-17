@@ -1,0 +1,9 @@
+{
+  "file": "Revo-Performance-Benchmark.zip",
+  "bytes": 1567531,
+  "sha256": "f0fb69e8ec21442befac8dc9df450951d614d89941fb89470eeca494c5d3743e",
+  "worldFolder": "Revo Performance Benchmark",
+  "heapForComparison": "10 GiB",
+  "game": "Minecraft 1.21.1 / NeoForge 21.1.265",
+  "mode": "creative benchmark, not a survival save"
+}

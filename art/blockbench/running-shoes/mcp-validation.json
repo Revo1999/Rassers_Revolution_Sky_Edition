@@ -1,0 +1,529 @@
+{
+  "items": [
+    {
+      "color": "white",
+      "revision": "a00c76c856f2acc3",
+      "format": "java_block",
+      "summary": {
+        "errors": 0,
+        "warnings": 0,
+        "passed": true
+      },
+      "gates": [
+        {
+          "id": "outliner",
+          "label": "Outliner references resolve and UUIDs are unique",
+          "severity": "error",
+          "ran": true,
+          "violations": []
+        },
+        {
+          "id": "unlisted_nodes",
+          "label": "Every group and element is placed in the outliner",
+          "severity": "warning",
+          "ran": true,
+          "violations": []
+        },
+        {
+          "id": "degenerate",
+          "label": "No sliver or inverted cubes",
+          "severity": "warning",
+          "ran": true,
+          "violations": []
+        },
+        {
+          "id": "block_limits",
+          "label": "Geometry stays inside the block-model limits",
+          "severity": "error",
+          "ran": true,
+          "violations": []
+        }
+      ],
+      "notes": []
+    },
+    {
+      "color": "black",
+      "revision": "9f79a5aafc49ca45",
+      "format": "java_block",
+      "summary": {
+        "errors": 0,
+        "warnings": 0,
+        "passed": true
+      },
+      "gates": [
+        {
+          "id": "outliner",
+          "label": "Outliner references resolve and UUIDs are unique",
+          "severity": "error",
+          "ran": true,
+          "violations": []
+        },
+        {
+          "id": "unlisted_nodes",
+          "label": "Every group and element is placed in the outliner",
+          "severity": "warning",
+          "ran": true,
+          "violations": []
+        },
+        {
+          "id": "degenerate",
+          "label": "No sliver or inverted cubes",
+          "severity": "warning",
+          "ran": true,
+          "violations": []
+        },
+        {
+          "id": "block_limits",
+          "label": "Geometry stays inside the block-model limits",
+          "severity": "error",
+          "ran": true,
+          "violations": []
+        }
+      ],
+      "notes": []
+    },
+    {
+      "color": "brown",
+      "revision": "3d083bb7362c1249",
+      "format": "java_block",
+      "summary": {
+        "errors": 0,
+        "warnings": 0,
+        "passed": true
+      },
+      "gates": [
+        {
+          "id": "outliner",
+          "label": "Outliner references resolve and UUIDs are unique",
+          "severity": "error",
+          "ran": true,
+          "violations": []
+        },
+        {
+          "id": "unlisted_nodes",
+          "label": "Every group and element is placed in the outliner",
+          "severity": "warning",
+          "ran": true,
+          "violations": []
+        },
+        {
+          "id": "degenerate",
+          "label": "No sliver or inverted cubes",
+          "severity": "warning",
+          "ran": true,
+          "violations": []
+        },
+        {
+          "id": "block_limits",
+          "label": "Geometry stays inside the block-model limits",
+          "severity": "error",
+          "ran": true,
+          "violations": []
+        }
+      ],
+      "notes": []
+    },
+    {
+      "color": "red",
+      "revision": "21a8a4aacd45b48d",
+      "format": "java_block",
+      "summary": {
+        "errors": 0,
+        "warnings": 0,
+        "passed": true
+      },
+      "gates": [
+        {
+          "id": "outliner",
+          "label": "Outliner references resolve and UUIDs are unique",
+          "severity": "error",
+          "ran": true,
+          "violations": []
+        },
+        {
+          "id": "unlisted_nodes",
+          "label": "Every group and element is placed in the outliner",
+          "severity": "warning",
+          "ran": true,
+          "violations": []
+        },
+        {
+          "id": "degenerate",
+          "label": "No sliver or inverted cubes",
+          "severity": "warning",
+          "ran": true,
+          "violations": []
+        },
+        {
+          "id": "block_limits",
+          "label": "Geometry stays inside the block-model limits",
+          "severity": "error",
+          "ran": true,
+          "violations": []
+        }
+      ],
+      "notes": []
+    },
+    {
+      "color": "orange",
+      "revision": "0a7da39ed35e74ad",
+      "format": "java_block",
+      "summary": {
+        "errors": 0,
+        "warnings": 0,
+        "passed": true
+      },
+      "gates": [
+        {
+          "id": "outliner",
+          "label": "Outliner references resolve and UUIDs are unique",
+          "severity": "error",
+          "ran": true,
+          "violations": []
+        },
+        {
+          "id": "unlisted_nodes",
+          "label": "Every group and element is placed in the outliner",
+          "severity": "warning",
+          "ran": true,
+          "violations": []
+        },
+        {
+          "id": "degenerate",
+          "label": "No sliver or inverted cubes",
+          "severity": "warning",
+          "ran": true,
+          "violations": []
+        },
+        {
+          "id": "block_limits",
+          "label": "Geometry stays inside the block-model limits",
+          "severity": "error",
+          "ran": true,
+          "violations": []
+        }
+      ],
+      "notes": []
+    },
+    {
+      "color": "yellow",
+      "revision": "84178b9180a67d81",
+      "format": "java_block",
+      "summary": {
+        "errors": 0,
+        "warnings": 0,
+        "passed": true
+      },
+      "gates": [
+        {
+          "id": "outliner",
+          "label": "Outliner references resolve and UUIDs are unique",
+          "severity": "error",
+          "ran": true,
+          "violations": []
+        },
+        {
+          "id": "unlisted_nodes",
+          "label": "Every group and element is placed in the outliner",
+          "severity": "warning",
+          "ran": true,
+          "violations": []
+        },
+        {
+          "id": "degenerate",
+          "label": "No sliver or inverted cubes",
+          "severity": "warning",
+          "ran": true,
+          "violations": []
+        },
+        {
+          "id": "block_limits",
+          "label": "Geometry stays inside the block-model limits",
+          "severity": "error",
+          "ran": true,
+          "violations": []
+        }
+      ],
+      "notes": []
+    },
+    {
+      "color": "green",
+      "revision": "f374ca5c925b9a4d",
+      "format": "java_block",
+      "summary": {
+        "errors": 0,
+        "warnings": 0,
+        "passed": true
+      },
+      "gates": [
+        {
+          "id": "outliner",
+          "label": "Outliner references resolve and UUIDs are unique",
+          "severity": "error",
+          "ran": true,
+          "violations": []
+        },
+        {
+          "id": "unlisted_nodes",
+          "label": "Every group and element is placed in the outliner",
+          "severity": "warning",
+          "ran": true,
+          "violations": []
+        },
+        {
+          "id": "degenerate",
+          "label": "No sliver or inverted cubes",
+          "severity": "warning",
+          "ran": true,
+          "violations": []
+        },
+        {
+          "id": "block_limits",
+          "label": "Geometry stays inside the block-model limits",
+          "severity": "error",
+          "ran": true,
+          "violations": []
+        }
+      ],
+      "notes": []
+    },
+    {
+      "color": "cyan",
+      "revision": "5ecd7ee19f4360ff",
+      "format": "java_block",
+      "summary": {
+        "errors": 0,
+        "warnings": 0,
+        "passed": true
+      },
+      "gates": [
+        {
+          "id": "outliner",
+          "label": "Outliner references resolve and UUIDs are unique",
+          "severity": "error",
+          "ran": true,
+          "violations": []
+        },
+        {
+          "id": "unlisted_nodes",
+          "label": "Every group and element is placed in the outliner",
+          "severity": "warning",
+          "ran": true,
+          "violations": []
+        },
+        {
+          "id": "degenerate",
+          "label": "No sliver or inverted cubes",
+          "severity": "warning",
+          "ran": true,
+          "violations": []
+        },
+        {
+          "id": "block_limits",
+          "label": "Geometry stays inside the block-model limits",
+          "severity": "error",
+          "ran": true,
+          "violations": []
+        }
+      ],
+      "notes": []
+    },
+    {
+      "color": "blue",
+      "revision": "ffcf8a95c220954d",
+      "format": "java_block",
+      "summary": {
+        "errors": 0,
+        "warnings": 0,
+        "passed": true
+      },
+      "gates": [
+        {
+          "id": "outliner",
+          "label": "Outliner references resolve and UUIDs are unique",
+          "severity": "error",
+          "ran": true,
+          "violations": []
+        },
+        {
+          "id": "unlisted_nodes",
+          "label": "Every group and element is placed in the outliner",
+          "severity": "warning",
+          "ran": true,
+          "violations": []
+        },
+        {
+          "id": "degenerate",
+          "label": "No sliver or inverted cubes",
+          "severity": "warning",
+          "ran": true,
+          "violations": []
+        },
+        {
+          "id": "block_limits",
+          "label": "Geometry stays inside the block-model limits",
+          "severity": "error",
+          "ran": true,
+          "violations": []
+        }
+      ],
+      "notes": []
+    },
+    {
+      "color": "purple",
+      "revision": "da967a7ce6ce12a9",
+      "format": "java_block",
+      "summary": {
+        "errors": 0,
+        "warnings": 0,
+        "passed": true
+      },
+      "gates": [
+        {
+          "id": "outliner",
+          "label": "Outliner references resolve and UUIDs are unique",
+          "severity": "error",
+          "ran": true,
+          "violations": []
+        },
+        {
+          "id": "unlisted_nodes",
+          "label": "Every group and element is placed in the outliner",
+          "severity": "warning",
+          "ran": true,
+          "violations": []
+        },
+        {
+          "id": "degenerate",
+          "label": "No sliver or inverted cubes",
+          "severity": "warning",
+          "ran": true,
+          "violations": []
+        },
+        {
+          "id": "block_limits",
+          "label": "Geometry stays inside the block-model limits",
+          "severity": "error",
+          "ran": true,
+          "violations": []
+        }
+      ],
+      "notes": []
+    },
+    {
+      "color": "magenta",
+      "revision": "a07e60e59b856599",
+      "format": "java_block",
+      "summary": {
+        "errors": 0,
+        "warnings": 0,
+        "passed": true
+      },
+      "gates": [
+        {
+          "id": "outliner",
+          "label": "Outliner references resolve and UUIDs are unique",
+          "severity": "error",
+          "ran": true,
+          "violations": []
+        },
+        {
+          "id": "unlisted_nodes",
+          "label": "Every group and element is placed in the outliner",
+          "severity": "warning",
+          "ran": true,
+          "violations": []
+        },
+        {
+          "id": "degenerate",
+          "label": "No sliver or inverted cubes",
+          "severity": "warning",
+          "ran": true,
+          "violations": []
+        },
+        {
+          "id": "block_limits",
+          "label": "Geometry stays inside the block-model limits",
+          "severity": "error",
+          "ran": true,
+          "violations": []
+        }
+      ],
+      "notes": []
+    },
+    {
+      "color": "pink",
+      "revision": "41dad9b9da585347",
+      "format": "java_block",
+      "summary": {
+        "errors": 0,
+        "warnings": 0,
+        "passed": true
+      },
+      "gates": [
+        {
+          "id": "outliner",
+          "label": "Outliner references resolve and UUIDs are unique",
+          "severity": "error",
+          "ran": true,
+          "violations": []
+        },
+        {
+          "id": "unlisted_nodes",
+          "label": "Every group and element is placed in the outliner",
+          "severity": "warning",
+          "ran": true,
+          "violations": []
+        },
+        {
+          "id": "degenerate",
+          "label": "No sliver or inverted cubes",
+          "severity": "warning",
+          "ran": true,
+          "violations": []
+        },
+        {
+          "id": "block_limits",
+          "label": "Geometry stays inside the block-model limits",
+          "severity": "error",
+          "ran": true,
+          "violations": []
+        }
+      ],
+      "notes": []
+    }
+  ],
+  "wearable": {
+    "revision": "645a17eb754f4818",
+    "format": "free",
+    "summary": {
+      "errors": 0,
+      "warnings": 0,
+      "passed": true
+    },
+    "gates": [
+      {
+        "id": "outliner",
+        "label": "Outliner references resolve and UUIDs are unique",
+        "severity": "error",
+        "ran": true,
+        "violations": []
+      },
+      {
+        "id": "unlisted_nodes",
+        "label": "Every group and element is placed in the outliner",
+        "severity": "warning",
+        "ran": true,
+        "violations": []
+      },
+      {
+        "id": "degenerate",
+        "label": "No sliver or inverted cubes",
+        "severity": "warning",
+        "ran": true,
+        "violations": []
+      }
+    ],
+    "notes": []
+  }
+}

@@ -1,0 +1,172 @@
+{
+  "meta": {
+    "format_version": "5.0",
+    "model_format": "java_block",
+    "box_uv": false
+  },
+  "name": "Nexus foundation",
+  "model_identifier": "",
+  "visible_box": [
+    1,
+    1,
+    0
+  ],
+  "resolution": {
+    "width": 256,
+    "height": 256
+  },
+  "elements": [
+    {
+      "uuid": "d0979a7c-4598-4bbc-a913-7fd947a283e1",
+      "name": "foundation",
+      "origin": [
+        8,
+        8,
+        8
+      ],
+      "color": 0,
+      "type": "cube",
+      "from": [
+        0,
+        0,
+        0
+      ],
+      "to": [
+        16,
+        16,
+        16
+      ],
+      "box_uv": false,
+      "faces": {
+        "north": {
+          "uv": [
+            32,
+            0,
+            48,
+            16
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            32,
+            0,
+            48,
+            16
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            32,
+            0,
+            48,
+            16
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            32,
+            0,
+            48,
+            16
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            32,
+            0,
+            48,
+            16
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            32,
+            0,
+            48,
+            16
+          ],
+          "texture": 0
+        }
+      },
+      "rescale": false,
+      "locked": false,
+      "light_emission": 0,
+      "render_order": "default",
+      "allow_mirror_modeling": true,
+      "autouv": 0
+    }
+  ],
+  "groups": [
+    {
+      "uuid": "22d978fc-1711-48aa-99a8-10dc2c66ed9a",
+      "name": "foundation",
+      "origin": [
+        8,
+        8,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true,
+      "visibility": true,
+      "mirror_uv": false,
+      "reset": false,
+      "color": 0,
+      "autouv": 0,
+      "shade": true,
+      "locked": false
+    }
+  ],
+  "outliner": [
+    {
+      "uuid": "22d978fc-1711-48aa-99a8-10dc2c66ed9a",
+      "isOpen": false,
+      "children": [
+        "d0979a7c-4598-4bbc-a913-7fd947a283e1"
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "uuid": "2c5424ab-5058-4cdd-8f6d-32e8b528e2e6",
+      "name": "nexus_atlas",
+      "source": "data:image/png;base64,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",
+      "path": "C:\\Users\\victo\\Desktop\\Modpack\\art\\blockbench\\nexus-portal\\textures\\nexus_atlas.png",
+      "width": 256,
+      "height": 256,
+      "uv_width": 256,
+      "uv_height": 256,
+      "folder": "",
+      "namespace": "",
+      "id": "0",
+      "particle": false,
+      "use_as_default": false,
+      "layers_enabled": false,
+      "sync_to_project": "",
+      "render_mode": "default",
+      "render_sides": "auto",
+      "frame_time": 1,
+      "frame_order_type": "loop",
+      "frame_order": "",
+      "frame_interpolate": false,
+      "visible": true,
+      "internal": true,
+      "saved": false,
+      "relative_path": "../textures/nexus_atlas.png"
+    }
+  ],
+  "variable_placeholders": "",
+  "variable_placeholder_buttons": [],
+  "timeline_setups": [],
+  "unhandled_root_fields": {},
+  "ai_used": true,
+  "ai_agents": "codex-mcp-client"
+}

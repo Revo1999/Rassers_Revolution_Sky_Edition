@@ -1,0 +1,30 @@
+[
+  {
+    "suite": "progression",
+    "exit": 0,
+    "passed": 29,
+    "expected": 29,
+    "seconds": 57.782592899980955
+  },
+  {
+    "suite": "cultivation",
+    "exit": 0,
+    "passed": 20,
+    "expected": 20,
+    "seconds": 55.04222960001789
+  },
+  {
+    "suite": "industry",
+    "exit": 0,
+    "passed": 29,
+    "expected": 29,
+    "seconds": 55.38261940004304
+  },
+  {
+    "suite": "minerals",
+    "exit": 0,
+    "passed": 7,
+    "expected": 7,
+    "seconds": 59.12115470005665
+  }
+]

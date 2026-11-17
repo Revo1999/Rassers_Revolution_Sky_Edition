@@ -1,0 +1,24 @@
+{
+  "date": "2026-11-15",
+  "nativeTests": {
+    "progressionStorageEarlyMachines": 29,
+    "farmsAndLighting": 20,
+    "industryMachines": 29,
+    "drillMinerals": 7
+  },
+  "totalNativeTests": 85,
+  "unitTests": 10,
+  "fluidVertexExpressionsPreserved": true,
+  "storageSlotMapExample": {
+    "slots": 972,
+    "oldAddressObjects": 972,
+    "newChestSpans": 9
+  },
+  "factoryTPSorFPSBenchmark": false,
+  "fullClientStartupBenchmark": false,
+  "startupRecommendationsOnly": true,
+  "productionBuild": "passed",
+  "package": "Rassers-Revolution-Sky-Edition-0.1.39-dev.mrpack",
+  "packageIntegrity": "passed",
+  "qaFixturesExcluded": true
+}

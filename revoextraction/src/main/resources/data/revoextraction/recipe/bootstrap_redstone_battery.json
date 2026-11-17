@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "modern_industrialization"
+    }
+  ],
+  "pattern": [
+    "cPc",
+    "ZRZ",
+    "PRP"
+  ],
+  "key": {
+    "c": {
+      "item": "modern_industrialization:tin_cable"
+    },
+    "P": {
+      "tag": "c:plates/copper"
+    },
+    "Z": {
+      "tag": "c:ingots/zinc"
+    },
+    "R": {
+      "item": "minecraft:redstone"
+    }
+  },
+  "result": {
+    "id": "modern_industrialization:redstone_battery",
+    "count": 1
+  }
+}

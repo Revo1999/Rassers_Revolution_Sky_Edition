@@ -1,0 +1,75 @@
+{
+  "models": [
+    {
+      "model": "salt_geode_chamber",
+      "errors": 0,
+      "warnings": 0,
+      "passed": true
+    },
+    {
+      "model": "geode_water_input",
+      "errors": 0,
+      "warnings": 0,
+      "passed": true
+    },
+    {
+      "model": "geode_brine_output",
+      "errors": 0,
+      "warnings": 0,
+      "passed": true
+    },
+    {
+      "model": "geode_energy_hatch",
+      "errors": 0,
+      "warnings": 0,
+      "passed": true
+    },
+    {
+      "model": "saline_geode",
+      "errors": 0,
+      "warnings": 0,
+      "passed": true
+    },
+    {
+      "model": "geode_rock_bed",
+      "errors": 0,
+      "warnings": 0,
+      "passed": true
+    },
+    {
+      "model": "geode_crystals",
+      "errors": 0,
+      "warnings": 0,
+      "passed": true
+    },
+    {
+      "model": "geode_electrodes",
+      "errors": 0,
+      "warnings": 0,
+      "passed": true
+    },
+    {
+      "model": "geode_water_volume",
+      "errors": 0,
+      "warnings": 0,
+      "passed": true
+    },
+    {
+      "model": "salt_geode_assembled",
+      "errors": 0,
+      "warnings": 0,
+      "passed": true
+    }
+  ],
+  "nativeGameTests": {
+    "passed": 6,
+    "failed": 0
+  },
+  "existingUnitTests": {
+    "passed": 10,
+    "failed": 0
+  },
+  "graphicalQA": "Passed in a fresh isolated world; submerged growth, electrical arcs, harvest, automated brine export, actual native MI Centrifuge produced two Salt Dust.",
+  "progressionQuests": 20,
+  "animation": "ingame/salt-geode-preview.mp4"
+}

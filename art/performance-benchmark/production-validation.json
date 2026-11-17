@@ -1,0 +1,14 @@
+{
+  "pack": "Rassers-Revolution-Sky-Edition-0.1.40-dev.mrpack",
+  "sha256": "507599540d07404b820bec28383679a7a2f2aa9519629648c1425602284dc6f9",
+  "thirdPartyMods": 87,
+  "revoJars": 7,
+  "nativeTests": 85,
+  "unitTests": 10,
+  "benchmarkHeapGiB": 10,
+  "zipIntegrity": true,
+  "benchmarkCodeExcluded": true,
+  "dynamicResources": false,
+  "lithium": "0.15.4",
+  "modernfix": "5.27.27"
+}

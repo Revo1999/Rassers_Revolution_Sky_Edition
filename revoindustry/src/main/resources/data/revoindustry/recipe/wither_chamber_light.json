@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "GRG",
+    "RCR",
+    "GRG"
+  ],
+  "key": {
+    "G": {
+      "item": "minecraft:glass"
+    },
+    "R": {
+      "item": "minecraft:redstone"
+    },
+    "C": {
+      "item": "revoindustry:wither_chamber_casing"
+    }
+  },
+  "result": {
+    "id": "revoindustry:wither_chamber_light",
+    "count": 4
+  }
+}
