@@ -458,7 +458,7 @@
   "particle_collider": {
     "name": "particle_collider",
     "geometry": {
-      "revision": "5615b52d2d3a3948",
+      "revision": "48cd2403ad5b5eaf",
       "format": "free",
       "summary": {
         "errors": 0,
@@ -486,52 +486,15 @@
           "severity": "warning",
           "ran": true,
           "violations": []
-        },
-        {
-          "id": "mirror",
-          "label": "Left/right parts mirror each other",
-          "severity": "warning",
-          "ran": false,
-          "skipped_reason": "No node names carry a left/right token (l, r, left, right).",
-          "violations": []
-        }
-      ],
-      "self_test": [
-        {
-          "gate": "outliner",
-          "discriminates": true,
-          "clean_violations": 0,
-          "injected_violations": 1,
-          "injected": "(outliner): added a reference to a node that does not exist"
-        },
-        {
-          "gate": "unlisted_nodes",
-          "discriminates": true,
-          "clean_violations": 0,
-          "injected_violations": 1,
-          "injected": "reinforced_column @ 7,0,1: removed it from the outliner"
-        },
-        {
-          "gate": "degenerate",
-          "discriminates": true,
-          "clean_violations": 0,
-          "injected_violations": 1,
-          "injected": "reinforced_column @ 7,0,1: made it 0.05 units thick"
-        },
-        {
-          "gate": "mirror",
-          "discriminates": null,
-          "clean_violations": 0,
-          "injected_violations": 0,
-          "impossible": "No placed cube has a left/right name or sits under a left/right group."
         }
       ],
       "notes": []
     },
     "animation": {
-      "revision": "5615b52d2d3a3948",
+      "revision": "48cd2403ad5b5eaf",
       "checked": [
-        "opposed_beam_cycle"
+        "opposed_beam_cycle",
+        "completion_flash"
       ],
       "summary": {
         "errors": 0,

@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "equipment",
+  "ingredients": [
+    {
+      "item": "revocultivation:cotton"
+    },
+    {
+      "item": "revocultivation:cotton"
+    },
+    {
+      "item": "revocultivation:cotton"
+    },
+    {
+      "item": "revocultivation:cotton"
+    },
+    {
+      "item": "revocultivation:natural_shoe_rubber"
+    },
+    {
+      "item": "revocultivation:natural_shoe_rubber"
+    },
+    {
+      "item": "revocultivation:shoe_glue"
+    },
+    {
+      "item": "minecraft:string"
+    },
+    {
+      "item": "minecraft:cyan_dye"
+    }
+  ],
+  "result": {
+    "id": "revocultivation:cyan_running_shoes",
+    "count": 1
+  }
+}

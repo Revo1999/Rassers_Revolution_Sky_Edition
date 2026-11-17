@@ -8,7 +8,7 @@ Dimensions below are width x depth x height.
 |---|---|---:|---:|---|
 | [Pressure Casting Plant](pressure_casting_plant.bbmodel) | **9 x 9 x 5** | 161 | 9 | `pressure_casting_cycle`, eight seconds |
 | [Electroplating Line](electroplating_line.bbmodel) | **9 x 9 x 5** | 199 | 10 | `three_bath_plating_cycle`, eighteen seconds |
-| [Particle Collider](particle_collider.bbmodel) | **21 x 21 x 5** | 784 | 9 | `opposed_beam_cycle`, twelve seconds |
+| [Particle Collider](particle_collider.bbmodel) | **21 x 21 x 5** | 784 | 9 | `opposed_beam_cycle`, twelve seconds; `completion_flash`, 1.2 seconds, once |
 
 ![Pressure Casting Plant](pressure_casting_plant-preview.png)
 
@@ -20,7 +20,7 @@ Dimensions below are width x depth x height.
 
 - **Caster:** reinforced four-column frame, hydraulic drive, recessed mould table, pressure tanks, cooling manifolds and a moving platen. The surrounding blocks stay static; only the contained mechanism performs the press cycle.
 - **Plating:** three distinct baths under an overhead gantry. Viewing windows expose the fluids. The rack rises above the dividers before travelling and the hoist extends as it descends into each bath.
-- **Collider:** a hollow toroidal accelerator, replacing the earlier cone proposal. Its centre stays open through all five layers. Opposed injector housings, magnet bands and inspection windows surround a reserved beam tunnel. Slow cyan/violet pulses move inside that tunnel.
+- **Collider:** a hollow toroidal accelerator, replacing the earlier cone proposal. Its centre stays open through all five layers. Opposed injector housings, magnet bands and inspection windows surround a reserved beam tunnel. White-hot cyan/violet lights orbit inside that tunnel with diminishing trails. Inspection-glass fluorescence makes their motion visible from above. A separate, single completion flash lights 32 lenses around the entire ring, peaks at 0.10-0.18 seconds and fades out by 0.75 seconds.
 - All ports face outward and use the native MI-style casing/overlay artwork inherited from the approved portal. Dedicated hatch roles are recorded in each blueprint. Runtime must reuse MI's actual configurable inventories, fluid and energy behavior rather than treating the art as implementation.
 
 ## Files
@@ -35,6 +35,18 @@ Dimensions below are width x depth x height.
 - `mcp-validation.json`: Blockbench geometry/animation checks and per-part bounds verification. Name-based mirror/detachment gates that do not apply are explicitly recorded as skipped; independent blueprint checks cover structural symmetry and the moving-part clearances.
 
 The recipe/material plan is in [NEXUS-ENDGAME.md](../../../docs/NEXUS-ENDGAME.md).
+
+## Collider activation and completion
+
+![Full active orbit followed by one completion flash](particle_collider-cycle.gif)
+
+Preview `opposed_beam_cycle` while processing: one full orbit takes twelve seconds and the completion lenses stay hidden. On a **successful recipe completion**, stop that clip and play `completion_flash` **once**. When idle or when power is lost, stop both clips and have the renderer hide the beam and completion-flash groups explicitly: the unanimated editing pose exposes the lenses for authoring. Pausing, cancellation, an invalid structure or a full output must not trigger the completion flash. The physical blocks remain static in both clips.
+
+These are emissive model visuals. Blockbench does not simulate light spilling onto surrounding blocks. The eventual Java client renderer must drive the clips from synchronized machine state and provide the requested short-lived illumination across the structure. Keep that illumination client-side and localized; do not repeatedly replace world blocks or recalculate chunk lighting for the moving light. No dynamic-light mod is required by these art assets, and live game lighting is not implemented by this model pass.
+
+![Active orbiting lights](particle_collider-active.png)
+
+![Single completion flash](particle_collider-flash.png)
 
 ## Reproduction
 

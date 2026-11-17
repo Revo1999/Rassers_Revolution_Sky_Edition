@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/crop",
+  "textures": {
+    "crop": "revocultivation:block/cotton_stage_6"
+  }
+}

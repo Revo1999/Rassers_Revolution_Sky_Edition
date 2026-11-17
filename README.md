@@ -62,6 +62,10 @@ revolib/run/eula.txt before it will start. Setup does not accept it for you.
   The [three machine models](art/blockbench/nexus-machines/README.md) include a
   21x21x5 donut collider and 9x9 casting/plating plants with animated mechanisms.
 - pack/overrides: pack configuration, menu film, KubeJS and resource packs.
+- [Revo's Creationalization](docs/REVO-CREATIONALIZATION.md): editable KubeJS
+  compatibility recipes and proposals that preserve the Create/MI progression.
+- [Running shoes](docs/RUNNING-SHOES.md): twelve early rubber/cotton colourways,
+  with 25% movement speed and fall protection while worn.
 - docs/design: original user-supplied planning references.
 
 The Departure Mono font pack is in pack/overrides/resourcepacks/revo-departure-mono.

@@ -9199,10 +9199,43 @@
   "visualGroups": [
     "beam_track_visual",
     "beam_packet_a",
-    "beam_packet_b"
+    "beam_packet_b",
+    "completion_flash_0",
+    "completion_flash_1",
+    "completion_flash_2",
+    "completion_flash_3",
+    "completion_flash_4",
+    "completion_flash_5",
+    "completion_flash_6",
+    "completion_flash_7",
+    "completion_flash_8",
+    "completion_flash_9",
+    "completion_flash_10",
+    "completion_flash_11",
+    "completion_flash_12",
+    "completion_flash_13",
+    "completion_flash_14",
+    "completion_flash_15",
+    "completion_flash_16",
+    "completion_flash_17",
+    "completion_flash_18",
+    "completion_flash_19",
+    "completion_flash_20",
+    "completion_flash_21",
+    "completion_flash_22",
+    "completion_flash_23",
+    "completion_flash_24",
+    "completion_flash_25",
+    "completion_flash_26",
+    "completion_flash_27",
+    "completion_flash_28",
+    "completion_flash_29",
+    "completion_flash_30",
+    "completion_flash_31"
   ],
   "animations": [
-    "opposed_beam_cycle"
+    "opposed_beam_cycle",
+    "completion_flash"
   ],
   "runtimeHatches": "Use existing native MI ItemHatch / fluid / energy implementations and matched casing behavior; preview overlays are not new hatch logic."
 }

@@ -71,7 +71,7 @@ def main():
         for hatch in b['hatches']:
             x,y,z=hatch['position'];face=hatch['facing']
             assert {'north':z==0,'south':z==depth-1,'west':x==0,'east':x==width-1}[face]
-        animations=d['animations'];assert len(animations)==1
+        animations=d['animations'];assert len(animations)==(2 if name=='particle_collider' else 1)
         a=animations[0];allowed=set(b['visualGroups']);channels={}
         for animator in a['animators'].values():
             assert animator['name'] in allowed
@@ -106,7 +106,18 @@ def main():
             assert all(math.hypot(x-10,z-10)>=5.5 for x,y,z in cells)
             assert all((math.hypot(x-10,z-10)-8)**2+(y-2)**2<=2.5**2 for x,y,z in cells)
             assert all((10,y,10) not in cells for y in range(5))
-            extra.update({'donutShape':True,'centreOpenAtEveryHeight':True,'hollowBeamTunnel':True})
+            flash=animations[1];assert flash['name']=='completion_flash' and flash['loop']=='once' and flash['length']==1.2
+            flashbones={v['name']:v for v in flash['animators'].values()}
+            lenses={n for n in allowed if n.startswith('completion_flash_')};assert len(lenses)==32
+            for lens in lenses:
+                keys=flashbones[lens]['keyframes']
+                assert [k['time'] for k in keys]==[0,.1,.18,.75,1.2]
+                assert [values(k) for k in keys]==[[0,0,0],[1,1,1],[1,1,1],[0,0,0],[0,0,0]]
+                assert all(values(k)==[0,0,0] for k in channels[lens,'scale'])
+            assert set(flashbones)==lenses|{'beam_packet_a','beam_packet_b'}
+            assert all(values(k)==[0,0,0] for n in ['beam_packet_a','beam_packet_b'] for k in flashbones[n]['keyframes'])
+            assert all(v['name'] in allowed for v in flash['animators'].values())
+            extra.update({'donutShape':True,'centreOpenAtEveryHeight':True,'hollowBeamTunnel':True,'orbitingLightTrails':True,'completionFlashSeconds':1.2,'completionFlashLenses':32,'completionFlashOneShot':True,'flashHiddenDuringOperation':True})
         checks.append({'machine':name,'dimensions':b['dimensions'],'placedBlocks':len(cells),'outwardHatches':len(b['hatches']),'connectedStructure':True,'symmetricStructureFootprint':True,'reservedAirClear':True,'animationSeconds':a['length'],'animatedGroups':[v['name'] for v in a['animators'].values()],'loopEndpointsMatch':True,'sha256':hashlib.sha256((ART/f'{name}.bbmodel').read_bytes()).hexdigest(),**extra})
     result={'scope':'models and blueprints; gameplay not registered','machines':checks,'individualPartModels':len(expected),'nativeJavaBlockExports':len(expected),'allPartBoundsWithinOneBlock':True,'structuralBlocksAnimated':False}
     write(ART/'asset-validation.json',result)

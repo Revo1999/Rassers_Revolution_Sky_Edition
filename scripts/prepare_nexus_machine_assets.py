@@ -213,8 +213,36 @@ def collider():
         a=(i+.5)*math.tau/64;cx=168+math.cos(a)*128;cz=168+math.sin(a)*128;length=math.tau*128/64
         m.detail('Contained beam track '+str(i),[cx-length/2,39.6,cz-.4],[cx+length/2,40.4,cz+.4],'beam_cyan','beam_track_visual',origin=[cx,40,cz],rotation=[0,-math.degrees(a)-90,0])
     for name,z,tile in [('beam_packet_a',40,'beam_cyan'),('beam_packet_b',296,'beam_violet')]:
-        m.group(name,[168,40,168]);m.detail(name+' contained pulse',[166,38,z-2],[170,42,z+2],tile,name)
+        m.group(name,[168,40,168]);m.detail(name+' contained pulse',[165,37,z-3],[171,43,z+3],tile,name)
+        # A white-hot core and a short diminishing trail make motion readable through glass.
+        core=m.visuals[-1]
+        idx=TILES.index(tile);u=(idx%16)*16+7;v=(idx//16)*16+7
+        core['faces']={s:{'uv':[u,v,u+1,v+1],'texture':'nexus_machine_effects'} for s in core['faces']}
+        sign=1 if name=='beam_packet_a' else -1
+        start=-math.pi/2 if name=='beam_packet_a' else math.pi/2
+        for i in range(1,6):
+            a=start+sign*i*.055;cx=168+128*math.cos(a);cz=168+128*math.sin(a);half=2.5-i*.3
+            m.detail(name+' light trail '+str(i),[cx-half,40-half,cz-half],[cx+half,40+half,cz+half],tile,name)
+        # Inspection-glass fluorescence carries the buried beam's light up to the visible roof.
+        m.detail(name+' inspection glow',[162,78.8,z-6],[174,79.4,z+6],tile,name)
+        m.visuals[-1]['faces']=core['faces']
+        for i in range(1,6):
+            a=start+sign*i*.055;cx=168+128*math.cos(a);cz=168+128*math.sin(a);half=4.5-i*.6
+            m.detail(name+' inspection trail '+str(i),[cx-half,78.9,cz-half],[cx+half,79.3,cz+half],tile,name)
     m.animation('opposed_beam_cycle',12,[(name,'rotation',[(i*1.5,[0,sign*i*45,0]) for i in range(9)]) for name,sign in [('beam_packet_a',1),('beam_packet_b',-1)]])
+    # Independently pivoted lenses pulse together; the structure itself never changes scale.
+    flash=[]
+    idx=TILES.index('beam_cyan');u=(idx%16)*16+7;v=(idx//16)*16+7
+    for i in range(32):
+        a=i*math.tau/32;cx=168+128*math.cos(a);cz=168+128*math.sin(a)
+        name='completion_flash_'+str(i);flash.append(name);m.group(name,[cx,79.5,cz])
+        m.detail('Flash lens '+str(i),[cx-11,79.2,cz-11],[cx+11,79.8,cz+11],'beam_cyan',name,origin=[cx,79.5,cz],rotation=[0,-math.degrees(a),0])
+        m.visuals[-1]['faces']={s:{'uv':[u,v,u+1,v+1],'texture':'nexus_machine_effects'} for s in m.visuals[-1]['faces']}
+    # Hide completion lenses throughout normal operation; flash once on a successful recipe.
+    for name in flash:
+        for t in [0,12]:m.anim.append({'op':'set_keyframe','animation':'opposed_beam_cycle','bone':name,'channel':'scale','time':t,'value':[0,0,0],'interpolation':'linear'})
+    m.animation('completion_flash',1.2,[(name,'scale',[(0,[0,0,0]),(.10,[1,1,1]),(.18,[1,1,1]),(.75,[0,0,0]),(1.2,[0,0,0])]) for name in flash]+[(name,'scale',[(0,[0,0,0]),(1.2,[0,0,0])]) for name in ['beam_packet_a','beam_packet_b']])
+    next(o for o in m.anim if o.get('op')=='add_animation' and o['name']=='completion_flash')['loop']='once'
     return m
 
 def main():

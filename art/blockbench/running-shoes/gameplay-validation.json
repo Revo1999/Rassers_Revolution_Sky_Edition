@@ -1,0 +1,16 @@
+{
+  "gameTests": 3,
+  "allPassed": true,
+  "tested": [
+    "25 percent movement speed",
+    "zero fall damage while equipped",
+    "bonuses removed on unequip even with shoes held",
+    "all 12 native crafting recipes",
+    "cotton greenhouse starter and crop loot"
+  ],
+  "build": "dev.cmd build collectMods succeeded",
+  "clientVisualInspection": "headless MCP model preview; live player inspection not performed",
+  "modJarSha256": "7c75fa2cb833c6c42f00a70a06366025510f93d073fd4ec4055c589eff5109ed",
+  "modelRevision": "Simplified to two cubes per shoe; prior gameplay tests unchanged; full production build passed.",
+  "textureRevision": "Dithered upper and centered two-column top laces in all 12 colours; native MCP review and production build passed."
+}

@@ -45,7 +45,7 @@ The collider is a horizontal, **donut-shaped accelerator** with a hollow beam ch
 |---|---:|---:|---|
 | Pressure Casting Plant | 161 | 9 | Eight-second press stroke, hold and release; platen reaches the casting surface. |
 | Electroplating Line | 199 | 10 | Eighteen-second three-bath cycle; the rack lifts clear of dividers and its hoist extends during immersion. |
-| Particle Collider | 784 | 9 | Twelve-second opposed-pulse circuit; the toroidal structure stays static. |
+| Particle Collider | 784 | 9 | Twelve-second orbiting lights with trails; a separate 1.2-second one-shot completion flash. The toroidal structure stays static. |
 
 The machine package also contains 27 individually editable block-sized models and Java 1.21.1-compatible art exports. The native MI-style ports are previews for the existing integration approach, not newly implemented inventory/fluid/energy logic. Validation covers dimensions, structural connectivity and symmetry, hatch directions, reserved air, loop endpoints, press contact, rack travel clearance and the open collider centre. See [asset-validation.json](../art/blockbench/nexus-machines/asset-validation.json) and [MCP checks](../art/blockbench/nexus-machines/mcp-validation.json).
 
