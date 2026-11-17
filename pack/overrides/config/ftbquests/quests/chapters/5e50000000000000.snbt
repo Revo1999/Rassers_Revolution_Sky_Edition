@@ -602,12 +602,12 @@
       "shape": "circle",
       "dependencies": [
         "5E50000000000013",
-        "5E5000000000000B"
+        "5E5000000000000B",
+        "5E80000000000015"
       ],
       "description": [
-        "Pipe 1000 mB salt water into an existing MI Centrifuge. Its native 8 EU/t recipe takes 200 ticks and produces two MI Salt Dust.",
-        "Build the Centrifuge through its native electronic-circuit, large-motor and pump recipes. Electric geology supplies silver and bauxite for the required industrial components.",
-        "Salt feeds the native electric Electrolyzer for sodium and chlorine. Neither the first turbine nor this chamber needs salt to be built, so no manual salt grind is required."
+        "First build the native Centrifuge through Chapter 5: EBF aluminum/silicon, Electronic Circuits, Large Motors and a Large Pump. The geode can be constructed earlier and its salt water buffered.",
+        "Pipe salt water from the powered geode chamber into the MI Centrifuge and collect Salt Dust with its native recipe. You do not need a new fluid solidifier or a manual salt bootstrap."
       ],
       "tasks": [
         {

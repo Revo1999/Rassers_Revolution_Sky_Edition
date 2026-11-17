@@ -1,0 +1,267 @@
+{
+  "id": "5EA0000000000000",
+  "filename": "5ea0000000000000",
+  "title": "Field Equipment: Running Shoes",
+  "icon": {
+    "id": "revocultivation:white_running_shoes",
+    "count": 1
+  },
+  "order_index": 5,
+  "default_quest_shape": "circle",
+  "quests": [
+    {
+      "id": "5EA0000000000001",
+      "title": "Start Growing Cotton",
+      "icon": {
+        "id": "revocultivation:cotton_seeds",
+        "count": 1
+      },
+      "x": 0.0,
+      "y": 0.0,
+      "shape": "diamond",
+      "size": 1.0,
+      "dependencies": [
+        "5E50000000000001"
+      ],
+      "description": [
+        "Combine one Wheat Seeds and one String for two Cotton Seeds. Plant on farmland and grow like wheat, or retain a seed in either greenhouse.",
+        "Mature farmland cotton gives one Cotton and two Seeds; the greenhouse produces three Cotton plus one Seed per normal crop cycle."
+      ],
+      "tasks": [
+        {
+          "id": "5EA0000000100010",
+          "type": "item",
+          "item": {
+            "id": "revocultivation:cotton_seeds",
+            "count": 1
+          },
+          "count": 2,
+          "consume_items": false
+        }
+      ],
+      "rewards": [],
+      "optional": true
+    },
+    {
+      "id": "5EA0000000000002",
+      "title": "Soft Woven Uppers",
+      "icon": {
+        "id": "revocultivation:cotton",
+        "count": 1
+      },
+      "x": 3.0,
+      "y": 0.0,
+      "shape": "diamond",
+      "size": 1.0,
+      "dependencies": [
+        "5EA0000000000001"
+      ],
+      "description": [
+        "Harvest four Cotton for a pair. Keep seeds for the next crop; bonemeal can help ordinary farmland plants grow.",
+        "Cotton is a new textile crop, not wool or silk with a different name."
+      ],
+      "tasks": [
+        {
+          "id": "5EA0000000100020",
+          "type": "item",
+          "item": {
+            "id": "revocultivation:cotton",
+            "count": 1
+          },
+          "count": 4,
+          "consume_items": false
+        }
+      ],
+      "rewards": [],
+      "optional": true
+    },
+    {
+      "id": "5EA0000000000003",
+      "title": "Simple Shoe Latex",
+      "icon": {
+        "id": "revocultivation:shoe_latex",
+        "count": 1
+      },
+      "x": 0.0,
+      "y": 4.0,
+      "shape": "diamond",
+      "size": 1.0,
+      "dependencies": [
+        "5E50000000000002"
+      ],
+      "description": [
+        "Two Leaves plus one Slimeball craft two Shoe Latex. The wooden Mob Harvester Slime program supplies the slime.",
+        "These are early shoe materials. They do not substitute for MI Rubber Sheets or bypass its industrial rubber route."
+      ],
+      "tasks": [
+        {
+          "id": "5EA0000000100030",
+          "type": "item",
+          "item": {
+            "id": "revocultivation:shoe_latex",
+            "count": 1
+          },
+          "count": 2,
+          "consume_items": false
+        }
+      ],
+      "rewards": [],
+      "optional": true
+    },
+    {
+      "id": "5EA0000000000004",
+      "title": "Cure the Rubber",
+      "icon": {
+        "id": "revocultivation:natural_shoe_rubber",
+        "count": 1
+      },
+      "x": 3.0,
+      "y": 4.0,
+      "shape": "diamond",
+      "size": 1.0,
+      "dependencies": [
+        "5EA0000000000003"
+      ],
+      "description": [
+        "Smelt Shoe Latex in an ordinary furnace: one latex becomes one Natural Shoe Rubber. Prepare two for a pair.",
+        "No steel, electric machine or EBF is needed."
+      ],
+      "tasks": [
+        {
+          "id": "5EA0000000100040",
+          "type": "item",
+          "item": {
+            "id": "revocultivation:natural_shoe_rubber",
+            "count": 1
+          },
+          "count": 2,
+          "consume_items": false
+        }
+      ],
+      "rewards": [],
+      "optional": true
+    },
+    {
+      "id": "5EA0000000000005",
+      "title": "Glue for the Soles",
+      "icon": {
+        "id": "revocultivation:shoe_glue",
+        "count": 1
+      },
+      "x": 6.0,
+      "y": 4.0,
+      "shape": "diamond",
+      "size": 1.0,
+      "dependencies": [
+        "5EA0000000000003",
+        "5E50000000000001"
+      ],
+      "description": [
+        "One Slimeball plus one Sugar makes four Shoe Glue. Reserve a separate String for the laces.",
+        "Shoe Glue is a consumable ingredient, not a whole Create Super Glue tool."
+      ],
+      "tasks": [
+        {
+          "id": "5EA0000000100050",
+          "type": "item",
+          "item": {
+            "id": "revocultivation:shoe_glue",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "5EA0000000100051",
+          "type": "item",
+          "item": {
+            "id": "minecraft:string",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [],
+      "optional": true
+    },
+    {
+      "id": "5EA0000000000006",
+      "title": "Lace Up",
+      "icon": {
+        "id": "revocultivation:white_running_shoes",
+        "count": 1
+      },
+      "x": 9.0,
+      "y": 0.0,
+      "shape": "hexagon",
+      "size": 1.25,
+      "dependencies": [
+        "5EA0000000000002",
+        "5EA0000000000004",
+        "5EA0000000000005"
+      ],
+      "description": [
+        "Craft four Cotton, two Natural Shoe Rubber, one Shoe Glue and one String into White Running Shoes. All eight ingredients fit a normal crafting grid.",
+        "Wear them in the boots slot for 25% movement speed and no fall damage. Carrying or holding shoes grants no bonus; taking them off removes both effects. They do not prevent void, lava or other non-fall damage."
+      ],
+      "tasks": [
+        {
+          "id": "5EA0000000100060",
+          "type": "item",
+          "item": {
+            "id": "revocultivation:white_running_shoes",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [],
+      "optional": true
+    },
+    {
+      "id": "5EA0000000000007",
+      "title": "Choose Your Colour",
+      "icon": {
+        "id": "revocultivation:blue_running_shoes",
+        "count": 1
+      },
+      "x": 12.0,
+      "y": 0.0,
+      "shape": "diamond",
+      "size": 1.0,
+      "dependencies": [
+        "5EA0000000000006"
+      ],
+      "description": [
+        "To craft a coloured pair, use the same eight base ingredients plus one corresponding dye. This makes a fresh pair; it is not a recolouring or repair recipe.",
+        "Available: white, black, brown, red, orange, yellow, green, cyan, blue, purple, magenta and pink. All colours have the same bonuses. Check this after trying your preferred pair."
+      ],
+      "tasks": [
+        {
+          "id": "5EA0000000100070",
+          "type": "checkmark"
+        }
+      ],
+      "rewards": [],
+      "optional": true
+    }
+  ],
+  "images": [
+    {
+      "id": "5EA0000000007001",
+      "x": 9.0,
+      "y": -2.0,
+      "width": 21.0,
+      "height": 0.9,
+      "image": "#263843",
+      "title": "EARLY TEXTILES AND CUSHIONED SOLES",
+      "text_on_image": true,
+      "text_shadow": true,
+      "text_inset": 3,
+      "position_locked": true,
+      "order": -10
+    }
+  ]
+}

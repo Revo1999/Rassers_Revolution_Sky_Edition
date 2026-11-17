@@ -1,0 +1,67 @@
+{
+  "chapters": 12,
+  "quests": 228,
+  "newQuests": 83,
+  "existingQuestsPreserved": 145,
+  "uniqueIds": 536,
+  "acyclicDependencies": true,
+  "newItemReferencesResolved": true,
+  "nonConsumingItemTasks": true,
+  "newMaterialRewards": 0,
+  "fluidTasks": "explicit self-reported commissioning checkmarks",
+  "liveSurvivalPlaythrough": "not performed",
+  "chaptersSummary": [
+    {
+      "title": "Chapter 1: From Nothing",
+      "quests": 35
+    },
+    {
+      "title": "Tips & Guides",
+      "quests": 6
+    },
+    {
+      "title": "Chapter 2: The Create Revolution",
+      "quests": 29
+    },
+    {
+      "title": "Chapter 3: MI - The Steam Age",
+      "quests": 28
+    },
+    {
+      "title": "Chapter 4: Steel and Coolant",
+      "quests": 13
+    },
+    {
+      "title": "Progression Routes: Biology to Electricity",
+      "quests": 24
+    },
+    {
+      "title": "Wither Containment",
+      "quests": 5
+    },
+    {
+      "title": "Revo Employee Handbook",
+      "quests": 5
+    },
+    {
+      "title": "Chapter 5: LV - Metallurgy and Electronics",
+      "quests": 25
+    },
+    {
+      "title": "Chapter 6: MV - Power and Chemistry",
+      "quests": 25
+    },
+    {
+      "title": "Field Equipment: Running Shoes",
+      "quests": 7
+    },
+    {
+      "title": "Chapter 7: HV - Refining, Coils and Logic",
+      "quests": 26
+    }
+  ],
+  "build": "assemble collectMods :revolib:syncPackOverrides passed",
+  "syncedChapters": 12,
+  "hvRegenerationDeterministic": true,
+  "hvChapterSha256": "2a9051d21e47336359c26a6abf1b9e581c75ae4d18a4ce974ac23b9a1f7b6159"
+}

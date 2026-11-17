@@ -18,6 +18,10 @@ The early quest maps have refreshed icons/layouts and both crank and water-power
 routes; freely granted manuals cannot be consumed as recipe ingredients. See
 [QUEST-BOOK.md](docs/QUEST-BOOK.md).
 
+The quest book now has 228 quests, including LV metallurgy/electronics, MV
+power/chemistry, HV refining/coils/logic and early running shoes. See [LV/MV](docs/QUESTS-LV-MV.md)
+and [remaining progression gaps](docs/PROGRESSION-GAPS-AFTER-MV.md).
+
 The pack also includes Building Wands, Create: New Age and Flux
 Networks with the coordinated Industrial Power Grid texture/name overlay. See
 [INDUSTRIAL-GRID.md](docs/INDUSTRIAL-GRID.md).

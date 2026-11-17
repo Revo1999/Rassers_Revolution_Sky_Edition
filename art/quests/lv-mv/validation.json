@@ -1,0 +1,75 @@
+{
+  "chapters": 11,
+  "quests": 202,
+  "newQuests": 57,
+  "existingQuestsPreserved": 145,
+  "uniqueIds": 476,
+  "acyclicDependencies": true,
+  "newItemReferencesResolved": true,
+  "nonConsumingItemTasks": true,
+  "newMaterialRewards": 0,
+  "fluidTasks": "explicit self-reported commissioning checkmarks",
+  "liveSurvivalPlaythrough": "not performed",
+  "chaptersSummary": [
+    {
+      "title": "Chapter 1: From Nothing",
+      "quests": 35
+    },
+    {
+      "title": "Tips & Guides",
+      "quests": 6
+    },
+    {
+      "title": "Chapter 2: The Create Revolution",
+      "quests": 29
+    },
+    {
+      "title": "Chapter 3: MI - The Steam Age",
+      "quests": 28
+    },
+    {
+      "title": "Chapter 4: Steel and Coolant",
+      "quests": 13
+    },
+    {
+      "title": "Progression Routes: Biology to Electricity",
+      "quests": 24
+    },
+    {
+      "title": "Wither Containment",
+      "quests": 5
+    },
+    {
+      "title": "Revo Employee Handbook",
+      "quests": 5
+    },
+    {
+      "title": "Chapter 5: LV - Metallurgy and Electronics",
+      "quests": 25
+    },
+    {
+      "title": "Chapter 6: MV - Power and Chemistry",
+      "quests": 25
+    },
+    {
+      "title": "Field Equipment: Running Shoes",
+      "quests": 7
+    }
+  ],
+  "build": "assemble collectMods :revolib:syncPackOverrides passed",
+  "syncedChapters": 11,
+  "deterministicRegeneration": true,
+  "chapterSha256": {
+    "5e10000000000000.snbt": "edc67edf2e2fa40a6be3b155e6f9fcee93cdb201e198f71540a7f97162a7c2fb",
+    "5e1f000000000000.snbt": "be770022494ce452f984232137a01c34dfe9f97912d0f3d55c11214e15269c91",
+    "5e20000000000000.snbt": "62aa83d3753ba7ed95aa30851a6eea9333abb2205b0d0d59b6f8064b54e13c8a",
+    "5e30000000000000.snbt": "1deaa32f013d8ae6620802bf790e980d523aff2711d4ba3c667ce4be06a86f0f",
+    "5e40000000000000.snbt": "1b5eb221a91b1ec321528eed7a6f5293e66a5c60c3a9cf99d0626f4a88ec6cc4",
+    "5e50000000000000.snbt": "3ce6642fe88ac8925c7d087b282948f35d5ed9d01c0999d59abe6ee7b657885d",
+    "5e60000000000000.snbt": "59242944153d92caabc61787f89ea0453294cd9dbd699d33c2db81cd6aa23cac",
+    "5e70000000000000.snbt": "95de58708b3f5d7b27f428ae57008051039f05969e6027ee43730e8f9811e622",
+    "5e80000000000000.snbt": "1202e0c59a7776b56f0851c9c8cdc0965cba689d5531ea54e6c49c23dddf7dd1",
+    "5e90000000000000.snbt": "b57399d001a06c887e8c5df2cd5b75d9ec43372fcb10030e7c4437d96bd331fe",
+    "5ea0000000000000.snbt": "0050c6fa3dff3b42e467919e6ac0486471e0276b6a0316802c0cf30ace2034f5"
+  }
+}

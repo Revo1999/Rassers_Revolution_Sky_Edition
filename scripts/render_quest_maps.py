@@ -9,7 +9,7 @@ ROOT=Path(__file__).resolve().parents[1]
 OUT=ROOT/'art/quests/refreshed';OUT.mkdir(parents=True,exist_ok=True)
 resources={};jars=[]
 asset_hint=ROOT/'.local/quest-minecraft-assets.txt'
-paths=([Path(asset_hint.read_text())] if asset_hint.exists() else [])+list((ROOT/'.local/integration-mods').glob('*.jar'))
+paths=([Path(asset_hint.read_text().strip())] if asset_hint.exists() else [])+list((ROOT/'.local/integration-mods').glob('*.jar'))
 for path in paths:
     jar=zipfile.ZipFile(path);jars.append(jar)
     for name in jar.namelist():

@@ -1,0 +1,704 @@
+{
+  "date": "2026-11-17",
+  "sourceJar": "Modern-Industrialization-2.5.11.jar",
+  "sourceJarSha256": "492c6cd8cc3f69fff067f535bc53d0b59f0e9316b325305486e9ec61af813027",
+  "scope": "Pinned native recipe facts used by the quest descriptions; not a survival playthrough",
+  "recipes": [
+    {
+      "path": "data/modern_industrialization/recipe/alloy/mixer/cupronickel/dust.json",
+      "sha256": "40d9ef1bc522b9712f0a4cc1f92763e58d33ffc6dac06b75a5777f082723e135",
+      "recipe": {
+        "type": "modern_industrialization:mixer",
+        "duration": 100,
+        "eu": 2,
+        "item_inputs": [
+          {
+            "amount": 1,
+            "tag": "c:dusts/copper"
+          },
+          {
+            "amount": 1,
+            "tag": "c:dusts/nickel"
+          }
+        ],
+        "item_outputs": [
+          {
+            "amount": 2,
+            "item": "modern_industrialization:cupronickel_dust"
+          }
+        ]
+      }
+    },
+    {
+      "path": "data/modern_industrialization/recipe/alloy/mixer/electrum/dust.json",
+      "sha256": "75be70d034b40541f86954b85de5c9772b56158a180b361a18a4450ef46500e1",
+      "recipe": {
+        "type": "modern_industrialization:mixer",
+        "duration": 100,
+        "eu": 2,
+        "item_inputs": [
+          {
+            "amount": 1,
+            "tag": "c:dusts/gold"
+          },
+          {
+            "amount": 1,
+            "tag": "c:dusts/silver"
+          }
+        ],
+        "item_outputs": [
+          {
+            "amount": 2,
+            "item": "modern_industrialization:electrum_dust"
+          }
+        ]
+      }
+    },
+    {
+      "path": "data/modern_industrialization/recipe/electric_age/machine/electric_blast_furnace_asbl.json",
+      "sha256": "54e0a8de648923d6064937c5046bcbf014159cd3e9582259cb1f0d5f7c8805d6",
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "pattern": [
+          "CCC",
+          "CHC",
+          "CFC"
+        ],
+        "key": {
+          "C": {
+            "item": "modern_industrialization:cupronickel_wire_magnetic"
+          },
+          "H": {
+            "item": "modern_industrialization:basic_machine_hull"
+          },
+          "F": {
+            "item": "minecraft:blast_furnace"
+          }
+        },
+        "result": {
+          "id": "modern_industrialization:electric_blast_furnace"
+        }
+      }
+    },
+    {
+      "path": "data/modern_industrialization/recipe/electric_age/machine/assembler_asbl.json",
+      "sha256": "c3903ab568780b5d679facdec92c8f4413f9131d18f5e7b79e58ee552cad08f7",
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "pattern": [
+          "AcA",
+          "CHC",
+          "AcA"
+        ],
+        "key": {
+          "A": {
+            "item": "modern_industrialization:robot_arm"
+          },
+          "c": {
+            "item": "modern_industrialization:analog_circuit"
+          },
+          "C": {
+            "item": "modern_industrialization:conveyor"
+          },
+          "H": {
+            "item": "modern_industrialization:basic_machine_hull"
+          }
+        },
+        "result": {
+          "id": "modern_industrialization:assembler"
+        }
+      }
+    },
+    {
+      "path": "data/modern_industrialization/recipe/materials/cupronickel/craft/coil.json",
+      "sha256": "85cc6ca0de56b609bbba939106970d42e1023094780282501e86f8e082af3680",
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "key": {
+          "x": {
+            "item": "modern_industrialization:cupronickel_cable"
+          }
+        },
+        "pattern": [
+          "xxx",
+          "x x",
+          "xxx"
+        ],
+        "result": {
+          "count": 1,
+          "id": "modern_industrialization:cupronickel_coil"
+        }
+      }
+    },
+    {
+      "path": "data/modern_industrialization/recipe/materials/blast_furnace/bauxite_to_aluminum_ingot.json",
+      "sha256": "394ec2476beef5debde61c8a7d853436f83957edb3e4e8c39dd882716202d763",
+      "recipe": {
+        "type": "modern_industrialization:blast_furnace",
+        "eu": 32,
+        "duration": 2000,
+        "item_inputs": {
+          "tag": "c:storage_blocks/bauxite",
+          "amount": 1
+        },
+        "item_outputs": {
+          "item": "modern_industrialization:aluminum_ingot",
+          "amount": 1
+        }
+      }
+    },
+    {
+      "path": "data/modern_industrialization/recipe/materials/blast_furnace/silicium_from_quartz.json",
+      "sha256": "49bb146f87db9e81d9a0251d7b4a1d0afb5876d05184ecd63fd60392f557e37f",
+      "recipe": {
+        "type": "modern_industrialization:blast_furnace",
+        "eu": 32,
+        "duration": 400,
+        "item_inputs": [
+          {
+            "tag": "c:dusts/quartz",
+            "amount": 1
+          },
+          {
+            "item": "modern_industrialization:coke_dust",
+            "amount": 1
+          }
+        ],
+        "item_outputs": {
+          "item": "modern_industrialization:silicon_dust",
+          "amount": 1
+        }
+      }
+    },
+    {
+      "path": "data/modern_industrialization/recipe/assembler_generated/electric_age/circuit/craft/electronic_circuit_board.json",
+      "sha256": "c3ff4a58049cfdcad27b8d4783db889033da3bca1d0d3de4149d5e596f8ba128",
+      "recipe": {
+        "type": "modern_industrialization:assembler",
+        "duration": 200,
+        "eu": 8,
+        "item_inputs": [
+          {
+            "amount": 3,
+            "tag": "c:plates/aluminum"
+          },
+          {
+            "amount": 4,
+            "item": "modern_industrialization:electrum_cable"
+          },
+          {
+            "amount": 1,
+            "item": "modern_industrialization:analog_circuit_board"
+          },
+          {
+            "amount": 1,
+            "item": "modern_industrialization:redstone_battery"
+          }
+        ],
+        "item_outputs": [
+          {
+            "amount": 1,
+            "item": "modern_industrialization:electronic_circuit_board"
+          }
+        ]
+      }
+    },
+    {
+      "path": "data/modern_industrialization/recipe/assembler_generated/electric_age/circuit/craft/electronic_circuit.json",
+      "sha256": "fc45c02b3d4572a72ffaa308121caab3760ef94932c47fafab0bc3f1d5a3c5a8",
+      "recipe": {
+        "type": "modern_industrialization:assembler",
+        "duration": 200,
+        "eu": 8,
+        "item_inputs": [
+          {
+            "amount": 2,
+            "item": "modern_industrialization:diode"
+          },
+          {
+            "amount": 4,
+            "item": "modern_industrialization:analog_circuit"
+          },
+          {
+            "amount": 2,
+            "item": "modern_industrialization:transistor"
+          },
+          {
+            "amount": 1,
+            "item": "modern_industrialization:electronic_circuit_board"
+          }
+        ],
+        "item_outputs": [
+          {
+            "amount": 1,
+            "item": "modern_industrialization:electronic_circuit"
+          }
+        ]
+      }
+    },
+    {
+      "path": "data/modern_industrialization/recipe/assembler_generated/electric_age/component/craft/diode.json",
+      "sha256": "ee4b780fb5b6a0d36820baf986b7a8935d9857e5d352f08004279cd6dc253cde",
+      "recipe": {
+        "type": "modern_industrialization:assembler",
+        "duration": 200,
+        "eu": 8,
+        "item_inputs": [
+          {
+            "amount": 1,
+            "tag": "c:plates/silicon"
+          },
+          {
+            "amount": 3,
+            "tag": "c:glass_blocks"
+          },
+          {
+            "amount": 3,
+            "item": "modern_industrialization:electrum_fine_wire"
+          },
+          {
+            "amount": 2,
+            "tag": "c:plates/steel"
+          }
+        ],
+        "item_outputs": [
+          {
+            "amount": 1,
+            "item": "modern_industrialization:diode"
+          }
+        ]
+      }
+    },
+    {
+      "path": "data/modern_industrialization/recipe/assembler_generated/electric_age/component/craft/transistor.json",
+      "sha256": "b66ec906eb14450036a474fab24706a78808f727e215ef43719faee95e09c725",
+      "recipe": {
+        "type": "modern_industrialization:assembler",
+        "duration": 200,
+        "eu": 8,
+        "item_inputs": [
+          {
+            "amount": 3,
+            "tag": "c:plates/silicon"
+          },
+          {
+            "amount": 1,
+            "item": "modern_industrialization:electrum_fine_wire"
+          },
+          {
+            "amount": 3,
+            "tag": "c:plates/steel"
+          }
+        ],
+        "item_outputs": [
+          {
+            "amount": 2,
+            "item": "modern_industrialization:transistor"
+          }
+        ]
+      }
+    },
+    {
+      "path": "data/modern_industrialization/recipe/assembler_generated/electric_age/component/craft/large_motor.json",
+      "sha256": "aa600e13fb35c50ecd95407e8845b4f83f1d59969aead50b15564e1b5cb1f9e3",
+      "recipe": {
+        "type": "modern_industrialization:assembler",
+        "duration": 200,
+        "eu": 8,
+        "item_inputs": [
+          {
+            "amount": 1,
+            "item": "modern_industrialization:electronic_circuit"
+          },
+          {
+            "amount": 2,
+            "tag": "c:rods/aluminum"
+          },
+          {
+            "amount": 6,
+            "item": "modern_industrialization:motor"
+          }
+        ],
+        "item_outputs": [
+          {
+            "amount": 1,
+            "item": "modern_industrialization:large_motor"
+          }
+        ]
+      }
+    },
+    {
+      "path": "data/modern_industrialization/recipe/assembler_generated/electric_age/component/craft/large_pump.json",
+      "sha256": "fb31cb59382bb3ea4d29fefac91aef8b8aced303972ae168232fb9a21abc731b",
+      "recipe": {
+        "type": "modern_industrialization:assembler",
+        "duration": 200,
+        "eu": 8,
+        "item_inputs": [
+          {
+            "amount": 2,
+            "item": "modern_industrialization:electronic_circuit"
+          },
+          {
+            "amount": 3,
+            "item": "modern_industrialization:aluminum_rotor"
+          },
+          {
+            "amount": 1,
+            "item": "modern_industrialization:large_motor"
+          },
+          {
+            "amount": 3,
+            "item": "modern_industrialization:pump"
+          }
+        ],
+        "item_outputs": [
+          {
+            "amount": 1,
+            "item": "modern_industrialization:large_pump"
+          }
+        ]
+      }
+    },
+    {
+      "path": "data/modern_industrialization/recipe/assembler_generated/electric_age/machine/centrifuge.json",
+      "sha256": "7624b2b09eaae670cc65e5233d39c27c006d89703bf3bec2eb54a7f33d922918",
+      "recipe": {
+        "type": "modern_industrialization:assembler",
+        "duration": 200,
+        "eu": 8,
+        "item_inputs": [
+          {
+            "amount": 4,
+            "item": "modern_industrialization:large_motor"
+          },
+          {
+            "amount": 1,
+            "item": "modern_industrialization:basic_machine_hull"
+          },
+          {
+            "amount": 2,
+            "item": "modern_industrialization:electrum_cable"
+          },
+          {
+            "amount": 1,
+            "item": "modern_industrialization:large_pump"
+          },
+          {
+            "amount": 1,
+            "item": "modern_industrialization:electronic_circuit"
+          }
+        ],
+        "item_outputs": [
+          {
+            "amount": 1,
+            "item": "modern_industrialization:centrifuge"
+          }
+        ]
+      }
+    },
+    {
+      "path": "data/modern_industrialization/recipe/assembler_generated/electric_age/machine/electrolyzer.json",
+      "sha256": "e2a74ce024b91043567395b6a30dde3162b48fd808c7c14504c8b560e2b9f812",
+      "recipe": {
+        "type": "modern_industrialization:assembler",
+        "duration": 200,
+        "eu": 8,
+        "item_inputs": [
+          {
+            "amount": 4,
+            "item": "modern_industrialization:cupronickel_wire_magnetic"
+          },
+          {
+            "amount": 2,
+            "tag": "c:rods/aluminum"
+          },
+          {
+            "amount": 1,
+            "item": "modern_industrialization:basic_machine_hull"
+          },
+          {
+            "amount": 1,
+            "item": "modern_industrialization:electronic_circuit"
+          },
+          {
+            "amount": 1,
+            "item": "modern_industrialization:large_pump"
+          }
+        ],
+        "item_outputs": [
+          {
+            "amount": 1,
+            "item": "modern_industrialization:electrolyzer"
+          }
+        ]
+      }
+    },
+    {
+      "path": "data/modern_industrialization/recipe/assembler_generated/electric_age/battery/silicon_battery.json",
+      "sha256": "8c63d194f83cddd7a2c1759767db172a2750a7b5e8c7ceb2d63b06d1b8257d30",
+      "recipe": {
+        "type": "modern_industrialization:assembler",
+        "duration": 200,
+        "eu": 8,
+        "item_inputs": [
+          {
+            "amount": 1,
+            "tag": "c:plates/battery_alloy"
+          },
+          {
+            "amount": 2,
+            "item": "modern_industrialization:electrum_cable"
+          },
+          {
+            "amount": 4,
+            "item": "modern_industrialization:battery_alloy_curved_plate"
+          },
+          {
+            "amount": 2,
+            "tag": "c:dusts/silicon"
+          }
+        ],
+        "item_outputs": [
+          {
+            "amount": 1,
+            "item": "modern_industrialization:silicon_battery"
+          }
+        ]
+      }
+    },
+    {
+      "path": "data/modern_industrialization/recipe/assembler_generated/electric_age/hull/advanced_machine_hull.json",
+      "sha256": "114b125b0958eb0ae60b72bd1706f4875f7770feedf8b3a740d1a0576053b7ac",
+      "recipe": {
+        "type": "modern_industrialization:assembler",
+        "duration": 200,
+        "eu": 8,
+        "item_inputs": [
+          {
+            "amount": 2,
+            "item": "modern_industrialization:silicon_battery"
+          },
+          {
+            "amount": 1,
+            "item": "modern_industrialization:electronic_circuit"
+          },
+          {
+            "amount": 1,
+            "item": "modern_industrialization:advanced_machine_casing"
+          },
+          {
+            "amount": 3,
+            "item": "modern_industrialization:electrum_cable"
+          }
+        ],
+        "item_outputs": [
+          {
+            "amount": 1,
+            "item": "modern_industrialization:advanced_machine_hull"
+          }
+        ]
+      }
+    },
+    {
+      "path": "data/modern_industrialization/recipe/oil/mixer/sugar_solution.json",
+      "sha256": "49e41530fa083234f3175f66366e63c9bf0e0b04536b708838bbca8ad8252ce8",
+      "recipe": {
+        "type": "modern_industrialization:mixer",
+        "eu": 2,
+        "duration": 200,
+        "fluid_inputs": [
+          {
+            "fluid": "minecraft:water",
+            "amount": 1000
+          }
+        ],
+        "item_inputs": [
+          {
+            "item": "minecraft:sugar",
+            "amount": 8
+          }
+        ],
+        "fluid_outputs": [
+          {
+            "fluid": "modern_industrialization:sugar_solution",
+            "amount": 1000
+          }
+        ]
+      }
+    },
+    {
+      "path": "data/modern_industrialization/recipe/oil/distillation/ethanol_from_sugar.json",
+      "sha256": "807985ad2c89a896acb9951a40c0b8575146bd9812e22d75cb43e1bda16d0595",
+      "recipe": {
+        "type": "modern_industrialization:distillery",
+        "duration": 800,
+        "eu": 8,
+        "fluid_inputs": [
+          {
+            "amount": 1000,
+            "fluid": "modern_industrialization:sugar_solution"
+          }
+        ],
+        "fluid_outputs": [
+          {
+            "amount": 10,
+            "fluid": "modern_industrialization:ethanol"
+          }
+        ]
+      }
+    },
+    {
+      "path": "data/modern_industrialization/recipe/oil/chemical_reactor/ethanol_to_ethylene.json",
+      "sha256": "3d20e4467d211bb2e88faf3e6133ab797d1386542e2a4c55d4afd08b234034f9",
+      "recipe": {
+        "type": "modern_industrialization:chemical_reactor",
+        "eu": 10,
+        "duration": 280,
+        "fluid_inputs": [
+          {
+            "fluid": "modern_industrialization:ethanol",
+            "amount": 1000
+          }
+        ],
+        "item_inputs": [
+          {
+            "tag": "c:dusts/sulfur",
+            "amount": 1
+          }
+        ],
+        "fluid_outputs": [
+          {
+            "fluid": "modern_industrialization:ethylene",
+            "amount": 500
+          },
+          {
+            "fluid": "modern_industrialization:sulfuric_acid",
+            "amount": 400
+          }
+        ]
+      }
+    },
+    {
+      "path": "data/modern_industrialization/recipe/petrochem/polymerization/ethylene_lead.json",
+      "sha256": "22b69deeeaf3d1ff85c4e44de8bf5f9654210dea1e1faf430ccfc274f43ad235",
+      "recipe": {
+        "type": "modern_industrialization:chemical_reactor",
+        "duration": 700,
+        "eu": 12,
+        "fluid_inputs": [
+          {
+            "amount": 500,
+            "fluid": "modern_industrialization:ethylene"
+          }
+        ],
+        "fluid_outputs": [
+          {
+            "amount": 300,
+            "fluid": "modern_industrialization:polyethylene"
+          }
+        ],
+        "item_inputs": [
+          {
+            "amount": 4,
+            "tag": "c:tiny_dusts/lead"
+          }
+        ]
+      }
+    },
+    {
+      "path": "data/modern_industrialization/recipe/materials/chemical_reactor/hydrochloric_acid.json",
+      "sha256": "386850f11d20e806c5c9646860619d1737e849e299c144445ad1199cddb0be8f",
+      "recipe": {
+        "type": "modern_industrialization:chemical_reactor",
+        "eu": 8,
+        "duration": 100,
+        "fluid_inputs": [
+          {
+            "fluid": "modern_industrialization:hydrogen",
+            "amount": 1000
+          },
+          {
+            "fluid": "modern_industrialization:chlorine",
+            "amount": 1000
+          }
+        ],
+        "fluid_outputs": {
+          "fluid": "modern_industrialization:hydrochloric_acid",
+          "amount": 2000
+        }
+      }
+    },
+    {
+      "path": "data/modern_industrialization/recipe/electric_age/upgrades/basic.json",
+      "sha256": "e049591f8fbc6019d28ed718a62e6c08502c2c71b67ea929bc3ead8a21e0df46",
+      "recipe": {
+        "type": "modern_industrialization:assembler",
+        "eu": 8,
+        "duration": 200,
+        "item_inputs": [
+          {
+            "item": "modern_industrialization:conveyor",
+            "amount": 2
+          },
+          {
+            "item": "modern_industrialization:motor",
+            "amount": 4
+          },
+          {
+            "item": "modern_industrialization:robot_arm",
+            "amount": 2
+          },
+          {
+            "item": "modern_industrialization:analog_circuit_board",
+            "amount": 1
+          }
+        ],
+        "item_outputs": [
+          {
+            "item": "modern_industrialization:basic_upgrade",
+            "amount": 4
+          }
+        ]
+      }
+    },
+    {
+      "path": "data/modern_industrialization/recipe/electric_age/upgrades/advanced.json",
+      "sha256": "735e4d09eb7c5658022dd471e10b4dd464c8d55688541563bfea1e4ec7636483",
+      "recipe": {
+        "type": "modern_industrialization:assembler",
+        "eu": 8,
+        "duration": 400,
+        "item_inputs": [
+          {
+            "item": "modern_industrialization:basic_upgrade",
+            "amount": 4
+          },
+          {
+            "item": "modern_industrialization:large_motor",
+            "amount": 2
+          },
+          {
+            "item": "modern_industrialization:large_pump",
+            "amount": 1
+          },
+          {
+            "item": "modern_industrialization:electronic_circuit_board",
+            "amount": 1
+          }
+        ],
+        "fluid_inputs": {
+          "fluid": "modern_industrialization:polyethylene",
+          "amount": 1000
+        },
+        "item_outputs": [
+          {
+            "item": "modern_industrialization:advanced_upgrade",
+            "amount": 4
+          }
+        ]
+      }
+    }
+  ]
+}

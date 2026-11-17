@@ -1,5 +1,7 @@
 # Missing progression through MV
 
+**Quest-guide update, 17 November 2026:** the [LV/MV continuation](QUESTS-LV-MV.md) now covers EBF/aluminum/silicon, electronics, separation, MV power and renewable chemistry/plastic. Fifty new LV/MV quests address the guide gaps below, alongside seven optional shoe quests. The original audit follows; fresh-island survival validation, advanced metallurgy and later/optional unlocks remain separate work.
+
 Audited 15 November 2026 against commit `29208e4`, current Revo source, quest files and pinned MI 2.5.11 recipes/classes. Scope: the intended void-island route through a working MV factory, including its chemistry and advanced manufacturing branches. This is a source/recipe audit, not a completed survival playthrough. Optional AE2 and equipment branches are separated from the industrial critical path.
 
 **Resource rule confirmed by the user:** mineral/ore feedstocks must come from Revo drills at the appropriate tier; gems must come from sludge processing. Native MI quarries are excluded at every tier. Existing MI refining and chemistry remain useful after the correct feedstock is available.

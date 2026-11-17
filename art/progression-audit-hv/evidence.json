@@ -1,0 +1,952 @@
+{
+  "date": "2026-11-17",
+  "sourceJar": "Modern-Industrialization-2.5.11.jar",
+  "sha256": "492c6cd8cc3f69fff067f535bc53d0b59f0e9316b325305486e9ec61af813027",
+  "scope": "First-HV recipe audit and later-feedstock follow-up; not survival testing",
+  "recipes": [
+    {
+      "path": "data/modern_industrialization/recipe/alloy/mixer/kanthal/dust.json",
+      "sha256": "bc3392213071ac13f38eb4a66531972904d79551d6ddde8f74df8a898670399d",
+      "recipe": {
+        "type": "modern_industrialization:mixer",
+        "duration": 100,
+        "eu": 2,
+        "item_inputs": [
+          {
+            "amount": 1,
+            "tag": "c:dusts/stainless_steel"
+          },
+          {
+            "amount": 1,
+            "tag": "c:dusts/chromium"
+          },
+          {
+            "amount": 1,
+            "tag": "c:dusts/aluminum"
+          }
+        ],
+        "item_outputs": [
+          {
+            "amount": 3,
+            "item": "modern_industrialization:kanthal_dust"
+          }
+        ]
+      }
+    },
+    {
+      "path": "data/modern_industrialization/recipe/alloy/mixer/kanthal/tiny_dust.json",
+      "sha256": "676d5fd97c58f6a411259a222e212cd2a6044882c1b02bdbaeba1a4a0ed6bc0a",
+      "recipe": {
+        "type": "modern_industrialization:mixer",
+        "duration": 100,
+        "eu": 2,
+        "item_inputs": [
+          {
+            "amount": 1,
+            "tag": "c:tiny_dusts/stainless_steel"
+          },
+          {
+            "amount": 1,
+            "tag": "c:tiny_dusts/chromium"
+          },
+          {
+            "amount": 1,
+            "tag": "c:tiny_dusts/aluminum"
+          }
+        ],
+        "item_outputs": [
+          {
+            "amount": 3,
+            "item": "modern_industrialization:kanthal_tiny_dust"
+          }
+        ]
+      }
+    },
+    {
+      "path": "data/modern_industrialization/recipe/alloy/mixer/stainless_steel/dust.json",
+      "sha256": "dcfc7856db77529fbe76592dd6ab77eee05c97dc81857f0c0172dc14d32c197b",
+      "recipe": {
+        "type": "modern_industrialization:mixer",
+        "duration": 100,
+        "eu": 2,
+        "item_inputs": [
+          {
+            "amount": 6,
+            "tag": "c:dusts/iron"
+          },
+          {
+            "amount": 1,
+            "tag": "c:dusts/chromium"
+          },
+          {
+            "amount": 1,
+            "tag": "c:dusts/nickel"
+          },
+          {
+            "amount": 1,
+            "tag": "c:dusts/manganese"
+          }
+        ],
+        "item_outputs": [
+          {
+            "amount": 9,
+            "item": "modern_industrialization:stainless_steel_dust"
+          }
+        ]
+      }
+    },
+    {
+      "path": "data/modern_industrialization/recipe/alloy/mixer/stainless_steel/tiny_dust.json",
+      "sha256": "d06680f8d94337ef0651822b691af0be248a4d96037b81b16b14e38266b2f5e3",
+      "recipe": {
+        "type": "modern_industrialization:mixer",
+        "duration": 100,
+        "eu": 2,
+        "item_inputs": [
+          {
+            "amount": 6,
+            "tag": "c:tiny_dusts/iron"
+          },
+          {
+            "amount": 1,
+            "tag": "c:tiny_dusts/chromium"
+          },
+          {
+            "amount": 1,
+            "tag": "c:tiny_dusts/nickel"
+          },
+          {
+            "amount": 1,
+            "tag": "c:tiny_dusts/manganese"
+          }
+        ],
+        "item_outputs": [
+          {
+            "amount": 9,
+            "item": "modern_industrialization:stainless_steel_tiny_dust"
+          }
+        ]
+      }
+    },
+    {
+      "path": "data/modern_industrialization/recipe/electric_age/battery/sodium_battery_asbl.json",
+      "sha256": "0aba70bf65e831d20cbb924518ea65957bdfb6f2dc4de732d7b350551fc053fd",
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "pattern": [
+          "cac",
+          "BrB",
+          "BrB"
+        ],
+        "key": {
+          "a": {
+            "tag": "c:plates/battery_alloy"
+          },
+          "c": {
+            "item": "modern_industrialization:aluminum_cable"
+          },
+          "B": {
+            "item": "modern_industrialization:battery_alloy_curved_plate"
+          },
+          "r": {
+            "tag": "c:dusts/sodium"
+          }
+        },
+        "result": {
+          "id": "modern_industrialization:sodium_battery"
+        }
+      }
+    },
+    {
+      "path": "data/modern_industrialization/recipe/electric_age/casing/highly_advanced_machine_casing_asbl.json",
+      "sha256": "1885f717d5925a36d381ee5e61def23711f1bd0405a788dd7cc8f13d0f57b2f5",
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "pattern": [
+          "ACA",
+          "CHC",
+          "ACA"
+        ],
+        "key": {
+          "A": {
+            "tag": "c:plates/titanium"
+          },
+          "C": {
+            "tag": "c:plates/chromium"
+          },
+          "H": {
+            "item": "modern_industrialization:turbo_machine_hull"
+          }
+        },
+        "result": {
+          "id": "modern_industrialization:highly_advanced_machine_casing"
+        }
+      }
+    },
+    {
+      "path": "data/modern_industrialization/recipe/electric_age/casing/turbo_machine_casing_asbl.json",
+      "sha256": "5670e9e526a2a1e629b84d82fc6a44df890fb7871a68560744c76eafd93e8f29",
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "pattern": [
+          "AAA",
+          "AHA",
+          "AAA"
+        ],
+        "key": {
+          "A": {
+            "tag": "c:plates/stainless_steel"
+          },
+          "H": {
+            "item": "modern_industrialization:advanced_machine_hull"
+          }
+        },
+        "result": {
+          "id": "modern_industrialization:turbo_machine_casing"
+        }
+      }
+    },
+    {
+      "path": "data/modern_industrialization/recipe/electric_age/circuit/assembler/digital_circuit_board.json",
+      "sha256": "79fd980d27df91bafd8c75ca49617f8cc5b6e5db86ddbf5363449a58287777fb",
+      "recipe": {
+        "type": "modern_industrialization:assembler",
+        "eu": 16,
+        "duration": 500,
+        "item_inputs": [
+          {
+            "item": "modern_industrialization:aluminum_cable",
+            "amount": 6
+          },
+          {
+            "item": "modern_industrialization:silicon_battery",
+            "amount": 1
+          },
+          {
+            "item": "modern_industrialization:electronic_circuit_board",
+            "amount": 1
+          },
+          {
+            "item": "modern_industrialization:stainless_steel_plate",
+            "amount": 4
+          }
+        ],
+        "fluid_inputs": [
+          {
+            "fluid": "modern_industrialization:polyethylene",
+            "amount": 750
+          }
+        ],
+        "item_outputs": [
+          {
+            "item": "modern_industrialization:digital_circuit_board",
+            "amount": 1
+          }
+        ]
+      }
+    },
+    {
+      "path": "data/modern_industrialization/recipe/electric_age/circuit/craft/digital_circuit_asbl.json",
+      "sha256": "e94a0bffd89821942f6f8b6e80413855674b290957e2646c0ee31113cd7e7cb3",
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "pattern": [
+          "cOc",
+          "NbN",
+          "cAc"
+        ],
+        "key": {
+          "O": {
+            "item": "modern_industrialization:or_gate"
+          },
+          "c": {
+            "item": "modern_industrialization:electronic_circuit"
+          },
+          "N": {
+            "item": "modern_industrialization:not_gate"
+          },
+          "A": {
+            "item": "modern_industrialization:and_gate"
+          },
+          "b": {
+            "item": "modern_industrialization:digital_circuit_board"
+          }
+        },
+        "result": {
+          "id": "modern_industrialization:digital_circuit"
+        }
+      }
+    },
+    {
+      "path": "data/modern_industrialization/recipe/electric_age/component/blast_furnace/monocrystalline_silicon.json",
+      "sha256": "e342682b842ec4a869d89cab9c24553ec2df0dfbc996b18a961cbf6c3f696b23",
+      "recipe": {
+        "type": "modern_industrialization:blast_furnace",
+        "eu": 64,
+        "duration": 1500,
+        "item_inputs": [
+          {
+            "tag": "c:dusts/silicon",
+            "amount": 32
+          },
+          {
+            "tag": "c:tiny_dusts/iridium",
+            "amount": 1
+          }
+        ],
+        "fluid_inputs": {
+          "fluid": "modern_industrialization:argon",
+          "amount": 1250
+        },
+        "item_outputs": {
+          "item": "modern_industrialization:monocrystalline_silicon",
+          "amount": 1
+        }
+      }
+    },
+    {
+      "path": "data/modern_industrialization/recipe/electric_age/component/craft/advanced_motor_asbl.json",
+      "sha256": "274b09328139dd28d1e1be2ff89ca9492d3939bb5d39d49b722379cca1e58bcb",
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "pattern": [
+          "cwr",
+          "wmw",
+          "rwc"
+        ],
+        "key": {
+          "m": {
+            "item": "modern_industrialization:stainless_steel_rod_magnetic"
+          },
+          "r": {
+            "tag": "c:rods/stainless_steel"
+          },
+          "c": {
+            "item": "modern_industrialization:aluminum_cable"
+          },
+          "w": {
+            "item": "modern_industrialization:annealed_copper_wire"
+          }
+        },
+        "result": {
+          "id": "modern_industrialization:advanced_motor"
+        }
+      }
+    },
+    {
+      "path": "data/modern_industrialization/recipe/electric_age/component/craft/and_gate_asbl.json",
+      "sha256": "dc5fb4bfdc2c8b1d45d8c1be219abdf451a8b676935b8873f40ac509c5252a57",
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "pattern": [
+          "wr ",
+          "wAw",
+          "wr "
+        ],
+        "key": {
+          "r": {
+            "item": "modern_industrialization:resistor"
+          },
+          "A": {
+            "item": "modern_industrialization:op_amp"
+          },
+          "w": {
+            "item": "modern_industrialization:aluminum_wire"
+          }
+        },
+        "result": {
+          "id": "modern_industrialization:and_gate"
+        }
+      }
+    },
+    {
+      "path": "data/modern_industrialization/recipe/electric_age/component/craft/not_gate_asbl.json",
+      "sha256": "a370ffccad017395dc46746702e407d401092b4b94f47598ecaa58e44296be93",
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "pattern": [
+          "   ",
+          "wAr",
+          "   "
+        ],
+        "key": {
+          "r": {
+            "item": "modern_industrialization:resistor"
+          },
+          "A": {
+            "item": "modern_industrialization:op_amp"
+          },
+          "w": {
+            "item": "modern_industrialization:aluminum_wire"
+          }
+        },
+        "result": {
+          "id": "modern_industrialization:not_gate"
+        }
+      }
+    },
+    {
+      "path": "data/modern_industrialization/recipe/electric_age/component/craft/op_amp_asbl.json",
+      "sha256": "fa2d44d66a6022da74ff6e5bc0c2a069bbb38f5a9bbdd1593834ca4b3cdd3064",
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "pattern": [
+          "rTT",
+          "rdr",
+          "rTT"
+        ],
+        "key": {
+          "r": {
+            "item": "modern_industrialization:resistor"
+          },
+          "T": {
+            "item": "modern_industrialization:transistor"
+          },
+          "d": {
+            "item": "modern_industrialization:diode"
+          }
+        },
+        "result": {
+          "id": "modern_industrialization:op_amp"
+        }
+      }
+    },
+    {
+      "path": "data/modern_industrialization/recipe/electric_age/component/craft/or_gate_asbl.json",
+      "sha256": "8a2dbee5d5bd573eeeb5ffc8705852fd7bb8ad9afac5e7c86bea30000b44dd4b",
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "pattern": [
+          " A ",
+          "wdw",
+          " A "
+        ],
+        "key": {
+          "A": {
+            "item": "modern_industrialization:op_amp"
+          },
+          "w": {
+            "item": "modern_industrialization:aluminum_wire"
+          },
+          "d": {
+            "item": "modern_industrialization:diode"
+          }
+        },
+        "result": {
+          "id": "modern_industrialization:or_gate"
+        }
+      }
+    },
+    {
+      "path": "data/modern_industrialization/recipe/electric_age/hull/highly_advanced_machine_hull_asbl.json",
+      "sha256": "d520a55529b6ff55b6fb7caeda26edb9e31c999e20a7254d5da9994ae7d84f19",
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "pattern": [
+          " c ",
+          "BCB",
+          "ppp"
+        ],
+        "key": {
+          "B": {
+            "item": "modern_industrialization:cadmium_battery"
+          },
+          "c": {
+            "item": "modern_industrialization:processing_unit"
+          },
+          "C": {
+            "item": "modern_industrialization:highly_advanced_machine_casing"
+          },
+          "p": {
+            "item": "modern_industrialization:annealed_copper_cable"
+          }
+        },
+        "result": {
+          "id": "modern_industrialization:highly_advanced_machine_hull"
+        }
+      }
+    },
+    {
+      "path": "data/modern_industrialization/recipe/electric_age/hull/turbo_machine_hull_asbl.json",
+      "sha256": "701fdf2c724556e47ab6294ed9014a96caaa12c0db3e5d7d33ddde7c7e5b1945",
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "pattern": [
+          " c ",
+          "BCB",
+          "ppp"
+        ],
+        "key": {
+          "B": {
+            "item": "modern_industrialization:sodium_battery"
+          },
+          "c": {
+            "item": "modern_industrialization:digital_circuit"
+          },
+          "C": {
+            "item": "modern_industrialization:turbo_machine_casing"
+          },
+          "p": {
+            "item": "modern_industrialization:aluminum_cable"
+          }
+        },
+        "result": {
+          "id": "modern_industrialization:turbo_machine_hull"
+        }
+      }
+    },
+    {
+      "path": "data/modern_industrialization/recipe/electric_age/machine/hv_steam_turbine_asbl.json",
+      "sha256": "039dccc883d229024d142f47cbfae31541b1b8201b9fd9db1d765cf7cd7bff7e",
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "pattern": [
+          "pCp",
+          "rHr",
+          "mcm"
+        ],
+        "key": {
+          "C": {
+            "item": "modern_industrialization:digital_circuit"
+          },
+          "m": {
+            "item": "modern_industrialization:advanced_motor"
+          },
+          "H": {
+            "item": "modern_industrialization:turbo_machine_hull"
+          },
+          "p": {
+            "tag": "modern_industrialization:fluid_pipes"
+          },
+          "r": {
+            "item": "modern_industrialization:stainless_steel_rotor"
+          },
+          "c": {
+            "item": "modern_industrialization:aluminum_cable"
+          }
+        },
+        "result": {
+          "id": "modern_industrialization:hv_steam_turbine"
+        }
+      }
+    },
+    {
+      "path": "data/modern_industrialization/recipe/electric_age/machine/vacuum_freezer_asbl.json",
+      "sha256": "042122dcf40f1a41e704971fcb6cc667162e9258e77999282b028dfd5b285b72",
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "pattern": [
+          "PPP",
+          "CHC",
+          "pCp"
+        ],
+        "key": {
+          "C": {
+            "item": "modern_industrialization:electronic_circuit"
+          },
+          "H": {
+            "item": "modern_industrialization:advanced_machine_hull"
+          },
+          "P": {
+            "item": "modern_industrialization:large_pump"
+          },
+          "p": {
+            "item": "modern_industrialization:aluminum_large_plate"
+          }
+        },
+        "result": {
+          "id": "modern_industrialization:vacuum_freezer"
+        }
+      }
+    },
+    {
+      "path": "data/modern_industrialization/recipe/electric_age/transformer/mv_hv/down_asbl.json",
+      "sha256": "5a026bf287dd83784d51b15faa160cd1f80095703564c3a6abccdd5013b4806b",
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "pattern": [
+          "O O",
+          "OHO",
+          " I "
+        ],
+        "key": {
+          "H": {
+            "item": "modern_industrialization:advanced_machine_hull"
+          },
+          "I": {
+            "item": "modern_industrialization:aluminum_cable"
+          },
+          "O": {
+            "item": "modern_industrialization:electrum_cable"
+          }
+        },
+        "result": {
+          "id": "modern_industrialization:hv_mv_transformer"
+        }
+      }
+    },
+    {
+      "path": "data/modern_industrialization/recipe/materials/blast_furnace/annealed_copper.json",
+      "sha256": "3d048ede0e1e1b0dd0d2b249653d7b024a444bda426f97bf8a73abb3d142930e",
+      "recipe": {
+        "type": "modern_industrialization:blast_furnace",
+        "eu": 64,
+        "duration": 600,
+        "item_inputs": {
+          "tag": "c:dusts/copper",
+          "amount": 1
+        },
+        "fluid_inputs": {
+          "fluid": "modern_industrialization:oxygen",
+          "amount": 250
+        },
+        "item_outputs": {
+          "item": "modern_industrialization:annealed_copper_hot_ingot",
+          "amount": 1
+        }
+      }
+    },
+    {
+      "path": "data/modern_industrialization/recipe/materials/centrifuge/chromium_crushed_dust.json",
+      "sha256": "11e7f4a9b4e84137dde09a8a79ab0febd6f2e880e9cc7f7f290e594fda7c69b9",
+      "recipe": {
+        "type": "modern_industrialization:centrifuge",
+        "eu": 16,
+        "duration": 2400,
+        "item_inputs": {
+          "tag": "c:dusts/ruby",
+          "amount": 6
+        },
+        "item_outputs": [
+          {
+            "item": "modern_industrialization:chromium_crushed_dust",
+            "amount": 1
+          },
+          {
+            "item": "modern_industrialization:aluminum_dust",
+            "amount": 2
+          }
+        ]
+      }
+    },
+    {
+      "path": "data/modern_industrialization/recipe/materials/centrifuge/manganese_crushed_dust.json",
+      "sha256": "ab26d5b02403e231bd3077c0e8f66af9f2e1f9ba82143a9f3f4acbf30adbe414",
+      "recipe": {
+        "type": "modern_industrialization:centrifuge",
+        "eu": 8,
+        "duration": 1200,
+        "item_inputs": [
+          {
+            "item": "minecraft:raw_iron",
+            "amount": 6
+          }
+        ],
+        "item_outputs": [
+          {
+            "item": "modern_industrialization:iron_dust",
+            "amount": 8
+          },
+          {
+            "item": "modern_industrialization:manganese_crushed_dust",
+            "amount": 1
+          }
+        ]
+      }
+    },
+    {
+      "path": "data/modern_industrialization/recipe/materials/centrifuge/mozanite_dust.json",
+      "sha256": "ff9fbc97ec9c19098ab38589f754ff10b72e1ecbf8b2a2372bde9e08b0a9f919",
+      "recipe": {
+        "type": "modern_industrialization:centrifuge",
+        "eu": 10,
+        "duration": 2400,
+        "item_inputs": {
+          "tag": "c:dusts/monazite",
+          "amount": 9
+        },
+        "item_outputs": [
+          {
+            "item": "modern_industrialization:neodymium_dust",
+            "amount": 3
+          },
+          {
+            "item": "modern_industrialization:yttrium_dust",
+            "amount": 3
+          },
+          {
+            "item": "modern_industrialization:cadmium_dust",
+            "amount": 3
+          }
+        ],
+        "fluid_outputs": [
+          {
+            "fluid": "modern_industrialization:helium",
+            "amount": 300,
+            "probability": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "path": "data/modern_industrialization/recipe/materials/centrifuge/purified_platinum_sulfuric_solution.json",
+      "sha256": "f7d88a533d727f13fb7fee9ce1977d08e800725b525157da755501c56708e28a",
+      "recipe": {
+        "type": "modern_industrialization:centrifuge",
+        "eu": 8,
+        "duration": 1200,
+        "fluid_inputs": {
+          "fluid": "modern_industrialization:platinum_sulfuric_solution",
+          "amount": 1000
+        },
+        "fluid_outputs": {
+          "fluid": "modern_industrialization:purified_platinum_sulfuric_solution",
+          "amount": 1000
+        },
+        "item_outputs": {
+          "item": "modern_industrialization:iridium_tiny_dust",
+          "amount": 1,
+          "probability": 0.05
+        }
+      }
+    },
+    {
+      "path": "data/modern_industrialization/recipe/materials/centrifuge/ruby_dust.json",
+      "sha256": "2624b9d94a52024e98ba45d23c8f7566b6e8239db9d8a673984d95909ac42365",
+      "recipe": {
+        "type": "modern_industrialization:centrifuge",
+        "eu": 8,
+        "duration": 1200,
+        "item_inputs": [
+          {
+            "item": "minecraft:redstone",
+            "amount": 10
+          }
+        ],
+        "item_outputs": [
+          {
+            "item": "modern_industrialization:iron_dust",
+            "amount": 5
+          },
+          {
+            "item": "modern_industrialization:ruby_dust",
+            "amount": 1
+          },
+          {
+            "item": "modern_industrialization:quartz_dust",
+            "amount": 1
+          },
+          {
+            "item": "modern_industrialization:neodymium_tiny_dust",
+            "amount": 1,
+            "probability": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "path": "data/modern_industrialization/recipe/materials/chemical_reactor/chromium_hydrochloric_solution.json",
+      "sha256": "e8a6d025fa01fbcb2adf840511fa5423eca06970837287a48ef945c2e804c6b4",
+      "recipe": {
+        "type": "modern_industrialization:chemical_reactor",
+        "eu": 8,
+        "duration": 200,
+        "item_inputs": [
+          {
+            "item": "modern_industrialization:chromium_crushed_dust",
+            "amount": 1
+          }
+        ],
+        "fluid_inputs": {
+          "fluid": "modern_industrialization:hydrochloric_acid",
+          "amount": 9000
+        },
+        "fluid_outputs": {
+          "fluid": "modern_industrialization:chromium_hydrochloric_solution",
+          "amount": 9000
+        }
+      }
+    },
+    {
+      "path": "data/modern_industrialization/recipe/materials/chemical_reactor/manganese_sulfuric_solution.json",
+      "sha256": "474265dac6eba9a5962c2ca5a5d005074166e77d3ed50549f464c10d29121c6a",
+      "recipe": {
+        "type": "modern_industrialization:chemical_reactor",
+        "eu": 8,
+        "duration": 200,
+        "item_inputs": [
+          {
+            "item": "modern_industrialization:manganese_crushed_dust",
+            "amount": 1
+          }
+        ],
+        "fluid_inputs": {
+          "fluid": "modern_industrialization:sulfuric_acid",
+          "amount": 9000
+        },
+        "fluid_outputs": {
+          "fluid": "modern_industrialization:manganese_sulfuric_solution",
+          "amount": 9000
+        }
+      }
+    },
+    {
+      "path": "data/modern_industrialization/recipe/materials/electrolyzer/chromium_tiny_dust.json",
+      "sha256": "6165e0271d3a244b1b6a84317706eab5a299d4200bf7fcf100374e5b3b64dc04",
+      "recipe": {
+        "type": "modern_industrialization:electrolyzer",
+        "eu": 16,
+        "duration": 400,
+        "item_outputs": [
+          {
+            "item": "modern_industrialization:chromium_tiny_dust",
+            "amount": 3
+          }
+        ],
+        "fluid_inputs": {
+          "fluid": "modern_industrialization:chromium_hydrochloric_solution",
+          "amount": 1000
+        },
+        "fluid_outputs": [
+          {
+            "fluid": "modern_industrialization:hydrogen",
+            "amount": 450
+          },
+          {
+            "fluid": "modern_industrialization:chlorine",
+            "amount": 450
+          }
+        ]
+      }
+    },
+    {
+      "path": "data/modern_industrialization/recipe/materials/electrolyzer/manganese_tiny_dust.json",
+      "sha256": "92bcf15a86f0c6aaf32c0f327ea10743f8fe77ec2cc1831949dfb397e296356a",
+      "recipe": {
+        "type": "modern_industrialization:electrolyzer",
+        "eu": 16,
+        "duration": 400,
+        "item_outputs": [
+          {
+            "item": "modern_industrialization:manganese_tiny_dust",
+            "amount": 3
+          }
+        ],
+        "fluid_inputs": {
+          "fluid": "modern_industrialization:manganese_sulfuric_solution",
+          "amount": 1000
+        },
+        "fluid_outputs": {
+          "fluid": "modern_industrialization:sulfuric_acid",
+          "amount": 900
+        }
+      }
+    },
+    {
+      "path": "data/modern_industrialization/recipe/materials/kanthal/blast_furnace/dust.json",
+      "sha256": "6bb8a2d21505433d1a19697ff51bba8a7059aeb767d150e10a069bfec113b512",
+      "recipe": {
+        "type": "modern_industrialization:blast_furnace",
+        "duration": 400,
+        "eu": 32,
+        "item_inputs": [
+          {
+            "amount": 1,
+            "tag": "c:dusts/kanthal"
+          }
+        ],
+        "item_outputs": [
+          {
+            "amount": 1,
+            "item": "modern_industrialization:kanthal_hot_ingot"
+          }
+        ]
+      }
+    },
+    {
+      "path": "data/modern_industrialization/recipe/materials/kanthal/craft/coil.json",
+      "sha256": "c195c422294890c4487c6b3e16276e29d23e39552568c86d9775641112efb0d2",
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "key": {
+          "x": {
+            "item": "modern_industrialization:kanthal_cable"
+          }
+        },
+        "pattern": [
+          "xxx",
+          "x x",
+          "xxx"
+        ],
+        "result": {
+          "count": 1,
+          "id": "modern_industrialization:kanthal_coil"
+        }
+      }
+    },
+    {
+      "path": "data/modern_industrialization/recipe/materials/kanthal/vacuum_freezer/hot_ingot.json",
+      "sha256": "d58a7fbe08ed41b7dd77ef6d8721bb718fef405a08d0a91f59ff51f9266765d5",
+      "recipe": {
+        "type": "modern_industrialization:vacuum_freezer",
+        "duration": 250,
+        "eu": 32,
+        "item_inputs": [
+          {
+            "amount": 1,
+            "item": "modern_industrialization:kanthal_hot_ingot"
+          }
+        ],
+        "item_outputs": [
+          {
+            "amount": 1,
+            "item": "modern_industrialization:kanthal_ingot"
+          }
+        ]
+      }
+    },
+    {
+      "path": "data/modern_industrialization/recipe/materials/stainless_steel/blast_furnace/dust.json",
+      "sha256": "5c80adb9dcc53fbb6f0f047299f069e2bff7375259fe8672eb85eab6c772fe51",
+      "recipe": {
+        "type": "modern_industrialization:blast_furnace",
+        "duration": 400,
+        "eu": 32,
+        "item_inputs": [
+          {
+            "amount": 1,
+            "tag": "c:dusts/stainless_steel"
+          }
+        ],
+        "item_outputs": [
+          {
+            "amount": 1,
+            "item": "modern_industrialization:stainless_steel_hot_ingot"
+          }
+        ]
+      }
+    },
+    {
+      "path": "data/modern_industrialization/recipe/materials/stainless_steel/vacuum_freezer/hot_ingot.json",
+      "sha256": "4e680a467e3abf608690d8fb801fe97437838cde2787897a6afef92e25fca97b",
+      "recipe": {
+        "type": "modern_industrialization:vacuum_freezer",
+        "duration": 250,
+        "eu": 32,
+        "item_inputs": [
+          {
+            "amount": 1,
+            "item": "modern_industrialization:stainless_steel_hot_ingot"
+          }
+        ],
+        "item_outputs": [
+          {
+            "amount": 1,
+            "item": "modern_industrialization:stainless_steel_ingot"
+          }
+        ]
+      }
+    }
+  ]
+}

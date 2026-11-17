@@ -1,0 +1,20 @@
+[
+  {
+    "file": "lv-metallurgy.png",
+    "quests": 25,
+    "width": 1684,
+    "height": 1170
+  },
+  {
+    "file": "mv-chemistry.png",
+    "quests": 25,
+    "width": 1270,
+    "height": 940
+  },
+  {
+    "file": "running-shoes.png",
+    "quests": 7,
+    "width": 718,
+    "height": 526
+  }
+]

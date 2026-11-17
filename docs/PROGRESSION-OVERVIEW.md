@@ -184,7 +184,9 @@ These are available systems, but their existence does not establish a fully fini
 
 ## 9. Quest structure and rewards
 
-The current quest files contain **145 quests**:
+The current quest files contain **228 quests**. The [LV/MV continuation](QUESTS-LV-MV.md)
+adds metallurgy, electronics, power and renewable chemistry guidance, plus optional
+early running shoes. It adds quest guidance for existing machines and recipes.
 
 | Chapter | Quests |
 |---|---:|
@@ -192,7 +194,11 @@ The current quest files contain **145 quests**:
 | Chapter 2: The Create Revolution | 29 |
 | Chapter 3: MI - The Steam Age | 28 |
 | Chapter 4: Steel and Coolant | 13 |
-| Progression Routes: Biology to Electricity | 20 |
+| Progression Routes: Biology to Electricity | 24 |
+| Chapter 5: LV - Metallurgy and Electronics | 25 |
+| Chapter 6: MV - Power and Chemistry | 25 |
+| Chapter 7: HV - Refining, Coils and Logic | 26 |
+| Field Equipment: Running Shoes | 7 |
 | Wither Containment | 5 |
 | Tips & Guides | 6 |
 | Revo Employee Handbook | 5 |

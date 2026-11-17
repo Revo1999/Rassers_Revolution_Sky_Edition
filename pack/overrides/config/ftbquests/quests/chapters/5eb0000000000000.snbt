@@ -1,0 +1,908 @@
+{
+  "id": "5EB0000000000000",
+  "filename": "5eb0000000000000",
+  "title": "Chapter 7: HV - Refining, Coils and Logic",
+  "icon": {
+    "id": "modern_industrialization:hv_steam_turbine",
+    "count": 1
+  },
+  "order_index": 48,
+  "default_quest_shape": "circle",
+  "quests": [
+    {
+      "id": "5EB0000000000001",
+      "title": "Refine Before You Expand",
+      "icon": {
+        "id": "modern_industrialization:centrifuge",
+        "count": 1
+      },
+      "x": 0.0,
+      "y": 0.0,
+      "shape": "hexagon",
+      "size": 1.25,
+      "dependencies": [
+        "5E90000000000019"
+      ],
+      "description": [
+        "Continue from the integrated MV factory. Keep drills, sludge washing, aluminum/silicon, electronic circuits, gases and plastic running.",
+        "Chromium and manganese have native refining routes from current drill products. Check this when the existing factory can support another processing branch. No quarry or new loose-gem source is required."
+      ],
+      "tasks": [
+        {
+          "id": "5EB0000000100010",
+          "type": "checkmark"
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5EB0000000000002",
+      "title": "Redstone Refining",
+      "icon": {
+        "id": "modern_industrialization:ruby_dust",
+        "count": 1
+      },
+      "x": 3.0,
+      "y": 0.0,
+      "shape": "circle",
+      "size": 1.0,
+      "dependencies": [
+        "5EB0000000000001"
+      ],
+      "description": [
+        "Centrifuge ten Redstone into five Iron Dust, one Ruby Dust, one Quartz Dust and a chance of Neodymium Tiny Dust. Collect all outputs.",
+        "Ruby Dust here is a chemical intermediate from drilled redstone, not a loose Ruby gemstone. Gather six dust for the next refining step."
+      ],
+      "tasks": [
+        {
+          "id": "5EB0000000100020",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:ruby_dust",
+            "count": 1
+          },
+          "count": 6,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5EB0000000000003",
+      "title": "Prepare Chromium Solution",
+      "icon": {
+        "id": "modern_industrialization:chromium_crushed_dust",
+        "count": 1
+      },
+      "x": 6.0,
+      "y": 0.0,
+      "shape": "circle",
+      "size": 1.0,
+      "dependencies": [
+        "5EB0000000000002"
+      ],
+      "description": [
+        "Centrifuge six Ruby Dust into one Chromium Crushed Dust and two Aluminum Dust. Dissolve the crushed chromium in 9,000 mB Hydrochloric Acid in a Chemical Reactor.",
+        "Check this after collecting chromium hydrochloric solution. Keep its fluid route separate from other acid solutions."
+      ],
+      "tasks": [
+        {
+          "id": "5EB0000000100030",
+          "type": "checkmark"
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5EB0000000000004",
+      "title": "Recover Chromium Dust",
+      "icon": {
+        "id": "modern_industrialization:chromium_dust",
+        "count": 1
+      },
+      "x": 9.0,
+      "y": 0.0,
+      "shape": "circle",
+      "size": 1.0,
+      "dependencies": [
+        "5EB0000000000003"
+      ],
+      "description": [
+        "Electrolyze each 1,000 mB Chromium Hydrochloric Solution into three Chromium Tiny Dust, plus hydrogen/chlorine outputs. Pack nine tiny dust into one dust.",
+        "Keep Chromium Dust for stainless steel and Kanthal. A raw chromium drill deposit is unnecessary for this route."
+      ],
+      "tasks": [
+        {
+          "id": "5EB0000000100040",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:chromium_dust",
+            "count": 1
+          },
+          "count": 2,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5EB0000000000005",
+      "title": "Refine the Raw Iron",
+      "icon": {
+        "id": "modern_industrialization:manganese_crushed_dust",
+        "count": 1
+      },
+      "x": 3.0,
+      "y": 4.0,
+      "shape": "circle",
+      "size": 1.0,
+      "dependencies": [
+        "5EB0000000000001"
+      ],
+      "description": [
+        "Centrifuge six Raw Iron from the drill line into eight Iron Dust and one Manganese Crushed Dust.",
+        "Reserve raw iron for this branch rather than immediately smelting every item. Manganese is already a native refining byproduct."
+      ],
+      "tasks": [
+        {
+          "id": "5EB0000000100050",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:manganese_crushed_dust",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5EB0000000000006",
+      "title": "Sulfuric Leaching",
+      "icon": {
+        "id": "modern_industrialization:chemical_reactor",
+        "count": 1
+      },
+      "x": 6.0,
+      "y": 4.0,
+      "shape": "circle",
+      "size": 1.0,
+      "dependencies": [
+        "5EB0000000000005"
+      ],
+      "description": [
+        "Produce Sulfuric Acid from native sulfur, oxygen and water processing, or collect it from ethanol-to-ethylene processing.",
+        "Dissolve one Manganese Crushed Dust in 9,000 mB Sulfuric Acid. Check this after collecting manganese sulfuric solution."
+      ],
+      "tasks": [
+        {
+          "id": "5EB0000000100060",
+          "type": "checkmark"
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5EB0000000000007",
+      "title": "Recover Manganese Dust",
+      "icon": {
+        "id": "modern_industrialization:manganese_dust",
+        "count": 1
+      },
+      "x": 9.0,
+      "y": 4.0,
+      "shape": "circle",
+      "size": 1.0,
+      "dependencies": [
+        "5EB0000000000006"
+      ],
+      "description": [
+        "Electrolyze each 1,000 mB manganese solution into three Manganese Tiny Dust and 900 mB recovered Sulfuric Acid.",
+        "Pack nine tiny dust into one Manganese Dust. Route the acid back to a useful, separate storage destination."
+      ],
+      "tasks": [
+        {
+          "id": "5EB0000000100070",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:manganese_dust",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5EB0000000000008",
+      "title": "Freezer Before Hot Metal",
+      "icon": {
+        "id": "modern_industrialization:vacuum_freezer",
+        "count": 1
+      },
+      "x": 0.0,
+      "y": 8.0,
+      "shape": "hexagon",
+      "size": 1.25,
+      "dependencies": [
+        "5EB0000000000001"
+      ],
+      "description": [
+        "Craft the native Vacuum Freezer controller with three Large Pumps, three Electronic Circuits, an Advanced Machine Hull and two Aluminum Large Plates.",
+        "It needs neither stainless steel nor Kanthal to bootstrap. Assemble the native blueprint and configure hatches before accumulating hot ingots."
+      ],
+      "tasks": [
+        {
+          "id": "5EB0000000100080",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:vacuum_freezer",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5EB0000000000009",
+      "title": "Blend Stainless Steel",
+      "icon": {
+        "id": "modern_industrialization:stainless_steel_dust",
+        "count": 1
+      },
+      "x": 12.0,
+      "y": 4.0,
+      "shape": "circle",
+      "size": 1.0,
+      "dependencies": [
+        "5EB0000000000004",
+        "5EB0000000000007"
+      ],
+      "description": [
+        "Mixer: six Iron Dust, one Chromium Dust, one Nickel Dust and one Manganese Dust make nine Stainless Steel Dust.",
+        "Keep these feedstocks renewable through drilling and native refining. There is no new high-tier ore reward."
+      ],
+      "tasks": [
+        {
+          "id": "5EB0000000100090",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:stainless_steel_dust",
+            "count": 1
+          },
+          "count": 9,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5EB000000000000A",
+      "title": "Hot Stainless Steel",
+      "icon": {
+        "id": "modern_industrialization:stainless_steel_hot_ingot",
+        "count": 1
+      },
+      "x": 15.0,
+      "y": 4.0,
+      "shape": "circle",
+      "size": 1.0,
+      "dependencies": [
+        "5EB0000000000009",
+        "5EB0000000000008"
+      ],
+      "description": [
+        "The native 32 EU/t EBF recipe turns Stainless Steel Dust into hot ingots. The starter coil setup can run this recipe with a suitable power supply.",
+        "Hot ingots still need the Vacuum Freezer before they become finished fabrication material."
+      ],
+      "tasks": [
+        {
+          "id": "5EB00000001000A0",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:stainless_steel_hot_ingot",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5EB000000000000B",
+      "title": "Finish the Stainless Steel",
+      "icon": {
+        "id": "modern_industrialization:stainless_steel_ingot",
+        "count": 1
+      },
+      "x": 18.0,
+      "y": 4.0,
+      "shape": "hexagon",
+      "size": 1.25,
+      "dependencies": [
+        "5EB000000000000A"
+      ],
+      "description": [
+        "Vacuum Freezer: one hot stainless ingot becomes one finished ingot at 32 EU/t for 250 ticks.",
+        "Expand this line for the plates, rods, gears and rotors used in the next hull and mechanical components."
+      ],
+      "tasks": [
+        {
+          "id": "5EB00000001000B0",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:stainless_steel_ingot",
+            "count": 1
+          },
+          "count": 8,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5EB000000000000C",
+      "title": "Prepare Kanthal",
+      "icon": {
+        "id": "modern_industrialization:kanthal_dust",
+        "count": 1
+      },
+      "x": 3.0,
+      "y": 12.0,
+      "shape": "circle",
+      "size": 1.0,
+      "dependencies": [
+        "5EB000000000000B"
+      ],
+      "description": [
+        "Mixer: one Stainless Steel Dust, one Chromium Dust and one Aluminum Dust make three Kanthal Dust.",
+        "Retain stainless blend as dust instead of blasting every batch immediately."
+      ],
+      "tasks": [
+        {
+          "id": "5EB00000001000C0",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:kanthal_dust",
+            "count": 1
+          },
+          "count": 3,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5EB000000000000D",
+      "title": "First Kanthal Ingots",
+      "icon": {
+        "id": "modern_industrialization:kanthal_ingot",
+        "count": 1
+      },
+      "x": 6.0,
+      "y": 12.0,
+      "shape": "circle",
+      "size": 1.0,
+      "dependencies": [
+        "5EB000000000000C"
+      ],
+      "description": [
+        "Run Kanthal Dust through its native 32 EU/t EBF recipe, then cool the hot ingots in the Vacuum Freezer.",
+        "This makes the first Kanthal before Kanthal coils exist. Never make the upgraded coil a prerequisite for its own starter alloy."
+      ],
+      "tasks": [
+        {
+          "id": "5EB00000001000D0",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:kanthal_ingot",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5EB000000000000E",
+      "title": "Upgrade the Heating Coils",
+      "icon": {
+        "id": "modern_industrialization:kanthal_coil",
+        "count": 1
+      },
+      "x": 9.0,
+      "y": 12.0,
+      "shape": "hexagon",
+      "size": 1.25,
+      "dependencies": [
+        "5EB000000000000D"
+      ],
+      "description": [
+        "Process Kanthal into wire and cable. Eight Kanthal Cables craft one coil; make the complete supported set from the MI Guidebook.",
+        "Upgrade the EBF coil structure consistently. The coils allow higher-demand recipes but do not supply their energy or fluids."
+      ],
+      "tasks": [
+        {
+          "id": "5EB00000001000E0",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:kanthal_coil",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5EB000000000000F",
+      "title": "A Higher-Demand EBF Cycle",
+      "icon": {
+        "id": "modern_industrialization:electric_blast_furnace",
+        "count": 1
+      },
+      "x": 12.0,
+      "y": 12.0,
+      "shape": "circle",
+      "size": 1.0,
+      "dependencies": [
+        "5EB000000000000E"
+      ],
+      "description": [
+        "Prepare a sustained 64 EU/t EBF supply and an oxygen fluid input for annealed copper. Check coil compatibility and the formed structure.",
+        "Check this after a compatible cycle can run. This is your commissioning confirmation, not automatic detection of power or coils."
+      ],
+      "tasks": [
+        {
+          "id": "5EB00000001000F0",
+          "type": "checkmark"
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5EB0000000000010",
+      "title": "Annealed Copper Wire",
+      "icon": {
+        "id": "modern_industrialization:annealed_copper_wire",
+        "count": 1
+      },
+      "x": 15.0,
+      "y": 12.0,
+      "shape": "circle",
+      "size": 1.0,
+      "dependencies": [
+        "5EB000000000000F"
+      ],
+      "description": [
+        "EBF: one Copper Dust and 250 mB Oxygen make a hot Annealed Copper Ingot at 64 EU/t for 600 ticks. Cool it with the native freezer route.",
+        "Make plates and wire from the finished ingot. Advanced Motors require annealed copper wire; ordinary copper is not interchangeable."
+      ],
+      "tasks": [
+        {
+          "id": "5EB0000000100100",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:annealed_copper_wire",
+            "count": 1
+          },
+          "count": 4,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5EB0000000000011",
+      "title": "Resistors and Op-Amps",
+      "icon": {
+        "id": "modern_industrialization:op_amp",
+        "count": 1
+      },
+      "x": 3.0,
+      "y": 20.0,
+      "shape": "circle",
+      "size": 1.0,
+      "dependencies": [
+        "5EB000000000000B"
+      ],
+      "description": [
+        "Craft Resistors from paper, Copper Fine Wire and Coal Dust, or use native bulk assembly. Craft Op-Amps from Resistors, Transistors and a Diode.",
+        "Native manual component recipes bootstrap the first logic gates. Monocrystalline silicon and an iridium starter are not required here."
+      ],
+      "tasks": [
+        {
+          "id": "5EB0000000100110",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:resistor",
+            "count": 1
+          },
+          "count": 4,
+          "consume_items": false
+        },
+        {
+          "id": "5EB0000000100111",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:op_amp",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5EB0000000000012",
+      "title": "AND, OR and NOT",
+      "icon": {
+        "id": "modern_industrialization:and_gate",
+        "count": 1
+      },
+      "x": 6.0,
+      "y": 20.0,
+      "shape": "circle",
+      "size": 1.0,
+      "dependencies": [
+        "5EB0000000000011"
+      ],
+      "description": [
+        "Use native gate recipes with Op-Amps, Resistors, Diodes and Aluminum Wire. Prepare one AND Gate, one OR Gate and two NOT Gates.",
+        "Keep the earlier component lines running: digital logic consumes them rather than replacing them."
+      ],
+      "tasks": [
+        {
+          "id": "5EB0000000100120",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:and_gate",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "5EB0000000100121",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:or_gate",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "5EB0000000100122",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:not_gate",
+            "count": 1
+          },
+          "count": 2,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5EB0000000000013",
+      "title": "Digital Circuit Board",
+      "icon": {
+        "id": "modern_industrialization:digital_circuit_board",
+        "count": 1
+      },
+      "x": 9.0,
+      "y": 20.0,
+      "shape": "circle",
+      "size": 1.0,
+      "dependencies": [
+        "5EB000000000000B"
+      ],
+      "description": [
+        "Assembler: six Aluminum Cables, one Silicon Battery, one Electronic Circuit Board, four Stainless Steel Plates and 750 mB Polyethylene make one board.",
+        "Keep the fluid-fed Assembler supplied by the renewable plastic line."
+      ],
+      "tasks": [
+        {
+          "id": "5EB0000000100130",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:digital_circuit_board",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5EB0000000000014",
+      "title": "Your First Digital Circuit",
+      "icon": {
+        "id": "modern_industrialization:digital_circuit",
+        "count": 1
+      },
+      "x": 12.0,
+      "y": 20.0,
+      "shape": "hexagon",
+      "size": 1.25,
+      "dependencies": [
+        "5EB0000000000012",
+        "5EB0000000000013"
+      ],
+      "description": [
+        "Combine one OR Gate, two NOT Gates, one AND Gate, four Electronic Circuits and one Digital Circuit Board with the native crafting recipe.",
+        "This does not automatically unlock AE2. Its starter presses, Sky Stone and pack-specific technology gates remain separate work."
+      ],
+      "tasks": [
+        {
+          "id": "5EB0000000100140",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:digital_circuit",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5EB0000000000015",
+      "title": "Sodium Batteries",
+      "icon": {
+        "id": "modern_industrialization:sodium_battery",
+        "count": 1
+      },
+      "x": 0.0,
+      "y": 28.0,
+      "shape": "circle",
+      "size": 1.0,
+      "dependencies": [
+        "5EB0000000000001"
+      ],
+      "description": [
+        "Salt electrolysis supplies Sodium Dust alongside chlorine. Craft Sodium Batteries with sodium, battery-alloy plates/curved plates and Aluminum Cable.",
+        "Make two for the first Turbo Machine Hull. Keep drilling lead and antimony for the battery-alloy shell."
+      ],
+      "tasks": [
+        {
+          "id": "5EB0000000100150",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:sodium_battery",
+            "count": 1
+          },
+          "count": 2,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5EB0000000000016",
+      "title": "The Turbo Machine Hull",
+      "icon": {
+        "id": "modern_industrialization:turbo_machine_hull",
+        "count": 1
+      },
+      "x": 3.0,
+      "y": 28.0,
+      "shape": "hexagon",
+      "size": 1.25,
+      "dependencies": [
+        "5EB0000000000015",
+        "5EB0000000000014"
+      ],
+      "description": [
+        "Eight Stainless Steel Plates around an Advanced Machine Hull make the Turbo Machine Casing. Add two Sodium Batteries, a Digital Circuit and three Aluminum Cables for the hull.",
+        "Turbo is the first HV hull in this MI version. The titanium-based Highly Advanced Machine Hull belongs later and must not block this bootstrap."
+      ],
+      "tasks": [
+        {
+          "id": "5EB0000000100160",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:turbo_machine_hull",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5EB0000000000017",
+      "title": "Advanced Motors",
+      "icon": {
+        "id": "modern_industrialization:advanced_motor",
+        "count": 1
+      },
+      "x": 6.0,
+      "y": 28.0,
+      "shape": "circle",
+      "size": 1.0,
+      "dependencies": [
+        "5EB0000000000010"
+      ],
+      "description": [
+        "Craft Advanced Motors with native Stainless Steel Rods, a Magnetic Stainless Steel Rod, Annealed Copper Wire and Aluminum Cable.",
+        "Make two for the HV Steam Turbine, and prepare its stainless rotors and separate Aluminum Cable supply."
+      ],
+      "tasks": [
+        {
+          "id": "5EB0000000100170",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:advanced_motor",
+            "count": 1
+          },
+          "count": 2,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5EB0000000000018",
+      "title": "HV Steam Generation",
+      "icon": {
+        "id": "modern_industrialization:hv_steam_turbine",
+        "count": 1
+      },
+      "x": 9.0,
+      "y": 28.0,
+      "shape": "hexagon",
+      "size": 1.25,
+      "dependencies": [
+        "5EB0000000000016",
+        "5EB0000000000017"
+      ],
+      "description": [
+        "Use the native recipe: Turbo Machine Hull, Digital Circuit, two Advanced Motors, two Stainless Steel Rotors, pipes and Aluminum Cable.",
+        "Expand steam delivery, fuel and boiler water. A higher-tier turbine cannot reach sustained output from an undersized steam supply."
+      ],
+      "tasks": [
+        {
+          "id": "5EB0000000100180",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:hv_steam_turbine",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5EB0000000000019",
+      "title": "Protect Earlier Networks",
+      "icon": {
+        "id": "modern_industrialization:hv_mv_transformer",
+        "count": 1
+      },
+      "x": 12.0,
+      "y": 28.0,
+      "shape": "circle",
+      "size": 1.0,
+      "dependencies": [
+        "5EB0000000000018"
+      ],
+      "description": [
+        "Use suitable Aluminum Cable on HV and an HV to MV Transformer for the old factory. Retain the separate MV-to-LV supply.",
+        "HV storage is an optional sodium-battery/Turbo-Hull buffer. Transformers and buffers do not create energy."
+      ],
+      "tasks": [
+        {
+          "id": "5EB0000000100190",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:hv_mv_transformer",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5EB000000000001A",
+      "title": "A Working HV Factory",
+      "icon": {
+        "id": "modern_industrialization:hv_steam_turbine",
+        "count": 1
+      },
+      "x": 15.0,
+      "y": 28.0,
+      "shape": "hexagon",
+      "size": 1.25,
+      "dependencies": [
+        "5EB0000000000019"
+      ],
+      "description": [
+        "Check this after sustained HV generation runs a real load while the earlier MV/LV lines remain operational. Confirm stainless, annealed wire and digital circuits can replenish themselves.",
+        "This is the first-HV milestone. Later mineral deposits, AE2 starter gates, nuclear materials and Nexus runtime implementation are documented separately in the progression-gap table."
+      ],
+      "tasks": [
+        {
+          "id": "5EB00000001001A0",
+          "type": "checkmark"
+        }
+      ],
+      "rewards": []
+    }
+  ],
+  "images": [
+    {
+      "id": "5EB0000000007001",
+      "x": 9.0,
+      "y": -2.0,
+      "width": 21.0,
+      "height": 0.9,
+      "image": "#263843",
+      "title": "REFINE THE DRILL FEEDSTOCKS",
+      "text_on_image": true,
+      "text_shadow": true,
+      "text_inset": 3,
+      "position_locked": true,
+      "order": -10
+    },
+    {
+      "id": "5EB0000000007002",
+      "x": 9.0,
+      "y": 10.0,
+      "width": 21.0,
+      "height": 0.9,
+      "image": "#263843",
+      "title": "FREEZING AND HEATING COILS",
+      "text_on_image": true,
+      "text_shadow": true,
+      "text_inset": 3,
+      "position_locked": true,
+      "order": -10
+    },
+    {
+      "id": "5EB0000000007003",
+      "x": 9.0,
+      "y": 18.0,
+      "width": 15.0,
+      "height": 0.9,
+      "image": "#263843",
+      "title": "DIGITAL LOGIC",
+      "text_on_image": true,
+      "text_shadow": true,
+      "text_inset": 3,
+      "position_locked": true,
+      "order": -10
+    },
+    {
+      "id": "5EB0000000007004",
+      "x": 9.0,
+      "y": 26.0,
+      "width": 21.0,
+      "height": 0.9,
+      "image": "#263843",
+      "title": "FIRST HV NETWORK",
+      "text_on_image": true,
+      "text_shadow": true,
+      "text_inset": 3,
+      "position_locked": true,
+      "order": -10
+    }
+  ]
+}

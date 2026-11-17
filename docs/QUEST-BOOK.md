@@ -1,8 +1,14 @@
-# Early quest book and free manuals
+# Quest book and free manuals
 
-The current book has six chapters and 116 quests: 35 in From Nothing, 29 in
-The Create Revolution, 28 in MI Steam Age, thirteen in Steel and Coolant, six Tips and
-five Handbook quests. Chapter 4 adds the water-cooled Steel Drill after coke; see
+The current book has **twelve chapters and 228 quests**. The continuations add
+25 LV metallurgy/electronics quests, 25 MV power/chemistry quests, seven optional
+early running-shoe quests and 26 HV refining/coil/digital-logic quests. The previous
+145 quest IDs and their task/reward IDs remain intact. See [LV/MV](QUESTS-LV-MV.md)
+and the [post-MV progression table](PROGRESSION-GAPS-AFTER-MV.md).
+
+The early core has 35 quests in From Nothing, 29 in The Create Revolution,
+28 in MI Steam Age and thirteen in Steel and Coolant. Chapter 4 adds the
+water-cooled Steel Drill after coke; see
 [STEEL-DRILL.md](STEEL-DRILL.md) for its mechanics, costs and repair requirements.
 
 Chapter 1 is arranged into four labelled areas: Grove & Compost, Soil Into Stone,
@@ -88,3 +94,31 @@ Verification remains light: compilation, stable IDs, icon/resource references,
 dependency graph, wire/node clearance and packaged content. No Minecraft client or
 GameTests were launched for this update. In-game layout and progression pacing are
 left for the owner to play-test.
+
+## LV/MV and field-equipment continuation
+
+Run `python scripts/extend_quest_book.py --render` **after** older quest generators,
+then `python scripts/verify_quest_book.py`. Explicit IDs in the new generator are
+stable and must never be renumbered. It adds Chapter 5, Chapter 6 and the optional
+shoe branch, and updates the existing salt-production quest to require the newly
+documented Centrifuge milestone. No old quest/task/reward IDs are removed.
+
+New item tasks detect possession without consuming items. Production checks for
+fluid lines, powered machines and sustained networks are explicitly self-reported
+checkmarks, not claims of automatic machine or fluid-output detection. The new
+quests grant no resource rewards and do not supply missing starter materials.
+
+The continuation checks all dependencies for cycles, item references against
+installed assets, existing IDs against Git, layout node spacing and key EBF
+bootstrap ordering. Offline map previews are in `art/quests/lv-mv`. Machine icons
+with dynamically generated native models can be placeholders in those previews;
+FTB renders the actual installed items in game. A fresh-island survival playthrough
+and live-client layout inspection remain separate validation work.
+
+## HV continuation
+
+Run `python scripts/extend_hv_quests.py --render` after the LV/MV generator, then
+`python scripts/verify_quest_book.py`. Chapter 7 uses stable base `5EB0000000000000`
+and 26 explicit quest IDs. It covers native refining, freezing, Kanthal coils,
+digital logic, sodium batteries, the Turbo Hull and sustained first-HV power.
+The remaining-gap table is in [PROGRESSION-GAPS-AFTER-MV.md](PROGRESSION-GAPS-AFTER-MV.md).
