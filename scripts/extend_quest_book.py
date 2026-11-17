@@ -9,8 +9,8 @@ MI='modern_industrialization:'
 def mid(name):return MI+name
 def write(path,data):path.parent.mkdir(parents=True,exist_ok=True);path.write_text(json.dumps(data,indent=2)+'\n',encoding='utf-8')
 def ident(base,n):return f'{base+n:016X}'
-LV=0x5E80000000000000
-MV=0x5E90000000000000
+LV=0x5EC0000000000000
+MV=0x5ED0000000000000
 SHOES=0x5EA0000000000000
 
 class Chapter:
@@ -27,11 +27,11 @@ class Chapter:
     def save(self):write(CHAPTERS/(self.data['filename']+'.snbt'),self.data)
 
 def low_voltage():
-    c=Chapter(LV,'Chapter 5: LV - Metallurgy and Electronics',mid('electric_blast_furnace'),45)
+    c=Chapter(LV,'Chapter 6: Electronics and Separation',mid('electric_blast_furnace'),46)
     c.section(1,'LV WORKSHOP',4.5,-2,12);c.section(2,'COILS AND FIRST METALS',18,-2,12)
     c.section(3,'ELECTRONICS',21,10,9);c.section(4,'SEPARATION MACHINES',30,10,9)
-    c.add(1,'An Electric Workshop',mid('lv_steam_turbine'),0,0,['5E5000000000000A'],[
-        'Continue from First LV Electricity in Biology to Electricity. Keep steam water, fuel and the original battery-mineral line running.',
+    c.add(1,'An Electric Workshop',mid('lv_steam_turbine'),0,0,['5E80000000000029'],[
+        'Continue after Chapter 5: The LV Factory has established the EBF and first aluminum. This map reviews the metal routes before extending electronics and separation. Keep steam, water, fuel and battery supplies running.',
         'Check this after powering an actual electric production cycle. Item quests detect possession; checkmark quests are your own commissioning confirmations. Neither consumes materials.'
     ],milestone=True)
     c.add(2,'Wire and Cut',mid('electric_wiremill'),3,0,[1],[
@@ -120,7 +120,7 @@ def low_voltage():
     ],[(mid('electrolyzer'),1)])
     c.add(23,'A Working LV Factory',mid('electronic_circuit'),33,16,[21,22],[
         'Check this after the EBF has produced aluminum and silicon, the component lines are replenishing themselves, and both separation machines can complete a powered cycle.',
-        'Keep mechanical extraction and sludge washing operating. Chapter 6 adds MV generation, controlled fluid chemistry and renewable plastic.'
+        'Keep mechanical extraction and sludge washing operating. Chapter 7 adds MV generation, controlled fluid chemistry and renewable plastic.'
     ],milestone=True)
     c.add(24,'Assembler Bootstrap',mid('assembler'),9,0,[2],[
         'Craft the first Assembler with four Robot Arms, two Analog Circuits, two Conveyors and a Basic Machine Hull. Its own machine recipe is not the bootstrap.',
@@ -133,11 +133,11 @@ def low_voltage():
     c.save()
 
 def medium_voltage():
-    c=Chapter(MV,'Chapter 6: MV - Power and Chemistry',mid('mv_steam_turbine'),47)
+    c=Chapter(MV,'Chapter 7: MV - Power and Chemistry',mid('mv_steam_turbine'),47)
     c.section(1,'BUILD AN MV POWER NETWORK',10.5,-2,25);c.section(2,'GASES AND ACIDS',9,3,21);c.section(3,'RENEWABLE PLASTIC AND MANUFACTURING',12,11,27)
     c.add(1,'Beyond the First Circuit',mid('electronic_circuit'),0,0,[ident(LV,23)],[
         'Your first circuits and large components establish the manufacturing base. Now separate the MV power branch from the chemistry branch; both support the finished factory.',
-        'These quests guide the installed MI recipes. They do not unlock the art-only Nexus machines or unfinished AE2 bootstrap.'
+        'These quests guide the installed MI recipes. They do not unlock the art-only Nexus machines or bypass the implemented MV AE2 gates.'
     ],milestone=True)
     c.add(2,'Silicon Batteries',mid('silicon_battery'),3,0,[1],[
         'Craft two Silicon Batteries using Silicon Dust, Battery Alloy plates/curved plates and Electrum Cable.',
@@ -177,7 +177,7 @@ def medium_voltage():
     ])
     c.add(11,'Renewable Salt Supply',mid('salt_dust'),6,5,[10,'5E50000000000014'],[
         'Keep the 3 x 3 x 3 Salt Geode Chamber supplied with water and 16 EU/t. Pipe its salt water into the native Centrifuge.',
-        'Collect Salt Dust with the existing recipe. This is the implemented geology route; no manual brine shortcut or new solidifier is needed.'
+        'Collect Salt Dust with the existing recipe. Alternatively the pulled Salt Crystal Geode program in the powered Iron Greenhouse supplies salt at 8 EU/t with water; it does not require the Centrifuge.'
     ],[(mid('salt_dust'),8)])
     c.add(12,'Water into Gases',mid('electrolyzer'),9,5,[10],[
         'Run the native water Electrolyzer recipe and route hydrogen and oxygen to separate destinations.',
@@ -233,7 +233,7 @@ def medium_voltage():
     ])
     c.add(25,'An Integrated MV Factory',mid('mv_steam_turbine'),24,5,[24,14],[
         'Check this after sustaining MV power, retaining a working LV supply, producing Electronic Circuits, handling gases/acids and making Advanced Upgrades from renewable plastic.',
-        'This completes the guided first-MV factory, not every MI recipe. Advanced metallurgy, later power and deliberately gated AE2 need subsequent chapters. The Nexus models are still art/design and do not count as implemented machines.'
+        'This completes the guided first-MV factory, not every MI recipe. Advanced metallurgy and later power need their own chapters; AE2 starter recipes and MV circuit gates are now implemented, while separate autocrafting/addon boundaries still need review. The Nexus models are still art/design and do not count as implemented machines.'
     ],milestone=True)
     c.save()
 
@@ -277,14 +277,14 @@ def main():
     dep=ident(LV,21)
     if dep not in salt['dependencies']:salt['dependencies'].append(dep)
     salt['description']=[
-        'First build the native Centrifuge through Chapter 5: EBF aluminum/silicon, Electronic Circuits, Large Motors and a Large Pump. The geode can be constructed earlier and its salt water buffered.',
+        'First build the native Centrifuge through Chapter 6: EBF aluminum/silicon, Electronic Circuits, Large Motors and a Large Pump. The geode can be constructed earlier and its salt water buffered.',
         'Pipe salt water from the powered geode chamber into the MI Centrifuge and collect Salt Dust with its native recipe. You do not need a new fluid solidifier or a manual salt bootstrap.'
     ]
     write(path,chapter)
     if args.render:
         import render_quest_maps as maps
         maps.OUT=ROOT/'art/quests/lv-mv';maps.OUT.mkdir(parents=True,exist_ok=True)
-        rendered=[maps.render(CHAPTERS/(name+'.snbt'),image) for name,image in [('5e80000000000000','lv-metallurgy.png'),('5e90000000000000','mv-chemistry.png'),('5ea0000000000000','running-shoes.png')]]
+        rendered=[maps.render(CHAPTERS/(name+'.snbt'),image) for name,image in [('5ec0000000000000','lv-metallurgy.png'),('5ed0000000000000','mv-chemistry.png'),('5ea0000000000000','running-shoes.png')]]
         write(maps.OUT/'previews.json',rendered)
     print('Added 25 LV quests, 25 MV quests and 7 optional running-shoe quests; preserved existing IDs.')
 if __name__=='__main__':main()

@@ -1,0 +1,10 @@
+Real server ticks: 640
+Sluice paid cycles: 11
+Iron drill cycles: 64
+Compost cycles: 3
+Silk cycles: 1
+Electric greenhouse harvests: 3, 3
+Electric drill cycles: 3
+Foundry: Smelting
+Storage slots: 324
+The staged creative build uses actual creative motors/FE supplies and finite stocked inputs; products are made by native machine ticks and hoppers.

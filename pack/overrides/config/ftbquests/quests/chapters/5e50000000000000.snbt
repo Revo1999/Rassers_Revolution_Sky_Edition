@@ -293,11 +293,13 @@
         "5E50000000000007",
         "5E50000000000008",
         "5E50000000000009",
-        "5E50000000000016"
+        "5E50000000000019"
       ],
       "description": [
+        "Before the first hull, make Redstone Batteries with the copper/zinc starter recipe shown in EMI; native battery alloy is also available from mechanical Steel Drill lead and antimony.",
         "Hand-craft the LV Steam Turbine from a basic hull, circuit, two motors, two tin rotors, pipes and a tin cable. Feed steam from your existing steam infrastructure.",
-        "Connect turbine -> tin cable -> electric machine. EU powers machines; the Basic Power Converter changes energy format and generates no power. Create New Age has an optional steel-gated magnetite crafting route."
+        "Connect turbine -> tin cable -> electric machine. EU powers machines; the Basic Power Converter changes energy format and generates no power. Create New Age has an optional steel-gated magnetite crafting route.",
+        "Next: open Chapter 5: The LV Factory for power distribution, component automation, the Electric Blast Furnace and your first aluminum."
       ],
       "tasks": [
         {
@@ -603,10 +605,10 @@
       "dependencies": [
         "5E50000000000013",
         "5E5000000000000B",
-        "5E80000000000015"
+        "5EC0000000000015"
       ],
       "description": [
-        "First build the native Centrifuge through Chapter 5: EBF aluminum/silicon, Electronic Circuits, Large Motors and a Large Pump. The geode can be constructed earlier and its salt water buffered.",
+        "First build the native Centrifuge through Chapter 6: EBF aluminum/silicon, Electronic Circuits, Large Motors and a Large Pump. The geode can be constructed earlier and its salt water buffered.",
         "Pipe salt water from the powered geode chamber into the MI Centrifuge and collect Salt Dust with its native recipe. You do not need a new fluid solidifier or a manual salt bootstrap."
       ],
       "tasks": [
@@ -772,6 +774,38 @@
           "type": "item",
           "item": {
             "id": "ae2:certus_quartz_crystal",
+            "count": 1
+          },
+          "count": 2,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5E50000000000019",
+      "title": "Starter Batteries for LV",
+      "icon": {
+        "id": "modern_industrialization:redstone_battery",
+        "count": 1
+      },
+      "x": 12.0,
+      "y": 3.0,
+      "shape": "circle",
+      "dependencies": [
+        "5E50000000000008"
+      ],
+      "description": [
+        "Before electric drilling supplies lead and antimony, craft Redstone Batteries from three copper plates, two zinc ingots, two redstone and two tin cables each.",
+        "Two batteries go into one Basic Machine Hull. Zinc comes from your Iron/Steel Drill and copper plates from the existing steam/Create workshop.",
+        "The native battery-alloy route stays available later. No previous quest or task ID has changed; this added lesson does not relock an already completed turbine quest."
+      ],
+      "tasks": [
+        {
+          "id": "5E50000000100019",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:redstone_battery",
             "count": 1
           },
           "count": 2,

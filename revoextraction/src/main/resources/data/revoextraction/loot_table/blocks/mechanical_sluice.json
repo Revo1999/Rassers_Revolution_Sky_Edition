@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "revoextraction:mechanical_sluice",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "revoextraction:mechanical_sluice",
+              "properties": {
+                "part": "0"
+              }
+            }
+          ]
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ]
+    }
+  ]
+}

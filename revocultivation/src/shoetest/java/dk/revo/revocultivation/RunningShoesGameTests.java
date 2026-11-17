@@ -57,8 +57,8 @@ public final class RunningShoesGameTests {
         }
         var starter=new ItemStack(RunningShoes.SEEDS.get());
         helper.assertTrue(MachineKind.GREENHOUSE.acceptsStarter(starter)&&MachineKind.IRON_GREENHOUSE.acceptsStarter(starter),"Both greenhouses accept cotton");
-        helper.assertTrue(MachineKind.GREENHOUSE.program(starter,0)==17,"Cotton appends program 17 without changing existing IDs");
-        helper.assertTrue(MachineKind.products(17).getFirst().is(RunningShoes.COTTON.get()),"Cotton harvest produces cotton");
+        helper.assertTrue(MachineKind.GREENHOUSE.program(starter,0)==32,"Cotton uses separate program 32 alongside late greenhouse crops");
+        helper.assertTrue(MachineKind.products(32).getFirst().is(RunningShoes.COTTON.get()),"Cotton harvest produces cotton");
         var pos=helper.absolutePos(new BlockPos(5,2,5));helper.getLevel().setBlockAndUpdate(pos.below(),Blocks.FARMLAND.defaultBlockState());
         helper.getLevel().setBlockAndUpdate(pos,RunningShoes.CROP.get().getStateForAge(7));
         var drops=net.minecraft.world.level.block.Block.getDrops(helper.getLevel().getBlockState(pos),helper.getLevel(),pos,null);

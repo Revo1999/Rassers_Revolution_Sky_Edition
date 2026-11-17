@@ -1,0 +1,786 @@
+{
+  "id": "5ED0000000000000",
+  "filename": "5ed0000000000000",
+  "title": "Chapter 7: MV - Power and Chemistry",
+  "icon": {
+    "id": "modern_industrialization:mv_steam_turbine",
+    "count": 1
+  },
+  "order_index": 47,
+  "default_quest_shape": "circle",
+  "quests": [
+    {
+      "id": "5ED0000000000001",
+      "title": "Beyond the First Circuit",
+      "icon": {
+        "id": "modern_industrialization:electronic_circuit",
+        "count": 1
+      },
+      "x": 0.0,
+      "y": 0.0,
+      "shape": "hexagon",
+      "size": 1.25,
+      "dependencies": [
+        "5EC0000000000017"
+      ],
+      "description": [
+        "Your first circuits and large components establish the manufacturing base. Now separate the MV power branch from the chemistry branch; both support the finished factory.",
+        "These quests guide the installed MI recipes. They do not unlock the art-only Nexus machines or bypass the implemented MV AE2 gates."
+      ],
+      "tasks": [
+        {
+          "id": "5ED0000000100010",
+          "type": "checkmark"
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5ED0000000000002",
+      "title": "Silicon Batteries",
+      "icon": {
+        "id": "modern_industrialization:silicon_battery",
+        "count": 1
+      },
+      "x": 3.0,
+      "y": 0.0,
+      "shape": "circle",
+      "size": 1.0,
+      "dependencies": [
+        "5ED0000000000001"
+      ],
+      "description": [
+        "Craft two Silicon Batteries using Silicon Dust, Battery Alloy plates/curved plates and Electrum Cable.",
+        "The battery recipe still needs lead and antimony from your drill supply. Silicon batteries do not replace the need to generate electricity."
+      ],
+      "tasks": [
+        {
+          "id": "5ED0000000100020",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:silicon_battery",
+            "count": 1
+          },
+          "count": 2,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5ED0000000000003",
+      "title": "Advanced Casings",
+      "icon": {
+        "id": "modern_industrialization:advanced_machine_casing",
+        "count": 1
+      },
+      "x": 6.0,
+      "y": 0.0,
+      "shape": "circle",
+      "size": 1.0,
+      "dependencies": [
+        "5ED0000000000002"
+      ],
+      "description": [
+        "Use the native Advanced Machine Casing recipe in EMI. Stock its required processed materials before committing your last aluminum to machines.",
+        "The subsequent hull consumes the casing, batteries, electronic circuit and electrum cables."
+      ],
+      "tasks": [
+        {
+          "id": "5ED0000000100030",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:advanced_machine_casing",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5ED0000000000004",
+      "title": "Advanced Machine Hull",
+      "icon": {
+        "id": "modern_industrialization:advanced_machine_hull",
+        "count": 1
+      },
+      "x": 9.0,
+      "y": 0.0,
+      "shape": "hexagon",
+      "size": 1.25,
+      "dependencies": [
+        "5ED0000000000003"
+      ],
+      "description": [
+        "Combine one Advanced Machine Casing, two Silicon Batteries, one Electronic Circuit and three Electrum Cables using the native recipe.",
+        "Keep a spare supply of the smaller components so building your generator does not stall the factory that makes its replacements."
+      ],
+      "tasks": [
+        {
+          "id": "5ED0000000100040",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:advanced_machine_hull",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5ED0000000000005",
+      "title": "MV Steam Generation",
+      "icon": {
+        "id": "modern_industrialization:mv_steam_turbine",
+        "count": 1
+      },
+      "x": 12.0,
+      "y": 0.0,
+      "shape": "circle",
+      "size": 1.0,
+      "dependencies": [
+        "5ED0000000000004"
+      ],
+      "description": [
+        "Build the MV Steam Turbine with the native advanced hull, electronic circuit, aluminum rotors, Large Motors, pipes and electrum cable.",
+        "Expand renewable boiler water and fuel delivery. Available steam throughput determines sustained generation; a larger turbine cannot fix starved boilers."
+      ],
+      "tasks": [
+        {
+          "id": "5ED0000000100050",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:mv_steam_turbine",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5ED0000000000006",
+      "title": "Cable the MV Network",
+      "icon": {
+        "id": "modern_industrialization:electrum_cable",
+        "count": 1
+      },
+      "x": 15.0,
+      "y": 0.0,
+      "shape": "circle",
+      "size": 1.0,
+      "dependencies": [
+        "5ED0000000000005"
+      ],
+      "description": [
+        "Build a dedicated Electrum Cable network and check the native cable voltage limits. Keep lower-tier consumers on a suitable supply.",
+        "Item detection confirms possession only. Connect and inspect the actual network before continuing."
+      ],
+      "tasks": [
+        {
+          "id": "5ED0000000100060",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:electrum_cable",
+            "count": 1
+          },
+          "count": 16,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5ED0000000000007",
+      "title": "Step Down for LV",
+      "icon": {
+        "id": "modern_industrialization:mv_lv_transformer",
+        "count": 1
+      },
+      "x": 18.0,
+      "y": 0.0,
+      "shape": "circle",
+      "size": 1.0,
+      "dependencies": [
+        "5ED0000000000006"
+      ],
+      "description": [
+        "Use the MV to LV Transformer for the older network. Check its input/output sides and cable limits; the LV to MV Transformer has the opposite job.",
+        "Changing voltage does not create energy. Keep enough generation for the combined simultaneous load."
+      ],
+      "tasks": [
+        {
+          "id": "5ED0000000100070",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:mv_lv_transformer",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5ED0000000000008",
+      "title": "Sustained MV Power",
+      "icon": {
+        "id": "modern_industrialization:mv_steam_turbine",
+        "count": 1
+      },
+      "x": 21.0,
+      "y": 0.0,
+      "shape": "hexagon",
+      "size": 1.25,
+      "dependencies": [
+        "5ED0000000000007"
+      ],
+      "description": [
+        "Check this after the MV network runs a production load while the LV side continues working through its transformer.",
+        "Watch boiler fuel, water, steam delivery and machine input buffers over several cycles. A momentary full buffer is not a sustained factory."
+      ],
+      "tasks": [
+        {
+          "id": "5ED0000000100080",
+          "type": "checkmark"
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5ED0000000000009",
+      "title": "Chemical Reactor",
+      "icon": {
+        "id": "modern_industrialization:chemical_reactor",
+        "count": 1
+      },
+      "x": 0.0,
+      "y": 5.0,
+      "shape": "circle",
+      "size": 1.0,
+      "dependencies": [
+        "5ED0000000000001"
+      ],
+      "description": [
+        "Build the native Chemical Reactor using the now-established Electronic Circuits, aluminum parts and Large Pump.",
+        "This chapter uses the existing single-block machines. No new coil-tiered processing multiblock is required."
+      ],
+      "tasks": [
+        {
+          "id": "5ED0000000100090",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:chemical_reactor",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5ED000000000000A",
+      "title": "Separate Fluid Lines",
+      "icon": {
+        "id": "modern_industrialization:fluid_pipe",
+        "count": 1
+      },
+      "x": 3.0,
+      "y": 5.0,
+      "shape": "circle",
+      "size": 1.0,
+      "dependencies": [
+        "5ED0000000000009"
+      ],
+      "description": [
+        "Give each feed and product a deliberate pipe route, configured machine side and storage destination. Keep tanks and output slots from blocking byproducts.",
+        "Check this after transferring an actual input and collecting a machine output. Never mix fluids because their names or colours look similar."
+      ],
+      "tasks": [
+        {
+          "id": "5ED00000001000A0",
+          "type": "checkmark"
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5ED000000000000B",
+      "title": "Renewable Salt Supply",
+      "icon": {
+        "id": "modern_industrialization:salt_dust",
+        "count": 1
+      },
+      "x": 6.0,
+      "y": 5.0,
+      "shape": "circle",
+      "size": 1.0,
+      "dependencies": [
+        "5ED000000000000A",
+        "5E50000000000014"
+      ],
+      "description": [
+        "Keep the 3 x 3 x 3 Salt Geode Chamber supplied with water and 16 EU/t. Pipe its salt water into the native Centrifuge.",
+        "Collect Salt Dust with the existing recipe. Alternatively the pulled Salt Crystal Geode program in the powered Iron Greenhouse supplies salt at 8 EU/t with water; it does not require the Centrifuge."
+      ],
+      "tasks": [
+        {
+          "id": "5ED00000001000B0",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:salt_dust",
+            "count": 1
+          },
+          "count": 8,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5ED000000000000C",
+      "title": "Water into Gases",
+      "icon": {
+        "id": "modern_industrialization:electrolyzer",
+        "count": 1
+      },
+      "x": 9.0,
+      "y": 5.0,
+      "shape": "circle",
+      "size": 1.0,
+      "dependencies": [
+        "5ED000000000000A"
+      ],
+      "description": [
+        "Run the native water Electrolyzer recipe and route hydrogen and oxygen to separate destinations.",
+        "Check this after collecting both products. Leave space for every output; a full gas destination can stop the entire separation cycle."
+      ],
+      "tasks": [
+        {
+          "id": "5ED00000001000C0",
+          "type": "checkmark"
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5ED000000000000D",
+      "title": "Chlorine from Salt",
+      "icon": {
+        "id": "modern_industrialization:salt_dust",
+        "count": 1
+      },
+      "x": 12.0,
+      "y": 5.0,
+      "shape": "circle",
+      "size": 1.0,
+      "dependencies": [
+        "5ED000000000000B",
+        "5ED000000000000C"
+      ],
+      "description": [
+        "Use native salt electrolysis to obtain chlorine and its other product. Keep hydrogen from water electrolysis available for the acid step.",
+        "Check this after collecting chlorine and routing all byproducts. Salt comes from the chamber/centrifuge line, not a quarry deposit."
+      ],
+      "tasks": [
+        {
+          "id": "5ED00000001000D0",
+          "type": "checkmark"
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5ED000000000000E",
+      "title": "Hydrochloric Acid",
+      "icon": {
+        "id": "modern_industrialization:hydrochloric_acid_bucket",
+        "count": 1
+      },
+      "x": 15.0,
+      "y": 5.0,
+      "shape": "circle",
+      "size": 1.0,
+      "dependencies": [
+        "5ED000000000000D"
+      ],
+      "description": [
+        "Chemical Reactor: 1,000 mB Hydrogen plus 1,000 mB Chlorine makes 2,000 mB Hydrochloric Acid at 8 EU/t for 100 ticks.",
+        "Check this after collecting acid in its own fluid destination. Native advanced metal refining will use it later."
+      ],
+      "tasks": [
+        {
+          "id": "5ED00000001000E0",
+          "type": "checkmark"
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5ED000000000000F",
+      "title": "Sulfur from Lava",
+      "icon": {
+        "id": "modern_industrialization:sulfur_dust",
+        "count": 1
+      },
+      "x": 9.0,
+      "y": 9.0,
+      "shape": "circle",
+      "size": 1.0,
+      "dependencies": [
+        "5ED000000000000A"
+      ],
+      "description": [
+        "Keep the early crucible/cobblestone lava supply working and process lava in the native Centrifuge recipe at 32 EU/t.",
+        "Collect its sulfur and handle the other outputs. Sulfur already has this refining route; a new drill deposit is unnecessary."
+      ],
+      "tasks": [
+        {
+          "id": "5ED00000001000F0",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:sulfur_dust",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5ED0000000000010",
+      "title": "The Distillery",
+      "icon": {
+        "id": "modern_industrialization:distillery",
+        "count": 1
+      },
+      "x": 0.0,
+      "y": 13.0,
+      "shape": "circle",
+      "size": 1.0,
+      "dependencies": [
+        "5ED0000000000009"
+      ],
+      "description": [
+        "Build the native Distillery with Electronic Circuits and Large Pumps. Connect input/output fluid routes and power.",
+        "The renewable ethanol route works on a void island and does not require finding an oil deposit."
+      ],
+      "tasks": [
+        {
+          "id": "5ED0000000100100",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:distillery",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5ED0000000000011",
+      "title": "Sugar Solution",
+      "icon": {
+        "id": "modern_industrialization:sugar_solution_bucket",
+        "count": 1
+      },
+      "x": 3.0,
+      "y": 13.0,
+      "shape": "circle",
+      "size": 1.0,
+      "dependencies": [
+        "5ED0000000000010",
+        "5E50000000000001"
+      ],
+      "description": [
+        "Grow sugar cane in your greenhouse and craft sugar. Native Mixer: eight Sugar plus 1,000 mB Water makes 1,000 mB Sugar Solution.",
+        "Check this after collecting a batch. Keep the paper supply for rubber separate from the cane you divert into chemistry."
+      ],
+      "tasks": [
+        {
+          "id": "5ED0000000100110",
+          "type": "checkmark"
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5ED0000000000012",
+      "title": "Distill Renewable Ethanol",
+      "icon": {
+        "id": "modern_industrialization:ethanol_bucket",
+        "count": 1
+      },
+      "x": 6.0,
+      "y": 13.0,
+      "shape": "circle",
+      "size": 1.0,
+      "dependencies": [
+        "5ED0000000000011"
+      ],
+      "description": [
+        "The native Distillery turns 1,000 mB Sugar Solution into only 10 mB Ethanol at 8 EU/t for 800 ticks.",
+        "Check this after a completed distillation cycle. This starter route is deliberately low-yield: scale crops, water and parallel processing rather than assuming one bucket in gives one bucket out."
+      ],
+      "tasks": [
+        {
+          "id": "5ED0000000100120",
+          "type": "checkmark"
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5ED0000000000013",
+      "title": "Ethylene Feedstock",
+      "icon": {
+        "id": "modern_industrialization:ethylene_bucket",
+        "count": 1
+      },
+      "x": 9.0,
+      "y": 13.0,
+      "shape": "circle",
+      "size": 1.0,
+      "dependencies": [
+        "5ED0000000000012",
+        "5ED000000000000F"
+      ],
+      "description": [
+        "Chemical Reactor: 1,000 mB Ethanol plus one Sulfur Dust produces 500 mB Ethylene and 400 mB Sulfuric Acid at 10 EU/t for 280 ticks.",
+        "Check this after collecting both fluids. Give the acid byproduct an output destination so it cannot stop ethylene production."
+      ],
+      "tasks": [
+        {
+          "id": "5ED0000000100130",
+          "type": "checkmark"
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5ED0000000000014",
+      "title": "Your First Polyethylene",
+      "icon": {
+        "id": "modern_industrialization:polyethylene_bucket",
+        "count": 1
+      },
+      "x": 12.0,
+      "y": 13.0,
+      "shape": "hexagon",
+      "size": 1.25,
+      "dependencies": [
+        "5ED0000000000013"
+      ],
+      "description": [
+        "Use the native lead route first: 500 mB Ethylene plus four Lead Tiny Dust gives 300 mB Polyethylene at 12 EU/t for 700 ticks.",
+        "Check this after collecting plastic. Chromium gives a later alternative yield, but is not required to bootstrap the first plastic. Keep making lead from drills."
+      ],
+      "tasks": [
+        {
+          "id": "5ED0000000100140",
+          "type": "checkmark"
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5ED0000000000015",
+      "title": "Fluid-Aware Assembly",
+      "icon": {
+        "id": "modern_industrialization:assembler",
+        "count": 1
+      },
+      "x": 15.0,
+      "y": 13.0,
+      "shape": "circle",
+      "size": 1.0,
+      "dependencies": [
+        "5ED0000000000014",
+        "5EC0000000000018"
+      ],
+      "description": [
+        "Connect Polyethylene to the existing Assembler fluid input and configure its item supply/output. The Assembler itself was craftable before these fluids.",
+        "Check this after the machine can receive its plastic feed. Keep enough separate inputs for the native upgrade recipe."
+      ],
+      "tasks": [
+        {
+          "id": "5ED0000000100150",
+          "type": "checkmark"
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5ED0000000000016",
+      "title": "Basic Machine Upgrades",
+      "icon": {
+        "id": "modern_industrialization:basic_upgrade",
+        "count": 1
+      },
+      "x": 18.0,
+      "y": 13.0,
+      "shape": "circle",
+      "size": 1.0,
+      "dependencies": [
+        "5ED0000000000015"
+      ],
+      "description": [
+        "Assembler: two Conveyors, four Motors, two Robot Arms and one Analog Circuit Board make four Basic Upgrades at 8 EU/t for 200 ticks.",
+        "Stock these while maintaining the old component lines. Basic Upgrades do not themselves require plastic."
+      ],
+      "tasks": [
+        {
+          "id": "5ED0000000100160",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:basic_upgrade",
+            "count": 1
+          },
+          "count": 4,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5ED0000000000017",
+      "title": "Advanced Machine Upgrades",
+      "icon": {
+        "id": "modern_industrialization:advanced_upgrade",
+        "count": 1
+      },
+      "x": 21.0,
+      "y": 13.0,
+      "shape": "circle",
+      "size": 1.0,
+      "dependencies": [
+        "5ED0000000000016"
+      ],
+      "description": [
+        "Assembler: four Basic Upgrades, two Large Motors, one Large Pump, one Electronic Circuit Board and 1,000 mB Polyethylene make four Advanced Upgrades at 8 EU/t for 400 ticks.",
+        "These tie the old mechanical components, EBF electronics and renewable chemistry into one production chain."
+      ],
+      "tasks": [
+        {
+          "id": "5ED0000000100170",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:advanced_upgrade",
+            "count": 1
+          },
+          "count": 4,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5ED0000000000018",
+      "title": "Use the Extra Throughput",
+      "icon": {
+        "id": "modern_industrialization:advanced_upgrade",
+        "count": 1
+      },
+      "x": 24.0,
+      "y": 13.0,
+      "shape": "circle",
+      "size": 1.0,
+      "dependencies": [
+        "5ED0000000000017",
+        "5ED0000000000008"
+      ],
+      "description": [
+        "Install supported upgrades in an appropriate native electric machine and complete a production cycle on the intended power network.",
+        "Check this after confirming the upgrade is accepted and its input/output logistics can keep up. More throughput may increase demand; follow the machine diagnostics."
+      ],
+      "tasks": [
+        {
+          "id": "5ED0000000100180",
+          "type": "checkmark"
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5ED0000000000019",
+      "title": "An Integrated MV Factory",
+      "icon": {
+        "id": "modern_industrialization:mv_steam_turbine",
+        "count": 1
+      },
+      "x": 24.0,
+      "y": 5.0,
+      "shape": "hexagon",
+      "size": 1.25,
+      "dependencies": [
+        "5ED0000000000018",
+        "5ED000000000000E"
+      ],
+      "description": [
+        "Check this after sustaining MV power, retaining a working LV supply, producing Electronic Circuits, handling gases/acids and making Advanced Upgrades from renewable plastic.",
+        "This completes the guided first-MV factory, not every MI recipe. Advanced metallurgy and later power need their own chapters; AE2 starter recipes and MV circuit gates are now implemented, while separate autocrafting/addon boundaries still need review. The Nexus models are still art/design and do not count as implemented machines."
+      ],
+      "tasks": [
+        {
+          "id": "5ED0000000100190",
+          "type": "checkmark"
+        }
+      ],
+      "rewards": []
+    }
+  ],
+  "images": [
+    {
+      "id": "5ED0000000007001",
+      "x": 10.5,
+      "y": -2.0,
+      "width": 25.0,
+      "height": 0.9,
+      "image": "#263843",
+      "title": "BUILD AN MV POWER NETWORK",
+      "text_on_image": true,
+      "text_shadow": true,
+      "text_inset": 3,
+      "position_locked": true,
+      "order": -10
+    },
+    {
+      "id": "5ED0000000007002",
+      "x": 9.0,
+      "y": 3.0,
+      "width": 21.0,
+      "height": 0.9,
+      "image": "#263843",
+      "title": "GASES AND ACIDS",
+      "text_on_image": true,
+      "text_shadow": true,
+      "text_inset": 3,
+      "position_locked": true,
+      "order": -10
+    },
+    {
+      "id": "5ED0000000007003",
+      "x": 12.0,
+      "y": 11.0,
+      "width": 27.0,
+      "height": 0.9,
+      "image": "#263843",
+      "title": "RENEWABLE PLASTIC AND MANUFACTURING",
+      "text_on_image": true,
+      "text_shadow": true,
+      "text_inset": 3,
+      "position_locked": true,
+      "order": -10
+    }
+  ]
+}

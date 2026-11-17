@@ -1,0 +1,1897 @@
+{
+  "credit": "Made with Blockbench",
+  "textures": {
+    "0": "create:block/andesite_casing",
+    "1": "create:block/axis",
+    "2": "revoextraction:block/sluice/wood",
+    "3": "create:block/brass_block",
+    "4": "create:block/copper_casing",
+    "9": "revoextraction:block/sluice/dark",
+    "15": "create:block/industrial_iron_block",
+    "particle": "create:block/andesite_casing"
+  },
+  "elements": [
+    {
+      "name": "gate_slide_housing",
+      "from": [
+        -1,
+        0.2,
+        7
+      ],
+      "to": [
+        1,
+        4,
+        11
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          8,
+          -16,
+          0
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            2,
+            3.8
+          ],
+          "texture": "#0"
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            4,
+            3.8
+          ],
+          "texture": "#0"
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            2,
+            3.8
+          ],
+          "texture": "#0"
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            4,
+            3.8
+          ],
+          "texture": "#0"
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            2,
+            4
+          ],
+          "texture": "#0"
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            2,
+            4
+          ],
+          "texture": "#0"
+        }
+      }
+    },
+    {
+      "name": "rear_manifold",
+      "from": [
+        2,
+        0,
+        0
+      ],
+      "to": [
+        14,
+        13,
+        4
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          8,
+          -16,
+          0
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            12,
+            13
+          ],
+          "texture": "#0"
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            4,
+            13
+          ],
+          "texture": "#0"
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            12,
+            13
+          ],
+          "texture": "#0"
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            4,
+            13
+          ],
+          "texture": "#0"
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            12,
+            4
+          ],
+          "texture": "#0"
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            12,
+            4
+          ],
+          "texture": "#0"
+        }
+      }
+    },
+    {
+      "name": "pipe_flange",
+      "from": [
+        4,
+        4,
+        -1
+      ],
+      "to": [
+        12,
+        12,
+        1
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          8,
+          -16,
+          0
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            8,
+            8
+          ],
+          "texture": "#4"
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            2,
+            8
+          ],
+          "texture": "#4"
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            8,
+            8
+          ],
+          "texture": "#4"
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            2,
+            8
+          ],
+          "texture": "#4"
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            8,
+            2
+          ],
+          "texture": "#4"
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            8,
+            2
+          ],
+          "texture": "#4"
+        }
+      }
+    },
+    {
+      "name": "pipe_bore",
+      "from": [
+        6,
+        6,
+        -1.12
+      ],
+      "to": [
+        10,
+        10,
+        -1.02
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          8,
+          -16,
+          0
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            4,
+            4
+          ],
+          "texture": "#9"
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            0.1,
+            4
+          ],
+          "texture": "#9"
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            4,
+            4
+          ],
+          "texture": "#9"
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            0.1,
+            4
+          ],
+          "texture": "#9"
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            4,
+            0.1
+          ],
+          "texture": "#9"
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            4,
+            0.1
+          ],
+          "texture": "#9"
+        }
+      }
+    },
+    {
+      "name": "inlet_spout",
+      "from": [
+        5,
+        1,
+        12
+      ],
+      "to": [
+        11,
+        3,
+        15
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          8,
+          -16,
+          0
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            6,
+            2
+          ],
+          "texture": "#15"
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            3,
+            2
+          ],
+          "texture": "#15"
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            6,
+            2
+          ],
+          "texture": "#15"
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            3,
+            2
+          ],
+          "texture": "#15"
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            6,
+            3
+          ],
+          "texture": "#15"
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            6,
+            3
+          ],
+          "texture": "#15"
+        }
+      }
+    },
+    {
+      "name": "intake_wood_side_-1",
+      "from": [
+        0,
+        2,
+        4
+      ],
+      "to": [
+        2,
+        14.004,
+        15
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          8,
+          -16,
+          0
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            2,
+            12
+          ],
+          "texture": "#2"
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            11,
+            12
+          ],
+          "texture": "#2"
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            2,
+            12
+          ],
+          "texture": "#2"
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            11,
+            12
+          ],
+          "texture": "#2"
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            2,
+            11
+          ],
+          "texture": "#2"
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            2,
+            11
+          ],
+          "texture": "#2"
+        }
+      }
+    },
+    {
+      "name": "intake_front_jamb_-1",
+      "from": [
+        -0.004,
+        1.996,
+        14
+      ],
+      "to": [
+        4,
+        13,
+        16
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          8,
+          -16,
+          0
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            4,
+            11
+          ],
+          "texture": "#2"
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            2,
+            11
+          ],
+          "texture": "#2"
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            4,
+            11
+          ],
+          "texture": "#2"
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            2,
+            11
+          ],
+          "texture": "#2"
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            4,
+            2
+          ],
+          "texture": "#2"
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            4,
+            2
+          ],
+          "texture": "#2"
+        }
+      }
+    },
+    {
+      "name": "intake_front_brass_-1",
+      "from": [
+        3,
+        3,
+        15.95
+      ],
+      "to": [
+        4.004,
+        13.004,
+        16.65
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          8,
+          -16,
+          0
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            2,
+            2,
+            3,
+            12
+          ],
+          "texture": "#3"
+        },
+        "east": {
+          "uv": [
+            2,
+            2,
+            2.7,
+            12
+          ],
+          "texture": "#3"
+        },
+        "south": {
+          "uv": [
+            2,
+            2,
+            3,
+            12
+          ],
+          "texture": "#3"
+        },
+        "west": {
+          "uv": [
+            2,
+            2,
+            2.7,
+            12
+          ],
+          "texture": "#3"
+        },
+        "up": {
+          "uv": [
+            2,
+            2,
+            3,
+            2.7
+          ],
+          "texture": "#3"
+        },
+        "down": {
+          "uv": [
+            2,
+            2,
+            3,
+            2.7
+          ],
+          "texture": "#3"
+        }
+      }
+    },
+    {
+      "name": "intake_corner_-1",
+      "from": [
+        -0.5,
+        12.5,
+        13.5
+      ],
+      "to": [
+        1.5,
+        15,
+        16.5
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          8,
+          -16,
+          0
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            6,
+            0,
+            8,
+            2.5
+          ],
+          "texture": "#1"
+        },
+        "east": {
+          "uv": [
+            6,
+            0,
+            8.5,
+            3
+          ],
+          "rotation": 90,
+          "texture": "#1"
+        },
+        "south": {
+          "uv": [
+            6,
+            0,
+            8,
+            2.5
+          ],
+          "texture": "#1"
+        },
+        "west": {
+          "uv": [
+            6,
+            0,
+            8.5,
+            3
+          ],
+          "rotation": 90,
+          "texture": "#1"
+        },
+        "up": {
+          "uv": [
+            6,
+            0,
+            8,
+            3
+          ],
+          "texture": "#1"
+        },
+        "down": {
+          "uv": [
+            6,
+            0,
+            8,
+            3
+          ],
+          "texture": "#1"
+        }
+      }
+    },
+    {
+      "name": "intake_post_-1",
+      "from": [
+        1,
+        -1,
+        9
+      ],
+      "to": [
+        2,
+        2,
+        11
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          8,
+          -16,
+          0
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            6,
+            0,
+            7,
+            3
+          ],
+          "texture": "#1"
+        },
+        "east": {
+          "uv": [
+            6,
+            0,
+            8,
+            3
+          ],
+          "texture": "#1"
+        },
+        "south": {
+          "uv": [
+            6,
+            0,
+            7,
+            3
+          ],
+          "texture": "#1"
+        },
+        "west": {
+          "uv": [
+            6,
+            0,
+            8,
+            3
+          ],
+          "texture": "#1"
+        },
+        "up": {
+          "uv": [
+            6,
+            0,
+            7,
+            2
+          ],
+          "texture": "#1"
+        },
+        "down": {
+          "uv": [
+            6,
+            0,
+            7,
+            2
+          ],
+          "texture": "#1"
+        }
+      }
+    },
+    {
+      "name": "intake_wood_side_1",
+      "from": [
+        14,
+        2,
+        4
+      ],
+      "to": [
+        16,
+        14.004,
+        15
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          8,
+          -16,
+          0
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            2,
+            12
+          ],
+          "texture": "#2"
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            11,
+            12
+          ],
+          "texture": "#2"
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            2,
+            12
+          ],
+          "texture": "#2"
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            11,
+            12
+          ],
+          "texture": "#2"
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            2,
+            11
+          ],
+          "texture": "#2"
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            2,
+            11
+          ],
+          "texture": "#2"
+        }
+      }
+    },
+    {
+      "name": "intake_front_jamb_1",
+      "from": [
+        12,
+        1.996,
+        14
+      ],
+      "to": [
+        16.004,
+        13,
+        16
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          8,
+          -16,
+          0
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            4,
+            11
+          ],
+          "texture": "#2"
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            2,
+            11
+          ],
+          "texture": "#2"
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            4,
+            11
+          ],
+          "texture": "#2"
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            2,
+            11
+          ],
+          "texture": "#2"
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            4,
+            2
+          ],
+          "texture": "#2"
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            4,
+            2
+          ],
+          "texture": "#2"
+        }
+      }
+    },
+    {
+      "name": "intake_front_brass_1",
+      "from": [
+        11.996,
+        3,
+        15.95
+      ],
+      "to": [
+        13,
+        13.004,
+        16.65
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          8,
+          -16,
+          0
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            2,
+            2,
+            3,
+            12
+          ],
+          "texture": "#3"
+        },
+        "east": {
+          "uv": [
+            2,
+            2,
+            2.7,
+            12
+          ],
+          "texture": "#3"
+        },
+        "south": {
+          "uv": [
+            2,
+            2,
+            3,
+            12
+          ],
+          "texture": "#3"
+        },
+        "west": {
+          "uv": [
+            2,
+            2,
+            2.7,
+            12
+          ],
+          "texture": "#3"
+        },
+        "up": {
+          "uv": [
+            2,
+            2,
+            3,
+            2.7
+          ],
+          "texture": "#3"
+        },
+        "down": {
+          "uv": [
+            2,
+            2,
+            3,
+            2.7
+          ],
+          "texture": "#3"
+        }
+      }
+    },
+    {
+      "name": "intake_corner_1",
+      "from": [
+        14.5,
+        12.5,
+        13.5
+      ],
+      "to": [
+        16.5,
+        15,
+        16.5
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          8,
+          -16,
+          0
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            6,
+            0,
+            8,
+            2.5
+          ],
+          "texture": "#1"
+        },
+        "east": {
+          "uv": [
+            6,
+            0,
+            8.5,
+            3
+          ],
+          "rotation": 90,
+          "texture": "#1"
+        },
+        "south": {
+          "uv": [
+            6,
+            0,
+            8,
+            2.5
+          ],
+          "texture": "#1"
+        },
+        "west": {
+          "uv": [
+            6,
+            0,
+            8.5,
+            3
+          ],
+          "rotation": 90,
+          "texture": "#1"
+        },
+        "up": {
+          "uv": [
+            6,
+            0,
+            8,
+            3
+          ],
+          "texture": "#1"
+        },
+        "down": {
+          "uv": [
+            6,
+            0,
+            8,
+            3
+          ],
+          "texture": "#1"
+        }
+      }
+    },
+    {
+      "name": "intake_post_1",
+      "from": [
+        14,
+        -1,
+        9
+      ],
+      "to": [
+        15,
+        2,
+        11
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          8,
+          -16,
+          0
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            6,
+            0,
+            7,
+            3
+          ],
+          "texture": "#1"
+        },
+        "east": {
+          "uv": [
+            6,
+            0,
+            8,
+            3
+          ],
+          "texture": "#1"
+        },
+        "south": {
+          "uv": [
+            6,
+            0,
+            7,
+            3
+          ],
+          "texture": "#1"
+        },
+        "west": {
+          "uv": [
+            6,
+            0,
+            8,
+            3
+          ],
+          "texture": "#1"
+        },
+        "up": {
+          "uv": [
+            6,
+            0,
+            7,
+            2
+          ],
+          "texture": "#1"
+        },
+        "down": {
+          "uv": [
+            6,
+            0,
+            7,
+            2
+          ],
+          "texture": "#1"
+        }
+      }
+    },
+    {
+      "name": "intake_front_lintel",
+      "from": [
+        -0.008,
+        12,
+        13.996
+      ],
+      "to": [
+        16.008,
+        14,
+        16.004
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          8,
+          -16,
+          0
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            2,
+            2,
+            14,
+            4
+          ],
+          "texture": "#3"
+        },
+        "east": {
+          "uv": [
+            2,
+            2,
+            4,
+            4
+          ],
+          "texture": "#3"
+        },
+        "south": {
+          "uv": [
+            2,
+            2,
+            14,
+            4
+          ],
+          "texture": "#3"
+        },
+        "west": {
+          "uv": [
+            2,
+            2,
+            4,
+            4
+          ],
+          "texture": "#3"
+        },
+        "up": {
+          "uv": [
+            2,
+            2,
+            14,
+            4
+          ],
+          "texture": "#3"
+        },
+        "down": {
+          "uv": [
+            2,
+            2,
+            14,
+            4
+          ],
+          "texture": "#3"
+        }
+      }
+    },
+    {
+      "name": "intake_roof_front",
+      "from": [
+        -0.004,
+        14,
+        11
+      ],
+      "to": [
+        16.004,
+        16,
+        16
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          8,
+          -16,
+          0
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            16,
+            2
+          ],
+          "texture": "#2"
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            5,
+            2
+          ],
+          "texture": "#2"
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            16,
+            2
+          ],
+          "texture": "#2"
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            5,
+            2
+          ],
+          "texture": "#2"
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            16,
+            5
+          ],
+          "texture": "#2"
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            16,
+            5
+          ],
+          "texture": "#2"
+        }
+      }
+    },
+    {
+      "name": "intake_roof_rear",
+      "from": [
+        -0.004,
+        14,
+        0
+      ],
+      "to": [
+        16.004,
+        16,
+        5
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          8,
+          -16,
+          0
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            16,
+            2
+          ],
+          "texture": "#2"
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            5,
+            2
+          ],
+          "texture": "#2"
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            16,
+            2
+          ],
+          "texture": "#2"
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            5,
+            2
+          ],
+          "texture": "#2"
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            16,
+            5
+          ],
+          "texture": "#2"
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            16,
+            5
+          ],
+          "texture": "#2"
+        }
+      }
+    },
+    {
+      "name": "intake_roof_left",
+      "from": [
+        -0.004,
+        14,
+        5
+      ],
+      "to": [
+        5,
+        16,
+        11
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          8,
+          -16,
+          0
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            5,
+            2
+          ],
+          "texture": "#2"
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            6,
+            2
+          ],
+          "texture": "#2"
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            5,
+            2
+          ],
+          "texture": "#2"
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            6,
+            2
+          ],
+          "texture": "#2"
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            5,
+            6
+          ],
+          "texture": "#2"
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            5,
+            6
+          ],
+          "texture": "#2"
+        }
+      }
+    },
+    {
+      "name": "intake_roof_right",
+      "from": [
+        11,
+        14,
+        5
+      ],
+      "to": [
+        16.004,
+        16,
+        11
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          8,
+          -16,
+          0
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            5,
+            2
+          ],
+          "texture": "#2"
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            6,
+            2
+          ],
+          "texture": "#2"
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            5,
+            2
+          ],
+          "texture": "#2"
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            6,
+            2
+          ],
+          "texture": "#2"
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            5,
+            6
+          ],
+          "texture": "#2"
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            5,
+            6
+          ],
+          "texture": "#2"
+        }
+      }
+    },
+    {
+      "name": "intake_roof_strap",
+      "from": [
+        7,
+        16,
+        1
+      ],
+      "to": [
+        9,
+        16.65,
+        5
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          8,
+          -16,
+          0
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            6,
+            0,
+            6.65,
+            2
+          ],
+          "rotation": 90,
+          "texture": "#1"
+        },
+        "east": {
+          "uv": [
+            6,
+            0,
+            6.65,
+            4
+          ],
+          "rotation": 90,
+          "texture": "#1"
+        },
+        "south": {
+          "uv": [
+            6,
+            0,
+            6.65,
+            2
+          ],
+          "rotation": 90,
+          "texture": "#1"
+        },
+        "west": {
+          "uv": [
+            6,
+            0,
+            6.65,
+            4
+          ],
+          "rotation": 90,
+          "texture": "#1"
+        },
+        "up": {
+          "uv": [
+            6,
+            0,
+            8,
+            4
+          ],
+          "texture": "#1"
+        },
+        "down": {
+          "uv": [
+            6,
+            0,
+            8,
+            4
+          ],
+          "texture": "#1"
+        }
+      }
+    },
+    {
+      "name": "intake_hatch_frame",
+      "from": [
+        16,
+        5,
+        6
+      ],
+      "to": [
+        16.45,
+        11,
+        12
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          8,
+          -16,
+          0
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            6,
+            0,
+            6.45,
+            6
+          ],
+          "texture": "#1"
+        },
+        "east": {
+          "uv": [
+            6,
+            0,
+            10,
+            6
+          ],
+          "texture": "#1"
+        },
+        "south": {
+          "uv": [
+            6,
+            0,
+            6.45,
+            6
+          ],
+          "texture": "#1"
+        },
+        "west": {
+          "uv": [
+            6,
+            0,
+            10,
+            6
+          ],
+          "texture": "#1"
+        },
+        "up": {
+          "uv": [
+            6,
+            0,
+            6.45,
+            6
+          ],
+          "texture": "#1"
+        },
+        "down": {
+          "uv": [
+            6,
+            0,
+            6.45,
+            6
+          ],
+          "texture": "#1"
+        }
+      }
+    },
+    {
+      "name": "intake_hatch_inset",
+      "from": [
+        16.45,
+        6,
+        7
+      ],
+      "to": [
+        16.55,
+        10,
+        11
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          8,
+          -16,
+          0
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            0.1,
+            4
+          ],
+          "texture": "#2"
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            4,
+            4
+          ],
+          "texture": "#2"
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            0.1,
+            4
+          ],
+          "texture": "#2"
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            4,
+            4
+          ],
+          "texture": "#2"
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            0.1,
+            4
+          ],
+          "texture": "#2"
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            0.1,
+            4
+          ],
+          "texture": "#2"
+        }
+      }
+    },
+    {
+      "name": "intake_hatch_hub",
+      "from": [
+        16.55,
+        7.25,
+        8.25
+      ],
+      "to": [
+        17,
+        8.75,
+        9.75
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          8,
+          -16,
+          0
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            2,
+            2,
+            2.45,
+            3.5
+          ],
+          "texture": "#3"
+        },
+        "east": {
+          "uv": [
+            2,
+            2,
+            3.5,
+            3.5
+          ],
+          "texture": "#3"
+        },
+        "south": {
+          "uv": [
+            2,
+            2,
+            2.45,
+            3.5
+          ],
+          "texture": "#3"
+        },
+        "west": {
+          "uv": [
+            2,
+            2,
+            3.5,
+            3.5
+          ],
+          "texture": "#3"
+        },
+        "up": {
+          "uv": [
+            2,
+            2,
+            2.45,
+            3.5
+          ],
+          "texture": "#3"
+        },
+        "down": {
+          "uv": [
+            2,
+            2,
+            2.45,
+            3.5
+          ],
+          "texture": "#3"
+        }
+      }
+    }
+  ],
+  "parent": "minecraft:block/block",
+  "render_type": "minecraft:cutout"
+}

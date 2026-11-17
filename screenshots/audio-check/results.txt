@@ -1,0 +1,53 @@
+PASS: Registered audio resource WOOD_DRILL
+PASS: Registered audio resource METAL_DRILL
+PASS: Registered audio resource STEEL_DRILL
+PASS: Registered audio resource ELECTRIC_DRILL
+PASS: Registered audio resource IRRIGATION
+PASS: Registered audio resource GREENHOUSE
+PASS: Registered audio resource TREE_STEEL
+PASS: Registered audio resource UNDERWATER
+PASS: Registered audio resource CRYSTAL_GROWTH
+PASS: Registered audio resource HARVESTER
+PASS: Registered audio resource HARVESTER_STEEL
+PASS: Registered audio resource COMPOST
+PASS: Registered audio resource SILK
+PASS: Registered audio resource SLUICE
+PASS: Registered audio resource VACUUM
+PASS: Registered audio resource VACUUM_2
+PASS: Registered audio resource VACUUM_3
+PASS: Registered audio resource CRUCIBLE
+PASS: Registered audio resource RAIN
+PASS: Registered audio resource CONVERTER
+PASS: Registered audio resource CONVERTER_2
+PASS: Registered audio resource CONVERTER_3
+PASS: Registered audio resource STORAGE
+PASS: Registered audio resource FURNACE
+PASS: Registered audio resource FURNACE_TURBINE
+PASS: Registered audio resource FURNACE_HEAVY
+PASS: Registered audio resource FURNACE_CRYSTAL
+PASS: Registered audio resource FURNACE_RAINBOW
+PASS: Registered audio resource TRADE
+PASS: Registered audio resource INTERACT
+PASS: Registered audio resource TRANSFER
+PASS: Registered audio resource FUEL_FEED
+PASS: Registered audio resource VALVE
+PASS: Registered audio resource GRAVEL_FEED
+PASS: Registered audio resource HARVEST
+PASS: Registered audio resource CHOP
+PASS: Registered audio resource SAW
+PASS: Registered audio resource CRYSTAL_PICK
+PASS: Registered audio resource WIND
+PASS: Registered audio resource CRAFT
+PASS: Registered audio resource LIGHT_SWITCH
+PASS: Registered audio resource POUR
+PASS: Registered audio resource IGNITE
+PASS: Registered audio resource MOTOR_START
+PASS: Registered audio resource MOTOR_STOP
+PASS: Actual smelting and drilling start both work loops
+PASS: Minecraft sound engine is playing the furnace and drill
+PASS: Twelve nearby work sources respect the eight-loop cap
+PASS: Expired synthetic work fades out while real machines continue
+PASS: Blocked furnace and drill outputs stop both loops
+PASS: Native machine state confirms output blocking
+PASS: A fresh work lease restarts playback
+PASS: Removing a sounding block leaves no orphan loop

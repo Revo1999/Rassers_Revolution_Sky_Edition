@@ -42,10 +42,10 @@ public final class PowerConverterEntity extends BlockEntity implements MenuProvi
   // Only local transient values; no power survives this forwarding operation.
   if(power.feToEu()){
    long available=moveFe((long)rateEu()*power.ratio(),true,true);int accepted=power.receiveFe((int)available,true);
-   if(accepted>0){int taken=(int)moveFe(accepted,false,true);power.receiveFe(taken,false);}
+   if(accepted>0){dk.revo.revolib.MachineFeedback.work(level,worldPosition,tier()==0?dk.revo.revolib.MachineFeedback.Voice.CONVERTER:tier()==1?dk.revo.revolib.MachineFeedback.Voice.CONVERTER_2:dk.revo.revolib.MachineFeedback.Voice.CONVERTER_3);int taken=(int)moveFe(accepted,false,true);power.receiveFe(taken,false);}
   }else{
    long available=moveEu(rateEu(),true,true);long accepted=power.receiveEu(available,true);
-   if(accepted>0){long taken=moveEu(accepted,false,true);power.receiveEu(taken,false);}
+   if(accepted>0){dk.revo.revolib.MachineFeedback.work(level,worldPosition,tier()==0?dk.revo.revolib.MachineFeedback.Voice.CONVERTER:tier()==1?dk.revo.revolib.MachineFeedback.Voice.CONVERTER_2:dk.revo.revolib.MachineFeedback.Voice.CONVERTER_3);long taken=moveEu(accepted,false,true);power.receiveEu(taken,false);}
   }
  }
  private void changed(){setChanged();if(level!=null&&!level.isClientSide){level.invalidateCapabilities(worldPosition);level.sendBlockUpdated(worldPosition,getBlockState(),getBlockState(),2);}}

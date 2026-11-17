@@ -1,0 +1,337 @@
+{
+  "chapter_id": "5E80000000000000",
+  "pinned_mi": "2.5.11",
+  "guide_sources": [
+    "assets/modern_industrialization/mi_guidebook/electric_age/electricity.md",
+    "assets/modern_industrialization/mi_guidebook/electric_age/basic_machines.md",
+    "assets/modern_industrialization/mi_guidebook/electric_age/advanced_machines.md",
+    "assets/modern_industrialization/mi_guidebook/electric_age/ebf.md"
+  ],
+  "runtime_source": "revoextraction ElectricDrillEntity: nickel/bauxite 16 EU/t, 200 ticks; FarmMachine/MachineKind: powered salt program 19",
+  "quests": [
+    {
+      "key": "welcome",
+      "quest_id": "5E80000000000001",
+      "recipe_ids": []
+    },
+    {
+      "key": "cables",
+      "quest_id": "5E80000000000002",
+      "recipe_ids": [
+        "modern_industrialization:materials/tin/craft/cable"
+      ]
+    },
+    {
+      "key": "budget",
+      "quest_id": "5E80000000000003",
+      "recipe_ids": []
+    },
+    {
+      "key": "batteries",
+      "quest_id": "5E80000000000004",
+      "recipe_ids": [
+        "revoextraction:bootstrap_redstone_battery",
+        "modern_industrialization:electric_age/battery/lv_battery_asbl"
+      ]
+    },
+    {
+      "key": "hulls",
+      "quest_id": "5E80000000000005",
+      "recipe_ids": [
+        "modern_industrialization:electric_age/hull/lv_machine_hull_asbl"
+      ]
+    },
+    {
+      "key": "supply",
+      "quest_id": "5E80000000000006",
+      "recipe_ids": []
+    },
+    {
+      "key": "nickel",
+      "quest_id": "5E80000000000007",
+      "recipe_ids": []
+    },
+    {
+      "key": "nickel_dust",
+      "quest_id": "5E80000000000008",
+      "recipe_ids": [
+        "modern_industrialization:materials/nickel/macerator/raw_metal"
+      ]
+    },
+    {
+      "key": "invar_mix",
+      "quest_id": "5E80000000000009",
+      "recipe_ids": [
+        "modern_industrialization:alloy/mixer/invar/dust"
+      ]
+    },
+    {
+      "key": "invar",
+      "quest_id": "5E8000000000000A",
+      "recipe_ids": [
+        "modern_industrialization:materials/invar/smelting/dust_to_ingot_smelting"
+      ]
+    },
+    {
+      "key": "diamonds",
+      "quest_id": "5E8000000000000B",
+      "recipe_ids": [
+        "modern_industrialization:materials/diamond/macerator/gem"
+      ]
+    },
+    {
+      "key": "blade",
+      "quest_id": "5E8000000000000C",
+      "recipe_ids": [
+        "modern_industrialization:electric_age/component/craft/invar_rotary_blade_asbl"
+      ]
+    },
+    {
+      "key": "macerator",
+      "quest_id": "5E8000000000000D",
+      "recipe_ids": [
+        "modern_industrialization:electric_age/machine/macerator_asbl"
+      ]
+    },
+    {
+      "key": "polarizer",
+      "quest_id": "5E8000000000000E",
+      "recipe_ids": [
+        "modern_industrialization:electric_age/machine/polarizer_asbl"
+      ]
+    },
+    {
+      "key": "magnets",
+      "quest_id": "5E8000000000000F",
+      "recipe_ids": [
+        "modern_industrialization:materials/steel/polarizer/rod_magnetic"
+      ]
+    },
+    {
+      "key": "motors",
+      "quest_id": "5E80000000000010",
+      "recipe_ids": [
+        "modern_industrialization:electric_age/component/craft/motor_asbl"
+      ]
+    },
+    {
+      "key": "pistons",
+      "quest_id": "5E80000000000011",
+      "recipe_ids": [
+        "modern_industrialization:electric_age/component/craft/piston_asbl"
+      ]
+    },
+    {
+      "key": "conveyors",
+      "quest_id": "5E80000000000012",
+      "recipe_ids": [
+        "modern_industrialization:electric_age/component/craft/conveyor_asbl"
+      ]
+    },
+    {
+      "key": "arms",
+      "quest_id": "5E80000000000013",
+      "recipe_ids": [
+        "modern_industrialization:electric_age/component/craft/robot_arm_asbl"
+      ]
+    },
+    {
+      "key": "assembler",
+      "quest_id": "5E80000000000014",
+      "recipe_ids": [
+        "modern_industrialization:electric_age/machine/assembler_asbl"
+      ]
+    },
+    {
+      "key": "locks",
+      "quest_id": "5E80000000000015",
+      "recipe_ids": []
+    },
+    {
+      "key": "circuits",
+      "quest_id": "5E80000000000016",
+      "recipe_ids": [
+        "modern_industrialization:assembler_generated/electric_age/circuit/craft/lv_circuit",
+        "modern_industrialization:assembler_generated/electric_age/circuit/craft/lv_circuit_board"
+      ]
+    },
+    {
+      "key": "components",
+      "quest_id": "5E80000000000017",
+      "recipe_ids": [
+        "modern_industrialization:assembler_generated/electric_age/hull/lv_machine_hull"
+      ]
+    },
+    {
+      "key": "wiremill",
+      "quest_id": "5E80000000000018",
+      "recipe_ids": [
+        "modern_industrialization:electric_age/machine/wiremill_asbl"
+      ]
+    },
+    {
+      "key": "compressor",
+      "quest_id": "5E80000000000019",
+      "recipe_ids": [
+        "modern_industrialization:electric_age/machine/compressor_asbl"
+      ]
+    },
+    {
+      "key": "mixer",
+      "quest_id": "5E8000000000001A",
+      "recipe_ids": [
+        "modern_industrialization:electric_age/machine/mixer_asbl"
+      ]
+    },
+    {
+      "key": "cupronickel_mix",
+      "quest_id": "5E8000000000001B",
+      "recipe_ids": [
+        "modern_industrialization:alloy/mixer/cupronickel/dust"
+      ]
+    },
+    {
+      "key": "cupronickel",
+      "quest_id": "5E8000000000001C",
+      "recipe_ids": [
+        "modern_industrialization:materials/cupronickel/smelting/dust_to_ingot_smelting"
+      ]
+    },
+    {
+      "key": "wire",
+      "quest_id": "5E8000000000001D",
+      "recipe_ids": [
+        "modern_industrialization:materials/cupronickel/wiremill/wire"
+      ]
+    },
+    {
+      "key": "magnetic_wire",
+      "quest_id": "5E8000000000001E",
+      "recipe_ids": [
+        "modern_industrialization:materials/cupronickel/polarizer/wire_magnetic"
+      ]
+    },
+    {
+      "key": "insulation",
+      "quest_id": "5E8000000000001F",
+      "recipe_ids": [
+        "modern_industrialization:materials/cupronickel/craft/cable"
+      ]
+    },
+    {
+      "key": "coils",
+      "quest_id": "5E80000000000020",
+      "recipe_ids": [
+        "modern_industrialization:materials/cupronickel/craft/coil"
+      ]
+    },
+    {
+      "key": "casings",
+      "quest_id": "5E80000000000021",
+      "recipe_ids": [
+        "modern_industrialization:electric_age/casing/heatproof_machine_casing_asbl"
+      ]
+    },
+    {
+      "key": "energy",
+      "quest_id": "5E80000000000022",
+      "recipe_ids": [
+        "modern_industrialization:hatches/basic/energy_input_hatch"
+      ]
+    },
+    {
+      "key": "controller",
+      "quest_id": "5E80000000000023",
+      "recipe_ids": [
+        "modern_industrialization:electric_age/machine/electric_blast_furnace_asbl"
+      ]
+    },
+    {
+      "key": "ports",
+      "quest_id": "5E80000000000024",
+      "recipe_ids": [
+        "modern_industrialization:hatches/bronze/item_input_hatch",
+        "modern_industrialization:hatches/bronze/item_output_hatch"
+      ]
+    },
+    {
+      "key": "commission",
+      "quest_id": "5E80000000000025",
+      "recipe_ids": []
+    },
+    {
+      "key": "bauxite",
+      "quest_id": "5E80000000000026",
+      "recipe_ids": []
+    },
+    {
+      "key": "nuggets",
+      "quest_id": "5E80000000000027",
+      "recipe_ids": [
+        "modern_industrialization:materials/blast_furnace/bauxite_to_aluminum_nugget"
+      ]
+    },
+    {
+      "key": "aluminum",
+      "quest_id": "5E80000000000028",
+      "recipe_ids": [
+        "modern_industrialization:materials/aluminum/craft/ingot_from_nugget",
+        "modern_industrialization:materials/blast_furnace/bauxite_to_aluminum_ingot"
+      ]
+    },
+    {
+      "key": "handoff",
+      "quest_id": "5E80000000000029",
+      "recipe_ids": []
+    },
+    {
+      "key": "cutter",
+      "quest_id": "5E8000000000002A",
+      "recipe_ids": [
+        "modern_industrialization:electric_age/machine/cutting_machine_asbl"
+      ]
+    },
+    {
+      "key": "furnace",
+      "quest_id": "5E8000000000002B",
+      "recipe_ids": [
+        "modern_industrialization:electric_age/machine/furnace_asbl"
+      ]
+    },
+    {
+      "key": "lubricant",
+      "quest_id": "5E8000000000002C",
+      "recipe_ids": [
+        "modern_industrialization:materials/mixer/lubricant"
+      ]
+    },
+    {
+      "key": "upgrades",
+      "quest_id": "5E8000000000002D",
+      "recipe_ids": [
+        "modern_industrialization:electric_age/upgrades/basic"
+      ]
+    },
+    {
+      "key": "greenhouse",
+      "quest_id": "5E8000000000002E",
+      "recipe_ids": [
+        "revocultivation:iron_greenhouse"
+      ]
+    },
+    {
+      "key": "salt",
+      "quest_id": "5E8000000000002F",
+      "recipe_ids": [
+        "revoextraction:salt_crystal_starter"
+      ]
+    },
+    {
+      "key": "converter",
+      "quest_id": "5E80000000000030",
+      "recipe_ids": [
+        "revoindustry:power_converter"
+      ]
+    }
+  ]
+}

@@ -50,10 +50,10 @@ public final class RevoCultivation {
         bus.addListener((net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent e)->{if(e.getTabKey()==CreativeModeTabs.FUNCTIONAL_BLOCKS)ITEMS.getEntries().forEach(i->e.accept(i.get()));});
     }
     private void capabilities(RegisterCapabilitiesEvent event){
-        event.registerBlockEntity(Capabilities.ItemHandler.BLOCK,SmallMachines.ENTITY.get(),(be,side)->be.items(side));
-        event.registerBlockEntity(Capabilities.ItemHandler.BLOCK,HATCH_ENTITY.get(),(be,side)->be.items());
-        event.registerBlockEntity(Capabilities.FluidHandler.BLOCK,HATCH_ENTITY.get(),(be,side)->be.fluids());
-        event.registerBlockEntity(Capabilities.FluidHandler.BLOCK,TANK_ENTITY.get(),(be,side)->be.fluids());
+        event.registerBlockEntity(Capabilities.ItemHandler.BLOCK,SmallMachines.ENTITY.get(),(be,side)->dk.revo.revolib.FeedbackHandlers.items(be,be.items(side)));
+        event.registerBlockEntity(Capabilities.ItemHandler.BLOCK,HATCH_ENTITY.get(),(be,side)->dk.revo.revolib.FeedbackHandlers.items(be,be.items()));
+        event.registerBlockEntity(Capabilities.FluidHandler.BLOCK,HATCH_ENTITY.get(),(be,side)->dk.revo.revolib.FeedbackHandlers.fluids(be,be.fluids()));
+        event.registerBlockEntity(Capabilities.FluidHandler.BLOCK,TANK_ENTITY.get(),(be,side)->dk.revo.revolib.FeedbackHandlers.fluids(be,be.fluids()));
         dk.revo.revolib.energy.EnergyInterop.registerEuStorage(event,HATCH_ENTITY.get(),(be,side)->be.euInput());
     }
 }

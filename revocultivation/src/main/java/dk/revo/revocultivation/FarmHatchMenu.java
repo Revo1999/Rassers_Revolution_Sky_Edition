@@ -18,7 +18,7 @@ public class FarmHatchMenu extends AbstractContainerMenu {
         int y=outputY();for(int row=0;row<3;row++)for(int col=0;col<3;col++)addSlot(new SlotItemHandler(outputs,row*3+col,62+18*col,y+18*row){@Override public boolean mayPlace(ItemStack stack){return false;}});
         PlayerInventoryLayout.slots(inv,kind.hatchHeight()).forEach(this::addSlot);
     }
-    public int outputY(){return kind.isHarvester()?27:62;}
+    public int outputY(){return kind.isHarvester()&&kind!=MachineKind.STEEL_HARVESTER?27:62;}
     public int water(){return data.get(0);}
     @Override public boolean stillValid(Player p){return connected.getAsBoolean()&&stillValid(access,p,kind.block(MachineKind.Part.HATCH));}
     @Override public ItemStack quickMoveStack(Player player,int index){

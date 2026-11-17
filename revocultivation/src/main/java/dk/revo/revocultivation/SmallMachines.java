@@ -13,6 +13,7 @@ public final class SmallMachines {
  public static final DeferredItem<BoneMealItem> COMPOST=RevoCultivation.ITEMS.register("compost",()->new BoneMealItem(new Item.Properties()));
  public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<SmallMachineEntity>> ENTITY=RevoCultivation.ENTITIES.register("small_cultivation",()->BlockEntityType.Builder.of(SmallMachineEntity::new,COMPOSTER.get(),CULTIVATOR.get()).build(null));
  public static final DeferredHolder<MenuType<?>,MenuType<SmallMachineMenu>> MENU=RevoCultivation.MENUS.register("small_cultivation",()->IMenuTypeExtension.create((id,inv,buf)->new SmallMachineMenu(id,inv,buf.readBoolean())));
+ public static final DeferredItem<Item> SALT_STARTER=RevoCultivation.ITEMS.registerSimpleItem("salt_crystal_starter");
  public static void bootstrap(){}
  private SmallMachines(){}
 }

@@ -2,6 +2,6 @@
   "loader": "modern_industrialization:machine",
   "casing": "modern_industrialization:bronze",
   "default_overlays": {
-    "side": "revoindustry:block/furnaces/liquid_fuel_hatch_1"
+    "front": "revoindustry:block/furnaces/liquid_fuel_hatch_1"
   }
 }

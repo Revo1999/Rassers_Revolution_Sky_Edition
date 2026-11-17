@@ -25,8 +25,8 @@ Natural Shoe Rubber. They do not grant other damage immunity.
 Cotton Seeds plant on ordinary farmland and grow like wheat, with bonemeal support.
 A mature crop drops one Cotton and two Cotton Seeds; an immature crop returns one
 seed. Both existing greenhouses accept retained Cotton Seeds and produce three
-Cotton plus one seed per normal crop cycle. Cotton appends program **17**, leaving
-existing saved program IDs unchanged.
+Cotton plus one seed per normal crop cycle. Cotton uses program **32**, alongside the merged Nether Wart, chorus, salt and
+poppy programs. Crop starters select their own program on the next machine tick.
 
 The early route needs the existing wheat/string, leaf, Slime-program and sugar-cane
 supplies, plus a furnace. It needs no steel, electricity, blaze burner or EBF.

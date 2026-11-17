@@ -1,0 +1,8 @@
+{
+  "result": "PASS",
+  "samples": 65,
+  "cubes": 107,
+  "meshes": 3,
+  "checks": "Convex polygon SAT for separate moving assemblies, including trapezoidal side panels; fluid sheets and rigid internal joints excluded.",
+  "conflicts": []
+}

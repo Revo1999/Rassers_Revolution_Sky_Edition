@@ -1,0 +1,880 @@
+{
+  "credit": "Made with Blockbench",
+  "textures": {
+    "1": "create:block/axis",
+    "2": "revoextraction:block/sluice/wood",
+    "3": "create:block/brass_block",
+    "4": "create:block/copper_casing",
+    "particle": "create:block/andesite_casing"
+  },
+  "elements": [
+    {
+      "name": "base_rail_1_-8",
+      "from": [
+        0,
+        0,
+        0
+      ],
+      "to": [
+        2,
+        1,
+        16
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          8,
+          0,
+          -16
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            6,
+            0,
+            7,
+            2
+          ],
+          "rotation": 90,
+          "texture": "#1"
+        },
+        "east": {
+          "uv": [
+            6,
+            0,
+            7,
+            16
+          ],
+          "rotation": 90,
+          "texture": "#1"
+        },
+        "south": {
+          "uv": [
+            6,
+            0,
+            7,
+            2
+          ],
+          "rotation": 90,
+          "texture": "#1"
+        },
+        "west": {
+          "uv": [
+            6,
+            0,
+            7,
+            16
+          ],
+          "rotation": 90,
+          "texture": "#1"
+        },
+        "up": {
+          "uv": [
+            6,
+            0,
+            8,
+            16
+          ],
+          "texture": "#1"
+        },
+        "down": {
+          "uv": [
+            6,
+            0,
+            8,
+            16
+          ],
+          "texture": "#1"
+        }
+      }
+    },
+    {
+      "name": "base_rail_1_6",
+      "from": [
+        14,
+        0,
+        0
+      ],
+      "to": [
+        16,
+        1,
+        16
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          8,
+          0,
+          -16
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            6,
+            0,
+            7,
+            2
+          ],
+          "rotation": 90,
+          "texture": "#1"
+        },
+        "east": {
+          "uv": [
+            6,
+            0,
+            7,
+            16
+          ],
+          "rotation": 90,
+          "texture": "#1"
+        },
+        "south": {
+          "uv": [
+            6,
+            0,
+            7,
+            2
+          ],
+          "rotation": 90,
+          "texture": "#1"
+        },
+        "west": {
+          "uv": [
+            6,
+            0,
+            7,
+            16
+          ],
+          "rotation": 90,
+          "texture": "#1"
+        },
+        "up": {
+          "uv": [
+            6,
+            0,
+            8,
+            16
+          ],
+          "texture": "#1"
+        },
+        "down": {
+          "uv": [
+            6,
+            0,
+            8,
+            16
+          ],
+          "texture": "#1"
+        }
+      }
+    },
+    {
+      "name": "chassis_wood_1_-1",
+      "from": [
+        0,
+        1,
+        0
+      ],
+      "to": [
+        2,
+        2.3,
+        16
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          8,
+          0,
+          -16
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            2,
+            1.3
+          ],
+          "texture": "#2"
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            16,
+            1.3
+          ],
+          "texture": "#2"
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            2,
+            1.3
+          ],
+          "texture": "#2"
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            16,
+            1.3
+          ],
+          "texture": "#2"
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            2,
+            16
+          ],
+          "texture": "#2"
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            2,
+            16
+          ],
+          "texture": "#2"
+        }
+      }
+    },
+    {
+      "name": "chassis_wood_1_1",
+      "from": [
+        14,
+        1,
+        0
+      ],
+      "to": [
+        16,
+        2.3,
+        16
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          8,
+          0,
+          -16
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            2,
+            1.3
+          ],
+          "texture": "#2"
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            16,
+            1.3
+          ],
+          "texture": "#2"
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            2,
+            1.3
+          ],
+          "texture": "#2"
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            16,
+            1.3
+          ],
+          "texture": "#2"
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            2,
+            16
+          ],
+          "texture": "#2"
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            2,
+            16
+          ],
+          "texture": "#2"
+        }
+      }
+    },
+    {
+      "name": "side_copper_vessel",
+      "from": [
+        18,
+        1.996,
+        1
+      ],
+      "to": [
+        22,
+        11.004,
+        7
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          8,
+          0,
+          -16
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            4,
+            9
+          ],
+          "texture": "#4"
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            6,
+            9
+          ],
+          "texture": "#4"
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            4,
+            9
+          ],
+          "texture": "#4"
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            6,
+            9
+          ],
+          "texture": "#4"
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            4,
+            6
+          ],
+          "texture": "#4"
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            4,
+            6
+          ],
+          "texture": "#4"
+        }
+      }
+    },
+    {
+      "name": "side_vessel_band_2",
+      "from": [
+        17.7,
+        2,
+        0.7
+      ],
+      "to": [
+        22.3,
+        3,
+        7.3
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          8,
+          0,
+          -16
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            4.6,
+            1
+          ],
+          "texture": "#4"
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            6.6,
+            1
+          ],
+          "texture": "#4"
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            4.6,
+            1
+          ],
+          "texture": "#4"
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            6.6,
+            1
+          ],
+          "texture": "#4"
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            4.6,
+            6.6
+          ],
+          "texture": "#4"
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            4.6,
+            6.6
+          ],
+          "texture": "#4"
+        }
+      }
+    },
+    {
+      "name": "side_vessel_band_10",
+      "from": [
+        17.7,
+        10,
+        0.7
+      ],
+      "to": [
+        22.3,
+        11,
+        7.3
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          8,
+          0,
+          -16
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            4.6,
+            1
+          ],
+          "texture": "#4"
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            6.6,
+            1
+          ],
+          "texture": "#4"
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            4.6,
+            1
+          ],
+          "texture": "#4"
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            6.6,
+            1
+          ],
+          "texture": "#4"
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            4.6,
+            6.6
+          ],
+          "texture": "#4"
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            4.6,
+            6.6
+          ],
+          "texture": "#4"
+        }
+      }
+    },
+    {
+      "name": "side_vessel_neck",
+      "from": [
+        19,
+        11,
+        2.5
+      ],
+      "to": [
+        21,
+        13,
+        5.5
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          8,
+          0,
+          -16
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            2,
+            2
+          ],
+          "texture": "#4"
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            3,
+            2
+          ],
+          "texture": "#4"
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            2,
+            2
+          ],
+          "texture": "#4"
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            3,
+            2
+          ],
+          "texture": "#4"
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            2,
+            3
+          ],
+          "texture": "#4"
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            2,
+            3
+          ],
+          "texture": "#4"
+        }
+      }
+    },
+    {
+      "name": "side_pipe_vertical",
+      "from": [
+        19.25,
+        13,
+        3.25
+      ],
+      "to": [
+        20.75,
+        16.5,
+        4.75
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          8,
+          0,
+          -16
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            6,
+            0,
+            7.5,
+            3.5
+          ],
+          "texture": "#1"
+        },
+        "east": {
+          "uv": [
+            6,
+            0,
+            7.5,
+            3.5
+          ],
+          "texture": "#1"
+        },
+        "south": {
+          "uv": [
+            6,
+            0,
+            7.5,
+            3.5
+          ],
+          "texture": "#1"
+        },
+        "west": {
+          "uv": [
+            6,
+            0,
+            7.5,
+            3.5
+          ],
+          "texture": "#1"
+        },
+        "up": {
+          "uv": [
+            6,
+            0,
+            7.5,
+            1.5
+          ],
+          "texture": "#1"
+        },
+        "down": {
+          "uv": [
+            6,
+            0,
+            7.5,
+            1.5
+          ],
+          "texture": "#1"
+        }
+      }
+    },
+    {
+      "name": "side_pipe_elbow",
+      "from": [
+        18,
+        15,
+        3.25
+      ],
+      "to": [
+        19.25,
+        16.5,
+        4.75
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          8,
+          0,
+          -16
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            6,
+            0,
+            7.25,
+            1.5
+          ],
+          "texture": "#1"
+        },
+        "east": {
+          "uv": [
+            6,
+            0,
+            7.5,
+            1.5
+          ],
+          "texture": "#1"
+        },
+        "south": {
+          "uv": [
+            6,
+            0,
+            7.25,
+            1.5
+          ],
+          "texture": "#1"
+        },
+        "west": {
+          "uv": [
+            6,
+            0,
+            7.5,
+            1.5
+          ],
+          "texture": "#1"
+        },
+        "up": {
+          "uv": [
+            6,
+            0,
+            7.25,
+            1.5
+          ],
+          "texture": "#1"
+        },
+        "down": {
+          "uv": [
+            6,
+            0,
+            7.25,
+            1.5
+          ],
+          "texture": "#1"
+        }
+      }
+    },
+    {
+      "name": "side_pipe_sleeve",
+      "from": [
+        17.3,
+        14.7,
+        3
+      ],
+      "to": [
+        18,
+        16.8,
+        5
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          8,
+          0,
+          -16
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            2,
+            2,
+            2.7,
+            4.1
+          ],
+          "texture": "#3"
+        },
+        "east": {
+          "uv": [
+            2,
+            2,
+            4,
+            4.1
+          ],
+          "texture": "#3"
+        },
+        "south": {
+          "uv": [
+            2,
+            2,
+            2.7,
+            4.1
+          ],
+          "texture": "#3"
+        },
+        "west": {
+          "uv": [
+            2,
+            2,
+            4,
+            4.1
+          ],
+          "texture": "#3"
+        },
+        "up": {
+          "uv": [
+            2,
+            2,
+            2.7,
+            4
+          ],
+          "texture": "#3"
+        },
+        "down": {
+          "uv": [
+            2,
+            2,
+            2.7,
+            4
+          ],
+          "texture": "#3"
+        }
+      }
+    }
+  ],
+  "parent": "minecraft:block/block",
+  "render_type": "minecraft:cutout"
+}

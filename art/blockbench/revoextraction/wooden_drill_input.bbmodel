@@ -19,9 +19,7 @@
   "variable_placeholder_buttons": [],
   "unhandled_root_fields": {},
   "ai_used": true,
-  "ai_agents": [
-    "Codex via Blockbench MCP"
-  ],
+  "ai_agents": "Unknown MCP client",
   "resolution": {
     "width": 512,
     "height": 512
@@ -568,7 +566,7 @@
       "to": [
         10,
         10,
-        1
+        1.004
       ],
       "autouv": 0,
       "color": 0,

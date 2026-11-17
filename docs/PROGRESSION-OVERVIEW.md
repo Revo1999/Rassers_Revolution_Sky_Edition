@@ -1,6 +1,6 @@
-# Rassers Revolution: Sky Edition — Progression Overview
+# Rassers Revolution: Sky Edition â€” Progression Overview
 
-*Baseline checkout: `a80e627` plus local Wither Hatchery, salt geode and drill-mineral implementations · Pack version: `0.1.39-dev-performance`*
+*Baseline checkout: `a80e627` plus local Wither Hatchery, salt geode and drill-mineral implementations Â· Pack version: `0.1.39-dev-performance`*
 
 From a small skyblock island, build renewable resources, automate them with Create, establish Modern Industrialization (MI) steam processing, then move into electricity and more specialized production. Biological production and storage develop alongside the main industrial route.
 
@@ -30,7 +30,7 @@ Planned continuation:
 
 ## 1. From nothing to the first drill
 
-**Quest chapter:** Chapter 1: From Nothing — 35 quests.
+**Quest chapter:** Chapter 1: From Nothing â€” 35 quests.
 
 New islands provide a Revolution Book and a placed Crafting Station. The book opens the quest guide.
 
@@ -49,7 +49,7 @@ The Wooden Drill produces a repeating mixture of cobblestone, gravel, sand and r
 
 ## 2. Create machinery and reliable ore production
 
-**Quest chapter:** Chapter 2: The Create Revolution — 29 quests.
+**Quest chapter:** Chapter 2: The Create Revolution â€” 29 quests.
 
 Smelt the Wooden Drill's iron, make andesite alloy, and build a small Create workshop. Shafts, gears, water wheels and a Mechanical Press introduce power transmission, speed and stress capacity.
 
@@ -59,7 +59,7 @@ Hand power remains useful during setup. Water power and automatic hatch output t
 
 **Milestone:** Automated metals and the machinery needed to manufacture bronze components.
 
-## 3. Renewable biology — a parallel branch
+## 3. Renewable biology â€” a parallel branch
 
 **Quest coverage:** Employee Handbook milestones and the Biology to Electricity branch.
 
@@ -79,7 +79,7 @@ The important connections are practical: **sugar cane supplies paper for rubber*
 
 ## 4. Bronze and the MI steam workshop
 
-**Quest chapter:** Chapter 3: MI - The Steam Age — 28 quests.
+**Quest chapter:** Chapter 3: MI - The Steam Age â€” 28 quests.
 
 Use Create milling to obtain copper and tin dust, then mix them into bronze dust and smelt bronze ingots. The unheated Create Mixer needs at least **32 RPM**. Press plates and manufacture the parts for MI machinery.
 
@@ -99,7 +99,7 @@ The first steam workshop does not require diamonds, brass, quartz or a Blaze Bur
 
 ## 5. Steel, cooling and diamonds
 
-**Quest chapter:** Chapter 4: Steel and Coolant — 13 quests.
+**Quest chapter:** Chapter 4: Steel and Coolant â€” 13 quests.
 
 Mill coke into coke dust, obtain iron dust with MI's Forge Hammer, and follow the native uncooked-steel recipe and **Steam Blast Furnace** route. This establishes steel before obtaining diamonds.
 
@@ -122,7 +122,7 @@ Steel also supports faster farming and more resources:
 
 ## 6. Resource bridges and first electricity
 
-**Quest chapter:** Progression Routes: Biology to Electricity — 18 quests spanning several stages.
+**Quest chapter:** Progression Routes: Biology to Electricity â€” 18 quests spanning several stages.
 
 This chapter is a set of supporting routes, not a strict fifth age. Some entries are available before steel; others require the Steel Harvester or electric machines.
 
@@ -184,7 +184,7 @@ These are available systems, but their existence does not establish a fully fini
 
 ## 9. Quest structure and rewards
 
-The current quest files contain **228 quests**. The [LV/MV continuation](QUESTS-LV-MV.md)
+The current quest files contain **287 quests**. The [LV/MV continuation](QUESTS-LV-MV.md)
 adds metallurgy, electronics, power and renewable chemistry guidance, plus optional
 early running shoes. It adds quest guidance for existing machines and recipes.
 
@@ -194,10 +194,12 @@ early running shoes. It adds quest guidance for existing machines and recipes.
 | Chapter 2: The Create Revolution | 29 |
 | Chapter 3: MI - The Steam Age | 28 |
 | Chapter 4: Steel and Coolant | 13 |
-| Progression Routes: Biology to Electricity | 24 |
-| Chapter 5: LV - Metallurgy and Electronics | 25 |
-| Chapter 6: MV - Power and Chemistry | 25 |
-| Chapter 7: HV - Refining, Coils and Logic | 26 |
+| Progression Routes: Biology to Electricity | 25 |
+| Chapter 5: The LV Factory | 48 |
+| Chapter 6: Electronics and Separation | 25 |
+| Chapter 7: MV - Power and Chemistry | 25 |
+| Chapter 8: HV - Refining, Coils and Logic | 26 |
+| Crystals and Distant Resources | 10 |
 | Field Equipment: Running Shoes | 7 |
 | Wither Containment | 5 |
 | Tips & Guides | 6 |
@@ -211,13 +213,7 @@ The design document intends the journey to continue through **advanced MI metall
 
 The planned finish is to **craft the Genesis Core once**, combining advanced extraction, Create manufacturing, cultivation, industrial processing, electronics, energy and automation. Its nine proposed components and recipes remain design concepts; this is not an implemented completion objective in the current source.
 
-The latest recipe audit identifies unfinished controlled routes for:
-
-- The first AE2 inscriber presses and starter Sky Stone. Starter Certus now comes from electric Crystalline Sludge centrifuging.
-- Later drill deposits such as tungsten and uranium. Pre-LV lead/antimony and selectable electric antimony are implemented. Renewable salt is now supplied by the [Salt Geode Chamber](SALT-GEODE.md) and native MI centrifuging.
-- Nether Wart, Ghast Tears, End resources, chorus and shulker shells.
-- Controlled Wither Skeleton skull production and the first Netherite Upgrade template. The [Wither Hatchery](WITHER-HATCHERY.md) now supplies a powered Nether Star route from the normal Wither ritual materials.
-- A more reliable red-dye/flower starter.
+The pulled [crystal and late-resource work](CRYSTAL-AND-LATE-RESOURCES.md) now supplies AE2 starter presses/Sky Stone, tungsten/uranium programs, controlled skulls, Netherite templates and later crops/mob drops. [MV AE2 gates](MACHINE-POLISH-AND-MV-AE2.md) are implemented. See the refreshed [remaining-gap table](PROGRESSION-GAPS-AFTER-MV.md) for unresolved feedstocks and endgame work.
 
 The implemented material routes and targeted tests do not establish a complete fresh-island survival playthrough through the planned endgame.
 

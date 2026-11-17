@@ -30,7 +30,7 @@ public class SmallMachineRenderer implements BlockEntityRenderer<SmallMachineEnt
   String surface=silk?"cultivator_fill_"+Math.min(3,(int)(progress*4)):ready?"composter_fill_ready":"composter_fill_raw";
   float tint=silk?1:1-.35f*progress;
   draw(surface,pose,buffers,light,overlay,tint,tint,tint);pose.popPose();
-  if(silk&&m.storage.getStackInSlot(1).is(SmallMachines.WORM.get())){pose.pushPose();pose.translate(0,(top-7+.08f)/16f,0);draw("cultivator_live_worm",pose,buffers,light,overlay,1,1,1);pose.popPose();}
+  if(silk&&m.storage.getStackInSlot(1).is(SmallMachines.WORM.get())){pose.pushPose();pose.translate(m.status()==0?Math.sin((m.getLevel().getGameTime()+partial)*.12)*.012:0,(top-7+.08f)/16f,0);draw("cultivator_live_worm",pose,buffers,light,overlay,1,1,1);pose.popPose();}
   if(silk&&(progress>.35f||!m.storage.getStackInSlot(2).isEmpty())){float size=!m.storage.getStackInSlot(2).isEmpty()?1:Math.clamp((progress-.35f)/.65f,.04f,1);pose.pushPose();pose.translate(0,(14f/16)*(1-size),0);pose.scale(1,size,1);draw("cultivator_live_cocoons",pose,buffers,light,overlay,1,1,1);pose.popPose();}
   if(ready){pose.pushPose();pose.translate(.5,(top+1.7f)/16f,.5);pose.scale(.48f,.48f,.48f);Minecraft.getInstance().getItemRenderer().renderStatic(m.storage.getStackInSlot(2),ItemDisplayContext.GROUND,light,overlay,pose,buffers,m.getLevel(),0);pose.popPose();}
   pose.popPose();

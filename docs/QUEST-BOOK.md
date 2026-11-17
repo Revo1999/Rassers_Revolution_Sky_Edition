@@ -1,9 +1,9 @@
 # Quest book and free manuals
 
-The current book has **twelve chapters and 228 quests**. The continuations add
+The current book has **fourteen chapters and 287 quests**. The continuations add
 25 LV metallurgy/electronics quests, 25 MV power/chemistry quests, seven optional
 early running-shoe quests and 26 HV refining/coil/digital-logic quests. The previous
-145 quest IDs and their task/reward IDs remain intact. See [LV/MV](QUESTS-LV-MV.md)
+204 quest IDs and their task/reward IDs remain intact. See [LV/MV](QUESTS-LV-MV.md)
 and the [post-MV progression table](PROGRESSION-GAPS-AFTER-MV.md).
 
 The early core has 35 quests in From Nothing, 29 in The Create Revolution,
@@ -118,7 +118,11 @@ and live-client layout inspection remain separate validation work.
 ## HV continuation
 
 Run `python scripts/extend_hv_quests.py --render` after the LV/MV generator, then
-`python scripts/verify_quest_book.py`. Chapter 7 uses stable base `5EB0000000000000`
+`python scripts/verify_quest_book.py`. Chapter 8 uses stable base `5EB0000000000000`
 and 26 explicit quest IDs. It covers native refining, freezing, Kanthal coils,
 digital logic, sodium batteries, the Turbo Hull and sustained first-HV power.
 The remaining-gap table is in [PROGRESSION-GAPS-AFTER-MV.md](PROGRESSION-GAPS-AFTER-MV.md).
+
+## Repository reconciliation
+
+The incoming 48-quest LV chapter keeps namespace `5E800000` and the ten crystal/late-resource quests keep `5E900000`. The local electronics extension uses `5EC00000`, and MV chemistry uses `5ED00000`, avoiding collisions. The new extension follows the existing LV aluminum handoff. Remote quest and task IDs are preserved. Run generators in order: `generate_lv_quests.py`, `extend_quest_book.py --render`, `extend_hv_quests.py --render`, then both `validate_lv_quests.py` and `verify_quest_book.py`.

@@ -7,7 +7,6 @@
   "name": "collection_grate",
   "parent": "",
   "java_block_version": "1.21.1",
-  "credit": "Revo1999; authored in Blockbench through MCP. Vanilla textures copyright Mojang AB.",
   "ambientocclusion": true,
   "front_gui_light": false,
   "visible_box": [
@@ -16,12 +15,11 @@
     0
   ],
   "variable_placeholders": "",
+  "multi_file_ruleset": "",
   "variable_placeholder_buttons": [],
   "unhandled_root_fields": {},
   "ai_used": true,
-  "ai_agents": [
-    "Codex via Blockbench MCP"
-  ],
+  "ai_agents": "Unknown MCP client",
   "resolution": {
     "width": 512,
     "height": 512
@@ -35,6 +33,8 @@
       "locked": false,
       "shade": true,
       "light_emission": 0,
+      "export": true,
+      "scope": 0,
       "allow_mirror_modeling": true,
       "from": [
         0,
@@ -120,16 +120,18 @@
       "locked": false,
       "shade": true,
       "light_emission": 0,
+      "export": true,
+      "scope": 0,
       "allow_mirror_modeling": true,
       "from": [
         1,
         15.6,
-        0
+        -0.004
       ],
       "to": [
         2.5,
-        16,
-        16
+        16.004,
+        16.004
       ],
       "autouv": 0,
       "color": 6,
@@ -205,16 +207,18 @@
       "locked": false,
       "shade": true,
       "light_emission": 0,
+      "export": true,
+      "scope": 0,
       "allow_mirror_modeling": true,
       "from": [
         5,
         15.6,
-        0
+        -0.004
       ],
       "to": [
         6.5,
-        16,
-        16
+        16.004,
+        16.004
       ],
       "autouv": 0,
       "color": 3,
@@ -290,16 +294,18 @@
       "locked": false,
       "shade": true,
       "light_emission": 0,
+      "export": true,
+      "scope": 0,
       "allow_mirror_modeling": true,
       "from": [
         9,
         15.6,
-        0
+        -0.004
       ],
       "to": [
         10.5,
-        16,
-        16
+        16.004,
+        16.004
       ],
       "autouv": 0,
       "color": 7,
@@ -375,16 +381,18 @@
       "locked": false,
       "shade": true,
       "light_emission": 0,
+      "export": true,
+      "scope": 0,
       "allow_mirror_modeling": true,
       "from": [
         13,
         15.6,
-        0
+        -0.004
       ],
       "to": [
         14.5,
-        16,
-        16
+        16.004,
+        16.004
       ],
       "autouv": 0,
       "color": 7,
@@ -455,9 +463,17 @@
   ],
   "groups": [
     {
+      "name": "body",
       "uuid": "695d99e6-74fd-ec08-62d5-5941a6a15eaa",
       "export": true,
       "locked": false,
+      "scope": 0,
+      "selected": false,
+      "visibility": true,
+      "_static": {
+        "properties": {},
+        "temp_data": {}
+      },
       "origin": [
         0,
         0,
@@ -469,15 +485,13 @@
         0
       ],
       "color": 0,
-      "name": "body",
       "children": [],
       "reset": false,
       "shade": true,
       "mirror_uv": false,
-      "selected": false,
-      "visibility": true,
       "autouv": 0,
-      "isOpen": false
+      "isOpen": false,
+      "primary_selected": false
     }
   ],
   "outliner": [
@@ -501,6 +515,7 @@
       "namespace": "revocultivation",
       "id": "0",
       "group": "",
+      "scope": 0,
       "width": 512,
       "height": 512,
       "uv_width": 512,
@@ -509,9 +524,13 @@
       "use_as_default": false,
       "layers_enabled": false,
       "sync_to_project": "",
+      "file_format": "png",
       "render_mode": "default",
       "render_sides": "auto",
+      "wrap_mode": "limited",
       "pbr_channel": "color",
+      "fps": 7,
+      "force_translucent": false,
       "frame_time": 1,
       "frame_order_type": "loop",
       "frame_order": "",

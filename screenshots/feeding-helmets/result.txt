@@ -1,0 +1,1 @@
+PASS: all three armor models rendered, 1/4/25-slot screens synchronized, equipped survival helmet ate exactly one 3-point carrot at 17 hunger.

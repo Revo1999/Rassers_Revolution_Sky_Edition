@@ -1,0 +1,15 @@
+{
+  "source": "Minecraft Java 1.21.1 client resources",
+  "attribution": "Minecraft water textures \u00a9 Mojang AB; Create casing textures \u00a9 The Create Team",
+  "water_flow": {
+    "file": "water_flow.png",
+    "frames": 32,
+    "frame_size": [
+      32,
+      32
+    ],
+    "preview_tint": "#3f76e4",
+    "runtime": "minecraft:block/water_flow; biome tinted; resource-pack aware"
+  },
+  "native_materials": "Clustered dithering painted in Blockbench; original Create casing and copper textures referenced from the installed mod at runtime."
+}

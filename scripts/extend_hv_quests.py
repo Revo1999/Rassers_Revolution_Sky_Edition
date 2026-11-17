@@ -5,7 +5,7 @@ HV=0x5EB0000000000000
 
 def main():
     parser=argparse.ArgumentParser();parser.add_argument('--render',action='store_true');args=parser.parse_args()
-    c=Chapter(HV,'Chapter 7: HV - Refining, Coils and Logic',mid('hv_steam_turbine'),48)
+    c=Chapter(HV,'Chapter 8: HV - Refining, Coils and Logic',mid('hv_steam_turbine'),48)
     for n,title,x,y,w in [(1,'REFINE THE DRILL FEEDSTOCKS',9,-2,21),(2,'FREEZING AND HEATING COILS',9,10,21),(3,'DIGITAL LOGIC',9,18,15),(4,'FIRST HV NETWORK',9,26,21)]:c.section(n,title,x,y,w)
     def q(n,title,item,x,y,deps,text,items=(),milestone=False):
         c.add(n,title,mid(item),x,y,deps,text,[(mid(i),count) for i,count in items],milestone=milestone)
@@ -87,7 +87,7 @@ def main():
     ],[('digital_circuit_board',1)])
     q(20,'Your First Digital Circuit','digital_circuit',12,20,[18,19],[
         'Combine one OR Gate, two NOT Gates, one AND Gate, four Electronic Circuits and one Digital Circuit Board with the native crafting recipe.',
-        'This does not automatically unlock AE2. Its starter presses, Sky Stone and pack-specific technology gates remain separate work.'
+        'This does not automatically unlock AE2. The pulled press-blank and Sky Stone recipes bootstrap AE2; Electronic Circuits gate its starter machines and processors. Later autocrafting/addon boundaries still need review.'
     ],[('digital_circuit',1)],True)
     q(21,'Sodium Batteries','sodium_battery',0,28,[1],[
         'Salt electrolysis supplies Sodium Dust alongside chlorine. Craft Sodium Batteries with sodium, battery-alloy plates/curved plates and Aluminum Cable.',
@@ -111,7 +111,7 @@ def main():
     ],[('hv_mv_transformer',1)])
     q(26,'A Working HV Factory','hv_steam_turbine',15,28,[25],[
         'Check this after sustained HV generation runs a real load while the earlier MV/LV lines remain operational. Confirm stainless, annealed wire and digital circuits can replenish themselves.',
-        'This is the first-HV milestone. Later mineral deposits, AE2 starter gates, nuclear materials and Nexus runtime implementation are documented separately in the progression-gap table.'
+        'This is the first-HV milestone. Later feedstock coverage, AE2 addon gates, nuclear fuel processing and Nexus runtime implementation are documented separately in the progression-gap table.'
     ],milestone=True)
     c.save()
     if args.render:

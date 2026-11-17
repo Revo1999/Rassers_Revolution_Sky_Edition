@@ -1,0 +1,1240 @@
+[
+  [
+    {
+      "name": "crown",
+      "from": [
+        -4,
+        8,
+        -4
+      ],
+      "to": [
+        4,
+        9.5,
+        4
+      ],
+      "material": "shell",
+      "uv": [
+        2,
+        2
+      ],
+      "patch": [
+        33,
+        10
+      ]
+    },
+    {
+      "name": "helmet_top",
+      "from": [
+        -4.7,
+        6.8,
+        -4.5
+      ],
+      "to": [
+        4.7,
+        8,
+        4.5
+      ],
+      "material": "shell",
+      "uv": [
+        38,
+        2
+      ],
+      "patch": [
+        37,
+        11
+      ]
+    },
+    {
+      "name": "shell_side_-4.8",
+      "from": [
+        -4.8,
+        3,
+        -3
+      ],
+      "to": [
+        -3.9,
+        6.8,
+        4.5
+      ],
+      "material": "shell",
+      "uv": [
+        78,
+        2
+      ],
+      "patch": [
+        17,
+        12
+      ]
+    },
+    {
+      "name": "shell_side_3.9",
+      "from": [
+        3.9,
+        3,
+        -3
+      ],
+      "to": [
+        4.8,
+        6.8,
+        4.5
+      ],
+      "material": "shell",
+      "uv": [
+        98,
+        2
+      ],
+      "patch": [
+        17,
+        12
+      ]
+    },
+    {
+      "name": "rear_shell",
+      "from": [
+        -3.9,
+        2.7,
+        3.8
+      ],
+      "to": [
+        3.9,
+        6.8,
+        4.8
+      ],
+      "material": "shell",
+      "uv": [
+        2,
+        17
+      ],
+      "patch": [
+        18,
+        6
+      ]
+    },
+    {
+      "name": "brow_brim",
+      "from": [
+        -4.6,
+        6.1,
+        -5.1
+      ],
+      "to": [
+        4.6,
+        6.8,
+        -3.5
+      ],
+      "material": "steel",
+      "uv": [
+        23,
+        17
+      ],
+      "patch": [
+        22,
+        3
+      ]
+    },
+    {
+      "name": "ration_module",
+      "from": [
+        4.8,
+        4.6,
+        0.2
+      ],
+      "to": [
+        6.8,
+        7.4,
+        3.2
+      ],
+      "material": "canvas",
+      "uv": [
+        48,
+        17
+      ],
+      "patch": [
+        11,
+        6
+      ]
+    },
+    {
+      "name": "hose_coupling",
+      "from": [
+        4.8,
+        3.6,
+        -1.4
+      ],
+      "to": [
+        6,
+        4.6,
+        0.9
+      ],
+      "material": "brass",
+      "uv": [
+        62,
+        17
+      ],
+      "patch": [
+        8,
+        4
+      ]
+    },
+    {
+      "name": "hose_down",
+      "from": [
+        4.85,
+        1.4,
+        -2.1
+      ],
+      "to": [
+        5.75,
+        3.6,
+        -1.2
+      ],
+      "material": "rubber",
+      "uv": [
+        73,
+        17
+      ],
+      "patch": [
+        4,
+        4
+      ]
+    },
+    {
+      "name": "hose_to_face",
+      "from": [
+        4.85,
+        0.5,
+        -4.9
+      ],
+      "to": [
+        5.75,
+        1.4,
+        -1.2
+      ],
+      "material": "rubber",
+      "uv": [
+        80,
+        17
+      ],
+      "patch": [
+        10,
+        5
+      ]
+    },
+    {
+      "name": "hose_to_mouth",
+      "from": [
+        0.8,
+        0.5,
+        -5
+      ],
+      "to": [
+        4.85,
+        1.4,
+        -4.1
+      ],
+      "material": "rubber",
+      "uv": [
+        93,
+        17
+      ],
+      "patch": [
+        10,
+        2
+      ]
+    },
+    {
+      "name": "mouthpiece",
+      "from": [
+        -0.8,
+        0.3,
+        -5.3
+      ],
+      "to": [
+        1.2,
+        1.6,
+        -4.4
+      ],
+      "material": "steel",
+      "uv": [
+        106,
+        17
+      ],
+      "patch": [
+        6,
+        3
+      ]
+    },
+    {
+      "name": "left_strap",
+      "from": [
+        -4.9,
+        1.1,
+        1.5
+      ],
+      "to": [
+        -4.1,
+        3,
+        2.4
+      ],
+      "material": "canvas",
+      "uv": [
+        115,
+        17
+      ],
+      "patch": [
+        4,
+        3
+      ]
+    }
+  ],
+  [
+    {
+      "name": "crown",
+      "from": [
+        -4,
+        8,
+        -4
+      ],
+      "to": [
+        4,
+        9.5,
+        4
+      ],
+      "material": "shell",
+      "uv": [
+        2,
+        2
+      ],
+      "patch": [
+        33,
+        10
+      ]
+    },
+    {
+      "name": "helmet_top",
+      "from": [
+        -4.7,
+        6.8,
+        -4.5
+      ],
+      "to": [
+        4.7,
+        8,
+        4.5
+      ],
+      "material": "shell",
+      "uv": [
+        38,
+        2
+      ],
+      "patch": [
+        37,
+        11
+      ]
+    },
+    {
+      "name": "shell_side_-4.8",
+      "from": [
+        -4.8,
+        3,
+        -3
+      ],
+      "to": [
+        -3.9,
+        6.8,
+        4.5
+      ],
+      "material": "shell",
+      "uv": [
+        78,
+        2
+      ],
+      "patch": [
+        17,
+        12
+      ]
+    },
+    {
+      "name": "shell_side_3.9",
+      "from": [
+        3.9,
+        3,
+        -3
+      ],
+      "to": [
+        4.8,
+        6.8,
+        4.5
+      ],
+      "material": "shell",
+      "uv": [
+        98,
+        2
+      ],
+      "patch": [
+        17,
+        12
+      ]
+    },
+    {
+      "name": "rear_shell",
+      "from": [
+        -3.9,
+        2.7,
+        3.8
+      ],
+      "to": [
+        3.9,
+        6.8,
+        4.8
+      ],
+      "material": "shell",
+      "uv": [
+        2,
+        17
+      ],
+      "patch": [
+        18,
+        6
+      ]
+    },
+    {
+      "name": "brow_brim",
+      "from": [
+        -4.6,
+        6.1,
+        -5.1
+      ],
+      "to": [
+        4.6,
+        6.8,
+        -3.5
+      ],
+      "material": "steel",
+      "uv": [
+        23,
+        17
+      ],
+      "patch": [
+        22,
+        3
+      ]
+    },
+    {
+      "name": "ration_module",
+      "from": [
+        4.8,
+        4.6,
+        0.2
+      ],
+      "to": [
+        6.8,
+        7.4,
+        3.2
+      ],
+      "material": "steel",
+      "uv": [
+        48,
+        17
+      ],
+      "patch": [
+        11,
+        6
+      ]
+    },
+    {
+      "name": "hose_coupling",
+      "from": [
+        4.8,
+        3.6,
+        -1.4
+      ],
+      "to": [
+        6,
+        4.6,
+        0.9
+      ],
+      "material": "brass",
+      "uv": [
+        62,
+        17
+      ],
+      "patch": [
+        8,
+        4
+      ]
+    },
+    {
+      "name": "hose_down",
+      "from": [
+        4.85,
+        1.4,
+        -2.1
+      ],
+      "to": [
+        5.75,
+        3.6,
+        -1.2
+      ],
+      "material": "rubber",
+      "uv": [
+        73,
+        17
+      ],
+      "patch": [
+        4,
+        4
+      ]
+    },
+    {
+      "name": "hose_to_face",
+      "from": [
+        4.85,
+        0.5,
+        -4.9
+      ],
+      "to": [
+        5.75,
+        1.4,
+        -1.2
+      ],
+      "material": "rubber",
+      "uv": [
+        80,
+        17
+      ],
+      "patch": [
+        10,
+        5
+      ]
+    },
+    {
+      "name": "hose_to_mouth",
+      "from": [
+        0.8,
+        0.5,
+        -5
+      ],
+      "to": [
+        4.85,
+        1.4,
+        -4.1
+      ],
+      "material": "rubber",
+      "uv": [
+        93,
+        17
+      ],
+      "patch": [
+        10,
+        2
+      ]
+    },
+    {
+      "name": "mouthpiece",
+      "from": [
+        -0.8,
+        0.3,
+        -5.3
+      ],
+      "to": [
+        1.2,
+        1.6,
+        -4.4
+      ],
+      "material": "steel",
+      "uv": [
+        106,
+        17
+      ],
+      "patch": [
+        6,
+        3
+      ]
+    },
+    {
+      "name": "left_strap",
+      "from": [
+        -4.9,
+        1.1,
+        1.5
+      ],
+      "to": [
+        -4.1,
+        3,
+        2.4
+      ],
+      "material": "canvas",
+      "uv": [
+        115,
+        17
+      ],
+      "patch": [
+        4,
+        3
+      ]
+    },
+    {
+      "name": "left_storage_pod",
+      "from": [
+        -6.5,
+        3.3,
+        -0.7
+      ],
+      "to": [
+        -4.8,
+        6.6,
+        2.9
+      ],
+      "material": "canvas",
+      "uv": [
+        2,
+        26
+      ],
+      "patch": [
+        11,
+        7
+      ]
+    },
+    {
+      "name": "reinforced_crown_rail",
+      "from": [
+        -0.6,
+        9.5,
+        -2.8
+      ],
+      "to": [
+        0.6,
+        10.1,
+        3.2
+      ],
+      "material": "steel",
+      "uv": [
+        16,
+        26
+      ],
+      "patch": [
+        15,
+        7
+      ]
+    },
+    {
+      "name": "side_control",
+      "from": [
+        6.8,
+        5,
+        0.7
+      ],
+      "to": [
+        7.35,
+        6.8,
+        2.8
+      ],
+      "material": "control",
+      "uv": [
+        34,
+        26
+      ],
+      "patch": [
+        6,
+        4
+      ]
+    },
+    {
+      "name": "front_mount",
+      "from": [
+        -1,
+        7,
+        -5.3
+      ],
+      "to": [
+        1,
+        8.1,
+        -4.5
+      ],
+      "material": "steel",
+      "uv": [
+        43,
+        26
+      ],
+      "patch": [
+        6,
+        2
+      ]
+    },
+    {
+      "name": "hose_armour",
+      "from": [
+        5.75,
+        1.3,
+        -2
+      ],
+      "to": [
+        6.25,
+        3.3,
+        -1.3
+      ],
+      "material": "steel",
+      "uv": [
+        52,
+        26
+      ],
+      "patch": [
+        3,
+        3
+      ]
+    }
+  ],
+  [
+    {
+      "name": "crown",
+      "from": [
+        -4,
+        8,
+        -4
+      ],
+      "to": [
+        4,
+        9.5,
+        4
+      ],
+      "material": "shell",
+      "uv": [
+        2,
+        2
+      ],
+      "patch": [
+        33,
+        10
+      ]
+    },
+    {
+      "name": "helmet_top",
+      "from": [
+        -4.7,
+        6.8,
+        -4.5
+      ],
+      "to": [
+        4.7,
+        8,
+        4.5
+      ],
+      "material": "shell",
+      "uv": [
+        38,
+        2
+      ],
+      "patch": [
+        37,
+        11
+      ]
+    },
+    {
+      "name": "shell_side_-4.8",
+      "from": [
+        -4.8,
+        3,
+        -3
+      ],
+      "to": [
+        -3.9,
+        6.8,
+        4.5
+      ],
+      "material": "shell",
+      "uv": [
+        78,
+        2
+      ],
+      "patch": [
+        17,
+        12
+      ]
+    },
+    {
+      "name": "shell_side_3.9",
+      "from": [
+        3.9,
+        3,
+        -3
+      ],
+      "to": [
+        4.8,
+        6.8,
+        4.5
+      ],
+      "material": "shell",
+      "uv": [
+        98,
+        2
+      ],
+      "patch": [
+        17,
+        12
+      ]
+    },
+    {
+      "name": "rear_shell",
+      "from": [
+        -3.9,
+        2.7,
+        3.8
+      ],
+      "to": [
+        3.9,
+        6.8,
+        4.8
+      ],
+      "material": "shell",
+      "uv": [
+        2,
+        17
+      ],
+      "patch": [
+        18,
+        6
+      ]
+    },
+    {
+      "name": "brow_brim",
+      "from": [
+        -4.6,
+        6.1,
+        -5.1
+      ],
+      "to": [
+        4.6,
+        6.8,
+        -3.5
+      ],
+      "material": "steel",
+      "uv": [
+        23,
+        17
+      ],
+      "patch": [
+        22,
+        3
+      ]
+    },
+    {
+      "name": "ration_module",
+      "from": [
+        4.8,
+        4.6,
+        0.2
+      ],
+      "to": [
+        6.8,
+        7.4,
+        3.2
+      ],
+      "material": "steel",
+      "uv": [
+        48,
+        17
+      ],
+      "patch": [
+        11,
+        6
+      ]
+    },
+    {
+      "name": "hose_coupling",
+      "from": [
+        4.8,
+        3.6,
+        -1.4
+      ],
+      "to": [
+        6,
+        4.6,
+        0.9
+      ],
+      "material": "brass",
+      "uv": [
+        62,
+        17
+      ],
+      "patch": [
+        8,
+        4
+      ]
+    },
+    {
+      "name": "hose_down",
+      "from": [
+        4.85,
+        1.4,
+        -2.1
+      ],
+      "to": [
+        5.75,
+        3.6,
+        -1.2
+      ],
+      "material": "rubber",
+      "uv": [
+        73,
+        17
+      ],
+      "patch": [
+        4,
+        4
+      ]
+    },
+    {
+      "name": "hose_to_face",
+      "from": [
+        4.85,
+        0.5,
+        -4.9
+      ],
+      "to": [
+        5.75,
+        1.4,
+        -1.2
+      ],
+      "material": "rubber",
+      "uv": [
+        80,
+        17
+      ],
+      "patch": [
+        10,
+        5
+      ]
+    },
+    {
+      "name": "hose_to_mouth",
+      "from": [
+        0.8,
+        0.5,
+        -5
+      ],
+      "to": [
+        4.85,
+        1.4,
+        -4.1
+      ],
+      "material": "rubber",
+      "uv": [
+        93,
+        17
+      ],
+      "patch": [
+        10,
+        2
+      ]
+    },
+    {
+      "name": "mouthpiece",
+      "from": [
+        -0.8,
+        0.3,
+        -5.3
+      ],
+      "to": [
+        1.2,
+        1.6,
+        -4.4
+      ],
+      "material": "steel",
+      "uv": [
+        106,
+        17
+      ],
+      "patch": [
+        6,
+        3
+      ]
+    },
+    {
+      "name": "left_strap",
+      "from": [
+        -4.9,
+        1.1,
+        1.5
+      ],
+      "to": [
+        -4.1,
+        3,
+        2.4
+      ],
+      "material": "canvas",
+      "uv": [
+        115,
+        17
+      ],
+      "patch": [
+        4,
+        3
+      ]
+    },
+    {
+      "name": "left_storage_pod",
+      "from": [
+        -6.5,
+        3.3,
+        -0.7
+      ],
+      "to": [
+        -4.8,
+        6.6,
+        2.9
+      ],
+      "material": "canvas",
+      "uv": [
+        2,
+        26
+      ],
+      "patch": [
+        11,
+        7
+      ]
+    },
+    {
+      "name": "reinforced_crown_rail",
+      "from": [
+        -0.6,
+        9.5,
+        -2.8
+      ],
+      "to": [
+        0.6,
+        10.1,
+        3.2
+      ],
+      "material": "steel",
+      "uv": [
+        16,
+        26
+      ],
+      "patch": [
+        15,
+        7
+      ]
+    },
+    {
+      "name": "side_control",
+      "from": [
+        6.8,
+        5,
+        0.7
+      ],
+      "to": [
+        7.35,
+        6.8,
+        2.8
+      ],
+      "material": "control",
+      "uv": [
+        34,
+        26
+      ],
+      "patch": [
+        6,
+        4
+      ]
+    },
+    {
+      "name": "front_mount",
+      "from": [
+        -1,
+        7,
+        -5.3
+      ],
+      "to": [
+        1,
+        8.1,
+        -4.5
+      ],
+      "material": "steel",
+      "uv": [
+        43,
+        26
+      ],
+      "patch": [
+        6,
+        2
+      ]
+    },
+    {
+      "name": "hose_armour",
+      "from": [
+        5.75,
+        1.3,
+        -2
+      ],
+      "to": [
+        6.25,
+        3.3,
+        -1.3
+      ],
+      "material": "steel",
+      "uv": [
+        52,
+        26
+      ],
+      "patch": [
+        3,
+        3
+      ]
+    },
+    {
+      "name": "rear_storage_manifold",
+      "from": [
+        -3.6,
+        3.7,
+        4.8
+      ],
+      "to": [
+        3.6,
+        7.5,
+        6.2
+      ],
+      "material": "steel",
+      "uv": [
+        58,
+        26
+      ],
+      "patch": [
+        18,
+        6
+      ]
+    },
+    {
+      "name": "ration_canister_-3.1",
+      "from": [
+        -3.1,
+        3.5,
+        6.2
+      ],
+      "to": [
+        -1.5,
+        7.4,
+        7.3
+      ],
+      "material": "tank",
+      "uv": [
+        79,
+        26
+      ],
+      "patch": [
+        6,
+        6
+      ]
+    },
+    {
+      "name": "ration_canister_-0.8",
+      "from": [
+        -0.8,
+        3.5,
+        6.2
+      ],
+      "to": [
+        0.8,
+        7.4,
+        7.3
+      ],
+      "material": "tank",
+      "uv": [
+        88,
+        26
+      ],
+      "patch": [
+        6,
+        6
+      ]
+    },
+    {
+      "name": "ration_canister_1.5",
+      "from": [
+        1.5,
+        3.5,
+        6.2
+      ],
+      "to": [
+        3.1,
+        7.4,
+        7.3
+      ],
+      "material": "tank",
+      "uv": [
+        97,
+        26
+      ],
+      "patch": [
+        6,
+        6
+      ]
+    },
+    {
+      "name": "left_temple_plate",
+      "from": [
+        -5.25,
+        5.5,
+        -3.1
+      ],
+      "to": [
+        -4.796,
+        7.5,
+        0.1
+      ],
+      "material": "steel",
+      "uv": [
+        106,
+        26
+      ],
+      "patch": [
+        8,
+        6
+      ]
+    },
+    {
+      "name": "right_temple_plate",
+      "from": [
+        4.8,
+        5.5,
+        -3.1
+      ],
+      "to": [
+        5.25,
+        7.5,
+        0.1
+      ],
+      "material": "steel",
+      "uv": [
+        117,
+        26
+      ],
+      "patch": [
+        8,
+        6
+      ]
+    },
+    {
+      "name": "status_panel",
+      "from": [
+        -2.2,
+        7.1,
+        -5.4
+      ],
+      "to": [
+        2.2,
+        7.9,
+        -5.1
+      ],
+      "material": "control",
+      "uv": [
+        2,
+        36
+      ],
+      "patch": [
+        10,
+        2
+      ]
+    }
+  ]
+]

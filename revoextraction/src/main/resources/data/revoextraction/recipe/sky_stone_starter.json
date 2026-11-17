@@ -1,0 +1,30 @@
+{
+  "type": "create:mixing",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "item": "minecraft:cobblestone"
+    },
+    {
+      "item": "minecraft:cobblestone"
+    },
+    {
+      "item": "minecraft:cobblestone"
+    },
+    {
+      "item": "minecraft:cobblestone"
+    },
+    {
+      "item": "minecraft:ender_pearl"
+    },
+    {
+      "item": "ae2:certus_quartz_dust"
+    }
+  ],
+  "results": [
+    {
+      "id": "ae2:sky_stone_block",
+      "count": 4
+    }
+  ]
+}

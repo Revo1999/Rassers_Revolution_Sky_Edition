@@ -1,7 +1,7 @@
 {
   "id": "5EB0000000000000",
   "filename": "5eb0000000000000",
-  "title": "Chapter 7: HV - Refining, Coils and Logic",
+  "title": "Chapter 8: HV - Refining, Coils and Logic",
   "icon": {
     "id": "modern_industrialization:hv_steam_turbine",
     "count": 1
@@ -21,7 +21,7 @@
       "shape": "hexagon",
       "size": 1.25,
       "dependencies": [
-        "5E90000000000019"
+        "5ED0000000000019"
       ],
       "description": [
         "Continue from the integrated MV factory. Keep drills, sludge washing, aluminum/silicon, electronic circuits, gases and plastic running.",
@@ -642,7 +642,7 @@
       ],
       "description": [
         "Combine one OR Gate, two NOT Gates, one AND Gate, four Electronic Circuits and one Digital Circuit Board with the native crafting recipe.",
-        "This does not automatically unlock AE2. Its starter presses, Sky Stone and pack-specific technology gates remain separate work."
+        "This does not automatically unlock AE2. The pulled press-blank and Sky Stone recipes bootstrap AE2; Electronic Circuits gate its starter machines and processors. Later autocrafting/addon boundaries still need review."
       ],
       "tasks": [
         {
@@ -836,7 +836,7 @@
       ],
       "description": [
         "Check this after sustained HV generation runs a real load while the earlier MV/LV lines remain operational. Confirm stainless, annealed wire and digital circuits can replenish themselves.",
-        "This is the first-HV milestone. Later mineral deposits, AE2 starter gates, nuclear materials and Nexus runtime implementation are documented separately in the progression-gap table."
+        "This is the first-HV milestone. Later feedstock coverage, AE2 addon gates, nuclear fuel processing and Nexus runtime implementation are documented separately in the progression-gap table."
       ],
       "tasks": [
         {

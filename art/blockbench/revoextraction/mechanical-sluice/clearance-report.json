@@ -1,0 +1,7 @@
+{
+  "result": "PASS",
+  "samples": 129,
+  "solid_elements": 174,
+  "scope": "Separate moving assemblies; full oriented-box SAT. Touches under 0.025 units excluded. Rigid internal joints and fluid volumes excluded.",
+  "conflicts": []
+}

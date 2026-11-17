@@ -1,0 +1,46 @@
+{
+  "result": "PASS",
+  "tiers": [
+    {
+      "item": "feeding_helmet",
+      "cubes": 13,
+      "max_triangles": 156,
+      "texture_pixels": [
+        128,
+        128
+      ],
+      "pixels_per_model_unit": 1,
+      "native_and_game_texture_sha256": "88b651c0cf866ea58d167803fd02f0212f36e913984ef3a3b54cf1f27f7251dc"
+    },
+    {
+      "item": "advanced_feeding_helmet",
+      "cubes": 18,
+      "max_triangles": 216,
+      "texture_pixels": [
+        128,
+        128
+      ],
+      "pixels_per_model_unit": 1,
+      "native_and_game_texture_sha256": "23b548eb54d156aa8644b7cb0007aaf0512acd72a63ad359414e7f8ddb04ff42"
+    },
+    {
+      "item": "elite_feeding_helmet",
+      "cubes": 25,
+      "max_triangles": 300,
+      "texture_pixels": [
+        128,
+        128
+      ],
+      "pixels_per_model_unit": 1,
+      "native_and_game_texture_sha256": "b2c802ce54a0ff9c15cb26114f1ce3454f9fe539294234a723db92feb7c65c48"
+    }
+  ],
+  "checks": [
+    "three distinct native sources",
+    "exported item geometry matches native piece counts",
+    "guide head excluded",
+    "shared item/armor pixels",
+    "vanilla pixel density",
+    "Java model and UV limits"
+  ]
+}

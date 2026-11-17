@@ -45,6 +45,17 @@ if (providers.gradleProperty('revoVacuumTests').isPresent()) {
 if (providers.gradleProperty('revoVacuumUiQa').isPresent()) { sourceSets.main.java.srcDir 'src/vacuumuiqa/java' }
 tasks.named('jar', Jar) { exclude '**/VacuumGameTests*','**/VacuumUiQa*','data/revoindustry/structure/vacuum_test.nbt' }
 
+if (providers.gradleProperty('revoFeedingTests').isPresent()) {
+ sourceSets.main.java.srcDir 'src/feedingtest/java'
+ sourceSets.main.resources.srcDir 'src/feedingtest/resources'
+ dependencies { runtimeOnly files(rootProject.file('.local/integration-mods/Modern-Industrialization-2.5.11.jar'),rootProject.file('.local/integration-mods/ironfurnaces-neoforge-1.21.1-4.3.2.jar'),rootProject.file('.local/integration-mods/guideme-21.1.22.jar')) }
+ neoForge { mods { revolib { sourceSet project(':revolib').sourceSets.main } }
+  runs { feedingTests { type='gameTestServer'; systemProperty 'neoforge.enabledGameTestNamespaces','revoindustry' } }
+ }
+}
+if (providers.gradleProperty('revoFeedingQa').isPresent()) { sourceSets.main.java.srcDir 'src/feedingqa/java' }
+tasks.named('jar', Jar) { exclude '**/FeedingHelmetTests*','**/FeedingHelmetVisualQa*','data/revoindustry/structure/feeding_test.nbt' }
+
 if (providers.gradleProperty('revoHatcheryTests').isPresent()) {
  sourceSets.main.java.srcDir 'src/hatcherytest/java'
  sourceSets.main.resources.srcDir 'src/hatcherytest/resources'

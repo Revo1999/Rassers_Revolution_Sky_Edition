@@ -1,0 +1,167 @@
+{
+  "credit": "Made with Blockbench",
+  "textures": {
+    "10": "revoextraction:block/sluice/spring",
+    "particle": "create:block/andesite_casing"
+  },
+  "elements": [
+    {
+      "name": "rubber_spring_front_-1",
+      "from": [
+        0,
+        1.86667,
+        0.33333
+      ],
+      "to": [
+        0.66667,
+        2.33333,
+        1
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          2.66667,
+          0,
+          0
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            2,
+            1.4
+          ],
+          "texture": "#10"
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            2,
+            1.4
+          ],
+          "texture": "#10"
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            2,
+            1.4
+          ],
+          "texture": "#10"
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            2,
+            1.4
+          ],
+          "texture": "#10"
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            2,
+            2
+          ],
+          "texture": "#10"
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            2,
+            2
+          ],
+          "texture": "#10"
+        }
+      }
+    },
+    {
+      "name": "rubber_spring_front_1",
+      "from": [
+        4.66667,
+        1.86667,
+        0.33333
+      ],
+      "to": [
+        5.33333,
+        2.33333,
+        1
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          2.66667,
+          0,
+          0
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            2,
+            1.4
+          ],
+          "texture": "#10"
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            2,
+            1.4
+          ],
+          "texture": "#10"
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            2,
+            1.4
+          ],
+          "texture": "#10"
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            2,
+            1.4
+          ],
+          "texture": "#10"
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            2,
+            2
+          ],
+          "texture": "#10"
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            2,
+            2
+          ],
+          "texture": "#10"
+        }
+      }
+    }
+  ],
+  "parent": "minecraft:block/block",
+  "render_type": "minecraft:cutout"
+}

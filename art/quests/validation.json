@@ -1,9 +1,9 @@
 {
-  "chapters": 12,
-  "quests": 228,
+  "chapters": 14,
+  "quests": 287,
   "newQuests": 83,
-  "existingQuestsPreserved": 145,
-  "uniqueIds": 536,
+  "existingQuestsPreserved": 204,
+  "uniqueIds": 663,
   "acyclicDependencies": true,
   "newItemReferencesResolved": true,
   "nonConsumingItemTasks": true,
@@ -33,7 +33,7 @@
     },
     {
       "title": "Progression Routes: Biology to Electricity",
-      "quests": 24
+      "quests": 25
     },
     {
       "title": "Wither Containment",
@@ -44,24 +44,37 @@
       "quests": 5
     },
     {
-      "title": "Chapter 5: LV - Metallurgy and Electronics",
-      "quests": 25
+      "title": "Chapter 5: The LV Factory",
+      "quests": 48
     },
     {
-      "title": "Chapter 6: MV - Power and Chemistry",
-      "quests": 25
+      "title": "Crystals and Distant Resources",
+      "quests": 10
     },
     {
       "title": "Field Equipment: Running Shoes",
       "quests": 7
     },
     {
-      "title": "Chapter 7: HV - Refining, Coils and Logic",
+      "title": "Chapter 8: HV - Refining, Coils and Logic",
       "quests": 26
+    },
+    {
+      "title": "Chapter 6: Electronics and Separation",
+      "quests": 25
+    },
+    {
+      "title": "Chapter 7: MV - Power and Chemistry",
+      "quests": 25
     }
   ],
-  "build": "assemble collectMods :revolib:syncPackOverrides passed",
-  "syncedChapters": 12,
-  "hvRegenerationDeterministic": true,
-  "hvChapterSha256": "2a9051d21e47336359c26a6abf1b9e581c75ae4d18a4ce974ac23b9a1f7b6159"
+  "build": "Merged build collectMods :revolib:syncPackOverrides passed",
+  "syncedChapters": 14,
+  "remoteBaseline": "039d7b9",
+  "idReconciliation": {
+    "publishedRemoteLV": "5E800000 kept",
+    "publishedRemoteResources": "5E900000 kept",
+    "unpublishedLocalElectronics": "5E800000 -> 5EC00000",
+    "unpublishedLocalMV": "5E900000 -> 5ED00000"
+  }
 }

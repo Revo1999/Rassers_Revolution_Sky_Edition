@@ -1,5 +1,17 @@
 # Rassers Revolution: Sky Edition
 
+For missing showroom machines, sludge processing, merged branch work and
+unfinished Nexus runtime features, see [machine availability and branch status](docs/MISSING-MACHINES-AND-BRANCH-STATUS.md).
+
+RevoIndustry now includes three [Feeding Helmet tiers](docs/FEEDING-HELMETS.md)
+with 1, 4 and 25 food slots, visible mouth tubes and portion-aware auto-feeding.
+Browse the [screenshot collection](screenshots/README.md), including the earlier
+41-machine gallery and the new helmet/sluice views.
+
+The new Create-powered [Mechanical Sluice and Gravel Feeder](docs/MECHANICAL-SLUICE.md)
+wash gravel with real pump-fed water. A guided eccentric moves the channel
+vertically beneath steady water, with native Blockbench sources and dithered textures.
+
 Development scaffold for Minecraft 1.21.1 / NeoForge 21.1.265 / Java 21.
 Seven separate mod projects: RevoLib, RevoIndustry, RevoExtraction,
 RevoCultivation, RevoGenetics, RevoStorage and RevoAchievements. RevoExtraction contains the wooden and iron drills; see
@@ -18,7 +30,7 @@ The early quest maps have refreshed icons/layouts and both crank and water-power
 routes; freely granted manuals cannot be consumed as recipe ingredients. See
 [QUEST-BOOK.md](docs/QUEST-BOOK.md).
 
-The quest book now has 228 quests, including LV metallurgy/electronics, MV
+The quest book now has 287 quests, including LV metallurgy/electronics, MV
 power/chemistry, HV refining/coils/logic and early running shoes. See [LV/MV](docs/QUESTS-LV-MV.md)
 and [remaining progression gaps](docs/PROGRESSION-GAPS-AFTER-MV.md).
 
@@ -163,6 +175,8 @@ Early resource bridges now provide Create coke milling, Cow leather, Steel Blaze
 ## Progression and chest-drive storage update
 
 The twelve-task progression batch is implemented, including controlled crop/mob starters, quartz and burners, first-electricity quests, electric geology, trading, glacial/deep resources and local mechanical storage. RevoStorage adds nine-chest drives with native Iron Chests capacity plus an AE-style crafting terminal with search, shift-click crafting and EMI recipe transfer. See [implementation details](docs/PROGRESSION-EXPANSION.md), [verification](docs/PROGRESSION-EXPANSION-QA.md) and the [next recipe audit](docs/RECIPE-AUDIT-3.md).
+
+The crystal/late-resource update implements the next ten audit items. See [routes and gates](docs/CRYSTAL-AND-LATE-RESOURCES.md), the [machine screenshot gallery](screenshots/machines/INDEX.md) and [audit 4](docs/RECIPE-AUDIT-4.md).
 
 ### Drill minerals and sludge
 

@@ -48,6 +48,7 @@ def main():
         z.write(ROOT/'docs/STEEL-DRILL.md','overrides/STEEL-DRILL.md')
         z.write(ROOT/'docs/EARLY-RESOURCE-BRIDGES.md','overrides/EARLY-RESOURCE-BRIDGES.md')
         z.write(ROOT/'docs/PROGRESSION-EXPANSION.md','overrides/PROGRESSION-EXPANSION.md')
+        z.write(ROOT/'docs/CRYSTAL-AND-LATE-RESOURCES.md','overrides/CRYSTAL-AND-LATE-RESOURCES.md')
         z.write(ROOT/'docs/METAL-FARMS.md','overrides/METAL-FARMS.md')
         z.write(ROOT/'docs/REVO-FURNACES.md','overrides/REVO-FURNACES.md')
         z.write(ROOT/'docs/REVO-VACUUMS.md','overrides/REVO-VACUUMS.md')

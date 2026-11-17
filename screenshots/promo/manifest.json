@@ -1,0 +1,62 @@
+{
+  "screenshots": [
+    {
+      "file": "01-first-island.png",
+      "title": "The First Island",
+      "lighting": "Morning",
+      "pixels": [
+        2560,
+        1440
+      ]
+    },
+    {
+      "file": "02-glass-and-growth.png",
+      "title": "Glass and Growth",
+      "lighting": "Day",
+      "pixels": [
+        2560,
+        1440
+      ]
+    },
+    {
+      "file": "03-copper-current.png",
+      "title": "Copper Current",
+      "lighting": "Golden hour",
+      "pixels": [
+        2560,
+        1440
+      ]
+    },
+    {
+      "file": "04-greenhouse-after-dark.png",
+      "title": "Greenhouse After Dark",
+      "lighting": "Night",
+      "pixels": [
+        2560,
+        1440
+      ]
+    },
+    {
+      "file": "05-night-shift.png",
+      "title": "The Night Shift",
+      "lighting": "Night",
+      "pixels": [
+        2560,
+        1440
+      ]
+    },
+    {
+      "file": "06-industry-in-the-clouds.png",
+      "title": "Industry Above the Clouds",
+      "lighting": "Blue hour",
+      "pixels": [
+        2560,
+        1440
+      ]
+    }
+  ],
+  "originals": "Native Minecraft screenshots, no image alteration",
+  "world": "Revo Promo Skybase",
+  "shader": "Complementary Reimagined r5.9.3",
+  "automation_proof": "Real server ticks: 640\nSluice paid cycles: 11\nIron drill cycles: 64\nCompost cycles: 3\nSilk cycles: 1\nElectric greenhouse harvests: 3, 3\nElectric drill cycles: 3\nFoundry: Smelting\nStorage slots: 324\nThe staged creative build uses actual creative motors/FE supplies and finite stocked inputs; products are made by native machine ticks and hoppers.\n"
+}

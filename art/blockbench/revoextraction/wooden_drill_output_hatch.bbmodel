@@ -19,9 +19,7 @@
   "variable_placeholder_buttons": [],
   "unhandled_root_fields": {},
   "ai_used": true,
-  "ai_agents": [
-    "Codex via Blockbench MCP"
-  ],
+  "ai_agents": "Unknown MCP client",
   "resolution": {
     "width": 512,
     "height": 512
@@ -562,7 +560,7 @@
       "allow_mirror_modeling": true,
       "from": [
         1,
-        1,
+        0.996,
         0
       ],
       "to": [
@@ -649,7 +647,7 @@
       "allow_mirror_modeling": true,
       "from": [
         13,
-        1,
+        0.996,
         0
       ],
       "to": [
@@ -823,12 +821,12 @@
       "allow_mirror_modeling": true,
       "from": [
         3,
-        1,
+        0.996,
         0
       ],
       "to": [
         13,
-        3,
+        3.008,
         1
       ],
       "autouv": 0,
@@ -915,7 +913,7 @@
       ],
       "to": [
         14,
-        3,
+        3.004,
         3
       ],
       "autouv": 0,

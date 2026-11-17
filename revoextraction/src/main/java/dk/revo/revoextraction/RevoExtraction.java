@@ -50,7 +50,15 @@ public final class RevoExtraction {
     public static final DeferredItem<Item> SURVEY_CORE=ITEMS.register("deep_survey_core",()->new Item(new Item.Properties().stacksTo(1)));
     public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<ElectricDrillEntity>> ELECTRIC_ENTITY=ENTITIES.register("electric_drill",()->BlockEntityType.Builder.of(ElectricDrillEntity::new,ELECTRIC.get()).build(null));
     public static final DeferredHolder<net.minecraft.world.inventory.MenuType<?>,net.minecraft.world.inventory.MenuType<ElectricDrillMenu>> ELECTRIC_MENU=MENUS.register("electric_drill",()->new net.minecraft.world.inventory.MenuType<>(ElectricDrillMenu::new,net.minecraft.world.flag.FeatureFlags.DEFAULT_FLAGS));
+    public static final DeferredItem<Item> TUNGSTEN_CORE=ITEMS.registerSimpleItem("tungsten_survey_core",new Item.Properties().stacksTo(1));
+    public static final DeferredItem<Item> NUCLEAR_CORE=ITEMS.registerSimpleItem("nuclear_survey_core",new Item.Properties().stacksTo(1));
+    public static final DeferredItem<Item> LOGIC_BLANK=ITEMS.registerSimpleItem("logic_press_blank");
+    public static final DeferredItem<Item> CALCULATION_BLANK=ITEMS.registerSimpleItem("calculation_press_blank");
+    public static final DeferredItem<Item> ENGINEERING_BLANK=ITEMS.registerSimpleItem("engineering_press_blank");
+    public static final DeferredItem<Item> SILICON_BLANK=ITEMS.registerSimpleItem("silicon_press_blank");
+    public static final DeferredItem<Item> TEMPLATE_BLANK=ITEMS.registerSimpleItem("netherite_template_blank");
     public RevoExtraction(IEventBus bus) {
+        SluiceContent.bootstrap();
         ITEMS.registerSimpleBlockItem(ELECTRIC);HammerItems.bootstrap();ITEMS.registerSimpleBlockItem(HammerItems.DUST);
         for (var block : new DeferredBlock<?>[]{SUPPORT, CASING, CORE, CONTROLLER, INPUT, HATCH, IRON_SUPPORT, IRON_CASING, IRON_CORE, IRON_CONTROLLER, IRON_INPUT, IRON_HATCH, STEEL_SUPPORT, STEEL_CASING, STEEL_CORE, STEEL_CONTROLLER, STEEL_INPUT, STEEL_HATCH, STEEL_TANK}) ITEMS.registerSimpleBlockItem(block);
         BLOCKS.register(bus); ITEMS.register(bus); ENTITIES.register(bus); MENUS.register(bus);
@@ -60,9 +68,10 @@ public final class RevoExtraction {
         });
     }
     private void capabilities(RegisterCapabilitiesEvent event) {
+        SluiceContent.capabilities(event);
         event.registerBlockEntity(Capabilities.ItemHandler.BLOCK,ELECTRIC_ENTITY.get(),(be,side)->side==net.minecraft.core.Direction.UP?new net.neoforged.neoforge.items.wrapper.RangedWrapper(be.items,0,2):be.outputPort());
         dk.revo.revolib.energy.EnergyInterop.registerEuStorage(event,ELECTRIC_ENTITY.get(),(be,side)->be);
-        event.registerBlockEntity(Capabilities.FluidHandler.BLOCK,WATER_TANK_ENTITY.get(),(be,side)->be.water);
-        event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, OUTPUT.get(), (be, side) -> be.output());
+        event.registerBlockEntity(Capabilities.FluidHandler.BLOCK,WATER_TANK_ENTITY.get(),(be,side)->dk.revo.revolib.FeedbackHandlers.fluids(be,be.water));
+        event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, OUTPUT.get(), (be, side) -> dk.revo.revolib.FeedbackHandlers.items(be,be.output()));
     }
 }

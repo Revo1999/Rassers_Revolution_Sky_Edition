@@ -1,0 +1,22 @@
+{
+  "native_game_tests": 8,
+  "native_game_tests_passed": 8,
+  "full_modpack_client": "PASS",
+  "actual_worn_tick_feeding": "1 carrot consumed at 17/20 hunger; resulting hunger 20/20",
+  "inventory_grids": [
+    [
+      1,
+      1
+    ],
+    [
+      2,
+      2
+    ],
+    [
+      5,
+      5
+    ]
+  ],
+  "production_build": "PASS",
+  "earlier_gallery_screenshots": 41
+}

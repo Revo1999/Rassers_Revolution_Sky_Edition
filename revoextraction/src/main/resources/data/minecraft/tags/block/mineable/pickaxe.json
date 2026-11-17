@@ -14,6 +14,8 @@
     "revoextraction:steel_drill_input",
     "revoextraction:steel_drill_output_hatch",
     "revoextraction:steel_drill_water_tank",
-    "revoextraction:electric_drill"
+    "revoextraction:electric_drill",
+    "revoextraction:mechanical_sluice",
+    "revoextraction:gravel_feeder"
   ]
 }

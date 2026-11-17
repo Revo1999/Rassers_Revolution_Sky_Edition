@@ -1,0 +1,22 @@
+{
+  "result": "PASS",
+  "custom_cube_faces_checked": 624,
+  "custom_density_pixels_per_unit": 1,
+  "pixels_per_block": 16,
+  "stock_shaft": "Exact Create 6.0.10 axis.png and axis_top.png bytes; correct opaque atlas regions. Long one-piece shaft intentionally maps the stock 16-unit strip across its 27-unit length.",
+  "vanilla_water_and_gravel": "unchanged",
+  "animation": "unchanged",
+  "element_count": 110,
+  "custom_atlas_pixels": [
+    256,
+    256
+  ],
+  "custom_textures": 1,
+  "total_textures": 5,
+  "normals": "Side infills face outward; hidden bottom faces removed",
+  "coplanar_audit": {
+    "same_facing_coplanar_overlaps": 0,
+    "overlaps": []
+  },
+  "motion_clearance": "PASS"
+}

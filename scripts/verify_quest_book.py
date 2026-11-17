@@ -5,7 +5,7 @@ import hashlib,json,subprocess,zipfile
 
 ROOT=Path(__file__).resolve().parents[1]
 CHAPTERS=ROOT/'pack/overrides/config/ftbquests/quests/chapters'
-NEW={'5e80000000000000','5e90000000000000','5ea0000000000000','5eb0000000000000'}
+NEW={'5ec0000000000000','5ed0000000000000','5ea0000000000000','5eb0000000000000'}
 def verify():
     chapters=[json.loads(p.read_text(encoding='utf-8')) for p in sorted(CHAPTERS.glob('*.snbt'))]
     seen={};quests={};newquests=[]
@@ -43,7 +43,7 @@ def verify():
     for c in chapters:
         if c['filename'] in NEW:continue
         path=f"pack/overrides/config/ftbquests/quests/chapters/{c['filename']}.snbt"
-        before=json.loads(subprocess.check_output(['git','show','HEAD:'+path],cwd=ROOT).decode('utf-8'))
+        before=json.loads(subprocess.check_output(['git','show','origin/main:'+path],cwd=ROOT).decode('utf-8'))
         current={q['id']:q for q in c['quests']}
         for old in before['quests']:
             assert old['id'] in current
@@ -68,15 +68,15 @@ def verify():
             assert item in resources,'Unknown item/model reference '+item+' in '+q['title']
             assert 'quarry' not in item and 'nexus' not in item
     assert len(newquests)==83
-    assert '5E80000000000015' in quests['5E50000000000014']['dependencies']
+    assert '5EC0000000000015' in quests['5E50000000000014']['dependencies']
     # Crucial bootstrap ordering: EBF before aluminum/electrolyzer, never the reverse.
     def ancestors(ident):
         result=set()
         for d in quests[ident].get('dependencies',[]):result.add(d);result.update(ancestors(d))
         return result
-    assert '5E80000000000007' in ancestors('5E8000000000000A')
-    assert '5E8000000000000A' in ancestors('5E80000000000016')
-    assert '5E80000000000016' not in ancestors('5E80000000000007')
+    assert '5EC0000000000007' in ancestors('5EC000000000000A')
+    assert '5EC000000000000A' in ancestors('5EC0000000000016')
+    assert '5EC0000000000016' not in ancestors('5EC0000000000007')
     # First freezer cannot depend on the stainless/coil materials it must cool.
     assert '5EB000000000000B' not in ancestors('5EB0000000000008')
     assert '5EB000000000000E' not in ancestors('5EB000000000000D')

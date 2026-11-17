@@ -1,0 +1,901 @@
+{
+  "id": "5EC0000000000000",
+  "filename": "5ec0000000000000",
+  "title": "Chapter 6: Electronics and Separation",
+  "icon": {
+    "id": "modern_industrialization:electric_blast_furnace",
+    "count": 1
+  },
+  "order_index": 46,
+  "default_quest_shape": "circle",
+  "quests": [
+    {
+      "id": "5EC0000000000001",
+      "title": "An Electric Workshop",
+      "icon": {
+        "id": "modern_industrialization:lv_steam_turbine",
+        "count": 1
+      },
+      "x": 0.0,
+      "y": 0.0,
+      "shape": "hexagon",
+      "size": 1.25,
+      "dependencies": [
+        "5E80000000000029"
+      ],
+      "description": [
+        "Continue after Chapter 5: The LV Factory has established the EBF and first aluminum. This map reviews the metal routes before extending electronics and separation. Keep steam, water, fuel and battery supplies running.",
+        "Check this after powering an actual electric production cycle. Item quests detect possession; checkmark quests are your own commissioning confirmations. Neither consumes materials."
+      ],
+      "tasks": [
+        {
+          "id": "5EC0000000100010",
+          "type": "checkmark"
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5EC0000000000002",
+      "title": "Wire and Cut",
+      "icon": {
+        "id": "modern_industrialization:electric_wiremill",
+        "count": 1
+      },
+      "x": 3.0,
+      "y": 0.0,
+      "shape": "circle",
+      "size": 1.0,
+      "dependencies": [
+        "5EC0000000000001"
+      ],
+      "description": [
+        "Make the electric Wiremill and Cutting Machine using their native recipes. Keep bronze/steel tools available while these are being built.",
+        "Use wire, cable, rod and fine-wire recipes shown in EMI. Do not assume a Create sheet is an electrical wire or that every plate can be pressed in Create."
+      ],
+      "tasks": [
+        {
+          "id": "5EC0000000100020",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:electric_wiremill",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "5EC0000000100021",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:electric_cutting_machine",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5EC0000000000003",
+      "title": "Drill the Feedstocks",
+      "icon": {
+        "id": "modern_industrialization:bauxite_dust",
+        "count": 1
+      },
+      "x": 3.0,
+      "y": 4.0,
+      "shape": "circle",
+      "size": 1.0,
+      "dependencies": [
+        "5EC0000000000001",
+        "5E5000000000000B"
+      ],
+      "description": [
+        "Select Nickel, Silver and Bauxite on the Electric Geological Drill. Standard deposits consume 16 EU/t for 200 powered ticks per output.",
+        "Minerals come from drills; gems come from sludge processing. The disabled native quarries are not part of this factory."
+      ],
+      "tasks": [
+        {
+          "id": "5EC0000000100030",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:raw_nickel",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "5EC0000000100031",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:raw_silver",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "5EC0000000100032",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:bauxite_dust",
+            "count": 1
+          },
+          "count": 9,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5EC0000000000004",
+      "title": "Copper Meets Nickel",
+      "icon": {
+        "id": "modern_industrialization:cupronickel_ingot",
+        "count": 1
+      },
+      "x": 6.0,
+      "y": 4.0,
+      "shape": "circle",
+      "size": 1.0,
+      "dependencies": [
+        "5EC0000000000003"
+      ],
+      "description": [
+        "Process the drilled metals into dust. The MI Mixer combines one Copper Dust and one Nickel Dust into two Cupronickel Dust.",
+        "Smelt and shape the alloy using its native recipes. Cupronickel starts the EBF coil branch without needing aluminum first."
+      ],
+      "tasks": [
+        {
+          "id": "5EC0000000100040",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:cupronickel_ingot",
+            "count": 1
+          },
+          "count": 8,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5EC0000000000005",
+      "title": "Magnetic Winding Wire",
+      "icon": {
+        "id": "modern_industrialization:cupronickel_wire_magnetic",
+        "count": 1
+      },
+      "x": 9.0,
+      "y": 4.0,
+      "shape": "circle",
+      "size": 1.0,
+      "dependencies": [
+        "5EC0000000000004",
+        "5EC0000000000002"
+      ],
+      "description": [
+        "Produce Cupronickel Wire and Magnetic Cupronickel Wire with the native recipes. The EBF controller specifically needs the magnetic wire.",
+        "Prepare extra ordinary cupronickel cable for the coil blocks. Follow EMI rather than substituting unrelated wire tags."
+      ],
+      "tasks": [
+        {
+          "id": "5EC0000000100050",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:cupronickel_wire_magnetic",
+            "count": 1
+          },
+          "count": 7,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5EC0000000000006",
+      "title": "Cupronickel Coils",
+      "icon": {
+        "id": "modern_industrialization:cupronickel_coil",
+        "count": 1
+      },
+      "x": 12.0,
+      "y": 4.0,
+      "shape": "circle",
+      "size": 1.0,
+      "dependencies": [
+        "5EC0000000000005"
+      ],
+      "description": [
+        "Eight Cupronickel Cables craft one coil block. This task detects your first block; manufacture the full set in the MI Guidebook blueprint.",
+        "Use a consistent supported coil tier. A better coil does not provide electricity by itself."
+      ],
+      "tasks": [
+        {
+          "id": "5EC0000000100060",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:cupronickel_coil",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5EC0000000000007",
+      "title": "Electric Blast Furnace",
+      "icon": {
+        "id": "modern_industrialization:electric_blast_furnace",
+        "count": 1
+      },
+      "x": 12.0,
+      "y": 0.0,
+      "shape": "hexagon",
+      "size": 1.25,
+      "dependencies": [
+        "5EC0000000000005"
+      ],
+      "description": [
+        "Craft the EBF controller with seven Magnetic Cupronickel Wires, one Basic Machine Hull and one vanilla Blast Furnace.",
+        "The crafting-table recipe is the bootstrap. You do not need to build an Assembler or Electrolyzer first."
+      ],
+      "tasks": [
+        {
+          "id": "5EC0000000100070",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:electric_blast_furnace",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5EC0000000000008",
+      "title": "Commission the EBF",
+      "icon": {
+        "id": "modern_industrialization:electric_blast_furnace",
+        "count": 1
+      },
+      "x": 15.0,
+      "y": 2.0,
+      "shape": "hexagon",
+      "size": 1.25,
+      "dependencies": [
+        "5EC0000000000006",
+        "5EC0000000000007"
+      ],
+      "description": [
+        "Use the MI Guidebook to place the heatproof structure, cupronickel coils and native item/energy hatches. Configure hatch access and keep the required hollow spaces clear.",
+        "Check this after the structure forms and its energy input is connected. Supply a sustained 32 EU/t for the starter aluminum and silicon recipes; a charged buffer alone is not continuous generation."
+      ],
+      "tasks": [
+        {
+          "id": "5EC0000000100080",
+          "type": "checkmark"
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5EC0000000000009",
+      "title": "Pack the Bauxite",
+      "icon": {
+        "id": "modern_industrialization:bauxite_block",
+        "count": 1
+      },
+      "x": 18.0,
+      "y": 0.0,
+      "shape": "circle",
+      "size": 1.0,
+      "dependencies": [
+        "5EC0000000000008",
+        "5EC0000000000003"
+      ],
+      "description": [
+        "Pack nine drilled Bauxite Dust into one Bauxite Block using the native recipe.",
+        "This is the inefficient bootstrap feedstock. The Electrolyzer belongs after the first aluminum/electronics, because building it already requires them."
+      ],
+      "tasks": [
+        {
+          "id": "5EC0000000100090",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:bauxite_block",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5EC000000000000A",
+      "title": "Your First Aluminum",
+      "icon": {
+        "id": "modern_industrialization:aluminum_ingot",
+        "count": 1
+      },
+      "x": 21.0,
+      "y": 0.0,
+      "shape": "hexagon",
+      "size": 1.25,
+      "dependencies": [
+        "5EC0000000000009"
+      ],
+      "description": [
+        "EBF: one Bauxite Block becomes one Aluminum Ingot at 32 EU/t for 2,000 ticks. Keep producing until you can support the electronics branch.",
+        "Do not send your first bauxite to a machine you cannot build yet. Later native refining improves efficiency."
+      ],
+      "tasks": [
+        {
+          "id": "5EC00000001000A0",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:aluminum_ingot",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5EC000000000000B",
+      "title": "Silicon from Sludge Quartz",
+      "icon": {
+        "id": "modern_industrialization:silicon_dust",
+        "count": 1
+      },
+      "x": 18.0,
+      "y": 4.0,
+      "shape": "circle",
+      "size": 1.0,
+      "dependencies": [
+        "5EC0000000000008",
+        "5E50000000000003"
+      ],
+      "description": [
+        "Wash Mineral Sludge for Quartz, then use the available native maceration route for Quartz Dust.",
+        "EBF: one Quartz Dust plus one Coke Dust gives one Silicon Dust at 32 EU/t for 400 ticks. Keep the Coke Oven and dust processing supplied."
+      ],
+      "tasks": [
+        {
+          "id": "5EC00000001000B0",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:silicon_dust",
+            "count": 1
+          },
+          "count": 4,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5EC000000000000C",
+      "title": "Plain Silicon Plates",
+      "icon": {
+        "id": "modern_industrialization:silicon_plate",
+        "count": 1
+      },
+      "x": 21.0,
+      "y": 4.0,
+      "shape": "circle",
+      "size": 1.0,
+      "dependencies": [
+        "5EC000000000000B"
+      ],
+      "description": [
+        "Follow the native Silicon Dust -> ingot -> plate recipes. Ordinary silicon plates work in the starter Diode and Transistor crafting recipes.",
+        "Monocrystalline or doped silicon is not required for these first components."
+      ],
+      "tasks": [
+        {
+          "id": "5EC00000001000C0",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:silicon_plate",
+            "count": 1
+          },
+          "count": 4,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5EC000000000000D",
+      "title": "Gold Meets Silver",
+      "icon": {
+        "id": "modern_industrialization:electrum_ingot",
+        "count": 1
+      },
+      "x": 6.0,
+      "y": 8.0,
+      "shape": "circle",
+      "size": 1.0,
+      "dependencies": [
+        "5EC0000000000003"
+      ],
+      "description": [
+        "Mix one Gold Dust with one Silver Dust for two Electrum Dust, then smelt the ingots.",
+        "Gold comes from the mechanical drill line and silver from electric geology. Keep both supplies renewable."
+      ],
+      "tasks": [
+        {
+          "id": "5EC00000001000D0",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:electrum_ingot",
+            "count": 1
+          },
+          "count": 8,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5EC000000000000E",
+      "title": "Electrum Wiring",
+      "icon": {
+        "id": "modern_industrialization:electrum_fine_wire",
+        "count": 1
+      },
+      "x": 9.0,
+      "y": 8.0,
+      "shape": "circle",
+      "size": 1.0,
+      "dependencies": [
+        "5EC000000000000D",
+        "5EC0000000000002"
+      ],
+      "description": [
+        "Make both Electrum Cable and Electrum Fine Wire with the native wire-processing recipes.",
+        "Fine wire is consumed in electronic components; insulated cable is used in boards, machines and the upcoming MV network."
+      ],
+      "tasks": [
+        {
+          "id": "5EC00000001000E0",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:electrum_cable",
+            "count": 1
+          },
+          "count": 4,
+          "consume_items": false
+        },
+        {
+          "id": "5EC00000001000E1",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:electrum_fine_wire",
+            "count": 1
+          },
+          "count": 4,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5EC000000000000F",
+      "title": "First Diodes",
+      "icon": {
+        "id": "modern_industrialization:diode",
+        "count": 1
+      },
+      "x": 24.0,
+      "y": 4.0,
+      "shape": "circle",
+      "size": 1.0,
+      "dependencies": [
+        "5EC000000000000C",
+        "5EC000000000000E"
+      ],
+      "description": [
+        "Use the crafting-table Diode recipe with plain Silicon Plate, glass, Electrum Fine Wire and Steel Plates.",
+        "Keep this native manual bootstrap. More advanced silicon recipes are optional efficiency improvements."
+      ],
+      "tasks": [
+        {
+          "id": "5EC00000001000F0",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:diode",
+            "count": 1
+          },
+          "count": 2,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5EC0000000000010",
+      "title": "First Transistors",
+      "icon": {
+        "id": "modern_industrialization:transistor",
+        "count": 1
+      },
+      "x": 24.0,
+      "y": 8.0,
+      "shape": "circle",
+      "size": 1.0,
+      "dependencies": [
+        "5EC000000000000C",
+        "5EC000000000000E"
+      ],
+      "description": [
+        "The starter crafting recipe uses three Silicon Plates, one Electrum Fine Wire and three Steel Plates, and makes two Transistors.",
+        "Use the native recipe in EMI; your first electronic circuit does not require an electric circuit assembler."
+      ],
+      "tasks": [
+        {
+          "id": "5EC0000000100100",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:transistor",
+            "count": 1
+          },
+          "count": 2,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5EC0000000000011",
+      "title": "Electronic Circuit Boards",
+      "icon": {
+        "id": "modern_industrialization:electronic_circuit_board",
+        "count": 1
+      },
+      "x": 21.0,
+      "y": 12.0,
+      "shape": "circle",
+      "size": 1.0,
+      "dependencies": [
+        "5EC000000000000A",
+        "5EC000000000000E"
+      ],
+      "description": [
+        "Combine Aluminum Plates, Electrum Cable, an Analog Circuit Board and a Redstone Battery using the native crafting-table recipe.",
+        "This board still uses the earlier rubber/paper, battery-alloy and analog-electronics supply lines."
+      ],
+      "tasks": [
+        {
+          "id": "5EC0000000100110",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:electronic_circuit_board",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5EC0000000000012",
+      "title": "Electronic Circuits",
+      "icon": {
+        "id": "modern_industrialization:electronic_circuit",
+        "count": 1
+      },
+      "x": 24.0,
+      "y": 12.0,
+      "shape": "hexagon",
+      "size": 1.25,
+      "dependencies": [
+        "5EC000000000000F",
+        "5EC0000000000010",
+        "5EC0000000000011"
+      ],
+      "description": [
+        "One Electronic Circuit combines an Electronic Circuit Board, two Diodes, two Transistors and four Analog Circuits.",
+        "Craft the first batches by hand. Continue producing aluminum, silicon, electrum and the old analog components instead of dismantling their factories."
+      ],
+      "tasks": [
+        {
+          "id": "5EC0000000100120",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:electronic_circuit",
+            "count": 1
+          },
+          "count": 2,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5EC0000000000013",
+      "title": "Large Motors",
+      "icon": {
+        "id": "modern_industrialization:large_motor",
+        "count": 1
+      },
+      "x": 27.0,
+      "y": 12.0,
+      "shape": "circle",
+      "size": 1.0,
+      "dependencies": [
+        "5EC0000000000012"
+      ],
+      "description": [
+        "A Large Motor combines an Electronic Circuit, two Aluminum Rods and six earlier Motors in the native recipe.",
+        "These are manufactured components, not simple upgrades that remove the old motor line."
+      ],
+      "tasks": [
+        {
+          "id": "5EC0000000100130",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:large_motor",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5EC0000000000014",
+      "title": "Large Pumps",
+      "icon": {
+        "id": "modern_industrialization:large_pump",
+        "count": 1
+      },
+      "x": 30.0,
+      "y": 12.0,
+      "shape": "circle",
+      "size": 1.0,
+      "dependencies": [
+        "5EC0000000000013"
+      ],
+      "description": [
+        "A Large Pump needs two Electronic Circuits, three Aluminum Rotors, one Large Motor and three earlier Pumps.",
+        "Keep water/steam and material processing running while making the larger batch needed by separation and chemistry machines."
+      ],
+      "tasks": [
+        {
+          "id": "5EC0000000100140",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:large_pump",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5EC0000000000015",
+      "title": "The Native Centrifuge",
+      "icon": {
+        "id": "modern_industrialization:centrifuge",
+        "count": 1
+      },
+      "x": 33.0,
+      "y": 12.0,
+      "shape": "hexagon",
+      "size": 1.25,
+      "dependencies": [
+        "5EC0000000000014"
+      ],
+      "description": [
+        "Build the single-block MI Centrifuge with its native recipe. This follows aluminum, electronics, Large Motors and a Large Pump.",
+        "Its first jobs include salt water separation and native lava processing. Crystalline Sludge still needs the retained Deep Survey Core and its higher-power drill program."
+      ],
+      "tasks": [
+        {
+          "id": "5EC0000000100150",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:centrifuge",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5EC0000000000016",
+      "title": "Electrolysis After Bootstrap",
+      "icon": {
+        "id": "modern_industrialization:electrolyzer",
+        "count": 1
+      },
+      "x": 30.0,
+      "y": 16.0,
+      "shape": "circle",
+      "size": 1.0,
+      "dependencies": [
+        "5EC0000000000014"
+      ],
+      "description": [
+        "Now build the Electrolyzer: its Aluminum Rods, Electronic Circuit and Large Pump are available.",
+        "Use it for gases and improved refining. It is downstream of the first EBF aluminum, not the source of that first ingot."
+      ],
+      "tasks": [
+        {
+          "id": "5EC0000000100160",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:electrolyzer",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5EC0000000000017",
+      "title": "A Working LV Factory",
+      "icon": {
+        "id": "modern_industrialization:electronic_circuit",
+        "count": 1
+      },
+      "x": 33.0,
+      "y": 16.0,
+      "shape": "hexagon",
+      "size": 1.25,
+      "dependencies": [
+        "5EC0000000000015",
+        "5EC0000000000016"
+      ],
+      "description": [
+        "Check this after the EBF has produced aluminum and silicon, the component lines are replenishing themselves, and both separation machines can complete a powered cycle.",
+        "Keep mechanical extraction and sludge washing operating. Chapter 7 adds MV generation, controlled fluid chemistry and renewable plastic."
+      ],
+      "tasks": [
+        {
+          "id": "5EC0000000100170",
+          "type": "checkmark"
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5EC0000000000018",
+      "title": "Assembler Bootstrap",
+      "icon": {
+        "id": "modern_industrialization:assembler",
+        "count": 1
+      },
+      "x": 9.0,
+      "y": 0.0,
+      "shape": "diamond",
+      "size": 1.0,
+      "dependencies": [
+        "5EC0000000000002"
+      ],
+      "description": [
+        "Craft the first Assembler with four Robot Arms, two Analog Circuits, two Conveyors and a Basic Machine Hull. Its own machine recipe is not the bootstrap.",
+        "This is available before electronic circuits. It automates native assembly; later fluid recipes need correctly configured fluid inputs."
+      ],
+      "tasks": [
+        {
+          "id": "5EC0000000100180",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:assembler",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [],
+      "optional": true
+    },
+    {
+      "id": "5EC0000000000019",
+      "title": "Creationalization",
+      "icon": {
+        "id": "create:brass_hand",
+        "count": 1
+      },
+      "x": 9.0,
+      "y": -4.0,
+      "shape": "diamond",
+      "size": 1.0,
+      "dependencies": [
+        "5EC0000000000018"
+      ],
+      "description": [
+        "Revo's Creationalization adds same-cost Assembler recipes for Brass Hands and Whisks. MI already supplies several other Create integration recipes.",
+        "Check this after automating a useful Create component. Keep brass, quartz and mechanism ingredients intact; these bridges do not grant earlier material tiers."
+      ],
+      "tasks": [
+        {
+          "id": "5EC0000000100190",
+          "type": "checkmark"
+        }
+      ],
+      "rewards": [],
+      "optional": true
+    }
+  ],
+  "images": [
+    {
+      "id": "5EC0000000007001",
+      "x": 4.5,
+      "y": -2.0,
+      "width": 12.0,
+      "height": 0.9,
+      "image": "#263843",
+      "title": "LV WORKSHOP",
+      "text_on_image": true,
+      "text_shadow": true,
+      "text_inset": 3,
+      "position_locked": true,
+      "order": -10
+    },
+    {
+      "id": "5EC0000000007002",
+      "x": 18.0,
+      "y": -2.0,
+      "width": 12.0,
+      "height": 0.9,
+      "image": "#263843",
+      "title": "COILS AND FIRST METALS",
+      "text_on_image": true,
+      "text_shadow": true,
+      "text_inset": 3,
+      "position_locked": true,
+      "order": -10
+    },
+    {
+      "id": "5EC0000000007003",
+      "x": 21.0,
+      "y": 10.0,
+      "width": 9.0,
+      "height": 0.9,
+      "image": "#263843",
+      "title": "ELECTRONICS",
+      "text_on_image": true,
+      "text_shadow": true,
+      "text_inset": 3,
+      "position_locked": true,
+      "order": -10
+    },
+    {
+      "id": "5EC0000000007004",
+      "x": 30.0,
+      "y": 10.0,
+      "width": 9.0,
+      "height": 0.9,
+      "image": "#263843",
+      "title": "SEPARATION MACHINES",
+      "text_on_image": true,
+      "text_shadow": true,
+      "text_inset": 3,
+      "position_locked": true,
+      "order": -10
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "result": "PASS",
+  "drill_angles_per_tier": 36,
+  "drill_tiers": 3,
+  "cross_part_overlaps": 0,
+  "farm_composites": [
+    "iron_greenhouse body + glass + active lights",
+    "steel_tree_grower body + glass"
+  ],
+  "checks": "Exact same-facing coplanar faces after renderer pivot transforms; static native sources audited separately."
+}

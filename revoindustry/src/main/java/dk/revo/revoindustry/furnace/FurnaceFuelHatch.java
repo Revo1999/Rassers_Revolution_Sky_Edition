@@ -22,7 +22,7 @@ public final class FurnaceFuelHatch extends HatchBlockEntity {
  public final Kind kind;public final int grade;private final MIInventory inventory;
  private long heat,drawn,tick=Long.MIN_VALUE;
  public FurnaceFuelHatch(BEP bep,Kind kind,int grade){
-  super(bep,new MachineGuiParameters.Builder(Furnaces.id(kind.name().toLowerCase(Locale.ROOT)+"_fuel_hatch_"+(grade+1)),true).build(),OrientationComponent.Params.noFacingNoOutput());this.kind=kind;this.grade=grade;
+  super(bep,new MachineGuiParameters.Builder(Furnaces.id(kind.name().toLowerCase(Locale.ROOT)+"_fuel_hatch_"+(grade+1)),true).build(),OrientationComponent.Params.noFacing(false,false));this.kind=kind;this.grade=grade;
   var slots=new ArrayList<ConfigurableItemStack>();if(kind==Kind.SOLID)for(int i=0;i<new int[]{1,4,9}[grade];i++)slots.add(ConfigurableItemStack.standardIOSlot(true));
   var tanks=kind==Kind.SOLID?List.<ConfigurableFluidStack>of():List.of(ConfigurableFluidStack.standardInputSlot(new long[]{4000,16000,64000}[grade]));
   var positions=new SlotPositions.Builder();for(int i=0;i<slots.size();i++)positions.addSlot(62+(i%3)*18,22+(i/3)*18);
@@ -39,6 +39,9 @@ public final class FurnaceFuelHatch extends HatchBlockEntity {
    @Override public boolean isResourceAllowedByLock(Fluid fluid){return super.isResourceAllowedByLock(fluid)&&fluidHeat(fluid)>0;}
   });}
  }
+ @Override public java.util.List<net.minecraft.network.chat.Component> getTooltips(){var text=new java.util.ArrayList<>(super.getTooltips());text.add(net.minecraft.network.chat.Component.translatable("tooltip.revoindustry.single_port"));return text;}
+ public net.minecraft.core.Direction portFace(){return orientation.outputDirection;}
+ @Override public aztech.modern_industrialization.machines.models.MachineModelClientData getMachineModelData(){var data=super.getMachineModelData();data.frontDirection=portFace();return data;}
  public HatchType getHatchType(){return Furnaces.FUEL;}public boolean upgradesToSteel(){return grade>0;}public MIInventory getInventory(){return inventory;}
  public long rate(){return new long[]{64,512,4096}[grade];}public long heat(){return heat;}
  public static int solidHeat(ItemStack stack){return stack.isEmpty()||stack.getCapability(Capabilities.FluidHandler.ITEM)!=null?0:stack.getBurnTime(RecipeType.SMELTING);}
@@ -51,7 +54,7 @@ public final class FurnaceFuelHatch extends HatchBlockEntity {
    boolean refilled=false;
    if(kind==Kind.SOLID){for(var stack:inventory.getItemStacks()){int burn=solidHeat(stack.toStack());if(burn>0&&ItemStackHelper.consumeFuel(stack,false)){heat+=burn;refilled=true;break;}}}
    else {var stack=inventory.getFluidStacks().getFirst();int burn=fluidHeat(stack.getResource().getFluid());if(burn>0&&stack.getAmount()>0){long amount=Math.min(stack.getAmount(),Math.max(1,(request-heat+burn-1)/burn));stack.decrement(amount);heat+=amount*burn;refilled=true;}}
-   if(!refilled)break;
+   if(!refilled)break;dk.revo.revolib.MachineFeedback.cue(level,worldPosition,kind==Kind.SOLID?dk.revo.revolib.MachineFeedback.Voice.FUEL_FEED:dk.revo.revolib.MachineFeedback.Voice.VALVE);
   }
   long moved=Math.min(heat,request);heat-=moved;drawn+=moved;setChanged();return moved;
  }

@@ -1,15 +1,15 @@
 # Quest continuation: LV, MV and running shoes
 
 The LV/MV pass expanded the book from 145 quests in eight chapters to 202 in eleven.
-The subsequent [HV continuation](PROGRESSION-GAPS-AFTER-MV.md) brings it to 228 quests
-in twelve chapters.
+The subsequent [HV continuation](PROGRESSION-GAPS-AFTER-MV.md) brings it to 287 quests
+in fourteen chapters.
 This adds guidance for installed production routes; it does not add new machines
 or change recipes, mineral sources, energy requirements or resource yields.
 
 | New chapter | Quests | Route |
 |---|---:|---|
-| Chapter 5: LV - Metallurgy and Electronics | 25 | First electric workshop -> drilled feedstocks -> cupronickel coils and EBF -> aluminum/silicon -> electrum -> electronic components -> Large Motors/Pumps -> Centrifuge/Electrolyzer. Includes an early optional Assembler/Creationalization branch. |
-| Chapter 6: MV - Power and Chemistry | 25 | Silicon batteries and hulls -> MV turbine/cables -> transformer and sustained power; parallel native chemistry -> salt/gases/acids -> renewable ethanol/ethylene/polyethylene -> Advanced Upgrades and integrated production. |
+| Chapter 6: Electronics and Separation | 25 | First electric workshop -> drilled feedstocks -> cupronickel coils and EBF -> aluminum/silicon -> electrum -> electronic components -> Large Motors/Pumps -> Centrifuge/Electrolyzer. Includes an early optional Assembler/Creationalization branch. |
+| Chapter 7: MV - Power and Chemistry | 25 | Silicon batteries and hulls -> MV turbine/cables -> transformer and sustained power; parallel native chemistry -> salt/gases/acids -> renewable ethanol/ethylene/polyethylene -> Advanced Upgrades and integrated production. |
 | Field Equipment: Running Shoes | 7 | Cotton seeds and harvest, shoe latex/rubber, glue, white shoes and twelve-colour guidance. Entire branch is optional. |
 
 ![LV layout preview](../art/quests/lv-mv/lv-metallurgy.png)
@@ -44,9 +44,9 @@ or change recipes, mineral sources, energy requirements or resource yields.
 
 ## Save compatibility and detection
 
-Existing 145 quest IDs, task IDs and reward IDs are preserved. Only the existing
+All 204 published remote quest IDs and their task/reward IDs are preserved. Only the existing
 salt quest's explanation and prerequisites change. New chapter bases are
-`5E80000000000000`, `5E90000000000000` and `5EA0000000000000`; their explicit
+`5EC0000000000000`, `5ED0000000000000` and `5EA0000000000000`; their explicit
 quest numbers must never be shifted when adding future nodes. No saved player
 completion data is edited.
 
@@ -80,5 +80,9 @@ client inspection or complete fresh-island LV-to-MV playthrough is claimed.
 
 Further quest work: later power, explicitly gated AE2 presses/Sky Stone and
 endgame production. Advanced metallurgy/coils, freezing and first HV are now
-taught by Chapter 7. The Nexus portal and its three
+taught by Chapter 8. The Nexus portal and its three
 machines remain art/design assets and are not presented as playable quests.
+
+## Pulled work retained
+
+The repository merge preserves Chapter 5: The LV Factory (48 quests, `5E800000`) and Crystals and Distant Resources (10 quests, `5E900000`). The local electronics extension is Chapter 6 (`5EC00000`), followed by Chapter 7 MV (`5ED00000`) and Chapter 8 HV (`5EB00000`). The electronics extension starts after the original LV first-aluminum handoff; its first metallurgy lessons review that established workshop. All published remote IDs remain unchanged. AE2 starter recipes/MV gates and later resource routes now exist; see the updated gap table.

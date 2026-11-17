@@ -1,0 +1,370 @@
+{
+  "original_procedural_foley": true,
+  "source": "scripts/build_machine_sounds.py",
+  "sound_source": "BLOCKS",
+  "default_machine_volume": 0.65,
+  "maximum_nearby_loops": 8,
+  "crowd_mix": "1/sqrt(active loops)",
+  "voices": [
+    {
+      "voice": "wood_drill",
+      "loop": true,
+      "seconds": 4.0,
+      "peak_dbfs": -7.49,
+      "rms_dbfs": -18.74,
+      "decoded_seam_step": 0.005601
+    },
+    {
+      "voice": "metal_drill",
+      "loop": true,
+      "seconds": 4.0,
+      "peak_dbfs": -7.8,
+      "rms_dbfs": -18.69,
+      "decoded_seam_step": 0.013082
+    },
+    {
+      "voice": "steel_drill",
+      "loop": true,
+      "seconds": 4.0,
+      "peak_dbfs": -8.2,
+      "rms_dbfs": -18.69,
+      "decoded_seam_step": 0.010952
+    },
+    {
+      "voice": "electric_drill",
+      "loop": true,
+      "seconds": 4.0,
+      "peak_dbfs": -8.81,
+      "rms_dbfs": -18.64,
+      "decoded_seam_step": 0.002786
+    },
+    {
+      "voice": "irrigation",
+      "loop": true,
+      "seconds": 4.0,
+      "peak_dbfs": -6.96,
+      "rms_dbfs": -18.67,
+      "decoded_seam_step": 0.006539
+    },
+    {
+      "voice": "greenhouse",
+      "loop": true,
+      "seconds": 4.0,
+      "peak_dbfs": -7.27,
+      "rms_dbfs": -18.7,
+      "decoded_seam_step": 0.006532
+    },
+    {
+      "voice": "tree_steel",
+      "loop": true,
+      "seconds": 4.0,
+      "peak_dbfs": -7.73,
+      "rms_dbfs": -18.73,
+      "decoded_seam_step": 0.013789
+    },
+    {
+      "voice": "underwater",
+      "loop": true,
+      "seconds": 4.0,
+      "peak_dbfs": -7.87,
+      "rms_dbfs": -18.71,
+      "decoded_seam_step": 0.004997
+    },
+    {
+      "voice": "crystal_growth",
+      "loop": true,
+      "seconds": 4.0,
+      "peak_dbfs": -8.32,
+      "rms_dbfs": -20.22,
+      "decoded_seam_step": 0.000695
+    },
+    {
+      "voice": "harvester",
+      "loop": true,
+      "seconds": 4.0,
+      "peak_dbfs": -7.84,
+      "rms_dbfs": -18.71,
+      "decoded_seam_step": 0.009012
+    },
+    {
+      "voice": "harvester_steel",
+      "loop": true,
+      "seconds": 4.0,
+      "peak_dbfs": -8.44,
+      "rms_dbfs": -18.67,
+      "decoded_seam_step": 0.003345
+    },
+    {
+      "voice": "sluice",
+      "loop": true,
+      "seconds": 4.0,
+      "peak_dbfs": -7.42,
+      "rms_dbfs": -18.63,
+      "decoded_seam_step": 0.012197
+    },
+    {
+      "voice": "vacuum",
+      "loop": true,
+      "seconds": 4.0,
+      "peak_dbfs": -7.72,
+      "rms_dbfs": -18.68,
+      "decoded_seam_step": 0.010246
+    },
+    {
+      "voice": "vacuum_2",
+      "loop": true,
+      "seconds": 4.0,
+      "peak_dbfs": -8.39,
+      "rms_dbfs": -18.68,
+      "decoded_seam_step": 0.006923
+    },
+    {
+      "voice": "vacuum_3",
+      "loop": true,
+      "seconds": 4.0,
+      "peak_dbfs": -8.07,
+      "rms_dbfs": -18.67,
+      "decoded_seam_step": 0.013756
+    },
+    {
+      "voice": "crucible",
+      "loop": true,
+      "seconds": 4.0,
+      "peak_dbfs": -7.92,
+      "rms_dbfs": -18.71,
+      "decoded_seam_step": 0.007391
+    },
+    {
+      "voice": "rain",
+      "loop": true,
+      "seconds": 4.0,
+      "peak_dbfs": -6.65,
+      "rms_dbfs": -18.61,
+      "decoded_seam_step": 0.012157
+    },
+    {
+      "voice": "converter",
+      "loop": true,
+      "seconds": 4.0,
+      "peak_dbfs": -14.92,
+      "rms_dbfs": -20.12,
+      "decoded_seam_step": 0.002054
+    },
+    {
+      "voice": "converter_2",
+      "loop": true,
+      "seconds": 4.0,
+      "peak_dbfs": -15.07,
+      "rms_dbfs": -20.13,
+      "decoded_seam_step": 0.002367
+    },
+    {
+      "voice": "converter_3",
+      "loop": true,
+      "seconds": 4.0,
+      "peak_dbfs": -14.6,
+      "rms_dbfs": -20.13,
+      "decoded_seam_step": 0.001991
+    },
+    {
+      "voice": "storage",
+      "loop": true,
+      "seconds": 4.0,
+      "peak_dbfs": -8.57,
+      "rms_dbfs": -18.69,
+      "decoded_seam_step": 0.002326
+    },
+    {
+      "voice": "furnace",
+      "loop": true,
+      "seconds": 4.0,
+      "peak_dbfs": -7.86,
+      "rms_dbfs": -18.67,
+      "decoded_seam_step": 0.007236
+    },
+    {
+      "voice": "furnace_turbine",
+      "loop": true,
+      "seconds": 4.0,
+      "peak_dbfs": -10.22,
+      "rms_dbfs": -18.64,
+      "decoded_seam_step": 0.004894
+    },
+    {
+      "voice": "furnace_heavy",
+      "loop": true,
+      "seconds": 4.0,
+      "peak_dbfs": -8.74,
+      "rms_dbfs": -18.65,
+      "decoded_seam_step": 0.003734
+    },
+    {
+      "voice": "furnace_crystal",
+      "loop": true,
+      "seconds": 4.0,
+      "peak_dbfs": -12.83,
+      "rms_dbfs": -18.6,
+      "decoded_seam_step": 0.006189
+    },
+    {
+      "voice": "furnace_rainbow",
+      "loop": true,
+      "seconds": 4.0,
+      "peak_dbfs": -9.73,
+      "rms_dbfs": -18.64,
+      "decoded_seam_step": 0.005213
+    },
+    {
+      "voice": "compost",
+      "loop": false,
+      "seconds": 0.34997732426303857,
+      "peak_dbfs": -6.44,
+      "rms_dbfs": -20.64,
+      "decoded_seam_step": null
+    },
+    {
+      "voice": "silk",
+      "loop": false,
+      "seconds": 0.34997732426303857,
+      "peak_dbfs": -6.11,
+      "rms_dbfs": -20.88,
+      "decoded_seam_step": null
+    },
+    {
+      "voice": "trade",
+      "loop": false,
+      "seconds": 0.34997732426303857,
+      "peak_dbfs": -5.77,
+      "rms_dbfs": -19.28,
+      "decoded_seam_step": null
+    },
+    {
+      "voice": "interact",
+      "loop": false,
+      "seconds": 0.34997732426303857,
+      "peak_dbfs": -5.24,
+      "rms_dbfs": -19.74,
+      "decoded_seam_step": null
+    },
+    {
+      "voice": "transfer",
+      "loop": false,
+      "seconds": 0.34997732426303857,
+      "peak_dbfs": -5.36,
+      "rms_dbfs": -19.37,
+      "decoded_seam_step": null
+    },
+    {
+      "voice": "fuel_feed",
+      "loop": false,
+      "seconds": 0.34997732426303857,
+      "peak_dbfs": -5.34,
+      "rms_dbfs": -19.41,
+      "decoded_seam_step": null
+    },
+    {
+      "voice": "valve",
+      "loop": false,
+      "seconds": 0.34997732426303857,
+      "peak_dbfs": -5.28,
+      "rms_dbfs": -19.51,
+      "decoded_seam_step": null
+    },
+    {
+      "voice": "gravel_feed",
+      "loop": false,
+      "seconds": 0.6499773242630386,
+      "peak_dbfs": -5.85,
+      "rms_dbfs": -19.18,
+      "decoded_seam_step": null
+    },
+    {
+      "voice": "harvest",
+      "loop": false,
+      "seconds": 0.34997732426303857,
+      "peak_dbfs": -5.9,
+      "rms_dbfs": -19.44,
+      "decoded_seam_step": null
+    },
+    {
+      "voice": "chop",
+      "loop": false,
+      "seconds": 0.34997732426303857,
+      "peak_dbfs": -5.75,
+      "rms_dbfs": -19.47,
+      "decoded_seam_step": null
+    },
+    {
+      "voice": "saw",
+      "loop": false,
+      "seconds": 0.6499773242630386,
+      "peak_dbfs": -5.34,
+      "rms_dbfs": -19.27,
+      "decoded_seam_step": null
+    },
+    {
+      "voice": "crystal_pick",
+      "loop": false,
+      "seconds": 0.34997732426303857,
+      "peak_dbfs": -8.18,
+      "rms_dbfs": -18.98,
+      "decoded_seam_step": null
+    },
+    {
+      "voice": "wind",
+      "loop": false,
+      "seconds": 0.34997732426303857,
+      "peak_dbfs": -5.83,
+      "rms_dbfs": -19.51,
+      "decoded_seam_step": null
+    },
+    {
+      "voice": "craft",
+      "loop": false,
+      "seconds": 0.34997732426303857,
+      "peak_dbfs": -5.51,
+      "rms_dbfs": -19.36,
+      "decoded_seam_step": null
+    },
+    {
+      "voice": "light_switch",
+      "loop": false,
+      "seconds": 0.34997732426303857,
+      "peak_dbfs": -5.12,
+      "rms_dbfs": -19.67,
+      "decoded_seam_step": null
+    },
+    {
+      "voice": "pour",
+      "loop": false,
+      "seconds": 0.6499773242630386,
+      "peak_dbfs": -5.23,
+      "rms_dbfs": -19.32,
+      "decoded_seam_step": null
+    },
+    {
+      "voice": "ignite",
+      "loop": false,
+      "seconds": 0.6499773242630386,
+      "peak_dbfs": -11.67,
+      "rms_dbfs": -18.72,
+      "decoded_seam_step": null
+    },
+    {
+      "voice": "motor_start",
+      "loop": false,
+      "seconds": 0.34997732426303857,
+      "peak_dbfs": -11.75,
+      "rms_dbfs": -18.74,
+      "decoded_seam_step": null
+    },
+    {
+      "voice": "motor_stop",
+      "loop": false,
+      "seconds": 0.34997732426303857,
+      "peak_dbfs": -11.56,
+      "rms_dbfs": -18.75,
+      "decoded_seam_step": null
+    }
+  ]
+}

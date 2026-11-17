@@ -178,5 +178,13 @@
   "block.revocultivation.cotton_crop": "Cotton Plant",
   "program.revocultivation.cotton": "Cotton",
   "tooltip.revocultivation.running_shoes": "Lightweight woven uppers and cushioned rubber soles.",
-  "tooltip.revocultivation.running_shoes_fall": "No fall damage while worn. Does not protect against the void."
+  "tooltip.revocultivation.running_shoes_fall": "No fall damage while worn. Does not protect against the void.",
+  "item.revocultivation.salt_crystal_starter": "Salt Crystal Geode",
+  "program.revocultivation.nether_wart": "Nether Wart",
+  "program.revocultivation.chorus": "Chorus",
+  "program.revocultivation.salt_crystal": "Salt Crystal",
+  "program.revocultivation.poppy": "Poppy",
+  "program.revocultivation.ghast": "Ghast",
+  "program.revocultivation.shulker": "Shulker",
+  "program.revocultivation.wither_skeleton": "Wither Skeleton"
 }
