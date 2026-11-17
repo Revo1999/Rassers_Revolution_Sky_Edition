@@ -268,7 +268,7 @@
         "Keep a repair kit nearby. If the Steel Drill seizes, its output is preserved.",
         "Stop the Create shaft, rebuild any missing frame parts, add at least 100 mB water, then right-click any part with the kit. One kit is consumed only after a successful repair.",
         "Breaking and replacing the controller preserves dry-running damage; it does not repair the machine.",
-        "Select Cow on the wooden Mob Harvester filter for leather and raw beef. One cycle produces one leather; a kit needs two. No diamond-gated machine or wild animal is required."
+        "Craft a Cow egg, use it to craft a Cow spawner, then insert that spawner into the wooden Mob Harvester controller for leather and raw beef. One cycle produces one leather; a kit needs two. No diamond-gated machine or wild animal is required."
       ],
       "tasks": [
         {

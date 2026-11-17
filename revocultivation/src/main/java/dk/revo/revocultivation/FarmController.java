@@ -31,7 +31,7 @@ public class FarmController extends BaseEntityBlock {
         }return net.minecraft.world.ItemInteractionResult.PASS_TO_DEFAULT_BLOCK_INTERACTION;
     }
     @Override protected InteractionResult useWithoutItem(BlockState s,Level l,BlockPos pos,Player player,BlockHitResult hit){
-        if(!l.isClientSide&&l.getBlockEntity(pos) instanceof FarmMachine machine){machine.checkStructure();player.openMenu(new SimpleMenuProvider((id,inv,p)->new FarmControllerMenu(id,inv,machine),kind.title()));}
+        if(!l.isClientSide&&l.getBlockEntity(pos) instanceof FarmMachine machine){machine.checkStructure();player.openMenu(new SimpleMenuProvider((id,inv,p)->new FarmControllerMenu(id,inv,machine),kind.title()),buf->buf.writeBoolean(kind.isHarvester()));}
         return InteractionResult.sidedSuccess(l.isClientSide);
     }
     @Override protected void onRemove(BlockState old,Level l,BlockPos pos,BlockState next,boolean moving){

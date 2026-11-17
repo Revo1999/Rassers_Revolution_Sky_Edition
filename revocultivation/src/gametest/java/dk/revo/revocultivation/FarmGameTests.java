@@ -67,11 +67,11 @@ public class FarmGameTests {
         }h.succeed();
     }
     @GameTest(template="farm_test",timeoutTicks=100)
-    public static void vanillaHarvesterFilterProgramsAndNoRoamingEntities(GameTestHelper h){
+    public static void vanillaHarvesterSpawnerProgramsAndNoRoamingEntities(GameTestHelper h){
         var m=build(h,MachineKind.HARVESTER,Direction.NORTH);h.getLevel().setDayTime(18000);h.getLevel().updateSkyBrightness();
         for(int species=0;species<3;species++){
-            var filter=m.at(0,1,-1);h.getLevel().setBlockAndUpdate(filter,h.getLevel().getBlockState(filter).setValue(FarmFilter.SPECIES,species));ticks(m,300);
-            h.assertTrue(m.program()==20+species&&m.data(11)==species+1,"Filter must select the actual passive recipe");
+            m.programSpawner.setStackInSlot(0,SpawnerProgramGameTests.spawner(new String[]{"zombie","skeleton","spider"}[species]));ticks(m,300);
+            h.assertTrue(m.program()==20+species&&m.data(11)==species+1,"Spawner must select the actual passive recipe");
             h.assertTrue(m.containedMob().getType()==ContainedHarvesterMob.type(20+species),"Contained mob must be the selected vanilla species");
             for(var product:MachineKind.products(20+species))h.assertTrue(count(m.outputs,product.getItem())>=product.getCount(),"Selected mob-drop recipe produced");
         }
@@ -81,7 +81,7 @@ public class FarmGameTests {
     public static void containedVanillaMobsPersistWithoutWorldLifecycle(GameTestHelper h){
         var m=build(h,MachineKind.HARVESTER,Direction.NORTH);var l=h.getLevel();
         for(int species=0;species<3;species++){
-            var filter=m.at(0,1,-1);l.setBlockAndUpdate(filter,l.getBlockState(filter).setValue(FarmFilter.SPECIES,species));ticks(m,1);
+            m.programSpawner.setStackInSlot(0,SpawnerProgramGameTests.spawner(new String[]{"zombie","skeleton","spider"}[species]));ticks(m,1);
             var mob=m.containedMob();var id=mob.getUUID();
             h.assertTrue(mob==m.containedMob()&&mob.getType()==ContainedHarvesterMob.type(20+species),"Mob instance must be cached and species-specific");
             h.assertTrue(mob.isPersistenceRequired()&&mob.isNoAi()&&mob.isNoGravity()&&mob.isInvulnerable()&&mob.isSilent(),"Contained mob must be persistent and inert");
@@ -121,7 +121,7 @@ public class FarmGameTests {
         for(var kind:new MachineKind[]{MachineKind.TREE,MachineKind.GREENHOUSE,MachineKind.HARVESTER}){
             var m=build(h,kind,Direction.NORTH);var player=net.neoforged.neoforge.common.util.FakePlayerFactory.getMinecraft(h.getLevel());player.setPos(m.getBlockPos().getX(),m.getBlockPos().getY(),m.getBlockPos().getZ());for(int i=0;i<36;i++)player.getInventory().setItem(i,ItemStack.EMPTY);
             var controller=new FarmControllerMenu(1,player.getInventory(),m);var hatch=(FarmHatchEntity)h.getLevel().getBlockEntity(m.at(1,0,0));var menu=new FarmHatchMenu(2,player.getInventory(),hatch,m);
-            h.assertTrue(controller.slots.isEmpty()&&menu.slots.size()==kind.inputSlots()+45,"Only hatch exposes inventories");int outputs=kind.inputSlots();int playerStart=outputs+9;
+            h.assertTrue(controller.slots.size()==(kind.isHarvester()?37:0)&&menu.slots.size()==kind.inputSlots()+45,"Harvester controller exposes its retained program; other storage stays in hatch");int outputs=kind.inputSlots();int playerStart=outputs+9;
             h.assertTrue(menu.getSlot(playerStart).x==8&&menu.getSlot(playerStart).y==kind.hatchHeight()-82,"Standard player inventory coordinates");
             m.outputs.setStackInSlot(0,new ItemStack(Items.OAK_LOG,8));h.assertTrue(!menu.getSlot(outputs).mayPlace(new ItemStack(Items.DIRT)),"Output slots reject insertion");h.assertTrue(menu.quickMoveStack(player,outputs).getCount()==8&&player.getInventory().countItem(Items.OAK_LOG)==8,"Shift-click extracts actual output");
             var cached=hatch.items();m.outputs.setStackInSlot(0,new ItemStack(Items.STICK,5));h.getLevel().setBlockAndUpdate(m.at(-1,0,1),Blocks.AIR.defaultBlockState());m.checkStructure();

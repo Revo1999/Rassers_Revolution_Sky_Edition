@@ -41,8 +41,8 @@ public class RunningShoesNative<T extends LivingEntity> extends EntityModel<T> {
 		PartDefinition right_leg = partdefinition.addOrReplaceChild("right_leg", CubeListBuilder.create().texOffs(0, 12).addBox(-2.25F, 11.0F, -4.5F, 4.5F, 1.0F, 7.0F, new CubeDeformation(0.0F))
 		.texOffs(0, 24).addBox(-2.0F, 9.0F, -4.0F, 4.0F, 2.0F, 6.0F, new CubeDeformation(0.0F)), PartPose.offset(-1.9F, 12.0F, 0.0F));
 
-		PartDefinition left_leg = partdefinition.addOrReplaceChild("left_leg", CubeListBuilder.create().texOffs(0, 12).addBox(-2.25F, 11.0F, -4.5F, 4.5F, 1.0F, 7.0F, new CubeDeformation(0.0F))
-		.texOffs(0, 24).addBox(-2.0F, 9.0F, -4.0F, 4.0F, 2.0F, 6.0F, new CubeDeformation(0.0F)), PartPose.offset(1.9F, 12.0F, 0.0F));
+		PartDefinition left_leg = partdefinition.addOrReplaceChild("left_leg", CubeListBuilder.create().texOffs(0, 12).addBox(-2.25F, 10.996F, -4.504F, 4.5F, 1.008F, 7.008F, new CubeDeformation(0.0F))
+		.texOffs(0, 24).addBox(-2.0F, 8.996F, -4.004F, 4.0F, 2.008F, 6.008F, new CubeDeformation(0.0F)), PartPose.offset(1.9F, 12.0F, 0.0F));
 
 		return LayerDefinition.create(meshdefinition, 64, 64);
 	}

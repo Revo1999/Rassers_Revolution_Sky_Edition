@@ -67,14 +67,5 @@
       "title": "Chapter 7: MV - Power and Chemistry",
       "quests": 25
     }
-  ],
-  "build": "Merged build collectMods :revolib:syncPackOverrides passed",
-  "syncedChapters": 14,
-  "remoteBaseline": "039d7b9",
-  "idReconciliation": {
-    "publishedRemoteLV": "5E800000 kept",
-    "publishedRemoteResources": "5E900000 kept",
-    "unpublishedLocalElectronics": "5E800000 -> 5EC00000",
-    "unpublishedLocalMV": "5E900000 -> 5ED00000"
-  }
+  ]
 }

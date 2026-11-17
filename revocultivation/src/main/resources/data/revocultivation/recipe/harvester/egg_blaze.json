@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "modern_industrialization:steel_ingot"
+    },
+    {
+      "item": "modern_industrialization:coke"
+    },
+    {
+      "item": "minecraft:redstone"
+    }
+  ],
+  "result": {
+    "id": "minecraft:blaze_spawn_egg",
+    "count": 1
+  }
+}

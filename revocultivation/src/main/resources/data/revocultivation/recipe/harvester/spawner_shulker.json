@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "BBB",
+    "BEB",
+    "BBB"
+  ],
+  "key": {
+    "B": {
+      "item": "minecraft:iron_bars"
+    },
+    "E": {
+      "item": "minecraft:shulker_spawn_egg"
+    }
+  },
+  "result": {
+    "id": "minecraft:spawner",
+    "count": 1,
+    "components": {
+      "minecraft:block_entity_data": {
+        "id": "minecraft:mob_spawner",
+        "SpawnData": {
+          "entity": {
+            "id": "minecraft:shulker"
+          }
+        }
+      }
+    }
+  }
+}

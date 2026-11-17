@@ -36,6 +36,46 @@
       "overlaps": []
     },
     {
+      "file": "revocultivation/src/main/resources/assets/revocultivation/models/block/cotton_stage_0.json",
+      "elements": 0,
+      "overlaps": []
+    },
+    {
+      "file": "revocultivation/src/main/resources/assets/revocultivation/models/block/cotton_stage_1.json",
+      "elements": 0,
+      "overlaps": []
+    },
+    {
+      "file": "revocultivation/src/main/resources/assets/revocultivation/models/block/cotton_stage_2.json",
+      "elements": 0,
+      "overlaps": []
+    },
+    {
+      "file": "revocultivation/src/main/resources/assets/revocultivation/models/block/cotton_stage_3.json",
+      "elements": 0,
+      "overlaps": []
+    },
+    {
+      "file": "revocultivation/src/main/resources/assets/revocultivation/models/block/cotton_stage_4.json",
+      "elements": 0,
+      "overlaps": []
+    },
+    {
+      "file": "revocultivation/src/main/resources/assets/revocultivation/models/block/cotton_stage_5.json",
+      "elements": 0,
+      "overlaps": []
+    },
+    {
+      "file": "revocultivation/src/main/resources/assets/revocultivation/models/block/cotton_stage_6.json",
+      "elements": 0,
+      "overlaps": []
+    },
+    {
+      "file": "revocultivation/src/main/resources/assets/revocultivation/models/block/cotton_stage_7.json",
+      "elements": 0,
+      "overlaps": []
+    },
+    {
       "file": "revocultivation/src/main/resources/assets/revocultivation/models/block/cultivator_fill_0.json",
       "elements": 1,
       "overlaps": []
@@ -291,6 +331,21 @@
       "overlaps": []
     },
     {
+      "file": "revocultivation/src/main/resources/assets/revocultivation/models/item/black_running_shoes.json",
+      "elements": 4,
+      "overlaps": []
+    },
+    {
+      "file": "revocultivation/src/main/resources/assets/revocultivation/models/item/blue_running_shoes.json",
+      "elements": 4,
+      "overlaps": []
+    },
+    {
+      "file": "revocultivation/src/main/resources/assets/revocultivation/models/item/brown_running_shoes.json",
+      "elements": 4,
+      "overlaps": []
+    },
+    {
       "file": "revocultivation/src/main/resources/assets/revocultivation/models/item/collection_grate.json",
       "elements": 0,
       "overlaps": []
@@ -306,13 +361,33 @@
       "overlaps": []
     },
     {
+      "file": "revocultivation/src/main/resources/assets/revocultivation/models/item/cotton.json",
+      "elements": 0,
+      "overlaps": []
+    },
+    {
+      "file": "revocultivation/src/main/resources/assets/revocultivation/models/item/cotton_seeds.json",
+      "elements": 0,
+      "overlaps": []
+    },
+    {
       "file": "revocultivation/src/main/resources/assets/revocultivation/models/item/crook.json",
       "elements": 0,
       "overlaps": []
     },
     {
+      "file": "revocultivation/src/main/resources/assets/revocultivation/models/item/cyan_running_shoes.json",
+      "elements": 4,
+      "overlaps": []
+    },
+    {
       "file": "revocultivation/src/main/resources/assets/revocultivation/models/item/glass_panel.json",
       "elements": 0,
+      "overlaps": []
+    },
+    {
+      "file": "revocultivation/src/main/resources/assets/revocultivation/models/item/green_running_shoes.json",
+      "elements": 4,
       "overlaps": []
     },
     {
@@ -366,12 +441,52 @@
       "overlaps": []
     },
     {
+      "file": "revocultivation/src/main/resources/assets/revocultivation/models/item/magenta_running_shoes.json",
+      "elements": 4,
+      "overlaps": []
+    },
+    {
       "file": "revocultivation/src/main/resources/assets/revocultivation/models/item/mob_filter.json",
       "elements": 0,
       "overlaps": []
     },
     {
+      "file": "revocultivation/src/main/resources/assets/revocultivation/models/item/natural_shoe_rubber.json",
+      "elements": 0,
+      "overlaps": []
+    },
+    {
+      "file": "revocultivation/src/main/resources/assets/revocultivation/models/item/orange_running_shoes.json",
+      "elements": 4,
+      "overlaps": []
+    },
+    {
+      "file": "revocultivation/src/main/resources/assets/revocultivation/models/item/pink_running_shoes.json",
+      "elements": 4,
+      "overlaps": []
+    },
+    {
+      "file": "revocultivation/src/main/resources/assets/revocultivation/models/item/purple_running_shoes.json",
+      "elements": 4,
+      "overlaps": []
+    },
+    {
+      "file": "revocultivation/src/main/resources/assets/revocultivation/models/item/red_running_shoes.json",
+      "elements": 4,
+      "overlaps": []
+    },
+    {
       "file": "revocultivation/src/main/resources/assets/revocultivation/models/item/salt_crystal_starter.json",
+      "elements": 0,
+      "overlaps": []
+    },
+    {
+      "file": "revocultivation/src/main/resources/assets/revocultivation/models/item/shoe_glue.json",
+      "elements": 0,
+      "overlaps": []
+    },
+    {
+      "file": "revocultivation/src/main/resources/assets/revocultivation/models/item/shoe_latex.json",
       "elements": 0,
       "overlaps": []
     },
@@ -461,8 +576,18 @@
       "overlaps": []
     },
     {
+      "file": "revocultivation/src/main/resources/assets/revocultivation/models/item/white_running_shoes.json",
+      "elements": 4,
+      "overlaps": []
+    },
+    {
       "file": "revocultivation/src/main/resources/assets/revocultivation/models/item/wooden_casing.json",
       "elements": 0,
+      "overlaps": []
+    },
+    {
+      "file": "revocultivation/src/main/resources/assets/revocultivation/models/item/yellow_running_shoes.json",
+      "elements": 4,
       "overlaps": []
     },
     {
@@ -691,6 +816,11 @@
       "overlaps": []
     },
     {
+      "file": "revoextraction/src/main/resources/assets/revoextraction/models/item/crystalline_sludge.json",
+      "elements": 0,
+      "overlaps": []
+    },
+    {
       "file": "revoextraction/src/main/resources/assets/revoextraction/models/item/deep_survey_core.json",
       "elements": 0,
       "overlaps": []
@@ -712,6 +842,11 @@
     },
     {
       "file": "revoextraction/src/main/resources/assets/revoextraction/models/item/engineering_press_blank.json",
+      "elements": 0,
+      "overlaps": []
+    },
+    {
+      "file": "revoextraction/src/main/resources/assets/revoextraction/models/item/gem_sludge.json",
       "elements": 0,
       "overlaps": []
     },
@@ -758,6 +893,11 @@
     {
       "file": "revoextraction/src/main/resources/assets/revoextraction/models/item/mechanical_sluice.json",
       "elements": 150,
+      "overlaps": []
+    },
+    {
+      "file": "revoextraction/src/main/resources/assets/revoextraction/models/item/mineral_sludge.json",
+      "elements": 0,
       "overlaps": []
     },
     {
@@ -976,6 +1116,41 @@
       "overlaps": []
     },
     {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/block/geode_brine_output.json",
+      "elements": 1,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/block/geode_crystals.json",
+      "elements": 10,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/block/geode_electrodes.json",
+      "elements": 4,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/block/geode_energy_hatch.json",
+      "elements": 1,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/block/geode_rock_bed.json",
+      "elements": 5,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/block/geode_water_input.json",
+      "elements": 1,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/block/geode_water_volume.json",
+      "elements": 3,
+      "overlaps": []
+    },
+    {
       "file": "revoindustry/src/main/resources/assets/revoindustry/models/block/gold_furnace_casing.json",
       "elements": 0,
       "overlaps": []
@@ -1051,6 +1226,16 @@
       "overlaps": []
     },
     {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/block/saline_geode.json",
+      "elements": 1,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/block/salt_geode_chamber.json",
+      "elements": 1,
+      "overlaps": []
+    },
+    {
       "file": "revoindustry/src/main/resources/assets/revoindustry/models/block/silver_furnace_casing.json",
       "elements": 0,
       "overlaps": []
@@ -1093,6 +1278,76 @@
     {
       "file": "revoindustry/src/main/resources/assets/revoindustry/models/block/vacuum_3.json",
       "elements": 31,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/block/wither_chamber_casing.json",
+      "elements": 1,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/block/wither_chamber_glass.json",
+      "elements": 1,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/block/wither_chamber_light.json",
+      "elements": 1,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/block/wither_chamber_light_lit.json",
+      "elements": 1,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/block/wither_egg.json",
+      "elements": 4,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/block/wither_egg_cracked_1.json",
+      "elements": 4,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/block/wither_egg_cracked_2.json",
+      "elements": 4,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/block/wither_egg_input_hatch.json",
+      "elements": 1,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/block/wither_energy_hatch.json",
+      "elements": 1,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/block/wither_hatchery.json",
+      "elements": 1,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/block/wither_hatchery_lit.json",
+      "elements": 1,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/block/wither_roof_lamp.json",
+      "elements": 3,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/block/wither_roof_lamp_lit.json",
+      "elements": 3,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/block/wither_star_output_hatch.json",
+      "elements": 1,
       "overlaps": []
     },
     {
@@ -1226,6 +1481,21 @@
       "overlaps": []
     },
     {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/item/geode_brine_output.json",
+      "elements": 0,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/item/geode_energy_hatch.json",
+      "elements": 0,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/item/geode_water_input.json",
+      "elements": 0,
+      "overlaps": []
+    },
+    {
       "file": "revoindustry/src/main/resources/assets/revoindustry/models/item/gold_furnace_casing.json",
       "elements": 0,
       "overlaps": []
@@ -1296,6 +1566,21 @@
       "overlaps": []
     },
     {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/item/saline_geode.json",
+      "elements": 0,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/item/salt_geode_chamber.json",
+      "elements": 0,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/item/salt_water_bucket.json",
+      "elements": 0,
+      "overlaps": []
+    },
+    {
       "file": "revoindustry/src/main/resources/assets/revoindustry/models/item/silver_furnace_casing.json",
       "elements": 0,
       "overlaps": []
@@ -1342,6 +1627,46 @@
     },
     {
       "file": "revoindustry/src/main/resources/assets/revoindustry/models/item/vacuum_3.json",
+      "elements": 0,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/item/wither_chamber_casing.json",
+      "elements": 0,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/item/wither_chamber_glass.json",
+      "elements": 0,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/item/wither_chamber_light.json",
+      "elements": 0,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/item/wither_egg.json",
+      "elements": 0,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/item/wither_egg_input_hatch.json",
+      "elements": 0,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/item/wither_energy_hatch.json",
+      "elements": 0,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/item/wither_hatchery.json",
+      "elements": 0,
+      "overlaps": []
+    },
+    {
+      "file": "revoindustry/src/main/resources/assets/revoindustry/models/item/wither_star_output_hatch.json",
       "elements": 0,
       "overlaps": []
     },
@@ -1678,6 +2003,306 @@
       "overlaps": []
     },
     {
+      "file": "art/blockbench/mini-oak/mini_oak.bbmodel",
+      "elements": 55,
+      "overlaps": []
+    },
+    {
+      "file": "art/blockbench/nexus-machines/electroplating_line.bbmodel",
+      "elements": 239,
+      "overlaps": []
+    },
+    {
+      "file": "art/blockbench/nexus-machines/particle_collider.bbmodel",
+      "elements": 904,
+      "overlaps": []
+    },
+    {
+      "file": "art/blockbench/nexus-machines/parts/machine_accelerator_glass.bbmodel",
+      "elements": 1,
+      "overlaps": []
+    },
+    {
+      "file": "art/blockbench/nexus-machines/parts/machine_bath_wall.bbmodel",
+      "elements": 2,
+      "overlaps": []
+    },
+    {
+      "file": "art/blockbench/nexus-machines/parts/machine_casing.bbmodel",
+      "elements": 1,
+      "overlaps": []
+    },
+    {
+      "file": "art/blockbench/nexus-machines/parts/machine_ceramic_panel.bbmodel",
+      "elements": 1,
+      "overlaps": []
+    },
+    {
+      "file": "art/blockbench/nexus-machines/parts/machine_control_casting.bbmodel",
+      "elements": 1,
+      "overlaps": []
+    },
+    {
+      "file": "art/blockbench/nexus-machines/parts/machine_control_collider.bbmodel",
+      "elements": 1,
+      "overlaps": []
+    },
+    {
+      "file": "art/blockbench/nexus-machines/parts/machine_control_plating.bbmodel",
+      "elements": 1,
+      "overlaps": []
+    },
+    {
+      "file": "art/blockbench/nexus-machines/parts/machine_deck_grate.bbmodel",
+      "elements": 1,
+      "overlaps": []
+    },
+    {
+      "file": "art/blockbench/nexus-machines/parts/machine_energy.bbmodel",
+      "elements": 1,
+      "overlaps": []
+    },
+    {
+      "file": "art/blockbench/nexus-machines/parts/machine_fluid_in.bbmodel",
+      "elements": 1,
+      "overlaps": []
+    },
+    {
+      "file": "art/blockbench/nexus-machines/parts/machine_fluid_out.bbmodel",
+      "elements": 1,
+      "overlaps": []
+    },
+    {
+      "file": "art/blockbench/nexus-machines/parts/machine_gantry_rail.bbmodel",
+      "elements": 1,
+      "overlaps": []
+    },
+    {
+      "file": "art/blockbench/nexus-machines/parts/machine_hazard.bbmodel",
+      "elements": 1,
+      "overlaps": []
+    },
+    {
+      "file": "art/blockbench/nexus-machines/parts/machine_hydraulic_cylinder.bbmodel",
+      "elements": 3,
+      "overlaps": []
+    },
+    {
+      "file": "art/blockbench/nexus-machines/parts/machine_injector_housing.bbmodel",
+      "elements": 1,
+      "overlaps": []
+    },
+    {
+      "file": "art/blockbench/nexus-machines/parts/machine_input.bbmodel",
+      "elements": 1,
+      "overlaps": []
+    },
+    {
+      "file": "art/blockbench/nexus-machines/parts/machine_light_amber.bbmodel",
+      "elements": 1,
+      "overlaps": []
+    },
+    {
+      "file": "art/blockbench/nexus-machines/parts/machine_light_blue.bbmodel",
+      "elements": 1,
+      "overlaps": []
+    },
+    {
+      "file": "art/blockbench/nexus-machines/parts/machine_magnet_coil.bbmodel",
+      "elements": 1,
+      "overlaps": []
+    },
+    {
+      "file": "art/blockbench/nexus-machines/parts/machine_mould_bed.bbmodel",
+      "elements": 5,
+      "overlaps": []
+    },
+    {
+      "file": "art/blockbench/nexus-machines/parts/machine_output.bbmodel",
+      "elements": 1,
+      "overlaps": []
+    },
+    {
+      "file": "art/blockbench/nexus-machines/parts/machine_pressure_plate.bbmodel",
+      "elements": 1,
+      "overlaps": []
+    },
+    {
+      "file": "art/blockbench/nexus-machines/parts/machine_pressure_tank.bbmodel",
+      "elements": 1,
+      "overlaps": []
+    },
+    {
+      "file": "art/blockbench/nexus-machines/parts/machine_reinforced_column.bbmodel",
+      "elements": 1,
+      "overlaps": []
+    },
+    {
+      "file": "art/blockbench/nexus-machines/parts/machine_ribbed_panel.bbmodel",
+      "elements": 1,
+      "overlaps": []
+    },
+    {
+      "file": "art/blockbench/nexus-machines/parts/machine_service_panel.bbmodel",
+      "elements": 1,
+      "overlaps": []
+    },
+    {
+      "file": "art/blockbench/nexus-machines/parts/machine_vent.bbmodel",
+      "elements": 1,
+      "overlaps": []
+    },
+    {
+      "file": "art/blockbench/nexus-machines/pressure_casting_plant.bbmodel",
+      "elements": 204,
+      "overlaps": []
+    },
+    {
+      "file": "art/blockbench/nexus-portal/nexus_portal_assembly.bbmodel",
+      "elements": 1041,
+      "overlaps": []
+    },
+    {
+      "file": "art/blockbench/nexus-portal/parts/nexus_beacon.bbmodel",
+      "elements": 3,
+      "overlaps": []
+    },
+    {
+      "file": "art/blockbench/nexus-portal/parts/nexus_casing.bbmodel",
+      "elements": 1,
+      "overlaps": []
+    },
+    {
+      "file": "art/blockbench/nexus-portal/parts/nexus_ceramic_panel.bbmodel",
+      "elements": 1,
+      "overlaps": []
+    },
+    {
+      "file": "art/blockbench/nexus-portal/parts/nexus_controller.bbmodel",
+      "elements": 1,
+      "overlaps": []
+    },
+    {
+      "file": "art/blockbench/nexus-portal/parts/nexus_core.bbmodel",
+      "elements": 5,
+      "overlaps": []
+    },
+    {
+      "file": "art/blockbench/nexus-portal/parts/nexus_deck_grate.bbmodel",
+      "elements": 1,
+      "overlaps": []
+    },
+    {
+      "file": "art/blockbench/nexus-portal/parts/nexus_energy.bbmodel",
+      "elements": 1,
+      "overlaps": []
+    },
+    {
+      "file": "art/blockbench/nexus-portal/parts/nexus_fluid_in.bbmodel",
+      "elements": 1,
+      "overlaps": []
+    },
+    {
+      "file": "art/blockbench/nexus-portal/parts/nexus_fluid_out.bbmodel",
+      "elements": 1,
+      "overlaps": []
+    },
+    {
+      "file": "art/blockbench/nexus-portal/parts/nexus_foundation.bbmodel",
+      "elements": 1,
+      "overlaps": []
+    },
+    {
+      "file": "art/blockbench/nexus-portal/parts/nexus_foundation_chiseled.bbmodel",
+      "elements": 1,
+      "overlaps": []
+    },
+    {
+      "file": "art/blockbench/nexus-portal/parts/nexus_hazard.bbmodel",
+      "elements": 1,
+      "overlaps": []
+    },
+    {
+      "file": "art/blockbench/nexus-portal/parts/nexus_input.bbmodel",
+      "elements": 1,
+      "overlaps": []
+    },
+    {
+      "file": "art/blockbench/nexus-portal/parts/nexus_light_amber.bbmodel",
+      "elements": 1,
+      "overlaps": []
+    },
+    {
+      "file": "art/blockbench/nexus-portal/parts/nexus_light_blue.bbmodel",
+      "elements": 1,
+      "overlaps": []
+    },
+    {
+      "file": "art/blockbench/nexus-portal/parts/nexus_light_violet.bbmodel",
+      "elements": 1,
+      "overlaps": []
+    },
+    {
+      "file": "art/blockbench/nexus-portal/parts/nexus_output.bbmodel",
+      "elements": 1,
+      "overlaps": []
+    },
+    {
+      "file": "art/blockbench/nexus-portal/parts/nexus_rail.bbmodel",
+      "elements": 1,
+      "overlaps": []
+    },
+    {
+      "file": "art/blockbench/nexus-portal/parts/nexus_rail_east.bbmodel",
+      "elements": 2,
+      "overlaps": []
+    },
+    {
+      "file": "art/blockbench/nexus-portal/parts/nexus_rail_north.bbmodel",
+      "elements": 2,
+      "overlaps": []
+    },
+    {
+      "file": "art/blockbench/nexus-portal/parts/nexus_rail_south.bbmodel",
+      "elements": 2,
+      "overlaps": []
+    },
+    {
+      "file": "art/blockbench/nexus-portal/parts/nexus_rail_west.bbmodel",
+      "elements": 2,
+      "overlaps": []
+    },
+    {
+      "file": "art/blockbench/nexus-portal/parts/nexus_reinforced_column.bbmodel",
+      "elements": 1,
+      "overlaps": []
+    },
+    {
+      "file": "art/blockbench/nexus-portal/parts/nexus_ribbed_panel.bbmodel",
+      "elements": 1,
+      "overlaps": []
+    },
+    {
+      "file": "art/blockbench/nexus-portal/parts/nexus_ring.bbmodel",
+      "elements": 1,
+      "overlaps": []
+    },
+    {
+      "file": "art/blockbench/nexus-portal/parts/nexus_service_panel.bbmodel",
+      "elements": 1,
+      "overlaps": []
+    },
+    {
+      "file": "art/blockbench/nexus-portal/parts/nexus_trim.bbmodel",
+      "elements": 1,
+      "overlaps": []
+    },
+    {
+      "file": "art/blockbench/nexus-portal/parts/nexus_vent.bbmodel",
+      "elements": 1,
+      "overlaps": []
+    },
+    {
       "file": "art/blockbench/power-converter/advanced_power_converter.bbmodel",
       "elements": 3,
       "overlaps": []
@@ -1883,8 +2508,123 @@
       "overlaps": []
     },
     {
+      "file": "art/blockbench/running-shoes/black_running_shoes.bbmodel",
+      "elements": 4,
+      "overlaps": []
+    },
+    {
+      "file": "art/blockbench/running-shoes/blue_running_shoes.bbmodel",
+      "elements": 4,
+      "overlaps": []
+    },
+    {
+      "file": "art/blockbench/running-shoes/brown_running_shoes.bbmodel",
+      "elements": 4,
+      "overlaps": []
+    },
+    {
+      "file": "art/blockbench/running-shoes/cyan_running_shoes.bbmodel",
+      "elements": 4,
+      "overlaps": []
+    },
+    {
+      "file": "art/blockbench/running-shoes/green_running_shoes.bbmodel",
+      "elements": 4,
+      "overlaps": []
+    },
+    {
+      "file": "art/blockbench/running-shoes/magenta_running_shoes.bbmodel",
+      "elements": 4,
+      "overlaps": []
+    },
+    {
+      "file": "art/blockbench/running-shoes/orange_running_shoes.bbmodel",
+      "elements": 4,
+      "overlaps": []
+    },
+    {
+      "file": "art/blockbench/running-shoes/pink_running_shoes.bbmodel",
+      "elements": 4,
+      "overlaps": []
+    },
+    {
+      "file": "art/blockbench/running-shoes/purple_running_shoes.bbmodel",
+      "elements": 4,
+      "overlaps": []
+    },
+    {
+      "file": "art/blockbench/running-shoes/red_running_shoes.bbmodel",
+      "elements": 4,
+      "overlaps": []
+    },
+    {
+      "file": "art/blockbench/running-shoes/running_shoes_worn.bbmodel",
+      "elements": 4,
+      "overlaps": []
+    },
+    {
+      "file": "art/blockbench/running-shoes/white_running_shoes.bbmodel",
+      "elements": 4,
+      "overlaps": []
+    },
+    {
+      "file": "art/blockbench/running-shoes/yellow_running_shoes.bbmodel",
+      "elements": 4,
+      "overlaps": []
+    },
+    {
+      "file": "art/blockbench/salt-geode/geode_brine_output.bbmodel",
+      "elements": 1,
+      "overlaps": []
+    },
+    {
+      "file": "art/blockbench/salt-geode/geode_crystals.bbmodel",
+      "elements": 10,
+      "overlaps": []
+    },
+    {
+      "file": "art/blockbench/salt-geode/geode_electrodes.bbmodel",
+      "elements": 4,
+      "overlaps": []
+    },
+    {
+      "file": "art/blockbench/salt-geode/geode_energy_hatch.bbmodel",
+      "elements": 1,
+      "overlaps": []
+    },
+    {
+      "file": "art/blockbench/salt-geode/geode_rock_bed.bbmodel",
+      "elements": 5,
+      "overlaps": []
+    },
+    {
+      "file": "art/blockbench/salt-geode/geode_water_input.bbmodel",
+      "elements": 1,
+      "overlaps": []
+    },
+    {
+      "file": "art/blockbench/salt-geode/geode_water_volume.bbmodel",
+      "elements": 3,
+      "overlaps": []
+    },
+    {
+      "file": "art/blockbench/salt-geode/saline_geode.bbmodel",
+      "elements": 1,
+      "overlaps": []
+    },
+    {
       "file": "art/blockbench/salt-geode/salt_crystal_growth.bbmodel",
       "elements": 7,
+      "overlaps": []
+    },
+    {
+      "file": "art/blockbench/salt-geode/salt_geode_assembled.bbmodel",
+      "elements": 48,
+      "overlaps": []
+    },
+    {
+      "file": "art/blockbench/salt-geode/salt_geode_chamber.bbmodel",
+      "elements": 1,
       "overlaps": []
     },
     {
@@ -1940,6 +2680,81 @@
     {
       "file": "art/blockbench/vacuums/vacuum_3.bbmodel",
       "elements": 31,
+      "overlaps": []
+    },
+    {
+      "file": "art/blockbench/wither-hatchery/wither_chamber_casing.bbmodel",
+      "elements": 1,
+      "overlaps": []
+    },
+    {
+      "file": "art/blockbench/wither-hatchery/wither_chamber_glass.bbmodel",
+      "elements": 1,
+      "overlaps": []
+    },
+    {
+      "file": "art/blockbench/wither-hatchery/wither_chamber_light.bbmodel",
+      "elements": 1,
+      "overlaps": []
+    },
+    {
+      "file": "art/blockbench/wither-hatchery/wither_chamber_light_lit.bbmodel",
+      "elements": 1,
+      "overlaps": []
+    },
+    {
+      "file": "art/blockbench/wither-hatchery/wither_egg.bbmodel",
+      "elements": 4,
+      "overlaps": []
+    },
+    {
+      "file": "art/blockbench/wither-hatchery/wither_egg_cracked_1.bbmodel",
+      "elements": 4,
+      "overlaps": []
+    },
+    {
+      "file": "art/blockbench/wither-hatchery/wither_egg_cracked_2.bbmodel",
+      "elements": 4,
+      "overlaps": []
+    },
+    {
+      "file": "art/blockbench/wither-hatchery/wither_egg_input_hatch.bbmodel",
+      "elements": 1,
+      "overlaps": []
+    },
+    {
+      "file": "art/blockbench/wither-hatchery/wither_energy_hatch.bbmodel",
+      "elements": 1,
+      "overlaps": []
+    },
+    {
+      "file": "art/blockbench/wither-hatchery/wither_hatchery.bbmodel",
+      "elements": 1,
+      "overlaps": []
+    },
+    {
+      "file": "art/blockbench/wither-hatchery/wither_hatchery_assembled.bbmodel",
+      "elements": 111,
+      "overlaps": []
+    },
+    {
+      "file": "art/blockbench/wither-hatchery/wither_hatchery_lit.bbmodel",
+      "elements": 1,
+      "overlaps": []
+    },
+    {
+      "file": "art/blockbench/wither-hatchery/wither_roof_lamp.bbmodel",
+      "elements": 3,
+      "overlaps": []
+    },
+    {
+      "file": "art/blockbench/wither-hatchery/wither_roof_lamp_lit.bbmodel",
+      "elements": 3,
+      "overlaps": []
+    },
+    {
+      "file": "art/blockbench/wither-hatchery/wither_star_output_hatch.bbmodel",
+      "elements": 1,
       "overlaps": []
     }
   ],

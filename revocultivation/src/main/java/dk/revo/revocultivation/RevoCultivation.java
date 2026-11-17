@@ -35,11 +35,12 @@ public final class RevoCultivation {
     public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<FarmMachine>> MACHINE=ENTITIES.register("first_tier_machine",()->BlockEntityType.Builder.of(FarmMachine::new,java.util.Arrays.stream(MachineKind.values()).filter(MachineKind::registered).map(MachineKind::controller).toArray(Block[]::new)).build(null));
     public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<FarmHatchEntity>> HATCH_ENTITY=ENTITIES.register("item_hatch",()->BlockEntityType.Builder.of(FarmHatchEntity::new,FarmMaterials.hatches()).build(null));
     public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<FarmWaterTankEntity>> TANK_ENTITY=ENTITIES.register("farm_water_tank",()->BlockEntityType.Builder.of(FarmWaterTankEntity::new,FarmMaterials.IRON.get(MachineKind.Part.TANK).get(),FarmMaterials.STEEL.get(MachineKind.Part.TANK).get()).build(null));
-    public static final DeferredHolder<MenuType<?>,MenuType<FarmControllerMenu>> CONTROLLER_MENU=MENUS.register("controller",()->new MenuType<>(FarmControllerMenu::new,net.minecraft.world.flag.FeatureFlags.DEFAULT_FLAGS));
+    public static final DeferredHolder<MenuType<?>,MenuType<FarmControllerMenu>> CONTROLLER_MENU=MENUS.register("controller",()->IMenuTypeExtension.create((id,inv,b)->new FarmControllerMenu(id,inv,b.readBoolean())));
     public static final DeferredHolder<MenuType<?>,MenuType<FarmHatchMenu>> HATCH_MENU=MENUS.register("hatch",()->IMenuTypeExtension.create((id,inv,buf)->new FarmHatchMenu(id,inv,buf.readEnum(MachineKind.class))));
     public static final DeferredBlock<TradingColony> TRADE=BLOCKS.register("trading_colony",TradingColony::new);
     public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<TradingColony.Entity>> TRADE_ENTITY=ENTITIES.register("trading_colony",()->BlockEntityType.Builder.of(TradingColony.Entity::new,TRADE.get()).build(null));
     public RevoCultivation(IEventBus bus) {
+        bus.addListener((net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent e)->e.enqueueWork(MobSpawnerPrograms::disableEggDispensing));
         bus.addListener((RegisterCapabilitiesEvent e)->e.registerBlockEntity(Capabilities.ItemHandler.BLOCK,TRADE_ENTITY.get(),(be,side)->be.items));SmallMachines.bootstrap();FarmMaterials.bootstrap();
         MachineKind.TREE.bind(TREE);MachineKind.GREENHOUSE.bind(GREENHOUSE);
         MachineKind.STEEL_TREE.bind(STEEL_TREE);MachineKind.IRON_GREENHOUSE.bind(IRON_GREENHOUSE);
@@ -50,6 +51,7 @@ public final class RevoCultivation {
         bus.addListener((net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent e)->{if(e.getTabKey()==CreativeModeTabs.FUNCTIONAL_BLOCKS)ITEMS.getEntries().forEach(i->e.accept(i.get()));});
     }
     private void capabilities(RegisterCapabilitiesEvent event){
+        event.registerBlockEntity(Capabilities.ItemHandler.BLOCK,MACHINE.get(),(be,side)->be.kind().isHarvester()?be.programSpawner:null);
         event.registerBlockEntity(Capabilities.ItemHandler.BLOCK,SmallMachines.ENTITY.get(),(be,side)->dk.revo.revolib.FeedbackHandlers.items(be,be.items(side)));
         event.registerBlockEntity(Capabilities.ItemHandler.BLOCK,HATCH_ENTITY.get(),(be,side)->dk.revo.revolib.FeedbackHandlers.items(be,be.items()));
         event.registerBlockEntity(Capabilities.FluidHandler.BLOCK,HATCH_ENTITY.get(),(be,side)->dk.revo.revolib.FeedbackHandlers.fluids(be,be.fluids()));

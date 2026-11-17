@@ -19,7 +19,7 @@
   "guide.revocultivation.tree": "3 x 3 base. Keep 3 blocks above clear. Controller front, hatch outward.",
   "guide.revocultivation.base": "Build bottom with bed/grate centre. Controller front, hatch on its side.",
   "guide.revocultivation.glass": "Add four pillars and glass walls. Keep the centre empty for crops.",
-  "guide.revocultivation.bars": "Add barred walls and the front mob filter. Right-click filter to select species.",
+  "guide.revocultivation.bars": "Add barred walls and the front filter. Insert a crafted mob spawner into the controller to select its species.",
   "guide.revocultivation.top": "Cap the corners and beams. Greenhouse: glass centre. Harvester: casing centre.",
   "recipe.revocultivation.time": "%s seconds per cycle",
   "recipe.revocultivation.retained": "Starter retained; daylight required.",
@@ -186,5 +186,9 @@
   "program.revocultivation.poppy": "Poppy",
   "program.revocultivation.ghast": "Ghast",
   "program.revocultivation.shulker": "Shulker",
-  "program.revocultivation.wither_skeleton": "Wither Skeleton"
+  "program.revocultivation.wither_skeleton": "Wither Skeleton",
+  "gui.revocultivation.mob_spawner": "Mob spawner",
+  "message.revocultivation.spawner_in_controller": "Insert a mob-specific spawner into the controller to choose a program.",
+  "tooltip.revocultivation.egg_ingredient": "Crafting ingredient for a mob spawner. Cannot spawn mobs.",
+  "tooltip.revocultivation.spawner_program": "Harvester program: %s (cannot spawn mobs)"
 }

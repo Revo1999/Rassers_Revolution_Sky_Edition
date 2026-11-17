@@ -40,7 +40,7 @@
     },
     {
       "id": "5E50000000000002",
-      "title": "Mob Filter Programs",
+      "title": "Spawner Programs",
       "icon": {
         "id": "minecraft:slime_ball",
         "count": 1
@@ -50,8 +50,8 @@
       "shape": "circle",
       "dependencies": [],
       "description": [
-        "Right-click the wooden species filter: Zombie, Skeleton, Spider, Cow, Slime. Slime supplies one slimeball per cycle for Create Super Glue. Cow supplies leather and beef before steel drill maintenance.",
-        "Steel adds Blaze, Enderman and Magma Cube. No captured mob, spawn egg or rare drop is required to start any program."
+        "Craft a vanilla mob egg with its recipe, then surround that egg with eight Iron Bars to craft a mob-specific vanilla Spawner. Insert the Spawner into the controller slot; it is retained, not consumed. The decorative filter no longer cycles species.",
+        "Wooden harvesters accept Zombie, Skeleton, Spider, Cow and Slime programs. Steel adds Blaze, Enderman, Magma Cube, Ghast, Shulker and Wither Skeleton. Shulker and Wither Skeleton still need a retained Netherite Ingot in the hatch. Eggs are recipe ingredients and cannot directly spawn mobs or change a spawner. Placed spawners are disabled and never spawn mobs."
       ],
       "tasks": [
         {

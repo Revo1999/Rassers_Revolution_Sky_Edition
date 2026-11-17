@@ -27,7 +27,7 @@ if (providers.gradleProperty('revoFarmTests').isPresent()) {
 }
 if (providers.gradleProperty('revoFarmUiQa').isPresent()) { sourceSets.main.java.srcDir 'src/uiqa/java' }
 if (providers.gradleProperty('revoSmallUiQa').isPresent()) { sourceSets.main.java.srcDir 'src/smallqa/java' }
-tasks.named('jar', Jar) { exclude '**/FarmGameTests*', '**/SmallGameTests*', '**/FarmUiQa*', '**/SmallUiQa*', 'data/revocultivation/structure/farm_test.nbt' }
+tasks.named('jar', Jar) { exclude '**/SpawnerProgramGameTests*', '**/FarmGameTests*', '**/SmallGameTests*', '**/FarmUiQa*', '**/SmallUiQa*', 'data/revocultivation/structure/farm_test.nbt' }
 
 if (providers.gradleProperty('revoFarmLightingTests').isPresent()) {
     sourceSets.main.java.srcDir 'src/lightingtest/java'

@@ -4,6 +4,7 @@
   "package": "dk.revo.revoindustry.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
+    "DisableSpawnerTickMixin",
     "DisableFactoryAugmentMixin",
     "WitherEggRitualMixin",
     "WitherRitualPlacementMixin"

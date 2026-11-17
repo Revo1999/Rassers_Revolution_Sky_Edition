@@ -210,7 +210,7 @@ def collider():
         m.port(x,y,z,part,role,face)
     m.group('beam_track_visual',[168,40,168])
     for i in range(64):
-        a=(i+.5)*math.tau/64;cx=168+math.cos(a)*128;cz=168+math.sin(a)*128;length=math.tau*128/64
+        a=(i+.5)*math.tau/64;cx=168+math.cos(a)*128;cz=168+math.sin(a)*128;length=math.tau*128/64*.99
         m.detail('Contained beam track '+str(i),[cx-length/2,39.6,cz-.4],[cx+length/2,40.4,cz+.4],'beam_cyan','beam_track_visual',origin=[cx,40,cz],rotation=[0,-math.degrees(a)-90,0])
     for name,z,tile in [('beam_packet_a',40,'beam_cyan'),('beam_packet_b',296,'beam_violet')]:
         m.group(name,[168,40,168]);m.detail(name+' contained pulse',[165,37,z-3],[171,43,z+3],tile,name)
@@ -227,7 +227,7 @@ def collider():
         m.detail(name+' inspection glow',[162,78.8,z-6],[174,79.4,z+6],tile,name)
         m.visuals[-1]['faces']=core['faces']
         for i in range(1,6):
-            a=start+sign*i*.055;cx=168+128*math.cos(a);cz=168+128*math.sin(a);half=4.5-i*.6
+            a=start+sign*i*.055;cx=168+128*math.cos(a);cz=168+128*math.sin(a);half=(4.5-i*.6)*.94
             m.detail(name+' inspection trail '+str(i),[cx-half,78.9,cz-half],[cx+half,79.3,cz+half],tile,name)
     m.animation('opposed_beam_cycle',12,[(name,'rotation',[(i*1.5,[0,sign*i*45,0]) for i in range(9)]) for name,sign in [('beam_packet_a',1),('beam_packet_b',-1)]])
     # Independently pivoted lenses pulse together; the structure itself never changes scale.

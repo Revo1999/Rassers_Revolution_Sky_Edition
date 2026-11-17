@@ -17,7 +17,7 @@ public final class FarmClient {
     private static final java.util.Map<String,ModelResourceLocation> MODEL_IDS=new java.util.concurrent.ConcurrentHashMap<>();
     private static ModelResourceLocation model(String name){return MODEL_IDS.computeIfAbsent(name,n->ModelResourceLocation.standalone(ResourceLocation.fromNamespaceAndPath(RevoCultivation.MOD_ID,"block/"+n)));}
     @SubscribeEvent public static void screens(RegisterMenuScreensEvent e){e.register(RevoCultivation.CONTROLLER_MENU.get(),FarmControllerScreen::new);e.register(RevoCultivation.HATCH_MENU.get(),FarmHatchScreen::new);}
-    @SubscribeEvent public static void models(ModelEvent.RegisterAdditional e){for(var kind:MachineKind.values())if(kind.registered())e.register(model(kind.id+"_body"));e.register(model("salt_crystal_growth"));e.register(model("tree_grower_tree"));e.register(model("iron_greenhouse_lights"));e.register(model("iron_greenhouse_glass"));e.register(model("steel_tree_grower_glass"));}
+    @SubscribeEvent public static void models(ModelEvent.RegisterAdditional e){for(var kind:MachineKind.values())if(kind.registered())e.register(model(kind.id+"_body"));e.register(model("salt_crystal_growth"));e.register(model("iron_greenhouse_lights"));e.register(model("iron_greenhouse_glass"));e.register(model("steel_tree_grower_glass"));}
     @SubscribeEvent public static void renderers(EntityRenderersEvent.RegisterRenderers e){e.registerBlockEntityRenderer(RevoCultivation.MACHINE.get(),Renderer::new);}
     public static class Renderer implements BlockEntityRenderer<FarmMachine> {
         private static final float[] WATER_LOW={2.2f,3,35.2f},TREE_WATER_HIGH={12.8f,23,44.8f},GREENHOUSE_WATER_HIGH={10.8f,22,44.8f},CROP_GRID={16,32,48};
@@ -39,7 +39,17 @@ public final class FarmClient {
                         pose.pushPose();pose.translate(32f/80,16f/80,32f/80);pose.scale(1f/5,1f/5,1f/5);mc.getBlockRenderer().renderSingleBlock(Blocks.OAK_SAPLING.defaultBlockState(),pose,buffers,light,overlay);pose.popPose();
                     }
                 }
-                else if(machine.kind().isTree()){pose.pushPose();pose.translate(.5,14f/48,.5);float scale=.35f+.65f*progress;pose.scale(scale,scale,scale);pose.translate(-.5,-14f/48,-.5);draw("tree_grower_tree",pose,buffers,light,overlay);pose.popPose();}
+                else if(machine.kind().isTree()){
+                    pose.pushPose();pose.translate(.5,14f/48,.5);
+                    float blockScale=(.35f+.65f*progress)/8;
+                    pose.scale(blockScale,blockScale,blockScale);
+                    for(int[] block:MiniOakGeometry.BLOCKS){
+                        pose.pushPose();pose.translate(block[0]-.5,block[1],block[2]-.5);
+                        mc.getBlockRenderer().renderSingleBlock((block[3]==0?Blocks.OAK_LOG:Blocks.OAK_LEAVES).defaultBlockState(),pose,buffers,light,overlay);
+                        pose.popPose();
+                    }
+                    pose.popPose();
+                }
                 else if(machine.kind().isGreenhouse()){
                     boolean submerged=machine.program()==15||machine.program()==19;
                     if(submerged&&machine.water.getFluidAmount()>0){

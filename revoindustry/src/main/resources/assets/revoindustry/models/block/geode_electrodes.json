@@ -21,6 +21,15 @@
         13,
         5
       ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          1,
+          8,
+          3.5
+        ]
+      },
       "faces": {
         "north": {
           "uv": [
@@ -90,6 +99,15 @@
         13,
         5
       ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          15,
+          8,
+          3.5
+        ]
+      },
       "faces": {
         "north": {
           "uv": [
@@ -150,7 +168,7 @@
     {
       "name": "left_socket",
       "from": [
-        0,
+        -0.004,
         2,
         1
       ],
@@ -159,6 +177,15 @@
         4,
         6
       ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          1.5,
+          3,
+          3.5
+        ]
+      },
       "faces": {
         "north": {
           "uv": [
@@ -224,10 +251,19 @@
         1
       ],
       "to": [
-        16,
+        16.004,
         4,
         6
       ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          14.5,
+          3,
+          3.5
+        ]
+      },
       "faces": {
         "north": {
           "uv": [
@@ -285,6 +321,5 @@
         }
       }
     }
-  ],
-  "render_type": "minecraft:cutout"
+  ]
 }

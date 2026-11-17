@@ -57,7 +57,7 @@ V = Greenhouse Glass Panel, B = Barred Cage Panel, F = Mob Species Filter,
 | Total | 9 | 26 | 26 |
 
 Right-click the controller for status, selected program, cycle percentage,
-greenhouse water amount and an EMI guide button. Controllers have no inventory.
+greenhouse water amount and an EMI guide button. Harvester controllers also have a retained mob-spawner slot and player inventory. Other controllers have no inventory.
 A backwards controller, hatch or filter is explained there with the part,
 relative position and correct direction. Jade remains compact without facing hints.
 
@@ -68,19 +68,25 @@ are removable. A water bucket fills 1,000 mB and leaves an empty bucket to extra
 The greenhouse tank holds 8,000 mB and accepts piped water via the hatch. This
 fluid port is fill-only and rejects other fluids. Only a completed harvest uses water.
 
-Right-click the Harvester's front middle filter to cycle Zombie → Skeleton → Spider.
-The feedback message, actual contained mob, controller program and output change
-together. Minecraft's native renderer supplies the proper species model, textures,
+Craft a vanilla mob egg, surround it with eight iron bars to craft a mob-specific
+vanilla spawner, then insert that spawner into the controller. It is retained.
+The front filter remains structural and no longer cycles species. Wooden accepts
+Zombie, Skeleton, Spider, Cow and Slime; Steel adds Blaze, Enderman, Magma Cube,
+Ghast, Shulker and Wither Skeleton. The last two still require a retained Netherite
+Ingot in the input hatch. Eggs cannot spawn mobs, change spawners or create baby
+mobs; dispensers eject them as items. Placed spawners never spawn mobs.
+Changing the inserted spawner changes the program and contained mob together.
+Minecraft's native renderer supplies the proper species model, textures,
 equipment (including the skeleton's bow), spider eyes and idle/limb animation.
 The contained vanilla Mob is serialized with the controller, including its UUID
 and equipment. Reloading retains the same mob; existing machines migrate on first
 use. It is never added to the world's roaming-entity collection or AI/despawn tick
 loop, so distance, chunk reloads, peaceful difficulty and daylight cannot remove it.
 It cannot escape, attack, pick up items, burn or generate extra drops. Changing the
-filter deliberately replaces it with the newly selected species. An incomplete
+spawner deliberately replaces it with the newly selected species. An incomplete
 machine hides the contained mob and retains its data for repair; removing the
 controller removes its contained mob with it. The Harvester does not kill nearby
-mobs. Tree growth is decorative and does not place world blocks.
+mobs. The wooden tree grower renders a normal oak built from miniature vanilla log and leaf blocks, with full-resolution vanilla textures and biome leaf tint. It does not place world blocks. The steel grower still grows and harvests a real tree.
 
 | Program | Output per completed cycle |
 | --- | --- |
