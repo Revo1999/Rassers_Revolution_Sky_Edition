@@ -2,8 +2,8 @@
   "result": "PASS",
   "revoJars": 7,
   "exactSourceAssetMatches": 1543,
-  "pack": "Rassers-Revolution-Sky-Edition-0.1.42-dev.mrpack",
-  "packSha256": "41e05c534d2d88a60e9f0efe018a82321b3868efe96df194e5d21586f55cc258",
+  "pack": "Rassers-Revolution-Sky-Edition-0.1.43-dev.mrpack",
+  "packSha256": "2baa894b74f2e8c8da2b2b95d4f8c8ac120a00c418e3288264e4d4ccc164bcbb",
   "nativeSourcesExcludedFromJars": true,
   "qaHelpersExcludedFromJars": true,
   "nexusRecipes": 108,
@@ -12,5 +12,5 @@
   "nexusQuestCount": 41,
   "allQuestCount": 332,
   "nexusBlockRecipesMissing": 0,
-  "graphicalQa": "Builder stock counts, ghost icons, red obstruction outline, powered portal and server advancement verified in an isolated fresh save"
+  "graphicalQa": "Vanilla builder panel and player slots, ghost material counters, obstruction outline and powered Nexus portal verified in an isolated save"
 }

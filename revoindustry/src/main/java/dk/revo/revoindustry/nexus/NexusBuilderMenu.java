@@ -7,6 +7,8 @@ import net.minecraft.world.item.ItemStack;
 
 /** Ghost cells are material counters; vanilla player slots remain ordinary inventory slots. */
 public final class NexusBuilderMenu extends AbstractContainerMenu {
+ public static final int WIDTH = 240, HEIGHT = 224;
+ public static final int INVENTORY_X = (WIDTH - 176) / 2 + 8, INVENTORY_Y = 146;
  public final NexusMachine machine;
  public final BlockPos pos;
  public final ContainerData data;
@@ -15,7 +17,7 @@ public final class NexusBuilderMenu extends AbstractContainerMenu {
  private NexusBuilderMenu(int id,Inventory inv,NexusMachine machine,BlockPos pos){
   super(Nexus.BUILDER_MENU.get(),id);this.machine=machine;this.pos=pos;int n=NexusConstruction.requirements().size();int size=5+2*n;
   data=machine==null||inv.player.level().isClientSide?new SimpleContainerData(size):new ContainerData(){public int get(int i){var c=machine.construction;return switch(i){case 0->c.cursor();case 1->c.started()?1:0;case 2->c.status();case 3->(int)(c.energy()&65535);case 4->(int)(c.energy()>>>16)&65535;default->i<5+n?c.stored(i-5):c.used(i-5-n);};}public void set(int i,int v){}public int getCount(){return size;}};addDataSlots(data);
-  for(int y=0;y<3;y++)for(int x=0;x<9;x++)addSlot(new Slot(inv,9+x+9*y,55+18*x,144+18*y));for(int x=0;x<9;x++)addSlot(new Slot(inv,x,55+18*x,202));
+  for(int y=0;y<3;y++)for(int x=0;x<9;x++)addSlot(new Slot(inv,9+x+9*y,INVENTORY_X+18*x,INVENTORY_Y+18*y));for(int x=0;x<9;x++)addSlot(new Slot(inv,x,INVENTORY_X+18*x,INVENTORY_Y+58));
  }
  public int stored(int i){return data.get(5+i);}public int used(int i){return data.get(5+NexusConstruction.requirements().size()+i);}
  public long energy(){return (data.get(3)&65535L)|((data.get(4)&65535L)<<16);}
