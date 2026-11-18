@@ -1,0 +1,25 @@
+{
+  "type": "modern_industrialization:assembler",
+  "eu": 2048,
+  "duration": 200,
+  "item_inputs": [
+    {
+      "item": "revoindustry:compacted_rotten_flesh",
+      "amount": 1
+    },
+    {
+      "item": "revoindustry:compacted_bone",
+      "amount": 1
+    },
+    {
+      "item": "revoindustry:compacted_string",
+      "amount": 1
+    }
+  ],
+  "item_outputs": [
+    {
+      "item": "revoindustry:nexus_mob_group_0",
+      "amount": 1
+    }
+  ]
+}

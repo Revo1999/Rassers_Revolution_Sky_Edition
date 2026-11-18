@@ -19,7 +19,7 @@ if (providers.gradleProperty('revoNexusTests').isPresent()) {
   runs { nexusTests { type='gameTestServer';systemProperty 'neoforge.enabledGameTestNamespaces','revoindustry' } }
  }
 }
-tasks.named('jar', Jar) { exclude '**/NexusGameTests*','data/revoindustry/structure/nexus_test.nbt','data/revoindustry/recipe/nexus_test/**' }
+tasks.named('jar', Jar) { exclude '**/NexusGameTests*','**/NexusSurvivalGameTests*','data/revoindustry/structure/nexus_test.nbt','data/revoindustry/recipe/nexus_test/**' }
 if (providers.gradleProperty('revoNexusQa').isPresent()) { sourceSets.main.java.srcDir 'src/nexusqa/java' }
 tasks.named('jar', Jar) { exclude '**/NexusVisualQa*' }
 dependencies {

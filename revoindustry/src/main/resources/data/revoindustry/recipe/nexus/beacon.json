@@ -1,0 +1,29 @@
+{
+  "type": "modern_industrialization:assembler",
+  "eu": 32768,
+  "duration": 800,
+  "item_inputs": [
+    {
+      "item": "revoindustry:nexus_heavy_panel",
+      "amount": 1
+    },
+    {
+      "item": "revoindustry:phase_lattice",
+      "amount": 48
+    },
+    {
+      "item": "revoindustry:nexus_essence_capacitor",
+      "amount": 2
+    },
+    {
+      "item": "minecraft:glass",
+      "amount": 16
+    }
+  ],
+  "item_outputs": [
+    {
+      "item": "revoindustry:nexus_beacon",
+      "amount": 1
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "type": "modern_industrialization:assembler",
+  "eu": 8192,
+  "duration": 200,
+  "item_inputs": [
+    {
+      "item": "modern_industrialization:titanium_plate",
+      "amount": 2
+    },
+    {
+      "item": "minecraft:quartz",
+      "amount": 4
+    }
+  ],
+  "item_outputs": [
+    {
+      "item": "revoindustry:nexus_machine_ceramic_panel",
+      "amount": 1
+    }
+  ]
+}

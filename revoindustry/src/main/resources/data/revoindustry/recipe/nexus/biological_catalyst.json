@@ -1,0 +1,37 @@
+{
+  "type": "modern_industrialization:assembler",
+  "eu": 8192,
+  "duration": 400,
+  "item_inputs": [
+    {
+      "item": "revocultivation:compost",
+      "amount": 8
+    },
+    {
+      "item": "revocultivation:silk_cocoon",
+      "amount": 8
+    },
+    {
+      "item": "minecraft:paper",
+      "amount": 8
+    },
+    {
+      "item": "modern_industrialization:rubber_sheet",
+      "amount": 8
+    },
+    {
+      "item": "revoindustry:nexus_plant_nutrients",
+      "amount": 1
+    },
+    {
+      "item": "revoindustry:nexus_carbon_mesh",
+      "amount": 1
+    }
+  ],
+  "item_outputs": [
+    {
+      "item": "revoindustry:nexus_biological_catalyst",
+      "amount": 1
+    }
+  ]
+}

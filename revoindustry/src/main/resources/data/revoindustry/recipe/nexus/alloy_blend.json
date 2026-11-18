@@ -1,0 +1,29 @@
+{
+  "type": "modern_industrialization:mixer",
+  "eu": 8192,
+  "duration": 800,
+  "item_inputs": [
+    {
+      "item": "modern_industrialization:iridium_dust",
+      "amount": 16
+    },
+    {
+      "item": "modern_industrialization:tungsten_dust",
+      "amount": 32
+    },
+    {
+      "item": "modern_industrialization:superconductor_dust",
+      "amount": 16
+    },
+    {
+      "item": "minecraft:netherite_ingot",
+      "amount": 2
+    }
+  ],
+  "item_outputs": [
+    {
+      "item": "revoindustry:nexus_alloy_blend",
+      "amount": 8
+    }
+  ]
+}

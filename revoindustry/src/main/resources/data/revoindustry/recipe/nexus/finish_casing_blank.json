@@ -1,0 +1,17 @@
+{
+  "type": "modern_industrialization:compressor",
+  "eu": 8192,
+  "duration": 200,
+  "item_inputs": [
+    {
+      "item": "revoindustry:rough_nexus_casing_blank",
+      "amount": 1
+    }
+  ],
+  "item_outputs": [
+    {
+      "item": "revoindustry:nexus_casing_blank",
+      "amount": 1
+    }
+  ]
+}

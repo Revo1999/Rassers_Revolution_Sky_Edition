@@ -1,0 +1,41 @@
+{
+  "type": "revoindustry:pressure_casting_plant",
+  "eu": 32768,
+  "duration": 400,
+  "item_inputs": [
+    {
+      "item": "revoindustry:nexus_alloy_ingot",
+      "amount": 4
+    },
+    {
+      "item": "revoindustry:nexus_mould_frame",
+      "amount": 1
+    }
+  ],
+  "item_outputs": [
+    {
+      "item": "revoindustry:rough_nexus_frame",
+      "amount": 1
+    },
+    {
+      "item": "revoindustry:nexus_mould_frame",
+      "amount": 1
+    }
+  ],
+  "fluid_inputs": [
+    {
+      "fluid": "modern_industrialization:nitrogen",
+      "amount": 1000
+    },
+    {
+      "fluid": "modern_industrialization:cryofluid",
+      "amount": 1000
+    }
+  ],
+  "fluid_outputs": [
+    {
+      "fluid": "revoindustry:warm_nexus_coolant",
+      "amount": 1000
+    }
+  ]
+}

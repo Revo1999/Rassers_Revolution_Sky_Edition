@@ -1,0 +1,29 @@
+{
+  "type": "revoindustry:electroplating_line",
+  "eu": 65536,
+  "duration": 200,
+  "item_inputs": [
+    {
+      "item": "revoindustry:nexus_plated_substrate",
+      "amount": 8
+    }
+  ],
+  "item_outputs": [
+    {
+      "item": "revoindustry:nexus_rinsed_substrate",
+      "amount": 8
+    }
+  ],
+  "fluid_inputs": [
+    {
+      "fluid": "minecraft:water",
+      "amount": 1000
+    }
+  ],
+  "fluid_outputs": [
+    {
+      "fluid": "revoindustry:nexus_wastewater",
+      "amount": 1000
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "type": "modern_industrialization:assembler",
+  "eu": 8192,
+  "duration": 200,
+  "item_inputs": [
+    {
+      "item": "revoindustry:nexus_rinsed_substrate",
+      "amount": 1
+    },
+    {
+      "item": "modern_industrialization:copper_wire",
+      "amount": 1
+    }
+  ],
+  "item_outputs": [
+    {
+      "item": "revoindustry:nexus_contact",
+      "amount": 1
+    }
+  ]
+}

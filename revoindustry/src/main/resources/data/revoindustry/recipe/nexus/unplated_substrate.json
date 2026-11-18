@@ -1,0 +1,29 @@
+{
+  "type": "modern_industrialization:assembler",
+  "eu": 8192,
+  "duration": 400,
+  "item_inputs": [
+    {
+      "item": "revoindustry:nexus_carrier",
+      "amount": 8
+    },
+    {
+      "item": "create:precision_mechanism",
+      "amount": 8
+    },
+    {
+      "item": "minecraft:diamond",
+      "amount": 16
+    },
+    {
+      "item": "ae2:certus_quartz_crystal",
+      "amount": 16
+    }
+  ],
+  "item_outputs": [
+    {
+      "item": "revoindustry:nexus_unplated_substrate",
+      "amount": 8
+    }
+  ]
+}

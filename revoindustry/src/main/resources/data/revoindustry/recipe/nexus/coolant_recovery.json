@@ -1,0 +1,17 @@
+{
+  "type": "modern_industrialization:vacuum_freezer",
+  "eu": 256,
+  "duration": 400,
+  "fluid_inputs": [
+    {
+      "fluid": "revoindustry:warm_nexus_coolant",
+      "amount": 1000
+    }
+  ],
+  "fluid_outputs": [
+    {
+      "fluid": "modern_industrialization:cryofluid",
+      "amount": 750
+    }
+  ]
+}

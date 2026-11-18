@@ -1,0 +1,21 @@
+{
+  "type": "modern_industrialization:assembler",
+  "eu": 8192,
+  "duration": 200,
+  "item_inputs": [
+    {
+      "item": "revoindustry:nexus_foundation",
+      "amount": 1
+    },
+    {
+      "item": "minecraft:diamond",
+      "amount": 1
+    }
+  ],
+  "item_outputs": [
+    {
+      "item": "revoindustry:nexus_foundation_chiseled",
+      "amount": 1
+    }
+  ]
+}

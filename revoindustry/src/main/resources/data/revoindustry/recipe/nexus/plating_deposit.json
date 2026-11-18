@@ -1,0 +1,41 @@
+{
+  "type": "revoindustry:electroplating_line",
+  "eu": 65536,
+  "duration": 400,
+  "item_inputs": [
+    {
+      "item": "revoindustry:nexus_clean_substrate",
+      "amount": 8
+    },
+    {
+      "item": "modern_industrialization:quantum_circuit",
+      "amount": 8
+    },
+    {
+      "item": "ae2:engineering_processor",
+      "amount": 8
+    },
+    {
+      "item": "modern_industrialization:superconductor_wire",
+      "amount": 8
+    }
+  ],
+  "item_outputs": [
+    {
+      "item": "revoindustry:nexus_plated_substrate",
+      "amount": 8
+    }
+  ],
+  "fluid_inputs": [
+    {
+      "fluid": "revoindustry:nexus_plating_electrolyte",
+      "amount": 1000
+    }
+  ],
+  "fluid_outputs": [
+    {
+      "fluid": "revoindustry:nexus_spent_electrolyte",
+      "amount": 1000
+    }
+  ]
+}

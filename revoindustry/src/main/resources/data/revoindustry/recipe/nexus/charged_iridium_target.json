@@ -1,0 +1,21 @@
+{
+  "type": "modern_industrialization:polarizer",
+  "eu": 8192,
+  "duration": 400,
+  "item_inputs": [
+    {
+      "item": "modern_industrialization:iridium_plate",
+      "amount": 2
+    },
+    {
+      "item": "modern_industrialization:neodymium_dust",
+      "amount": 1
+    }
+  ],
+  "item_outputs": [
+    {
+      "item": "revoindustry:nexus_iridium_target",
+      "amount": 1
+    }
+  ]
+}

@@ -24,6 +24,7 @@ public final class Nexus {
     public static final JsonObject MANIFEST=load();
     public static final Map<String,DeferredBlock<? extends Block>> BLOCKS=new LinkedHashMap<>();
     public static final Map<String,MachineRecipeType> RECIPES=new LinkedHashMap<>();
+    public static final DeferredHolder<net.minecraft.world.inventory.MenuType<?>,net.minecraft.world.inventory.MenuType<NexusBuilderMenu>> BUILDER_MENU=RevoIndustry.MENUS.register("nexus_builder",()->net.neoforged.neoforge.common.extensions.IMenuTypeExtension.<NexusBuilderMenu>create((id,inv,buffer)->new NexusBuilderMenu(id,inv,buffer.readBlockPos())));
     public static final DeferredItem<net.minecraft.world.item.Item> PROGRAM=RevoIndustry.ITEMS.registerSimpleItem("nexus_construction_program",new net.minecraft.world.item.Item.Properties().stacksTo(1));
     private static final DeferredRegister<RecipeType<?>> TYPES=DeferredRegister.create(Registries.RECIPE_TYPE,RevoIndustry.MOD_ID);
     private static final DeferredRegister<RecipeSerializer<?>> SERIALIZERS=DeferredRegister.create(Registries.RECIPE_SERIALIZER,RevoIndustry.MOD_ID);
@@ -59,6 +60,10 @@ public final class Nexus {
             var cell=raw.getAsJsonObject();var pos=position(cell.getAsJsonArray("position")).subtract(origin);if(pos.equals(BlockPos.ZERO))continue;
             var blockId=ResourceLocation.parse(cell.get("block").getAsString());
             HatchType port=switch(cell.get("part").getAsString()){case "input"->HatchTypes.ITEM_INPUT;case "output"->HatchTypes.ITEM_OUTPUT;case "fluid_in"->HatchTypes.FLUID_INPUT;case "fluid_out"->HatchTypes.FLUID_OUTPUT;case "energy"->HatchTypes.ENERGY_INPUT;default->null;};
+            if(cell.get("part").getAsString().startsWith("builder_")){
+                String role=cell.get("part").getAsString().substring(8);HatchType type=switch(role){case "input"->HatchTypes.ITEM_INPUT;case "output"->HatchTypes.ITEM_OUTPUT;default->HatchTypes.ENERGY_INPUT;};
+                builder.add(pos.getX(),pos.getY(),pos.getZ(),new SimpleMember(){public boolean matchesState(net.minecraft.world.level.block.state.BlockState state,net.minecraft.world.level.block.entity.BlockEntity be){return be instanceof HatchBlockEntity h&&h.getHatchType()==type;}public net.minecraft.world.level.block.state.BlockState getPreviewState(){return BuiltInRegistries.BLOCK.get(blockId).defaultBlockState();}});continue;
+            }
             if(port==null)builder.add(pos.getX(),pos.getY(),pos.getZ(),SimpleMember.forBlockId(blockId));
             else builder.add(pos.getX(),pos.getY(),pos.getZ(),new SimpleMember(){
                 public boolean matchesState(net.minecraft.world.level.block.state.BlockState state,net.minecraft.world.level.block.entity.BlockEntity be){return false;}
@@ -70,6 +75,6 @@ public final class Nexus {
         }
         return builder.build();
     }
-    public static void bootstrap(IEventBus bus){TYPES.register(bus);SERIALIZERS.register(bus);}
+    public static void bootstrap(IEventBus bus){NexusMaterials.bootstrap();TYPES.register(bus);SERIALIZERS.register(bus);}
     private Nexus(){}
 }

@@ -1,0 +1,25 @@
+{
+  "type": "modern_industrialization:assembler",
+  "eu": 2048,
+  "duration": 200,
+  "item_inputs": [
+    {
+      "item": "revoindustry:nexus_mob_group_0",
+      "amount": 1
+    },
+    {
+      "item": "revoindustry:nexus_mob_group_1",
+      "amount": 1
+    },
+    {
+      "item": "revoindustry:nexus_mob_group_2",
+      "amount": 1
+    }
+  ],
+  "item_outputs": [
+    {
+      "item": "revoindustry:nexus_mob_concentrate",
+      "amount": 1
+    }
+  ]
+}

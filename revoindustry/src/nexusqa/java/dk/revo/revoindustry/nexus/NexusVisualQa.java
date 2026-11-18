@@ -56,14 +56,22 @@ public final class NexusVisualQa {
         if(!started){started=true;oldHide=mc.options.hideGui;oldPause=mc.options.pauseOnLostFocus;oldFov=mc.options.fov().get();mc.options.hideGui=true;mc.options.pauseOnLostFocus=false;mc.options.fov().set(55);prepare();return;}
         if(!ready)return;
         if(mc.screen instanceof net.minecraft.client.gui.screens.PauseScreen)mc.setScreen(null);
-        if(frames==0)server(p->{var pos=origin(stage);p.closeContainer();p.teleportTo(pos.getX()+(stage==3?19:stage==2?22:12),pos.getY()+(stage==3?12:stage==2?15:7),pos.getZ()-(stage==3?22:stage==2?14:12));p.getAbilities().flying=true;p.onUpdateAbilities();});
+        if(frames==0&&stage<4)server(p->{var pos=origin(stage);p.closeContainer();p.teleportTo(pos.getX()+(stage==3?19:stage==2?22:12),pos.getY()+(stage==3?12:stage==2?15:7),pos.getZ()-(stage==3?22:stage==2?14:12));p.getAbilities().flying=true;p.onUpdateAbilities();});
         var target=Vec3.atCenterOf(origin(stage)).add(0,stage==3?8:stage==2?1:1,stage==3?4:stage==2?10:4);
         mc.player.lookAt(net.minecraft.commands.arguments.EntityAnchorArgument.Anchor.EYES,target);
+        if(stage==4){
+            if(frames==0){mc.options.hideGui=false;server(p->{var pos=origin(4);p.teleportTo(pos.getX()+.5,pos.getY()+1,pos.getZ()-2.5);var builder=(NexusMachine)p.level().getBlockEntity(pos);p.openMenu(new net.minecraft.world.SimpleMenuProvider((id,inv,pl)->new NexusBuilderMenu(id,inv,builder),Component.literal("Nexus Builder")),buffer->buffer.writeBlockPos(pos));});}
+            if(frames==25&&mc.screen instanceof dk.revo.revoindustry.client.NexusBuilderScreen screen){for(var child:screen.children())if(child instanceof Button b&&b.getMessage().getString().equals("Box"))b.onPress();}
+            if(frames==40)server(p->{var builder=(NexusMachine)p.level().getBlockEntity(origin(4));for(var r:NexusConstruction.requirements()){if(r.amount()>64){builder.construction.deposit(new net.minecraft.world.item.ItemStack(r.item(),64),false);builder.construction.deposit(new net.minecraft.world.item.ItemStack(r.item(),64),false);break;}}p.level().setBlockAndUpdate(builder.construction.target(NexusConstruction.cells().getFirst()),Blocks.STONE.defaultBlockState());});
+            if(frames==95&&!(mc.screen instanceof dk.revo.revoindustry.client.NexusBuilderScreen))throw new IllegalStateException("Builder materials screen did not open");
+        }
+        if(stage==5&&frames==0){mc.options.hideGui=true;server(p->{p.closeContainer();var pos=origin(4);p.teleportTo(pos.getX()+27,pos.getY()+12,pos.getZ()-29);});}
+        if(stage==5)mc.player.lookAt(net.minecraft.commands.arguments.EntityAnchorArgument.Anchor.EYES,Vec3.atCenterOf(origin(4)).add(0,8,0));
         if(++frames<100)return;
         try{
             var out=Path.of("../../art/blockbench/nexus-runtime/ingame").toAbsolutePath().normalize();Files.createDirectories(out);
-            try(var shot=Screenshot.takeScreenshot(mc.getMainRenderTarget())){shot.writeToFile(out.resolve(KINDS[stage]+".png"));}
-            frames=0;if(++stage==KINDS.length){Files.writeString(out.resolve("qa-results.txt"),"PASS: five native MI structures rendered in a fresh isolated save; powered portal surface; normal individual blocks, native hatches and connected railings.\n");done=true;mc.options.hideGui=oldHide;mc.options.pauseOnLostFocus=oldPause;mc.options.fov().set(oldFov);mc.stop();}
+            try(var shot=Screenshot.takeScreenshot(mc.getMainRenderTarget())){shot.writeToFile(out.resolve(stage==5?"nexus_builder_bounds.png":KINDS[stage]+".png"));}
+            frames=0;if(++stage==KINDS.length+1){Files.writeString(out.resolve("qa-results.txt"),"PASS: five native MI structures rendered in a fresh isolated save; powered portal surface; individual blocks, native hatches, connected railings and builder material UI with an obstruction and a stored count above 64.\n");done=true;mc.options.hideGui=oldHide;mc.options.pauseOnLostFocus=oldPause;mc.options.fov().set(oldFov);mc.stop();}
         }catch(Exception e){throw new RuntimeException(e);}
     }
 }

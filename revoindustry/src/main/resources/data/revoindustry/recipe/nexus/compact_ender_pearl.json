@@ -1,0 +1,17 @@
+{
+  "type": "modern_industrialization:compressor",
+  "eu": 2048,
+  "duration": 100,
+  "item_inputs": [
+    {
+      "item": "minecraft:ender_pearl",
+      "amount": 8
+    }
+  ],
+  "item_outputs": [
+    {
+      "item": "revoindustry:compacted_ender_pearl",
+      "amount": 1
+    }
+  ]
+}

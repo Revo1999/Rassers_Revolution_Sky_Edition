@@ -1,0 +1,25 @@
+{
+  "type": "modern_industrialization:assembler",
+  "eu": 8192,
+  "duration": 200,
+  "item_inputs": [
+    {
+      "item": "modern_industrialization:superconductor_coil",
+      "amount": 1
+    },
+    {
+      "item": "modern_industrialization:nuclear_alloy_plate",
+      "amount": 2
+    },
+    {
+      "item": "modern_industrialization:copper_wire",
+      "amount": 2
+    }
+  ],
+  "item_outputs": [
+    {
+      "item": "revoindustry:nexus_machine_magnet_coil",
+      "amount": 1
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "type": "revoindustry:particle_collider",
+  "eu": 262144,
+  "duration": 1200,
+  "item_inputs": [
+    {
+      "item": "revoindustry:astral_essence",
+      "amount": 8
+    },
+    {
+      "item": "revoindustry:nexus_tungsten_target",
+      "amount": 8
+    },
+    {
+      "item": "revoindustry:nexus_iridium_target",
+      "amount": 8
+    },
+    {
+      "item": "revoindustry:nexus_containment_cell",
+      "amount": 8
+    }
+  ],
+  "item_outputs": [
+    {
+      "item": "revoindustry:stabilized_exotic_matter",
+      "amount": 8
+    }
+  ],
+  "fluid_inputs": [
+    {
+      "fluid": "modern_industrialization:helium_plasma",
+      "amount": 1000
+    },
+    {
+      "fluid": "modern_industrialization:cryofluid",
+      "amount": 4000
+    }
+  ],
+  "fluid_outputs": [
+    {
+      "fluid": "revoindustry:warm_nexus_coolant",
+      "amount": 4000
+    }
+  ]
+}

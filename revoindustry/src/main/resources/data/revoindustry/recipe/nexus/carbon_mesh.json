@@ -1,0 +1,25 @@
+{
+  "type": "modern_industrialization:assembler",
+  "eu": 2048,
+  "duration": 200,
+  "item_inputs": [
+    {
+      "item": "minecraft:charcoal",
+      "amount": 8
+    },
+    {
+      "item": "revocultivation:cotton",
+      "amount": 8
+    },
+    {
+      "item": "modern_industrialization:rubber_sheet",
+      "amount": 4
+    }
+  ],
+  "item_outputs": [
+    {
+      "item": "revoindustry:nexus_carbon_mesh",
+      "amount": 8
+    }
+  ]
+}

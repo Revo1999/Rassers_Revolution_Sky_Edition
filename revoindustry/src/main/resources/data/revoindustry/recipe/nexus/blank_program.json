@@ -1,0 +1,21 @@
+{
+  "type": "modern_industrialization:assembler",
+  "eu": 16,
+  "duration": 200,
+  "item_inputs": [
+    {
+      "item": "modern_industrialization:electronic_circuit",
+      "amount": 1
+    },
+    {
+      "item": "minecraft:paper",
+      "amount": 4
+    }
+  ],
+  "item_outputs": [
+    {
+      "item": "revoindustry:nexus_blank_program",
+      "amount": 1
+    }
+  ]
+}

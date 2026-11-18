@@ -1,1 +1,1 @@
-PASS: five native MI structures rendered in a fresh isolated save; powered portal surface; normal individual blocks, native hatches and connected railings.
+PASS: five native MI structures rendered in a fresh isolated save; powered portal surface; individual blocks, native hatches, connected railings and builder material UI with an obstruction and a stored count above 64.

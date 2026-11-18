@@ -1,0 +1,17 @@
+{
+  "type": "modern_industrialization:compressor",
+  "eu": 2048,
+  "duration": 100,
+  "item_inputs": [
+    {
+      "item": "minecraft:ghast_tear",
+      "amount": 8
+    }
+  ],
+  "item_outputs": [
+    {
+      "item": "revoindustry:compacted_ghast_tear",
+      "amount": 1
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "type": "modern_industrialization:assembler",
+  "eu": 8192,
+  "duration": 200,
+  "item_inputs": [
+    {
+      "item": "modern_industrialization:tungsten_plate",
+      "amount": 8
+    },
+    {
+      "item": "minecraft:glass",
+      "amount": 8
+    }
+  ],
+  "item_outputs": [
+    {
+      "item": "revoindustry:nexus_containment_cell",
+      "amount": 8
+    }
+  ]
+}

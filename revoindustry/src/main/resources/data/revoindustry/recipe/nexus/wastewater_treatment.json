@@ -1,0 +1,17 @@
+{
+  "type": "modern_industrialization:centrifuge",
+  "eu": 2048,
+  "duration": 400,
+  "fluid_inputs": [
+    {
+      "fluid": "revoindustry:nexus_wastewater",
+      "amount": 1000
+    }
+  ],
+  "fluid_outputs": [
+    {
+      "fluid": "minecraft:water",
+      "amount": 750
+    }
+  ]
+}

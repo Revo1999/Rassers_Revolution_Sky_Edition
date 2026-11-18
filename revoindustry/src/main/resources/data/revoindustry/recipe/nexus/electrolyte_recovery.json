@@ -1,0 +1,23 @@
+{
+  "type": "modern_industrialization:centrifuge",
+  "eu": 8192,
+  "duration": 400,
+  "item_outputs": [
+    {
+      "item": "modern_industrialization:copper_dust",
+      "amount": 1
+    }
+  ],
+  "fluid_inputs": [
+    {
+      "fluid": "revoindustry:nexus_spent_electrolyte",
+      "amount": 1000
+    }
+  ],
+  "fluid_outputs": [
+    {
+      "fluid": "revoindustry:nexus_wastewater",
+      "amount": 1000
+    }
+  ]
+}

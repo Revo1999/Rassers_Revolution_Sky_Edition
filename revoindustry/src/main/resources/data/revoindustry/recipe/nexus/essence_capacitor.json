@@ -1,0 +1,21 @@
+{
+  "type": "modern_industrialization:assembler",
+  "eu": 32768,
+  "duration": 200,
+  "item_inputs": [
+    {
+      "item": "revoindustry:astral_essence",
+      "amount": 64
+    },
+    {
+      "item": "modern_industrialization:superconductor_wire",
+      "amount": 8
+    }
+  ],
+  "item_outputs": [
+    {
+      "item": "revoindustry:nexus_essence_capacitor",
+      "amount": 1
+    }
+  ]
+}

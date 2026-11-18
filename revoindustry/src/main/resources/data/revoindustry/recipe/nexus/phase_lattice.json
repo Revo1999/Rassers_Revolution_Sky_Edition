@@ -1,0 +1,21 @@
+{
+  "type": "modern_industrialization:assembler",
+  "eu": 32768,
+  "duration": 400,
+  "item_inputs": [
+    {
+      "item": "revoindustry:nexus_rinsed_substrate",
+      "amount": 8
+    },
+    {
+      "item": "revoindustry:nexus_exotic_matter",
+      "amount": 8
+    }
+  ],
+  "item_outputs": [
+    {
+      "item": "revoindustry:phase_lattice",
+      "amount": 8
+    }
+  ]
+}

@@ -1,0 +1,327 @@
+[
+  {
+    "model": "revoindustry/src/main/resources/assets/revoindustry/models/item/astral_essence.json",
+    "nativeTemplate": "art/blockbench/nexus-progression/generated-item-template.json",
+    "texture": "revoindustry:item/astral_essence"
+  },
+  {
+    "model": "revoindustry/src/main/resources/assets/revoindustry/models/item/compacted_blaze_rod.json",
+    "nativeTemplate": "art/blockbench/nexus-progression/generated-item-template.json",
+    "texture": "revoindustry:item/compacted_blaze_rod"
+  },
+  {
+    "model": "revoindustry/src/main/resources/assets/revoindustry/models/item/compacted_bone.json",
+    "nativeTemplate": "art/blockbench/nexus-progression/generated-item-template.json",
+    "texture": "revoindustry:item/compacted_bone"
+  },
+  {
+    "model": "revoindustry/src/main/resources/assets/revoindustry/models/item/compacted_ender_pearl.json",
+    "nativeTemplate": "art/blockbench/nexus-progression/generated-item-template.json",
+    "texture": "revoindustry:item/compacted_ender_pearl"
+  },
+  {
+    "model": "revoindustry/src/main/resources/assets/revoindustry/models/item/compacted_ghast_tear.json",
+    "nativeTemplate": "art/blockbench/nexus-progression/generated-item-template.json",
+    "texture": "revoindustry:item/compacted_ghast_tear"
+  },
+  {
+    "model": "revoindustry/src/main/resources/assets/revoindustry/models/item/compacted_leather.json",
+    "nativeTemplate": "art/blockbench/nexus-progression/generated-item-template.json",
+    "texture": "revoindustry:item/compacted_leather"
+  },
+  {
+    "model": "revoindustry/src/main/resources/assets/revoindustry/models/item/compacted_magma_cream.json",
+    "nativeTemplate": "art/blockbench/nexus-progression/generated-item-template.json",
+    "texture": "revoindustry:item/compacted_magma_cream"
+  },
+  {
+    "model": "revoindustry/src/main/resources/assets/revoindustry/models/item/compacted_rotten_flesh.json",
+    "nativeTemplate": "art/blockbench/nexus-progression/generated-item-template.json",
+    "texture": "revoindustry:item/compacted_rotten_flesh"
+  },
+  {
+    "model": "revoindustry/src/main/resources/assets/revoindustry/models/item/compacted_slime_ball.json",
+    "nativeTemplate": "art/blockbench/nexus-progression/generated-item-template.json",
+    "texture": "revoindustry:item/compacted_slime_ball"
+  },
+  {
+    "model": "revoindustry/src/main/resources/assets/revoindustry/models/item/compacted_string.json",
+    "nativeTemplate": "art/blockbench/nexus-progression/generated-item-template.json",
+    "texture": "revoindustry:item/compacted_string"
+  },
+  {
+    "model": "revoindustry/src/main/resources/assets/revoindustry/models/item/hot_nexus_alloy_ingot.json",
+    "nativeTemplate": "art/blockbench/nexus-progression/generated-item-template.json",
+    "texture": "revoindustry:item/hot_nexus_alloy_ingot"
+  },
+  {
+    "model": "revoindustry/src/main/resources/assets/revoindustry/models/item/nexus_alloy_blend.json",
+    "nativeTemplate": "art/blockbench/nexus-progression/generated-item-template.json",
+    "texture": "revoindustry:item/nexus_alloy_blend"
+  },
+  {
+    "model": "revoindustry/src/main/resources/assets/revoindustry/models/item/nexus_alloy_ingot.json",
+    "nativeTemplate": "art/blockbench/nexus-progression/generated-item-template.json",
+    "texture": "revoindustry:item/nexus_alloy_ingot"
+  },
+  {
+    "model": "revoindustry/src/main/resources/assets/revoindustry/models/item/nexus_biological_catalyst.json",
+    "nativeTemplate": "art/blockbench/nexus-progression/generated-item-template.json",
+    "texture": "revoindustry:item/nexus_biological_catalyst"
+  },
+  {
+    "model": "revoindustry/src/main/resources/assets/revoindustry/models/item/nexus_blank_program.json",
+    "nativeTemplate": "art/blockbench/nexus-progression/generated-item-template.json",
+    "texture": "revoindustry:item/nexus_blank_program"
+  },
+  {
+    "model": "revoindustry/src/main/resources/assets/revoindustry/models/item/nexus_carbon_mesh.json",
+    "nativeTemplate": "art/blockbench/nexus-progression/generated-item-template.json",
+    "texture": "revoindustry:item/nexus_carbon_mesh"
+  },
+  {
+    "model": "revoindustry/src/main/resources/assets/revoindustry/models/item/nexus_carrier.json",
+    "nativeTemplate": "art/blockbench/nexus-progression/generated-item-template.json",
+    "texture": "revoindustry:item/nexus_carrier"
+  },
+  {
+    "model": "revoindustry/src/main/resources/assets/revoindustry/models/item/nexus_casing_blank.json",
+    "nativeTemplate": "art/blockbench/nexus-progression/generated-item-template.json",
+    "texture": "revoindustry:item/nexus_casing_blank"
+  },
+  {
+    "model": "revoindustry/src/main/resources/assets/revoindustry/models/item/nexus_clean_substrate.json",
+    "nativeTemplate": "art/blockbench/nexus-progression/generated-item-template.json",
+    "texture": "revoindustry:item/nexus_clean_substrate"
+  },
+  {
+    "model": "revoindustry/src/main/resources/assets/revoindustry/models/item/nexus_contact.json",
+    "nativeTemplate": "art/blockbench/nexus-progression/generated-item-template.json",
+    "texture": "revoindustry:item/nexus_contact"
+  },
+  {
+    "model": "revoindustry/src/main/resources/assets/revoindustry/models/item/nexus_containment_cell.json",
+    "nativeTemplate": "art/blockbench/nexus-progression/generated-item-template.json",
+    "texture": "revoindustry:item/nexus_containment_cell"
+  },
+  {
+    "model": "revoindustry/src/main/resources/assets/revoindustry/models/item/nexus_core_housing.json",
+    "nativeTemplate": "art/blockbench/nexus-progression/generated-item-template.json",
+    "texture": "revoindustry:item/nexus_core_housing"
+  },
+  {
+    "model": "revoindustry/src/main/resources/assets/revoindustry/models/item/nexus_essence_capacitor.json",
+    "nativeTemplate": "art/blockbench/nexus-progression/generated-item-template.json",
+    "texture": "revoindustry:item/nexus_essence_capacitor"
+  },
+  {
+    "model": "revoindustry/src/main/resources/assets/revoindustry/models/item/nexus_frame.json",
+    "nativeTemplate": "art/blockbench/nexus-progression/generated-item-template.json",
+    "texture": "revoindustry:item/nexus_frame"
+  },
+  {
+    "model": "revoindustry/src/main/resources/assets/revoindustry/models/item/nexus_heavy_panel.json",
+    "nativeTemplate": "art/blockbench/nexus-progression/generated-item-template.json",
+    "texture": "revoindustry:item/nexus_heavy_panel"
+  },
+  {
+    "model": "revoindustry/src/main/resources/assets/revoindustry/models/item/nexus_ignition_cell.json",
+    "nativeTemplate": "art/blockbench/nexus-progression/generated-item-template.json",
+    "texture": "revoindustry:item/nexus_ignition_cell"
+  },
+  {
+    "model": "revoindustry/src/main/resources/assets/revoindustry/models/item/nexus_iridium_target.json",
+    "nativeTemplate": "art/blockbench/nexus-progression/generated-item-template.json",
+    "texture": "revoindustry:item/nexus_iridium_target"
+  },
+  {
+    "model": "revoindustry/src/main/resources/assets/revoindustry/models/item/nexus_light_panel.json",
+    "nativeTemplate": "art/blockbench/nexus-progression/generated-item-template.json",
+    "texture": "revoindustry:item/nexus_light_panel"
+  },
+  {
+    "model": "revoindustry/src/main/resources/assets/revoindustry/models/item/nexus_mob_concentrate.json",
+    "nativeTemplate": "art/blockbench/nexus-progression/generated-item-template.json",
+    "texture": "revoindustry:item/nexus_mob_concentrate"
+  },
+  {
+    "model": "revoindustry/src/main/resources/assets/revoindustry/models/item/nexus_mob_group_0.json",
+    "nativeTemplate": "art/blockbench/nexus-progression/generated-item-template.json",
+    "texture": "revoindustry:item/nexus_mob_group_0"
+  },
+  {
+    "model": "revoindustry/src/main/resources/assets/revoindustry/models/item/nexus_mob_group_1.json",
+    "nativeTemplate": "art/blockbench/nexus-progression/generated-item-template.json",
+    "texture": "revoindustry:item/nexus_mob_group_1"
+  },
+  {
+    "model": "revoindustry/src/main/resources/assets/revoindustry/models/item/nexus_mob_group_2.json",
+    "nativeTemplate": "art/blockbench/nexus-progression/generated-item-template.json",
+    "texture": "revoindustry:item/nexus_mob_group_2"
+  },
+  {
+    "model": "revoindustry/src/main/resources/assets/revoindustry/models/item/nexus_mould_carrier.json",
+    "nativeTemplate": "art/blockbench/nexus-progression/generated-item-template.json",
+    "texture": "revoindustry:item/nexus_mould_carrier"
+  },
+  {
+    "model": "revoindustry/src/main/resources/assets/revoindustry/models/item/nexus_mould_casing_blank.json",
+    "nativeTemplate": "art/blockbench/nexus-progression/generated-item-template.json",
+    "texture": "revoindustry:item/nexus_mould_casing_blank"
+  },
+  {
+    "model": "revoindustry/src/main/resources/assets/revoindustry/models/item/nexus_mould_core_housing.json",
+    "nativeTemplate": "art/blockbench/nexus-progression/generated-item-template.json",
+    "texture": "revoindustry:item/nexus_mould_core_housing"
+  },
+  {
+    "model": "revoindustry/src/main/resources/assets/revoindustry/models/item/nexus_mould_frame.json",
+    "nativeTemplate": "art/blockbench/nexus-progression/generated-item-template.json",
+    "texture": "revoindustry:item/nexus_mould_frame"
+  },
+  {
+    "model": "revoindustry/src/main/resources/assets/revoindustry/models/item/nexus_mould_heavy_panel.json",
+    "nativeTemplate": "art/blockbench/nexus-progression/generated-item-template.json",
+    "texture": "revoindustry:item/nexus_mould_heavy_panel"
+  },
+  {
+    "model": "revoindustry/src/main/resources/assets/revoindustry/models/item/nexus_mould_light_panel.json",
+    "nativeTemplate": "art/blockbench/nexus-progression/generated-item-template.json",
+    "texture": "revoindustry:item/nexus_mould_light_panel"
+  },
+  {
+    "model": "revoindustry/src/main/resources/assets/revoindustry/models/item/nexus_mould_panel.json",
+    "nativeTemplate": "art/blockbench/nexus-progression/generated-item-template.json",
+    "texture": "revoindustry:item/nexus_mould_panel"
+  },
+  {
+    "model": "revoindustry/src/main/resources/assets/revoindustry/models/item/nexus_mould_ring_blank.json",
+    "nativeTemplate": "art/blockbench/nexus-progression/generated-item-template.json",
+    "texture": "revoindustry:item/nexus_mould_ring_blank"
+  },
+  {
+    "model": "revoindustry/src/main/resources/assets/revoindustry/models/item/nexus_panel.json",
+    "nativeTemplate": "art/blockbench/nexus-progression/generated-item-template.json",
+    "texture": "revoindustry:item/nexus_panel"
+  },
+  {
+    "model": "revoindustry/src/main/resources/assets/revoindustry/models/item/nexus_phased_control_array.json",
+    "nativeTemplate": "art/blockbench/nexus-progression/generated-item-template.json",
+    "texture": "revoindustry:item/nexus_phased_control_array"
+  },
+  {
+    "model": "revoindustry/src/main/resources/assets/revoindustry/models/item/nexus_plant_nutrients.json",
+    "nativeTemplate": "art/blockbench/nexus-progression/generated-item-template.json",
+    "texture": "revoindustry:item/nexus_plant_nutrients"
+  },
+  {
+    "model": "revoindustry/src/main/resources/assets/revoindustry/models/item/nexus_plated_substrate.json",
+    "nativeTemplate": "art/blockbench/nexus-progression/generated-item-template.json",
+    "texture": "revoindustry:item/nexus_plated_substrate"
+  },
+  {
+    "model": "revoindustry/src/main/resources/assets/revoindustry/models/item/nexus_ring_blank.json",
+    "nativeTemplate": "art/blockbench/nexus-progression/generated-item-template.json",
+    "texture": "revoindustry:item/nexus_ring_blank"
+  },
+  {
+    "model": "revoindustry/src/main/resources/assets/revoindustry/models/item/nexus_rinsed_substrate.json",
+    "nativeTemplate": "art/blockbench/nexus-progression/generated-item-template.json",
+    "texture": "revoindustry:item/nexus_rinsed_substrate"
+  },
+  {
+    "model": "revoindustry/src/main/resources/assets/revoindustry/models/item/nexus_star_dust.json",
+    "nativeTemplate": "art/blockbench/nexus-progression/generated-item-template.json",
+    "texture": "revoindustry:item/nexus_star_dust"
+  },
+  {
+    "model": "revoindustry/src/main/resources/assets/revoindustry/models/item/nexus_tungsten_target.json",
+    "nativeTemplate": "art/blockbench/nexus-progression/generated-item-template.json",
+    "texture": "revoindustry:item/nexus_tungsten_target"
+  },
+  {
+    "model": "revoindustry/src/main/resources/assets/revoindustry/models/item/nexus_unplated_substrate.json",
+    "nativeTemplate": "art/blockbench/nexus-progression/generated-item-template.json",
+    "texture": "revoindustry:item/nexus_unplated_substrate"
+  },
+  {
+    "model": "revoindustry/src/main/resources/assets/revoindustry/models/item/phase_lattice.json",
+    "nativeTemplate": "art/blockbench/nexus-progression/generated-item-template.json",
+    "texture": "revoindustry:item/phase_lattice"
+  },
+  {
+    "model": "revoindustry/src/main/resources/assets/revoindustry/models/item/rough_nexus_carrier.json",
+    "nativeTemplate": "art/blockbench/nexus-progression/generated-item-template.json",
+    "texture": "revoindustry:item/rough_nexus_carrier"
+  },
+  {
+    "model": "revoindustry/src/main/resources/assets/revoindustry/models/item/rough_nexus_casing_blank.json",
+    "nativeTemplate": "art/blockbench/nexus-progression/generated-item-template.json",
+    "texture": "revoindustry:item/rough_nexus_casing_blank"
+  },
+  {
+    "model": "revoindustry/src/main/resources/assets/revoindustry/models/item/rough_nexus_core_housing.json",
+    "nativeTemplate": "art/blockbench/nexus-progression/generated-item-template.json",
+    "texture": "revoindustry:item/rough_nexus_core_housing"
+  },
+  {
+    "model": "revoindustry/src/main/resources/assets/revoindustry/models/item/rough_nexus_frame.json",
+    "nativeTemplate": "art/blockbench/nexus-progression/generated-item-template.json",
+    "texture": "revoindustry:item/rough_nexus_frame"
+  },
+  {
+    "model": "revoindustry/src/main/resources/assets/revoindustry/models/item/rough_nexus_heavy_panel.json",
+    "nativeTemplate": "art/blockbench/nexus-progression/generated-item-template.json",
+    "texture": "revoindustry:item/rough_nexus_heavy_panel"
+  },
+  {
+    "model": "revoindustry/src/main/resources/assets/revoindustry/models/item/rough_nexus_light_panel.json",
+    "nativeTemplate": "art/blockbench/nexus-progression/generated-item-template.json",
+    "texture": "revoindustry:item/rough_nexus_light_panel"
+  },
+  {
+    "model": "revoindustry/src/main/resources/assets/revoindustry/models/item/rough_nexus_panel.json",
+    "nativeTemplate": "art/blockbench/nexus-progression/generated-item-template.json",
+    "texture": "revoindustry:item/rough_nexus_panel"
+  },
+  {
+    "model": "revoindustry/src/main/resources/assets/revoindustry/models/item/rough_nexus_ring_blank.json",
+    "nativeTemplate": "art/blockbench/nexus-progression/generated-item-template.json",
+    "texture": "revoindustry:item/rough_nexus_ring_blank"
+  },
+  {
+    "model": "revoindustry/src/main/resources/assets/revoindustry/models/item/stabilized_exotic_matter.json",
+    "nativeTemplate": "art/blockbench/nexus-progression/generated-item-template.json",
+    "texture": "revoindustry:item/stabilized_exotic_matter"
+  },
+  {
+    "model": "revoindustry/src/main/resources/assets/revoindustry/models/item/nexus_cleaning_solution_bucket.json",
+    "nativeTemplate": "art/blockbench/nexus-progression/generated-item-template.json",
+    "texture": "revoindustry:item/nexus_cleaning_solution_bucket"
+  },
+  {
+    "model": "revoindustry/src/main/resources/assets/revoindustry/models/item/nexus_plating_electrolyte_bucket.json",
+    "nativeTemplate": "art/blockbench/nexus-progression/generated-item-template.json",
+    "texture": "revoindustry:item/nexus_plating_electrolyte_bucket"
+  },
+  {
+    "model": "revoindustry/src/main/resources/assets/revoindustry/models/item/nexus_spent_electrolyte_bucket.json",
+    "nativeTemplate": "art/blockbench/nexus-progression/generated-item-template.json",
+    "texture": "revoindustry:item/nexus_spent_electrolyte_bucket"
+  },
+  {
+    "model": "revoindustry/src/main/resources/assets/revoindustry/models/item/nexus_wastewater_bucket.json",
+    "nativeTemplate": "art/blockbench/nexus-progression/generated-item-template.json",
+    "texture": "revoindustry:item/nexus_wastewater_bucket"
+  },
+  {
+    "model": "revoindustry/src/main/resources/assets/revoindustry/models/item/warm_nexus_coolant_bucket.json",
+    "nativeTemplate": "art/blockbench/nexus-progression/generated-item-template.json",
+    "texture": "revoindustry:item/warm_nexus_coolant_bucket"
+  },
+  {
+    "model": "revoindustry/src/main/resources/assets/revoindustry/models/item/nexus_exotic_matter.json",
+    "nativeTemplate": "art/blockbench/nexus-progression/generated-item-template.json",
+    "texture": "revoindustry:item/nexus_exotic_matter"
+  }
+]

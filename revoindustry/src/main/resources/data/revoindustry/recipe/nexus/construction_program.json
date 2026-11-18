@@ -1,0 +1,22 @@
+{
+  "type": "modern_industrialization:assembler",
+  "eu": 32768,
+  "duration": 200,
+  "item_inputs": [
+    {
+      "item": "revoindustry:nexus_blank_program",
+      "amount": 1
+    },
+    {
+      "item": "revoindustry:nexus_core",
+      "amount": 1,
+      "probability": 0
+    }
+  ],
+  "item_outputs": [
+    {
+      "item": "revoindustry:nexus_construction_program",
+      "amount": 1
+    }
+  ]
+}

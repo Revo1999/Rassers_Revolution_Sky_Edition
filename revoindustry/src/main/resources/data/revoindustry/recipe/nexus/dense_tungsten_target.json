@@ -1,0 +1,17 @@
+{
+  "type": "modern_industrialization:compressor",
+  "eu": 8192,
+  "duration": 400,
+  "item_inputs": [
+    {
+      "item": "modern_industrialization:tungsten_plate",
+      "amount": 4
+    }
+  ],
+  "item_outputs": [
+    {
+      "item": "revoindustry:nexus_tungsten_target",
+      "amount": 1
+    }
+  ]
+}

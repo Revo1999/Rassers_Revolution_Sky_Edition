@@ -4,9 +4,9 @@
 
 This is the implementation specification for the Pressure Casting Plant, Electroplating Line, Particle Collider, Nexus Core and the inexpensive Nexus Builder. It supersedes the earlier Alloy Foundry / Astral Condenser / Lattice Assembler proposal. There are **three new processing multiblocks**, with additional processing performed in existing MI machines.
 
-The block/runtime integration is now installed: **42 individual blocks**, including the three production controllers, Nexus Core, portal controller and a separate inexpensive-design builder. Native MI structure matching, item/fluid/energy hatches, menus, locking and transfers are reused. The portal frame stays built from real blocks; only its powered animated surface is specially rendered. The builder places the 814-block portal one real supplied block at a time and retains its program, with a persistent cursor and obstruction/power/material pauses.
+The block/runtime integration is now installed: **42 individual blocks**, including the three production controllers, Nexus Core, portal controller and a separate inexpensive-design builder. Native MI structure matching, item/fluid/energy hatches, menus, locking and transfers are reused. The portal frame stays built from real blocks; only its powered animated surface is specially rendered. The embedded builder places 810 blocks around its four preplaced blocks. The program, material counts, stored EU and construction progress persist.
 
-**Survival recipes remain intentionally pending the requested audit.** See [missingrecipies.md](../missingrecipies.md) for all 42 missing block crafts and the program/processing ledger still to implement. The three native MI processing recipe types are functional and tested with test-only recipes; no proposed Nexus material recipes or endgame unlocks were silently added. This is a registered runtime foundation, not a completed survival endgame recipe graph. The caster/plating mechanical animation studies remain source-art studies; collider orbit/flash effects and the gentle 16-second portal texture animation have runtime implementations.
+**Survival progression is implemented.** See the [current material ledger and builder instructions](NEXUS-MATERIAL-LEDGER.md) for exact recipe costs and in-game controls. The tables below record the design targets. The installed recipes and ledger take precedence where the original draft differs.
 
 User constraints:
 
@@ -154,13 +154,6 @@ The purple swirl occupies the opening only. The Blockbench assembly is a constru
 
 The 51 fence blocks connect according to their cardinal neighbours, including corners and connections to solid tower blocks. The centre stair entrance remains open. The six decorative block types replace existing casing/foundation/ring positions and leave the total at 814 placed blocks. Their final craft costs belong in the pending recipe ledger.
 
-## Remaining implementation work
+## Practical verification
 
-1. Resolve high-tier drill feedstocks (especially tungsten, iridium and nuclear materials), faster debris extraction, reliable Wither Skeleton/Ghast programs, AE2 unlocks and any missing gem-sludge routes. Quarries remain excluded.
-2. Turn the budget into a complete recipe ledger, including batch rounding, native component costs and construction of all three new machines. Check every ingredient has an obtainable upstream route.
-3. Runtime block/shape integration is complete; finish the survival recipe ledger for the caster, plating line and collider.
-4. Register blocks/items/fluids, native MI-based controllers/hatches, recipes, EMI guides, Jade diagnostics and progression milestones.
-5. Incremental construction, obstruction checks, persistent cursor and power/material pauses are implemented. Add the approved survival program craft and final progression unlock; the EMI guide provides the construction preview.
-6. The Core is a placed block and the powered portal surface is implemented. Native tests cover all structure rotations, breaks, the full 814-block builder output, cursor persistence, blocked outputs, fluid processing and portal power. Balance the material chain after crafting recipes are approved.
-
-This goal connects the existing Revo systems through production. It does not yet establish that every old machine tier is mandatory; explicit production milestones are still needed for storage, Trading Colonies, vacuums and other optional branches.
+The survival chapter uses item tasks and an advancement awarded by the server when a formed portal receives power. Native tests exercise recipe production, embedded builder placement, power and stock accounting, persistence and obstruction handling. Whole-pack survival pacing remains to be measured.

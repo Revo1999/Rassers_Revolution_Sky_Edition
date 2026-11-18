@@ -1,0 +1,28 @@
+{
+  "parent": "minecraft:story/root",
+  "display": {
+    "icon": {
+      "id": "revoindustry:nexus_core"
+    },
+    "title": {
+      "text": "Nexus Stabilized"
+    },
+    "description": {
+      "text": "Complete and power the Nexus portal."
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "stabilize": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "stabilize"
+    ]
+  ]
+}

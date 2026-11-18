@@ -1,0 +1,27 @@
+{
+  "type": "modern_industrialization:chemical_reactor",
+  "eu": 8192,
+  "duration": 200,
+  "item_inputs": [
+    {
+      "item": "modern_industrialization:copper_dust",
+      "amount": 8
+    }
+  ],
+  "fluid_inputs": [
+    {
+      "fluid": "modern_industrialization:sulfuric_acid",
+      "amount": 1000
+    },
+    {
+      "fluid": "minecraft:water",
+      "amount": 1000
+    }
+  ],
+  "fluid_outputs": [
+    {
+      "fluid": "revoindustry:nexus_plating_electrolyte",
+      "amount": 2000
+    }
+  ]
+}

@@ -104,4 +104,20 @@ public final class SedimentGameTests {
         h.assertTrue(MineralGameTests.count(MineralGameTests.output(e),item)==1,"One output exists in native MI storage");menu.quickMoveStack(player,2);menu.quickMoveStack(player,2);
         h.assertTrue(MineralGameTests.count(MineralGameTests.output(e),item)==0&&player.getInventory().countItem(item)==1,"Shift-click commits copied native MI stack exactly once");h.succeed();
     }
+
+    @GameTest(template="drill_test",timeoutTicks=100)
+    public static void lateGeologyRequiresTheNuclearSurveyCore(GameTestHelper h){
+        var drill=MineralGameTests.electric(h);
+        String[] results={"modern_industrialization:raw_platinum","minecraft:ancient_debris","modern_industrialization:monazite_dust"};
+        for(int i=0;i<results.length;i++){
+            ElectricDrillStructure.hatch(drill,1,0).getInventory().getItemStacks().forEach(slot -> slot.empty());
+            drill.select(11+i);drill.items.setStackInSlot(0,net.minecraft.world.item.ItemStack.EMPTY);drill.energy=512;
+            ElectricDrillEntity.tick(drill.getLevel(),drill.getBlockPos(),drill.getBlockState(),drill);
+            h.assertTrue(drill.work==0&&drill.energy==512,"A missing Nuclear Survey Core blocks the new geological program");
+            drill.items.setStackInSlot(0,new net.minecraft.world.item.ItemStack(RevoExtraction.NUCLEAR_CORE.get()));drill.energy=0;
+            MineralGameTests.step(drill,drill.duration());
+            h.assertTrue(MineralGameTests.count(MineralGameTests.output(drill),MineralGameTests.item(results[i]))==(i==1?1:4),"The new program produces its exact mineral batch through the native output hatch: "+results[i]);
+        }
+        h.succeed();
+    }
 }

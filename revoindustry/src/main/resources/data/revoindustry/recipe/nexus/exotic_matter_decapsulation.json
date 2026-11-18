@@ -1,0 +1,21 @@
+{
+  "type": "modern_industrialization:centrifuge",
+  "eu": 8192,
+  "duration": 400,
+  "item_inputs": [
+    {
+      "item": "revoindustry:stabilized_exotic_matter",
+      "amount": 8
+    }
+  ],
+  "item_outputs": [
+    {
+      "item": "revoindustry:nexus_exotic_matter",
+      "amount": 8
+    },
+    {
+      "item": "revoindustry:nexus_containment_cell",
+      "amount": 8
+    }
+  ]
+}

@@ -5,6 +5,7 @@ import hashlib,json,subprocess,zipfile
 
 ROOT=Path(__file__).resolve().parents[1]
 CHAPTERS=ROOT/'pack/overrides/config/ftbquests/quests/chapters'
+NEXUS='5ee0000000000000'
 NEW={'5ec0000000000000','5ed0000000000000','5ea0000000000000','5eb0000000000000'}
 def verify():
     chapters=[json.loads(p.read_text(encoding='utf-8')) for p in sorted(CHAPTERS.glob('*.snbt'))]
@@ -21,13 +22,13 @@ def verify():
             if c['filename'] in NEW:newquests.append(q)
             for task in q['tasks']:record(task['id'],q['title']+' task')
             for reward in q.get('rewards',[]):record(reward['id'],q['title']+' reward')
-            if c['filename'] in NEW:
+            if c['filename'] in NEW or c['filename']==NEXUS:
                 assert q['description'] and q['tasks'] and not q['rewards']
                 assert q['shape'] in ['hexagon','circle','diamond'] and q['icon']['id']
                 for x,y,title in positions:assert (x-q['x'])**2+(y-q['y'])**2>=2.5**2,(title,q['title'])
                 positions.append((q['x'],q['y'],q['title']))
                 for t in q['tasks']:
-                    assert t['type'] in ['item','checkmark']
+                    assert t['type'] in ['item','checkmark','advancement']
                     if t['type']=='item':assert t['consume_items'] is False and t['count']>0
     active=set();done=set()
     def visit(ident):
@@ -41,7 +42,7 @@ def verify():
     # Compare old quest/task/reward IDs with committed files, never saved player data.
     preserved=0
     for c in chapters:
-        if c['filename'] in NEW:continue
+        if c['filename'] in NEW or c['filename']==NEXUS:continue
         path=f"pack/overrides/config/ftbquests/quests/chapters/{c['filename']}.snbt"
         before=json.loads(subprocess.check_output(['git','show','origin/main:'+path],cwd=ROOT).decode('utf-8'))
         current={q['id']:q for q in c['quests']}
@@ -71,6 +72,12 @@ def verify():
     for ident in addedSedimentQuests:
         q=quests[ident]
         for item in [q['icon']['id'],*[t['item']['id'] for t in q['tasks'] if t['type']=='item']]:assert item in resources,'Unknown sediment quest item '+item
+    nexusQuests=[q for c in chapters if c['filename']==NEXUS for q in c['quests']]
+    for q in nexusQuests:
+        for item in [q['icon']['id'],*[t['item']['id'] for t in q['tasks'] if t['type']=='item']]:assert item in resources,'Unknown Nexus item '+item
+        for t in q['tasks']:
+            if t['type']=='advancement':assert (ROOT/'revoindustry/src/main/resources/data/revoindustry/advancement/nexus_stabilized.json').exists() and t['advancement']=='revoindustry:nexus_stabilized'
+    assert len(nexusQuests)==41
     assert len(newquests)==83
     assert '5EC0000000000015' in quests['5E50000000000014']['dependencies']
     # Crucial bootstrap ordering: EBF before aluminum/electrolyzer, never the reverse.
@@ -85,7 +92,7 @@ def verify():
     assert '5EB000000000000B' not in ancestors('5EB0000000000008')
     assert '5EB000000000000E' not in ancestors('5EB000000000000D')
     assert '5EB000000000000E' in ancestors('5EB0000000000010')
-    result={'chapters':len(chapters),'quests':len(quests),'newQuests':83,'sedimentAndDrillQuestsVerified':4,'existingQuestsPreserved':preserved,'uniqueIds':len(seen),'acyclicDependencies':True,'newItemReferencesResolved':True,'nonConsumingItemTasks':True,'newMaterialRewards':0,'fluidTasks':'explicit self-reported commissioning checkmarks','liveSurvivalPlaythrough':'not performed','chaptersSummary':[{'title':c['title'],'quests':len(c['quests'])} for c in chapters]}
+    result={'chapters':len(chapters),'quests':len(quests),'newQuests':83,'nexusQuestsVerified':len(nexusQuests),'sedimentAndDrillQuestsVerified':4,'existingQuestsPreserved':preserved,'uniqueIds':len(seen),'acyclicDependencies':True,'newItemReferencesResolved':True,'nonConsumingItemTasks':True,'newMaterialRewards':0,'fluidTasks':'explicit self-reported commissioning checkmarks','liveSurvivalPlaythrough':'not performed','chaptersSummary':[{'title':c['title'],'quests':len(c['quests'])} for c in chapters]}
     out=ROOT/'art/quests';out.mkdir(parents=True,exist_ok=True);(out/'validation.json').write_text(json.dumps(result,indent=2)+'\n',encoding='utf-8')
     print(json.dumps(result,indent=2))
 if __name__=='__main__':verify()

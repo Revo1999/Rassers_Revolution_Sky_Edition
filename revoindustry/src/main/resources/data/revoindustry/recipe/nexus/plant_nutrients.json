@@ -1,0 +1,31 @@
+{
+  "type": "modern_industrialization:mixer",
+  "eu": 2048,
+  "duration": 200,
+  "item_inputs": [
+    {
+      "item": "minecraft:wheat",
+      "amount": 8
+    },
+    {
+      "item": "minecraft:carrot",
+      "amount": 8
+    },
+    {
+      "item": "minecraft:potato",
+      "amount": 8
+    }
+  ],
+  "item_outputs": [
+    {
+      "item": "revoindustry:nexus_plant_nutrients",
+      "amount": 8
+    }
+  ],
+  "fluid_inputs": [
+    {
+      "fluid": "minecraft:water",
+      "amount": 1000
+    }
+  ]
+}

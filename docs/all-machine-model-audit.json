@@ -22,7 +22,7 @@
       "renderedFaces": 0
     },
     "revoindustry": {
-      "files": 255,
+      "files": 320,
       "geometryFiles": 97,
       "renderedFaces": 1826
     },
@@ -157,7 +157,7 @@
       "samples": 1,
       "exactCrossPartPairs": 0,
       "placedCells": 814,
-      "externalMiCells": 5
+      "externalMiCells": 8
     },
     {
       "name": "nexus_builder blueprint",

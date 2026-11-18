@@ -15097,10 +15097,10 @@
             0,
             3
           ],
-          "part": "foundation",
+          "part": "builder_input",
           "section": "foundation",
-          "facing": "north",
-          "block": "revoindustry:nexus_foundation"
+          "facing": "west",
+          "block": "modern_industrialization:advanced_item_input_hatch"
         },
         {
           "position": [
@@ -15108,10 +15108,10 @@
             0,
             3
           ],
-          "part": "foundation",
+          "part": "builder",
           "section": "foundation",
           "facing": "north",
-          "block": "revoindustry:nexus_foundation"
+          "block": "revoindustry:nexus_builder"
         },
         {
           "position": [
@@ -15119,10 +15119,10 @@
             0,
             3
           ],
-          "part": "foundation",
+          "part": "builder_output",
           "section": "foundation",
-          "facing": "north",
-          "block": "revoindustry:nexus_foundation"
+          "facing": "east",
+          "block": "modern_industrialization:advanced_item_output_hatch"
         },
         {
           "position": [
@@ -15339,10 +15339,10 @@
             0,
             4
           ],
-          "part": "foundation",
+          "part": "builder_energy",
           "section": "foundation",
-          "facing": "north",
-          "block": "revoindustry:nexus_foundation"
+          "facing": "south",
+          "block": "modern_industrialization:mv_energy_input_hatch"
         },
         {
           "position": [
@@ -23861,7 +23861,12 @@
         "x": 21,
         "y": 19,
         "z": 11
-      }
+      },
+      "builderOrigin": [
+        0,
+        0,
+        3
+      ]
     },
     "nexus_builder": {
       "controller": "nexus_builder",

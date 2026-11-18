@@ -1,30 +1,16 @@
 {
   "result": "PASS",
   "revoJars": 7,
-  "exactSourceAssetMatches": 1298,
-  "pack": "Rassers-Revolution-Sky-Edition-0.1.41-dev.mrpack",
-  "packSha256": "3aa6676caed9a2e3bcb2a0e9a60e4acd7452b9c95f7815a667232407e547b25f",
+  "exactSourceAssetMatches": 1543,
+  "pack": "Rassers-Revolution-Sky-Edition-0.1.42-dev.mrpack",
+  "packSha256": "41e05c534d2d88a60e9f0efe018a82321b3868efe96df194e5d21586f55cc258",
   "nativeSourcesExcludedFromJars": true,
   "qaHelpersExcludedFromJars": true,
-  "auditGuideBundled": true,
-  "drillGuideBundled": true,
-  "nativeGameTests": {
-    "drillSedimentAndMiIntegration": 14,
-    "saltGeode": 8,
-    "progressionRegression": 19
-  },
-  "graphicalQa": "PASS: fresh isolated save; native coolant-to-salt pipeline and electric/digital drill models/UI",
-  "modelAudit": {
-    "result": "PASS",
-    "jsonModels": 470,
-    "geometryModels": 213,
-    "assemblies": 24,
-    "currentMcpExports": 53
-  },
-  "questValidation": {
-    "quests": 291,
-    "idsPreserved": true,
-    "acyclic": true,
-    "newSedimentQuestItemReferencesResolved": true
-  }
+  "nexusRecipes": 108,
+  "testedNexusGameTests": 12,
+  "testedExtractionGameTests": 15,
+  "nexusQuestCount": 41,
+  "allQuestCount": 332,
+  "nexusBlockRecipesMissing": 0,
+  "graphicalQa": "Builder stock counts, ghost icons, red obstruction outline, powered portal and server advancement verified in an isolated fresh save"
 }

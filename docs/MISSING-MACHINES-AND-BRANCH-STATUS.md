@@ -23,7 +23,7 @@ were not supplied or assembled into processing lines in the showroom.
 | Feeding helmets, quiet machine audio and directional furnace ports | Implemented and pushed on the machine branch | Absent from the main-only client. Helmets are equipment rather than a machine display. |
 | Wither Hatchery and submerged Salt Geode Chamber | Implemented and pushed on main | Both were included in the 36-display showroom; most of the gallery was a viewing fixture rather than a continuously supplied factory. |
 | LV Factory chapter and copper/zinc battery bootstrap | Saved local work, not pushed before this session | The stash contained the 48-quest LV chapter, bridge lesson, recipe, generator, validator and test edits. This merge includes that work. |
-| Nexus portal, Pressure Casting Plant, Electroplating Line and Particle Collider | Models, blueprints, animation studies and specification pushed on main | In-game blocks, controllers, formation, processing, recipes and progression are still unimplemented. Merging branches cannot make these assets into working machines. |
+| Nexus portal, Pressure Casting Plant, Electroplating Line and Particle Collider | Models, blueprints, animation studies and specification pushed on main | The original showroom lacked a runtime Nexus installation. See the current status below. |
 
 ## Sludge routes that already exist
 
@@ -43,29 +43,20 @@ Evidence: [drill minerals and sludge](DRILL-MINERALS-AND-SLUDGE.md),
 [crystal and late resources](CRYSTAL-AND-LATE-RESOURCES.md), and the registered
 recipes under `revoextraction/src/main/resources/data/revoextraction/recipe/`.
 
-## Work still needed after the source merge
+## Current status
 
-- [ ] Restart/rebuild the playable client from merged main. The already open
-  main-only client does not acquire newly merged Java classes while running.
-- [ ] Extend the showroom builder to place the Mechanical Sluice and Gravel
-  Feeder, connect Create rotation, pump water and feed gravel.
-- [ ] Add a powered mechanical drill demonstration with visible sludge output,
-  a fan-washing line, and labeled input/output storage.
-- [ ] Configure an Electric Drill for Crystalline Sludge, supply its Deep Survey
-  Core and power, and connect an MI Centrifuge with visible Certus output.
-- [ ] Add farm demonstrations for salt crystals, wart, chorus, poppies, cotton
-  and the advanced harvester modes, including required water, beds and catalysts.
-- [ ] Demonstrate Tungsten/Uranium cores and first AE2/template recipes in EMI
-  or labeled example inventories. These do not each need a new machine model.
-- [ ] Implement Nexus runtime registration, individually placed structures,
-  native MI controllers/hatches, saved processing and resource accounting.
-- [ ] Finish the Nexus recipe/material ledger, prerequisite chains, quests,
-  EMI/Jade integration and incremental builder behavior; verify rotation,
-  interruptions, save/reload, output blocking and actual production.
+Rechecked against the merged source and current native recipe manager. The table above documents pre-merge history. The production Nexus blocks, hatches, builder and machines already existed by the time of this follow-up. The survival recipes, the endgame chapter and the new builder interface now complete that route.
 
-See [Nexus implementation scope](NEXUS-ENDGAME.md) for the full unfinished
-endgame specification. Older audit lists describe earlier snapshots; check
-the merged source before treating an old proposed route as still missing.
+| Entry in the old checklist | Current status |
+| --- | --- |
+| Mechanical Sluice, Gravel Feeder and drill outputs | Registered and craftable. Sluice processes gravel and water. Create washing handles Mineral and Gem Sludge. |
+| Crystalline Sludge and first Certus | The 3×3 Electric Drill produces core-gated Crystalline Sludge. An MI Centrifuge makes Certus and Quartz. The compact Digital Drill is also available. |
+| Salt, wart, chorus, flowers, cotton and advanced mobs | Existing cultivation and retained spawner routes are in the pack. The submerged salt chamber has its own sediment-to-seawater route. |
+| Tungsten, uranium, AE2 presses, Sky Stone and first Netherite template | Existing progression recipes and quest routes are present. Platinum, Deep Debris and Monazite are now additional core-gated drill programmes. |
+| Nexus runtime and survival progression | The three native MI machines, builder, portal and Core now have survival recipes. The new chapter tracks preparation, production, construction and server-verified activation. |
+| Showroom and pacing | The gameplay fixtures verify individual production routes. A continuously supplied combined showroom and a full survival pacing run remain separate QA work. |
+
+See [the Nexus build and material guide](NEXUS-MATERIAL-LEDGER.md) and [the current recipe audit](../missingrecipies.md).
 
 ## Merge compatibility decisions
 

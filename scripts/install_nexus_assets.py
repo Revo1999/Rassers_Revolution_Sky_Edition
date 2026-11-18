@@ -76,7 +76,8 @@ def main():
  write(ASSETS/'models/machine_casing/nexus_machine.json',{'loader':'modern_industrialization:use_block_model','block':'revoindustry:nexus_machine_casing'})
  for kind in structures:lang['block.revoindustry.'+kind]=kind.replace('_',' ').title()
  write(ASSETS/'lang/en_us.json',lang)
- write(RES/'nexus/structures.json',{'blocks':blocks,'structures':structures})
+ from nexus_builder_layout import integrate_builder
+ write(RES/'nexus/structures.json',integrate_builder({'blocks':blocks,'structures':structures}))
  surface=json.loads((ROOT/'art/blockbench/nexus-portal/nexus_portal_surface.json').read_text());surface['textures']={'0':'revoindustry:block/nexus_vortex'}
  write(ASSETS/'models/block/nexus_portal_surface.json',surface)
  # Match the approved gentle 16-second preview: 64 frames, five ticks each.

@@ -1,0 +1,21 @@
+{
+  "type": "modern_industrialization:assembler",
+  "eu": 8192,
+  "duration": 200,
+  "item_inputs": [
+    {
+      "item": "revoindustry:nexus_light_panel",
+      "amount": 1
+    },
+    {
+      "item": "modern_industrialization:titanium_rod",
+      "amount": 2
+    }
+  ],
+  "item_outputs": [
+    {
+      "item": "revoindustry:nexus_rail",
+      "amount": 1
+    }
+  ]
+}

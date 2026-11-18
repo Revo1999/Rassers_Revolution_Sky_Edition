@@ -1,0 +1,33 @@
+{
+  "type": "modern_industrialization:assembler",
+  "eu": 32768,
+  "duration": 2400,
+  "item_inputs": [
+    {
+      "item": "revoindustry:nexus_core_housing",
+      "amount": 1
+    },
+    {
+      "item": "revoindustry:nexus_ignition_cell",
+      "amount": 6
+    },
+    {
+      "item": "revoindustry:nexus_contact",
+      "amount": 16
+    },
+    {
+      "item": "ae2:engineering_processor",
+      "amount": 16
+    },
+    {
+      "item": "modern_industrialization:quantum_circuit",
+      "amount": 8
+    }
+  ],
+  "item_outputs": [
+    {
+      "item": "revoindustry:nexus_core",
+      "amount": 1
+    }
+  ]
+}

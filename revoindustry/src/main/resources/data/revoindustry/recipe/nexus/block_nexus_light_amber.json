@@ -1,0 +1,25 @@
+{
+  "type": "modern_industrialization:assembler",
+  "eu": 8192,
+  "duration": 200,
+  "item_inputs": [
+    {
+      "item": "revoindustry:nexus_panel",
+      "amount": 1
+    },
+    {
+      "item": "minecraft:glowstone_dust",
+      "amount": 4
+    },
+    {
+      "item": "minecraft:orange_dye",
+      "amount": 1
+    }
+  ],
+  "item_outputs": [
+    {
+      "item": "revoindustry:nexus_light_amber",
+      "amount": 1
+    }
+  ]
+}

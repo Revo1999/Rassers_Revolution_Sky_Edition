@@ -137,7 +137,7 @@ def medium_voltage():
     c.section(1,'BUILD AN MV POWER NETWORK',10.5,-2,25);c.section(2,'GASES AND ACIDS',9,3,21);c.section(3,'RENEWABLE PLASTIC AND MANUFACTURING',12,11,27)
     c.add(1,'Beyond the First Circuit',mid('electronic_circuit'),0,0,[ident(LV,23)],[
         'Your first circuits and large components establish the manufacturing base. Now separate the MV power branch from the chemistry branch; both support the finished factory.',
-        'These quests guide the installed MI recipes. They do not unlock the art-only Nexus machines or bypass the implemented MV AE2 gates.'
+        'These quests guide the installed MI recipes and prepare you for the HV and Nexus chapters.'
     ],milestone=True)
     c.add(2,'Silicon Batteries',mid('silicon_battery'),3,0,[1],[
         'Craft two Silicon Batteries using Silicon Dust, Battery Alloy plates/curved plates and Electrum Cable.',

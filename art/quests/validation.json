@@ -1,10 +1,11 @@
 {
-  "chapters": 14,
-  "quests": 291,
+  "chapters": 15,
+  "quests": 332,
   "newQuests": 83,
+  "nexusQuestsVerified": 41,
   "sedimentAndDrillQuestsVerified": 4,
-  "existingQuestsPreserved": 204,
-  "uniqueIds": 672,
+  "existingQuestsPreserved": 208,
+  "uniqueIds": 755,
   "acyclicDependencies": true,
   "newItemReferencesResolved": true,
   "nonConsumingItemTasks": true,
@@ -67,6 +68,10 @@
     {
       "title": "Chapter 7: MV - Power and Chemistry",
       "quests": 25
+    },
+    {
+      "title": "Chapter 9: The Nexus Endgame",
+      "quests": 41
     }
   ]
 }

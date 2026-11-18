@@ -1,0 +1,25 @@
+{
+  "type": "modern_industrialization:assembler",
+  "eu": 2048,
+  "duration": 200,
+  "item_inputs": [
+    {
+      "item": "revoindustry:compacted_ender_pearl",
+      "amount": 1
+    },
+    {
+      "item": "revoindustry:compacted_ghast_tear",
+      "amount": 1
+    },
+    {
+      "item": "revoindustry:compacted_magma_cream",
+      "amount": 1
+    }
+  ],
+  "item_outputs": [
+    {
+      "item": "revoindustry:nexus_mob_group_2",
+      "amount": 1
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "type": "modern_industrialization:assembler",
+  "eu": 32768,
+  "duration": 200,
+  "item_inputs": [
+    {
+      "item": "revoindustry:phase_lattice",
+      "amount": 32
+    },
+    {
+      "item": "modern_industrialization:quantum_circuit",
+      "amount": 8
+    }
+  ],
+  "item_outputs": [
+    {
+      "item": "revoindustry:nexus_phased_control_array",
+      "amount": 1
+    }
+  ]
+}

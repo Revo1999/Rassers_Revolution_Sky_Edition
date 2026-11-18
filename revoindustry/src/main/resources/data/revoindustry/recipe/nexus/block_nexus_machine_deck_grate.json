@@ -1,0 +1,21 @@
+{
+  "type": "modern_industrialization:assembler",
+  "eu": 8192,
+  "duration": 200,
+  "item_inputs": [
+    {
+      "item": "modern_industrialization:steel_rod",
+      "amount": 4
+    },
+    {
+      "item": "modern_industrialization:titanium_plate",
+      "amount": 1
+    }
+  ],
+  "item_outputs": [
+    {
+      "item": "revoindustry:nexus_machine_deck_grate",
+      "amount": 1
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "type": "modern_industrialization:assembler",
+  "eu": 8192,
+  "duration": 200,
+  "item_inputs": [
+    {
+      "item": "modern_industrialization:titanium_rod",
+      "amount": 4
+    },
+    {
+      "item": "modern_industrialization:steel_gear",
+      "amount": 2
+    }
+  ],
+  "item_outputs": [
+    {
+      "item": "revoindustry:nexus_machine_gantry_rail",
+      "amount": 1
+    }
+  ]
+}

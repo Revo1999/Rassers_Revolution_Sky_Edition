@@ -1,0 +1,17 @@
+{
+  "type": "modern_industrialization:macerator",
+  "eu": 8192,
+  "duration": 200,
+  "item_inputs": [
+    {
+      "item": "minecraft:nether_star",
+      "amount": 1
+    }
+  ],
+  "item_outputs": [
+    {
+      "item": "revoindustry:nexus_star_dust",
+      "amount": 1
+    }
+  ]
+}

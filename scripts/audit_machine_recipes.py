@@ -49,32 +49,12 @@ def main():
  report={'scope':'All runtime-registered Revo blocks; native recipe manager supplemented by packaged recipes for optional integration conditions. Loot tables are not crafting routes.',
          'registeredBlocks':len(rows),'missingNexusBlockRecipes':len(missing),'blocks':rows,'nativeNexusHatches':native}
  (ROOT/'docs/machine-recipe-audit.json').write_text(json.dumps(report,indent=2)+'\n')
- names={'pressure_casting_plant':'Casting Plant','electroplating_line':'Plating Line','particle_collider':'Collider','nexus_portal':'Portal','nexus_builder':'Builder'}
- lines=['# Missing machine-block recipes','',
-  'Audit of all '+str(len(rows))+' registered Revo blocks, using the native recipe manager and packaged recipe JSON. Block drops and loot tables do not count as recipes. Optional-integration recipes are checked in the source even when their dependency is absent from the test server. The complete inventory is in [machine-recipe-audit.json](docs/machine-recipe-audit.json).','',
-  '**No missing block recipes were added.** The explicitly requested eleven mob-egg recipes and eleven typed vanilla-spawner recipes, plus the two mob-preserving spawner-tier upgrades, are the exception. Eggs and placed spawners cannot spawn mobs.','',
-  '## Nexus recipes to define','',
-  'These blocks are now registered with items, models, loot, mining tags and executable structure definitions. Their survival crafting recipes are deliberately pending. Counts below are physical blocks per blueprint, not additional recipe ingredients.','',
-  '| Missing output | Used by (quantity) | Status |','|---|---|---|']
- for r in missing:
-  used=', '.join(f'{names[k]} ({v})' for k,v in r['machines'].items())
-  lines.append(f"| `{r['id']}` | {used} | No crafting/assembler recipe |")
- lines+=['','## Additional recipe work','',
-  '| Item / system | Missing work |','|---|---|',
-  '| `revoindustry:nexus_construction_program` | Retained builder program needs its recipe and server-verified endgame unlock. No survival recipe exists yet. |',
-  '| Nexus processing chain | The three native MI recipe types are registered; the proposed alloy, staged plating, target, essence and lattice recipes/items still need the approved recipe ledger. No production recipes were invented in this registration pass. |',
-  '| Nexus bill of materials | Apply the approved roughly 1.5× material target across the block and Core recipes, including embedded intermediates, without double charging. Keep the builder cheap. |','',
-  '## Existing routes and exceptions','',
-  '| Block / group | Audit result |','|---|---|',
-  '| Existing Revo machine controllers, casings, hatches and parts | Existing recipe routes found; inspect the JSON inventory for every output and recipe ID. |',
-  '| Three `revoindustry:*power_converter` tiers | Recipes already exist and require Flux Networks plus MI. Their absence in a stripped test instance is not a missing pack recipe. |',
-  '| `revocultivation:cotton_crop` | Uses the `revocultivation:cotton_seeds` item and its existing seed recipe. The block ID is not a separate craftable item. |',
-  '| `revoindustry:salt_water` | Fluid-world block has no item by design; geode processing produces the fluid. |',
-  '| `revoextraction:dust` | No grid recipe: hammer Sand or Red Sand using the existing `HammerItem.result` interaction. This is a real manual production route, not a missing progression ingredient. |',
-  '| Native MI item/fluid/energy hatches used by Nexus | Existing native MI recipes; no duplicate cosmetic hatches were registered. |','',
-  '## How to refresh','',
-  'Run `dev.cmd :revoindustry:runNexusTests -PrevoNexusTests`, confirm the native tests pass, then run `.local/venv/Scripts/python.exe scripts/audit_machine_recipes.py`. This refreshes the registry evidence and this report without creating recipes.','']
- (ROOT/'missingrecipies.md').write_text('\n'.join(lines))
- print(f'Audited {len(rows)} registered Revo blocks; {len(missing)} Nexus block recipes pending. No recipes changed.')
+ lines=['# Missing machine-block recipes','',f"Audited {len(rows)} registered Revo blocks against the native recipe manager and packaged recipes. See [machine-recipe-audit.json](docs/machine-recipe-audit.json) for evidence.",'',f"**{len(missing)} Nexus block recipes are missing.** The [Nexus material ledger](docs/NEXUS-MATERIAL-LEDGER.md) tracks the full survival route, including the retained Construction Program.",'']
+ remaining=[r for r in rows if r['status']=='no recipe']
+ if remaining:
+  lines += ['| Block | Status |','| --- | --- |']+[f"| `{r['id']}` | No crafting route found |" for r in remaining]+['']
+ lines+=['Fluid blocks have buckets and processing routes. World-only crops use their seed items. Dust uses the manual sand hammering interaction. Nexus hatches use the native MI recipes.','','Refresh with `dev.cmd :revoindustry:runNexusTests -PrevoNexusTests` followed by `python scripts/audit_machine_recipes.py`.','']
+ (ROOT/'missingrecipies.md').write_text('\n'.join(lines),encoding='utf-8')
+ print(f'Audited {len(rows)} registered Revo blocks; {len(missing)} Nexus block recipes pending.')
 
 if __name__=='__main__':main()

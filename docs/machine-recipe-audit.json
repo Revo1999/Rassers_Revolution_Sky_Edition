@@ -1,7 +1,7 @@
 {
   "scope": "All runtime-registered Revo blocks; native recipe manager supplemented by packaged recipes for optional integration conditions. Loot tables are not crafting routes.",
-  "registeredBlocks": 155,
-  "missingNexusBlockRecipes": 42,
+  "registeredBlocks": 166,
+  "missingNexusBlockRecipes": 0,
   "blocks": [
     {
       "id": "revocultivation:barred_panel",
@@ -624,6 +624,26 @@
       "status": "recipe present"
     },
     {
+      "id": "revoextraction:digital_drill",
+      "hasItem": true,
+      "item": "revoextraction:digital_drill",
+      "routes": [
+        {
+          "id": "revoextraction:digital_drill",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revoextraction:digital_drill",
+          "type": "minecraft:crafting_shaped",
+          "source": "revoextraction/src/main/resources/data/revoextraction/recipe/digital_drill.json",
+          "conditions": []
+        }
+      ],
+      "machines": {},
+      "status": "recipe present"
+    },
+    {
       "id": "revoextraction:dust",
       "hasItem": true,
       "item": "revoextraction:dust",
@@ -871,6 +891,26 @@
           "id": "revoextraction:steel_drill_core",
           "type": "minecraft:crafting_shaped",
           "source": "revoextraction/src/main/resources/data/revoextraction/recipe/steel_drill_core.json",
+          "conditions": []
+        }
+      ],
+      "machines": {},
+      "status": "recipe present"
+    },
+    {
+      "id": "revoextraction:steel_drill_fluid_output_hatch",
+      "hasItem": true,
+      "item": "revoextraction:steel_drill_fluid_output_hatch",
+      "routes": [
+        {
+          "id": "revoextraction:steel_drill_fluid_output_hatch",
+          "type": "minecraft:crafting",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revoextraction:steel_drill_fluid_output_hatch",
+          "type": "minecraft:crafting_shaped",
+          "source": "revoextraction/src/main/resources/data/revoextraction/recipe/steel_drill_fluid_output_hatch.json",
           "conditions": []
         }
       ],
@@ -1262,14 +1302,34 @@
       "status": "recipe present"
     },
     {
+      "id": "revoindustry:drill_sediment",
+      "hasItem": false,
+      "item": "minecraft:air",
+      "routes": [],
+      "machines": {},
+      "status": "no item by design"
+    },
+    {
       "id": "revoindustry:electroplating_line",
       "hasItem": true,
       "item": "revoindustry:electroplating_line",
-      "routes": [],
+      "routes": [
+        {
+          "id": "revoindustry:nexus/controller_plating",
+          "type": "modern_industrialization:assembler",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revoindustry:nexus/controller_plating",
+          "type": "modern_industrialization:assembler",
+          "source": "revoindustry/src/main/resources/data/revoindustry/recipe/nexus/controller_plating.json",
+          "conditions": []
+        }
+      ],
       "machines": {
         "electroplating_line": 1
       },
-      "status": "no recipe"
+      "status": "recipe present"
     },
     {
       "id": "revoindustry:elite_power_converter",
@@ -1334,6 +1394,14 @@
       ],
       "machines": {},
       "status": "recipe present"
+    },
+    {
+      "id": "revoindustry:excellent_drill_sediment",
+      "hasItem": false,
+      "item": "minecraft:air",
+      "routes": [],
+      "machines": {},
+      "status": "no item by design"
     },
     {
       "id": "revoindustry:furnace_item_input_hatch_1",
@@ -1636,6 +1704,14 @@
       "status": "recipe present"
     },
     {
+      "id": "revoindustry:good_drill_sediment",
+      "hasItem": false,
+      "item": "minecraft:air",
+      "routes": [],
+      "machines": {},
+      "status": "no item by design"
+    },
+    {
       "id": "revoindustry:iron_multiblock_furnace",
       "hasItem": true,
       "item": "revoindustry:iron_multiblock_furnace",
@@ -1739,400 +1815,901 @@
       "id": "revoindustry:nexus_beacon",
       "hasItem": true,
       "item": "revoindustry:nexus_beacon",
-      "routes": [],
+      "routes": [
+        {
+          "id": "revoindustry:nexus/beacon",
+          "type": "modern_industrialization:assembler",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revoindustry:nexus/beacon",
+          "type": "modern_industrialization:assembler",
+          "source": "revoindustry/src/main/resources/data/revoindustry/recipe/nexus/beacon.json",
+          "conditions": []
+        }
+      ],
       "machines": {
         "nexus_portal": 5
       },
-      "status": "no recipe"
+      "status": "recipe present"
     },
     {
       "id": "revoindustry:nexus_builder",
       "hasItem": true,
       "item": "revoindustry:nexus_builder",
-      "routes": [],
+      "routes": [
+        {
+          "id": "revoindustry:nexus/builder",
+          "type": "modern_industrialization:assembler",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revoindustry:nexus/builder",
+          "type": "modern_industrialization:assembler",
+          "source": "revoindustry/src/main/resources/data/revoindustry/recipe/nexus/builder.json",
+          "conditions": []
+        }
+      ],
       "machines": {
+        "nexus_portal": 1,
         "nexus_builder": 1
       },
-      "status": "no recipe"
+      "status": "recipe present"
     },
     {
       "id": "revoindustry:nexus_casing",
       "hasItem": true,
       "item": "revoindustry:nexus_casing",
-      "routes": [],
+      "routes": [
+        {
+          "id": "revoindustry:nexus/block_nexus_casing",
+          "type": "modern_industrialization:assembler",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revoindustry:nexus/block_nexus_casing",
+          "type": "modern_industrialization:assembler",
+          "source": "revoindustry/src/main/resources/data/revoindustry/recipe/nexus/block_nexus_casing.json",
+          "conditions": []
+        }
+      ],
       "machines": {
         "nexus_portal": 281
       },
-      "status": "no recipe"
+      "status": "recipe present"
     },
     {
       "id": "revoindustry:nexus_ceramic_panel",
       "hasItem": true,
       "item": "revoindustry:nexus_ceramic_panel",
-      "routes": [],
+      "routes": [
+        {
+          "id": "revoindustry:nexus/block_nexus_ceramic_panel",
+          "type": "modern_industrialization:assembler",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revoindustry:nexus/block_nexus_ceramic_panel",
+          "type": "modern_industrialization:assembler",
+          "source": "revoindustry/src/main/resources/data/revoindustry/recipe/nexus/block_nexus_ceramic_panel.json",
+          "conditions": []
+        }
+      ],
       "machines": {
         "nexus_portal": 44
       },
-      "status": "no recipe"
+      "status": "recipe present"
+    },
+    {
+      "id": "revoindustry:nexus_cleaning_solution",
+      "hasItem": false,
+      "item": "minecraft:air",
+      "routes": [],
+      "machines": {},
+      "status": "no item by design"
     },
     {
       "id": "revoindustry:nexus_controller",
       "hasItem": true,
       "item": "revoindustry:nexus_controller",
-      "routes": [],
+      "routes": [
+        {
+          "id": "revoindustry:nexus/controller_portal",
+          "type": "modern_industrialization:assembler",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revoindustry:nexus/controller_portal",
+          "type": "modern_industrialization:assembler",
+          "source": "revoindustry/src/main/resources/data/revoindustry/recipe/nexus/controller_portal.json",
+          "conditions": []
+        }
+      ],
       "machines": {
         "nexus_portal": 1
       },
-      "status": "no recipe"
+      "status": "recipe present"
     },
     {
       "id": "revoindustry:nexus_core",
       "hasItem": true,
       "item": "revoindustry:nexus_core",
-      "routes": [],
+      "routes": [
+        {
+          "id": "revoindustry:nexus/core",
+          "type": "modern_industrialization:assembler",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revoindustry:nexus/core",
+          "type": "modern_industrialization:assembler",
+          "source": "revoindustry/src/main/resources/data/revoindustry/recipe/nexus/core.json",
+          "conditions": []
+        }
+      ],
       "machines": {
         "nexus_portal": 1
       },
-      "status": "no recipe"
+      "status": "recipe present"
     },
     {
       "id": "revoindustry:nexus_deck_grate",
       "hasItem": true,
       "item": "revoindustry:nexus_deck_grate",
-      "routes": [],
+      "routes": [
+        {
+          "id": "revoindustry:nexus/block_nexus_deck_grate",
+          "type": "modern_industrialization:assembler",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revoindustry:nexus/block_nexus_deck_grate",
+          "type": "modern_industrialization:assembler",
+          "source": "revoindustry/src/main/resources/data/revoindustry/recipe/nexus/block_nexus_deck_grate.json",
+          "conditions": []
+        }
+      ],
       "machines": {
         "nexus_portal": 48
       },
-      "status": "no recipe"
+      "status": "recipe present"
     },
     {
       "id": "revoindustry:nexus_foundation",
       "hasItem": true,
       "item": "revoindustry:nexus_foundation",
-      "routes": [],
+      "routes": [
+        {
+          "id": "revoindustry:nexus/block_nexus_foundation",
+          "type": "modern_industrialization:assembler",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revoindustry:nexus/block_nexus_foundation",
+          "type": "modern_industrialization:assembler",
+          "source": "revoindustry/src/main/resources/data/revoindustry/recipe/nexus/block_nexus_foundation.json",
+          "conditions": []
+        }
+      ],
       "machines": {
-        "nexus_portal": 178
+        "nexus_portal": 174
       },
-      "status": "no recipe"
+      "status": "recipe present"
     },
     {
       "id": "revoindustry:nexus_foundation_chiseled",
       "hasItem": true,
       "item": "revoindustry:nexus_foundation_chiseled",
-      "routes": [],
+      "routes": [
+        {
+          "id": "revoindustry:nexus/block_nexus_foundation_chiseled",
+          "type": "modern_industrialization:assembler",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revoindustry:nexus/block_nexus_foundation_chiseled",
+          "type": "modern_industrialization:assembler",
+          "source": "revoindustry/src/main/resources/data/revoindustry/recipe/nexus/block_nexus_foundation_chiseled.json",
+          "conditions": []
+        }
+      ],
       "machines": {
         "nexus_portal": 11
       },
-      "status": "no recipe"
+      "status": "recipe present"
     },
     {
       "id": "revoindustry:nexus_hazard",
       "hasItem": true,
       "item": "revoindustry:nexus_hazard",
-      "routes": [],
+      "routes": [
+        {
+          "id": "revoindustry:nexus/block_nexus_hazard",
+          "type": "modern_industrialization:assembler",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revoindustry:nexus/block_nexus_hazard",
+          "type": "modern_industrialization:assembler",
+          "source": "revoindustry/src/main/resources/data/revoindustry/recipe/nexus/block_nexus_hazard.json",
+          "conditions": []
+        }
+      ],
       "machines": {
         "nexus_portal": 48
       },
-      "status": "no recipe"
+      "status": "recipe present"
     },
     {
       "id": "revoindustry:nexus_light_amber",
       "hasItem": true,
       "item": "revoindustry:nexus_light_amber",
-      "routes": [],
+      "routes": [
+        {
+          "id": "revoindustry:nexus/block_nexus_light_amber",
+          "type": "modern_industrialization:assembler",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revoindustry:nexus/block_nexus_light_amber",
+          "type": "modern_industrialization:assembler",
+          "source": "revoindustry/src/main/resources/data/revoindustry/recipe/nexus/block_nexus_light_amber.json",
+          "conditions": []
+        }
+      ],
       "machines": {
         "nexus_portal": 2
       },
-      "status": "no recipe"
+      "status": "recipe present"
     },
     {
       "id": "revoindustry:nexus_light_blue",
       "hasItem": true,
       "item": "revoindustry:nexus_light_blue",
-      "routes": [],
+      "routes": [
+        {
+          "id": "revoindustry:nexus/block_nexus_light_blue",
+          "type": "modern_industrialization:assembler",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revoindustry:nexus/block_nexus_light_blue",
+          "type": "modern_industrialization:assembler",
+          "source": "revoindustry/src/main/resources/data/revoindustry/recipe/nexus/block_nexus_light_blue.json",
+          "conditions": []
+        }
+      ],
       "machines": {
         "nexus_portal": 10
       },
-      "status": "no recipe"
+      "status": "recipe present"
     },
     {
       "id": "revoindustry:nexus_light_violet",
       "hasItem": true,
       "item": "revoindustry:nexus_light_violet",
-      "routes": [],
+      "routes": [
+        {
+          "id": "revoindustry:nexus/block_nexus_light_violet",
+          "type": "modern_industrialization:assembler",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revoindustry:nexus/block_nexus_light_violet",
+          "type": "modern_industrialization:assembler",
+          "source": "revoindustry/src/main/resources/data/revoindustry/recipe/nexus/block_nexus_light_violet.json",
+          "conditions": []
+        }
+      ],
       "machines": {
         "nexus_portal": 4
       },
-      "status": "no recipe"
+      "status": "recipe present"
     },
     {
       "id": "revoindustry:nexus_machine_accelerator_glass",
       "hasItem": true,
       "item": "revoindustry:nexus_machine_accelerator_glass",
-      "routes": [],
+      "routes": [
+        {
+          "id": "revoindustry:nexus/block_nexus_machine_accelerator_glass",
+          "type": "modern_industrialization:assembler",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revoindustry:nexus/block_nexus_machine_accelerator_glass",
+          "type": "modern_industrialization:assembler",
+          "source": "revoindustry/src/main/resources/data/revoindustry/recipe/nexus/block_nexus_machine_accelerator_glass.json",
+          "conditions": []
+        }
+      ],
       "machines": {
         "particle_collider": 200
       },
-      "status": "no recipe"
+      "status": "recipe present"
     },
     {
       "id": "revoindustry:nexus_machine_bath_wall",
       "hasItem": true,
       "item": "revoindustry:nexus_machine_bath_wall",
-      "routes": [],
+      "routes": [
+        {
+          "id": "revoindustry:nexus/block_nexus_machine_bath_wall",
+          "type": "modern_industrialization:assembler",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revoindustry:nexus/block_nexus_machine_bath_wall",
+          "type": "modern_industrialization:assembler",
+          "source": "revoindustry/src/main/resources/data/revoindustry/recipe/nexus/block_nexus_machine_bath_wall.json",
+          "conditions": []
+        }
+      ],
       "machines": {
         "electroplating_line": 26
       },
-      "status": "no recipe"
+      "status": "recipe present"
     },
     {
       "id": "revoindustry:nexus_machine_casing",
       "hasItem": true,
       "item": "revoindustry:nexus_machine_casing",
-      "routes": [],
+      "routes": [
+        {
+          "id": "revoindustry:nexus/block_nexus_machine_casing",
+          "type": "modern_industrialization:assembler",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revoindustry:nexus/block_nexus_machine_casing",
+          "type": "modern_industrialization:assembler",
+          "source": "revoindustry/src/main/resources/data/revoindustry/recipe/nexus/block_nexus_machine_casing.json",
+          "conditions": []
+        }
+      ],
       "machines": {
         "pressure_casting_plant": 53,
         "electroplating_line": 45,
         "particle_collider": 336
       },
-      "status": "no recipe"
+      "status": "recipe present"
     },
     {
       "id": "revoindustry:nexus_machine_ceramic_panel",
       "hasItem": true,
       "item": "revoindustry:nexus_machine_ceramic_panel",
-      "routes": [],
+      "routes": [
+        {
+          "id": "revoindustry:nexus/block_nexus_machine_ceramic_panel",
+          "type": "modern_industrialization:assembler",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revoindustry:nexus/block_nexus_machine_ceramic_panel",
+          "type": "modern_industrialization:assembler",
+          "source": "revoindustry/src/main/resources/data/revoindustry/recipe/nexus/block_nexus_machine_ceramic_panel.json",
+          "conditions": []
+        }
+      ],
       "machines": {
         "particle_collider": 20
       },
-      "status": "no recipe"
+      "status": "recipe present"
     },
     {
       "id": "revoindustry:nexus_machine_deck_grate",
       "hasItem": true,
       "item": "revoindustry:nexus_machine_deck_grate",
-      "routes": [],
+      "routes": [
+        {
+          "id": "revoindustry:nexus/block_nexus_machine_deck_grate",
+          "type": "modern_industrialization:assembler",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revoindustry:nexus/block_nexus_machine_deck_grate",
+          "type": "modern_industrialization:assembler",
+          "source": "revoindustry/src/main/resources/data/revoindustry/recipe/nexus/block_nexus_machine_deck_grate.json",
+          "conditions": []
+        }
+      ],
       "machines": {
         "pressure_casting_plant": 32,
         "electroplating_line": 32
       },
-      "status": "no recipe"
+      "status": "recipe present"
     },
     {
       "id": "revoindustry:nexus_machine_gantry_rail",
       "hasItem": true,
       "item": "revoindustry:nexus_machine_gantry_rail",
-      "routes": [],
+      "routes": [
+        {
+          "id": "revoindustry:nexus/block_nexus_machine_gantry_rail",
+          "type": "modern_industrialization:assembler",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revoindustry:nexus/block_nexus_machine_gantry_rail",
+          "type": "modern_industrialization:assembler",
+          "source": "revoindustry/src/main/resources/data/revoindustry/recipe/nexus/block_nexus_machine_gantry_rail.json",
+          "conditions": []
+        }
+      ],
       "machines": {
         "electroplating_line": 14
       },
-      "status": "no recipe"
+      "status": "recipe present"
     },
     {
       "id": "revoindustry:nexus_machine_hazard",
       "hasItem": true,
       "item": "revoindustry:nexus_machine_hazard",
-      "routes": [],
+      "routes": [
+        {
+          "id": "revoindustry:nexus/block_nexus_machine_hazard",
+          "type": "modern_industrialization:assembler",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revoindustry:nexus/block_nexus_machine_hazard",
+          "type": "modern_industrialization:assembler",
+          "source": "revoindustry/src/main/resources/data/revoindustry/recipe/nexus/block_nexus_machine_hazard.json",
+          "conditions": []
+        }
+      ],
       "machines": {
         "pressure_casting_plant": 4,
         "electroplating_line": 4
       },
-      "status": "no recipe"
+      "status": "recipe present"
     },
     {
       "id": "revoindustry:nexus_machine_hydraulic_cylinder",
       "hasItem": true,
       "item": "revoindustry:nexus_machine_hydraulic_cylinder",
-      "routes": [],
+      "routes": [
+        {
+          "id": "revoindustry:nexus/block_nexus_machine_hydraulic_cylinder",
+          "type": "modern_industrialization:assembler",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revoindustry:nexus/block_nexus_machine_hydraulic_cylinder",
+          "type": "modern_industrialization:assembler",
+          "source": "revoindustry/src/main/resources/data/revoindustry/recipe/nexus/block_nexus_machine_hydraulic_cylinder.json",
+          "conditions": []
+        }
+      ],
       "machines": {
         "pressure_casting_plant": 2
       },
-      "status": "no recipe"
+      "status": "recipe present"
     },
     {
       "id": "revoindustry:nexus_machine_injector_housing",
       "hasItem": true,
       "item": "revoindustry:nexus_machine_injector_housing",
-      "routes": [],
+      "routes": [
+        {
+          "id": "revoindustry:nexus/block_nexus_machine_injector_housing",
+          "type": "modern_industrialization:assembler",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revoindustry:nexus/block_nexus_machine_injector_housing",
+          "type": "modern_industrialization:assembler",
+          "source": "revoindustry/src/main/resources/data/revoindustry/recipe/nexus/block_nexus_machine_injector_housing.json",
+          "conditions": []
+        }
+      ],
       "machines": {
         "particle_collider": 2
       },
-      "status": "no recipe"
+      "status": "recipe present"
     },
     {
       "id": "revoindustry:nexus_machine_light_amber",
       "hasItem": true,
       "item": "revoindustry:nexus_machine_light_amber",
-      "routes": [],
+      "routes": [
+        {
+          "id": "revoindustry:nexus/block_nexus_machine_light_amber",
+          "type": "modern_industrialization:assembler",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revoindustry:nexus/block_nexus_machine_light_amber",
+          "type": "modern_industrialization:assembler",
+          "source": "revoindustry/src/main/resources/data/revoindustry/recipe/nexus/block_nexus_machine_light_amber.json",
+          "conditions": []
+        }
+      ],
       "machines": {
         "pressure_casting_plant": 2
       },
-      "status": "no recipe"
+      "status": "recipe present"
     },
     {
       "id": "revoindustry:nexus_machine_light_blue",
       "hasItem": true,
       "item": "revoindustry:nexus_machine_light_blue",
-      "routes": [],
+      "routes": [
+        {
+          "id": "revoindustry:nexus/block_nexus_machine_light_blue",
+          "type": "modern_industrialization:assembler",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revoindustry:nexus/block_nexus_machine_light_blue",
+          "type": "modern_industrialization:assembler",
+          "source": "revoindustry/src/main/resources/data/revoindustry/recipe/nexus/block_nexus_machine_light_blue.json",
+          "conditions": []
+        }
+      ],
       "machines": {
         "electroplating_line": 1
       },
-      "status": "no recipe"
+      "status": "recipe present"
     },
     {
       "id": "revoindustry:nexus_machine_magnet_coil",
       "hasItem": true,
       "item": "revoindustry:nexus_machine_magnet_coil",
-      "routes": [],
+      "routes": [
+        {
+          "id": "revoindustry:nexus/block_nexus_machine_magnet_coil",
+          "type": "modern_industrialization:assembler",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revoindustry:nexus/block_nexus_machine_magnet_coil",
+          "type": "modern_industrialization:assembler",
+          "source": "revoindustry/src/main/resources/data/revoindustry/recipe/nexus/block_nexus_machine_magnet_coil.json",
+          "conditions": []
+        }
+      ],
       "machines": {
         "particle_collider": 61
       },
-      "status": "no recipe"
+      "status": "recipe present"
     },
     {
       "id": "revoindustry:nexus_machine_mould_bed",
       "hasItem": true,
       "item": "revoindustry:nexus_machine_mould_bed",
-      "routes": [],
+      "routes": [
+        {
+          "id": "revoindustry:nexus/block_nexus_machine_mould_bed",
+          "type": "modern_industrialization:assembler",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revoindustry:nexus/block_nexus_machine_mould_bed",
+          "type": "modern_industrialization:assembler",
+          "source": "revoindustry/src/main/resources/data/revoindustry/recipe/nexus/block_nexus_machine_mould_bed.json",
+          "conditions": []
+        }
+      ],
       "machines": {
         "pressure_casting_plant": 9
       },
-      "status": "no recipe"
+      "status": "recipe present"
     },
     {
       "id": "revoindustry:nexus_machine_pressure_plate",
       "hasItem": true,
       "item": "revoindustry:nexus_machine_pressure_plate",
-      "routes": [],
+      "routes": [
+        {
+          "id": "revoindustry:nexus/block_nexus_machine_pressure_plate",
+          "type": "modern_industrialization:assembler",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revoindustry:nexus/block_nexus_machine_pressure_plate",
+          "type": "modern_industrialization:assembler",
+          "source": "revoindustry/src/main/resources/data/revoindustry/recipe/nexus/block_nexus_machine_pressure_plate.json",
+          "conditions": []
+        }
+      ],
       "machines": {
         "pressure_casting_plant": 21,
         "electroplating_line": 35
       },
-      "status": "no recipe"
+      "status": "recipe present"
     },
     {
       "id": "revoindustry:nexus_machine_pressure_tank",
       "hasItem": true,
       "item": "revoindustry:nexus_machine_pressure_tank",
-      "routes": [],
+      "routes": [
+        {
+          "id": "revoindustry:nexus/block_nexus_machine_pressure_tank",
+          "type": "modern_industrialization:assembler",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revoindustry:nexus/block_nexus_machine_pressure_tank",
+          "type": "modern_industrialization:assembler",
+          "source": "revoindustry/src/main/resources/data/revoindustry/recipe/nexus/block_nexus_machine_pressure_tank.json",
+          "conditions": []
+        }
+      ],
       "machines": {
         "pressure_casting_plant": 6
       },
-      "status": "no recipe"
+      "status": "recipe present"
     },
     {
       "id": "revoindustry:nexus_machine_reinforced_column",
       "hasItem": true,
       "item": "revoindustry:nexus_machine_reinforced_column",
-      "routes": [],
+      "routes": [
+        {
+          "id": "revoindustry:nexus/block_nexus_machine_reinforced_column",
+          "type": "modern_industrialization:assembler",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revoindustry:nexus/block_nexus_machine_reinforced_column",
+          "type": "modern_industrialization:assembler",
+          "source": "revoindustry/src/main/resources/data/revoindustry/recipe/nexus/block_nexus_machine_reinforced_column.json",
+          "conditions": []
+        }
+      ],
       "machines": {
         "pressure_casting_plant": 10,
         "electroplating_line": 12,
         "particle_collider": 156
       },
-      "status": "no recipe"
+      "status": "recipe present"
     },
     {
       "id": "revoindustry:nexus_machine_ribbed_panel",
       "hasItem": true,
       "item": "revoindustry:nexus_machine_ribbed_panel",
-      "routes": [],
+      "routes": [
+        {
+          "id": "revoindustry:nexus/block_nexus_machine_ribbed_panel",
+          "type": "modern_industrialization:assembler",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revoindustry:nexus/block_nexus_machine_ribbed_panel",
+          "type": "modern_industrialization:assembler",
+          "source": "revoindustry/src/main/resources/data/revoindustry/recipe/nexus/block_nexus_machine_ribbed_panel.json",
+          "conditions": []
+        }
+      ],
       "machines": {
         "pressure_casting_plant": 10,
         "electroplating_line": 10
       },
-      "status": "no recipe"
+      "status": "recipe present"
     },
     {
       "id": "revoindustry:nexus_machine_service_panel",
       "hasItem": true,
       "item": "revoindustry:nexus_machine_service_panel",
-      "routes": [],
+      "routes": [
+        {
+          "id": "revoindustry:nexus/block_nexus_machine_service_panel",
+          "type": "modern_industrialization:assembler",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revoindustry:nexus/block_nexus_machine_service_panel",
+          "type": "modern_industrialization:assembler",
+          "source": "revoindustry/src/main/resources/data/revoindustry/recipe/nexus/block_nexus_machine_service_panel.json",
+          "conditions": []
+        }
+      ],
       "machines": {
         "pressure_casting_plant": 3,
         "electroplating_line": 6
       },
-      "status": "no recipe"
+      "status": "recipe present"
     },
     {
       "id": "revoindustry:nexus_machine_vent",
       "hasItem": true,
       "item": "revoindustry:nexus_machine_vent",
-      "routes": [],
+      "routes": [
+        {
+          "id": "revoindustry:nexus/block_nexus_machine_vent",
+          "type": "modern_industrialization:assembler",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revoindustry:nexus/block_nexus_machine_vent",
+          "type": "modern_industrialization:assembler",
+          "source": "revoindustry/src/main/resources/data/revoindustry/recipe/nexus/block_nexus_machine_vent.json",
+          "conditions": []
+        }
+      ],
       "machines": {
         "electroplating_line": 4
       },
-      "status": "no recipe"
+      "status": "recipe present"
+    },
+    {
+      "id": "revoindustry:nexus_plating_electrolyte",
+      "hasItem": false,
+      "item": "minecraft:air",
+      "routes": [],
+      "machines": {},
+      "status": "no item by design"
     },
     {
       "id": "revoindustry:nexus_rail",
       "hasItem": true,
       "item": "revoindustry:nexus_rail",
-      "routes": [],
+      "routes": [
+        {
+          "id": "revoindustry:nexus/block_nexus_rail",
+          "type": "modern_industrialization:assembler",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revoindustry:nexus/block_nexus_rail",
+          "type": "modern_industrialization:assembler",
+          "source": "revoindustry/src/main/resources/data/revoindustry/recipe/nexus/block_nexus_rail.json",
+          "conditions": []
+        }
+      ],
       "machines": {
         "nexus_portal": 51
       },
-      "status": "no recipe"
+      "status": "recipe present"
     },
     {
       "id": "revoindustry:nexus_reinforced_column",
       "hasItem": true,
       "item": "revoindustry:nexus_reinforced_column",
-      "routes": [],
+      "routes": [
+        {
+          "id": "revoindustry:nexus/block_nexus_reinforced_column",
+          "type": "modern_industrialization:assembler",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revoindustry:nexus/block_nexus_reinforced_column",
+          "type": "modern_industrialization:assembler",
+          "source": "revoindustry/src/main/resources/data/revoindustry/recipe/nexus/block_nexus_reinforced_column.json",
+          "conditions": []
+        }
+      ],
       "machines": {
         "nexus_portal": 20
       },
-      "status": "no recipe"
+      "status": "recipe present"
     },
     {
       "id": "revoindustry:nexus_ribbed_panel",
       "hasItem": true,
       "item": "revoindustry:nexus_ribbed_panel",
-      "routes": [],
+      "routes": [
+        {
+          "id": "revoindustry:nexus/block_nexus_ribbed_panel",
+          "type": "modern_industrialization:assembler",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revoindustry:nexus/block_nexus_ribbed_panel",
+          "type": "modern_industrialization:assembler",
+          "source": "revoindustry/src/main/resources/data/revoindustry/recipe/nexus/block_nexus_ribbed_panel.json",
+          "conditions": []
+        }
+      ],
       "machines": {
         "nexus_portal": 20
       },
-      "status": "no recipe"
+      "status": "recipe present"
     },
     {
       "id": "revoindustry:nexus_ring",
       "hasItem": true,
       "item": "revoindustry:nexus_ring",
-      "routes": [],
+      "routes": [
+        {
+          "id": "revoindustry:nexus/ring",
+          "type": "modern_industrialization:assembler",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revoindustry:nexus/ring",
+          "type": "modern_industrialization:assembler",
+          "source": "revoindustry/src/main/resources/data/revoindustry/recipe/nexus/ring.json",
+          "conditions": []
+        }
+      ],
       "machines": {
         "nexus_portal": 48
       },
-      "status": "no recipe"
+      "status": "recipe present"
     },
     {
       "id": "revoindustry:nexus_service_panel",
       "hasItem": true,
       "item": "revoindustry:nexus_service_panel",
-      "routes": [],
+      "routes": [
+        {
+          "id": "revoindustry:nexus/block_nexus_service_panel",
+          "type": "modern_industrialization:assembler",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revoindustry:nexus/block_nexus_service_panel",
+          "type": "modern_industrialization:assembler",
+          "source": "revoindustry/src/main/resources/data/revoindustry/recipe/nexus/block_nexus_service_panel.json",
+          "conditions": []
+        }
+      ],
       "machines": {
         "nexus_portal": 4
       },
-      "status": "no recipe"
+      "status": "recipe present"
+    },
+    {
+      "id": "revoindustry:nexus_spent_electrolyte",
+      "hasItem": false,
+      "item": "minecraft:air",
+      "routes": [],
+      "machines": {},
+      "status": "no item by design"
     },
     {
       "id": "revoindustry:nexus_trim",
       "hasItem": true,
       "item": "revoindustry:nexus_trim",
-      "routes": [],
+      "routes": [
+        {
+          "id": "revoindustry:nexus/block_nexus_trim",
+          "type": "modern_industrialization:assembler",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revoindustry:nexus/block_nexus_trim",
+          "type": "modern_industrialization:assembler",
+          "source": "revoindustry/src/main/resources/data/revoindustry/recipe/nexus/block_nexus_trim.json",
+          "conditions": []
+        }
+      ],
       "machines": {
         "nexus_portal": 27
       },
-      "status": "no recipe"
+      "status": "recipe present"
     },
     {
       "id": "revoindustry:nexus_vent",
       "hasItem": true,
       "item": "revoindustry:nexus_vent",
-      "routes": [],
+      "routes": [
+        {
+          "id": "revoindustry:nexus/block_nexus_vent",
+          "type": "modern_industrialization:assembler",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revoindustry:nexus/block_nexus_vent",
+          "type": "modern_industrialization:assembler",
+          "source": "revoindustry/src/main/resources/data/revoindustry/recipe/nexus/block_nexus_vent.json",
+          "conditions": []
+        }
+      ],
       "machines": {
         "nexus_portal": 6
       },
-      "status": "no recipe"
+      "status": "recipe present"
+    },
+    {
+      "id": "revoindustry:nexus_wastewater",
+      "hasItem": false,
+      "item": "minecraft:air",
+      "routes": [],
+      "machines": {},
+      "status": "no item by design"
     },
     {
       "id": "revoindustry:obsidian_furnace_casing",
@@ -2178,11 +2755,23 @@
       "id": "revoindustry:particle_collider",
       "hasItem": true,
       "item": "revoindustry:particle_collider",
-      "routes": [],
+      "routes": [
+        {
+          "id": "revoindustry:nexus/controller_collider",
+          "type": "modern_industrialization:assembler",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revoindustry:nexus/controller_collider",
+          "type": "modern_industrialization:assembler",
+          "source": "revoindustry/src/main/resources/data/revoindustry/recipe/nexus/controller_collider.json",
+          "conditions": []
+        }
+      ],
       "machines": {
         "particle_collider": 1
       },
-      "status": "no recipe"
+      "status": "recipe present"
     },
     {
       "id": "revoindustry:power_converter",
@@ -2212,11 +2801,23 @@
       "id": "revoindustry:pressure_casting_plant",
       "hasItem": true,
       "item": "revoindustry:pressure_casting_plant",
-      "routes": [],
+      "routes": [
+        {
+          "id": "revoindustry:nexus/controller_casting",
+          "type": "modern_industrialization:assembler",
+          "source": "native recipe manager"
+        },
+        {
+          "id": "revoindustry:nexus/controller_casting",
+          "type": "modern_industrialization:assembler",
+          "source": "revoindustry/src/main/resources/data/revoindustry/recipe/nexus/controller_casting.json",
+          "conditions": []
+        }
+      ],
       "machines": {
         "pressure_casting_plant": 1
       },
-      "status": "no recipe"
+      "status": "recipe present"
     },
     {
       "id": "revoindustry:rain_barrel",
@@ -2320,6 +2921,14 @@
     },
     {
       "id": "revoindustry:salt_water",
+      "hasItem": false,
+      "item": "minecraft:air",
+      "routes": [],
+      "machines": {},
+      "status": "no item by design"
+    },
+    {
+      "id": "revoindustry:sea_water",
       "hasItem": false,
       "item": "minecraft:air",
       "routes": [],
@@ -2507,6 +3116,14 @@
       "status": "recipe present"
     },
     {
+      "id": "revoindustry:warm_nexus_coolant",
+      "hasItem": false,
+      "item": "minecraft:air",
+      "routes": [],
+      "machines": {},
+      "status": "no item by design"
+    },
+    {
       "id": "revoindustry:wither_chamber_casing",
       "hasItem": true,
       "item": "revoindustry:wither_chamber_casing",
@@ -2691,6 +3308,7 @@
     {
       "id": "modern_industrialization:advanced_item_input_hatch",
       "machines": {
+        "nexus_portal": 1,
         "nexus_builder": 1
       },
       "recipes": [
@@ -2732,6 +3350,7 @@
     {
       "id": "modern_industrialization:advanced_item_output_hatch",
       "machines": {
+        "nexus_portal": 1,
         "nexus_builder": 1
       },
       "recipes": [
@@ -2949,6 +3568,7 @@
     {
       "id": "modern_industrialization:mv_energy_input_hatch",
       "machines": {
+        "nexus_portal": 1,
         "nexus_builder": 1
       },
       "recipes": [

@@ -35,7 +35,7 @@ public final class NexusEmiPlugin implements EmiPlugin {
         }
         int min=parts.stream().mapToInt(p->p.offset().getY()).min().orElseThrow(),max=parts.stream().mapToInt(p->p.offset().getY()).max().orElseThrow();
         var steps=new ArrayList<Component>();for(int y=min;y<=max;y++)steps.add(Component.literal("Layer "+(y-min+1)+": place the shown individual blocks; keep reserved spaces empty."));
-        return new MultiblockGuide(Component.literal(kind.replace('_',' ')),parts,steps,Component.literal(kind.equals("nexus_builder")?"Retain a Construction Program in the input hatch. Target controller: four blocks behind the builder at the same height.":"Native MI item, fluid and energy hatches; frame blocks remain in the world."));
+        return new MultiblockGuide(Component.literal(kind.replace('_',' ')),parts,steps,Component.literal(kind.equals("nexus_builder")?"Place at the centre of the portal bottom layer. Fit three native MI hatches.":"Native MI item, fluid and energy hatches; frame blocks remain in the world."));
     }
     @Override public void register(EmiRegistry registry){
         var category=new EmiRecipeCategory(Nexus.id("nexus_assembly"),EmiStack.of(Nexus.block("nexus_core")));registry.addCategory(category);
@@ -43,6 +43,6 @@ public final class NexusEmiPlugin implements EmiPlugin {
             var controller=EmiStack.of(Nexus.block(Nexus.blueprint(kind).get("controller").getAsString()));registry.addWorkstation(category,controller);
             registry.addRecipe(new MultiblockEmiRecipe(category,Nexus.id("/assembly/"+kind),guide(kind),controller));
         }
-        registry.addRecipe(new EmiInfoRecipe(List.of(EmiStack.of(Nexus.PROGRAM.get()),EmiStack.of(Nexus.block("nexus_builder"))),List.of(Component.literal("Builder: input hatch on the left, output hatch on the right, MV energy hatch directly behind. Insert a Construction Program in its input hatch with the required blocks; the program is retained."),Component.literal("The target portal controller sits four blocks behind the builder at the same height. One real block is placed every ten ticks for 64 EU. Missing materials/power or an obstructed/unloaded position pauses building. Filled machine items are not consumed."),Component.literal("The built portal needs 1,024 EU/t through its own native energy hatch to display its contained animated surface.")),Nexus.id("/info/nexus_builder")));
+        registry.addRecipe(new EmiInfoRecipe(List.of(EmiStack.of(Nexus.PROGRAM.get()),EmiStack.of(Nexus.block("nexus_builder"))),List.of(Component.literal("Builder: input hatch on the left, output hatch on the right, MV energy hatch directly behind. Deposit the Construction Program and blocks into the builder screen or pipe them into its MI input hatch."),Component.literal("The builder stays at the centre of the bottom layer. Use Box to see the footprint. Supply the entire bill and charge 100 million EU before pressing Build. Construction places real blocks around the builder and pauses if obstructed."),Component.literal("The built portal needs 1,024 EU/t through its own native energy hatch to display its contained animated surface.")),Nexus.id("/info/nexus_builder")));
     }
 }

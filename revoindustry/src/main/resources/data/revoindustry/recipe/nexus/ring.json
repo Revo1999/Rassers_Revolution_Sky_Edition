@@ -1,0 +1,29 @@
+{
+  "type": "modern_industrialization:assembler",
+  "eu": 32768,
+  "duration": 400,
+  "item_inputs": [
+    {
+      "item": "revoindustry:nexus_ring_blank",
+      "amount": 1
+    },
+    {
+      "item": "revoindustry:phase_lattice",
+      "amount": 24
+    },
+    {
+      "item": "revoindustry:astral_essence",
+      "amount": 16
+    },
+    {
+      "item": "modern_industrialization:superconductor_wire",
+      "amount": 2
+    }
+  ],
+  "item_outputs": [
+    {
+      "item": "revoindustry:nexus_ring",
+      "amount": 1
+    }
+  ]
+}

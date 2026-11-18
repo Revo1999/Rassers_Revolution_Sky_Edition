@@ -1,0 +1,25 @@
+{
+  "type": "modern_industrialization:chemical_reactor",
+  "eu": 8192,
+  "duration": 800,
+  "item_inputs": [
+    {
+      "item": "revoindustry:nexus_star_dust",
+      "amount": 16
+    },
+    {
+      "item": "revoindustry:nexus_mob_concentrate",
+      "amount": 8
+    },
+    {
+      "item": "revoindustry:nexus_biological_catalyst",
+      "amount": 8
+    }
+  ],
+  "item_outputs": [
+    {
+      "item": "revoindustry:astral_essence",
+      "amount": 8
+    }
+  ]
+}
