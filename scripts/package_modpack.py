@@ -20,10 +20,10 @@ def main():
     assert hashlib.sha512(data).hexdigest()==shader['sha512']
     files.append({'path':'shaderpacks/'+shader['file'],'hashes':{'sha512':shader['sha512'],'sha1':hashlib.sha1(data).hexdigest()},
         'env':{'client':'required','server':'unsupported'},'downloads':[shader['url']],'fileSize':len(data)})
-    index={'formatVersion':1,'game':'minecraft','versionId':'0.1.40-dev-performance-tested',
-        'name':'Rassers Revolution: Sky Edition','summary':"Optimized Revo machines, storage, ports and water rendering, with drill minerals, sludge, salt geology and Wither containment.",
+    index={'formatVersion':1,'game':'minecraft','versionId':'0.1.41-dev-graded-sediment',
+        'name':'Rassers Revolution: Sky Edition','summary':"Graded drill coolant and dry sediment, native MI hatches, electric/digital drilling, animated salt geodes and updated progression quests.",
         'files':files,'dependencies':{'minecraft':'1.21.1','neoforge':'21.1.265'}}
-    output=ROOT.parent/'Rassers-Revolution-Sky-Edition-0.1.40-dev.mrpack'
+    output=ROOT.parent/'Rassers-Revolution-Sky-Edition-0.1.41-dev.mrpack'
     jars=sorted((ROOT/'build/mods').glob('*.jar'))
     assert len(jars)==7
     assert (ROOT/'pack/overrides/config/fancymenu/assets/skyblock_loop.mp4').stat().st_size>1_000_000
@@ -35,7 +35,7 @@ def main():
         for path in jars:
             with zipfile.ZipFile(path) as jar:
                 assert not any('/benchmark/' in n or 'PerformanceBenchmark' in n for n in jar.namelist()), path
-                assert not any(any(marker in n for marker in ['OptimizationGameTests','MineralGameTests','SalternGameTests','SalternUiQa','saltern_test.nbt','HatcheryGameTests','HatcheryUiQa','hatchery_test.nbt','ProgressionBridgeTests','ProgressionBridgeUiQa','IndustrialGridUiQa','ChapterOneGameTests','ChapterOneUiQa','CinematicCapture','DrillInterfaceQa','DrillGameTests','drill_test.nbt','FarmUiQa','FarmGameTests','FarmLightingGameTests','FurnaceGameTests','FurnaceUiQa','furnace_test.nbt','SmallGameTests','SmallUiQa','farm_test.nbt','AchievementsUiQa','AchievementsGameTests','achievements_test.nbt']) for n in jar.namelist())
+                assert not any(any(marker in n for marker in ['OptimizationGameTests','SedimentGameTests','MineralGameTests','SalternGameTests','SalternUiQa','saltern_test.nbt','HatcheryGameTests','HatcheryUiQa','hatchery_test.nbt','ProgressionBridgeTests','ProgressionBridgeUiQa','IndustrialGridUiQa','ChapterOneGameTests','ChapterOneUiQa','CinematicCapture','DrillInterfaceQa','DrillGameTests','drill_test.nbt','FarmUiQa','FarmGameTests','FarmLightingGameTests','FurnaceGameTests','FurnaceUiQa','furnace_test.nbt','SmallGameTests','SmallUiQa','farm_test.nbt','AchievementsUiQa','AchievementsGameTests','achievements_test.nbt']) for n in jar.namelist())
             z.write(path,'overrides/mods/'+path.name)
         # A clean new instance needs the bundled font explicitly selected.
         z.writestr('overrides/options.txt','resourcePacks:["vanilla","mod_resources","file/revo-departure-mono","file/revo-industrial-grid"]\nguiScale:0\n')
@@ -54,6 +54,7 @@ def main():
         z.write(ROOT/'docs/REVO-VACUUMS.md','overrides/REVO-VACUUMS.md')
         z.write(ROOT/'docs/REVO-ACHIEVEMENTS.md','overrides/REVO-ACHIEVEMENTS.md')
         z.write(ROOT/'docs/WITHER-HATCHERY.md','overrides/WITHER-HATCHERY.md')
+        z.write(ROOT/'docs/ELECTRIC-AND-DIGITAL-DRILLS.md','overrides/ELECTRIC-AND-DIGITAL-DRILLS.md')
         z.write(ROOT/'docs/SALT-GEODE.md','overrides/SALT-GEODE.md')
         z.write(ROOT/'docs/DRILL-MINERALS-AND-SLUDGE.md','overrides/DRILL-MINERALS-AND-SLUDGE.md')
         z.write(ROOT/'docs/PERFORMANCE-AUDIT.md','overrides/PERFORMANCE-AUDIT.md')

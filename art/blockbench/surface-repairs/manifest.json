@@ -244,5 +244,30 @@
     "model": "revoextraction/src/main/resources/assets/revoextraction/models/block/sluice/drive.json",
     "source": "art/blockbench/surface-repairs/revoextraction/drive.bbmodel",
     "textureBindings": {}
+  },
+  {
+    "model": "revoextraction/src/main/resources/assets/revoextraction/models/block/electric_drill_body.json",
+    "source": "art/blockbench/electric-digital-drills/electric_drill_body.bbmodel",
+    "textureBindings": {}
+  },
+  {
+    "model": "revoextraction/src/main/resources/assets/revoextraction/models/block/digital_drill.json",
+    "source": "art/blockbench/electric-digital-drills/digital_drill.bbmodel",
+    "textureBindings": {}
+  },
+  {
+    "model": "revoextraction/src/main/resources/assets/revoextraction/models/block/digital_input.json",
+    "source": "art/blockbench/electric-digital-drills/digital_input.bbmodel",
+    "textureBindings": {}
+  },
+  {
+    "model": "revoextraction/src/main/resources/assets/revoextraction/models/block/digital_output.json",
+    "source": "art/blockbench/electric-digital-drills/digital_output.bbmodel",
+    "textureBindings": {}
+  },
+  {
+    "model": "revoextraction/src/main/resources/assets/revoextraction/models/block/digital_energy.json",
+    "source": "art/blockbench/electric-digital-drills/digital_energy.bbmodel",
+    "textureBindings": {}
   }
 ]

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " P ",
+    "PHP",
+    " P "
+  ],
+  "key": {
+    "P": {
+      "item": "modern_industrialization:steel_plate"
+    },
+    "H": {
+      "item": "modern_industrialization:steel_fluid_output_hatch"
+    }
+  },
+  "result": {
+    "id": "revoextraction:steel_drill_fluid_output_hatch",
+    "count": 1
+  }
+}

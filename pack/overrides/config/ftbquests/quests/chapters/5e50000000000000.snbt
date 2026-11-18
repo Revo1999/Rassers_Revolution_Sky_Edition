@@ -331,7 +331,10 @@
       ],
       "description": [
         "The LV Electric Drill uses 16 EU/t for 200 powered ticks per resource. Mixed cycles silver, nickel, lead, bauxite and antimony; select individual deposits in its menu. Mechanical steel extraction supplies the first battery minerals.",
-        "Build it from steel plates, motor, circuits, basic hull and a diamond pickaxe. No exclusive electric-drill metal is required. Hopper insert from the top for upgrades/water; extract resources from other faces."
+        "Build it from steel plates, motor, circuits, basic hull and a diamond pickaxe. No exclusive electric-drill metal is required. Hopper insert from the top for upgrades/water; extract resources from other faces.",
+        "The Electric Geological Drill is now a 3x3x3 multiblock. Assemble 11 Steel Drill Supports, 8 Steel Drill Casings, 1 Steel Drill Core and this controller. Keep the bottom-centre cell empty. All five native MI hatches belong in the top layer to clear the rotating bit.",
+        "Viewed from the front, top layer: back row = Water Input, Sediment Output, Support; middle row = Energy Input, Casing, Item Output; front row = Support, Item Input, Support. Use native steel fluid/item hatches and LV or better energy input. The sediment outlet must face backwards.",
+        "Supply 100 mB fresh cooling water per geological cycle. LV programs produce Good Sediment Water; MV/HV geological programs produce Excellent Sediment Water. Drain before changing grade. Full fluid or item outputs stop work without wasting power or coolant. Retained survey cores still gate rare resources."
       ],
       "tasks": [
         {
@@ -573,11 +576,13 @@
       "y": 9.0,
       "shape": "circle",
       "dependencies": [
-        "5E5000000000000A"
+        "5E5000000000000A",
+        "5E5000000000001A"
       ],
       "description": [
-        "Build the 3 x 3 x 3 Salt Geode Chamber using the EMI guide. Four smoked-glass panels reveal a saline geode, growing submerged crystal buds and electrical harvesting.",
-        "Supply water on the left and 16 EU/t at the rear. Every 20 powered seconds one bucket of water becomes one bucket of salt water. The right hatch outputs it; full output or missing power pauses growth."
+        "Build the 3 x 3 x 3 Salt Geode Chamber using EMI. Five submerged crystal buds now grow and harvest in sequence, with electrical pulses and a small mineral cloud.",
+        "Feed SEAWATER from the sediment-processing Mixer into the left hatch, and 16 EU/t into the rear energy hatch. After 20 powered seconds, 1000 mB seawater becomes 1000 mB concentrated salt water. Extract it on the right. Plain water and raw drill sediment are rejected.",
+        "No starting salt is needed. The retained geode core uses cobblestone, quartz and redstone. Power loss, blocked output or an incomplete shell holds the current growth/harvest pose."
       ],
       "tasks": [
         {
@@ -610,7 +615,8 @@
       ],
       "description": [
         "First build the native Centrifuge through Chapter 6: EBF aluminum/silicon, Electronic Circuits, Large Motors and a Large Pump. The geode can be constructed earlier and its salt water buffered.",
-        "Pipe salt water from the powered geode chamber into the MI Centrifuge and collect Salt Dust with its native recipe. You do not need a new fluid solidifier or a manual salt bootstrap."
+        "Pipe salt water from the powered geode chamber into the MI Centrifuge and collect Salt Dust with its native recipe. You do not need a new fluid solidifier or a manual salt bootstrap.",
+        "Complete route: Steel Drill cooling water -> sediment-laden water -> MI Mixer seawater -> Salt Geode Chamber salt water -> MI Centrifuge Salt Dust. One bucket of salt water produces two dust; no salt-recycling bootstrap is required."
       ],
       "tasks": [
         {
@@ -810,6 +816,114 @@
             "count": 1
           },
           "count": 2,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5E5000000000001A",
+      "title": "Seawater from Drill Sediment",
+      "icon": {
+        "id": "revoindustry:sea_water_bucket",
+        "count": 1
+      },
+      "x": 15.0,
+      "y": 6.0,
+      "shape": "circle",
+      "dependencies": [
+        "5E5000000000000A",
+        "5E4000000000000E"
+      ],
+      "description": [
+        "Vanilla ocean water is the same fluid as ordinary water; the pack adds seawater as a distinct processed fluid. No ocean-biome search or salt ingredient is required.",
+        "Keep the Steel Drill supplied with ordinary cooling water. Its native MI output hatch supplies sediment-laden water. Feed 1000 mB into the native electric MI Mixer: 8 EU/t for 200 base recipe ticks produces 1000 mB seawater.",
+        "Collect a bucket to commission the route, then pipe the Mixer output directly to the Salt Geode Chamber. Raw fluid sediment is not the item Mineral Sludge; do not spend your gem sludge here."
+      ],
+      "tasks": [
+        {
+          "id": "5E5000000001A001",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:electric_mixer",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "5E5000000001A002",
+          "type": "item",
+          "item": {
+            "id": "revoindustry:sea_water_bucket",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5E5000000000001B",
+      "title": "Better Sediment Water",
+      "icon": {
+        "id": "revoindustry:good_drill_sediment_bucket",
+        "count": 1
+      },
+      "x": 15,
+      "y": 9,
+      "shape": "hexagon",
+      "dependencies": [
+        "5E5000000000000B",
+        "5E5000000000001A"
+      ],
+      "description": [
+        "The 3x3 Electric Drill produces Good Sediment Water at LV. In the MI Mixer, combine 1000 mB Good Sediment Water with 1000 mB ordinary water to make 2000 mB seawater (16 EU/t, 200 base ticks).",
+        "MV and HV geological programs instead produce Excellent Sediment Water: 1000 mB plus 3000 mB water makes 4000 mB seawater (32 EU/t, 200 base ticks). Grade changes require an empty sediment hatch. All grades feed the same Salt Geode Chamber and native MI Centrifuge."
+      ],
+      "tasks": [
+        {
+          "id": "5E5000000001B001",
+          "type": "item",
+          "item": {
+            "id": "revoindustry:good_drill_sediment_bucket",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5E5000000000001C",
+      "title": "Compact Digital Drilling",
+      "icon": {
+        "id": "revoextraction:digital_drill",
+        "count": 1
+      },
+      "x": 18,
+      "y": 9,
+      "shape": "hexagon",
+      "dependencies": [
+        "5E5000000000001B"
+      ],
+      "description": [
+        "An optional HV upgrade: craft the Digital Drill with two Highly Advanced Machine Hulls, two Advanced Motors, two Digital Circuits, two Titanium Plates and an Electric Drill. This is a 1x1 machine, powered at 512 EU/t. Existing retained survey core requirements still apply.",
+        "Open Sides for an Iron Furnaces-style six-face layout. Click each absolute world face to cycle Off, blue Item Input, orange Item Output and yellow Energy Input. These settings persist and the world model shows coloured MI hatch textures. Defaults: top input, bottom output, south energy.",
+        "Geological programs produce one Dry Drill Sediment alongside each ore/sludge output. Both outputs must have room before work starts. This drill uses no cooling water and has no sediment fluid outlet.",
+        "Mix one Dry Drill Sediment with 1000 mB ordinary water in the native MI Mixer (32 EU/t, 200 base ticks) to obtain 1000 mB Excellent Sediment Water. Dilute that into seawater as usual. The Glacial Ice bucket program produces no sediment."
+      ],
+      "tasks": [
+        {
+          "id": "5E5000000001C001",
+          "type": "item",
+          "item": {
+            "id": "revoextraction:digital_drill",
+            "count": 1
+          },
+          "count": 1,
           "consume_items": false
         }
       ],

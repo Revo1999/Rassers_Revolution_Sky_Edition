@@ -1,0 +1,46 @@
+{
+  "source": "Modern Industrialization 2.5.11",
+  "authors": [
+    "Azerococo",
+    "Technici4n"
+  ],
+  "license": "MIT",
+  "repository": "https://github.com/AztechMC/Modern-Industrialization",
+  "textures": [
+    {
+      "derivedTexture": "revoextraction/src/main/resources/assets/revoextraction/textures/block/digital_drill_casing.png",
+      "sourceEntry": "assets/modern_industrialization/textures/block/steel_machine_casing.png",
+      "sourceSha256": "29be5027fab6b4f19fc69c4c39550a1211226607fa7f411b152f333a8510d3dc",
+      "sha256": "7f9e4488fa2ad13120bd9a3c487ca87bbb4eeca79a73bf06777b29dabb700225",
+      "modification": "Unmodified native steel casing"
+    },
+    {
+      "derivedTexture": "revoextraction/src/main/resources/assets/revoextraction/textures/block/digital_drill_front.png",
+      "sourceEntry": "assets/modern_industrialization/textures/block/steel_machine_casing.png",
+      "sourceSha256": "29be5027fab6b4f19fc69c4c39550a1211226607fa7f411b152f333a8510d3dc",
+      "sha256": "50b3fb04672d7435907b2046862ac7fd3114f47ce9e2da948e3a00da25b09dae",
+      "modification": "16px recolour; front screen additionally authored locally"
+    },
+    {
+      "derivedTexture": "revoextraction/src/main/resources/assets/revoextraction/textures/block/digital_input.png",
+      "sourceEntry": "assets/modern_industrialization/textures/block/machines/hatch_item/overlay_side.png",
+      "sourceSha256": "275e902fdb064d1140c7ea01c7920c3fe61209fce62721f3885368da25107516",
+      "sha256": "2c4cbac2797218df4d69b6b3c96e1e3c832cceeb0dc5ad3fc5422387b1d4b5eb",
+      "modification": "16px recolour; front screen additionally authored locally"
+    },
+    {
+      "derivedTexture": "revoextraction/src/main/resources/assets/revoextraction/textures/block/digital_output.png",
+      "sourceEntry": "assets/modern_industrialization/textures/block/overlays/output_item.png",
+      "sourceSha256": "006c49b71a47ae79c3207a5c36996716ce045d5c062806c3f9bd151dc422877c",
+      "sha256": "44c53eb225118df33ca96e43fece01578f6df46ec1b0af36942dcdea1282f9ca",
+      "modification": "16px recolour; front screen additionally authored locally"
+    },
+    {
+      "derivedTexture": "revoextraction/src/main/resources/assets/revoextraction/textures/block/digital_energy.png",
+      "sourceEntry": "assets/modern_industrialization/textures/block/machines/hatch_energy/overlay_side.png",
+      "sourceSha256": "24d71a2e305d8097643fdc7e9fc605a9aa597fc2b386ffc6856525097fd41c00",
+      "sha256": "bdfe0451deea7cc0c72368b8b5a431c2dfbab864abc5a4c52b879c62523a9fe0",
+      "modification": "16px recolour; front screen additionally authored locally"
+    }
+  ]
+}

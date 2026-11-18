@@ -11,16 +11,16 @@ public final class DrillMenu extends AbstractContainerMenu {
     private final ContainerData diagnostics;
 
     public DrillMenu(int id, Inventory playerInventory) {
-        this(id, new SimpleContainerData((DrillDiagnostics.SIZE+3)), ContainerLevelAccess.NULL);
+        this(id, new SimpleContainerData((DrillDiagnostics.SIZE+4)), ContainerLevelAccess.NULL);
     }
 
     public DrillMenu(int id, Inventory playerInventory, DrillMachine machine) {
         this(id, new ContainerData() {
             @Override public int get(int index) {
-                return switch(index){case 8->machine.tier().ordinal();case 9->machine.waterAmount();case 10->machine.dryTicks();default->DrillDiagnostics.capture(machine).get(index);};
+                return switch(index){case 8->machine.tier().ordinal();case 9->machine.waterAmount();case 10->machine.dryTicks();case 11->machine.sedimentAmount();default->DrillDiagnostics.capture(machine).get(index);};
             }
             @Override public void set(int index, int value) { }
-            @Override public int getCount() { return (DrillDiagnostics.SIZE+3); }
+            @Override public int getCount() { return (DrillDiagnostics.SIZE+4); }
         }, ContainerLevelAccess.create(machine.getLevel(), machine.getBlockPos()));
     }
 
@@ -28,13 +28,14 @@ public final class DrillMenu extends AbstractContainerMenu {
         super(RevoExtraction.DRILL_MENU.get(), id);
         this.access=access;
         this.diagnostics=data;
-        checkContainerDataCount(data,(DrillDiagnostics.SIZE+3));
+        checkContainerDataCount(data,(DrillDiagnostics.SIZE+4));
         addDataSlots(data);
 
     }
 
     public boolean waterCooled(){return diagnostics.get(8)==DrillTier.STEEL.ordinal();}
     public int water(){return diagnostics.get(9);}
+    public int sediment(){return diagnostics.get(11);}
     public int dryTicks(){return diagnostics.get(10);}
     public int progress() { return Math.clamp(diagnostics.get(0),0,1200); }
     public int rpm() { return diagnostics.get(1); }

@@ -28,6 +28,7 @@ public final class DrillClient {
     }
     @SubscribeEvent public static void renderers(EntityRenderersEvent.RegisterRenderers event) {
         event.registerBlockEntityRenderer(RevoExtraction.MACHINE.get(),Renderer::new);
+        event.registerBlockEntityRenderer(RevoExtraction.FLUID_HATCH_ENTITY.get(),aztech.modern_industrialization.client.machines.MachineBlockEntityRenderer::new);
         event.registerBlockEntityRenderer(RevoExtraction.WATER_TANK_ENTITY.get(),TankRenderer::new);
     }
     public static class TankRenderer implements BlockEntityRenderer<DrillWaterTankEntity>{

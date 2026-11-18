@@ -1,0 +1,12 @@
+{
+  "format_version": "1.9.0",
+  "credit": "Made with Blockbench",
+  "parent": "minecraft:block/block",
+  "casing": "steel",
+  "default_overlays": {
+    "fluid_auto": "modern_industrialization:block/overlays/fluid_auto",
+    "output": "modern_industrialization:block/overlays/output_fluid",
+    "side": "modern_industrialization:block/machines/hatch_fluid/overlay_side"
+  },
+  "loader": "modern_industrialization:machine"
+}

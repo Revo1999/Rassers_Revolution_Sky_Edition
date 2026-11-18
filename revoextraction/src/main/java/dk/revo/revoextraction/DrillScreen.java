@@ -40,6 +40,7 @@ public final class DrillScreen extends AbstractContainerScreen<DrillMenu> {
             g.drawString(font,Component.translatable("gui.revoextraction.water",menu.water(),DrillWaterTankEntity.CAPACITY),103,83,0xFF28596C,false);
             if(menu.dryTicks()>0&&menu.state()!=8)g.drawString(font,Component.translatable("gui.revoextraction.overheat",menu.dryTicks()),12,138,0xFF903E2C,false);
         }
+        if(menu.waterCooled())g.drawString(font,"Sediment: "+menu.sediment()+" / 8000 mB",103,101,0xFF6A553A,false);
         var diagnostics=menu.snapshot();
         int color=menu.state()==1?0xFF38552C:menu.state()==0||menu.state()==5?0xFF844D38:0xFF6F5932;
         g.drawString(font,diagnostics.stateText(),14,42,color,false);

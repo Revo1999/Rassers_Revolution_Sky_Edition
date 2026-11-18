@@ -1,0 +1,17 @@
+{
+	"format_version": "1.9.0",
+	"credit": "Made with Blockbench",
+	"textures": {
+		"1": "revoextraction:block/digital_output"
+	},
+	"elements": [
+		{
+			"name": "configurable_output_face",
+			"from": [0, 0, -0.125],
+			"to": [16, 16, 0],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#1"}
+			}
+		}
+	]
+}

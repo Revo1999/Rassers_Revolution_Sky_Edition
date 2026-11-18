@@ -217,10 +217,11 @@
     {
       "model": "revoextraction/src/main/resources/assets/revoextraction/models/block/steel_drill_body.json",
       "source": "art/blockbench/surface-repairs/revoextraction/steel_drill_body.bbmodel",
-      "revision": "6638830de497322c",
+      "revision": "21f25ddf25c9d299",
       "errors": 0,
-      "warnings": 0,
-      "passed": true
+      "warnings": 93,
+      "passed": true,
+      "note": "Native min-thickness heuristic reports intentional visible-face partitions; separate surface audit passes."
     },
     {
       "model": "revoextraction/src/main/resources/assets/revoextraction/models/block/steel_drill_core.json",

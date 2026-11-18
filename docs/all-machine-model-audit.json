@@ -12,9 +12,9 @@
       "renderedFaces": 4465
     },
     "revoextraction": {
-      "files": 82,
-      "geometryFiles": 43,
-      "renderedFaces": 5242
+      "files": 91,
+      "geometryFiles": 48,
+      "renderedFaces": 5694
     },
     "revogenetics": {
       "files": 2,
@@ -22,9 +22,9 @@
       "renderedFaces": 0
     },
     "revoindustry": {
-      "files": 246,
-      "geometryFiles": 92,
-      "renderedFaces": 1766
+      "files": 255,
+      "geometryFiles": 97,
+      "renderedFaces": 1826
     },
     "revostorage": {
       "files": 4,
@@ -49,8 +49,23 @@
       "exactCrossPartPairs": 0
     },
     {
+      "name": "steel drill body + rear native MI fluid hatch",
+      "samples": 1,
+      "exactCrossPartPairs": 0
+    },
+    {
       "name": "electric drill fan",
       "samples": 36,
+      "exactCrossPartPairs": 0
+    },
+    {
+      "name": "electric 3x3 drill + five native MI hatches",
+      "samples": 36,
+      "exactCrossPartPairs": 0
+    },
+    {
+      "name": "digital drill configurable MI face overlays",
+      "samples": 18,
       "exactCrossPartPairs": 0
     },
     {
@@ -89,8 +104,8 @@
       "exactCrossPartPairs": 0
     },
     {
-      "name": "saline geode: bed + electrodes + growing crystals",
-      "samples": 5,
+      "name": "saline geode: bed + electrodes + five staggered growing/harvesting buds",
+      "samples": 80,
       "exactCrossPartPairs": 0
     },
     {
@@ -155,6 +170,40 @@
   "failures": [],
   "reviewedNearPlanes": [
     {
+      "model": "revoextraction/src/main/resources/assets/revoextraction/models/block/electric_drill_body.json",
+      "a": [
+        54,
+        "coolant_external_port",
+        "east"
+      ],
+      "b": [
+        179,
+        "reservoir_outer_glass__electric_clearance_east_0",
+        "east"
+      ],
+      "gap": 0.05,
+      "area": 1.777778,
+      "a_area": 1.777778,
+      "b_area": 13.888889
+    },
+    {
+      "model": "revoextraction/src/main/resources/assets/revoextraction/models/block/electric_drill_body.json",
+      "a": [
+        57,
+        "spray_nozzle_13",
+        "west"
+      ],
+      "b": [
+        185,
+        "reservoir_inner_glass__electric_clearance_west_0",
+        "west"
+      ],
+      "gap": 0.05,
+      "area": 0.666667,
+      "a_area": 0.666667,
+      "b_area": 13.888889
+    },
+    {
       "model": "revoextraction/src/main/resources/assets/revoextraction/models/block/steel_drill_body.json",
       "a": [
         59,
@@ -209,6 +258,6 @@
       "reason": "Wearable equipment item, not a machine; retained for follow-up."
     }
   ],
-  "nativeMcpRepairs": 48,
+  "nativeMcpRepairs": 53,
   "result": "PASS"
 }

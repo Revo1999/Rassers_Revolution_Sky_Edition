@@ -83,3 +83,13 @@ UVs while removing competing surfaces. No new performance benchmark was run.
 
 Use the manifest's current sources for future edits. Running older asset
 generators directly over these repaired exports would reintroduce the defects.
+
+## Salt/coolant follow-up — 2026-11-18
+
+The Steel Drill now includes a native MI sediment output hatch in its rear-top
+centre cell. The body source was trimmed through MCP to clear the full hatch
+volume. The assembly audit includes this actual casing position. The salt chamber
+now draws five individually staged native crystal models, checked together at
+80 growth/harvest poses. See `SALT-GEODE.md` for the new coolant-to-salt route.
+
+The final follow-up also checks the 3x3 Electric Drill against all five native MI upper-layer hatch casings at 36 rotation poses, plus the Digital Drill against each configurable face overlay in all six orientations. The provenance manifest now covers 53 current MCP sources. UV partitions inherit the original transparent reservoir/port separation; those reviewed transparent pairs are retained.

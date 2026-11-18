@@ -5,6 +5,7 @@ repositories {
     maven { url = 'https://api.modrinth.com/maven' }
 }
 dependencies {
+    compileOnly('maven.modrinth:modern-industrialization:hN58r67E') { transitive=false }
     implementation('com.simibubi.create:create-1.21.1:6.0.10-280:slim') { transitive = false }
     implementation 'net.createmod.ponder:ponder-neoforge:1.0.82+mc1.21.1'
     compileOnly 'dev.engine-room.flywheel:flywheel-neoforge-api-1.21.1:1.0.6'
@@ -42,8 +43,13 @@ tasks.named('test', Test) { useJUnitPlatform() }
 if (providers.gradleProperty('revoDrillTests').isPresent()) {
     sourceSets.main.java.srcDir 'src/gametest/java'
     sourceSets.main.resources.srcDir 'src/gametest/resources'
-    dependencies { runtimeOnly 'dev.engine-room.flywheel:flywheel-neoforge-1.21.1:1.0.6' }
+    dependencies {
+        implementation project(':revoindustry')
+        runtimeOnly 'dev.engine-room.flywheel:flywheel-neoforge-1.21.1:1.0.6'
+        runtimeOnly files(rootProject.file('.local/integration-mods/Modern-Industrialization-2.5.11.jar'),rootProject.file('.local/integration-mods/ironfurnaces-neoforge-1.21.1-4.3.2.jar'),rootProject.file('.local/integration-mods/guideme-21.1.22.jar'))
+    }
     neoForge {
+        mods { revolib { sourceSet project(':revolib').sourceSets.main }; revoindustry { sourceSet project(':revoindustry').sourceSets.main } }
         runs {
             drillTests {
                 type = 'gameTestServer'
@@ -145,6 +151,7 @@ if (providers.gradleProperty('revoMineralTests').isPresent()) {
  }
 }
 tasks.named('jar', Jar) { exclude '**/MineralGameTests*' }
+tasks.named('jar', Jar) { exclude '**/SedimentGameTests*' }
 
 if (providers.gradleProperty('revoOptimizationTests').isPresent()) {
  sourceSets.main.java.srcDir 'src/optimizationtest/java'

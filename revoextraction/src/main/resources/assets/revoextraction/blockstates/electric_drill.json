@@ -1,7 +1,36 @@
 {
   "variants": {
-    "": {
-      "model": "revoextraction:block/electric_drill"
+    "facing=north,formed=false": {
+      "model": "revoextraction:block/electric_drill",
+      "y": 0
+    },
+    "facing=north,formed=true": {
+      "model": "revoextraction:block/empty",
+      "y": 0
+    },
+    "facing=east,formed=false": {
+      "model": "revoextraction:block/electric_drill",
+      "y": 90
+    },
+    "facing=east,formed=true": {
+      "model": "revoextraction:block/empty",
+      "y": 90
+    },
+    "facing=south,formed=false": {
+      "model": "revoextraction:block/electric_drill",
+      "y": 180
+    },
+    "facing=south,formed=true": {
+      "model": "revoextraction:block/empty",
+      "y": 180
+    },
+    "facing=west,formed=false": {
+      "model": "revoextraction:block/electric_drill",
+      "y": 270
+    },
+    "facing=west,formed=true": {
+      "model": "revoextraction:block/empty",
+      "y": 270
     }
   }
 }

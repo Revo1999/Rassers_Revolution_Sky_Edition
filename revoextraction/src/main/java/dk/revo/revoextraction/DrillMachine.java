@@ -32,6 +32,9 @@ public class DrillMachine extends BlockEntity {
     public DrillTier tier(){return getBlockState().is(RevoExtraction.STEEL_CONTROLLER.get())?DrillTier.STEEL:getBlockState().is(RevoExtraction.IRON_CONTROLLER.get())?DrillTier.IRON:DrillTier.WOODEN;}
     public DrillWaterTankEntity waterTank(){return level!=null&&level.hasChunkAt(at(-1,1,0))&&level.getBlockEntity(at(-1,1,0)) instanceof DrillWaterTankEntity tank?tank:null;}
     public int waterAmount(){var tank=waterTank();return tier()==DrillTier.STEEL&&tank!=null?tank.water.getFluidAmount():0;}
+    public DrillSedimentHatch sedimentHatch(){return level!=null&&level.hasChunkAt(at(0,2,-1))&&level.getBlockEntity(at(0,2,-1)) instanceof DrillSedimentHatch hatch?hatch:null;}
+    public int sedimentAmount(){var hatch=sedimentHatch();return hatch==null?0:hatch.amount();}
+    private boolean sedimentBlocked(float rpm){var hatch=sedimentHatch();return tier()==DrillTier.STEEL&&(hatch==null||!hatch.canAccept(Math.max(1,coolantNeeded(rpm))));}
     public int dryTicks(){return dryTicks;}
     public boolean broken(){return broken;}
     public void restoreDamage(boolean seized,int dry){broken=seized;dryTicks=Math.clamp(dry,0,DRY_LIMIT);setChanged();}
@@ -59,6 +62,7 @@ public class DrillMachine extends BlockEntity {
         if(Math.abs(inputSpeed())<tier().minimumRpm) return 6;
         var next=nextOutput();
         if(!ItemHandlerHelper.insertItemStacked(inventory,next,true).isEmpty())return 3;
+        if(sedimentBlocked(inputSpeed()))return 9;
         return tier()==DrillTier.STEEL&&waterAmount()<coolantNeeded(Math.abs(inputSpeed()))?7:1;
     }
     private boolean matchesBlock(int x,int y,int z,BlockState s){
@@ -95,8 +99,10 @@ public class DrillMachine extends BlockEntity {
             facingIssue=new FacingIssue(DrillLayout.Part.INPUT,inputPos,facing().getClockWise());
         else if(level.getBlockState(hatchPos).getValue(DrillHatch.FACING)!=facing().getCounterClockWise())
             facingIssue=new FacingIssue(DrillLayout.Part.HATCH,hatchPos,facing().getCounterClockWise());
+        else if(tier()==DrillTier.STEEL&&(sedimentHatch()==null||sedimentHatch().orientation.outputDirection!=facing().getOpposite()))
+            facingIssue=new FacingIssue(DrillLayout.Part.FLUID_HATCH,at(0,2,-1),facing().getOpposite());
         if(facingIssue!=null){dismantle();structureState=StructureState.WRONG_FACING;return false;}
-        structureState=StructureState.VALID;setFormation(true);return true;
+        structureState=StructureState.VALID;setFormation(true);if(tier()==DrillTier.STEEL)sedimentHatch().link(aztech.modern_industrialization.machines.models.MachineCasings.STEEL);return true;
     }
     private void setFormation(boolean value){
         setFormation(facing(),value);
@@ -107,7 +113,7 @@ public class DrillMachine extends BlockEntity {
             if(s.hasProperty(DrillPart.FORMED) && s.getValue(DrillPart.FORMED)!=value) level.setBlock(p,s.setValue(DrillPart.FORMED,value),3);
         }
     }
-    public void dismantle(){if(level!=null&&!level.isClientSide){setFormation(false);if(facingIssue!=null&&facingIssue.part()==DrillLayout.Part.CONTROLLER)setFormation(facingIssue.expected(),false);work=0;setSpeed(0);setChanged();}}
+    public void dismantle(){if(level!=null&&!level.isClientSide){if(tier()==DrillTier.STEEL&&sedimentHatch()!=null)sedimentHatch().unlink();setFormation(false);if(facingIssue!=null&&facingIssue.part()==DrillLayout.Part.CONTROLLER)setFormation(facingIssue.expected(),false);work=0;setSpeed(0);setChanged();}}
     public void dropContents(){for(int i=0;i<9;i++)Containers.dropItemStack(level,worldPosition.getX(),worldPosition.getY(),worldPosition.getZ(),inventory.extractItem(i,64,false));}
     public String status(){
         var diagnostics=DrillDiagnostics.capture(this);
@@ -133,6 +139,7 @@ public class DrillMachine extends BlockEntity {
     private boolean cool(float rpm){
         if(tier()!=DrillTier.STEEL)return true;
         int needed=coolantNeeded(rpm);var tank=waterTank();
+        if(sedimentBlocked(rpm)){setSpeed(0);return false;}
         if(tank==null||tank.water.getFluidAmount()<Math.max(1,needed)){
             dryTicks++;setChanged();
             if(dryTicks>=DRY_LIMIT){broken=true;work=0;setSpeed(0);sendUpdate();
@@ -144,6 +151,7 @@ public class DrillMachine extends BlockEntity {
             return false;
         }
         tank.water.drain(needed,net.neoforged.neoforge.fluids.capability.IFluidHandler.FluidAction.EXECUTE);
+        sedimentHatch().acceptCoolant(needed);
         coolantRemainder=(coolantRemainder+Math.min(Math.abs(rpm),256)*WATER_PER_CYCLE)%tier().workPerItem;
         if(dryTicks!=0){dryTicks=0;sendUpdate();}return true;
     }
@@ -164,6 +172,7 @@ public class DrillMachine extends BlockEntity {
             m.ejectOutput();
             if(!ItemHandlerHelper.insertItemStacked(m.inventory,result,true).isEmpty()){m.setSpeed(0);return;}
         }
+        if(m.sedimentBlocked(rpm)){m.setSpeed(0);return;}
         m.setSpeed(rpm);
         if(!m.cool(rpm))return; // Dry running spins but never produces free output.
         if(m.tier()==DrillTier.STEEL&&l.getGameTime()%3==0&&l instanceof net.minecraft.server.level.ServerLevel server){

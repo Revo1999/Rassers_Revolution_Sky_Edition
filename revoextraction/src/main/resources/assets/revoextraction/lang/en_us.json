@@ -102,5 +102,12 @@
   "gui.revoextraction.sluice_status_3": "Needs pumped water",
   "gui.revoextraction.sluice_status_4": "Needs gravel",
   "gui.revoextraction.sluice_status_5": "Collection tray full",
-  "gui.revoextraction.sluice_status_6": "Washing gravel"
+  "gui.revoextraction.sluice_status_6": "Washing gravel",
+  "block.revoextraction.steel_drill_fluid_output_hatch": "Drill Sediment Output Hatch",
+  "gui.revoextraction.state.sediment_blocked": "Sediment output full",
+  "gui.revoextraction.hint.sediment_blocked": "Drain the rear-top fluid hatch. Drilling and cooling pause while the output is blocked.",
+  "gui.revoextraction.part.fluid_hatch": "sediment output hatch",
+  "block.revoextraction.digital_drill": "Digital Geological Drill",
+  "item.revoextraction.dry_drill_sediment": "Dry Drill Sediment",
+  "emi.category.revoextraction.electric_drill_assembly": "Electric Drill Construction"
 }

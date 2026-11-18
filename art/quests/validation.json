@@ -1,9 +1,10 @@
 {
   "chapters": 14,
-  "quests": 287,
+  "quests": 291,
   "newQuests": 83,
+  "sedimentAndDrillQuestsVerified": 4,
   "existingQuestsPreserved": 204,
-  "uniqueIds": 663,
+  "uniqueIds": 672,
   "acyclicDependencies": true,
   "newItemReferencesResolved": true,
   "nonConsumingItemTasks": true,
@@ -29,11 +30,11 @@
     },
     {
       "title": "Chapter 4: Steel and Coolant",
-      "quests": 13
+      "quests": 14
     },
     {
       "title": "Progression Routes: Biology to Electricity",
-      "quests": 25
+      "quests": 28
     },
     {
       "title": "Wither Containment",

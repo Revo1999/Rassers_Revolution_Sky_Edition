@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "MCM",
+    "HDH",
+    "TCT"
+  ],
+  "key": {
+    "M": {
+      "item": "modern_industrialization:advanced_motor"
+    },
+    "C": {
+      "item": "modern_industrialization:digital_circuit"
+    },
+    "H": {
+      "item": "modern_industrialization:highly_advanced_machine_hull"
+    },
+    "D": {
+      "item": "revoextraction:electric_drill"
+    },
+    "T": {
+      "item": "modern_industrialization:titanium_plate"
+    }
+  },
+  "result": {
+    "id": "revoextraction:digital_drill"
+  }
+}

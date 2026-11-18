@@ -1,0 +1,39 @@
+{
+  "result": "PASS",
+  "appliesTo": [
+    "Steel Drill sediment output",
+    "Electric Drill: all five top-layer native MI hatches"
+  ],
+  "hatchCell": "rear-top centre (0,2,-1)",
+  "normalizedHatchBounds": {
+    "from": [
+      5.333333333333333,
+      10.666666666666666,
+      10.666666666666666
+    ],
+    "to": [
+      10.666666666666666,
+      16.0,
+      16.0
+    ]
+  },
+  "parts": [
+    {
+      "part": "drill_bit",
+      "fullTurnSamples": 360,
+      "continuousVerticalBound": 8.16667,
+      "minimumVerticalGapModelUnits": 2.499997,
+      "minimumVerticalGapWorldBlocks": 0.468749,
+      "collisions": 0
+    },
+    {
+      "part": "drive_gear",
+      "fullTurnSamples": 360,
+      "continuousVerticalBound": 9.885618,
+      "minimumVerticalGapModelUnits": 0.781049,
+      "minimumVerticalGapWorldBlocks": 0.146447,
+      "collisions": 0
+    }
+  ],
+  "proof": "Continuous Y separation at every rotation angle, plus 360 sampled bounding-box tests per component."
+}

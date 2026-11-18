@@ -1,0 +1,23 @@
+{
+  "type": "modern_industrialization:mixer",
+  "eu": 32,
+  "duration": 200,
+  "item_inputs": [
+    {
+      "item": "revoextraction:dry_drill_sediment",
+      "amount": 1
+    }
+  ],
+  "fluid_inputs": [
+    {
+      "fluid": "minecraft:water",
+      "amount": 1000
+    }
+  ],
+  "fluid_outputs": [
+    {
+      "fluid": "revoindustry:excellent_drill_sediment",
+      "amount": 1000
+    }
+  ]
+}

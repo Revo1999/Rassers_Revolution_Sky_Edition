@@ -24,7 +24,7 @@ public final class SalternPort extends BlockEntity {
         public int getTanks(){return 1;}
         public FluidStack getFluidInTank(int tank){var c=controller();return c==null?FluidStack.EMPTY:(part()==Saltern.Part.WATER?c.water:c.brine).getFluid().copy();}
         public int getTankCapacity(int tank){return Saltern.CAPACITY;}
-        public boolean isFluidValid(int tank,FluidStack fluid){return part()==Saltern.Part.WATER&&fluid.is(Fluids.WATER)&&controller()!=null;}
+        public boolean isFluidValid(int tank,FluidStack fluid){return part()==Saltern.Part.WATER&&fluid.is(Saltern.SEA_WATER.get())&&controller()!=null;}
         public int fill(FluidStack fluid,FluidAction action){var c=controller();return c!=null&&part()==Saltern.Part.WATER?c.water.fill(fluid,action):0;}
         public FluidStack drain(FluidStack fluid,FluidAction action){var c=controller();return c!=null&&part()==Saltern.Part.BRINE?c.brine.drain(fluid,action):FluidStack.EMPTY;}
         public FluidStack drain(int amount,FluidAction action){var c=controller();return c!=null&&part()==Saltern.Part.BRINE?c.brine.drain(amount,action):FluidStack.EMPTY;}

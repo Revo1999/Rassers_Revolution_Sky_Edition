@@ -67,6 +67,10 @@ def verify():
         for item in [q['icon']['id'],*[t['item']['id'] for t in q['tasks'] if t['type']=='item']]:
             assert item in resources,'Unknown item/model reference '+item+' in '+q['title']
             assert 'quarry' not in item and 'nexus' not in item
+    addedSedimentQuests=['5E4000000000000E','5E5000000000001A','5E5000000000001B','5E5000000000001C']
+    for ident in addedSedimentQuests:
+        q=quests[ident]
+        for item in [q['icon']['id'],*[t['item']['id'] for t in q['tasks'] if t['type']=='item']]:assert item in resources,'Unknown sediment quest item '+item
     assert len(newquests)==83
     assert '5EC0000000000015' in quests['5E50000000000014']['dependencies']
     # Crucial bootstrap ordering: EBF before aluminum/electrolyzer, never the reverse.
@@ -81,7 +85,7 @@ def verify():
     assert '5EB000000000000B' not in ancestors('5EB0000000000008')
     assert '5EB000000000000E' not in ancestors('5EB000000000000D')
     assert '5EB000000000000E' in ancestors('5EB0000000000010')
-    result={'chapters':len(chapters),'quests':len(quests),'newQuests':83,'existingQuestsPreserved':preserved,'uniqueIds':len(seen),'acyclicDependencies':True,'newItemReferencesResolved':True,'nonConsumingItemTasks':True,'newMaterialRewards':0,'fluidTasks':'explicit self-reported commissioning checkmarks','liveSurvivalPlaythrough':'not performed','chaptersSummary':[{'title':c['title'],'quests':len(c['quests'])} for c in chapters]}
+    result={'chapters':len(chapters),'quests':len(quests),'newQuests':83,'sedimentAndDrillQuestsVerified':4,'existingQuestsPreserved':preserved,'uniqueIds':len(seen),'acyclicDependencies':True,'newItemReferencesResolved':True,'nonConsumingItemTasks':True,'newMaterialRewards':0,'fluidTasks':'explicit self-reported commissioning checkmarks','liveSurvivalPlaythrough':'not performed','chaptersSummary':[{'title':c['title'],'quests':len(c['quests'])} for c in chapters]}
     out=ROOT/'art/quests';out.mkdir(parents=True,exist_ok=True);(out/'validation.json').write_text(json.dumps(result,indent=2)+'\n',encoding='utf-8')
     print(json.dumps(result,indent=2))
 if __name__=='__main__':verify()

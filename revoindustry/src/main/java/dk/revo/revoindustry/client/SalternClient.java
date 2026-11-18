@@ -21,10 +21,16 @@ public final class SalternClient implements BlockEntityRenderer<SalternControlle
     public SalternClient(BlockEntityRendererProvider.Context c){}
     private static final java.util.Map<String,ModelResourceLocation> MODEL_IDS=new java.util.concurrent.ConcurrentHashMap<>();
     public static ModelResourceLocation model(String name){return MODEL_IDS.computeIfAbsent(name,n->ModelResourceLocation.standalone(Saltern.id("block/"+n)));}
-    @SubscribeEvent public static void models(ModelEvent.RegisterAdditional e){for(var n:new String[]{"geode_rock_bed","geode_crystals","geode_electrodes","geode_water_volume"})e.register(model(n));}
+    @SubscribeEvent public static void models(ModelEvent.RegisterAdditional e){for(var n:new String[]{"geode_rock_bed","geode_crystals","geode_electrodes","geode_water_volume"})e.register(model(n));for(int i=0;i<5;i++)e.register(model("geode_crystal_"+i));}
     @SubscribeEvent public static void renderers(EntityRenderersEvent.RegisterRenderers e){e.registerBlockEntityRenderer(Saltern.ENTITY.get(),SalternClient::new);}
     @SubscribeEvent public static void screens(RegisterMenuScreensEvent e){e.register(Saltern.MENU.get(),SalternScreen::new);}
     @SubscribeEvent public static void fluids(RegisterClientExtensionsEvent e){e.registerFluidType(new IClientFluidTypeExtensions(){public ResourceLocation getStillTexture(){return ResourceLocation.withDefaultNamespace("block/water_still");}public ResourceLocation getFlowingTexture(){return ResourceLocation.withDefaultNamespace("block/water_flow");}public int getTintColor(){return 0xFFC1DCE7;}},Saltern.SALT_WATER_TYPE.get());}
+    @SubscribeEvent public static void seaFluid(RegisterClientExtensionsEvent e){e.registerFluidType(new IClientFluidTypeExtensions(){public ResourceLocation getStillTexture(){return ResourceLocation.withDefaultNamespace("block/water_still");}public ResourceLocation getFlowingTexture(){return ResourceLocation.withDefaultNamespace("block/water_flow");}public int getTintColor(){return 0xFF4D9AB3;}},Saltern.SEA_WATER_TYPE.get());}
+    @SubscribeEvent public static void sedimentFluid(RegisterClientExtensionsEvent e){e.registerFluidType(new IClientFluidTypeExtensions(){public ResourceLocation getStillTexture(){return ResourceLocation.withDefaultNamespace("block/water_still");}public ResourceLocation getFlowingTexture(){return ResourceLocation.withDefaultNamespace("block/water_flow");}public int getTintColor(){return 0xFF89765B;}},Saltern.SEDIMENT_TYPE.get());}
+    @SubscribeEvent public static void gradedSedimentFluids(RegisterClientExtensionsEvent e){
+        e.registerFluidType(new IClientFluidTypeExtensions(){public ResourceLocation getStillTexture(){return ResourceLocation.withDefaultNamespace("block/water_still");}public ResourceLocation getFlowingTexture(){return ResourceLocation.withDefaultNamespace("block/water_flow");}public int getTintColor(){return 0xFFA47E4B;}},Saltern.GOOD_SEDIMENT_TYPE.get());
+        e.registerFluidType(new IClientFluidTypeExtensions(){public ResourceLocation getStillTexture(){return ResourceLocation.withDefaultNamespace("block/water_still");}public ResourceLocation getFlowingTexture(){return ResourceLocation.withDefaultNamespace("block/water_flow");}public int getTintColor(){return 0xFFB99D51;}},Saltern.EXCELLENT_SEDIMENT_TYPE.get());
+    }
     public boolean shouldRenderOffScreen(SalternController c){return true;}
     public AABB getRenderBoundingBox(SalternController c){return new AABB(c.getBlockPos()).inflate(3);}
     private static void draw(String name,PoseStack pose,MultiBufferSource buffers,RenderType type,int light,int overlay,float r,float g,float b){var mc=Minecraft.getInstance();mc.getBlockRenderer().getModelRenderer().renderModel(pose.last(),buffers.getBuffer(type),null,mc.getModelManager().getModel(model(name)),r,g,b,light,overlay);}
@@ -35,10 +41,14 @@ public final class SalternClient implements BlockEntityRenderer<SalternControlle
         draw("geode_rock_bed",pose,buffers,opaque,light,overlay,1,1,1);
         draw("geode_electrodes",pose,buffers,opaque,light,overlay,1,1,1);
         if(c.activeBatch()){
-            double clock=c.progress()+(c.status()==4?partial:0);float growth=.05f+.95f*Math.min(1,(float)clock/320);
-            if(clock>350)growth*=Math.max(.04f,1-(clock-350)/50f);
-            pose.pushPose();pose.translate(.5,.1,.5);pose.scale(.9f,growth,.9f);pose.translate(-.5,0,-.5);draw("geode_crystals",pose,buffers,opaque,innerLight,overlay,1,1,1);pose.popPose();
-            if(c.status()==4&&c.progress()%12<5){
+            float clock=c.animationProgress(partial);float growth=SalternAnimation.growth(clock,2);
+            float[][] centres={{5/16f,6/16f},{10/16f,10/16f},{8/16f,6/16f},{11/16f,5/16f},{7/16f,11/16f}};
+            for(int bud=0;bud<5;bud++){
+                float width=SalternAnimation.width(clock,bud),height=SalternAnimation.height(clock,bud);
+                pose.pushPose();pose.translate(bud==0?1/16f:0,0,bud==4?-1/16f:0);pose.translate(centres[bud][0],2/16f,centres[bud][1]);pose.scale(width,height,width);pose.translate(-centres[bud][0],-2/16f,-centres[bud][1]);
+                draw("geode_crystal_"+bud,pose,buffers,opaque,innerLight,overlay,1,1,1);pose.popPose();
+            }
+            if(c.status()==4&&(int)clock%18<5){
                 var v=buffers.getBuffer(RenderType.lightning());var matrix=pose.last().pose();
                 float wobble=(float)Math.sin(Math.floor(clock/3)*2.4)*.07f;
                 for(int electrode=0;electrode<2;electrode++){float x=electrode==0?.08f:.92f;

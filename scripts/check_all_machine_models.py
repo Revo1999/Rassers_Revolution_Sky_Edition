@@ -62,7 +62,7 @@ def main():
   # Their deliberate gear terraces are 0.05 scene units / 0.15 world units apart.
   threshold=.08/3 if p.stem in ['crank','mechanical_sluice'] else .08
   for h in near_faces(fs,threshold):
-   names={h['a'][1],h['b'][1]}
+   names={h['a'][1].split('__electric_clearance')[0],h['b'][1].split('__electric_clearance')[0]}
    reviewed=any(names==set(pair) for pair in accepted)
    row={'model':p.relative_to(ROOT).as_posix(),**h}
    if '/item/elite_feeding_helmet.json' in p.as_posix():
@@ -79,9 +79,30 @@ def main():
    fs+=part(f'revoextraction:block/{tier}_drill_drill_bit','bit',rotation(1,a),pivot=(8,6,8))
    fs+=part(f'revoextraction:block/{tier}_drill_drive_gear','gear',rotation(0,-a),pivot=(46/3,8,8));findings+=cross(fs)
   record(tier+' drill',36,findings)
+ # Native MI supplies a full-block hatch at the rear-top cell. Check its
+ # casing against the trimmed special-rendered body in the same normalized space.
+ fixture={'elements':[{'name':'native MI fluid hatch casing','from':[16/3,32/3,32/3],'to':[32/3,16,16],'faces':{n:{'texture':'fixture'} for n in ['east','west','north','south','up','down']}}]}
+ hatch=faces(fixture)
+ for f in hatch:f['index']=('sediment hatch',f['index'])
+ record('steel drill body + rear native MI fluid hatch',1,cross(part('revoextraction:block/steel_drill_body','body')+hatch))
  findings=[]
  for a in range(0,360,10):findings+=cross(part('revoextraction:block/electric_drill','body')+part('revoextraction:block/electric_drill_fan','fan',rotation(2,a),pivot=(8,8,0)))
  record('electric drill fan',36,findings)
+ # Five native full-block hatches surround the electric rig's roof.
+ boxes=[([16/3,32/3,32/3],[32/3,16,16]),([32/3,32/3,16/3],[16,16,32/3]),([16/3,32/3,0],[32/3,16,16/3]),([0,32/3,16/3],[16/3,16,32/3]),([0,32/3,32/3],[16/3,16,16])]
+ hatches=[]
+ for i,(lo,hi) in enumerate(boxes):
+  fs=faces({'elements':[{'name':'MI hatch '+str(i),'from':lo,'to':hi,'faces':{n:{'texture':'fixture'} for n in ['east','west','north','south','up','down']}}]})
+  for f in fs:f['index']=('hatch'+str(i),f['index'])
+  hatches+=fs
+ findings=[]
+ for a in range(0,360,10):findings+=cross(part('revoextraction:block/electric_drill_body','body')+hatches+part('revoextraction:block/steel_drill_drill_bit','bit',rotation(1,a),pivot=(8,6,8))+part('revoextraction:block/steel_drill_drive_gear','gear',rotation(0,-a),pivot=(46/3,8,8)))
+ record('electric 3x3 drill + five native MI hatches',36,findings)
+ findings=[]
+ for mode in ['input','output','energy']:
+  for axis,angle in [(1,0),(1,90),(1,180),(1,270),(0,90),(0,-90)]:findings+=cross(part('revoextraction:block/digital_drill','body')+part('revoextraction:block/digital_'+mode,'configured face',rotation(axis,angle),pivot=(8,8,8)))
+ record('digital drill configurable MI face overlays',18,findings)
+
  for kind in ['greenhouse','tree_grower','mob_harvester','iron_greenhouse','steel_tree_grower','steel_mob_harvester']:
   fs=part('revocultivation:block/'+kind+'_body','body')
   if kind in ['iron_greenhouse','steel_tree_grower']:fs+=part('revocultivation:block/'+kind+'_glass','glass')
@@ -106,11 +127,15 @@ def main():
  record('mechanical sluice: feeder, three bodies and seven moving parts',36,findings)
  # Water/geode composites include all growth and water-height extrema.
  findings=[]
- for g in [.05,.25,.5,.75,1]:
+ for tick in range(0,400,5):
   fs=part('revoindustry:block/geode_rock_bed','bed')+part('revoindustry:block/geode_electrodes','electrodes')
-  fs+=part('revoindustry:block/geode_crystals','crystals',np.diag([.9,g,.9]),offset=(.8,1.6,.8))
+  def smooth(v):v=min(1,max(0,v));return v*v*(3-2*v)
+  centres=[(5,6),(10,10),(8,6),(11,5),(7,11)]
+  for i,(x,z) in enumerate(centres):
+   growth=.025+.975*smooth((tick-i*18)/(300-i*18));harvest=smooth((tick-330-i*8)/28);height=growth*(1-.98*harvest);width=(.65+.25*growth)*(1-.65*harvest)*(.55 if i==3 else 1)
+   fs+=part('revoindustry:block/geode_crystal_'+str(i),'bud'+str(i),np.diag([width,height,width]),pivot=(x,2,z),offset=(1 if i==0 else 0,0,-1 if i==4 else 0))
   findings+=cross(fs)
- record('saline geode: bed + electrodes + growing crystals',5,findings)
+ record('saline geode: bed + electrodes + five staggered growing/harvesting buds',80,findings)
  findings=[];floorClearance=float('inf');ceilingClearance=float('inf')
  for tick in range(0,2400,10):
   f=min(1,tick/2400);rock=math.sin(tick*(.09+.2*f))*(1+f*9);yaw=math.sin(tick*.045)*f*7;pulse=1+math.sin(tick*.14)*f*.035

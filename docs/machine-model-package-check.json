@@ -1,9 +1,30 @@
 {
   "result": "PASS",
   "revoJars": 7,
-  "exactSourceAssetMatches": 837,
-  "pack": "Rassers-Revolution-Sky-Edition-0.1.40-dev.mrpack",
-  "packSha256": "5adc1af0b5c449692e402edb3bcffc8dbd3c580f6740dd7392e68f9db46f297d",
+  "exactSourceAssetMatches": 1298,
+  "pack": "Rassers-Revolution-Sky-Edition-0.1.41-dev.mrpack",
+  "packSha256": "3aa6676caed9a2e3bcb2a0e9a60e4acd7452b9c95f7815a667232407e547b25f",
   "nativeSourcesExcludedFromJars": true,
-  "auditGuideBundled": true
+  "qaHelpersExcludedFromJars": true,
+  "auditGuideBundled": true,
+  "drillGuideBundled": true,
+  "nativeGameTests": {
+    "drillSedimentAndMiIntegration": 14,
+    "saltGeode": 8,
+    "progressionRegression": 19
+  },
+  "graphicalQa": "PASS: fresh isolated save; native coolant-to-salt pipeline and electric/digital drill models/UI",
+  "modelAudit": {
+    "result": "PASS",
+    "jsonModels": 470,
+    "geometryModels": 213,
+    "assemblies": 24,
+    "currentMcpExports": 53
+  },
+  "questValidation": {
+    "quests": 291,
+    "idsPreserved": true,
+    "acyclic": true,
+    "newSedimentQuestItemReferencesResolved": true
+  }
 }

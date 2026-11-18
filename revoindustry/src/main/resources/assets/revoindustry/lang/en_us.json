@@ -87,7 +87,7 @@
   "emi.category.revoindustry.wither_assembly": "Wither Hatchery Construction",
   "emi.category.revoindustry.wither_ritual": "Wither Egg Ritual",
   "block.revoindustry.salt_geode_chamber": "Salt Geode Chamber",
-  "block.revoindustry.geode_water_input": "Geode Water Input Hatch",
+  "block.revoindustry.geode_water_input": "Geode Seawater Input Hatch",
   "block.revoindustry.geode_brine_output": "Geode Salt Water Output Hatch",
   "block.revoindustry.geode_energy_hatch": "Geode Energy Hatch",
   "block.revoindustry.saline_geode": "Saline Geode Core",
@@ -148,5 +148,18 @@
   "block.revoindustry.nexus_builder": "Nexus Builder",
   "item.revoindustry.nexus_construction_program": "Nexus Construction Program",
   "block.revoindustry.nexus_portal": "Nexus Portal",
-  "emi.category.revoindustry.nexus_assembly": "Nexus Multiblock Assembly"
+  "emi.category.revoindustry.nexus_assembly": "Nexus Multiblock Assembly",
+  "block.revoindustry.sea_water": "Seawater",
+  "item.revoindustry.sea_water_bucket": "Seawater Bucket",
+  "fluid_type.revoindustry.sea_water": "Seawater",
+  "block.revoindustry.drill_sediment": "Sediment-laden Water",
+  "fluid_type.revoindustry.drill_sediment": "Sediment-laden Water",
+  "item.revoindustry.drill_sediment_bucket": "Sediment-laden Water Bucket",
+  "block.revoindustry.good_drill_sediment": "Good Sediment Water",
+  "fluid_type.revoindustry.good_drill_sediment": "Good Sediment Water",
+  "item.revoindustry.good_drill_sediment_bucket": "Good Sediment Water Bucket",
+  "block.revoindustry.excellent_drill_sediment": "Excellent Sediment Water",
+  "fluid_type.revoindustry.excellent_drill_sediment": "Excellent Sediment Water",
+  "item.revoindustry.excellent_drill_sediment_bucket": "Excellent Sediment Water Bucket",
+  "config.jade.plugin_revoindustry.nexus_status": "Nexus machines"
 }

@@ -7,9 +7,11 @@ keep their existing recipes, models and behaviour.
 ## Building and running
 
 Use the interactive Steel Drill construction recipe in EMI. Place 12 supports,
-9 casings, one core, controller, shaft input, output hatch and water tank. Keep the
+8 casings, one core, controller, shaft input, item output hatch, water tank and
+one native MI sediment output hatch. Keep the
 bottom centre empty. The tank replaces the left-middle casing above the output
-hatch. Controller and shaft stay centred in the middle layer; the hatch reaches
+hatch. Replace the rear-top centre casing with the sediment hatch, with its
+MI output face pointing outward (away from the front controller). Controller and shaft stay centred in the middle layer; the item output hatch reaches
 the ground. Face the shaft and item hatch outward, as shown in EMI.
 
 Supply at least **64 RPM** and **16 SU/RPM**: **1024 SU at 64 RPM**. Water wheels
@@ -37,7 +39,18 @@ antimony establish native battery alloy before the first LV hull. See
 ## Cooling and repair
 
 Cooling consumes **100 mB per 600 rotational work**, distributed across working
-ticks with a persistent fractional remainder. Water also pays for partial work;
+ticks with a persistent fractional remainder. Every millibucket consumed becomes
+one millibucket of **Sediment-laden Water** in the native MI output hatch. Its
+8000 mB output tank uses MI inventory, menu, fluid locking and automatic extraction.
+A full or incompatible locked output pauses before consuming coolant or adding
+work/dry damage; draining the hatch resumes production. This fluid is separate
+from the item Mineral Sludge.
+
+Use the native MI Mixer at 8 EU/t for 200 base ticks to turn 1000 mB of this
+fluid into 1000 mB Seawater. Feed that to the Salt Geode Chamber, then centrifuge
+the resulting salt water for salt. No salt ingredient is needed to start.
+
+Water also pays for partial work;
 an item boundary can leave cooling already spent on the next cycle. Empty or
 insufficient coolant stops production immediately while the driven spindle
 attempts to run. After **100 dry-running ticks (five seconds)** it seizes.

@@ -17,17 +17,28 @@ import net.neoforged.neoforge.fluids.capability.templates.FluidTank;
 import dk.revo.revoindustry.hatchery.*;
 
 public final class SalternController extends BlockEntity implements MenuProvider {
-    public final FluidTank water=new FluidTank(Saltern.CAPACITY,f->f.is(Fluids.WATER)){protected void onContentsChanged(){setChanged();}};
+    public final FluidTank water=new FluidTank(Saltern.CAPACITY,f->f.is(Saltern.SEA_WATER.get())){protected void onContentsChanged(){setChanged();}};
     public final FluidTank brine=new FluidTank(Saltern.CAPACITY,f->f.is(Saltern.SALT_WATER.get())){protected void onContentsChanged(){setChanged();}};
     private int energy,progress,status,cycles;
     private boolean activeBatch,exporting;
     private long lastTick=Long.MIN_VALUE;
+    private long animationSyncTick;
     private String problem="Incomplete structure";
     public SalternController(BlockPos p,BlockState s){super(Saltern.ENTITY.get(),p,s);}
     public Direction facing(){return getBlockState().getValue(HatcheryBlock.FACING);}
     public BlockPos at(int x,int y,int z){return SalternLayout.at(worldPosition,facing(),x,y,z);}
     public int energy(){return energy;}public int progress(){return progress;}public int status(){return status;}public int cycles(){return cycles;}public boolean activeBatch(){return activeBatch;}public String problem(){return problem;}
     public int visibleWater(){return Math.min(1000,water.getFluidAmount()+(activeBatch?1000:0));}
+    public float animationProgress(float partial){
+        if(level==null||!level.isClientSide||status!=4||!activeBatch)return progress;
+        return Math.min(Saltern.DURATION-1,progress+Math.clamp((float)(level.getGameTime()-animationSyncTick)+partial,0,4));
+    }
+    public void clientTick(){
+        if(level==null||!level.isClientSide||status!=4||!activeBatch||level.getGameTime()%4!=0)return;
+        float time=animationProgress(0);if(time<330)return;
+        var centre=at(0,1,1);
+        level.addParticle(net.minecraft.core.particles.ParticleTypes.END_ROD,centre.getX()+.3+level.random.nextDouble()*.4,centre.getY()+.25+level.random.nextDouble()*.35,centre.getZ()+.3+level.random.nextDouble()*.4,(level.random.nextDouble()-.5)*.025,-.012,(level.random.nextDouble()-.5)*.025);
+    }
     public boolean validate(){
         if(level==null)return false;
         for(var cell:SalternLayout.cells()){
@@ -60,7 +71,10 @@ public final class SalternController extends BlockEntity implements MenuProvider
     private int syncProgress=-10,syncStatus=-1,syncWater=-1,syncBrine=-1,syncCycles=-1;
     private void sync(){if(syncStatus!=status||Math.abs(syncProgress-progress)>=4||syncWater!=water.getFluidAmount()||syncBrine!=brine.getFluidAmount()||syncCycles!=cycles){syncStatus=status;syncProgress=progress;syncWater=water.getFluidAmount();syncBrine=brine.getFluidAmount();syncCycles=cycles;level.sendBlockUpdated(worldPosition,getBlockState(),getBlockState(),2);setChanged();}}
     protected void saveAdditional(CompoundTag t,HolderLookup.Provider r){super.saveAdditional(t,r);t.put("Water",water.writeToNBT(r,new CompoundTag()));t.put("Brine",brine.writeToNBT(r,new CompoundTag()));t.putBoolean("Batch",activeBatch);t.putInt("Progress",progress);t.putInt("Energy",energy);t.putInt("Cycles",cycles);t.putInt("Status",status);t.putString("Problem",problem);}
-    protected void loadAdditional(CompoundTag t,HolderLookup.Provider r){super.loadAdditional(t,r);water.readFromNBT(r,t.getCompound("Water"));brine.readFromNBT(r,t.getCompound("Brine"));activeBatch=t.getBoolean("Batch");progress=activeBatch?Math.clamp(t.getInt("Progress"),0,Saltern.DURATION-1):0;energy=Math.clamp(t.getInt("Energy"),0,Saltern.ENERGY_CAPACITY);cycles=t.getInt("Cycles");status=t.getInt("Status");problem=t.getString("Problem");}
+    protected void loadAdditional(CompoundTag t,HolderLookup.Provider r){super.loadAdditional(t,r);water.readFromNBT(r,t.getCompound("Water"));
+        // Preserve the volume in pre-seawater saves; new insertion requires seawater.
+        if(water.getFluid().is(Fluids.WATER))water.setFluid(new FluidStack(Saltern.SEA_WATER.get(),water.getFluidAmount()));
+        brine.readFromNBT(r,t.getCompound("Brine"));activeBatch=t.getBoolean("Batch");progress=activeBatch?Math.clamp(t.getInt("Progress"),0,Saltern.DURATION-1):0;energy=Math.clamp(t.getInt("Energy"),0,Saltern.ENERGY_CAPACITY);cycles=t.getInt("Cycles");status=t.getInt("Status");problem=t.getString("Problem");animationSyncTick=level==null?0:level.getGameTime();}
     public CompoundTag getUpdateTag(HolderLookup.Provider r){return saveWithoutMetadata(r);}
     public ClientboundBlockEntityDataPacket getUpdatePacket(){return ClientboundBlockEntityDataPacket.create(this);}
     public Component getDisplayName(){return Component.translatable("block.revoindustry.salt_geode_chamber");}

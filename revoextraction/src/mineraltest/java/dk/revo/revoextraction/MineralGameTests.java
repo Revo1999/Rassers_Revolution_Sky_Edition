@@ -20,7 +20,8 @@ import net.neoforged.neoforge.gametest.*;
 public final class MineralGameTests {
  static Item item(String id){return BuiltInRegistries.ITEM.get(ResourceLocation.parse(id));}
  static int count(net.neoforged.neoforge.items.IItemHandler inv, Item item){int n=0;for(int s=0;s<inv.getSlots();s++)if(inv.getStackInSlot(s).is(item))n+=inv.getStackInSlot(s).getCount();return n;}
- static ElectricDrillEntity electric(GameTestHelper h){var p=h.absolutePos(new BlockPos(3,2,3));h.getLevel().setBlockAndUpdate(p,RevoExtraction.ELECTRIC.get().defaultBlockState());return (ElectricDrillEntity)h.getLevel().getBlockEntity(p);}
+ static ElectricDrillEntity electric(GameTestHelper h){var l=h.getLevel();var p=h.absolutePos(new BlockPos(4,2,4));l.setBlockAndUpdate(p,RevoExtraction.ELECTRIC.get().defaultBlockState());var e=(ElectricDrillEntity)l.getBlockEntity(p);for(int x=-1;x<=1;x++)for(int y=0;y<3;y++)for(int z=-1;z<=1;z++)l.setBlockAndUpdate(ElectricDrillStructure.at(e,x,y,z),ElectricDrillStructure.block(x,y,z).defaultBlockState());e.sedimentHatch().orientation.outputDirection=Direction.SOUTH;var tank=ElectricDrillStructure.hatch(e,-1,-1).getInventory().getFluidStacks().getFirst();tank.setKey(aztech.modern_industrialization.thirdparty.fabrictransfer.api.fluid.FluidVariant.of(Fluids.WATER));tank.setAmount(8000);h.assertTrue(ElectricDrillStructure.validate(e),"Native electric multiblock forms");return e;}
+ static net.neoforged.neoforge.items.IItemHandler output(ElectricDrillEntity e){return ElectricDrillStructure.hatch(e,1,0).getInventory().itemStorage.itemHandler;}
  static void step(ElectricDrillEntity e,int ticks){for(int i=0;i<ticks;i++){e.receive(e.cost(),false);ElectricDrillEntity.tick(e.getLevel(),e.getBlockPos(),e.getBlockState(),e);}}
 
  @GameTest(template="drill_test",timeoutTicks=100)
@@ -34,7 +35,7 @@ public final class MineralGameTests {
    if(part==DrillLayout.Part.HATCH)s=s.setValue(DrillHatch.FACING,Direction.WEST);
    l.setBlockAndUpdate(m.at(x,y,z),s);
   }
-  h.assertTrue(m.checkStructure(),"Real mechanical steel drill forms");
+  m.sedimentHatch().orientation.outputDirection=m.facing().getOpposite();h.assertTrue(m.checkStructure(),"Real mechanical steel drill forms");
   ((DrillWaterTankEntity)l.getBlockEntity(m.at(-1,1,0))).water.fill(new FluidStack(Fluids.WATER,8000),FluidAction.EXECUTE);
   ((DrillDrive)l.getBlockEntity(m.at(1,1,0))).setSpeed(256);
   var chestPos=m.at(-1,0,0).west();l.setBlockAndUpdate(chestPos,Blocks.CHEST.defaultBlockState());var out=l.getCapability(Capabilities.ItemHandler.BLOCK,chestPos,Direction.EAST);
@@ -60,18 +61,18 @@ public final class MineralGameTests {
 
  @GameTest(template="drill_test",timeoutTicks=100)
  public static void electricAntimonyAndSavedPrograms(GameTestHelper h){
-  var e=electric(h);e.program=7;step(e,200);h.assertTrue(count(e.items,item("modern_industrialization:raw_antimony"))==1&&e.energy==0,"Antimony costs exactly 3200 EU");
+  var e=electric(h);e.program=7;step(e,200);h.assertTrue(count(output(e),item("modern_industrialization:raw_antimony"))==1&&e.energy==0,"Antimony costs exactly 3200 EU");
   var tag=e.saveWithoutMetadata(h.getLevel().registryAccess());e.loadWithComponents(tag,h.getLevel().registryAccess());h.assertTrue(e.program==7&&e.cycle==1,"Appended program persists");
-  for(int i=2;i<11;i++)e.items.setStackInSlot(i,new ItemStack(Items.COBBLESTONE,64));e.energy=100;int cycle=e.cycle;ElectricDrillEntity.tick(e.getLevel(),e.getBlockPos(),e.getBlockState(),e);h.assertTrue(e.energy==100&&e.cycle==cycle&&e.work==0,"Full output consumes no work or power");
+  for(var slot:ElectricDrillStructure.hatch(e,1,0).getInventory().getItemStacks()){slot.setKey(ItemVariant.of(Items.COBBLESTONE));slot.setAmount(slot.getTotalCapacityFor(Items.COBBLESTONE));}e.energy=100;int cycle=e.cycle;ElectricDrillEntity.tick(e.getLevel(),e.getBlockPos(),e.getBlockState(),e);h.assertTrue(e.energy==100&&e.cycle==cycle&&e.work==0,"Full output consumes no work or power");
   h.assertTrue(ElectricDrillEntity.PROGRAMS[5].equals("Glacial ice")&&ElectricDrillEntity.PROGRAMS[6].equals("Deep survey"),"Existing save indices preserved");h.succeed();
  }
 
  @GameTest(template="drill_test",timeoutTicks=100)
  public static void advancedSludgeRequiresCoreAndPower(GameTestHelper h){
   var e=electric(h);e.program=8;e.energy=128;ElectricDrillEntity.tick(e.getLevel(),e.getBlockPos(),e.getBlockState(),e);h.assertTrue(e.work==0&&e.energy==128,"No missing-core bypass");
-  e.items.setStackInSlot(0,new ItemStack(RevoExtraction.SURVEY_CORE.get()));e.energy=0;step(e,1199);h.assertTrue(count(e.items,RevoExtraction.CRYSTALLINE_SLUDGE.get())==0,"No early sludge output");
+  e.items.setStackInSlot(0,new ItemStack(RevoExtraction.SURVEY_CORE.get()));e.energy=0;step(e,1199);h.assertTrue(count(output(e),RevoExtraction.CRYSTALLINE_SLUDGE.get())==0,"No early sludge output");
   var saved=e.saveWithoutMetadata(h.getLevel().registryAccess());e.loadWithComponents(saved,h.getLevel().registryAccess());h.assertTrue(e.program==8&&e.work==1199,"Save resumes gated sludge without losing work");step(e,1);
-  h.assertTrue(e.energy==0&&e.work==0&&count(e.items,RevoExtraction.CRYSTALLINE_SLUDGE.get())==1&&e.items.getStackInSlot(0).is(RevoExtraction.SURVEY_CORE.get()),"Full cycle costs 153600 EU and retains core");h.succeed();
+  h.assertTrue(e.energy==0&&e.work==0&&count(output(e),RevoExtraction.CRYSTALLINE_SLUDGE.get())==1&&e.items.getStackInSlot(0).is(RevoExtraction.SURVEY_CORE.get()),"Full cycle costs 153600 EU and retains core");h.succeed();
  }
 
  @GameTest(template="drill_test",timeoutTicks=100)

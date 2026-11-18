@@ -25,6 +25,7 @@ public class DrillGameTests {
                 case CONTROLLER -> RevoExtraction.CONTROLLER.get().defaultBlockState().setValue(DrillController.FACING,facing);
                 case INPUT -> RevoExtraction.INPUT.get().defaultBlockState().setValue(DrillInput.FACING,facing.getClockWise());
                 case HATCH -> RevoExtraction.HATCH.get().defaultBlockState().setValue(DrillHatch.FACING,facing.getCounterClockWise());
+                case FLUID_HATCH -> RevoExtraction.STEEL_FLUID_HATCH.get().defaultBlockState();
                 case AIR -> Blocks.AIR.defaultBlockState();
             };
             level.setBlockAndUpdate(machine.at(x,y,z),state);

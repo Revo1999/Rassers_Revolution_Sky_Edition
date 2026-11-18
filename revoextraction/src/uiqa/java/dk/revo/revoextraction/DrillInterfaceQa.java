@@ -47,7 +47,8 @@ public final class DrillInterfaceQa {
                         case CONTROLLER -> machine.getBlockState();
                         case INPUT -> RevoExtraction.INPUT.get().defaultBlockState().setValue(DrillInput.FACING,machine.facing().getClockWise());
                         case HATCH -> RevoExtraction.HATCH.get().defaultBlockState().setValue(DrillHatch.FACING,machine.facing().getCounterClockWise());
-                        case AIR -> Blocks.AIR.defaultBlockState();
+                        case FLUID_HATCH -> RevoExtraction.STEEL_FLUID_HATCH.get().defaultBlockState();
+                case AIR -> Blocks.AIR.defaultBlockState();
                     };
                     level.setBlockAndUpdate(machine.at(x,y,z),state);
                 }

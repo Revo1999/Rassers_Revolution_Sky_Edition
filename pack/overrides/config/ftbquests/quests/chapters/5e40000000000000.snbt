@@ -86,8 +86,8 @@
         "5E40000000000002"
       ],
       "description": [
-        "Upgrade Iron Drill Supports and Casings with steel plates. The finished structure uses 12 supports and 9 placed casings.",
-        "A water tank replaces the casing directly above the output hatch. Use the Steel Drill construction view in EMI."
+        "Upgrade Iron Drill Supports and Casings with steel plates. The finished structure uses 12 supports and 8 placed casings.",
+        "The left-middle water tank and rear-top sediment output hatch replace two casings. Use the updated Steel Drill construction guide in EMI."
       ],
       "tasks": [
         {
@@ -107,7 +107,7 @@
             "id": "revoextraction:steel_drill_casing",
             "count": 1
           },
-          "count": 9,
+          "count": 8,
           "consume_items": false
         }
       ],
@@ -158,7 +158,7 @@
       ],
       "description": [
         "Surround a steel core with eight extra Steel Drill Casings. The controller belongs at the front centre of the middle layer.",
-        "The controller shows RPM, cycle progress, water and damage. Item storage remains exclusively in the output hatch."
+        "The controller shows RPM, cycle progress, water, sediment output and damage. Items remain in the separate item hatch; coolant leaves through the MI fluid hatch."
       ],
       "tasks": [
         {
@@ -189,7 +189,8 @@
       ],
       "description": [
         "Install the right-middle shaft input, lower-left item output hatch and left-middle water tank above it. Face the shaft and item hatch outward.",
-        "The visible shaft is centred in block 2 of the machine height. The hatch automatically ejects into an adjacent inventory at cycle completion."
+        "The visible shaft is centred in block 2 of the machine height. The hatch automatically ejects into an adjacent inventory at cycle completion.",
+        "Also fit the rear-top centre sediment hatch from the next quest. Its MI output face must point away from the controller; use an MI wrench if necessary."
       ],
       "tasks": [
         {
@@ -241,7 +242,8 @@
       "description": [
         "Fill the side tank BEFORE starting. It stores 8000 mB of water and accepts buckets or fluid pipes on any face.",
         "The drill consumes 100 mB per 600 rotational work, spread over its cycle. Minecraft water renders inside the glass tank and falls as it empties. Working jets use the vanilla dripping-water particles.",
-        "Connect an MI water pump or Create pump network for a steady supply. Missing coolant prevents production and causes seizure after five seconds of dry running."
+        "Connect an MI water pump or Create pump network for a steady supply. Missing coolant prevents production and causes seizure after five seconds of dry running.",
+        "Every 100 mB of water consumed becomes 100 mB of sediment-laden water in the rear output. Route this fluid onward; full output pauses drilling without heating, damage or coolant loss."
       ],
       "tasks": [
         {
@@ -298,7 +300,8 @@
         "5E40000000000003",
         "5E40000000000005",
         "5E40000000000007",
-        "5E40000000000008"
+        "5E40000000000008",
+        "5E4000000000000E"
       ],
       "description": [
         "Build the 3 x 3 x 3 structure from the EMI layer guide, leave the bottom centre empty and supply water.",
@@ -435,6 +438,38 @@
           "type": "item",
           "item": {
             "id": "revogenetics:steel_mob_harvester",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5E4000000000000E",
+      "title": "Capture the Cooling Sediment",
+      "icon": {
+        "id": "revoextraction:steel_drill_fluid_output_hatch",
+        "count": 1
+      },
+      "x": 12.0,
+      "y": 4.0,
+      "shape": "circle",
+      "dependencies": [
+        "5E40000000000006"
+      ],
+      "description": [
+        "Craft the Steel Drill Sediment Output Hatch from a native MI Steel Fluid Output Hatch and four steel plates. Replace the rear-top centre casing. Point the output away from the drill; the hatch uses MI storage, locking, menu and fluid auto-extraction.",
+        "The Steel Drill consumes and returns 100 mB per completed work cycle: water in, sediment-laden water out. Pipe the output into a tank. Its 8000 mB native hatch will halt the drill when full; work, coolant and damage then pause. Drain it to resume.",
+        "This fluid is separate from item Mineral Sludge and Gem Sludge. Save it for the seawater route after LV. Wooden and Iron Drills remain uncooled."
+      ],
+      "tasks": [
+        {
+          "id": "5E4000000000E001",
+          "type": "item",
+          "item": {
+            "id": "revoextraction:steel_drill_fluid_output_hatch",
             "count": 1
           },
           "count": 1,

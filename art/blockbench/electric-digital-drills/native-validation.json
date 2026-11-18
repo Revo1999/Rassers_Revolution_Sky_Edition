@@ -1,0 +1,53 @@
+{
+  "checks": [
+    "outliner",
+    "unlisted_nodes",
+    "degenerate",
+    "block_limits"
+  ],
+  "note": "Thin single-face UV partitions and 0.125-unit configurable overlays are intentional. Coplanar faces and moving-part clearance are checked separately by scripts/check_all_machine_models.py and scripts/check_drill_hatch_clearance.py.",
+  "models": [
+    {
+      "name": "steel_drill_body",
+      "revision": "21f25ddf25c9d299",
+      "errors": 0,
+      "warnings": 93,
+      "passed": true
+    },
+    {
+      "name": "electric_drill_body",
+      "revision": "7c26622603d62c1c",
+      "errors": 0,
+      "warnings": 203,
+      "passed": true
+    },
+    {
+      "name": "digital_drill",
+      "revision": "150d3bf71176986b",
+      "errors": 0,
+      "warnings": 0,
+      "passed": true
+    },
+    {
+      "name": "digital_input",
+      "revision": "618105e5af159d5c",
+      "errors": 0,
+      "warnings": 1,
+      "passed": true
+    },
+    {
+      "name": "digital_output",
+      "revision": "28886838e376a89b",
+      "errors": 0,
+      "warnings": 1,
+      "passed": true
+    },
+    {
+      "name": "digital_energy",
+      "revision": "d7d373339b8b4382",
+      "errors": 0,
+      "warnings": 1,
+      "passed": true
+    }
+  ]
+}

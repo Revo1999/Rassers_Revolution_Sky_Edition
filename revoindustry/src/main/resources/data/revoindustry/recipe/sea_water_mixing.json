@@ -1,0 +1,17 @@
+{
+  "type": "modern_industrialization:mixer",
+  "eu": 8,
+  "duration": 200,
+  "fluid_inputs": [
+    {
+      "fluid": "revoindustry:drill_sediment",
+      "amount": 1000
+    }
+  ],
+  "fluid_outputs": [
+    {
+      "fluid": "revoindustry:sea_water",
+      "amount": 1000
+    }
+  ]
+}

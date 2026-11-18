@@ -1,0 +1,61 @@
+{
+  "models": [
+    {
+      "model": "geode_crystal_0",
+      "revision": "55f97ccd2a75f2d2",
+      "errors": 0,
+      "warnings": 0,
+      "passed": true
+    },
+    {
+      "model": "geode_crystal_1",
+      "revision": "bf3b4fc4051da05f",
+      "errors": 0,
+      "warnings": 0,
+      "passed": true
+    },
+    {
+      "model": "geode_crystal_2",
+      "revision": "7a33ff7f90bf4b15",
+      "errors": 0,
+      "warnings": 0,
+      "passed": true
+    },
+    {
+      "model": "geode_crystal_3",
+      "revision": "1bab40a49c2b9439",
+      "errors": 0,
+      "warnings": 0,
+      "passed": true
+    },
+    {
+      "model": "geode_crystal_4",
+      "revision": "8b6777f35c22c8e7",
+      "errors": 0,
+      "warnings": 0,
+      "passed": true
+    },
+    {
+      "model": "sea_water_bucket",
+      "revision": "12d0feebae33a397",
+      "errors": 0,
+      "warnings": 0,
+      "passed": true
+    },
+    {
+      "model": "steel_drill_body",
+      "revision": "21f25ddf25c9d299",
+      "errors": 0,
+      "warnings": 93,
+      "passed": true,
+      "note": "Thin visible-face partitions are intentional; see separate surface audit."
+    },
+    {
+      "model": "steel_drill_fluid_output_hatch",
+      "revision": "e6f4a7fe8654b705",
+      "errors": 0,
+      "warnings": 0,
+      "passed": true
+    }
+  ]
+}

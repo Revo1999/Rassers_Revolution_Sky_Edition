@@ -8,6 +8,18 @@ displayName="RevoExtraction"
 authors="Revo1999"
 description='''Create-powered void extraction and multiblock drills.''' 
 [[dependencies.revoextraction]]
+modId="modern_industrialization"
+type="required"
+versionRange="[2.5.11,2.6)"
+ordering="AFTER"
+side="BOTH"
+[[dependencies.revoextraction]]
+modId="revoindustry"
+type="required"
+versionRange="[0.1.0-dev,)"
+ordering="AFTER"
+side="BOTH"
+[[dependencies.revoextraction]]
 modId="neoforge"
 type="required"
 versionRange="[21.1.265,21.2)"

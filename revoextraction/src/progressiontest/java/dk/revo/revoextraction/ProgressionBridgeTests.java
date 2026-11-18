@@ -16,7 +16,7 @@ public final class ProgressionBridgeTests {
   var l=h.getLevel();var pos=h.absolutePos(new BlockPos(4,2,4));l.setBlockAndUpdate(pos,Blocks.AIR.defaultBlockState());l.setBlockAndUpdate(pos,kind.controller().defaultBlockState().setValue(FarmController.FACING,Direction.NORTH));var m=(FarmMachine)l.getBlockEntity(pos);
   for(int x=-1;x<=1;x++)for(int y=0;y<3;y++)for(int z=-1;z<=1;z++){
    var part=kind.part(x,y,z);var s=kind.block(part).defaultBlockState();if(part==MachineKind.Part.CONTROLLER)s=s.setValue(FarmController.FACING,Direction.NORTH);if(part==MachineKind.Part.HATCH)s=s.setValue(FarmHatch.FACING,Direction.EAST);if(part==MachineKind.Part.FILTER)s=s.setValue(FarmFilter.FACING,Direction.NORTH).setValue(FarmFilter.SPECIES,species);l.setBlockAndUpdate(m.at(x,y,z),s);
-  }h.assertTrue(m.checkStructure(),"Harvester forms");return m;
+  }if(kind.isHarvester())m.programSpawner.setStackInSlot(0,MobSpawnerPrograms.spawner(kind.harvesterPrograms()[species],MobSpawnerPrograms.maxTier(kind)));h.assertTrue(m.checkStructure(),"Harvester forms");return m;
  }
  static void ticks(FarmMachine m,int n){for(int i=0;i<n;i++)FarmMachine.tick(m.getLevel(),m.getBlockPos(),m.getBlockState(),m);}
  static int count(net.neoforged.neoforge.items.IItemHandler inv,Item i){int n=0;for(int s=0;s<inv.getSlots();s++)if(inv.getStackInSlot(s).is(i))n+=inv.getStackInSlot(s).getCount();return n;}
@@ -27,18 +27,18 @@ public final class ProgressionBridgeTests {
  }
  @GameTest(template="drill_test",timeoutTicks=100)
  public static void cowProducesLeatherAndFoodWithSavedContainedMob(GameTestHelper h){
-  var m=farm(h,MachineKind.HARVESTER,3);ticks(m,300);h.assertTrue(count(m.outputs,Items.LEATHER)==1&&count(m.outputs,Items.BEEF)==2,"Wooden cow produces leather before steel");var mob=m.containedMob();h.assertTrue(mob.getType()==EntityType.COW&&mob.isNoAi()&&h.getLevel().getEntity(mob.getUUID())==null,"Cow stays machine-owned");
+  var m=farm(h,MachineKind.HARVESTER,3);ticks(m,m.cycleTicks());h.assertTrue(count(m.outputs,Items.LEATHER)==1&&count(m.outputs,Items.BEEF)==2,"Wooden cow produces leather before steel");var mob=m.containedMob();h.assertTrue(mob.getType()==EntityType.COW&&mob.isNoAi()&&h.getLevel().getEntity(mob.getUUID())==null,"Cow stays machine-owned");
   var saved=m.saveWithoutMetadata(h.getLevel().registryAccess());m.loadWithComponents(saved,h.getLevel().registryAccess());h.assertTrue(m.containedMob().getUUID().equals(mob.getUUID())&&count(m.outputs,Items.LEATHER)==1,"Save/load preserves cow and inventory");h.succeed();
  }
  @GameTest(template="drill_test",timeoutTicks=100)
  public static void steelBlazeUnlockAndWoodenTierGuard(GameTestHelper h){
-  h.assertTrue(MachineKind.HARVESTER.program(ItemStack.EMPTY,5)==-1,"Wood cannot select blaze even with edited block state");var m=farm(h,MachineKind.STEEL_HARVESTER,4);ticks(m,150);h.assertTrue(m.program()==24&&count(m.outputs,Items.BLAZE_ROD)==1,"Steel blaze produces a rod per cycle");h.assertTrue(m.containedMob().getType()==EntityType.BLAZE&&m.containedMob().isNoAi()&&h.getLevel().getEntity(m.containedMob().getUUID())==null,"Blaze cannot roam, attack or create extra world drops");h.succeed();
+  h.assertTrue(MachineKind.HARVESTER.program(ItemStack.EMPTY,5)==-1,"Wood cannot select blaze even with edited block state");var m=farm(h,MachineKind.STEEL_HARVESTER,4);ticks(m,m.cycleTicks());h.assertTrue(m.program()==24&&count(m.outputs,Items.BLAZE_ROD)==1,"Steel blaze produces a rod per cycle");h.assertTrue(m.containedMob().getType()==EntityType.BLAZE&&m.containedMob().isNoAi()&&h.getLevel().getEntity(m.containedMob().getUUID())==null,"Blaze cannot roam, attack or create extra world drops");h.succeed();
  }
  @GameTest(template="drill_test",timeoutTicks=100)
- public static void filterCyclesAndFullStorageAreSafe(GameTestHelper h){
+ public static void controllerSpawnerAndFullStorageAreSafe(GameTestHelper h){
   for(var kind:new MachineKind[]{MachineKind.HARVESTER,MachineKind.STEEL_HARVESTER}){
-   int last=kind==MachineKind.HARVESTER?4:10;var m=farm(h,kind,last);var at=m.at(0,1,-1);var player=h.makeMockPlayer(net.minecraft.world.level.GameType.CREATIVE);h.getLevel().getBlockState(at).useWithoutItem(h.getLevel(),player,new BlockHitResult(Vec3.atCenterOf(at),Direction.NORTH,at,false));h.assertTrue(h.getLevel().getBlockState(at).getValue(FarmFilter.SPECIES)==0,"Correct tier-specific selector wraps");
-   h.getLevel().setBlockAndUpdate(at,h.getLevel().getBlockState(at).setValue(FarmFilter.SPECIES,last));if(kind==MachineKind.STEEL_HARVESTER)m.inputs.setStackInSlot(0,new ItemStack(Items.NETHERITE_INGOT));for(int i=0;i<9;i++)m.outputs.setStackInSlot(i,new ItemStack(Items.COBBLESTONE,64));ticks(m,kind.ticks*2);h.assertTrue(m.state()==5&&m.progress()==0,"Full inventory prevents all products and progress");
+   int last=kind==MachineKind.HARVESTER?4:10;var m=farm(h,kind,last);var at=m.at(0,1,-1);var player=h.makeMockPlayer(net.minecraft.world.level.GameType.CREATIVE);h.getLevel().getBlockState(at).useWithoutItem(h.getLevel(),player,new BlockHitResult(Vec3.atCenterOf(at),Direction.NORTH,at,false));h.assertTrue(h.getLevel().getBlockState(at).getValue(FarmFilter.SPECIES)==last,"Retired filter cannot override the controller spawner");
+   h.getLevel().setBlockAndUpdate(at,h.getLevel().getBlockState(at).setValue(FarmFilter.SPECIES,last));if(kind==MachineKind.STEEL_HARVESTER)m.inputs.setStackInSlot(0,new ItemStack(Items.NETHERITE_INGOT));for(int i=0;i<9;i++)m.outputs.setStackInSlot(i,new ItemStack(Items.COBBLESTONE,64));ticks(m,m.cycleTicks()*2);h.assertTrue(m.state()==5&&m.progress()==0,"Full inventory prevents all products and progress");
   }h.succeed();
  }
  @GameTest(template="drill_test",timeoutTicks=100)

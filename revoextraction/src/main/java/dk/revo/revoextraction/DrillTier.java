@@ -16,7 +16,7 @@ public enum DrillTier {
             case LOG->RevoExtraction.STEEL_SUPPORT.get();case CASING->RevoExtraction.STEEL_CASING.get();
             case CORE->RevoExtraction.STEEL_CORE.get();case CONTROLLER->RevoExtraction.STEEL_CONTROLLER.get();
             case INPUT->RevoExtraction.STEEL_INPUT.get();case HATCH->RevoExtraction.STEEL_HATCH.get();
-            case TANK->RevoExtraction.STEEL_TANK.get();case AIR->net.minecraft.world.level.block.Blocks.AIR;
+            case TANK->RevoExtraction.STEEL_TANK.get();case FLUID_HATCH->RevoExtraction.STEEL_FLUID_HATCH.get();case AIR->net.minecraft.world.level.block.Blocks.AIR;
         };
         return switch(part){
             case LOG -> (iron?RevoExtraction.IRON_SUPPORT:RevoExtraction.SUPPORT).get();
@@ -26,6 +26,7 @@ public enum DrillTier {
             case INPUT -> (iron?RevoExtraction.IRON_INPUT:RevoExtraction.INPUT).get();
             case HATCH -> (iron?RevoExtraction.IRON_HATCH:RevoExtraction.HATCH).get();
             case TANK -> RevoExtraction.STEEL_TANK.get();
+            case FLUID_HATCH -> RevoExtraction.STEEL_FLUID_HATCH.get();
             case AIR -> net.minecraft.world.level.block.Blocks.AIR;
         };
     }
@@ -48,7 +49,7 @@ public enum DrillTier {
                 Items.RAW_IRON,optional("create:raw_zinc"),Items.RAW_GOLD,Items.REDSTONE,RevoExtraction.MINERAL_SLUDGE.get()};
         return pool[Math.floorMod(cycle,pool.length)];
     }
-    public DrillLayout.Part part(int x,int y,int z){return this==STEEL&&x==-1&&y==1&&z==0?DrillLayout.Part.TANK:DrillLayout.part(x,y,z);}
+    public DrillLayout.Part part(int x,int y,int z){return this==STEEL&&x==0&&y==2&&z==-1?DrillLayout.Part.FLUID_HATCH:this==STEEL&&x==-1&&y==1&&z==0?DrillLayout.Part.TANK:DrillLayout.part(x,y,z);}
     public String displayName(){return this==STEEL?"Steel":this==IRON?"Iron":"Wooden";}
     public String prefix(){return name().toLowerCase(java.util.Locale.ROOT)+"_drill";}
 }
