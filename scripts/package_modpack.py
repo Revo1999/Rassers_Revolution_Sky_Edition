@@ -20,10 +20,10 @@ def main():
     assert hashlib.sha512(data).hexdigest()==shader['sha512']
     files.append({'path':'shaderpacks/'+shader['file'],'hashes':{'sha512':shader['sha512'],'sha1':hashlib.sha1(data).hexdigest()},
         'env':{'client':'required','server':'unsupported'},'downloads':[shader['url']],'fileSize':len(data)})
-    index={'formatVersion':1,'game':'minecraft','versionId':'0.1.43-dev-nexus-ui',
+    index={'formatVersion':1,'game':'minecraft','versionId':'0.1.44-dev-asset-fixes',
         'name':'Rassers Revolution: Sky Edition','summary':"Nexus survival progression, native MI production, an embedded portal builder and the Nexus quest chapter.",
         'files':files,'dependencies':{'minecraft':'1.21.1','neoforge':'21.1.265'}}
-    output=ROOT.parent/'Rassers-Revolution-Sky-Edition-0.1.43-dev.mrpack'
+    output=ROOT.parent/'Rassers-Revolution-Sky-Edition-0.1.44-dev.mrpack'
     jars=sorted((ROOT/'build/mods').glob('*.jar'))
     assert len(jars)==7
     assert (ROOT/'pack/overrides/config/fancymenu/assets/skyblock_loop.mp4').stat().st_size>1_000_000
@@ -55,6 +55,7 @@ def main():
         z.write(ROOT/'docs/REVO-ACHIEVEMENTS.md','overrides/REVO-ACHIEVEMENTS.md')
         z.write(ROOT/'docs/WITHER-HATCHERY.md','overrides/WITHER-HATCHERY.md')
         z.write(ROOT/'docs/NEXUS-MATERIAL-LEDGER.md','overrides/NEXUS-MATERIAL-LEDGER.md')
+        z.write(ROOT/'docs/MACHINE-INGREDIENTS.md','overrides/MACHINE-INGREDIENTS.md')
         z.write(ROOT/'docs/ELECTRIC-AND-DIGITAL-DRILLS.md','overrides/ELECTRIC-AND-DIGITAL-DRILLS.md')
         z.write(ROOT/'docs/SALT-GEODE.md','overrides/SALT-GEODE.md')
         z.write(ROOT/'docs/DRILL-MINERALS-AND-SLUDGE.md','overrides/DRILL-MINERALS-AND-SLUDGE.md')

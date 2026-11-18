@@ -7,3 +7,5 @@ Audited 166 registered Revo blocks against the native recipe manager and package
 Fluid blocks have buckets and processing routes. World-only crops use their seed items. Dust uses the manual sand hammering interaction. Nexus hatches use the native MI recipes.
 
 Refresh with `dev.cmd :revoindustry:runNexusTests -PrevoNexusTests` followed by `python scripts/audit_machine_recipes.py`.
+
+For special ingredients and operating supplies by machine family, see [Revo machine ingredients](docs/MACHINE-INGREDIENTS.md).

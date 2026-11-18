@@ -1,9 +1,9 @@
 {
   "result": "PASS",
   "revoJars": 7,
-  "exactSourceAssetMatches": 1543,
-  "pack": "Rassers-Revolution-Sky-Edition-0.1.43-dev.mrpack",
-  "packSha256": "2baa894b74f2e8c8da2b2b95d4f8c8ac120a00c418e3288264e4d4ccc164bcbb",
+  "exactSourceAssetMatches": 1545,
+  "pack": "Rassers-Revolution-Sky-Edition-0.1.44-dev.mrpack",
+  "packSha256": "f070765d1b81afe15c42af6c12f6b6552e3dee02782c440be606fc64a130cda6",
   "nativeSourcesExcludedFromJars": true,
   "qaHelpersExcludedFromJars": true,
   "nexusRecipes": 108,
@@ -12,5 +12,10 @@
   "nexusQuestCount": 41,
   "allQuestCount": 332,
   "nexusBlockRecipesMissing": 0,
-  "graphicalQa": "Vanilla builder panel and player slots, ghost material counters, obstruction outline and powered Nexus portal verified in an isolated save"
+  "graphicalQa": "Vanilla builder panel and player slots, ghost material counters, obstruction outline and powered Nexus portal verified in an isolated save",
+  "assetReload": {
+    "missingModelTextures": 0,
+    "missingEntityIconSettings": 0,
+    "shoeColorsRegisteredInBlockAtlas": 12
+  }
 }

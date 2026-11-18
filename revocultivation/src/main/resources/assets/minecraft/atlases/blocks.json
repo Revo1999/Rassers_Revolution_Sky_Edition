@@ -1,0 +1,52 @@
+{
+  "sources": [
+    {
+      "type": "minecraft:single",
+      "resource": "revocultivation:models/armor/running_shoes/white_layer_1"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "revocultivation:models/armor/running_shoes/black_layer_1"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "revocultivation:models/armor/running_shoes/brown_layer_1"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "revocultivation:models/armor/running_shoes/red_layer_1"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "revocultivation:models/armor/running_shoes/orange_layer_1"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "revocultivation:models/armor/running_shoes/yellow_layer_1"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "revocultivation:models/armor/running_shoes/green_layer_1"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "revocultivation:models/armor/running_shoes/cyan_layer_1"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "revocultivation:models/armor/running_shoes/blue_layer_1"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "revocultivation:models/armor/running_shoes/purple_layer_1"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "revocultivation:models/armor/running_shoes/magenta_layer_1"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "revocultivation:models/armor/running_shoes/pink_layer_1"
+    }
+  ]
+}
