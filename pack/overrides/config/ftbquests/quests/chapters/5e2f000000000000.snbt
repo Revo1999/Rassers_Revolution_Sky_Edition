@@ -1,0 +1,344 @@
+{
+  "id": "5E2F000000000000",
+  "filename": "5e2f000000000000",
+  "title": "Field Guide: Wands, Jetpacks and Shoes",
+  "order_index": 6,
+  "icon": {
+    "id": "wands:stone_wand",
+    "count": 1
+  },
+  "default_quest_shape": "circle",
+  "quests": [
+    {
+      "id": "5E2F000000000001",
+      "title": "Pick Your Field Gear",
+      "icon": {
+        "id": "wands:stone_wand",
+        "count": 1
+      },
+      "x": 0,
+      "y": 0,
+      "description": [
+        "Use wands to extend your island, shoes for everyday movement, and jetpacks for vertical work. This guide is optional."
+      ],
+      "shape": "diamond",
+      "dependencies": [],
+      "tasks": [
+        {
+          "id": "5E2F100001000001",
+          "type": "checkmark"
+        }
+      ],
+      "rewards": [],
+      "optional": true
+    },
+    {
+      "id": "5E2F000000000002",
+      "title": "A Stone Wand",
+      "icon": {
+        "id": "wands:stone_wand",
+        "count": 1
+      },
+      "x": 4,
+      "y": -6,
+      "description": [
+        "Craft two sticks and one cobblestone diagonally. Carry the building blocks you plan to place. Aim at an existing block and check the placement preview before using the wand."
+      ],
+      "shape": "diamond",
+      "dependencies": [
+        "5E2F000000000001"
+      ],
+      "tasks": [
+        {
+          "id": "5E2F100002000001",
+          "type": "item",
+          "item": {
+            "id": "wands:stone_wand",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [],
+      "optional": true
+    },
+    {
+      "id": "5E2F000000000003",
+      "title": "Build in Lines and Planes",
+      "icon": {
+        "id": "wands:iron_wand",
+        "count": 1
+      },
+      "x": 8,
+      "y": -6,
+      "description": [
+        "Open Controls and search for Building Wands. Find Mode, Orientation and Wand Menu. Try a small line or plane on a safe platform and use the preview to catch the wrong direction.",
+        "Copper, iron and diamond wands use the same two-stick pattern with a different tip."
+      ],
+      "shape": "diamond",
+      "dependencies": [
+        "5E2F000000000002"
+      ],
+      "tasks": [
+        {
+          "id": "5E2F100003000001",
+          "type": "checkmark"
+        }
+      ],
+      "rewards": [],
+      "optional": true
+    },
+    {
+      "id": "5E2F000000000004",
+      "title": "Diamond Wand",
+      "icon": {
+        "id": "wands:diamond_wand",
+        "count": 1
+      },
+      "x": 12,
+      "y": -6,
+      "description": [
+        "Use a diamond and two sticks. Steel Drill Gem Sludge can supply the diamond through Create fan washing."
+      ],
+      "shape": "diamond",
+      "dependencies": [
+        "5E2F000000000003"
+      ],
+      "tasks": [
+        {
+          "id": "5E2F100004000001",
+          "type": "item",
+          "item": {
+            "id": "wands:diamond_wand",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [],
+      "optional": true
+    },
+    {
+      "id": "5E2F000000000005",
+      "title": "Netherite Wand",
+      "icon": {
+        "id": "wands:netherite_wand",
+        "count": 1
+      },
+      "x": 16,
+      "y": -6,
+      "description": [
+        "Smith the Diamond Wand with a Netherite Upgrade template and a Netherite Ingot. The Crystals and Distant Resources chapter explains the pack\u2019s first template route."
+      ],
+      "shape": "diamond",
+      "dependencies": [
+        "5E2F000000000004"
+      ],
+      "tasks": [
+        {
+          "id": "5E2F100005000001",
+          "type": "item",
+          "item": {
+            "id": "wands:netherite_wand",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [],
+      "optional": true
+    },
+    {
+      "id": "5E2F000000000006",
+      "title": "Running Shoes Workshop",
+      "icon": {
+        "id": "revocultivation:white_running_shoes",
+        "count": 1
+      },
+      "x": 4,
+      "y": -3,
+      "description": [
+        "Follow Field Equipment: Running Shoes for cotton, latex, cured rubber, glue, laces and dyes. Make a white pair first and dye it in any of the 12 available colours."
+      ],
+      "shape": "diamond",
+      "dependencies": [
+        "5E2F000000000001"
+      ],
+      "tasks": [
+        {
+          "id": "5E2F100006000001",
+          "type": "checkmark"
+        }
+      ],
+      "rewards": [],
+      "optional": true
+    },
+    {
+      "id": "5E2F000000000007",
+      "title": "Wear the Shoes",
+      "icon": {
+        "id": "revocultivation:white_running_shoes",
+        "count": 1
+      },
+      "x": 8,
+      "y": -3,
+      "description": [
+        "Equip a pair in the boots slot for 25% more movement speed and immunity to fall damage. They help with hard landings. Build railings or carry a flight option around the void."
+      ],
+      "shape": "diamond",
+      "dependencies": [
+        "5E2F000000000006"
+      ],
+      "tasks": [
+        {
+          "id": "5E2F100007000001",
+          "type": "checkmark"
+        }
+      ],
+      "rewards": [],
+      "optional": true
+    },
+    {
+      "id": "5E2F000000000008",
+      "title": "Flight Controls and Fuel",
+      "icon": {
+        "id": "ironjetpacks:strap",
+        "count": 1
+      },
+      "x": 4,
+      "y": 0,
+      "description": [
+        "Set separate Engine and Hover keys for the jetpack you use. Building Wands and jetpacks can share default keys. Test take-off, hover and descent over a wide platform. Watch the fuel or FE readout before flying over the edge."
+      ],
+      "shape": "diamond",
+      "dependencies": [
+        "5E2F000000000001"
+      ],
+      "tasks": [
+        {
+          "id": "5E2F100008000001",
+          "type": "checkmark"
+        }
+      ],
+      "rewards": [],
+      "optional": true
+    },
+    {
+      "id": "5E2F000000000009",
+      "title": "Iron Jetpacks: Electric Flight",
+      "icon": {
+        "id": "ironjetpacks:jetpack",
+        "count": 1
+      },
+      "x": 8,
+      "y": 0,
+      "description": [
+        "Search Iron Jetpacks in EMI and choose a tier-specific recipe. Wood and stone are starter tiers. Make the strap, coils, matching energy cells, thrusters and capacitor shown for your tier.",
+        "Charge the jetpack with FE. One option is a powered Flux Networks Controller with wireless armor charging enabled. Equip the pack, enable its engine and use jump to climb."
+      ],
+      "shape": "diamond",
+      "dependencies": [
+        "5E2F000000000008"
+      ],
+      "tasks": [
+        {
+          "id": "5E2F100009000001",
+          "type": "item",
+          "item": {
+            "id": "ironjetpacks:jetpack",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [],
+      "optional": true
+    },
+    {
+      "id": "5E2F00000000000A",
+      "title": "Upgrade Your Electric Jetpack",
+      "icon": {
+        "id": "ironjetpacks:basic_coil",
+        "count": 1
+      },
+      "x": 12,
+      "y": 0,
+      "description": [
+        "Check the tier shown on each component and the finished pack. Higher tiers use stronger materials and often draw more FE. Check the FE drain and throttle on the tooltip before committing to a long trip."
+      ],
+      "shape": "diamond",
+      "dependencies": [
+        "5E2F000000000009"
+      ],
+      "tasks": [
+        {
+          "id": "5E2F10000A000001",
+          "type": "checkmark"
+        }
+      ],
+      "rewards": [],
+      "optional": true
+    },
+    {
+      "id": "5E2F00000000000B",
+      "title": "MI Diesel Jetpack",
+      "icon": {
+        "id": "modern_industrialization:diesel_jetpack",
+        "count": 1
+      },
+      "x": 8,
+      "y": 3,
+      "description": [
+        "Craft with two pumps, two motors, two aluminum rotors, an aluminum tank and an Analog Circuit. Use the item tooltip and MI controls to check the fuel and flight settings. Make diesel in the MI Mixer from heavy and light fuel."
+      ],
+      "shape": "diamond",
+      "dependencies": [
+        "5E2F000000000008"
+      ],
+      "tasks": [
+        {
+          "id": "5E2F10000B000001",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:diesel_jetpack",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [],
+      "optional": true
+    },
+    {
+      "id": "5E2F00000000000C",
+      "title": "Create Jetpack: Pressurized Air",
+      "icon": {
+        "id": "create_jetpack:jetpack",
+        "count": 1
+      },
+      "x": 8,
+      "y": 6,
+      "description": [
+        "Use Create Mechanical Crafters for the 5 by 4 recipe. It needs an Elytra, a Copper Backtank, Precision Mechanisms, chutes, brass plates and a shaft.",
+        "Plan around the Elytra requirement. The gear chapter leaves this as an optional late route. Pressurize the pack through the Create backtank system and look up its own engine and hover keys."
+      ],
+      "shape": "diamond",
+      "dependencies": [
+        "5E2F000000000008"
+      ],
+      "tasks": [
+        {
+          "id": "5E2F10000C000001",
+          "type": "checkmark"
+        }
+      ],
+      "rewards": [],
+      "optional": true
+    }
+  ]
+}

@@ -1,13 +1,14 @@
 # Quest book and free manuals
 
-The current book has **fourteen chapters and 287 quests**. The continuations add
-25 LV metallurgy/electronics quests, 25 MV power/chemistry quests, seven optional
-early running-shoe quests and 26 HV refining/coil/digital-logic quests. The previous
-204 quest IDs and their task/reward IDs remain intact. See [LV/MV](QUESTS-LV-MV.md)
-and the [post-MV progression table](PROGRESSION-GAPS-AFTER-MV.md).
+The current book has **17 chapters and 373 quests**. The optional Field Guide
+adds 12 quests covering building wands, running shoes and three jetpack routes.
+The MI Guide adds 29 quests covering the five circuit tiers and their supporting
+production lines. Chapter 9 takes those lines through the three Nexus
+multiblocks, the Nexus Core and portal stabilization. The 332 earlier quests
+retain their IDs and task/reward IDs.
 
 The early core has 35 quests in From Nothing, 29 in The Create Revolution,
-28 in MI Steam Age and thirteen in Steel and Coolant. Chapter 4 adds the
+28 in MI Steam Age and 14 in Steel and Coolant. Chapter 4 adds the
 water-cooled Steel Drill after coke; see
 [STEEL-DRILL.md](STEEL-DRILL.md) for its mechanics, costs and repair requirements.
 
@@ -83,17 +84,19 @@ chapter generators call it, so regeneration preserves the new presentation:
 4. Run `python scripts/render_quest_maps.py` for offline previews in
    `art/quests/refreshed`. The game uses its own item renderer; the previews are
    layout checks, not captured gameplay.
-5. Build with `dev.cmd assemble collectMods :revolib:syncPackOverrides` and package
+5. Generate the field and MI guides and the Nexus chapter with
+   `python scripts/generate_field_and_mi_guides.py` and
+   `python scripts/generate_nexus_quests.py`. Run `python scripts/verify_quest_book.py`.
+6. Build with `dev.cmd assemble collectMods :revolib:syncPackOverrides` and package
    with `python scripts/package_modpack.py`.
 
 The desktop launcher copies canonical overrides on a fresh launch. Existing worlds
 keep their quest completion data. In a running world, FTB's reload command can reload
 the definitions, but a fresh dev launch also loads the updated RevoLib recipe guard.
 
-Verification remains light: compilation, stable IDs, icon/resource references,
-dependency graph, wire/node clearance and packaged content. No Minecraft client or
-GameTests were launched for this update. In-game layout and progression pacing are
-left for the owner to play-test.
+Verification covers stable IDs, item references, dependency ordering, map node
+spacing and packaged content. A fresh development world also loaded all 17
+chapters in FTB Quests. Survival pacing still needs a full playthrough.
 
 ## LV/MV and field-equipment continuation
 
@@ -126,3 +129,15 @@ The remaining-gap table is in [PROGRESSION-GAPS-AFTER-MV.md](PROGRESSION-GAPS-AF
 ## Repository reconciliation
 
 The incoming 48-quest LV chapter keeps namespace `5E800000` and the ten crystal/late-resource quests keep `5E900000`. The local electronics extension uses `5EC00000`, and MV chemistry uses `5ED00000`, avoiding collisions. The new extension follows the existing LV aluminum handoff. Remote quest and task IDs are preserved. Run generators in order: `generate_lv_quests.py`, `extend_quest_book.py --render`, `extend_hv_quests.py --render`, then both `validate_lv_quests.py` and `verify_quest_book.py`.
+
+## Field equipment and the Nexus
+
+- **Field Guide** covers wand placement modes and upgrades, the existing shoe
+  workshop and where to get fuel or power for electric, diesel and pressurized-air
+  jetpacks. The Create route requires an Elytra. Field equipment is optional.
+- **MI Guide** runs from Analog Circuits to Quantum Circuits, with separate
+  branches for survey materials, PVC, air separation, nuclear recycling,
+  isotopes, fusion and implosion. See the [MI progression guide](MI-PROGRESSION-GUIDE.md).
+- **Chapter 9** covers the Pressure Casting Plant, Electroplating Line and
+  Particle Collider, then the Nexus Core, the construction program and powered
+  stabilization. See the [Nexus material ledger](NEXUS-MATERIAL-LEDGER.md).

@@ -20,10 +20,10 @@ def main():
     assert hashlib.sha512(data).hexdigest()==shader['sha512']
     files.append({'path':'shaderpacks/'+shader['file'],'hashes':{'sha512':shader['sha512'],'sha1':hashlib.sha1(data).hexdigest()},
         'env':{'client':'required','server':'unsupported'},'downloads':[shader['url']],'fileSize':len(data)})
-    index={'formatVersion':1,'game':'minecraft','versionId':'0.1.44-dev-asset-fixes',
-        'name':'Rassers Revolution: Sky Edition','summary':"Nexus survival progression, native MI production, an embedded portal builder and the Nexus quest chapter.",
+    index={'formatVersion':1,'game':'minecraft','versionId':'0.1.45-dev-quest-guides',
+        'name':'Rassers Revolution: Sky Edition','summary':"Field equipment quests, five Modern Industrialization circuit tiers, and the progression to the Nexus Core.",
         'files':files,'dependencies':{'minecraft':'1.21.1','neoforge':'21.1.265'}}
-    output=ROOT.parent/'Rassers-Revolution-Sky-Edition-0.1.44-dev.mrpack'
+    output=ROOT.parent/'Rassers-Revolution-Sky-Edition-0.1.45-dev.mrpack'
     jars=sorted((ROOT/'build/mods').glob('*.jar'))
     assert len(jars)==7
     assert (ROOT/'pack/overrides/config/fancymenu/assets/skyblock_loop.mp4').stat().st_size>1_000_000
@@ -45,6 +45,7 @@ def main():
         z.write(ROOT/'docs/FIRST-CHAPTER.md','overrides/FIRST-CHAPTER.md')
         z.write(ROOT/'docs/CREATE-IRON-STEAM.md','overrides/CREATE-IRON-STEAM.md')
         z.write(ROOT/'docs/QUEST-BOOK.md','overrides/QUEST-BOOK.md')
+        z.write(ROOT/'docs/MI-PROGRESSION-GUIDE.md','overrides/MI-PROGRESSION-GUIDE.md')
         z.write(ROOT/'docs/STEEL-DRILL.md','overrides/STEEL-DRILL.md')
         z.write(ROOT/'docs/EARLY-RESOURCE-BRIDGES.md','overrides/EARLY-RESOURCE-BRIDGES.md')
         z.write(ROOT/'docs/PROGRESSION-EXPANSION.md','overrides/PROGRESSION-EXPANSION.md')

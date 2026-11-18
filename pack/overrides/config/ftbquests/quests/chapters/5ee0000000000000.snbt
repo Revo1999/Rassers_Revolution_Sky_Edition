@@ -6,7 +6,7 @@
     "id": "revoindustry:nexus_core",
     "count": 1
   },
-  "order_index": 49,
+  "order_index": 51,
   "default_quest_shape": "circle",
   "quests": [
     {
@@ -24,7 +24,7 @@
       ],
       "description": [
         "The Nexus joins the completed MI technology branches with Revo extraction, cultivation, mob programs, salt chemistry and Wither containment. The three production structures and portal use individual placed blocks and native MI hatches.",
-        "Keep parallel factories running. The whole-project ledger is roughly6100 Nexus Alloy,1536 Phase Lattices,3072 Astral Essence,6144 Nether Stars and six MI Singularities. These are gross totals including ingredients inside components, not an extra invoice."
+        "Follow MI Guide: Circuits, Power and Advanced Machines for EV, Quantum and the nuclear and fusion lines. Start bulk collection early. The project uses about 6,100 Nexus Alloy, 1,536 Phase Lattices, 3,072 Astral Essence, 6,144 Nether Stars and six native Singularities in total."
       ],
       "tasks": [
         {
@@ -237,7 +237,7 @@
         "5EE0000000000007"
       ],
       "description": [
-        "A native MI Singularity consumes64Nukes and one Ultradense Metal Ball in the Implosion Compressor. The Core needs six singularities:384 nukes in total, before native upstream costs."
+        "The MI Implosion Compressor uses 64 native MI Nukes and one Ultradense Metal Ball per Singularity. The six Ignition Cells ultimately need 384 nukes."
       ],
       "tasks": [
         {
@@ -295,11 +295,10 @@
       "y": 6.0,
       "shape": "circle",
       "dependencies": [
-        "5EE0000000000006",
-        "5EE0000000000007"
+        "5EE000000000000E"
       ],
       "description": [
-        "Build and supply native MI fusion. The Particle Collider requires real fusion-produced Helium Plasma, not an ordinary helium substitute."
+        "Build the native Fusion Reactor after the Quantum Hull. Save deuterium from the Hydrogen Isotopes step and fuel a fusion recipe that outputs Helium Plasma."
       ],
       "tasks": [
         {
@@ -356,11 +355,10 @@
       "y": 6.0,
       "shape": "circle",
       "dependencies": [
-        "5EE0000000000004",
-        "5EE0000000000007"
+        "5EE0000000000009"
       ],
       "description": [
-        "Commission the native MI UU Matter route. The Nexus Alloy EBF recipe consumes1000 mBper8-ingot batch, binding the endgame to native matter manufacture."
+        "Keep a Singularity in the native MI Electrolyzer as the retained catalyst for UU Matter. Reserve 1,000 mB of UU Matter for every eight Nexus Alloy Ingots."
       ],
       "tasks": [
         {
@@ -388,10 +386,10 @@
       "shape": "circle",
       "dependencies": [
         "5EE0000000000006",
-        "5EE000000000000C"
+        "5EE0000000000007"
       ],
       "description": [
-        "Produce native Quantum Circuits. Install suitable native machine hulls and upgrades: late preparation recipes require8192 EU/t and final assembly32768 EU/t."
+        "Follow the MI Guide through EV Processing Units, spent fuel recycling, Cooling Cells, Qubits and Quantum Circuit Boards. Stockpile Quantum Circuits for both the machinery and plated parts. Late preparation draws up to 8,192 EU/t and final assembly draws 32,768 EU/t."
       ],
       "tasks": [
         {
@@ -792,7 +790,6 @@
       "shape": "hexagon",
       "dependencies": [
         "5EE0000000000019",
-        "5EE000000000000B",
         "5EE0000000000015"
       ],
       "description": [
@@ -921,7 +918,7 @@
       ],
       "description": [
         "Compact each of nine mob drops separately in the MI Compressor, then combine three groups of three in the Assembler. This avoids an impossible nine-input Chemical Reactor recipe.",
-        "Macerate Nether Stars. Chemical Reactor:16 star dust +8 Mob Concentrates +8 Biological Catalysts ->8 Astral Essence. Each essence costs two stars and eight each of rotten flesh, bones, string, leather, slimeballs, blaze rods, pearls, ghast tears and magma cream."
+        "The Wither Hatchery supplies Nether Stars. Macerate 16 stars and react the dust with eight Mob Concentrates and eight Biological Catalysts for eight Astral Essence. Each Essence needs two stars and eight each of rotten flesh, bones, string, leather, slimeballs, blaze rods, ender pearls, ghast tears and magma cream."
       ],
       "tasks": [
         {
@@ -951,7 +948,8 @@
         "5EE000000000001A",
         "5EE000000000001B",
         "5EE000000000001C",
-        "5EE000000000001E"
+        "5EE000000000001E",
+        "5EE000000000000B"
       ],
       "description": [
         "Provide8 Astral Essence,8 of each target,8 empty containment cells,1000 mBHelium Plasma and4000 mBCryofluid. The collider produces8contained Stabilized Exotic Matter and4000 mBwarm coolant.",
@@ -1143,8 +1141,8 @@
         "5EE0000000000019"
       ],
       "description": [
-        "Finish the cast Core housing. Assemble it with6 Ignition Cells,16 Contacts,16 Engineering Processors and8 Quantum Circuits.",
-        "This is the placed Core block, separate from the frame. The recipe connects nuclear singularities, fusion/plasma, UU Matter, quantum circuitry, all three new machines and large Revo production streams."
+        "Finish the cast Core housing. Assemble it with six Ignition Cells, sixteen Contacts, sixteen Engineering Processors and eight Quantum Circuits.",
+        "Use the Core to certify the construction program, then deposit the same Core in the Builder. Portal construction and stabilization are the final steps."
       ],
       "tasks": [
         {

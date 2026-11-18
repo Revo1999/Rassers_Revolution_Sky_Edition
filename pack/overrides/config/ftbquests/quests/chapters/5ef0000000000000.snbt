@@ -1,0 +1,971 @@
+{
+  "id": "5EF0000000000000",
+  "filename": "5ef0000000000000",
+  "title": "MI Guide: Circuits, Power and Advanced Machines",
+  "order_index": 49,
+  "icon": {
+    "id": "modern_industrialization:analog_circuit",
+    "count": 1
+  },
+  "default_quest_shape": "circle",
+  "quests": [
+    {
+      "id": "5EF0000000000001",
+      "title": "LV: Analog Circuits",
+      "icon": {
+        "id": "modern_industrialization:analog_circuit",
+        "count": 1
+      },
+      "x": 0,
+      "y": 0,
+      "description": [
+        "Start with the rubber-and-copper Analog Circuit Board, resistors, capacitors, copper wire and an inductor. A Basic Machine Hull uses this circuit, redstone batteries, steel casing and tin cable. The LV Factory chapter shows the bootstrap."
+      ],
+      "shape": "hexagon",
+      "dependencies": [],
+      "tasks": [
+        {
+          "id": "5EF0100001000001",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:analog_circuit",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5EF0000000000002",
+      "title": "MV: Electronic Circuits",
+      "icon": {
+        "id": "modern_industrialization:electronic_circuit",
+        "count": 1
+      },
+      "x": 4,
+      "y": 0,
+      "description": [
+        "Budget four Analog Circuits, two diodes, two transistors and one Electronic Circuit Board per Electronic Circuit. The Advanced Hull uses this circuit, silicon batteries, an advanced casing and electrum cable. Chapters 6 and 7 cover boards and chemistry."
+      ],
+      "shape": "hexagon",
+      "dependencies": [
+        "5EF0000000000001"
+      ],
+      "tasks": [
+        {
+          "id": "5EF0100002000001",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:electronic_circuit",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5EF0000000000003",
+      "title": "HV: Digital Circuits",
+      "icon": {
+        "id": "modern_industrialization:digital_circuit",
+        "count": 1
+      },
+      "x": 8,
+      "y": 0,
+      "description": [
+        "Make AND, OR and NOT gates and the Digital Circuit Board. Each Digital Circuit uses four Electronic Circuits. Use Digital Circuits, sodium batteries and aluminum cable for the Turbo Hull. Chapter 8 covers Kanthal coils and HV power."
+      ],
+      "shape": "hexagon",
+      "dependencies": [
+        "5EF0000000000002"
+      ],
+      "tasks": [
+        {
+          "id": "5EF0100003000001",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:digital_circuit",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5EF0000000000004",
+      "title": "Refine Titanium",
+      "icon": {
+        "id": "modern_industrialization:titanium_plate",
+        "count": 1
+      },
+      "x": 12,
+      "y": -6,
+      "description": [
+        "Recover titanium dust from bauxite in the Electrolyzer. Smelt titanium hot ingots in a Kanthal Electric Blast Furnace, then finish them in the Vacuum Freezer. Keep titanium for advanced casings and nuclear hardware."
+      ],
+      "shape": "circle",
+      "dependencies": [
+        "5EF0000000000003"
+      ],
+      "tasks": [
+        {
+          "id": "5EF0100004000001",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:titanium_plate",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5EF0000000000005",
+      "title": "Platinum Survey Feedstock",
+      "icon": {
+        "id": "modern_industrialization:raw_platinum",
+        "count": 1
+      },
+      "x": 16,
+      "y": -6,
+      "description": [
+        "The Electric or Digital Drill\u2019s Platinum program produces raw platinum. Leach it with sulfuric acid and centrifuge the solution, then electrolyze the purified solution."
+      ],
+      "shape": "circle",
+      "dependencies": [
+        "5EF000000000001D"
+      ],
+      "tasks": [
+        {
+          "id": "5EF0100005000001",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:raw_platinum",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5EF0000000000006",
+      "title": "Recover Iridium",
+      "icon": {
+        "id": "modern_industrialization:iridium_dust",
+        "count": 1
+      },
+      "x": 16,
+      "y": -3,
+      "description": [
+        "Each 1,000 mB of platinum solution has a 5% chance of yielding one tiny Iridium Dust in the Centrifuge. Pack it into full dust for alloy and plates, and reserve some tiny dust for monocrystalline silicon."
+      ],
+      "shape": "circle",
+      "dependencies": [
+        "5EF0000000000005"
+      ],
+      "tasks": [
+        {
+          "id": "5EF0100006000001",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:iridium_dust",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5EF0000000000007",
+      "title": "Industrial Gases",
+      "icon": {
+        "id": "modern_industrialization:liquid_air_bucket",
+        "count": 1
+      },
+      "x": 12,
+      "y": 3,
+      "description": [
+        "Run a retained Air Intake in the Vacuum Freezer to produce liquid air. Centrifuge the liquid air for nitrogen, oxygen and argon. Reserve argon for wafers and coolant, and keep nitrogen for the Pressure Casting Plant."
+      ],
+      "shape": "circle",
+      "dependencies": [
+        "5EF0000000000003"
+      ],
+      "tasks": [
+        {
+          "id": "5EF0100007000001",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:liquid_air_bucket",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "5EF0100007000002",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:air_intake",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5EF0000000000008",
+      "title": "Cadmium Cells",
+      "icon": {
+        "id": "modern_industrialization:cadmium_battery",
+        "count": 1
+      },
+      "x": 16,
+      "y": 3,
+      "description": [
+        "The Monazite program on the Electric or Digital Drill supplies the feedstock. Centrifuge nine Monazite Dust into three Cadmium Dust, three Neodymium Dust and three Yttrium Dust. Save neodymium for Collider targets and turn cadmium into batteries."
+      ],
+      "shape": "circle",
+      "dependencies": [
+        "5EF000000000001D"
+      ],
+      "tasks": [
+        {
+          "id": "5EF0100008000001",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:cadmium_battery",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5EF0000000000009",
+      "title": "Vinyl Chloride to PVC",
+      "icon": {
+        "id": "modern_industrialization:polyvinyl_chloride_bucket",
+        "count": 1
+      },
+      "x": 16,
+      "y": 6,
+      "description": [
+        "React acetylene with hydrochloric acid. Polymerize the Vinyl Chloride in the Chemical Reactor. Use EMI to compare the lead and chromium catalyst recipes. Reserve 1,500 mB PVC per Processing Unit Board."
+      ],
+      "shape": "circle",
+      "dependencies": [
+        "5EF0000000000003"
+      ],
+      "tasks": [
+        {
+          "id": "5EF0100009000001",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:polyvinyl_chloride_bucket",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5EF000000000000A",
+      "title": "Silicon Wafers",
+      "icon": {
+        "id": "modern_industrialization:silicon_wafer",
+        "count": 1
+      },
+      "x": 20,
+      "y": -3,
+      "description": [
+        "Blast-furnace silicon dust with argon and a tiny Iridium Dust input to grow Monocrystalline Silicon. Cut it with lubricant for wafers. This step has a separate recipe from ordinary silicon plates."
+      ],
+      "shape": "circle",
+      "dependencies": [
+        "5EF0000000000006",
+        "5EF0000000000007"
+      ],
+      "tasks": [
+        {
+          "id": "5EF010000A000001",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:silicon_wafer",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5EF000000000000B",
+      "title": "Memory and Logic Components",
+      "icon": {
+        "id": "modern_industrialization:random_access_memory",
+        "count": 1
+      },
+      "x": 24,
+      "y": -3,
+      "description": [
+        "Chemical-react wafers with antimony, aluminum, argon and styrene-butadiene rubber for RAM. MMUs use wafers, an emerald plate and platinum fine wire. ALUs use a diamond plate and logic gates."
+      ],
+      "shape": "circle",
+      "dependencies": [
+        "5EF000000000000A"
+      ],
+      "tasks": [
+        {
+          "id": "5EF010000B000001",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:random_access_memory",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "5EF010000B000002",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:memory_management_unit",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "5EF010000B000003",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:arithmetic_logic_unit",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5EF000000000000C",
+      "title": "Processing Unit Board",
+      "icon": {
+        "id": "modern_industrialization:processing_unit_board",
+        "count": 1
+      },
+      "x": 20,
+      "y": 3,
+      "description": [
+        "Pipe PVC into the native Assembler and supply a Digital Circuit Board, eight annealed copper cables, two Cadmium Batteries and four platinum plates."
+      ],
+      "shape": "circle",
+      "dependencies": [
+        "5EF0000000000008",
+        "5EF0000000000009",
+        "5EF0000000000005"
+      ],
+      "tasks": [
+        {
+          "id": "5EF010000C000001",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:processing_unit_board",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5EF000000000000D",
+      "title": "EV: The Processing Unit",
+      "icon": {
+        "id": "modern_industrialization:processing_unit",
+        "count": 1
+      },
+      "x": 28,
+      "y": 0,
+      "description": [
+        "Assemble four Digital Circuits, two RAM, one MMU, one ALU and one Processing Unit Board. This is the tier between Digital and Quantum. Keep Digital Circuits in production for both upgrades and existing machines."
+      ],
+      "shape": "hexagon",
+      "dependencies": [
+        "5EF000000000000B",
+        "5EF000000000000C"
+      ],
+      "tasks": [
+        {
+          "id": "5EF010000D000001",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:processing_unit",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5EF000000000000E",
+      "title": "Highly Advanced Hull",
+      "icon": {
+        "id": "modern_industrialization:highly_advanced_machine_hull",
+        "count": 1
+      },
+      "x": 32,
+      "y": 0,
+      "description": [
+        "Use the Processing Unit, two Cadmium Batteries, the titanium-based Highly Advanced Casing and three annealed copper cables. Use EV-rated hatches and match the cable tier to the network."
+      ],
+      "shape": "circle",
+      "dependencies": [
+        "5EF000000000000D",
+        "5EF0000000000004"
+      ],
+      "tasks": [
+        {
+          "id": "5EF010000E000001",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:highly_advanced_machine_hull",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5EF000000000000F",
+      "title": "Nuclear Reactor and Fuel",
+      "icon": {
+        "id": "modern_industrialization:nuclear_reactor",
+        "count": 1
+      },
+      "x": 36,
+      "y": -6,
+      "description": [
+        "Use the Electric or Digital Drill Uranium program for feedstock. Follow the MI Guidebook for the reactor grid, fuel and cooling setup. Centrifuge a depleted Uranium Fuel Rod to recover tiny plutonium dust and uranium byproducts."
+      ],
+      "shape": "circle",
+      "dependencies": [
+        "5EF000000000000E",
+        "5EF000000000001D"
+      ],
+      "tasks": [
+        {
+          "id": "5EF010000F000001",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:nuclear_reactor",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "5EF010000F000002",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:uranium_fuel_rod",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5EF0000000000010",
+      "title": "Plutonium Batteries",
+      "icon": {
+        "id": "modern_industrialization:plutonium_battery",
+        "count": 1
+      },
+      "x": 40,
+      "y": -6,
+      "description": [
+        "Reserve recovered Plutonium for batteries and the implosion chain. Assemble batteries with battery-alloy parts and superconductor cable. Quantum boards and the final hull each consume batteries."
+      ],
+      "shape": "circle",
+      "dependencies": [
+        "5EF000000000000F",
+        "5EF0000000000011"
+      ],
+      "tasks": [
+        {
+          "id": "5EF0100010000001",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:plutonium_battery",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5EF0000000000011",
+      "title": "Superconducting Line",
+      "icon": {
+        "id": "modern_industrialization:superconductor_cable",
+        "count": 1
+      },
+      "x": 36,
+      "y": 3,
+      "description": [
+        "Mix iridium, annealed copper, yttrium and neodymium dust. Blast-furnace the alloy, cool the hot ingots and make wire and cable. Keep the high-power network separate from earlier tiers."
+      ],
+      "shape": "circle",
+      "dependencies": [
+        "5EF000000000000E",
+        "5EF0000000000006"
+      ],
+      "tasks": [
+        {
+          "id": "5EF0100011000001",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:superconductor_cable",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5EF0000000000012",
+      "title": "Cryofluid and Cooling Cells",
+      "icon": {
+        "id": "modern_industrialization:cooling_cell",
+        "count": 1
+      },
+      "x": 36,
+      "y": 6,
+      "description": [
+        "Freeze argon and helium into Cryofluid. Feed Cryofluid, fluid pipes, small heat exchangers and tin plates into the Assembler for cooling cells. Keep a supply for the Collider too."
+      ],
+      "shape": "circle",
+      "dependencies": [
+        "5EF0000000000007",
+        "5EF000000000000E",
+        "5EF000000000001C"
+      ],
+      "tasks": [
+        {
+          "id": "5EF0100012000001",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:cooling_cell",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5EF0000000000013",
+      "title": "Hydrogen Isotopes",
+      "icon": {
+        "id": "modern_industrialization:tritium_bucket",
+        "count": 1
+      },
+      "x": 36,
+      "y": 0,
+      "description": [
+        "Electrolyze water for hydrogen. Centrifuge each 1,000 mB hydrogen for 20 mB deuterium and 1 mB tritium. Bank the deuterium for fusion and feed the tritium to the qubit line. Check off this step once both outputs are flowing."
+      ],
+      "shape": "circle",
+      "dependencies": [
+        "5EF000000000000E"
+      ],
+      "tasks": [
+        {
+          "id": "5EF0100013000001",
+          "type": "checkmark"
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5EF0000000000014",
+      "title": "Helium-3 Separation",
+      "icon": {
+        "id": "modern_industrialization:helium_3_bucket",
+        "count": 1
+      },
+      "x": 40,
+      "y": 6,
+      "description": [
+        "Centrifuge 1,000 mB helium for 5 mB Helium-3. Reserve 50 mB per Quantum Circuit Board. Check off this step once you have a board-sized batch in a tank."
+      ],
+      "shape": "circle",
+      "dependencies": [
+        "5EF000000000001C"
+      ],
+      "tasks": [
+        {
+          "id": "5EF0100014000001",
+          "type": "checkmark"
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5EF0000000000015",
+      "title": "Qubits",
+      "icon": {
+        "id": "modern_industrialization:qubit",
+        "count": 1
+      },
+      "x": 40,
+      "y": 3,
+      "description": [
+        "Supply ALUs, carbon plates, glass panes and superconductor wire. The native Assembler also needs Cryofluid and tritium."
+      ],
+      "shape": "circle",
+      "dependencies": [
+        "5EF0000000000013",
+        "5EF0000000000012",
+        "5EF0000000000011"
+      ],
+      "tasks": [
+        {
+          "id": "5EF0100015000001",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:qubit",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5EF0000000000016",
+      "title": "Quantum Circuit Board",
+      "icon": {
+        "id": "modern_industrialization:quantum_circuit_board",
+        "count": 1
+      },
+      "x": 44,
+      "y": -6,
+      "description": [
+        "Assemble the Processing Unit Board with twelve superconductor cables, two Plutonium Batteries, six iridium plates and 50 mB Helium-3."
+      ],
+      "shape": "circle",
+      "dependencies": [
+        "5EF0000000000010",
+        "5EF0000000000014",
+        "5EF000000000000C"
+      ],
+      "tasks": [
+        {
+          "id": "5EF0100016000001",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:quantum_circuit_board",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5EF0000000000017",
+      "title": "Quantum Circuit",
+      "icon": {
+        "id": "modern_industrialization:quantum_circuit",
+        "count": 1
+      },
+      "x": 48,
+      "y": 0,
+      "description": [
+        "Combine four Processing Units, two qubits, two Cooling Cells and one Quantum Circuit Board. The Nexus controllers and plating line use Quantum Circuits, so plan a repeatable supply."
+      ],
+      "shape": "hexagon",
+      "dependencies": [
+        "5EF0000000000016",
+        "5EF0000000000015",
+        "5EF0000000000012"
+      ],
+      "tasks": [
+        {
+          "id": "5EF0100017000001",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:quantum_circuit",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5EF0000000000018",
+      "title": "Quantum Machine Hull",
+      "icon": {
+        "id": "modern_industrialization:quantum_machine_hull",
+        "count": 1
+      },
+      "x": 52,
+      "y": 0,
+      "description": [
+        "Build a Quantum Casing from a Highly Advanced Hull with iridium plates. Finish the hull with a Quantum Circuit, two Plutonium Batteries and three superconductor cables."
+      ],
+      "shape": "circle",
+      "dependencies": [
+        "5EF0000000000017",
+        "5EF0000000000010"
+      ],
+      "tasks": [
+        {
+          "id": "5EF0100018000001",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:quantum_machine_hull",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5EF0000000000019",
+      "title": "Fusion and Helium Plasma",
+      "icon": {
+        "id": "modern_industrialization:fusion_reactor",
+        "count": 1
+      },
+      "x": 56,
+      "y": -3,
+      "description": [
+        "Build the native Fusion Reactor with Fusion Chambers, a Quantum Hull and Quantum Circuits. A deuterium-only run can produce Helium Plasma and more tritium. Pipe plasma to the Nexus Particle Collider."
+      ],
+      "shape": "circle",
+      "dependencies": [
+        "5EF0000000000018",
+        "5EF0000000000013"
+      ],
+      "tasks": [
+        {
+          "id": "5EF0100019000001",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:fusion_reactor",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "5EF0100019000002",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:helium_plasma_bucket",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5EF000000000001A",
+      "title": "Implosion and UU Matter",
+      "icon": {
+        "id": "modern_industrialization:singularity",
+        "count": 1
+      },
+      "x": 56,
+      "y": 3,
+      "description": [
+        "Use the MI Implosion Compressor with an Ultradense Metal Ball and 64 native MI Nukes per Singularity. A retained Singularity is also the Electrolyzer catalyst for UU Matter. Keep six available for the Nexus Ignition Cells."
+      ],
+      "shape": "circle",
+      "dependencies": [
+        "5EF000000000000F",
+        "5EF000000000000E",
+        "5EF0000000000006"
+      ],
+      "tasks": [
+        {
+          "id": "5EF010001A000001",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:singularity",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "5EF010001A000002",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:implosion_compressor",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "5EF010001A000003",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:uu_matter_bucket",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5EF000000000001B",
+      "title": "Ready for the Nexus Line",
+      "icon": {
+        "id": "modern_industrialization:superconductor_energy_input_hatch",
+        "count": 1
+      },
+      "x": 60,
+      "y": 0,
+      "description": [
+        "Use Chapter 9 for the Pressure Casting Plant, Electroplating Line, Particle Collider, Nexus Core and Builder. Bring high-tier MI hatches and enough EU for the machinery. The Core and powered portal are the final project."
+      ],
+      "shape": "hexagon",
+      "dependencies": [
+        "5EF0000000000018",
+        "5EF0000000000019",
+        "5EF000000000001A"
+      ],
+      "tasks": [
+        {
+          "id": "5EF010001B000001",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:superconductor_energy_input_hatch",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5EF000000000001C",
+      "title": "Shale Oil and Helium",
+      "icon": {
+        "id": "modern_industrialization:oil_drilling_rig",
+        "count": 1
+      },
+      "x": 24,
+      "y": 6,
+      "description": [
+        "Run the MI Oil Drilling Rig with a Stainless Steel Drill to extract shale oil. A Distillery can take off helium alone, or a Distillation Tower can also recover sulfuric crude oil and sulfuric naphtha. Save helium for Cryofluid and Helium-3."
+      ],
+      "shape": "circle",
+      "dependencies": [
+        "5EF0000000000003"
+      ],
+      "tasks": [
+        {
+          "id": "5EF010001C000001",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:oil_drilling_rig",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "5EF010001C000002",
+          "type": "item",
+          "item": {
+            "id": "modern_industrialization:helium_bucket",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5EF000000000001D",
+      "title": "Nuclear Survey Core",
+      "icon": {
+        "id": "revoextraction:nuclear_survey_core",
+        "count": 1
+      },
+      "x": 12,
+      "y": -3,
+      "description": [
+        "The Electric and Digital Drills use this retained core for Uranium, Platinum, Deep Debris and Monazite. Follow Crystals and Distant Resources for core parts and use the Wither Hatchery route for the Nether Star. Keep the Tungsten Survey Core for the Tungsten program."
+      ],
+      "shape": "circle",
+      "dependencies": [
+        "5EF0000000000004"
+      ],
+      "tasks": [
+        {
+          "id": "5EF010001D000001",
+          "type": "item",
+          "item": {
+            "id": "revoextraction:nuclear_survey_core",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    }
+  ]
+}

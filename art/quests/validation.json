@@ -1,16 +1,16 @@
 {
-  "chapters": 15,
-  "quests": 332,
+  "chapters": 17,
+  "quests": 373,
   "newQuests": 83,
+  "newGuideQuests": 41,
   "nexusQuestsVerified": 41,
   "sedimentAndDrillQuestsVerified": 4,
-  "existingQuestsPreserved": 208,
-  "uniqueIds": 755,
+  "existingQuestsPreserved": 332,
+  "uniqueIds": 847,
   "acyclicDependencies": true,
   "newItemReferencesResolved": true,
   "nonConsumingItemTasks": true,
   "newMaterialRewards": 0,
-  "fluidTasks": "explicit self-reported commissioning checkmarks",
   "liveSurvivalPlaythrough": "not performed",
   "chaptersSummary": [
     {
@@ -24,6 +24,10 @@
     {
       "title": "Chapter 2: The Create Revolution",
       "quests": 29
+    },
+    {
+      "title": "Field Guide: Wands, Jetpacks and Shoes",
+      "quests": 12
     },
     {
       "title": "Chapter 3: MI - The Steam Age",
@@ -72,6 +76,10 @@
     {
       "title": "Chapter 9: The Nexus Endgame",
       "quests": 41
+    },
+    {
+      "title": "MI Guide: Circuits, Power and Advanced Machines",
+      "quests": 29
     }
   ]
 }
