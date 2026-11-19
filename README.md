@@ -69,6 +69,11 @@ to open it in a matching pack instance.
 The dedicated server requires you to review and accept Mojang's EULA in
 revolib/run/eula.txt before it will start. Setup does not accept it for you.
 
+For playtesting outside the development checkout, build the matching client
+and dedicated server archives. The [release guide](docs/RELEASES.md) covers
+local builds, GitHub release artifacts and CurseForge publication. The
+[server bundle instructions](pack/server/README.md) cover first launch.
+
 ## Layout
 
 - Each revo*/src/main/java: Java implementation.

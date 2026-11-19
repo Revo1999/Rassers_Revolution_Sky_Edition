@@ -1,0 +1,20 @@
+{
+  "installer": {
+    "file": "neoforge-21.1.265-installer.jar",
+    "url": "https://maven.neoforged.net/releases/net/neoforged/neoforge/21.1.265/neoforge-21.1.265-installer.jar",
+    "sha256": "a547ccc30a80a675d1c61d04b55d10c45c39a86971e09731482c50a24399d1a2"
+  },
+  "omit": {
+    "better-advanced-tooltips": "Client tooltip rendering",
+    "emi": "Recipe viewer",
+    "fancymenu": "Client menu",
+    "jei": "Recipe viewer",
+    "konkrete": "Dependency of FancyMenu",
+    "melody": "Dependency of FancyMenu",
+    "mezzconfig": "Dependency of JEI",
+    "watermedia-binaries": "Dependency of the client media player"
+  },
+  "includeUnknown": {
+    "crafting-station-jei-edition-updated": "Registers the gameplay crafting station block used on the starter island"
+  }
+}

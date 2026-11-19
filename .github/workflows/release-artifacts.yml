@@ -1,0 +1,30 @@
+name: Build release archives
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: bash gradlew build collectMods
+      - shell: pwsh
+        run: ./scripts/sync-mods.ps1
+      - run: |
+          python scripts/package_modpack.py
+          python scripts/package_server.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: revo-release-archives
+          path: |
+            ../Rassers-Revolution-Sky-Edition-*.mrpack
+            ../Rassers-Revolution-Sky-Edition-*-server.zip
+          if-no-files-found: error

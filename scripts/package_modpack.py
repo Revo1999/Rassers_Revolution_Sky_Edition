@@ -6,6 +6,19 @@ import zipfile
 
 ROOT=Path(__file__).resolve().parents[1]
 
+def release_jars(version):
+    jars=sorted((ROOT/'build/mods').glob('*.jar'))
+    assert len(jars)==8
+    revoutil_jar, = (path for path in jars if path.name.startswith('revoutil-'))
+    with zipfile.ZipFile(revoutil_jar) as jar:
+        assert jar.read('revoutil/version.txt').decode('utf-8').strip()==version, 'Rebuild RevoUtil for the current pack version'
+    for path in jars:
+        with zipfile.ZipFile(path) as jar:
+            assert not any('/benchmark/' in n or 'PerformanceBenchmark' in n for n in jar.namelist()), path
+            assert not any(any(marker in n for marker in ['OptimizationGameTests','SedimentGameTests','NexusGameTests','NexusSurvivalGameTests','NexusVisualQa','nexus_test.nbt','MineralGameTests','SalternGameTests','SalternUiQa','saltern_test.nbt','HatcheryGameTests','HatcheryUiQa','hatchery_test.nbt','ProgressionBridgeTests','ProgressionBridgeUiQa','IndustrialGridUiQa','ChapterOneGameTests','ChapterOneUiQa','CinematicCapture','DrillInterfaceQa','DrillGameTests','drill_test.nbt','FarmUiQa','FarmGameTests','FarmLightingGameTests','FurnaceGameTests','FurnaceUiQa','furnace_test.nbt','SmallGameTests','SmallUiQa','farm_test.nbt','AchievementsUiQa','AchievementsGameTests','achievements_test.nbt']) for n in jar.namelist())
+    return jars
+
+
 def main():
     version=(ROOT/'pack/version.txt').read_text(encoding='utf-8').strip()
     lock=json.loads((ROOT/'pack/mods.lock.json').read_text(encoding='utf-8-sig'))
@@ -25,11 +38,7 @@ def main():
         'name':'Rassers Revolution: Sky Edition','summary':"RevoUtil playtest notes and status HUD, with quest guides through the Nexus endgame.",
         'files':files,'dependencies':{'minecraft':'1.21.1','neoforge':'21.1.265'}}
     output=ROOT.parent/f'Rassers-Revolution-Sky-Edition-{version}.mrpack'
-    jars=sorted((ROOT/'build/mods').glob('*.jar'))
-    assert len(jars)==8
-    revoutil_jar, = (path for path in jars if path.name.startswith('revoutil-'))
-    with zipfile.ZipFile(revoutil_jar) as jar:
-        assert jar.read('revoutil/version.txt').decode('utf-8').strip()==version, 'Rebuild RevoUtil for the current pack version'
+    jars=release_jars(version)
     assert (ROOT/'pack/overrides/config/fancymenu/assets/skyblock_loop.mp4').stat().st_size>1_000_000
     with zipfile.ZipFile(output,'w',zipfile.ZIP_DEFLATED) as z:
         z.writestr('modrinth.index.json',json.dumps(index,indent=2)+'\n')
@@ -37,9 +46,6 @@ def main():
             if path.is_file() and path.name not in ['.gitkeep','README.md']:
                 z.write(path,'overrides/'+path.relative_to(ROOT/'pack/overrides').as_posix())
         for path in jars:
-            with zipfile.ZipFile(path) as jar:
-                assert not any('/benchmark/' in n or 'PerformanceBenchmark' in n for n in jar.namelist()), path
-                assert not any(any(marker in n for marker in ['OptimizationGameTests','SedimentGameTests','NexusGameTests','NexusSurvivalGameTests','NexusVisualQa','nexus_test.nbt','MineralGameTests','SalternGameTests','SalternUiQa','saltern_test.nbt','HatcheryGameTests','HatcheryUiQa','hatchery_test.nbt','ProgressionBridgeTests','ProgressionBridgeUiQa','IndustrialGridUiQa','ChapterOneGameTests','ChapterOneUiQa','CinematicCapture','DrillInterfaceQa','DrillGameTests','drill_test.nbt','FarmUiQa','FarmGameTests','FarmLightingGameTests','FurnaceGameTests','FurnaceUiQa','furnace_test.nbt','SmallGameTests','SmallUiQa','farm_test.nbt','AchievementsUiQa','AchievementsGameTests','achievements_test.nbt']) for n in jar.namelist())
             z.write(path,'overrides/mods/'+path.name)
         # A clean new instance needs the bundled font explicitly selected.
         z.writestr('overrides/options.txt','resourcePacks:["vanilla","mod_resources","file/revo-departure-mono","file/revo-industrial-grid"]\nguiScale:0\n')
