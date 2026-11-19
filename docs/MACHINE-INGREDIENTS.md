@@ -6,7 +6,7 @@ The registry audit covers 166 Revo block IDs. All 156 blocks with an item form h
 | --- | --- | --- |
 | Rain barrel and crucible | Clay, unfired vessels and early stone | Early crafting and firing recipes. Hammer dirt for Stone Pebbles. |
 | Composter and silkworm cultivator | Compost and Silk Cocoons | Feed compostable items or leaves to the corresponding machine. These are machine outputs used in other recipes. |
-| Greenhouses, tree growers and trading colony | Crop starters, saplings and catalyst items | Use the matching starter or crop route. Cotton grows from craftable seeds, either as a crop or in the greenhouse. |
+| Greenhouses and tree growers | Crop starters, saplings and catalyst items | Use the matching starter or crop route. Cotton grows from craftable seeds, either as a crop or in the greenhouse. |
 | Mob harvesters | Mob-specific spawners and later spawner tiers | Craft the corresponding egg and surround it with iron bars. The Wither Skeleton egg uses Netherite, soul sand and bone, giving a route to the first skull. The egg and placed spawner are disabled for mob spawning. |
 | Mechanical drills, gravel feeder and sluice | Create components, steel parts, water and sediment hatch | Existing crafts and layered assembly guides. Iron and steel drills produce Mineral and Gem Sludge for native fan washing. |
 | Electric and Digital drills | MI hatches and hulls, retained Survey Cores | Standard MI components plus the Deep, Tungsten and Nuclear Survey Core crafts. The Electric Drill makes Crystalline Sludge for native MI centrifuging. Late survey modes supply platinum, monazite and Ancient Debris. |

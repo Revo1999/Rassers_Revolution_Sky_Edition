@@ -35,7 +35,7 @@ Use an existing Create Encased Fan blowing through water onto the sludge. Belts,
 | 1 Mineral Sludge | 1 Quartz, guaranteed |
 | 1 Gem Sludge | 1 Diamond + 2 Lapis Lazuli, guaranteed; 25% chance of 1 Emerald |
 
-The Iron Drill sludge route makes quartz available before Steel Drill diamonds. The Steel Drill no longer outputs loose diamonds or lapis. Existing items in player storage remain valid. Ordinary mod processing byproducts and the existing Trading Colony are not removed by this change; these are the pack's primary drill/sludge supply routes.
+The Iron Drill sludge route makes quartz available before Steel Drill diamonds. The Steel Drill no longer outputs loose diamonds or lapis. Existing items in player storage remain valid. Craft four Gem Sludge in a 2x2 grid for one guaranteed emerald. Washing can also yield emeralds alongside diamonds and lapis. The Trading Colony has been retired.
 
 ## Electric extraction
 

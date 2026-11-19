@@ -352,26 +352,27 @@
     },
     {
       "id": "5E5000000000000C",
-      "title": "Trading Colony",
+      "title": "Craft an Emerald",
       "icon": {
-        "id": "revocultivation:trading_colony",
+        "id": "minecraft:emerald",
         "count": 1
       },
-      "x": 9.0,
-      "y": 6.0,
+      "x": -6.0,
+      "y": 0.0,
       "shape": "circle",
       "dependencies": [
-        "5E50000000000002"
+        "5E40000000000009"
       ],
       "description": [
-        "Build a steel-gated Trading Colony. Place wheat or paper in the first 26 slots; every 10 seconds it exchanges 16 of one input for one emerald in the bottom-right slot. Hoppers are supported."
+        "Get Gem Sludge from the Steel Drill. Place four Gem Sludge in a 2 by 2 crafting grid for one guaranteed Emerald.",
+        "Wash the sludge for Diamonds, Lapis and a chance at Emeralds."
       ],
       "tasks": [
         {
           "id": "5E5000000010000C",
           "type": "item",
           "item": {
-            "id": "revocultivation:trading_colony",
+            "id": "minecraft:emerald",
             "count": 1
           },
           "count": 1,

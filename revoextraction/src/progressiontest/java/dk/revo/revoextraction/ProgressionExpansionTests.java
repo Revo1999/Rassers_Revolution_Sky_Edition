@@ -56,7 +56,7 @@ public class ProgressionExpansionTests {
  public static void loadedRecipeBridgesAndBucketRemainder(GameTestHelper h){
   for(String id:new String[]{"milling/raw_gold","empty_blaze_burner","sugar_cane_starter","kelp_starter","cactus_starter","beetroot_starter","electric_drill","deep_survey_core","synthetic_netherrack","synthetic_soul_sand"})check(h,h.getLevel().getRecipeManager().byKey(ResourceLocation.parse("revoextraction:"+id)).isPresent(),"Recipe loads: "+id);
   var recipe=(CraftingRecipe)h.getLevel().getRecipeManager().byKey(ResourceLocation.parse("revoextraction:kelp_starter")).orElseThrow().value();var input=CraftingInput.of(3,1,java.util.List.of(new ItemStack(item("revocultivation:compost")),new ItemStack(Items.WHEAT_SEEDS),new ItemStack(Items.WATER_BUCKET)));check(h,recipe.matches(input,h.getLevel()),"Kelp uses actual registered compost");check(h,recipe.assemble(input,h.getLevel().registryAccess()).is(Items.KELP),"Kelp result");check(h,recipe.getRemainingItems(input).stream().anyMatch(s->s.is(Items.BUCKET)),"Returns empty bucket");
-  for(String id:new String[]{"revostorage:chest_drive","revostorage:crafting_terminal","revocultivation:trading_colony","modern_industrialization:electric_age/machine/lv_steam_turbine_asbl","modern_industrialization:electric_age/circuit/craft/lv_circuit_asbl"})check(h,h.getLevel().getRecipeManager().byKey(ResourceLocation.parse(id)).isPresent(),"Native crafting route "+id);h.succeed();
+  for(String id:new String[]{"revostorage:chest_drive","revostorage:crafting_terminal","modern_industrialization:electric_age/machine/lv_steam_turbine_asbl","modern_industrialization:electric_age/circuit/craft/lv_circuit_asbl"})check(h,h.getLevel().getRecipeManager().byKey(ResourceLocation.parse(id)).isPresent(),"Native crafting route "+id);h.succeed();
  }
  @GameTest(template="drill_test",timeoutTicks=100)
  public static void electricGeologyPowerBlockingDeepAndPersistence(GameTestHelper h){var l=h.getLevel();var pos=h.absolutePos(new BlockPos(2,2,2));var e=electricFixture(h,pos);
@@ -65,7 +65,41 @@ public class ProgressionExpansionTests {
   e.program=5;e.work=0;e.energy=32000;e.items.setStackInSlot(1,new ItemStack(Items.WATER_BUCKET));for(int t=0;t<200;t++)ElectricDrillEntity.tick(l,pos,e.getBlockState(),e);check(h,ProgressionBridgeTests.count(electricOutput(e),Items.ICE)==1&&e.items.getStackInSlot(1).is(Items.BUCKET),"Glacial water paid and bucket returned");
   for(var slot:ElectricDrillStructure.hatch(e,1,0).getInventory().getItemStacks())slot.empty();e.sedimentHatch().getInventory().getFluidStacks().getFirst().empty();e.program=6;e.work=0;e.energy=32000;ElectricDrillEntity.tick(l,pos,e.getBlockState(),e);check(h,e.work==0,"Deep core required");e.items.setStackInSlot(0,new ItemStack(RevoExtraction.SURVEY_CORE.get()));e.cycle=63;e.work=1199;ElectricDrillEntity.tick(l,pos,e.getBlockState(),e);check(h,ProgressionBridgeTests.count(electricOutput(e),Items.ANCIENT_DEBRIS)==1&&e.cycle==64,"Rare deep output");var tag=e.saveWithoutMetadata(l.registryAccess());e.loadWithComponents(tag,l.registryAccess());check(h,e.cycle==64&&e.program==6,"Deep cursor saved");for(var slot:ElectricDrillStructure.hatch(e,1,0).getInventory().getItemStacks()){slot.setKey(aztech.modern_industrialization.thirdparty.fabrictransfer.api.item.ItemVariant.of(Items.COBBLESTONE));slot.setAmount(slot.getTotalCapacityFor(Items.COBBLESTONE));}int power=e.energy;ElectricDrillEntity.tick(l,pos,e.getBlockState(),e);check(h,e.energy==power&&e.work==0,"Full output pauses energy and work");h.succeed();}
  @GameTest(template="drill_test",timeoutTicks=100)
- public static void tradingColonyConsumesExactlySixteen(GameTestHelper h){var l=h.getLevel();var pos=h.absolutePos(new BlockPos(2,2,2));l.setBlockAndUpdate(pos,RevoCultivation.TRADE.get().defaultBlockState());var e=(TradingColony.Entity)l.getBlockEntity(pos);e.items.setStackInSlot(0,new ItemStack(Items.PAPER,32));for(int t=0;t<200;t++)TradingColony.Entity.tick(l,pos,e.getBlockState(),e);check(h,e.items.getStackInSlot(0).getCount()==16&&e.items.getStackInSlot(26).is(Items.EMERALD),"16 paper = 1 emerald");h.succeed();}
+ public static void emeraldCraftingReplacesTradingColony(GameTestHelper h) {
+  var level = h.getLevel();
+  var recipes = level.getRecipeManager();
+  var recipe = (CraftingRecipe) recipes.byKey(ResourceLocation.parse("revoextraction:emerald_from_gem_sludge")).orElseThrow().value();
+  var sludge = new ItemStack(item("revoextraction:gem_sludge"));
+  var input = CraftingInput.of(2, 2, java.util.List.of(sludge, sludge, sludge, sludge));
+  check(h, recipe.matches(input, level), "Four Gem Sludge match the emerald recipe");
+  var result = recipe.assemble(input, level.registryAccess());
+  check(h, result.is(Items.EMERALD) && result.getCount() == 1, "Each craft yields one emerald");
+  var incomplete = CraftingInput.of(2, 2, java.util.List.of(sludge, sludge, sludge, ItemStack.EMPTY));
+  check(h, !recipe.matches(incomplete, level), "Three Gem Sludge are insufficient");
+  check(h, recipes.byKey(ResourceLocation.parse("revocultivation:trading_colony")).isEmpty(), "The colony recipe is retired");
+
+  var pos = h.absolutePos(new BlockPos(2, 2, 2));
+  var colony = RevoCultivation.TRADE.get();
+  var state = colony.defaultBlockState();
+  level.setBlockAndUpdate(pos, state);
+  var entity = (TradingColony.Entity) level.getBlockEntity(pos);
+  entity.items.setStackInSlot(0, new ItemStack(Items.PAPER, 32));
+  entity.items.setStackInSlot(26, new ItemStack(Items.EMERALD, 2));
+  var saved = entity.saveWithoutMetadata(level.registryAccess());
+  saved.putInt("Work", 199);
+  entity.items.setStackInSlot(0, ItemStack.EMPTY);
+  entity.items.setStackInSlot(26, ItemStack.EMPTY);
+  entity.loadWithComponents(saved, level.registryAccess());
+  check(h, colony.getTicker(level, state, RevoCultivation.TRADE_ENTITY.get()) == null, "Existing colonies cannot trade");
+  check(h, entity.items.insertItem(0, new ItemStack(Items.PAPER), false).getCount() == 1, "Automation cannot insert new items");
+  check(h, entity.items.extractItem(0, 32, false).getCount() == 32, "Saved input can be recovered");
+  var player = h.makeMockPlayer(net.minecraft.world.level.GameType.SURVIVAL);
+  var menu = new TradingColony.Menu(1, player.getInventory(), entity);
+  player.getInventory().setItem(9, new ItemStack(Items.EMERALD));
+  check(h, menu.quickMoveStack(player, 27).isEmpty(), "Shift-clicking cannot merge into saved emeralds");
+  check(h, menu.quickMoveStack(player, 26).getCount() == 2 && entity.items.getStackInSlot(26).isEmpty(), "Saved emeralds can be recovered through the menu");
+  h.succeed();
+ }
  @GameTest(template="drill_test",timeoutTicks=100)
  public static void nineDiamondChestsNetworkAndPersistence(GameTestHelper h){var l=h.getLevel();var pos=h.absolutePos(new BlockPos(2,2,2));l.setBlockAndUpdate(pos,RevoStorage.DRIVE.get().defaultBlockState());l.setBlockAndUpdate(pos.east(),RevoStorage.TERMINAL.get().defaultBlockState());var e=(StorageEntity)l.getBlockEntity(pos);var terminal=(StorageEntity)l.getBlockEntity(pos.east());var diamond=item("ironchest:diamond_chest");check(h,diamond!=Items.AIR,"Iron Chests integration installed");for(int i=0;i<9;i++)e.chests.setStackInSlot(i,new ItemStack(diamond));check(h,e.capacity()==972&&terminal.networkItems().getSlots()==972,"Nine native diamond chest capacities");check(h,terminal.insert(new ItemStack(Items.DIAMOND,64),false).isEmpty(),"Network insert");check(h,e.chests.extractItem(0,1,false).isEmpty(),"Nonempty bay locks chest");check(h,terminal.take(new ItemStack(Items.DIAMOND),32,true).getCount()==32&&terminal.take(new ItemStack(Items.DIAMOND),32,false).getCount()==32,"Simulation does not extract");var tag=e.saveWithoutMetadata(l.registryAccess());e.loadWithComponents(tag,l.registryAccess());check(h,ProgressionBridgeTests.count(terminal.networkItems(),Items.DIAMOND)==32,"Real saved inventory");terminal.take(new ItemStack(Items.DIAMOND),32,false);check(h,!e.chests.extractItem(0,1,false).isEmpty()&&terminal.networkItems().getSlots()==864,"Empty bay removes without phantom slots");h.succeed();}
  @GameTest(template="drill_test",timeoutTicks=100)

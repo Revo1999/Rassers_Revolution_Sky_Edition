@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": ["SS", "SS"],
+  "key": {
+    "S": {
+      "item": "revoextraction:gem_sludge"
+    }
+  },
+  "result": {
+    "id": "minecraft:emerald",
+    "count": 1
+  }
+}

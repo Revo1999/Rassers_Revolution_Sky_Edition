@@ -154,7 +154,7 @@ The compact **Electric Geological Drill** introduces selectable deposits:
 
 The survey core requires silver, nickel, lead, aluminum and diamond. Deep Survey is a substantial power step beyond basic LV extraction.
 
-Other implemented routes include a **Trading Colony** that exchanges wheat or paper for emeralds, Magma Cube production for magma cream, and heated mixing recipes for netherrack and soul sand.
+Craft four Steel Drill Gem Sludge in a 2x2 grid for one guaranteed emerald. Other routes include Magma Cube production for magma cream and heated mixing for netherrack and soul sand.
 
 **Milestone:** Controlled industrial metals, additional furnace materials and a higher-power route to Ancient Debris.
 

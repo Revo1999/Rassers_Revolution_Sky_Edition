@@ -8,6 +8,7 @@ from collections import defaultdict
 import json, zipfile
 
 ROOT=Path(__file__).resolve().parents[1]
+RETIRED_BLOCKS={'revocultivation:trading_colony'}
 
 def main():
  runtime=json.loads((ROOT/'.local/nexus-runtime-registry-audit.json').read_text())
@@ -41,7 +42,10 @@ def main():
  rows=[]
  for block in sorted(runtime['blocks'],key=lambda b:b['id']):
   item=block.get('item',block['id']);routes=outputs.get(item,[]) if block['hasItem'] else []
-  rows.append({**block,'routes':routes,'machines':dict(uses[block['id']]),'status':'no item by design' if not block['hasItem'] else 'recipe present' if routes else 'no recipe'})
+  status='no item by design' if not block['hasItem'] else 'recipe present' if routes else 'no recipe'
+  if block['id'] in RETIRED_BLOCKS and not routes:
+   status='retired'
+  rows.append({**block,'routes':routes,'machines':dict(uses[block['id']]),'status':status})
  missing=[r for r in rows if r['status']=='no recipe' and r['id'] in manifest['blocks']]
  native=[]
  for block,used in sorted(uses.items()):

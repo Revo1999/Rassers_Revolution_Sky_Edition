@@ -567,21 +567,9 @@
       "id": "revocultivation:trading_colony",
       "hasItem": true,
       "item": "revocultivation:trading_colony",
-      "routes": [
-        {
-          "id": "revocultivation:trading_colony",
-          "type": "minecraft:crafting",
-          "source": "native recipe manager"
-        },
-        {
-          "id": "revocultivation:trading_colony",
-          "type": "minecraft:crafting_shaped",
-          "source": "revocultivation/src/main/resources/data/revocultivation/recipe/trading_colony.json",
-          "conditions": []
-        }
-      ],
+      "routes": [],
       "machines": {},
-      "status": "recipe present"
+      "status": "retired"
     },
     {
       "id": "revocultivation:tree_grower",

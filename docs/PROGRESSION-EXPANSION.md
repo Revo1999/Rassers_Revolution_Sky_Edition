@@ -8,7 +8,7 @@ Raw gold can be milled before crushing wheels, then washed using native Create q
 
 ## Electric geology and later materials
 
-A compact Electric Geological Drill uses 16 EU/t for 200 powered ticks per normal resource. Mixed cycles silver, nickel, lead, bauxite dust and antimony, with individual programs available. Glacial mode uses a water bucket per ice and returns the bucket. Deep Survey needs a core made from silver, nickel, lead, aluminum and diamond, plus 128 EU/t for 1200 ticks. The saved deep cycle returns Ancient Debris every 64 outputs; terrain materials and glowstone fill the rest. This is deliberately a larger power step than LV extraction. Heated mixing supplies netherrack and soul sand earlier. The steel Trading Colony exchanges 16 wheat or paper for one emerald every 200 ticks.
+A compact Electric Geological Drill uses 16 EU/t for 200 powered ticks per normal resource. Mixed cycles silver, nickel, lead, bauxite dust and antimony, with individual programs available. Glacial mode uses a water bucket per ice and returns the bucket. Deep Survey needs a core made from silver, nickel, lead, aluminum and diamond, plus 128 EU/t for 1200 ticks. The saved deep cycle returns Ancient Debris every 64 outputs; terrain materials and glowstone fill the rest. This is deliberately a larger power step than LV extraction. Heated mixing supplies netherrack and soul sand earlier. Four Steel Drill Gem Sludge in a 2x2 crafting grid yield one emerald.
 
 ## RevoStorage
 

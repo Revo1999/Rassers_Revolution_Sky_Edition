@@ -51,7 +51,13 @@ public final class RevoCultivation {
         for(var block:BLOCKS.getEntries())if(block!=RunningShoes.CROP)ITEMS.registerSimpleBlockItem(block);
         BLOCKS.register(bus);ITEMS.register(bus);ENTITIES.register(bus);MENUS.register(bus);RECIPE_SERIALIZERS.register(bus);
         bus.addListener(this::capabilities);
-        bus.addListener((net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent e)->{if(e.getTabKey()==CreativeModeTabs.FUNCTIONAL_BLOCKS)ITEMS.getEntries().forEach(i->e.accept(i.get()));});
+        bus.addListener((net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent event) -> {
+            if (event.getTabKey() == CreativeModeTabs.FUNCTIONAL_BLOCKS) {
+                ITEMS.getEntries().stream()
+                        .filter(item -> !item.getId().equals(TRADE.getId()))
+                        .forEach(item -> event.accept(item.get()));
+            }
+        });
     }
     private void capabilities(RegisterCapabilitiesEvent event){
         event.registerBlockEntity(Capabilities.ItemHandler.BLOCK,MACHINE.get(),(be,side)->be.kind().isHarvester()?be.programSpawner:null);

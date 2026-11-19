@@ -20,6 +20,7 @@ public class FarmEmiPlugin implements EmiPlugin {
     public static MultiblockEmiRecipe assembly(MachineKind kind){return new MultiblockEmiRecipe(category(kind),id("assembly/"+kind.id),guide(kind),EmiStack.of(kind.controller()));}
     public static void open(MachineKind kind){EmiApi.displayRecipe(assembly(kind));}
     @Override public void register(EmiRegistry registry){
+        registry.removeEmiStacks(stack -> stack.getId().equals(RevoCultivation.TRADE.getId()));
         registry.setDefaultComparison(net.minecraft.world.item.Items.SPAWNER,Comparison.compareData(stack->{var item=stack.getItemStack();var data=item.get(net.minecraft.core.component.DataComponents.BLOCK_ENTITY_DATA);return List.of(data==null?new net.minecraft.nbt.CompoundTag():data.copyTag(),MobSpawnerPrograms.tier(item));}));
         for(int program:MobSpawnerPrograms.PROGRAMS.values())for(int tier=1;tier<=3;tier++)registry.addEmiStack(EmiStack.of(MobSpawnerPrograms.spawner(program,tier)));
         SmallMachineEmi.register(registry);
