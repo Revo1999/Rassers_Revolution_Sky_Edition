@@ -1,0 +1,5 @@
+tasks.named('processResources') {
+    from(rootProject.file('pack/version.txt')) {
+        into 'revoutil'
+    }
+}

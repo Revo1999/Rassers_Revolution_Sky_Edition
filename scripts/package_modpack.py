@@ -7,6 +7,7 @@ import zipfile
 ROOT=Path(__file__).resolve().parents[1]
 
 def main():
+    version=(ROOT/'pack/version.txt').read_text(encoding='utf-8').strip()
     lock=json.loads((ROOT/'pack/mods.lock.json').read_text(encoding='utf-8-sig'))
     files=[]
     for mod in lock['mods']:
@@ -20,12 +21,15 @@ def main():
     assert hashlib.sha512(data).hexdigest()==shader['sha512']
     files.append({'path':'shaderpacks/'+shader['file'],'hashes':{'sha512':shader['sha512'],'sha1':hashlib.sha1(data).hexdigest()},
         'env':{'client':'required','server':'unsupported'},'downloads':[shader['url']],'fileSize':len(data)})
-    index={'formatVersion':1,'game':'minecraft','versionId':'0.1.45-dev-quest-guides',
-        'name':'Rassers Revolution: Sky Edition','summary':"Field equipment quests, five Modern Industrialization circuit tiers, and the progression to the Nexus Core.",
+    index={'formatVersion':1,'game':'minecraft','versionId':version,
+        'name':'Rassers Revolution: Sky Edition','summary':"RevoUtil playtest notes and status HUD, with quest guides through the Nexus endgame.",
         'files':files,'dependencies':{'minecraft':'1.21.1','neoforge':'21.1.265'}}
-    output=ROOT.parent/'Rassers-Revolution-Sky-Edition-0.1.45-dev.mrpack'
+    output=ROOT.parent/f'Rassers-Revolution-Sky-Edition-{version}.mrpack'
     jars=sorted((ROOT/'build/mods').glob('*.jar'))
-    assert len(jars)==7
+    assert len(jars)==8
+    revoutil_jar, = (path for path in jars if path.name.startswith('revoutil-'))
+    with zipfile.ZipFile(revoutil_jar) as jar:
+        assert jar.read('revoutil/version.txt').decode('utf-8').strip()==version, 'Rebuild RevoUtil for the current pack version'
     assert (ROOT/'pack/overrides/config/fancymenu/assets/skyblock_loop.mp4').stat().st_size>1_000_000
     with zipfile.ZipFile(output,'w',zipfile.ZIP_DEFLATED) as z:
         z.writestr('modrinth.index.json',json.dumps(index,indent=2)+'\n')
@@ -45,6 +49,7 @@ def main():
         z.write(ROOT/'docs/FIRST-CHAPTER.md','overrides/FIRST-CHAPTER.md')
         z.write(ROOT/'docs/CREATE-IRON-STEAM.md','overrides/CREATE-IRON-STEAM.md')
         z.write(ROOT/'docs/QUEST-BOOK.md','overrides/QUEST-BOOK.md')
+        z.write(ROOT/'docs/REVO-UTIL.md','overrides/REVO-UTIL.md')
         z.write(ROOT/'docs/MI-PROGRESSION-GUIDE.md','overrides/MI-PROGRESSION-GUIDE.md')
         z.write(ROOT/'docs/STEEL-DRILL.md','overrides/STEEL-DRILL.md')
         z.write(ROOT/'docs/EARLY-RESOURCE-BRIDGES.md','overrides/EARLY-RESOURCE-BRIDGES.md')

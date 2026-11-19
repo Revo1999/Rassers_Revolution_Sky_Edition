@@ -1,0 +1,22 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="All Rights Reserved"
+
+[[mods]]
+modId="revoutil"
+version="${version}"
+displayName="RevoUtil"
+authors="Revo1999"
+description='''In-game playtest notes and a compact status HUD.'''
+
+[[dependencies.revoutil]]
+modId="neoforge"
+type="required"
+versionRange="[21.1.265,21.2)"
+side="BOTH"
+
+[[dependencies.revoutil]]
+modId="minecraft"
+type="required"
+versionRange="[1.21.1]"
+side="BOTH"

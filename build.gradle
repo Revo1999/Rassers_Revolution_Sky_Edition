@@ -21,7 +21,7 @@ subprojects {
         inputs.property 'version', project.version
         filesMatching('META-INF/neoforge.mods.toml') { expand version: project.version }
     }
-    if (project.name != 'revolib') {
+    if (!(project.name in ['revolib', 'revoutil'])) {
         dependencies { implementation project(':revolib') }
     }
     if (providers.gradleProperty('revoLithiumTest').isPresent()) {
