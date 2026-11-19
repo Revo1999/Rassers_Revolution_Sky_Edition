@@ -4,12 +4,14 @@ import net.minecraft.client.gui.components.*;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.entity.player.Inventory;
+import net.minecraft.world.inventory.ClickType;
+import net.minecraft.world.inventory.Slot;
 import net.neoforged.neoforge.network.PacketDistributor;
 public class StorageScreen extends AbstractContainerScreen<StorageMenu> {
  private EditBox search;
  private final java.util.List<Button> terminalButtons=new java.util.ArrayList<>();
  public StorageScreen(StorageMenu menu,Inventory inv,Component title){super(menu,inv,title);imageWidth=212;imageHeight=300;inventoryLabelY=204;inventoryLabelX=25;titleLabelX=9;titleLabelY=8;}
- protected void init(){super.init();terminalButtons.clear();search=new EditBox(font,leftPos+101,topPos+6,102,16,Component.literal("Search storage"));search.setMaxLength(120);search.setBordered(true);search.setValue(menu.search);search.setResponder(v->PacketDistributor.sendToServer(new StorageAction("search",v,false)));search.setHint(Component.literal("Search..."));addWidget(search);
+ protected void init(){super.init();terminalButtons.clear();search=new EditBox(font,leftPos+101,topPos+6,102,16,Component.literal("Search storage"));search.setMaxLength(120);search.setBordered(true);search.setValue(menu.search);search.setResponder(v->PacketDistributor.sendToServer(new StorageAction(menu.containerId,"search",v,false)));search.setHint(Component.literal("Search..."));addWidget(search);
   button(5,28,16,18,"A",2,"Sort by name / amount");button(5,51,16,18,"<",0,"Previous page");button(191,51,16,18,">",1,"Next page");button(5,146,54,18,"Wind",3,"Wind spring: +256 crafting operations");button(135,184,68,18,"Clear",4,"Return crafting ingredients to storage");
  }
  private void button(int x,int y,int w,int h,String label,int id,String tip){terminalButtons.add(addRenderableWidget(Button.builder(Component.literal(label),b->minecraft.gameMode.handleInventoryButtonClick(menu.containerId,id)).bounds(leftPos+x,topPos+y,w,h).tooltip(Tooltip.create(Component.literal(tip))).build()));}
@@ -19,6 +21,14 @@ public class StorageScreen extends AbstractContainerScreen<StorageMenu> {
  }
  protected void renderLabels(GuiGraphics g,int mx,int my){g.drawString(font,menu.terminal()?"Crafting Terminal":"Chest Drive",8,8,0xff34343f,false);g.drawString(font,"Inventory",25,204,0xff454550,false);g.drawString(font,menu.data.get(2)+" storage slots",25,291,0xff454550,false);}
  public void render(GuiGraphics g,int mx,int my,float partial){search.visible=menu.terminal();for(var button:terminalButtons)button.visible=menu.terminal();super.render(g,mx,my,partial);if(menu.terminal())search.render(g,mx,my,partial);renderTooltip(g,mx,my);}
+ @Override protected void slotClicked(Slot slot,int slotId,int button,ClickType type){
+  if(StorageMenu.isGridSlot(slotId)){
+   if(type==ClickType.PICKUP||type==ClickType.QUICK_MOVE)
+    PacketDistributor.sendToServer(new StorageAction.GridClick(menu.containerId,menu.gridRevision(),slotId,button,type==ClickType.QUICK_MOVE,!menu.getCarried().isEmpty()));
+   return;
+  }
+  super.slotClicked(slot,slotId,button,type);
+ }
  public void setSearchText(String text){search.setValue(text);}
  public boolean mouseScrolled(double x,double y,double dx,double dy){if(x>=leftPos+22&&x<leftPos+190&&y>=topPos+25&&y<topPos+138){minecraft.gameMode.handleInventoryButtonClick(menu.containerId,dy>0?0:1);return true;}return super.mouseScrolled(x,y,dx,dy);}
  public boolean keyPressed(int key,int scan,int mods){if(search.isFocused()&&key!=256)return search.keyPressed(key,scan,mods)||search.canConsumeInput();return super.keyPressed(key,scan,mods);}

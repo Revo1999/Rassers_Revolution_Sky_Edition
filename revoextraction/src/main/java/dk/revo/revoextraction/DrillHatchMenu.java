@@ -33,7 +33,7 @@ public final class DrillHatchMenu extends AbstractContainerMenu {
         PlayerInventoryLayout.slots(playerInventory,CONTENT_HEIGHT).forEach(this::addSlot);
     }
     @Override public boolean stillValid(Player player) {
-        return connected.getAsBoolean()&&access.evaluate((level,pos)->level.getBlockState(pos).getBlock() instanceof DrillHatch && player.distanceToSqr(pos.getX()+.5,pos.getY()+.5,pos.getZ()+.5)<=64,true);
+        return connected.getAsBoolean()&&access.evaluate((level,pos)->player.level()==level && level.hasChunkAt(pos) && level.getBlockState(pos).getBlock() instanceof DrillHatch && player.distanceToSqr(pos.getX()+.5,pos.getY()+.5,pos.getZ()+.5)<=64,true);
     }
     @Override public ItemStack quickMoveStack(Player player,int index) {
         if(index<0||index>=OUTPUT_SLOTS)return ItemStack.EMPTY;

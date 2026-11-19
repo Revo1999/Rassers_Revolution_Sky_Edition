@@ -17,6 +17,6 @@ public class StorageEmi implements EmiPlugin {
   public List<net.minecraft.world.inventory.Slot> getCraftingSlots(StorageMenu m){return m.slots.subList(1,10);}
   public boolean supportsRecipe(EmiRecipe recipe){return recipe.getCategory()==VanillaEmiRecipeCategories.CRAFTING&&recipe.getId()!=null;}
   public boolean canCraft(EmiRecipe recipe,EmiCraftContext<StorageMenu> context){return context.getScreenHandler().terminal();}
-  public boolean craft(EmiRecipe recipe,EmiCraftContext<StorageMenu> context){if(!context.getScreenHandler().terminal()||recipe.getId()==null)return false;PacketDistributor.sendToServer(new StorageAction("recipe",recipe.getId().toString(),context.getAmount()>1));return true;}
+  public boolean craft(EmiRecipe recipe,EmiCraftContext<StorageMenu> context){if(!context.getScreenHandler().terminal()||recipe.getId()==null)return false;PacketDistributor.sendToServer(new StorageAction(context.getScreenHandler().containerId,"recipe",recipe.getId().toString(),context.getAmount()>1));return true;}
  }
 }

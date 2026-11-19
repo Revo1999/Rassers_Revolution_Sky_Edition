@@ -1,2 +1,17 @@
 repositories { maven { url='https://maven.terraformersmc.com/releases' } }
 dependencies { compileOnly 'dev.emi:emi-neoforge:1.1.24+1.21.1:api' }
+
+if (providers.gradleProperty('revoStorageTests').isPresent()) {
+    sourceSets.main.java.srcDir 'src/gametest/java'
+    sourceSets.main.resources.srcDir 'src/gametest/resources'
+    neoForge.runs {
+        storageTests {
+            type = 'gameTestServer'
+            gameDirectory = rootProject.file('.local/revo-storage-tests')
+            systemProperty 'neoforge.enabledGameTestNamespaces', 'revostorage'
+        }
+    }
+}
+tasks.named('jar', Jar) {
+    exclude '**/StorageMultiplayerGameTests*', 'data/revostorage/structure/storage_test.nbt'
+}

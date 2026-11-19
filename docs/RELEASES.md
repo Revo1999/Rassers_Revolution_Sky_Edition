@@ -37,6 +37,8 @@ island, quest book, at least one overridden recipe and a RevoUtil note. Save
 and restart to check that the same world and note remain available. The server
 installer writes the Skyblock Builder setting before the world is generated.
 See the [server README](../pack/server/README.md).
+The [multiplayer audit](MULTIPLAYER-READINESS.md) records the tests and remaining
+coverage for the eight Revo mods.
 
 On GitHub, draft a release for the same commit with a tag such as
 `v0.1.46-dev`, attach both archives and add the changelog. The workflow builds

@@ -1,5 +1,7 @@
 package dk.revo.revoindustry.hatchery;
 
+import dk.revo.revolib.MachineMenuAccess;
+
 import dk.revo.revolib.PlayerInventoryLayout;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.entity.player.*;
@@ -37,7 +39,7 @@ public final class HatcheryMenu extends AbstractContainerMenu {
     public int energy(){return (data.get(3)&65535)|(data.get(4)<<16);}
     public boolean stillValid(Player player){
         if(source==null)return true;
-        return !source.isRemoved()&&player.distanceToSqr(pos.getX()+.5,pos.getY()+.5,pos.getZ()+.5)<=64&&(!(source instanceof HatcheryPort p)||p.controller()!=null);
+        return MachineMenuAccess.isUsable(player,source)&&(!(source instanceof HatcheryPort p)||p.controller()!=null);
     }
     public ItemStack quickMoveStack(Player player,int index){
         if(!hatch||index<0||index>=slots.size())return ItemStack.EMPTY;

@@ -43,7 +43,7 @@ public final class DrillMenu extends AbstractContainerMenu {
     public DrillDiagnostics snapshot(){return DrillDiagnostics.read(diagnostics::get);}
 
     @Override public boolean stillValid(Player player) {
-        return access.evaluate((level,pos)->level.getBlockState(pos).getBlock() instanceof DrillController && player.distanceToSqr(pos.getX()+.5,pos.getY()+.5,pos.getZ()+.5)<=64,true);
+        return access.evaluate((level,pos)->player.level()==level && level.hasChunkAt(pos) && level.getBlockState(pos).getBlock() instanceof DrillController && player.distanceToSqr(pos.getX()+.5,pos.getY()+.5,pos.getZ()+.5)<=64,true);
     }
 
     @Override public ItemStack quickMoveStack(Player player,int index) {

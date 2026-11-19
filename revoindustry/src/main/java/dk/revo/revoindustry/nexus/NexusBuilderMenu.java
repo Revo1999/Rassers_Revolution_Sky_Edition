@@ -1,5 +1,7 @@
 package dk.revo.revoindustry.nexus;
 
+import dk.revo.revolib.MachineMenuAccess;
+
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.entity.player.*;
 import net.minecraft.world.inventory.*;
@@ -29,6 +31,6 @@ public final class NexusBuilderMenu extends AbstractContainerMenu {
   var carried=getCarried();if(carried.isEmpty())setCarried(machine.construction.withdraw(i,64));else if(carried.is(NexusConstruction.requirements().get(i).item())){int n=machine.construction.deposit(carried,false);carried.shrink(n);setCarried(carried);}
   machine.construction.refresh(false);broadcastChanges();return true;
  }
- @Override public ItemStack quickMoveStack(Player player,int index){if(machine==null||index<0||index>=slots.size())return ItemStack.EMPTY;var slot=slots.get(index);var stack=slot.getItem();int n=machine.construction.deposit(stack,false);if(n==0)return ItemStack.EMPTY;var moved=stack.copyWithCount(n);stack.shrink(n);slot.setByPlayer(stack);machine.construction.refresh(false);return moved;}
- @Override public boolean stillValid(Player player){return machine!=null&&!machine.isRemoved()&&machine.construction!=null&&player.distanceToSqr(pos.getCenter())<=64;}
+ @Override public ItemStack quickMoveStack(Player player,int index){if(machine==null||!stillValid(player)||index<0||index>=slots.size())return ItemStack.EMPTY;var slot=slots.get(index);var stack=slot.getItem();int n=machine.construction.deposit(stack,false);if(n==0)return ItemStack.EMPTY;var moved=stack.copyWithCount(n);stack.shrink(n);slot.setByPlayer(stack);machine.construction.refresh(false);return moved;}
+ @Override public boolean stillValid(Player player){return machine!=null&&machine.construction!=null&&MachineMenuAccess.isUsable(player,machine);}
 }

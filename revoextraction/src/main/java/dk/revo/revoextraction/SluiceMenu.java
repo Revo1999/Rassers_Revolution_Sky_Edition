@@ -1,5 +1,7 @@
 package dk.revo.revoextraction;
 
+import dk.revo.revolib.MachineMenuAccess;
+
 import dk.revo.revolib.PlayerInventoryLayout;
 import net.minecraft.world.entity.player.*;
 import net.minecraft.world.inventory.*;
@@ -44,8 +46,8 @@ public final class SluiceMenu extends AbstractContainerMenu {
         if (kind != Kind.CONTROL) PlayerInventoryLayout.slots(inv, 166).forEach(this::addSlot);
     }
     @Override public boolean stillValid(Player player) {
-        if (kind == Kind.FEEDER) return feeder == null || !feeder.isRemoved() && player.distanceToSqr(feeder.getBlockPos().getCenter()) <= 64;
-        return machine == null || !machine.isRemoved() && player.distanceToSqr((kind == Kind.OUTPUT ? machine.at(2) : machine.getBlockPos()).getCenter()) <= 64 && (kind == Kind.CONTROL || machine.assembled());
+        if (kind == Kind.FEEDER) return feeder == null || MachineMenuAccess.isUsable(player,feeder);
+        return machine == null || MachineMenuAccess.isUsable(player,machine,kind == Kind.OUTPUT ? machine.at(2) : machine.getBlockPos()) && (kind == Kind.CONTROL || machine.assembled());
     }
     @Override public ItemStack quickMoveStack(Player p, int index) {
         if (kind == Kind.CONTROL || index < 0 || index >= slots.size()) return ItemStack.EMPTY;

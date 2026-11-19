@@ -20,7 +20,7 @@ public class FarmHatchMenu extends AbstractContainerMenu {
     }
     public int outputY(){return kind.isHarvester()&&kind!=MachineKind.STEEL_HARVESTER?27:62;}
     public int water(){return data.get(0);}
-    @Override public boolean stillValid(Player p){return connected.getAsBoolean()&&stillValid(access,p,kind.block(MachineKind.Part.HATCH));}
+    @Override public boolean stillValid(Player p){return connected.getAsBoolean()&&access.evaluate((level,pos)->p.level()==level&&level.hasChunkAt(pos)&&level.getBlockState(pos).is(kind.block(MachineKind.Part.HATCH))&&p.distanceToSqr(pos.getCenter())<=64,true);}
     @Override public ItemStack quickMoveStack(Player player,int index){
         if(index<0||index>=slots.size())return ItemStack.EMPTY;var slot=slots.get(index);if(!slot.hasItem())return ItemStack.EMPTY;
         var stack=slot.getItem();var original=stack.copy();int machine=kind.inputSlots()+9;

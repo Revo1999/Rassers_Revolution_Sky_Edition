@@ -38,7 +38,10 @@ public final class WardrobeClient {
                 boolean changed=!catalogue.equals(entries);catalogue=List.copyOf(entries);
                 // Dedicated-server clients do not run the server datapack listener.
                 // Populate the common read-only lookup used by FTB reward labels/icons too.
-                if(changed){CosmeticCatalog.replace(entries);if(net.neoforged.fml.ModList.get().isLoaded("ftbquests"))FtbClientCache.refresh();}
+                if(changed){
+                    if(!mc.hasSingleplayerServer())CosmeticCatalog.replace(entries);
+                    if(net.neoforged.fml.ModList.get().isLoaded("ftbquests"))FtbClientCache.refresh();
+                }
                 var unlocked=new HashSet<String>();for(var t:tag.getList("Owned",Tag.TAG_STRING))unlocked.add(t.getAsString());owned=Set.copyOf(unlocked);
                 title=tag.getString("Title");hat=tag.getString("Hat");error=tag.getString("Error");
                 if(tag.getBoolean("Open")&&!(mc.screen instanceof WardrobeScreen))mc.setScreen(new WardrobeScreen(mc.screen));

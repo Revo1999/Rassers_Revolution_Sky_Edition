@@ -1,4 +1,6 @@
 package dk.revo.revocultivation;
+
+import dk.revo.revolib.MachineMenuAccess;
 import com.mojang.serialization.MapCodec;
 import net.minecraft.core.*;
 import net.minecraft.nbt.CompoundTag;
@@ -30,7 +32,7 @@ public class TradingColony extends BaseEntityBlock {
   protected void loadAdditional(CompoundTag t,HolderLookup.Provider p){super.loadAdditional(t,p);items.deserializeNBT(p,t.getCompound("Inventory"));work=Math.clamp(t.getInt("Work"),0,199);}
  }
  public static class ColonyContainer implements net.minecraft.world.Container {
-  final Entity e;ColonyContainer(Entity e){this.e=e;}public int getContainerSize(){return 27;}public boolean isEmpty(){for(int i=0;i<27;i++)if(!getItem(i).isEmpty())return false;return true;}public ItemStack getItem(int i){return e.items.getStackInSlot(i);}public ItemStack removeItem(int i,int n){return e.items.extractItem(i,n,false);}public ItemStack removeItemNoUpdate(int i){return removeItem(i,64);}public void setItem(int i,ItemStack s){e.items.setStackInSlot(i,s);}public void setChanged(){e.setChanged();}public boolean stillValid(Player p){return !e.isRemoved()&&p.distanceToSqr(e.getBlockPos().getCenter())<=64;}public void clearContent(){for(int i=0;i<27;i++)setItem(i,ItemStack.EMPTY);}public boolean canPlaceItem(int i,ItemStack s){return e.items.isItemValid(i,s);}
+  final Entity e;ColonyContainer(Entity e){this.e=e;}public int getContainerSize(){return 27;}public boolean isEmpty(){for(int i=0;i<27;i++)if(!getItem(i).isEmpty())return false;return true;}public ItemStack getItem(int i){return e.items.getStackInSlot(i);}public ItemStack removeItem(int i,int n){return e.items.extractItem(i,n,false);}public ItemStack removeItemNoUpdate(int i){return removeItem(i,64);}public void setItem(int i,ItemStack s){e.items.setStackInSlot(i,s);}public void setChanged(){e.setChanged();}public boolean stillValid(Player p){return MachineMenuAccess.isUsable(p,e);}public void clearContent(){for(int i=0;i<27;i++)setItem(i,ItemStack.EMPTY);}public boolean canPlaceItem(int i,ItemStack s){return e.items.isItemValid(i,s);}
  }
  public static class Menu extends ChestMenu {
   public Menu(int id,Inventory inv,Entity entity){super(MenuType.GENERIC_9x3,id,inv,new ColonyContainer(entity),3);for(int i=0;i<27;i++){final int n=i;var slot=new Slot(getContainer(),i,8+(i%9)*18,18+(i/9)*18){public boolean mayPlace(ItemStack s){return n<26&&(s.is(Items.WHEAT)||s.is(Items.PAPER));}};slot.index=i;slots.set(i,slot);}}

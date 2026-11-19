@@ -29,7 +29,7 @@ public final class WardrobeEvents {
     @SubscribeEvent public void name(PlayerEvent.NameFormat e){
         if(ModList.get().isLoaded("playernamestyler"))return;
         if(e.getEntity() instanceof ServerPlayer p){var t=WardrobeService.title(p);if(t!=null)e.setDisplayname(Component.literal("["+t.name()+"] ").withColor(t.color()).append(e.getDisplayname()));}
-        else {var t=dk.revo.revoachievements.client.WardrobeClient.publicState(e.getEntity().getUUID());if(t!=null&&!t.title().isEmpty())e.setDisplayname(Component.literal("["+t.title()+"] ").withColor(t.color()).append(e.getDisplayname()));}
+        else if(e.getEntity().level().isClientSide){var t=dk.revo.revoachievements.client.WardrobeClient.publicState(e.getEntity().getUUID());if(t!=null&&!t.title().isEmpty())e.setDisplayname(Component.literal("["+t.title()+"] ").withColor(t.color()).append(e.getDisplayname()));}
     }
     @SubscribeEvent(priority=net.neoforged.bus.api.EventPriority.LOWEST) public void tab(PlayerEvent.TabListNameFormat e){
         if(e.getEntity() instanceof ServerPlayer p){
