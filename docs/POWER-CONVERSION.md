@@ -18,8 +18,10 @@ These limits apply in both directions. The FE limit follows MI's server-side
 forgeEnergyPerEu setting; both limits are written explicitly on each tier's EMI
 information page and in its interface. Tier upgrades require the previous
 converter plus four gold ingots (Advanced) or diamonds (Elite), two copper ingots
-and two redstone. Basic uses four iron, two copper, two redstone and a Flux
-Induction Module. EMI also shows the actual crafting recipes.
+and two redstone. After starting the LV Steam Turbine line, run the Basic
+converter recipe in the MI Assembler at 8 EU/t for 200 ticks. It uses one spare
+LV Steam Turbine, one Flux Core, four iron ingots, two copper ingots and two
+redstone. Keep your working turbine connected to the steam line.
 
 ## Ports and wrench rotation
 

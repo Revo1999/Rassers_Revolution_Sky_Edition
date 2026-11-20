@@ -330,8 +330,8 @@
         "5E40000000000009"
       ],
       "description": [
-        "Steel extraction now adds raw lead and antimony for the first LV batteries, Mineral Sludge for quartz, and Gem Sludge for diamonds/lapis/emeralds.",
-        "Process sludge with water-backed Create Encased Fans. The drill no longer drops loose diamonds or lapis. Keep existing steam ore processing running."
+        "Steel extraction supplies lead and antimony for LV batteries, Mineral Sludge for quartz and one Gem Sludge every 32 outputs.",
+        "Wash Gem Sludge with a water-backed Create Encased Fan for diamonds and lapis, or craft four sludge into one guaranteed emerald. Keep your steam ore processing running."
       ],
       "tasks": [
         {
@@ -391,10 +391,11 @@
       "y": 8.0,
       "shape": "diamond",
       "dependencies": [
-        "5E20000000000014"
+        "5E20000000000014",
+        "5E80000000000030"
       ],
       "description": [
-        "Build a 5 x 5 x 3 Iron Greenhouse around a full 3 x 3 soil bed: 11 supports, 21 casings, 20 glass panels, 9 soil beds, controller, hatch, Iron Water Tank, Basic Power Converter and grow light. Leave the 3 x 3 middle chamber empty. EMI shows every layer.",
+        "Build a 5 x 5 x 3 Iron Greenhouse around a full 3 x 3 soil bed: 11 supports, 21 casings, 20 glass panels, 9 soil beds, controller, hatch, Iron Water Tank, Basic Power Converter and grow light. Leave the 3 x 3 middle chamber empty. EMI shows every layer. Assemble your Basic Power Converter in the MI Assembler after establishing LV steam power.",
         "Steel framing supports the connected glass borders and four thin white LED strips. Fit the tank left-centre and converter rear-right on the bottom layer. The hatch goes immediately in front of the converter on the right side. Face converter FE rearward so EU touches the hatch; keep FE to EU mode. The fitted enclosure appears when formed.",
         "Supply 8 EU/t to the hatch, or 80 FE/t to the converter with the default ratio. The greenhouse buffer stores 1600 EU; the converter stores no power.",
         "Nine native wheat/carrot/potato/beetroot models fill the bed, with real age stages. Each 10-second harvest uses 250 mB water. The attached 16000 mB tank accepts buckets/pipes and renders its real water level. Grow lights support day/night and indoor operation.",
@@ -412,7 +413,8 @@
           "consume_items": false
         }
       ],
-      "rewards": []
+      "rewards": [],
+      "optional": true
     },
     {
       "id": "5E4000000000000D",

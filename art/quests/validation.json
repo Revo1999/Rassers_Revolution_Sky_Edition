@@ -1,12 +1,12 @@
 {
   "chapters": 17,
-  "quests": 373,
-  "newQuests": 83,
+  "quests": 377,
+  "newQuests": 86,
   "newGuideQuests": 41,
   "nexusQuestsVerified": 41,
   "sedimentAndDrillQuestsVerified": 4,
   "existingQuestsPreserved": 373,
-  "uniqueIds": 847,
+  "uniqueIds": 860,
   "acyclicDependencies": true,
   "newItemReferencesResolved": true,
   "nonConsumingItemTasks": true,
@@ -23,7 +23,7 @@
     },
     {
       "title": "Chapter 2: The Create Revolution",
-      "quests": 29
+      "quests": 30
     },
     {
       "title": "Field Guide: Wands, Jetpacks and Shoes",
@@ -63,7 +63,7 @@
     },
     {
       "title": "Chapter 8: HV - Refining, Coils and Logic",
-      "quests": 26
+      "quests": 28
     },
     {
       "title": "Chapter 6: Electronics and Separation",
@@ -71,7 +71,7 @@
     },
     {
       "title": "Chapter 7: MV - Power and Chemistry",
-      "quests": 25
+      "quests": 26
     },
     {
       "title": "Chapter 9: The Nexus Endgame",

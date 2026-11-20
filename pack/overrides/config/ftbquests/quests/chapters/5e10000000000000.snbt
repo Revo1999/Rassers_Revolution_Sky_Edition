@@ -604,9 +604,9 @@
       "x": 0.0,
       "y": 7.0,
       "description": [
-        "Make a Rain Barrel from planks and wooden slabs, then place it with clear sky above.",
-        "Finishing this quest starts a five-minute shower, so your opening clay loop does not depend on waiting for random weather.",
-        "During rain it collects one bucket of water in 10 seconds. Keep the top uncovered."
+        "Make a Rain Barrel from planks and wooden slabs, then place it under open sky.",
+        "Claim the one-time rain reward after placing the barrel. It starts a five-minute shower.",
+        "During rain the barrel collects a bucket of water in 10 seconds. Make at least three clay blocks for your first crucible and bucket."
       ],
       "tasks": [
         {
@@ -624,10 +624,10 @@
         {
           "id": "5E10000000000500",
           "type": "command",
-          "command": "/weather rain 300",
+          "command": "/weather rain 300s",
           "permission_level": 2,
           "silent": true,
-          "auto": "enabled"
+          "auto": "disabled"
         }
       ],
       "dependencies": [

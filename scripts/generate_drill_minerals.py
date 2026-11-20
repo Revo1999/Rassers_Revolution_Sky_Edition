@@ -60,10 +60,10 @@ def main():
          ['Use native battery-alloy plates and curved plates, tin cable and redstone to craft two Redstone Batteries. A Basic Machine Hull consumes two batteries.', 'Keep the Steel Drill producing antimony. The Electric Geological Drill later offers a selectable Antimony program.'],
          [('modern_industrialization:redstone_battery',2)]),
         (0x17,'Wash the Gem Sludge','revoextraction:gem_sludge',['5E40000000000009'],-3,0,
-         ['The Steel Drill produces Gem Sludge instead of loose diamonds and lapis. Wash each sludge with a water-backed Create Encased Fan: one Diamond and two Lapis are guaranteed; an Emerald has a 25% chance.', 'Automate extraction and washing with the existing item hatch, belts and funnels. Full drill outputs retain the saved next result.'],
+         ['The Steel Drill produces one Gem Sludge every 32 outputs. Wash it with a water-backed Create Encased Fan for one Diamond and two Lapis, plus a 25% Emerald chance.', 'Automate extraction and washing with the existing item hatch, belts and funnels. Full drill outputs retain the saved next result.'],
          [('revoextraction:gem_sludge',1),('minecraft:diamond',1)]),
         (0x18,'Crystals from Deep Sludge','ae2:certus_quartz_crystal',['5E5000000000000F','5E50000000000014'],12,12,
-         ['Select Crystalline Sludge on the Electric Geological Drill. Retain a Deep Survey Core in its upper slot; supply 128 EU/t for 1200 powered ticks per sludge.', 'A native MI Centrifuge processes one Crystalline Sludge at 32 EU/t for 400 ticks into two Certus Quartz Crystals and two Quartz. Certus is recovered from sludge, never dropped directly by the drill.', 'This establishes starter Certus only. Inscriber Presses, starter Sky Stone and the full AE2 unlock still need their own progression.'],
+         ['Select Crystalline Sludge on the Electric Geological Drill. Retain a Deep Survey Core made with an MV Advanced Machine Hull. Each sludge takes 1200 powered ticks at 128 EU/t.', 'A native MI Centrifuge processes one Crystalline Sludge at 32 EU/t for 400 ticks into two Certus Quartz Crystals and two Quartz. Certus is recovered from sludge, never dropped directly by the drill.', 'This establishes starter Certus only. Inscriber Presses, starter Sky Stone and the full AE2 unlock still need their own progression.'],
          [('revoextraction:crystalline_sludge',1),('ae2:certus_quartz_crystal',2)]),
     ]
     for n,title,icon,deps,x,y,description,items in new:
@@ -80,7 +80,7 @@ def main():
     steel = json.loads(steelpath.read_text())
     for q in steel['quests']:
         if q['id'] == '5E4000000000000A':
-            q['description'] = ['Steel extraction now adds raw lead and antimony for the first LV batteries, Mineral Sludge for quartz, and Gem Sludge for diamonds/lapis/emeralds.', 'Process sludge with water-backed Create Encased Fans. The drill no longer drops loose diamonds or lapis. Keep existing steam ore processing running.']
+            q['description'] = ['Steel extraction supplies lead and antimony for LV batteries, Mineral Sludge for quartz and one Gem Sludge every 32 outputs.', 'Wash Gem Sludge with a water-backed Create Encased Fan for diamonds and lapis, or craft four sludge into one guaranteed emerald. Keep your steam ore processing running.']
     put(steelpath, steel)
 
 if __name__ == '__main__': main()

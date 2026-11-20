@@ -1,7 +1,11 @@
 package dk.revo.revoextraction;
 import dk.revo.revocultivation.*;
 import dk.revo.revostorage.*;
+import aztech.modern_industrialization.machines.blockentities.ElectricCraftingMachineBlockEntity;
+import aztech.modern_industrialization.thirdparty.fabrictransfer.api.item.ItemVariant;
+import aztech.modern_industrialization.util.Simulation;
 import net.minecraft.core.*;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.gametest.framework.*;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.*;
@@ -36,10 +40,89 @@ public class ProgressionExpansionTests {
   }
   var seed=MachineKind.starter(19);check(h,!MachineKind.GREENHOUSE.acceptsStarter(seed)&&MachineKind.GREENHOUSE.program(seed,0)==-1,"Wood cannot grow salt");
   check(h,MachineKind.IRON_GREENHOUSE.acceptsStarter(seed)&&MachineKind.IRON_GREENHOUSE.program(seed,0)==19,"Electric salt geode program");
+  check(h,MachineKind.products(19).size()==1&&MachineKind.products(19).getFirst().is(RevoExtraction.MINERAL_SLUDGE.get()),"Greenhouse grows seawater feedstock instead of finished salt");
   var recipe=(CraftingRecipe)level.getRecipeManager().byKey(ResourceLocation.parse("revoextraction:salt_crystal_starter")).orElseThrow().value();
   var input=CraftingInput.of(2,2,java.util.List.of(new ItemStack(Items.QUARTZ),new ItemStack(Items.SAND),new ItemStack(Items.WATER_BUCKET),new ItemStack(item("revocultivation:compost"))));
   check(h,recipe.matches(input,level)&&recipe.assemble(input,level.registryAccess()).is(seed.getItem()),"Salt-free geode bootstrap");
   check(h,recipe.getRemainingItems(input).stream().anyMatch(v->v.is(Items.BUCKET)),"Geode returns bucket");h.succeed();
+ }
+ @GameTest(template="drill_test",timeoutTicks=100)
+ public static void surveyAndDigitalAutomationRecipesRequireTheNextTier(GameTestHelper h) {
+  var recipes = h.getLevel().getRecipeManager();
+  var survey = (CraftingRecipe)recipes.byKey(ResourceLocation.parse("revoextraction:deep_survey_core")).orElseThrow().value();
+  var mvHull = new ItemStack(item("modern_industrialization:advanced_machine_hull"));
+  check(h, survey.getIngredients().stream().anyMatch(ingredient -> ingredient.test(mvHull)), "New survey cores require an MV hull");
+  var digital = new ItemStack(item("modern_industrialization:digital_circuit"));
+  for (String id : new String[]{"ae2:network/crafting/cpu_crafting_unit", "ae2:network/blocks/pattern_providers_interface", "ae2:network/crafting/molecular_assembler",
+          "extendedae:cobblestone_cell", "extendedae:water_cell"}) {
+   if (id.startsWith("extendedae:") && !net.neoforged.fml.ModList.get().isLoaded("extendedae")) continue;
+   var recipe = (CraftingRecipe)recipes.byKey(ResourceLocation.parse(id)).orElseThrow().value();
+   check(h, recipe.getIngredients().stream().anyMatch(ingredient -> ingredient.test(digital)), "Loaded automation recipe requires a Digital Circuit: "+id);
+  }
+  var drive = (CraftingRecipe)recipes.byKey(ResourceLocation.parse("ae2:network/blocks/storage_drive")).orElseThrow().value();
+  check(h, drive.getIngredients().stream().noneMatch(ingredient -> ingredient.test(digital)), "Basic ME storage is still available at MV");
+  h.succeed();
+ }
+
+ @GameTest(template="drill_test",timeoutTicks=100)
+ public static void nativeMachinesApplyConverterSaltAndLavaBalance(GameTestHelper h) {
+  var assembler = placeMiMachine(h, new BlockPos(2,2,2), "assembler");
+  var converterInputs = assembler.getInventory().getItemStacks();
+  var ingredients = java.util.List.of(new ItemStack(Items.IRON_INGOT,4), new ItemStack(Items.REDSTONE,2),
+          new ItemStack(Items.COPPER_INGOT,2), new ItemStack(item("fluxnetworks:flux_core")));
+  for(int i=0;i<ingredients.size();i++){
+   var ingredient=ingredients.get(i);
+   converterInputs.get(i).setKey(ItemVariant.of(ingredient));
+   converterInputs.get(i).setAmount(ingredient.getCount());
+  }
+  var converter=item("revoindustry:power_converter");
+  var recipes=h.getLevel().getRecipeManager();
+  check(h, recipes.byKey(ResourceLocation.parse("revoindustry:power_converter")).orElseThrow().value().getType()
+          == aztech.modern_industrialization.machines.init.MIMachineRecipeTypes.ASSEMBLER, "Converter has a native Assembler recipe");
+  power(assembler,250);
+  check(h, amount(assembler,converter)==0,"The old converter ingredients are insufficient");
+  converterInputs.get(4).setKey(ItemVariant.of(item("modern_industrialization:lv_steam_turbine")));
+  converterInputs.get(4).setAmount(1);
+  power(assembler,250);
+  check(h, amount(assembler,converter)==1,"The powered Assembler produces a converter with a spare LV turbine");
+
+  var mixer=placeMiMachine(h,new BlockPos(4,2,2),"electric_mixer");
+  var sludgeInput=mixer.getInventory().getItemStacks().getFirst();
+  sludgeInput.setKey(ItemVariant.of(RevoExtraction.MINERAL_SLUDGE.get()));
+  sludgeInput.setAmount(1);
+  var fluids=mixer.getInventory().fluidStorage.fluidHandler;
+  var execute=net.neoforged.neoforge.fluids.capability.IFluidHandler.FluidAction.EXECUTE;
+  fluids.fill(new net.neoforged.neoforge.fluids.FluidStack(net.minecraft.world.level.material.Fluids.WATER,1000),execute);
+  power(mixer,250);
+  var seawater=new net.neoforged.neoforge.fluids.FluidStack(dk.revo.revoindustry.saltern.Saltern.SEA_WATER.get(),1000);
+  check(h, fluids.drain(seawater,execute).getAmount()==1000 && sludgeInput.isEmpty(),"One greenhouse feedstock and water make seawater in the native Mixer");
+  check(h, amount(mixer,item("modern_industrialization:salt_dust"))==0,"The Mixer still requires chamber and centrifuge processing to obtain salt");
+
+  var centrifuge=placeMiMachine(h,new BlockPos(6,2,2),"centrifuge");
+  centrifuge.getInventory().fluidStorage.fluidHandler.fill(new net.neoforged.neoforge.fluids.FluidStack(net.minecraft.world.level.material.Fluids.LAVA,1000),execute);
+  power(centrifuge,650);
+  check(h, amount(centrifuge,item("modern_industrialization:sulfur_dust"))==17,"Lava still yields 17 sulfur");
+  check(h, amount(centrifuge,item("modern_industrialization:copper_nugget"))==2,"Lava now yields two copper nuggets");
+  h.succeed();
+ }
+
+ private static ElectricCraftingMachineBlockEntity placeMiMachine(GameTestHelper h,BlockPos relative,String name){
+  var level=h.getLevel();
+  var pos=h.absolutePos(relative);
+  var block=BuiltInRegistries.BLOCK.get(ResourceLocation.fromNamespaceAndPath("modern_industrialization",name));
+  level.setBlockAndUpdate(pos,block.defaultBlockState());
+  return (ElectricCraftingMachineBlockEntity)level.getBlockEntity(pos);
+ }
+
+ private static void power(ElectricCraftingMachineBlockEntity machine,int ticks){
+  for(int i=0;i<ticks;i++){
+   machine.getEnergyComponent().insertEu(32,Simulation.ACT);
+   machine.tick();
+  }
+ }
+
+ private static long amount(ElectricCraftingMachineBlockEntity machine,Item item){
+  return machine.getInventory().getItemStacks().stream().filter(slot->slot.toStack().is(item)).mapToLong(slot->slot.getAmount()).sum();
  }
  @GameTest(template="drill_test",timeoutTicks=100)
  public static void allNewMobsAndBurnerCapture(GameTestHelper h){

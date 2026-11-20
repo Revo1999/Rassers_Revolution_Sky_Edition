@@ -35,13 +35,15 @@ public enum DrillTier {
         return item==Items.AIR?Items.RAW_IRON:item;
     }
     public static final int FLUX_INTERVAL=128;
+    private static final int GEM_SLUDGE_INTERVAL=32;
     private volatile Item[] cachedOutputs;
     public Item output(int cycle){
         if(this!=WOODEN&&Math.floorMod(cycle,FLUX_INTERVAL)==FLUX_INTERVAL-1){var flux=BuiltInRegistries.ITEM.get(ResourceLocation.parse("fluxnetworks:flux_dust"));if(flux!=Items.AIR)return flux;}
+        if(this==STEEL&&Math.floorMod(cycle,GEM_SLUDGE_INTERVAL)==8)return RevoExtraction.GEM_SLUDGE.get();
         // Fixed sequence is saved by the controller: blocked outputs cannot be rerolled.
         Item[] pool=cachedOutputs;
         if(pool==null)cachedOutputs=pool=this==STEEL?new Item[]{Items.RAW_IRON,Items.RAW_COPPER,optional("modern_industrialization:raw_tin"),Items.COAL,
-            Items.REDSTONE,Items.RAW_IRON,optional("create:raw_zinc"),Items.RAW_GOLD,RevoExtraction.GEM_SLUDGE.get(),Items.RAW_IRON,RevoExtraction.GEM_SLUDGE.get(),Items.COAL,
+            Items.REDSTONE,Items.RAW_IRON,optional("create:raw_zinc"),Items.RAW_GOLD,Items.GRAVEL,Items.RAW_IRON,Items.GRAVEL,Items.COAL,
             optional("modern_industrialization:raw_lead"),optional("modern_industrialization:raw_antimony"),RevoExtraction.MINERAL_SLUDGE.get(),optional("modern_industrialization:raw_lead")}:this==WOODEN
             ?new Item[]{Items.COBBLESTONE,Items.COBBLESTONE,Items.GRAVEL,Items.SAND,Items.RAW_IRON}
             :new Item[]{Items.RAW_IRON,Items.RAW_COPPER,optional("modern_industrialization:raw_tin"),Items.COAL,

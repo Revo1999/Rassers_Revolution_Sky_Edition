@@ -76,18 +76,18 @@ Processing needs at least **16 RPM**; the nominal rate is one gravel in
 **100 ticks at 32 RPM**, capped at the processing rate for 128 RPM. Stress is
 8 SU per RPM. At nominal speed a completed cycle uses 500 mB of flowing water.
 
-The initial gem route uses a saved 128-cycle sequence:
+The gravel wash uses a saved 128-cycle sequence:
 
 | Output | Completed cycles per 128 gravel |
 |---|---:|
 | Flint | 96 |
 | Quartz | 24 |
-| Lapis lazuli | 6 |
-| Emerald | 1 |
-| Diamond | 1 |
+| Coal | 6 |
+| Raw iron | 1 |
+| Raw copper | 1 |
 
-This is an initial balance, not a completed survival balance pass. The sequence
-is stable across saves and blocked buffers: the next result cannot be rerolled.
+Wash Steel Drill Gem Sludge for diamonds and lapis, or craft four sludge into
+one emerald. The sluice sequence remains stable across saves and blocked buffers.
 Gravel is consumed only when a result fits and the cycle finishes. Partial work,
 cycle cursor, water, input and output inventories persist. Both rotation
 directions work. Dismantling the channel drops its saved products exactly once;

@@ -6,21 +6,22 @@ Revo drills provide the mineral feedstocks. Gems are recovered by processing slu
 
 The Iron Drill's regular saved sequence now has **13 outputs**: its previous 12 minerals plus one **Mineral Sludge**. Wooden extraction is unchanged.
 
-The Steel Drill's regular saved sequence now has **16 outputs**:
+The Steel Drill's regular saved sequence now has **32 outputs**:
 
 | Output | Count per regular sequence |
 |---|---:|
-| Raw iron | 3 |
-| Raw copper | 1 |
-| Raw tin | 1 |
-| Coal | 2 |
-| Raw zinc | 1 |
-| Raw gold | 1 |
-| Redstone | 1 |
-| Raw lead | 2 |
-| Raw antimony | 1 |
-| Mineral Sludge | 1 |
-| Gem Sludge | 2 |
+| Raw iron | 6 |
+| Raw copper | 2 |
+| Raw tin | 2 |
+| Coal | 4 |
+| Raw zinc | 2 |
+| Raw gold | 2 |
+| Redstone | 2 |
+| Raw lead | 4 |
+| Raw antimony | 2 |
+| Gravel | 3 |
+| Mineral Sludge | 2 |
+| Gem Sludge | 1 |
 
 As before, every 128th Iron/Steel output is Flux Dust instead of the regular scheduled output. Output blocking preserves the cursor and does not reroll resources. Existing water, RPM, repair and hopper behavior is retained.
 
@@ -44,13 +45,13 @@ All existing saved program indices **0–6** retain their meaning. New programs 
 | Program | Power and work | Output / requirements |
 |---|---|---|
 | Antimony (7) | 16 EU/t for 200 powered ticks; 3,200 EU total | 1 Raw Antimony. No survey core required. |
-| Crystalline Sludge (8) | 128 EU/t for 1,200 powered ticks; 153,600 EU total | 1 Crystalline Sludge. Requires a retained Deep Survey Core. |
+| Crystalline Sludge (8) | 128 EU/t for 1,200 powered ticks; 153,600 EU total | 1 Crystalline Sludge. Requires a retained Deep Survey Core crafted with an MV Advanced Machine Hull. |
 
 Mixed Metals now cycles silver, nickel, lead, bauxite and antimony. A selectable antimony route improves scaling after the mechanical bootstrap; it does not replace the earlier mechanical source.
 
-Feed **one Crystalline Sludge** to the existing MI Centrifuge: **32 EU/t for 400 ticks** produces **two Certus Quartz Crystals and two Quartz**. The recipe requires MI and AE2 to be installed. The core/128 EU/t requirement keeps this beyond the first LV drill, and Certus comes from sludge processing rather than direct drill output.
+Feed **one Crystalline Sludge** to the existing MI Centrifuge: **32 EU/t for 400 ticks** produces **two Certus Quartz Crystals and two Quartz**. The recipe requires MI and AE2 to be installed. The MV Advanced Machine Hull gates new Deep Survey Cores. Certus comes from processing the Crystalline Sludge.
 
-This supplies starter Certus, not the complete AE2 unlock. Inscriber Presses, starter Sky Stone and deliberate storage/autocrafting gates remain separate work. Tungsten and uranium also remain later drill-tier work, outside the MV feedstock changes here.
+Starter presses and Sky Stone have separate recipes. Electronic Circuits unlock AE2 storage at MV. Digital Circuits unlock AE2 autocrafting and ExtendedAE Infinity Cells at HV.
 
 Electric input/output restrictions, full-output pauses and saved work/cursor behavior remain intact. Switching programs resets partial work as before; removing the required core pauses advanced extraction without spending power.
 

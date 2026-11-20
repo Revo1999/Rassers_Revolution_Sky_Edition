@@ -68,7 +68,7 @@ baseid=0x5E40000000000000
 for i,(name,title,old,tier,ns) in enumerate(machines,11):
     ident=f'{baseid+i:016X}';book['quests']=[q for q in book['quests'] if q['id']!=ident]
     if name=='iron_greenhouse':text=[
-        'Upgrade the wooden greenhouse with iron supports, casings, soil bed, glass panels and an iron I/O hatch. Add the Grow Light Panel and a Basic Power Converter to the structure; the EMI guide shows every layer.',
+        'Upgrade the wooden greenhouse with iron supports, casings, soil bed, glass panels and an iron I/O hatch. Add the Grow Light Panel and a Basic Power Converter to the structure; the EMI guide shows every layer. Assemble your Basic Power Converter in the MI Assembler after establishing LV steam power.',
         'The converter replaces the REAR-RIGHT BOTTOM support. Wrench it so its blue FE face points outward to the rear; the EU face touches the hatch. Keep FE to EU mode. The converter itself stores no power.',
         'Supply 8 EU/t, or 80 FE/t with the default 10 FE/EU setting. FE enters the converter; native MI EU can enter the hatch. The greenhouse holds a 1600 EU buffer.',
         'A retained crop starter and 250 mB water produce a harvest every 10 seconds. Its 16000 mB tank accepts bucket or piped water. Powered grow lights let it work through the night and indoors. Output remains in the hatch.']
@@ -81,5 +81,8 @@ for i,(name,title,old,tier,ns) in enumerate(machines,11):
         'The selected Zombie, Skeleton or Spider remains an actual persistent machine-owned mob. It cannot despawn or escape. Right-click the front filter to change species.',
         'The steel harvester produces the existing species drops every 7.5 seconds. This is passive production. All drops must fit before a cycle completes; the hatch auto-ejects.']
     book['quests'].append({'id':ident,'title':title,'icon':{'id':ns+':'+name,'count':1},'x':float(3+(i-11)*5),'y':8.0,'shape':'diamond','dependencies':['5E20000000000014' if tier=='iron' else '5E40000000000002'],'description':text,'tasks':[{'id':f'{baseid+0x1000+i*16:016X}','type':'item','item':{'id':ns+':'+name,'count':1},'count':1,'consume_items':False}],'rewards':[]})
+    if name=='iron_greenhouse':
+        book['quests'][-1]['dependencies'].append('5E80000000000030')
+        book['quests'][-1]['optional']=True
 put(chapter,book)
 print(f'Generated {len(parts)} metal farm block assets/recipes and three stable quest branches.')

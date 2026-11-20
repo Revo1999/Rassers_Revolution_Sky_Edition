@@ -10,7 +10,7 @@
       "x": 0.0,
       "y": 0.0,
       "description": [
-        "Select Crystalline Sludge on the Electric Geological Drill with a retained Deep Survey Core: 128 EU/t for 1200 powered ticks. Centrifuge one sludge at 32 EU/t for 400 ticks into two Certus Quartz and two Quartz. Native charging, dust and Fluix chemistry remain unchanged."
+        "Craft the Deep Survey Core with an MV Advanced Machine Hull. The Electric Geological Drill makes Crystalline Sludge in 1200 powered ticks at 128 EU/t. Centrifuge it at 32 EU/t for 400 ticks into two Certus Quartz and two Quartz."
       ],
       "tasks": [
         {
@@ -24,7 +24,10 @@
           "consume_items": false
         }
       ],
-      "rewards": []
+      "rewards": [],
+      "dependencies": [
+        "5E50000000000018"
+      ]
     },
     {
       "id": "5E90000000000002",
@@ -68,15 +71,18 @@
           "consume_items": false
         }
       ],
-      "rewards": []
+      "rewards": [],
+      "dependencies": [
+        "5E90000000000001"
+      ]
     },
     {
       "id": "5E90000000000004",
-      "title": "Salt Crystal Growth",
+      "title": "Greenhouse Mineral Sludge",
       "x": 0.0,
       "y": 3.0,
       "description": [
-        "Craft one salt crystal geode from quartz, sand, water bucket and compost; the bucket is returned. Put the salt crystal geode in an Iron Greenhouse and supply water and 8 EU/t through its integrated converter. It is retained; each harvest consumes 250 mB and grows one MI salt dust. No salt is required to start."
+        "Craft a Salt Crystal Geode with quartz, sand, compost and a water bucket. Retain it in an Iron Greenhouse. A harvest at 8 EU/t uses 250 mB water and gives one Mineral Sludge. Mix it with water for seawater, then use the Salt Geode Chamber and Centrifuge."
       ],
       "tasks": [
         {
@@ -90,7 +96,10 @@
           "consume_items": false
         }
       ],
-      "rewards": []
+      "rewards": [],
+      "dependencies": [
+        "5E50000000000012"
+      ]
     },
     {
       "id": "5E90000000000005",

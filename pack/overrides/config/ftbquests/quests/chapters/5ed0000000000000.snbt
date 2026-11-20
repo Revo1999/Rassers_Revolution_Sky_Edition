@@ -327,8 +327,8 @@
         "5E50000000000014"
       ],
       "description": [
-        "Keep the 3 x 3 x 3 Salt Geode Chamber supplied with water and 16 EU/t. Pipe its salt water into the native Centrifuge.",
-        "Collect Salt Dust with the existing recipe. Alternatively the pulled Salt Crystal Geode program in the powered Iron Greenhouse supplies salt at 8 EU/t with water; it does not require the Centrifuge."
+        "Mix drill sediment into seawater or mix one Mineral Sludge with a bucket of water. Supply seawater and 16 EU/t to the 3 x 3 x 3 Salt Geode Chamber.",
+        "Pipe the concentrated salt water into the MI Centrifuge. Each bucket gives two Salt Dust."
       ],
       "tasks": [
         {
@@ -435,11 +435,12 @@
       "shape": "circle",
       "size": 1.0,
       "dependencies": [
-        "5ED000000000000A"
+        "5ED000000000000A",
+        "5EC0000000000015"
       ],
       "description": [
-        "Keep the early crucible/cobblestone lava supply working and process lava in the native Centrifuge recipe at 32 EU/t.",
-        "Collect its sulfur and handle the other outputs. Sulfur already has this refining route; a new drill deposit is unnecessary."
+        "Process a bucket of renewable crucible lava in the MI Centrifuge for 600 ticks at 32 EU/t.",
+        "Each bucket supplies 17 Sulfur Dust and two Copper Nuggets, with a chance of aluminum and chromium nuggets. Use drilling for bulk copper."
       ],
       "tasks": [
         {
@@ -728,7 +729,7 @@
       ],
       "description": [
         "Check this after sustaining MV power, retaining a working LV supply, producing Electronic Circuits, handling gases/acids and making Advanced Upgrades from renewable plastic.",
-        "This completes the guided first-MV factory, not every MI recipe. Advanced metallurgy and later power need their own chapters; AE2 starter recipes and MV circuit gates are now implemented, while separate autocrafting/addon boundaries still need review. The Nexus models are still art/design and do not count as implemented machines."
+        "MV Electronic Circuits unlock AE2 storage after Crystalline Sludge processing. HV Digital Circuits unlock AE2 autocrafting and ExtendedAE Infinity Cells."
       ],
       "tasks": [
         {
@@ -737,6 +738,50 @@
         }
       ],
       "rewards": []
+    },
+    {
+      "id": "5ED000000000001A",
+      "title": "MV Applied Energistics Storage",
+      "icon": {
+        "id": "ae2:drive",
+        "count": 1
+      },
+      "x": 0.0,
+      "y": 20.0,
+      "shape": "diamond",
+      "size": 1.0,
+      "dependencies": [
+        "5ED0000000000004",
+        "5E50000000000018"
+      ],
+      "description": [
+        "Use MV Electronic Circuits in the Inscriber and processor routes. Turn Certus from Crystalline Sludge into Fluix and connect an Energy Acceptor, ME Drive and terminal to the network.",
+        "The Crafting Terminal supports hand crafting from network inventory. Pattern-driven autocrafting needs HV Digital Circuits."
+      ],
+      "tasks": [
+        {
+          "id": "5ED00000001001A0",
+          "type": "item",
+          "item": {
+            "id": "ae2:drive",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "5ED00000001001A1",
+          "type": "item",
+          "item": {
+            "id": "ae2:crafting_terminal",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [],
+      "optional": true
     }
   ],
   "images": [

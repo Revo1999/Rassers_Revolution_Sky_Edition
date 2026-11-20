@@ -150,7 +150,7 @@ The compact **Electric Geological Drill** introduces selectable deposits:
 |---|---|---|
 | Mixed / individual metal deposits | 16 EU/t, 200 powered ticks per output | Silver, nickel, lead, bauxite dust and antimony. |
 | Glacial Ice | Standard electric cycle plus a water bucket | Ice; returns the bucket. Ice can become packed and blue ice. |
-| Deep Survey | Survey core, 128 EU/t, 1,200 powered ticks per output | Terrain materials and glowstone, with Ancient Debris every 64th output. |
+| Deep Survey | Survey core crafted with an MV Advanced Machine Hull, 128 EU/t, 1,200 powered ticks per output | Terrain materials and glowstone, with Ancient Debris every 64th output. |
 
 The survey core requires silver, nickel, lead, aluminum and diamond. Deep Survey is a substantial power step beyond basic LV extraction.
 
@@ -174,7 +174,7 @@ Chest Drives and Mechanical Crafting Terminals provide a local storage network. 
 
 Each drive accepts nine physical chests and uses their native capacities. Connected terminals provide search, a shared crafting grid, EMI recipe transfer and ingredient refill. Crafting spends spring charge: wind it manually or recharge it from adjacent Create rotation at **16 RPM or higher**. Item insertion and extraction cost no charge.
 
-This establishes the mechanical storage stage. AE2 is intended to provide later electrical storage and autocrafting.
+This establishes the mechanical storage stage. AE2 storage opens at MV. AE2 autocrafting and ExtendedAE Infinity Cells open with HV Digital Circuits.
 
 ### Furnace expansion
 

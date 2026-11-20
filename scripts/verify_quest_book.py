@@ -88,7 +88,11 @@ def verify():
         for t in q['tasks']:
             if t['type']=='advancement':assert (ROOT/'revoindustry/src/main/resources/data/revoindustry/advancement/nexus_stabilized.json').exists() and t['advancement']=='revoindustry:nexus_stabilized'
     assert len(nexusQuests)==41
-    assert len(newquests)==83
+    assert len(newquests)==86
+    sluice=quests['5E2000000000001E']
+    assert all(t['item']['id'] in resources and not t['consume_items'] for t in sluice['tasks'])
+    rain,=quests['5E10000000000012']['rewards']
+    assert rain['command']=='/weather rain 300s' and rain['auto']=='disabled'
     assert '5EC0000000000015' in quests['5E50000000000014']['dependencies']
     # Crucial bootstrap ordering: EBF before aluminum/electrolyzer, never the reverse.
     def ancestors(ident):
@@ -102,6 +106,13 @@ def verify():
     assert '5EB000000000000B' not in ancestors('5EB0000000000008')
     assert '5EB000000000000E' not in ancestors('5EB000000000000D')
     assert '5EB000000000000E' in ancestors('5EB0000000000010')
+    assert '5ED0000000000004' in ancestors('5E5000000000000F')
+    assert '5E80000000000014' in ancestors('5E80000000000030')
+    assert '5E80000000000030' in ancestors('5E50000000000012')
+    assert '5E50000000000018' in ancestors('5ED000000000001A')
+    assert '5EB0000000000014' not in ancestors('5ED000000000001A')
+    for ident in ('5EB000000000001B','5EB000000000001C'):
+        assert {'5EB0000000000014','5ED000000000001A'} <= ancestors(ident)
     assert '5EF000000000000F' in ancestors('5EF0000000000017') # Reactor before Quantum Circuits
     assert '5EF0000000000018' in ancestors('5EF0000000000019') # Quantum Hull before Fusion
     assert '5EE000000000000E' in ancestors('5EE000000000000A')
@@ -109,7 +120,7 @@ def verify():
     assert '5EE000000000000B' in ancestors('5EE000000000001F')
     field_ids={ident for ident,chapter in guides.items() if chapter==FIELD}
     assert all(not field_ids.intersection(q.get('dependencies',[])) for ident,q in quests.items() if ident not in field_ids)
-    result={'chapters':len(chapters),'quests':len(quests),'newQuests':83,'newGuideQuests':len(guides),'nexusQuestsVerified':len(nexusQuests),'sedimentAndDrillQuestsVerified':4,'existingQuestsPreserved':preserved,'uniqueIds':len(seen),'acyclicDependencies':True,'newItemReferencesResolved':True,'nonConsumingItemTasks':True,'newMaterialRewards':0,'liveSurvivalPlaythrough':'not performed','chaptersSummary':[{'title':c['title'],'quests':len(c['quests'])} for c in chapters]}
+    result={'chapters':len(chapters),'quests':len(quests),'newQuests':len(newquests),'newGuideQuests':len(guides),'nexusQuestsVerified':len(nexusQuests),'sedimentAndDrillQuestsVerified':4,'existingQuestsPreserved':preserved,'uniqueIds':len(seen),'acyclicDependencies':True,'newItemReferencesResolved':True,'nonConsumingItemTasks':True,'newMaterialRewards':0,'liveSurvivalPlaythrough':'not performed','chaptersSummary':[{'title':c['title'],'quests':len(c['quests'])} for c in chapters]}
     out=ROOT/'art/quests';out.mkdir(parents=True,exist_ok=True);(out/'validation.json').write_text(json.dumps(result,indent=2)+'\n',encoding='utf-8')
     print(json.dumps(result,indent=2))
 if __name__=='__main__':verify()

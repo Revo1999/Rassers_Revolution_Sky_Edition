@@ -36,7 +36,7 @@ public class FarmEmiPlugin implements EmiPlugin {
             var category=category(kind);registry.addCategory(category);registry.addWorkstation(category,EmiStack.of(kind.controller()));registry.addRecipe(assembly(kind));
             var production=new EmiRecipeCategory(id(kind.id+"_production"),EmiStack.of(kind.controller()));registry.addCategory(production);registry.addWorkstation(production,EmiStack.of(kind.controller()));
             int[] programs=kind.isTree()?new int[]{0}:kind.isGreenhouse()?(kind.electric()?new int[]{10,11,12,13,14,15,16,17,18,19,31}:new int[]{10,11,12,13,14,15,16,31}):kind.harvesterPrograms();
-            for(int program:programs)for(int tier=1;tier<=(kind.isHarvester()?MobSpawnerPrograms.maxTier(kind):1);tier++)registry.addRecipe(new Production(production,kind,program,tier));
+            for(int program:programs)if(!MachineKind.products(program).isEmpty())for(int tier=1;tier<=(kind.isHarvester()?MobSpawnerPrograms.maxTier(kind):1);tier++)registry.addRecipe(new Production(production,kind,program,tier));
         }
         registry.addRecipe(new EmiInfoRecipe(List.of(EmiStack.of(MachineKind.HARVESTER.controller()),EmiStack.of(MachineKind.STEEL_HARVESTER.controller())),List.of(
             Component.literal("Insert a mob-specific spawner into the controller to select the contained mob. Wooden: Zombie, Skeleton, Spider, Cow, Slime. Steel also adds Ghast; Shulker and Wither Skeleton require a retained Netherite ingot. Wither skulls occur every 64 completed harvests."),

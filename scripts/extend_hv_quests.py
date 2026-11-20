@@ -113,10 +113,16 @@ def main():
         'Check this after sustained HV generation runs a real load while the earlier MV/LV lines remain operational. Confirm stainless, annealed wire and digital circuits can replenish themselves.',
         'This is the first-HV milestone. Later feedstock coverage, AE2 addon gates, nuclear fuel processing and Nexus runtime implementation are documented separately in the progression-gap table.'
     ],milestone=True)
+    c.add(27,'HV AE2 Autocrafting','ae2:crafting_unit',18,20,[20,ident(MV,26)],[
+        'Use a Digital Circuit in each Crafting Unit, Pattern Provider and Molecular Assembler. Add storage to the Crafting CPU and encode a pattern to run your first automatic craft.'
+    ],[('ae2:crafting_unit',1),('ae2:pattern_provider',1),('ae2:molecular_assembler',1)],optional=True)
+    c.add(28,'HV Infinity Cells','extendedae:infinity_water_cell',21,20,[20,ident(MV,26)],[
+        'Each Infinity Cell needs a 16k Storage Component, an HV Digital Circuit and its fluid ingredients. Install them in a powered ME Drive and route resources out of the network.'
+    ],[('extendedae:infinity_water_cell',1),('extendedae:infinity_cobblestone_cell',1)],optional=True)
     c.save()
     if args.render:
         import render_quest_maps as maps
         maps.OUT=ROOT/'art/quests/hv';maps.OUT.mkdir(parents=True,exist_ok=True)
         maps.render(CHAPTERS/(ident(HV,0).lower()+'.snbt'),'hv-progression.png')
-    print('Added 26 first-HV quests; no new resource or gameplay recipes.')
+    print('Generated 28 HV quests.')
 if __name__=='__main__':main()

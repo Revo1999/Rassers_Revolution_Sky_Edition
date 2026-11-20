@@ -46,6 +46,7 @@ The casing, glass and ports follow the existing MI-style Revo machines. Editable
 |---|---|---:|---:|---|
 | Drill coolant recovery | 100 mB ordinary water per work cycle | Create shaft | Alongside drill work | 100 mB sediment-laden water |
 | Native MI Mixer | 1,000 mB sediment-laden water | 8 EU/t | 200 recipe ticks / 10 seconds | 1,000 mB seawater |
+| Native MI Mixer | 1 Mineral Sludge and 1,000 mB water | 8 EU/t | 200 recipe ticks / 10 seconds | 1,000 mB seawater |
 | Geode growth and harvest | 1,000 mB seawater | 16 EU/t | 400 productive ticks / 20 seconds | 1,000 mB salt water |
 | Native MI centrifuging | 1,000 mB salt water | 8 EU/t | 200 recipe ticks / 10 seconds before MI speed behaviour | 2 MI Salt Dust |
 
@@ -54,6 +55,10 @@ At the pack's current 10 FE/EU ratio, the chamber's working draw is 160 FE/t. It
 Each fluid reservoir holds 8,000 mB; the energy buffer holds 6,400 EU. The energy hatch accepts up to 64 EU/t, shared across repeated FE/EU input calls. The geode is retained rather than consumed.
 
 Controller and port interactions open inventory-free diagnostics. Jade summarizes water, brine, power and progress. The fluid hatches expose real sided fluid capabilities, rather than item-only bucket recipes. Seawater, Sediment-laden Water and Salt Water are distinct registered fluids with a filled bucket and native pipe compatibility.
+
+A powered Iron Greenhouse can supplement the drill supply. Its retained Salt
+Crystal Geode yields one Mineral Sludge per harvest. Mix that sludge with water,
+concentrate the seawater in the chamber and centrifuge the resulting salt water.
 
 ## Animation
 

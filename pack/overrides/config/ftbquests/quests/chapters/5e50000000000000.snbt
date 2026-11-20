@@ -300,7 +300,7 @@
         "Before the first hull, make Redstone Batteries with the copper/zinc starter recipe shown in EMI; native battery alloy is also available from mechanical Steel Drill lead and antimony.",
         "Hand-craft the LV Steam Turbine from a basic hull, circuit, two motors, two tin rotors, pipes and a tin cable. Feed steam from your existing steam infrastructure.",
         "Connect turbine -> tin cable -> electric machine. EU powers machines; the Basic Power Converter changes energy format and generates no power. Create New Age has an optional steel-gated magnetite crafting route.",
-        "Next: open Chapter 5: The LV Factory for power distribution, component automation, the Electric Blast Furnace and your first aluminum."
+        "Connect the turbine to tin cable and run an electric machine. Once steam power runs your Assembler, you can build a Basic Power Converter for FE and EU."
       ],
       "tasks": [
         {
@@ -364,7 +364,7 @@
         "5E40000000000009"
       ],
       "description": [
-        "Get Gem Sludge from the Steel Drill. Place four Gem Sludge in a 2 by 2 crafting grid for one guaranteed Emerald.",
+        "Get Gem Sludge from the Steel Drill every 32 outputs. Place four Gem Sludge in a 2 by 2 crafting grid for one guaranteed Emerald.",
         "Wash the sludge for Diamonds, Lapis and a chance at Emeralds."
       ],
       "tasks": [
@@ -452,11 +452,12 @@
       "y": 9.0,
       "shape": "circle",
       "dependencies": [
-        "5E5000000000000B"
+        "5E5000000000000B",
+        "5ED0000000000004"
       ],
       "description": [
-        "Build the survey core from silver, nickel, lead, aluminum and a diamond. Install it in the electric drill upgrade slot and select Deep Survey.",
-        "Deep Survey consumes 128 EU/t for 1200 ticks per result. A saved 64-result cycle supplies netherrack, soul sand and glowstone; every 64th result is Ancient Debris. This is a later power upgrade, not a Steel Drill handout."
+        "Build the Deep Survey Core with an MV Advanced Machine Hull, silver, nickel, lead, aluminum and a diamond. Put it in the electric drill upgrade slot and select Deep Survey.",
+        "Deep Survey costs 128 EU per powered tick for 1200 powered ticks. The saved cycle gives netherrack, soul sand and glowstone, with Ancient Debris every 64 results."
       ],
       "tasks": [
         {
@@ -546,10 +547,11 @@
       "y": 12.0,
       "shape": "circle",
       "dependencies": [
-        "5E5000000000000A"
+        "5E5000000000000A",
+        "5E80000000000030"
       ],
       "description": [
-        "Build the Iron Greenhouse using its EMI construction guide, then feed EU to its hatch or FE through its integrated converter. Add water and a retained starter.",
+        "Build the Iron Greenhouse using its EMI construction guide, then feed EU to its hatch or FE through its integrated converter. Add water and a retained starter. Make the Basic Power Converter using your steam-powered MI Assembler.",
         "Verify one complete harvest and confirm the water and power counters decrease, output arrives, and full output storage pauses production."
       ],
       "tasks": [
@@ -583,7 +585,8 @@
       "description": [
         "Build the 3 x 3 x 3 Salt Geode Chamber using EMI. Five submerged crystal buds now grow and harvest in sequence, with electrical pulses and a small mineral cloud.",
         "Feed SEAWATER from the sediment-processing Mixer into the left hatch, and 16 EU/t into the rear energy hatch. After 20 powered seconds, 1000 mB seawater becomes 1000 mB concentrated salt water. Extract it on the right. Plain water and raw drill sediment are rejected.",
-        "No starting salt is needed. The retained geode core uses cobblestone, quartz and redstone. Power loss, blocked output or an incomplete shell holds the current growth/harvest pose."
+        "No starting salt is needed. The retained geode core uses cobblestone, quartz and redstone. Power loss, blocked output or an incomplete shell holds the current growth/harvest pose.",
+        "For a supplemental seawater source, mix one Mineral Sludge with one bucket of water in the MI Mixer. The powered Iron Greenhouse can grow this feedstock."
       ],
       "tasks": [
         {
@@ -720,7 +723,7 @@
         "5E40000000000009"
       ],
       "description": [
-        "The Steel Drill produces Gem Sludge instead of loose diamonds and lapis. Wash each sludge with a water-backed Create Encased Fan: one Diamond and two Lapis are guaranteed; an Emerald has a 25% chance.",
+        "The Steel Drill produces one Gem Sludge every 32 outputs. Wash it with a water-backed Create Encased Fan for one Diamond and two Lapis, plus a 25% Emerald chance.",
         "Automate extraction and washing with the existing item hatch, belts and funnels. Full drill outputs retain the saved next result."
       ],
       "tasks": [
@@ -762,7 +765,7 @@
         "5E50000000000014"
       ],
       "description": [
-        "Select Crystalline Sludge on the Electric Geological Drill. Retain a Deep Survey Core in its upper slot; supply 128 EU/t for 1200 powered ticks per sludge.",
+        "Select Crystalline Sludge on the Electric Geological Drill. Retain a Deep Survey Core made with an MV Advanced Machine Hull. Each sludge takes 1200 powered ticks at 128 EU/t.",
         "A native MI Centrifuge processes one Crystalline Sludge at 32 EU/t for 400 ticks into two Certus Quartz Crystals and two Quartz. Certus is recovered from sludge, never dropped directly by the drill.",
         "This establishes starter Certus only. Inscriber Presses, starter Sky Stone and the full AE2 unlock still need their own progression."
       ],

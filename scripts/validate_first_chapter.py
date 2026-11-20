@@ -23,7 +23,7 @@ def main():
   allids += [q['id']]+[t['id'] for t in q['tasks']]+[r['id'] for r in q['rewards']]
  assert len(allids)==len(set(allids)) and all(len(i)==16 and int(i,16)>0 for i in allids)
  storm=[r for q in chapter['quests'] for r in q.get('rewards',[]) if r['type']=='command']
- assert len(storm)==1 and storm[0]['command']=='/weather rain 300' and storm[0]['permission_level']==2
+ assert len(storm)==1 and storm[0]['command']=='/weather rain 300s' and storm[0]['permission_level']==2 and storm[0]['auto']=='disabled'
  inv=read(cfg/'skyblockbuilder/starter_inventory.json5')
  assert inv=={'items':[{'Slot':'mainhand','Item':{'id':'revoindustry:revolution_book','count':1}}]}
  assert read(cfg/'skyblockbuilder/inventory.json5')['clearInitialInventory'] is True

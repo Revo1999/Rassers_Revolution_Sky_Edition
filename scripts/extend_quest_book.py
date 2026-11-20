@@ -112,7 +112,7 @@ def low_voltage():
     ],[(mid('large_pump'),1)])
     c.add(21,'The Native Centrifuge',mid('centrifuge'),33,12,[20],[
         'Build the single-block MI Centrifuge with its native recipe. This follows aluminum, electronics, Large Motors and a Large Pump.',
-        'Its first jobs include salt water separation and native lava processing. Crystalline Sludge still needs the retained Deep Survey Core and its higher-power drill program.'
+        'Start with salt water separation and lava sulfur. The Centrifuge also separates Crystalline Sludge after you craft the MV Deep Survey Core.'
     ],[(mid('centrifuge'),1)],milestone=True)
     c.add(22,'Electrolysis After Bootstrap',mid('electrolyzer'),30,16,[20],[
         'Now build the Electrolyzer: its Aluminum Rods, Electronic Circuit and Large Pump are available.',
@@ -176,8 +176,8 @@ def medium_voltage():
         'Check this after transferring an actual input and collecting a machine output. Never mix fluids because their names or colours look similar.'
     ])
     c.add(11,'Renewable Salt Supply',mid('salt_dust'),6,5,[10,'5E50000000000014'],[
-        'Keep the 3 x 3 x 3 Salt Geode Chamber supplied with water and 16 EU/t. Pipe its salt water into the native Centrifuge.',
-        'Collect Salt Dust with the existing recipe. Alternatively the pulled Salt Crystal Geode program in the powered Iron Greenhouse supplies salt at 8 EU/t with water; it does not require the Centrifuge.'
+        'Mix drill sediment into seawater or mix one Mineral Sludge with a bucket of water. Supply seawater and 16 EU/t to the 3 x 3 x 3 Salt Geode Chamber.',
+        'Pipe the concentrated salt water into the MI Centrifuge. Each bucket gives two Salt Dust.'
     ],[(mid('salt_dust'),8)])
     c.add(12,'Water into Gases',mid('electrolyzer'),9,5,[10],[
         'Run the native water Electrolyzer recipe and route hydrogen and oxygen to separate destinations.',
@@ -191,9 +191,9 @@ def medium_voltage():
         'Chemical Reactor: 1,000 mB Hydrogen plus 1,000 mB Chlorine makes 2,000 mB Hydrochloric Acid at 8 EU/t for 100 ticks.',
         'Check this after collecting acid in its own fluid destination. Native advanced metal refining will use it later.'
     ])
-    c.add(15,'Sulfur from Lava',mid('sulfur_dust'),9,9,[10],[
-        'Keep the early crucible/cobblestone lava supply working and process lava in the native Centrifuge recipe at 32 EU/t.',
-        'Collect its sulfur and handle the other outputs. Sulfur already has this refining route; a new drill deposit is unnecessary.'
+    c.add(15,'Sulfur from Lava',mid('sulfur_dust'),9,9,[10,ident(LV,21)],[
+        'Process a bucket of renewable crucible lava in the MI Centrifuge for 600 ticks at 32 EU/t.',
+        'Each bucket supplies 17 Sulfur Dust and two Copper Nuggets, with a chance of aluminum and chromium nuggets. Use drilling for bulk copper.'
     ],[(mid('sulfur_dust'),1)])
     c.add(16,'The Distillery',mid('distillery'),0,13,[9],[
         'Build the native Distillery with Electronic Circuits and Large Pumps. Connect input/output fluid routes and power.',
@@ -233,8 +233,12 @@ def medium_voltage():
     ])
     c.add(25,'An Integrated MV Factory',mid('mv_steam_turbine'),24,5,[24,14],[
         'Check this after sustaining MV power, retaining a working LV supply, producing Electronic Circuits, handling gases/acids and making Advanced Upgrades from renewable plastic.',
-        'This completes the guided first-MV factory, not every MI recipe. Advanced metallurgy and later power need their own chapters; AE2 starter recipes and MV circuit gates are now implemented, while separate autocrafting/addon boundaries still need review. The Nexus models are still art/design and do not count as implemented machines.'
+        'MV Electronic Circuits unlock AE2 storage after Crystalline Sludge processing. HV Digital Circuits unlock AE2 autocrafting and ExtendedAE Infinity Cells.'
     ],milestone=True)
+    c.add(26,'MV Applied Energistics Storage','ae2:drive',0,20,[4,'5E50000000000018'],[
+        'Use MV Electronic Circuits in the Inscriber and processor routes. Turn Certus from Crystalline Sludge into Fluix and connect an Energy Acceptor, ME Drive and terminal to the network.',
+        'The Crafting Terminal supports hand crafting from network inventory. Pattern-driven autocrafting needs HV Digital Circuits.'
+    ],[('ae2:drive',1),('ae2:crafting_terminal',1)],optional=True)
     c.save()
 
 def shoes():

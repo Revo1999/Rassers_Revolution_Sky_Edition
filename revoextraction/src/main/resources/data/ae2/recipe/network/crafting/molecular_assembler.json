@@ -1,0 +1,39 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "a": {
+      "tag": "c:ingots/iron"
+    },
+    "b": {
+      "item": "ae2:quartz_glass"
+    },
+    "c": {
+      "item": "ae2:annihilation_core"
+    },
+    "d": {
+      "item": "minecraft:crafting_table"
+    },
+    "e": {
+      "item": "ae2:formation_core"
+    },
+    "H": {
+      "item": "modern_industrialization:digital_circuit"
+    }
+  },
+  "pattern": [
+    "Hba",
+    "cde",
+    "aba"
+  ],
+  "result": {
+    "count": 1,
+    "id": "ae2:molecular_assembler"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "ae2"
+    }
+  ]
+}

@@ -1037,6 +1037,49 @@
       },
       "shape": "hexagon",
       "size": 1.25
+    },
+    {
+      "id": "5E2000000000001E",
+      "title": "Wash Gravel for Minerals",
+      "icon": {
+        "id": "revoextraction:mechanical_sluice",
+        "count": 1
+      },
+      "x": 7.5,
+      "y": 16.0,
+      "shape": "diamond",
+      "size": 1.0,
+      "dependencies": [
+        "5E20000000000005"
+      ],
+      "description": [
+        "Feed gravel and pumped water into the Gravel Feeder and drive the Mechanical Sluice from the side. It sorts flint, quartz, coal, raw iron and raw copper.",
+        "Recover diamonds, lapis and emeralds from Steel Drill Gem Sludge. The Sluice gives you an early gravel-processing line."
+      ],
+      "tasks": [
+        {
+          "id": "5E200000000011E0",
+          "type": "item",
+          "item": {
+            "id": "revoextraction:mechanical_sluice",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "5E200000000011E1",
+          "type": "item",
+          "item": {
+            "id": "revoextraction:gravel_feeder",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [],
+      "optional": true
     }
   ]
 }

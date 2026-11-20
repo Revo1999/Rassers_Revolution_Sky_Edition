@@ -25,9 +25,9 @@ cycle completion. Controller interfaces have no inventory and retain the small
 black R in the lower right; output hatches have no R/footer. Jade shows compact
 status, RPM, progress and water, with orientation corrections only in the controller.
 
-The fixed saved 16-item sequence yields 3 raw iron, 1 raw copper, 1 raw tin,
-2 coal, 1 raw zinc, 1 raw gold, 1 redstone, 2 raw lead, 1 raw antimony,
-1 Mineral Sludge and 2 Gem Sludge. Optional-mod ores fall back to raw iron if
+The fixed 32-output sequence yields 6 raw iron, 2 raw copper, 2 raw tin,
+4 coal, 2 raw zinc, 2 raw gold, 2 redstone, 4 raw lead, 2 raw antimony,
+3 gravel, 2 Mineral Sludge and 1 Gem Sludge. Optional-mod ores fall back to raw iron if
 unavailable. Blocked output cannot reroll the sequence. Every 128th output
 remains Flux Dust instead of the scheduled item.
 

@@ -71,7 +71,12 @@ public final class SluiceGameTests {
         check(h,e.work==0&&e.cycle==127&&e.feeder().input.getStackInSlot(0).getCount()==64,"Full output pauses work and input");
         check(h,e.flowing&&!e.processing&&e.feeder().water.getFluidAmount()==3750,"Water keeps flowing while output is blocked");
         e.outputs.setStackInSlot(0,ItemStack.EMPTY);for(int i=0;i<100;i++)e.tickProcessing();
-        check(h,e.cycle==128&&count(e,Items.DIAMOND)==1,"Reverse rotation resumes the same saved diamond result");
+        check(h,e.cycle==128&&count(e,Items.RAW_COPPER)==1,"Reverse rotation resumes the same saved copper result");
+        for (int cycle = 0; cycle < 128; cycle++) {
+            e.cycle = cycle;
+            var output = e.nextOutput();
+            check(h, !output.is(Items.DIAMOND) && !output.is(Items.EMERALD) && !output.is(Items.LAPIS_LAZULI), "All gravel cycles stay below the gem gate");
+        }
         h.succeed();
     }
     @GameTest(template="drill_test",timeoutTicks=100)
@@ -79,7 +84,7 @@ public final class SluiceGameTests {
         var e=build(h,Direction.SOUTH);water(e,2345);e.work=1234;e.cycle=127;e.outputs.setStackInSlot(0,new ItemStack(Items.LAPIS_LAZULI,5));
         var l=h.getLevel();var saved=e.saveWithFullMetadata(l.registryAccess());
         var restored=(SluiceEntity)BlockEntity.loadStatic(e.getBlockPos(),e.getBlockState(),saved,l.registryAccess());
-        check(h,restored.work==1234&&restored.cycle==127&&restored.nextOutput().is(Items.DIAMOND)&&count(restored,Items.LAPIS_LAZULI)==5,"Work, cursor and inventory persist");
+        check(h,restored.work==1234&&restored.cycle==127&&restored.nextOutput().is(Items.RAW_COPPER)&&count(restored,Items.LAPIS_LAZULI)==5,"Work, cursor and legacy inventory persist");
         var feed=e.feeder();var feedSave=feed.saveWithFullMetadata(l.registryAccess());
         var restoredFeed=(SluiceFeeder.Entity)BlockEntity.loadStatic(feed.getBlockPos(),feed.getBlockState(),feedSave,l.registryAccess());
         check(h,restoredFeed.water.getFluidAmount()==2345&&restoredFeed.input.getStackInSlot(0).getCount()==64,"Feeder tank and gravel persist");

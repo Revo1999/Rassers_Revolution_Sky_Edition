@@ -2,7 +2,7 @@
 
 ## Certus Quartz
 
-Select Crystalline Sludge on the Electric Geological Drill with a retained Deep Survey Core: 128 EU/t for 1200 powered ticks. Centrifuge one sludge at 32 EU/t for 400 ticks into two Certus Quartz and two Quartz. Native charging, dust and Fluix chemistry remain unchanged.
+Select Crystalline Sludge on the Electric Geological Drill with a retained Deep Survey Core crafted with an MV Advanced Machine Hull: 128 EU/t for 1200 powered ticks. Centrifuge one sludge at 32 EU/t for 400 ticks into two Certus Quartz and two Quartz. Native charging, dust and Fluix chemistry remain unchanged.
 
 ## Inscriber Presses
 
@@ -14,7 +14,7 @@ Heated mixing: four cobblestone, one Ender Pearl and one Certus dust make four S
 
 ## Salt Crystal Growth
 
-Craft one salt crystal geode from quartz, sand, water bucket and compost; the bucket is returned. Put the salt crystal geode in an Iron Greenhouse and supply water and 8 EU/t through its integrated converter. It is retained; each harvest consumes 250 mB and grows one MI salt dust. No salt is required to start.
+Craft one salt crystal geode from quartz, sand, water bucket and compost; the bucket is returned. Put the salt crystal geode in an Iron Greenhouse and supply water and 8 EU/t through its integrated converter. It is retained; each harvest consumes 250 mB and grows one Mineral Sludge. Mix this sludge with water for seawater, then process it in the Salt Geode Chamber and Centrifuge.
 
 ## Advanced Geology
 

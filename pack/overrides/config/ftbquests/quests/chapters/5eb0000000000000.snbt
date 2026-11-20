@@ -845,6 +845,102 @@
         }
       ],
       "rewards": []
+    },
+    {
+      "id": "5EB000000000001B",
+      "title": "HV AE2 Autocrafting",
+      "icon": {
+        "id": "ae2:crafting_unit",
+        "count": 1
+      },
+      "x": 18.0,
+      "y": 20.0,
+      "shape": "diamond",
+      "size": 1.0,
+      "dependencies": [
+        "5EB0000000000014",
+        "5ED000000000001A"
+      ],
+      "description": [
+        "Use a Digital Circuit in each Crafting Unit, Pattern Provider and Molecular Assembler. Add storage to the Crafting CPU and encode a pattern to run your first automatic craft."
+      ],
+      "tasks": [
+        {
+          "id": "5EB00000001001B0",
+          "type": "item",
+          "item": {
+            "id": "ae2:crafting_unit",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "5EB00000001001B1",
+          "type": "item",
+          "item": {
+            "id": "ae2:pattern_provider",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "5EB00000001001B2",
+          "type": "item",
+          "item": {
+            "id": "ae2:molecular_assembler",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [],
+      "optional": true
+    },
+    {
+      "id": "5EB000000000001C",
+      "title": "HV Infinity Cells",
+      "icon": {
+        "id": "extendedae:infinity_water_cell",
+        "count": 1
+      },
+      "x": 21.0,
+      "y": 20.0,
+      "shape": "diamond",
+      "size": 1.0,
+      "dependencies": [
+        "5EB0000000000014",
+        "5ED000000000001A"
+      ],
+      "description": [
+        "Each Infinity Cell needs a 16k Storage Component, an HV Digital Circuit and its fluid ingredients. Install them in a powered ME Drive and route resources out of the network."
+      ],
+      "tasks": [
+        {
+          "id": "5EB00000001001C0",
+          "type": "item",
+          "item": {
+            "id": "extendedae:infinity_water_cell",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "5EB00000001001C1",
+          "type": "item",
+          "item": {
+            "id": "extendedae:infinity_cobblestone_cell",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [],
+      "optional": true
     }
   ],
   "images": [

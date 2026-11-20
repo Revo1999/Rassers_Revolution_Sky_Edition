@@ -416,7 +416,7 @@
         "5E8000000000000A"
       ],
       "description": [
-        "Macerate four earned diamonds in your existing steam Macerator. Diamonds can come from the pack's renewable drilling/sluice routes.",
+        "Macerate four diamonds from Steel Drill Gem Sludge in your existing steam Macerator.",
         "This branch improves processing convenience. It does not block the main Assembler-to-EBF route. Do not try to make the Electric Macerator before preparing this dust."
       ],
       "tasks": [
@@ -1376,10 +1376,10 @@
         "5E80000000000017"
       ],
       "description": [
-        "You have a functioning LV component factory and an aluminum route. Confirm once both are working; this is the handoff into the next technology stage.",
-        "Next come aluminum parts, electrum cable, Electronic Circuit Boards and Electronic Circuits, then improved components and MV generation. Electronic Circuits are the pack's MV circuit gate; Digital Circuits are later.",
-        "AE2 inscribers, power acceptors, controllers and finished processors now require those Electronic Circuits, including the MI assembler processor recipes. Certus and presses can be prepared early, but an early AE2 network is not this chapter's goal.",
-        "MI's more advanced single-block machines still connect to LV cable. MV cables and transformers matter for MV generators and compatible hatches; do not rewire every basic machine directly to MV."
+        "You have a functioning LV component factory and an aluminum route. Confirm once both are working.",
+        "Next come aluminum parts, electrum cable, Electronic Circuit Boards and Electronic Circuits. At MV, prepare an Advanced Machine Hull for the Deep Survey Core and process Crystalline Sludge for your first Certus.",
+        "Electronic Circuits unlock AE2 storage. Digital Circuits in HV unlock AE2 autocrafting and ExtendedAE Infinity Cells.",
+        "MI's more advanced single-block machines still connect to LV cable. Use MV cables and transformers for MV generators and compatible hatches."
       ],
       "tasks": [
         {
@@ -1557,9 +1557,9 @@
     },
     {
       "id": "5E8000000000002F",
-      "title": "Optional: Powered Salt Geodes",
+      "title": "Optional: Seawater Feedstock",
       "icon": {
-        "id": "modern_industrialization:salt_dust",
+        "id": "revoextraction:mineral_sludge",
         "count": 1
       },
       "x": 18.0,
@@ -1570,15 +1570,15 @@
         "5E8000000000002E"
       ],
       "description": [
-        "Craft the Salt Crystal Geode from quartz, sand, compost and a water bucket; the empty bucket returns. Put it in the Iron Greenhouse with power and water.",
-        "Each harvest retains the geode, costs 1600 EU and 250 mB water, and produces one MI salt dust. The unpowered wooden greenhouse cannot run this program."
+        "Craft a Salt Crystal Geode from quartz, sand, compost and a water bucket. The bucket returns. Put the geode in the Iron Greenhouse with power and water.",
+        "Each harvest retains the geode and produces one Mineral Sludge for 1600 EU and 250 mB water. Mix the sludge with a bucket of water in the MI Mixer for seawater. Concentrate and centrifuge it for Salt Dust."
       ],
       "tasks": [
         {
           "id": "5E800000000012F0",
           "type": "item",
           "item": {
-            "id": "modern_industrialization:salt_dust",
+            "id": "revoextraction:mineral_sludge",
             "count": 1
           },
           "count": 1,
@@ -1601,11 +1601,12 @@
       "size": 1.0,
       "dependencies": [
         "5E5000000000000A",
-        "5E50000000000005"
+        "5E50000000000005",
+        "5E80000000000014"
       ],
       "description": [
-        "The Basic Power Converter forwards energy between FE and EU at the configured ratio. It is an adapter, not a generator or a storage battery.",
-        "Point its marked FE/EU faces at the appropriate networks. Keep generation on the source side and a compatible consumer on the destination side; reverse the mode only when your intended flow changes."
+        "Run the MI Assembler on LV steam power. Assemble the Basic Power Converter from a spare LV Steam Turbine, a Flux Core, four iron ingots, two redstone and two copper ingots at 8 EU/t.",
+        "Keep your working turbine on the steam line. The converter moves existing energy between FE and EU. Point each port at the correct network and check the selected direction."
       ],
       "tasks": [
         {

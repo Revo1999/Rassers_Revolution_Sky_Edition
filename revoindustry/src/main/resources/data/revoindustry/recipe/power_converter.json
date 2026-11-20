@@ -9,28 +9,35 @@
       "modid": "modern_industrialization"
     }
   ],
-  "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "IRI",
-    "CMC",
-    "IRI"
-  ],
-  "key": {
-    "I": {
-      "item": "minecraft:iron_ingot"
+  "type": "modern_industrialization:assembler",
+  "eu": 8,
+  "duration": 200,
+  "item_inputs": [
+    {
+      "item": "minecraft:iron_ingot",
+      "amount": 4
     },
-    "R": {
-      "item": "minecraft:redstone"
+    {
+      "item": "minecraft:redstone",
+      "amount": 2
     },
-    "C": {
-      "item": "minecraft:copper_ingot"
+    {
+      "item": "minecraft:copper_ingot",
+      "amount": 2
     },
-    "M": {
-      "item": "fluxnetworks:flux_core"
+    {
+      "item": "fluxnetworks:flux_core",
+      "amount": 1
+    },
+    {
+      "item": "modern_industrialization:lv_steam_turbine",
+      "amount": 1
     }
-  },
-  "result": {
-    "id": "revoindustry:power_converter",
-    "count": 1
-  }
+  ],
+  "item_outputs": [
+    {
+      "item": "revoindustry:power_converter",
+      "amount": 1
+    }
+  ]
 }

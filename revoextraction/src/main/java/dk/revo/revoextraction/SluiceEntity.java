@@ -41,7 +41,7 @@ public final class SluiceEntity extends KineticBlockEntity {
     /** Stable saved sequence. Blocked buffers, relogs and unloading cannot reroll gems. */
     public ItemStack nextOutput() {
         int n = (int) Math.floorMod(cycle, 128);
-        return new ItemStack(n == 127 ? Items.DIAMOND : n % 64 == 63 ? Items.EMERALD : n % 16 == 15 ? Items.LAPIS_LAZULI : n % 4 == 3 ? Items.QUARTZ : Items.FLINT);
+        return new ItemStack(n == 127 ? Items.RAW_COPPER : n % 64 == 63 ? Items.RAW_IRON : n % 16 == 15 ? Items.COAL : n % 4 == 3 ? Items.QUARTZ : Items.FLINT);
     }
     public int status() {
         if (!assembled()) return 0;

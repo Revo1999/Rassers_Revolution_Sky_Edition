@@ -39,10 +39,11 @@ public final class MineralGameTests {
   ((DrillWaterTankEntity)l.getBlockEntity(m.at(-1,1,0))).water.fill(new FluidStack(Fluids.WATER,8000),FluidAction.EXECUTE);
   ((DrillDrive)l.getBlockEntity(m.at(1,1,0))).setSpeed(256);
   var chestPos=m.at(-1,0,0).west();l.setBlockAndUpdate(chestPos,Blocks.CHEST.defaultBlockState());var out=l.getCapability(Capabilities.ItemHandler.BLOCK,chestPos,Direction.EAST);
-  for(int i=0;i<100&&m.getPersistentData().getInt("cycle")<16;i++)DrillMachine.tick(l,p,m.getBlockState(),m);
-  h.assertTrue(m.getPersistentData().getInt("cycle")==16,"Completed one saved 16-output cycle");
-  h.assertTrue(count(out,item("modern_industrialization:raw_lead"))==2&&count(out,item("modern_industrialization:raw_antimony"))==1,"Pre-electric lead and antimony reach output inventory");
-  h.assertTrue(count(out,RevoExtraction.GEM_SLUDGE.get())==2&&count(out,RevoExtraction.MINERAL_SLUDGE.get())==1,"Sludge is automatically exported");
+  for(int i=0;i<140&&m.getPersistentData().getInt("cycle")<32;i++)DrillMachine.tick(l,p,m.getBlockState(),m);
+  h.assertTrue(m.getPersistentData().getInt("cycle")==32,"Completed one saved 32-output cycle");
+  h.assertTrue(count(out,item("modern_industrialization:raw_lead"))==4&&count(out,item("modern_industrialization:raw_antimony"))==2,"Pre-electric lead and antimony cadence is preserved");
+  h.assertTrue(count(out,RevoExtraction.GEM_SLUDGE.get())==1&&count(out,RevoExtraction.MINERAL_SLUDGE.get())==2,"One Gem Sludge and two Mineral Sludge automatically export");
+  h.assertTrue(count(out,Items.GRAVEL)==3&&count(out,Items.RAW_IRON)==6,"Removed Gem Sludge slots become gravel without changing regular metal cadence");
   h.assertTrue(count(out,Items.DIAMOND)==0&&count(out,Items.LAPIS_LAZULI)==0,"Drill never directly produces gems");h.succeed();
  }
 
@@ -56,7 +57,17 @@ public final class MineralGameTests {
    h.assertTrue(outputs.stream().anyMatch(s->s.is(name.equals("gem_sludge")?Items.DIAMOND:Items.QUARTZ)),"Actual native roll always supplies first required gem");
    if(name.equals("gem_sludge"))h.assertTrue(recipe.getRollableResults().stream().anyMatch(o->o.getStack().is(Items.EMERALD)&&o.getChance()==.25f),"Emerald byproduct balanced at 25 percent");
   }
-  for(int i=0;i<384;i++)for(var tier:DrillTier.values())h.assertTrue(tier.output(i)!=Items.DIAMOND&&tier.output(i)!=Items.LAPIS_LAZULI,"No direct mechanical gem bypass");h.succeed();
+  int gemSludge = 0;
+  for (int i=0;i<384;i++) for (var tier:DrillTier.values()) {
+   var output = tier.output(i);
+   h.assertTrue(output!=Items.DIAMOND && output!=Items.LAPIS_LAZULI && output!=Items.EMERALD, "No direct mechanical gem bypass");
+   if (output == RevoExtraction.GEM_SLUDGE.get()) {
+    h.assertTrue(tier == DrillTier.STEEL, "Gem Sludge starts at Steel");
+    gemSludge++;
+   }
+  }
+  h.assertTrue(gemSludge==12, "Flux cycles do not replace Gem Sludge");
+  h.succeed();
  }
 
  @GameTest(template="drill_test",timeoutTicks=100)

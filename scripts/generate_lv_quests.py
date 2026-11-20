@@ -70,7 +70,7 @@ def main():
         'Smelt invar dust into ingots in an ordinary furnace or blast furnace. No Electric Blast Furnace is needed for invar.',
         'Prepare plates and gears with your established machines or the native hand-tool recipes. The eight ingots here are a starter batch, not the full EBF material budget.'],['materials/invar/smelting/dust_to_ingot_smelting'])
     q('diamonds','Optional: Diamond Cutting Dust',MI+'diamond_dust',4,['invar'],(12,6),[
-        'Macerate four earned diamonds in your existing steam Macerator. Diamonds can come from the pack\'s renewable drilling/sluice routes.',
+        'Macerate four diamonds from Steel Drill Gem Sludge in your existing steam Macerator.',
         'This branch improves processing convenience. It does not block the main Assembler-to-EBF route. Do not try to make the Electric Macerator before preparing this dust.'],['materials/diamond/macerator/gem'],optional=True)
     q('blade','Optional: Invar Rotary Blade',MI+'invar_rotary_blade',1,['diamonds'],(15,6),[
         'Craft the blade from four diamond dust around one invar gear. This is a crafting-table recipe; it does not require an Assembler.',
@@ -169,7 +169,8 @@ def main():
     q('handoff','LV Established: Next Stop MV',deps=['aluminum','components'],at=(27,24),icon=MI+'electronic_circuit',milestone=True,text=[
         'You have a functioning LV component factory and an aluminum route. Confirm once both are working; this is the handoff into the next technology stage.',
         'Next come aluminum parts, electrum cable, Electronic Circuit Boards and Electronic Circuits, then improved components and MV generation. Electronic Circuits are the pack\'s MV circuit gate; Digital Circuits are later.',
-        'AE2 inscribers, power acceptors, controllers and finished processors now require those Electronic Circuits, including the MI assembler processor recipes. Certus and presses can be prepared early, but an early AE2 network is not this chapter\'s goal.',
+        'At MV, prepare the Advanced Machine Hull for the Deep Survey Core. Process Crystalline Sludge for your first Certus.',
+        'Electronic Circuits unlock AE2 storage. Digital Circuits in HV unlock AE2 autocrafting and ExtendedAE Infinity Cells.',
         'MI\'s more advanced single-block machines still connect to LV cable. MV cables and transformers matter for MV generators and compatible hatches; do not rewire every basic machine directly to MV.'])
 
     q('cutter','Optional: Electric Cutting',MI+'electric_cutting_machine',1,['blade','assembler'],(3,36),[
@@ -187,12 +188,12 @@ def main():
     q('greenhouse','Optional: Farm Through the Night','revocultivation:iron_greenhouse',1,['5E50000000000012'],(15,36),[
         'Your Iron Greenhouse consumes 8 EU/t and 250 mB water per 200-tick harvest. Its integrated converter accepts configured FE input; its hatch can also accept native EU.',
         'Use the Revo EMI construction preview for the five-block structure, fitted converter and water tank. Supply water and a retained crop starter, then let the actual grow lights enable night production.'],['revocultivation:iron_greenhouse'],optional=True)
-    q('salt','Optional: Powered Salt Geodes','modern_industrialization:salt_dust',1,['greenhouse'],(18,36),[
-        'Craft the Salt Crystal Geode from quartz, sand, compost and a water bucket; the empty bucket returns. Put it in the Iron Greenhouse with power and water.',
-        'Each harvest retains the geode, costs 1600 EU and 250 mB water, and produces one MI salt dust. The unpowered wooden greenhouse cannot run this program.'],['revoextraction:salt_crystal_starter'],optional=True)
-    q('converter','Optional: Bridge FE and EU','revoindustry:power_converter',1,['5E5000000000000A','5E50000000000005'],(21,36),[
-        'The Basic Power Converter forwards energy between FE and EU at the configured ratio. It is an adapter, not a generator or a storage battery.',
-        'Point its marked FE/EU faces at the appropriate networks. Keep generation on the source side and a compatible consumer on the destination side; reverse the mode only when your intended flow changes.'],['revoindustry:power_converter'],optional=True)
+    q('salt','Optional: Seawater Feedstock','revoextraction:mineral_sludge',1,['greenhouse'],(18,36),[
+        'Craft a Salt Crystal Geode from quartz, sand, compost and a water bucket. The bucket returns. Put the geode in the Iron Greenhouse with power and water.',
+        'Each harvest retains the geode and produces one Mineral Sludge for 1600 EU and 250 mB water. Mix the sludge with a bucket of water in the MI Mixer for seawater. Concentrate and centrifuge it for Salt Dust.'],['revoextraction:salt_crystal_starter','revoindustry:mineral_sludge_sea_water_mixing'],optional=True)
+    q('converter','Optional: Bridge FE and EU','revoindustry:power_converter',1,['5E5000000000000A','5E50000000000005','assembler'],(21,36),[
+        'Run the MI Assembler on LV steam power. Assemble the Basic Power Converter from a spare LV Steam Turbine, a Flux Core, four iron ingots, two redstone and two copper ingots at 8 EU/t.',
+        'Keep your working turbine on the steam line. The converter moves existing energy between FE and EU. Point each port at the correct network and check the selected direction.'],['revoindustry:power_converter'],optional=True)
 
     chapter={'id':f'{BASE:016X}','filename':f'{BASE:016x}','title':'Chapter 5: The LV Factory',
         'icon':{'id':MI+'assembler','count':1},'order_index':45,'default_quest_shape':'circle',

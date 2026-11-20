@@ -704,7 +704,7 @@
       ],
       "description": [
         "Build the single-block MI Centrifuge with its native recipe. This follows aluminum, electronics, Large Motors and a Large Pump.",
-        "Its first jobs include salt water separation and native lava processing. Crystalline Sludge still needs the retained Deep Survey Core and its higher-power drill program."
+        "Start with salt water separation and lava sulfur. The Centrifuge also separates Crystalline Sludge after you craft the MV Deep Survey Core."
       ],
       "tasks": [
         {

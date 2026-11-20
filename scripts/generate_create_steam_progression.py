@@ -188,6 +188,11 @@ c.q('auto_eject', 'An Unattended Ore Supply', deps=['storage','water_iron'], tex
     'Watch the water-powered drill complete a cycle and push its output into storage. Full inventories should pause production safely.',
     'Confirm once items arrive automatically. Keep this line running while you begin MI bronze and steam.'])
 c.images=create_chapter(c)
+c.q('sluice', 'Wash Gravel for Minerals', 'revoextraction:mechanical_sluice', deps=['casing'], x=7.5, y=16, text=[
+    'Feed gravel and pumped water into the Gravel Feeder and drive the Mechanical Sluice from the side. It sorts flint, quartz, coal, raw iron and raw copper.',
+    'Recover diamonds, lapis and emeralds from Steel Drill Gem Sludge. The Sluice gives you an early gravel-processing line.'
+], items=[('revoextraction:mechanical_sluice', 1), ('revoextraction:gravel_feeder', 1)])
+c.quests[-1].update(shape='diamond', size=1.0, optional=True)
 c.save()
 
 s = Chapter(0x5E30000000000000, 'Chapter 3: MI - The Steam Age', 'modern_industrialization:bronze_boiler', 20)

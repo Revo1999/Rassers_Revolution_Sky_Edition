@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "pattern": [
     "SNL",
-    "ADA",
+    "ADH",
     "SNL"
   ],
   "key": {
@@ -14,6 +14,9 @@
     },
     "L": {
       "item": "modern_industrialization:lead_ingot"
+    },
+    "H": {
+      "item": "modern_industrialization:advanced_machine_hull"
     },
     "A": {
       "item": "modern_industrialization:aluminum_ingot"

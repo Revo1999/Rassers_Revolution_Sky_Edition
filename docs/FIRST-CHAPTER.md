@@ -16,9 +16,9 @@ preserved; the island changes apply to newly generated islands.
 4. Either mine or right-click with a hammer: cobblestone becomes gravel, gravel
    becomes sand, and sand becomes dust. Each conversion costs one durability.
 5. Put a Rain Barrel outside. Rain supplies 5 mB per tick, filling its 1,000 mB
-   capacity in ten seconds. A roof blocks collection. Completing the first barrel
-   quest starts a five-minute shower through an automatic FTB command reward,
-   including for players without operator permission.
+   capacity in ten seconds. A roof blocks collection. Claim the barrel quest's
+   one-time five-minute shower after placing the barrel under open sky. Players
+   can claim it without operator permission.
 6. One dust and a full barrel produce one clay block. Craft that into four clay
    balls. The output slot must have room before water or dust is consumed.
 7. Craft unfired clay buckets and an unfired crucible, then fire them in a furnace.
