@@ -16,7 +16,7 @@ Place drives and terminals face-adjacent (up to 128 connected storage blocks). N
 
 The terminal aggregates matching item components, searches names or @mod IDs, sorts by name/count and scrolls in 54-entry pages. Left/right click withdraws a full/half stack; shift-click withdraws to player inventory; shift-click player inventory deposits. Crafting has a shared persistent 3x3 grid, native recipe remainder handling, shift-click output and automatic refill from network storage. EMI recipe + requests a server-resolved recipe, shift-click + fills multiple ingredients. Missing materials leave a partial grid, never generate outputs. Clear returns ingredients to storage. The search and transfer packets are bounded and require a valid nearby open menu.
 
-Crafting consumes one spring charge per operation (4096 maximum). Wind adds 256; an adjacent spinning Create kinetic block at >=16 RPM adds 32 per second. Item insertion/extraction does not spend spring charge. Hoppers access the connected inventory through block capabilities. This is local mechanical storage; the existing AE2 mod remains the later electrical storage system.
+Crafting consumes one spring charge per operation (4096 maximum). Place a Spring Module directly against the Crafting Terminal. Attach a Create Hand Crank or a powered shaft to the front input. A directly attached and turning Hand Crank adds up to 512 charge per second while active. A powered shaft adds 32 per second at 16 RPM or higher. Jade shows the stored spring load. Item insertion/extraction does not spend spring charge. Hoppers access the connected inventory through block capabilities. This is local mechanical storage; the existing AE2 mod remains the later electrical storage system.
 
 ## Quests and verification
 

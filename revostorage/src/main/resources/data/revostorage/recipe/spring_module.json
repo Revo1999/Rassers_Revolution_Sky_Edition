@@ -1,0 +1,30 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "modern_industrialization"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "pattern": [
+    "SSS",
+    "CXC",
+    "SSS"
+  ],
+  "key": {
+    "S": {
+      "item": "modern_industrialization:steel_plate"
+    },
+    "X": {
+      "item": "create:shaft"
+    },
+    "C": {
+      "item": "minecraft:copper_ingot"
+    }
+  },
+  "result": {
+    "id": "revostorage:spring_module",
+    "count": 1
+  }
+}

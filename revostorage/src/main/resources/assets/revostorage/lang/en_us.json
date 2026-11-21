@@ -1,4 +1,10 @@
 {
   "block.revostorage.chest_drive": "Chest Drive",
-  "block.revostorage.crafting_terminal": "Crafting Terminal"
+  "block.revostorage.crafting_terminal": "Crafting Terminal",
+  "block.revostorage.spring_module": "Spring Module",
+  "gui.revostorage.spring": "Spring load",
+  "gui.revostorage.spring_missing": "No module",
+  "jade.revostorage.spring_load": "Spring load %s / %s",
+  "jade.revostorage.spring_winding": "Shaft winding",
+  "config.jade.plugin_revostorage.spring_load": "Spring load"
 }

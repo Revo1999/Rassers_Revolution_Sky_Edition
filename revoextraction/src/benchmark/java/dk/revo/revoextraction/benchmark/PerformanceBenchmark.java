@@ -100,7 +100,7 @@ public final class PerformanceBenchmark {
    for(int b=0;b<9;b++)d.chests.setStackInSlot(b,new ItemStack(BuiltInRegistries.ITEM.get(ResourceLocation.parse("ironchest:diamond_chest"))));
    for(int s=0;s<108;s++)d.banks[0].setStackInSlot(s,new ItemStack(new Item[]{Items.IRON_INGOT,Items.COPPER_INGOT,Items.REDSTONE,Items.DIAMOND,Items.PAPER,Items.OAK_LOG}[s%6],32));
   }
-  var terminalPos=new BlockPos(-8,160,-6);put(l,terminalPos,RevoStorage.TERMINAL.get());var terminal=(StorageEntity)l.getBlockEntity(terminalPos);terminal.wind();storageMenu=new StorageMenu(901,player.getInventory(),terminal);
+  var terminalPos=new BlockPos(-8,160,-6);put(l,terminalPos,RevoStorage.TERMINAL.get());var terminal=(StorageEntity)l.getBlockEntity(terminalPos);put(l,terminalPos.east(),RevoStorage.SPRING.get());var spring=l.getBlockEntity(terminalPos.east());var springData=spring.saveWithoutMetadata(l.registryAccess());springData.putInt("Charge",256);spring.loadWithComponents(springData,l.registryAccess());storageMenu=new StorageMenu(901,player.getInventory(),terminal);
   for(int row=0;row<8;row++){for(int col=0;col<16;col++){
    var p=new BlockPos(-48+col,160,row);l.setBlockAndUpdate(p,Blocks.HOPPER.defaultBlockState().setValue(HopperBlock.FACING,Direction.EAST));((HopperBlockEntity)l.getBlockEntity(p)).setItem(0,new ItemStack(Items.COBBLESTONE,16));
   }put(l,new BlockPos(-32,160,row),Blocks.CHEST);}

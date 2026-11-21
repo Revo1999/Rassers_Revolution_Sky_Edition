@@ -172,7 +172,7 @@ The [Salt Geode Chamber](SALT-GEODE.md) consumes water and 16 EU/t to grow and h
 
 Chest Drives and Mechanical Crafting Terminals provide a local storage network. The current Chest Drive quest depends on the filled-Blaze-Burner milestone.
 
-Each drive accepts nine physical chests and uses their native capacities. Connected terminals provide search, a shared crafting grid, EMI recipe transfer and ingredient refill. Crafting spends spring charge: wind it manually or recharge it from adjacent Create rotation at **16 RPM or higher**. Item insertion and extraction cost no charge.
+Each drive accepts nine physical chests and uses their native capacities. Connected terminals provide search, a shared crafting grid, EMI recipe transfer and ingredient refill. Crafting spends charge from a face-adjacent Spring Module. Attach a Create Hand Crank or a powered shaft at **16 RPM or higher** to its front socket. Item insertion and extraction cost no charge.
 
 This establishes the mechanical storage stage. AE2 storage opens at MV. AE2 autocrafting and ExtendedAE Infinity Cells open with HV Digital Circuits.
 

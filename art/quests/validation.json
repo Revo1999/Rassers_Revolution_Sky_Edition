@@ -1,12 +1,12 @@
 {
   "chapters": 17,
-  "quests": 377,
+  "quests": 378,
   "newQuests": 86,
   "newGuideQuests": 41,
   "nexusQuestsVerified": 41,
   "sedimentAndDrillQuestsVerified": 4,
-  "existingQuestsPreserved": 373,
-  "uniqueIds": 860,
+  "existingQuestsPreserved": 377,
+  "uniqueIds": 863,
   "acyclicDependencies": true,
   "newItemReferencesResolved": true,
   "nonConsumingItemTasks": true,
@@ -39,7 +39,7 @@
     },
     {
       "title": "Progression Routes: Biology to Electricity",
-      "quests": 28
+      "quests": 29
     },
     {
       "title": "Wither Containment",

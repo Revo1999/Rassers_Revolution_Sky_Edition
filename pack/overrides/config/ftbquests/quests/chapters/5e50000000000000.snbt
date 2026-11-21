@@ -520,7 +520,7 @@
       "description": [
         "Search, sort and browse the shared item list. Click extracts a stack, right-click half a stack, shift-click withdraws to inventory, and shift-clicking your inventory deposits it. @mod filters by mod ID.",
         "Use the persistent 3 x 3 grid or EMI recipe + to fill it from the network and inventory; shift-click + requests multiple crafts. Shift-click the result for repeated crafting. Depleted grid slots refill from storage.",
-        "Wind the spring with the Wind button or shift-right-click the block. One craft costs one charge. Adjacent spinning Create shafts recharge the spring at 16 RPM or more. Hoppers access the network."
+        "Put a Spring Module face-to-face with the terminal. Attach a Create Hand Crank or a powered shaft to the module's front socket. Each craft spends one charge. Hoppers can still access storage."
       ],
       "tasks": [
         {
@@ -925,6 +925,47 @@
           "type": "item",
           "item": {
             "id": "revoextraction:digital_drill",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": []
+    },
+    {
+      "id": "5E5000000000001D",
+      "title": "Wind the Spring Module",
+      "icon": {
+        "id": "revostorage:spring_module",
+        "count": 1
+      },
+      "x": 0.0,
+      "y": 15.0,
+      "shape": "circle",
+      "dependencies": [
+        "5E50000000000011"
+      ],
+      "description": [
+        "Craft a Spring Module from six Steel Plates, two Copper Ingots and a Create Shaft. Place it against a Mechanical Crafting Terminal.",
+        "Attach and turn a Create Hand Crank, or connect a powered shaft at 16 RPM or more to the front socket. The coil compresses as it loads and relaxes as you craft. Look at the module for the Jade spring load gauge."
+      ],
+      "tasks": [
+        {
+          "id": "5E500000001001D0",
+          "type": "item",
+          "item": {
+            "id": "revostorage:spring_module",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "5E500000001001D1",
+          "type": "item",
+          "item": {
+            "id": "create:hand_crank",
             "count": 1
           },
           "count": 1,

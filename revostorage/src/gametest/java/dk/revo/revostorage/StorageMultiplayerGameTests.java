@@ -1,16 +1,63 @@
 package dk.revo.revostorage;
 
+import com.mojang.authlib.GameProfile;
+import java.util.UUID;
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.Direction;
 import net.minecraft.gametest.framework.GameTest;
 import net.minecraft.gametest.framework.GameTestHelper;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.phys.BlockHitResult;
 import net.neoforged.neoforge.gametest.GameTestHolder;
 import net.neoforged.neoforge.gametest.PrefixGameTestTemplate;
+import net.neoforged.neoforge.common.util.FakePlayerFactory;
 
 @GameTestHolder(RevoStorage.MOD_ID)
 @PrefixGameTestTemplate(false)
 public final class StorageMultiplayerGameTests {
+    private static net.minecraft.server.level.ServerPlayer viewer(GameTestHelper test, String name) {
+        return FakePlayerFactory.get(test.getLevel(), new GameProfile(UUID.randomUUID(), name));
+    }
+
+    @GameTest(template = "storage_test")
+    public static void springMovesLegacyChargeOnceAndHasNoMenu(GameTestHelper test) {
+        var terminalPos = new BlockPos(1, 1, 1);
+        var springPos = terminalPos.east();
+        test.setBlock(terminalPos, RevoStorage.TERMINAL.get());
+        var terminal = (StorageEntity) test.getBlockEntity(terminalPos);
+        var registries = test.getLevel().registryAccess();
+        var legacy = terminal.saveWithoutMetadata(registries);
+        legacy.putInt("Charge", 2048);
+        terminal.loadWithComponents(legacy, registries);
+        test.assertTrue(terminal.springCharge() == -1, "An old terminal still needs a connected module");
+        test.setBlock(springPos, RevoStorage.SPRING.get());
+        var spring = (SpringEntity) test.getBlockEntity(springPos);
+
+        test.succeedWhen(() -> {
+            test.assertTrue(spring.charge() == 2048, "Old charge moves into the module");
+            test.assertTrue(!terminal.saveWithoutMetadata(registries).contains("Charge"), "The terminal cannot transfer the balance twice");
+            var player = viewer(test, "Spring Tester");
+            var hit = new BlockHitResult(spring.getBlockPos().getCenter(), Direction.NORTH, spring.getBlockPos(), false);
+            spring.getBlockState().useWithoutItem(test.getLevel(), player, hit);
+            test.assertTrue(player.containerMenu == player.inventoryMenu && spring.charge() == 2048, "The housing has no menu or built-in manual winding");
+            player.setPos(terminal.getBlockPos().getCenter());
+            var menu = new StorageMenu(5, player.getInventory(), terminal);
+            test.assertTrue(!menu.clickMenuButton(player, 3), "The former Wind button no longer accepts a server action");
+            player.setShiftKeyDown(true);
+            var terminalHit = new BlockHitResult(terminal.getBlockPos().getCenter(), Direction.NORTH, terminal.getBlockPos(), false);
+            var shortcut = terminal.getBlockState().useWithoutItem(test.getLevel(), player, terminalHit);
+            test.assertTrue(shortcut == net.minecraft.world.InteractionResult.PASS && spring.charge() == 2048,
+                    "Sneak-use on the terminal does not wind the spring");
+            test.assertTrue(terminal.spendSpringCharge() && spring.charge() == 2047, "The adjacent terminal spends exactly one charge");
+            var tag = spring.saveWithoutMetadata(registries);
+            spring.loadWithComponents(tag, registries);
+            test.assertTrue(spring.charge() == 2047, "The module retains its charge on reload");
+            test.setBlock(springPos, net.minecraft.world.level.block.Blocks.AIR);
+            test.assertTrue(!terminal.spendSpringCharge(), "Removing the spring disables crafting immediately");
+        });
+    }
+
     @GameTest(template = "storage_test")
     public static void staleGridClickCannotTakeNextItem(GameTestHelper test) {
         var terminalPos = new BlockPos(1, 1, 1);
@@ -23,8 +70,8 @@ public final class StorageMultiplayerGameTests {
         terminal.insert(new ItemStack(Items.APPLE), false);
         terminal.insert(new ItemStack(Items.STICK), false);
 
-        var first = test.makeMockServerPlayerInLevel();
-        var second = test.makeMockServerPlayerInLevel();
+        var first = viewer(test, "Storage Tester 1");
+        var second = viewer(test, "Storage Tester 2");
         first.setPos(terminal.getBlockPos().getCenter());
         second.setPos(terminal.getBlockPos().getCenter());
         var firstMenu = new StorageMenu(5, first.getInventory(), terminal);

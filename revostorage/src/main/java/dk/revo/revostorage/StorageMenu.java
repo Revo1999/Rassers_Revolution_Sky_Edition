@@ -24,9 +24,9 @@ public class StorageMenu extends AbstractContainerMenu {
  public StorageMenu(int id,Inventory inv){this(id,inv,null);}
  public StorageMenu(int id,Inventory inv,StorageEntity entity){
   super(RevoStorage.MENU.get(),id);this.entity=entity;player=inv.player;
-  data=entity==null?new SimpleContainerData(6):new ContainerData(){public int get(int i){return switch(i){case 0->entity.terminal()?1:0;case 1->entity.charge;case 2->Math.min(32767,entity.networkItems().getSlots());case 3->page;case 4->entries().size();case 5->gridRevision;default->0;};}public void set(int i,int v){}public int getCount(){return 6;}};addDataSlots(data);
+  data=entity==null?new SimpleContainerData(6):new ContainerData(){public int get(int i){return switch(i){case 0->entity.terminal()?1:0;case 1->entity.springCharge();case 2->Math.min(32767,entity.networkItems().getSlots());case 3->page;case 4->entries().size();case 5->gridRevision;default->0;};}public void set(int i,int v){}public int getCount(){return 6;}};addDataSlots(data);
   craft=new TransientCraftingContainer(this,3,3,entity==null?NonNullList.withSize(9,ItemStack.EMPTY):entity.craftingItems);
-  addSlot(new ResultSlot(player,craft,result,0,178,164){public boolean mayPickup(Player p){return terminal()&&super.mayPickup(p)&&(StorageMenu.this.entity==null||StorageMenu.this.entity.charge>0);}public void onTake(Player p,ItemStack s){var keys=craft.getItems().stream().map(ItemStack::copy).toList();updating=true;super.onTake(p,s);if(StorageMenu.this.entity!=null){StorageMenu.this.entity.charge--;dk.revo.revolib.MachineFeedback.cue(StorageMenu.this.entity.getLevel(),StorageMenu.this.entity.getBlockPos(),dk.revo.revolib.MachineFeedback.Voice.CRAFT);for(int i=0;i<9;i++)if(craft.getItem(i).isEmpty()&&!keys.get(i).isEmpty())craft.setItem(i,StorageMenu.this.entity.take(keys.get(i),1,false));StorageMenu.this.entity.setChanged();}updating=false;slotsChanged(craft);}});
+  addSlot(new ResultSlot(player,craft,result,0,178,164){public boolean mayPickup(Player p){return terminal()&&super.mayPickup(p)&&(StorageMenu.this.entity==null||StorageMenu.this.entity.springCharge()>0);}public void onTake(Player p,ItemStack s){if(StorageMenu.this.entity!=null&&!StorageMenu.this.entity.spendSpringCharge())return;var keys=craft.getItems().stream().map(ItemStack::copy).toList();updating=true;super.onTake(p,s);if(StorageMenu.this.entity!=null){dk.revo.revolib.MachineFeedback.cue(StorageMenu.this.entity.getLevel(),StorageMenu.this.entity.getBlockPos(),dk.revo.revolib.MachineFeedback.Voice.CRAFT);for(int i=0;i<9;i++)if(craft.getItem(i).isEmpty()&&!keys.get(i).isEmpty())craft.setItem(i,StorageMenu.this.entity.take(keys.get(i),1,false));StorageMenu.this.entity.setChanged();}updating=false;slotsChanged(craft);}});
   for(int y=0;y<3;y++)for(int x=0;x<3;x++)addSlot(new Slot(craft,x+y*3,70+x*18,146+y*18){public boolean mayPlace(ItemStack s){return terminal();}});
   for(int y=0;y<3;y++)for(int x=0;x<9;x++)addSlot(new Slot(inv,9+x+y*9,25+x*18,216+y*18));
   for(int x=0;x<9;x++)addSlot(new Slot(inv,x,25+x*18,274));
@@ -82,7 +82,7 @@ public class StorageMenu extends AbstractContainerMenu {
  }
  public void clicked(int index,int button,ClickType type,Player p){
   if(isGridSlot(index))return;
-  if(index==0&&entity!=null){slotsChanged(craft);if(!entity.terminal()||entity.charge<=0)return;}
+  if(index==0&&entity!=null){slotsChanged(craft);if(!entity.terminal()||entity.springCharge()<=0)return;}
   super.clicked(index,button,type,p);
  }
  void clickGrid(Player player,int revision,int index,int button,boolean quickMove,boolean deposit){
@@ -114,7 +114,7 @@ public class StorageMenu extends AbstractContainerMenu {
   broadcastChanges();
  }
  public ItemStack quickMoveStack(Player p,int i){if(i<0||i>=slots.size())return ItemStack.EMPTY;var slot=slots.get(i);if(!slot.hasItem()||!slot.mayPickup(p))return ItemStack.EMPTY;var stack=slot.getItem();var original=stack.copy();if(i==0){if(!moveItemStackTo(stack,10,46,true))return ItemStack.EMPTY;slot.onQuickCraft(stack,original);slot.onTake(p,stack);return original;}if(i>=10&&i<46){if(entity==null)return ItemStack.EMPTY;var rest=entity.terminal()?entity.insert(stack.copy(),false):ItemHandlerHelper.insertItemStacked(entity.chests,stack.copy(),false);if(rest.getCount()==stack.getCount())return ItemStack.EMPTY;slot.setByPlayer(rest);}else{if(!moveItemStackTo(stack,10,46,true))return ItemStack.EMPTY;slot.setChanged();}return original;}
- public boolean clickMenuButton(Player p,int id){if(entity==null||!entity.terminal()||!stillValid(p))return false;switch(id){case 0->page=Math.max(0,page-1);case 1->page++;case 2->{sortCount=!sortCount;page=0;}case 3->entity.wind();case 4->{for(int i=0;i<9;i++){var s=craft.getItem(i);var rest=entity.insert(s,false);craft.setItem(i,rest);}}default->{return false;}}broadcastChanges();return true;}
+ public boolean clickMenuButton(Player p,int id){if(entity==null||!entity.terminal()||!stillValid(p))return false;switch(id){case 0->page=Math.max(0,page-1);case 1->page++;case 2->{sortCount=!sortCount;page=0;}case 4->{for(int i=0;i<9;i++){var s=craft.getItem(i);var rest=entity.insert(s,false);craft.setItem(i,rest);}}default->{return false;}}broadcastChanges();return true;}
  public boolean stillValid(Player p){return entity==null||dk.revo.revolib.MachineMenuAccess.isUsable(p,entity);}
  /** Server resolves the actual recipe; client never supplies output stacks. Transfer consumes actual network/player items. */
  public void transfer(ResourceLocation id,boolean maximum){

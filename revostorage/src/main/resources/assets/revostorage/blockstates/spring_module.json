@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "revostorage:block/spring_module_housing"
+    },
+    "facing=east": {
+      "model": "revostorage:block/spring_module_housing",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "revostorage:block/spring_module_housing",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "revostorage:block/spring_module_housing",
+      "y": 270
+    }
+  }
+}

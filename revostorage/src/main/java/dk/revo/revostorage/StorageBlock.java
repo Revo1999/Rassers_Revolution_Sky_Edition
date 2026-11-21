@@ -20,7 +20,11 @@ public class StorageBlock extends BaseEntityBlock {
  protected BlockState rotate(BlockState s,Rotation r){return s.setValue(FACING,r.rotate(s.getValue(FACING)));}
  protected RenderShape getRenderShape(BlockState s){return RenderShape.MODEL;}
  public BlockEntity newBlockEntity(BlockPos p,BlockState s){return new StorageEntity(p,s);}
- protected InteractionResult useWithoutItem(BlockState s,Level l,BlockPos p,Player player,BlockHitResult hit){if(!l.isClientSide&&l.getBlockEntity(p) instanceof StorageEntity e){if(player.isShiftKeyDown()&&terminal){e.wind();player.displayClientMessage(net.minecraft.network.chat.Component.literal("Spring charge: "+e.charge+" / 4096 operations"),true);}else player.openMenu(new SimpleMenuProvider((id,inv,pl)->new StorageMenu(id,inv,e),net.minecraft.network.chat.Component.literal(terminal?"Crafting Terminal":"Chest Drive")));}return InteractionResult.sidedSuccess(l.isClientSide);}
+ protected InteractionResult useWithoutItem(BlockState s,Level l,BlockPos p,Player player,BlockHitResult hit){
+  if(terminal&&player.isShiftKeyDown())return InteractionResult.PASS;
+  if(!l.isClientSide&&l.getBlockEntity(p) instanceof StorageEntity e)
+   player.openMenu(new SimpleMenuProvider((id,inv,pl)->new StorageMenu(id,inv,e),s.getBlock().getName()));
+  return InteractionResult.sidedSuccess(l.isClientSide);
+ }
  protected void onRemove(BlockState old,Level l,BlockPos p,BlockState next,boolean moving){if(old.getBlock()!=next.getBlock()&&l.getBlockEntity(p) instanceof StorageEntity e)e.dropContents();super.onRemove(old,l,p,next,moving);}
- public <T extends BlockEntity> BlockEntityTicker<T> getTicker(Level l,BlockState s,BlockEntityType<T> t){return createTickerHelper(t,RevoStorage.ENTITY.get(),StorageEntity::tick);}
 }
